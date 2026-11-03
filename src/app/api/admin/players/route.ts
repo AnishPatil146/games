@@ -1,25 +1,26 @@
 import { NextResponse } from "next/server";
 import { verifyAdminAccess } from "@/lib/admin-auth";
-import { getAdminPlayersList } from "@/lib/storage";
+import { getAdminPlayersDirectory } from "@/lib/storage";
 
 export async function GET() {
   const auth = await verifyAdminAccess();
   if (!auth.authorized) {
     return NextResponse.json(
-      { error: auth.error || "Administrator access unauthorized" },
-      { status: 401 }
+      { error: auth.error || "Unauthorized" },
+      { status: auth.statusCode || 401 }
     );
   }
 
   try {
-    const players = await getAdminPlayersList();
-    return NextResponse.json({ success: true, players, adminEmail: auth.email });
-  } catch (err: any) {
-    console.error("Error retrieving players:", err);
-    return NextResponse.json(
-      { error: err.message || "Failed to load players" },
-      { status: 500 }
-    );
+    const data = await getAdminPlayersDirectory();
+    return NextResponse.json({
+      success: true,
+      ...data,
+      adminEmail: auth.email,
+    });
+  } catch (err: unknown) {
+    const message =
+      err instanceof Error ? err.message : "Failed to load player directory.";
+    return NextResponse.json({ error: message }, { status: 500 });
   }
 }
-

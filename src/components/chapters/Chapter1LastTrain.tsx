@@ -1,214 +1,236 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Clock, Train, HelpCircle, ArrowRight, Eye, AlertCircle } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
+import { ArrowRight, Clock, Eye } from "lucide-react";
 import { Button } from "@/components/Button";
+import { LastTrainArtwork } from "@/components/artwork/SceneArtwork";
+import { EventType } from "@/lib/types";
 
-interface Chapter1Props {
-  onComplete: (choiceId: string, durationMs: number, history: string[]) => void;
-  onEvent: (eventType: string, data: Record<string, unknown>) => void;
+interface ChapterProps {
+  onTrackEvent: (
+    eventType: EventType,
+    data?: Record<string, unknown>
+  ) => Promise<unknown>;
+  onComplete: () => void;
 }
 
-export function Chapter1LastTrain({ onComplete, onEvent }: Chapter1Props) {
-  const [selectedAction, setSelectedAction] = useState<string | null>(null);
-  const [investigatedWallet, setInvestigatedWallet] = useState(false);
-  const [decisionHistory, setDecisionHistory] = useState<string[]>([]);
-  const [outcomeRevealed, setOutcomeRevealed] = useState(false);
-  const startTimeRef = useRef<number>(0);
+export function Chapter1LastTrain({ onTrackEvent, onComplete }: ChapterProps) {
+  const prefersReducedMotion = useReducedMotion();
+  const mountTimeRef = useRef<number>(0);
+
+  const [inspectedWallet, setInspectedWallet] = useState(false);
+  const [finalChoice, setFinalChoice] = useState<string | null>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   useEffect(() => {
-    startTimeRef.current = Date.now();
-    onEvent("chapter_started", { chapter: 1, title: "The Last Train" });
-  }, [onEvent]);
+    mountTimeRef.current = performance.now();
+  }, []);
 
-  const handleAction = (actionId: string) => {
-    const elapsed = Date.now() - startTimeRef.current;
-    const newHistory = [...decisionHistory, actionId];
-    setDecisionHistory(newHistory);
-    setSelectedAction(actionId);
+  const getElapsedMs = () =>
+    Math.max(100, Math.round(performance.now() - mountTimeRef.current));
 
-    onEvent("choice_selected", {
-      chapter: 1,
-      choiceId: actionId,
-      durationMs: elapsed,
-      stepCount: newHistory.length,
-      investigatedFirst: investigatedWallet,
+  const handleInspectFirst = async () => {
+    if (inspectedWallet || finalChoice) return;
+    setInspectedWallet(true);
+    await onTrackEvent("clue_inspected", {
+      clueId: "fallen_leather_wallet",
+      elapsedMs: getElapsedMs(),
     });
-
-    if (actionId === "investigate_first") {
-      setInvestigatedWallet(true);
-    } else {
-      setOutcomeRevealed(true);
-    }
+    await onTrackEvent("choice_selected", {
+      choiceId: "investigate_first",
+      durationMs: getElapsedMs(),
+    });
   };
 
-  const handleProceed = () => {
-    const elapsed = Date.now() - startTimeRef.current;
-    onComplete(selectedAction || "return_wallet", elapsed, decisionHistory);
+  const handleCommitChoice = async (choiceId: string) => {
+    if (isSubmitting || finalChoice) return;
+    setIsSubmitting(true);
+    const durationMs = getElapsedMs();
+
+    setFinalChoice(choiceId);
+    await onTrackEvent("choice_selected", {
+      choiceId,
+      inspectedFirst: inspectedWallet,
+      durationMs,
+    });
+    setIsSubmitting(false);
+  };
+
+  const handleProceed = async () => {
+    await onTrackEvent("chapter_completed", {
+      finalChoice,
+      inspectedWallet,
+      durationMs: getElapsedMs(),
+    });
+    onComplete();
   };
 
   return (
     <div className="space-y-8">
-      {/* Narrative Header */}
-      <div className="space-y-2 border-b border-[#E8E2D8] pb-6">
-        <div className="flex items-center space-x-2 text-[#78716C] text-xs uppercase tracking-[0.2em]">
-          <Clock className="w-3.5 h-3.5" />
-          <span>Platform 4 • 23:58 PM</span>
+      {/* Chapter Rubric */}
+      <div className="space-y-2 border-b border-[#DDD4C5] pb-5">
+        <div className="flex items-center justify-between text-[11px] uppercase tracking-[0.24em] text-[#8A8178]">
+          <span>Chapter 01 · Platform 4</span>
+          <span className="inline-flex items-center gap-1.5 text-[#9E6B68] font-mono">
+            <Clock className="w-3.5 h-3.5" />
+            <span>23:58</span>
+          </span>
         </div>
-        <h2 className="text-2xl sm:text-3xl font-serif text-[#1C1917] font-normal">
+        <h1 className="font-serif text-3xl sm:text-4xl text-[#1C1917]">
           The Last Train
-        </h2>
-        <p className="text-xs sm:text-sm text-[#78716C] italic font-serif">
-          A platform shrouded in fog. The final bell has already sounded.
+        </h1>
+      </div>
+
+      {/* Bespoke Atmospheric Artwork */}
+      <figure className="border border-[#DDD4C5] rounded-sm overflow-hidden bg-[#171615] shadow-sm">
+        <LastTrainArtwork inspectedWallet={inspectedWallet} />
+        <figcaption className="px-4 py-2.5 bg-[#141210] text-[#A89F93] text-[11px] tracking-[0.06em] flex items-center justify-between">
+          <span>Northbound Terminus · Pneumatic doors closing in 18 seconds</span>
+          {inspectedWallet && (
+            <span className="text-[#D8C39E] uppercase tracking-[0.16em] text-[10px]">
+              Artifact Examined
+            </span>
+          )}
+        </figcaption>
+      </figure>
+
+      {/* Narrative Prose */}
+      <div className="space-y-4 font-serif text-lg sm:text-[19px] leading-relaxed text-[#1C1917]">
+        <p>
+          Rain needles the iron canopy above Platform 4. Ahead of you, the last
+          midnight express idles with its carriage doors parted—amber warmth
+          spilling across wet stone. If those doors seal without you, there is
+          no other train until dawn.
+        </p>
+        <p>
+          Ten paces toward the dark exit stairwell, a stranger in a charcoal
+          coat turns away. A worn calfskin wallet slips from their pocket and
+          lands silently beside the yellow platform line. They have not noticed.
         </p>
       </div>
 
-      {/* Atmospheric Narrative */}
-      <div className="prose prose-stone text-[#292524] text-sm sm:text-base leading-relaxed space-y-4 font-serif">
-        <p>
-          Cold night air rolls off the wet iron tracks. The express train idles
-          with a low, rhythmic vibration, exhaust rising into the dim halogen lamps.
-          The doors are scheduled to seal in forty seconds.
-        </p>
-        <p>
-          A tall figure in a dark wool overcoat hurries past you toward the
-          platform stairs, shoulders hunched against the mist. As they turn the
-          tiled corner, a heavy leather billfold slips from their overcoat pocket
-          and hits the wet stone tiles with a muffled thud.
-        </p>
-        <p>
-          The train conductor raises his whistle. If you turn around to retrieve
-          the wallet, you will almost certainly miss the train. If you board now,
-          the stranger will disappear into the city night.
-        </p>
-      </div>
-
-      {/* Investigation Details if examined */}
+      {/* Interactive Wallet Detail Reveal */}
       <AnimatePresence>
-        {investigatedWallet && (
+        {inspectedWallet && (
           <motion.div
-            initial={{ opacity: 0, y: 8 }}
+            initial={prefersReducedMotion ? false : { opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0 }}
-            className="p-5 rounded border border-[#5B6356]/30 bg-[#EDF0EB]/60 text-xs sm:text-sm space-y-2 text-[#2C3328]"
+            exit={prefersReducedMotion ? undefined : { opacity: 0 }}
+            className="p-5 bg-[#F3EDE2] border-l-2 border-[#545E4E] rounded-r-sm space-y-2"
           >
-            <div className="flex items-center space-x-2 font-medium uppercase tracking-wider text-[11px] text-[#5B6356]">
+            <div className="flex items-center space-x-2 text-[11px] uppercase tracking-[0.2em] text-[#545E4E] font-semibold">
               <Eye className="w-3.5 h-3.5" />
-              <span>Closer Inspection</span>
+              <span>Closer Observation</span>
             </div>
-            <p className="leading-relaxed">
-              You crouch slightly to scrutinize the dropped item. It is made of
-              worn saddle leather, secured with a brass clasp. Tucked inside the
-              exterior fold is a handwritten transit card and an envelope stamped
-              with an official seal: &ldquo;St. Jude Medical Archives.&rdquo;
+            <p className="text-sm text-[#1C1917] leading-relaxed">
+              Kneeling briefly, you glimpse an archival transit credential
+              embossed{" "}
+              <span className="font-medium italic">Dr. Aris Thorne</span>,
+              several crisp notes, and a folded slip of rag paper bearing one
+              inked line:{" "}
+              <span className="font-serif italic">
+                &ldquo;Platform 4 — before midnight.&rdquo;
+              </span>{" "}
+              The carriage chime sounds its final warning.
             </p>
           </motion.div>
         )}
       </AnimatePresence>
 
-      {/* Interactive Choices */}
-      {!outcomeRevealed ? (
-        <div className="space-y-3 pt-4">
-          <label className="block text-[11px] uppercase tracking-[0.2em] text-[#78716C] mb-2">
-            What is your immediate response?
-          </label>
+      {/* Decision Matrix or Consequence Resolution */}
+      {!finalChoice ? (
+        <div className="space-y-3 pt-2" role="group" aria-label="Chapter 1 choices">
+          <p className="text-[11px] uppercase tracking-[0.22em] text-[#8A8178] pb-1">
+            How do you act in the remaining seconds?
+          </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {!inspectedWallet && (
             <button
-              onClick={() => handleAction("return_wallet")}
-              className="p-4 rounded border border-[#E0D7CB] bg-[#FAF8F5] hover:bg-[#F4EFE7] hover:border-[#1C1917] text-left transition-all duration-200 group"
+              type="button"
+              onClick={() => void handleInspectFirst()}
+              className="w-full text-left p-4 sm:p-5 border border-[#DDD4C5] bg-[#F3EDE2]/55 hover:bg-[#F3EDE2] hover:border-[#545E4E] transition-all rounded-sm cursor-pointer group"
             >
-              <span className="block text-xs uppercase tracking-wider font-semibold text-[#1C1917] mb-1 group-hover:text-[#5B6356] transition-colors">
-                Return the Wallet
-              </span>
-              <span className="block text-xs text-[#78716C]">
-                Pick up the wallet and chase after the stranger, willingly forfeiting the train.
-              </span>
-            </button>
-
-            <button
-              onClick={() => handleAction("call_out")}
-              className="p-4 rounded border border-[#E0D7CB] bg-[#FAF8F5] hover:bg-[#F4EFE7] hover:border-[#1C1917] text-left transition-all duration-200 group"
-            >
-              <span className="block text-xs uppercase tracking-wider font-semibold text-[#1C1917] mb-1 group-hover:text-[#5B6356] transition-colors">
-                Call Out Loudly
-              </span>
-              <span className="block text-xs text-[#78716C]">
-                Shout across the foggy platform to alert them before stepping onto the carriage.
-              </span>
-            </button>
-
-            {!investigatedWallet && (
-              <button
-                onClick={() => handleAction("investigate_first")}
-                className="p-4 rounded border border-[#E0D7CB] bg-[#FAF8F5] hover:bg-[#F4EFE7] hover:border-[#1C1917] text-left transition-all duration-200 group"
-              >
-                <span className="block text-xs uppercase tracking-wider font-semibold text-[#1C1917] mb-1 group-hover:text-[#5B6356] transition-colors">
-                  Investigate the Situation
+              <div className="flex items-center justify-between">
+                <span className="font-medium text-sm text-[#1C1917]">
+                  Inspect the fallen wallet first
                 </span>
-                <span className="block text-xs text-[#78716C]">
-                  Examine the wallet and the stranger&apos;s trajectory before committing.
+                <span className="text-[10px] uppercase tracking-[0.18em] text-[#545E4E]">
+                  Observe
                 </span>
-              </button>
-            )}
-
-            <button
-              onClick={() => handleAction("catch_train")}
-              className="p-4 rounded border border-[#E0D7CB] bg-[#FAF8F5] hover:bg-[#F4EFE7] hover:border-[#1C1917] text-left transition-all duration-200 group"
-            >
-              <span className="block text-xs uppercase tracking-wider font-semibold text-[#1C1917] mb-1 group-hover:text-[#5B6356] transition-colors">
-                Board the Train
-              </span>
-              <span className="block text-xs text-[#78716C]">
-                Step inside the carriage. You cannot afford to be stranded in this district.
-              </span>
+              </div>
+              <p className="text-xs text-[#57524C] mt-1">
+                Take three seconds to check its contents before committing to
+                the train or the stranger.
+              </p>
             </button>
-          </div>
+          )}
+
+          <button
+            type="button"
+            disabled={isSubmitting}
+            onClick={() => void handleCommitChoice("return_wallet")}
+            className="w-full text-left p-4 sm:p-5 border border-[#DDD4C5] bg-[#FAF7F2] hover:bg-[#F3EDE2] hover:border-[#1C1917] transition-all rounded-sm cursor-pointer"
+          >
+            <span className="block font-medium text-sm text-[#1C1917]">
+              Forfeit the train and return the wallet in person
+            </span>
+            <span className="block text-xs text-[#57524C] mt-1">
+              Retrieve the leather case and hurry toward the stairwell, letting
+              the midnight express depart.
+            </span>
+          </button>
+
+          <button
+            type="button"
+            disabled={isSubmitting}
+            onClick={() => void handleCommitChoice("call_out")}
+            className="w-full text-left p-4 sm:p-5 border border-[#DDD4C5] bg-[#FAF7F2] hover:bg-[#F3EDE2] hover:border-[#1C1917] transition-all rounded-sm cursor-pointer"
+          >
+            <span className="block font-medium text-sm text-[#1C1917]">
+              Call out sharply across the platform
+            </span>
+            <span className="block text-xs text-[#57524C] mt-1">
+              Alert the stranger from beside the open carriage door so you can
+              still step aboard in time.
+            </span>
+          </button>
+
+          <button
+            type="button"
+            disabled={isSubmitting}
+            onClick={() => void handleCommitChoice("catch_train")}
+            className="w-full text-left p-4 sm:p-5 border border-[#DDD4C5] bg-[#FAF7F2] hover:bg-[#F3EDE2] hover:border-[#1C1917] transition-all rounded-sm cursor-pointer"
+          >
+            <span className="block font-medium text-sm text-[#1C1917]">
+              Step onto the train before the doors seal
+            </span>
+            <span className="block text-xs text-[#57524C] mt-1">
+              Hold to your departure schedule and leave the platform undisturbed.
+            </span>
+          </button>
         </div>
       ) : (
-        /* Narrative Consequence & Next Chapter Transition */
         <motion.div
-          initial={{ opacity: 0, y: 12 }}
+          initial={prefersReducedMotion ? false : { opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="p-6 rounded border border-[#E0D7CB] bg-[#F4EFE7] space-y-4"
+          className="p-6 sm:p-7 bg-[#F3EDE2]/80 border border-[#DDD4C5] rounded-sm space-y-5"
         >
-          <div className="flex items-center space-x-2 text-xs uppercase tracking-widest text-[#5B6356] font-semibold">
-            <Train className="w-4 h-4" />
-            <span>Trace Left Behind</span>
-          </div>
+          <p className="text-[10px] uppercase tracking-[0.24em] text-[#8A8178]">
+            Recorded Consequence
+          </p>
+          <p className="font-serif italic text-lg text-[#1C1917] leading-relaxed">
+            {finalChoice === "return_wallet" &&
+              "Behind you, the pneumatic doors seal with a muted hiss and tail-lights dissolve into mist. At the stairwell, the stranger turns in quiet astonishment, presses the wallet to their coat, and points toward a recessed service door beneath the station arches."}
+            {finalChoice === "call_out" &&
+              "Your voice cuts cleanly beneath the iron vaulting. The stranger pivots, spots the calfskin case under the lamp, and raises a gloved hand in gratitude just as you step across the threshold of the departing carriage."}
+            {finalChoice === "catch_train" &&
+              "You cross into the quiet carriage a breath before the rubber seals lock. Through rain-streaked glass, the leather wallet diminishes beneath the platform lamp until darkness swallows the terminus."}
+          </p>
 
-          <div className="text-sm font-serif text-[#292524] leading-relaxed">
-            {selectedAction === "return_wallet" && (
-              <p>
-                You scoop the leather case from the wet paving stones and sprint toward
-                the stairs. Your voice echoes under the arches. The stranger turns, startled,
-                then exhales in visible disbelief. Behind you, the pneumatic hiss of train doors
-                marks the departure of your ride. You are stranded until dawn, but a debt of fate
-                has been resolved.
-              </p>
-            )}
-            {selectedAction === "call_out" && (
-              <p>
-                Your voice slices cleanly through the damp fog. The stranger pauses at the top of
-                the stairway, glances down, and catches sight of the fallen wallet. As they hurry
-                back to recover it, you pivot swiftly and cross the train threshold just as the
-                conductor blows his whistle. The carriage lurches forward.
-              </p>
-            )}
-            {selectedAction === "catch_train" && (
-              <p>
-                You step through the brass-trimmed sliding doors. The air inside smells of damp wool
-                and aged varnish. Through the rain-streaked window, you watch the lonely leather wallet
-                rest on the abandoned platform under the dim yellow lamp. The station slips into the
-                darkness. You protected your own destination.
-              </p>
-            )}
-          </div>
-
-          <div className="pt-3 flex justify-end">
-            <Button variant="primary" size="md" onClick={handleProceed}>
-              <span>CONTINUE TO CHAPTER 02</span>
+          <div className="pt-1 flex justify-end">
+            <Button onClick={() => void handleProceed()} size="md">
+              <span>Continue to Chapter 02</span>
               <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
           </div>
@@ -217,4 +239,3 @@ export function Chapter1LastTrain({ onComplete, onEvent }: Chapter1Props) {
     </div>
   );
 }
-

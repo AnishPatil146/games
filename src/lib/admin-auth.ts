@@ -1,48 +1,32 @@
 import { createClient } from "./supabase/server";
-import { cookies } from "next/headers";
-
-export function getAllowedAdminEmails(): string[] {
-  const envEmails = process.env.ADMIN_EMAILS || "";
-  return envEmails
-    .split(",")
-    .map((e) => e.trim().toLowerCase())
-    .filter(Boolean);
-}
+import { AUTHORIZED_ADMIN_EMAIL, getEnvConfig } from "./env";
 
 export function isEmailAllowed(email?: string | null): boolean {
   if (!email) return false;
-  const allowed = getAllowedAdminEmails();
-  // If no emails are configured yet in environment, allow default admin for initial onboarding
-  if (allowed.length === 0) return true;
-  return allowed.includes(email.toLowerCase().trim());
+  const normalized = email.trim().toLowerCase();
+  if (normalized !== AUTHORIZED_ADMIN_EMAIL) {
+    return false;
+  }
+  const { allowedAdminEmails } = getEnvConfig();
+  return allowedAdminEmails.includes(normalized);
 }
 
 export async function verifyAdminAccess(): Promise<{
   authorized: boolean;
   email?: string;
+  userId?: string;
   error?: string;
+  statusCode?: 401 | 403 | 503;
 }> {
-  const cookieStore = await cookies();
-  const adminSessionCookie = cookieStore.get("the_unwritten_admin_session");
-
-  // Check 1: Dedicated secure admin token cookie
-  if (adminSessionCookie?.value) {
-    try {
-      const decoded = JSON.parse(
-        Buffer.from(adminSessionCookie.value, "base64").toString("utf-8")
-      );
-      if (decoded.email && isEmailAllowed(decoded.email)) {
-        // Valid within 7 days
-        if (Date.now() - decoded.timestamp < 7 * 24 * 60 * 60 * 1000) {
-          return { authorized: true, email: decoded.email };
-        }
-      }
-    } catch {
-      // invalid cookie format
-    }
+  const { isSupabaseConfigured } = getEnvConfig();
+  if (!isSupabaseConfigured) {
+    return {
+      authorized: false,
+      error: "Supabase authentication environment is not configured.",
+      statusCode: 503,
+    };
   }
 
-  // Check 2: Supabase Auth Session
   try {
     const supabase = await createClient();
     const {
@@ -50,20 +34,35 @@ export async function verifyAdminAccess(): Promise<{
       error,
     } = await supabase.auth.getUser();
 
-    if (error || !user) {
-      return { authorized: false, error: "Authentication required" };
-    }
-
-    if (!isEmailAllowed(user.email)) {
+    if (error || !user || !user.email) {
       return {
         authorized: false,
-        error: `User ${user.email} is not authorized in ADMIN_EMAILS allowlist`,
+        error: "Administrator authentication required.",
+        statusCode: 401,
       };
     }
 
-    return { authorized: true, email: user.email };
-  } catch (err: any) {
-    return { authorized: false, error: err.message || "Admin authorization failed" };
+    if (!isEmailAllowed(user.email)) {
+      await supabase.auth.signOut().catch(() => {});
+      return {
+        authorized: false,
+        error: "Access denied. This account is not an authorized administrator.",
+        statusCode: 403,
+      };
+    }
+
+    return {
+      authorized: true,
+      email: user.email.toLowerCase(),
+      userId: user.id,
+    };
+  } catch (err: unknown) {
+    const message =
+      err instanceof Error ? err.message : "Administrator verification failed.";
+    return {
+      authorized: false,
+      error: message,
+      statusCode: 401,
+    };
   }
 }
-

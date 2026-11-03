@@ -1,55 +1,167 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
-import { Volume2, VolumeX, ShieldCheck } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { Volume2, VolumeX } from "lucide-react";
 
 interface HeaderProps {
   currentChapter?: number;
   totalChapters?: number;
   hideNav?: boolean;
+  tone?: "light" | "dark";
+}
+
+interface AmbientNodes {
+  ctx: AudioContext;
+  masterGain: GainNode;
+  oscA: OscillatorNode;
+  oscB: OscillatorNode;
 }
 
 export function Header({
   currentChapter,
   totalChapters = 6,
   hideNav = false,
+  tone = "light",
 }: HeaderProps) {
   const [soundEnabled, setSoundEnabled] = useState(false);
+  const audioRef = useRef<AmbientNodes | null>(null);
 
-  const toggleSound = () => {
-    setSoundEnabled(!soundEnabled);
+  useEffect(() => {
+    return () => {
+      if (audioRef.current) {
+        try {
+          audioRef.current.oscA.stop();
+          audioRef.current.oscB.stop();
+          void audioRef.current.ctx.close();
+        } catch {
+          // Ignore already stopped audio context
+        }
+        audioRef.current = null;
+      }
+    };
+  }, []);
+
+  const toggleSound = async () => {
+    if (soundEnabled) {
+      if (audioRef.current) {
+        const { ctx, masterGain, oscA, oscB } = audioRef.current;
+        try {
+          masterGain.gain.setTargetAtTime(0.0001, ctx.currentTime, 0.15);
+          setTimeout(() => {
+            try {
+              oscA.stop();
+              oscB.stop();
+              void ctx.close();
+            } catch {
+              // ignore
+            }
+          }, 220);
+        } catch {
+          // ignore
+        }
+        audioRef.current = null;
+      }
+      setSoundEnabled(false);
+      return;
+    }
+
+    try {
+      const AudioCtx =
+        window.AudioContext ||
+        (window as unknown as { webkitAudioContext?: typeof AudioContext })
+          .webkitAudioContext;
+      if (!AudioCtx) return;
+
+      const ctx = new AudioCtx();
+      const filter = ctx.createBiquadFilter();
+      filter.type = "lowpass";
+      filter.frequency.value = 320;
+
+      const masterGain = ctx.createGain();
+      masterGain.gain.value = 0.0001;
+
+      const oscA = ctx.createOscillator();
+      oscA.type = "sine";
+      oscA.frequency.value = 110; // Warm A2
+
+      const oscB = ctx.createOscillator();
+      oscB.type = "triangle";
+      oscB.frequency.value = 164.81; // Fifth E3
+
+      oscA.connect(filter);
+      oscB.connect(filter);
+      filter.connect(masterGain);
+      masterGain.connect(ctx.destination);
+
+      oscA.start();
+      oscB.start();
+      masterGain.gain.setTargetAtTime(0.022, ctx.currentTime, 0.6);
+
+      audioRef.current = { ctx, masterGain, oscA, oscB };
+      setSoundEnabled(true);
+    } catch {
+      setSoundEnabled(false);
+    }
   };
 
+  const isDark = tone === "dark";
+
   return (
-    <header className="w-full border-b border-[#E8E2D8] bg-[#FAF8F5]/90 backdrop-blur-sm sticky top-0 z-40 transition-colors">
-      <div className="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
-        {/* Brand */}
+    <header
+      className={`w-full sticky top-0 z-40 transition-colors border-b ${
+        isDark
+          ? "bg-[#12100E]/85 border-[#FAF7F2]/10 text-[#FAF7F2] backdrop-blur-md"
+          : "bg-[#FAF7F2]/92 border-[#DDD4C5] text-[#1C1917] backdrop-blur-sm"
+      }`}
+    >
+      <div className="max-w-5xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between gap-4">
         <Link
           href="/"
-          className="group flex items-center space-x-2 text-[#1C1917] transition-opacity hover:opacity-75"
+          className="group inline-flex items-center space-x-2.5 transition-opacity hover:opacity-80"
         >
-          <span className="text-xs uppercase tracking-[0.25em] font-medium text-[#78716C] group-hover:text-[#1C1917] transition-colors">
+          <span
+            className={`text-[11px] uppercase tracking-[0.28em] font-medium ${
+              isDark ? "text-[#FAF7F2]" : "text-[#1C1917]"
+            }`}
+          >
             THE UNWRITTEN
           </span>
         </Link>
 
-        {/* Chapter Progress */}
         {currentChapter !== undefined && currentChapter > 0 && (
-          <div className="flex items-center space-x-3">
-            <span className="text-[11px] uppercase tracking-[0.2em] text-[#78716C]">
-              Chapter 0{currentChapter}
+          <div
+            className="flex items-center space-x-3"
+            aria-label={`Chapter ${currentChapter} of ${totalChapters}`}
+          >
+            <span
+              className={`text-[11px] uppercase tracking-[0.22em] font-mono ${
+                isDark ? "text-[#D6CEC0]" : "text-[#57524C]"
+              }`}
+            >
+              CH. 0{currentChapter} / 0{totalChapters}
             </span>
-            <div className="hidden sm:flex items-center space-x-1">
+            <div
+              className="hidden sm:flex items-center space-x-1.5"
+              role="progressbar"
+              aria-valuenow={currentChapter}
+              aria-valuemin={1}
+              aria-valuemax={totalChapters}
+              aria-label="Narrative chapter progress"
+            >
               {Array.from({ length: totalChapters }).map((_, idx) => (
-                <div
+                <span
                   key={idx}
-                  className={`h-1 w-4 rounded-full transition-all duration-300 ${
+                  className={`h-1 rounded-full transition-all duration-300 ${
                     idx + 1 === currentChapter
-                      ? "bg-[#1C1917] w-6"
+                      ? isDark
+                        ? "bg-[#FAF7F2] w-7"
+                        : "bg-[#1C1917] w-7"
                       : idx + 1 < currentChapter
-                      ? "bg-[#5B6356]"
-                      : "bg-[#E0D7CB]"
+                      ? "bg-[#545E4E] w-4"
+                      : isDark
+                      ? "bg-[#FAF7F2]/20 w-4"
+                      : "bg-[#DDD4C5] w-4"
                   }`}
                 />
               ))}
@@ -57,33 +169,54 @@ export function Header({
           </div>
         )}
 
-        {/* Controls */}
         {!hideNav && (
-          <div className="flex items-center space-x-4">
+          <nav
+            aria-label="Experience utilities"
+            className="flex items-center space-x-2 sm:space-x-4"
+          >
             <button
-              onClick={toggleSound}
-              title={soundEnabled ? "Mute audio" : "Enable atmospheric audio"}
-              className="p-2 text-[#78716C] hover:text-[#1C1917] transition-colors rounded-full hover:bg-[#F2ECE2]"
-              aria-label="Toggle ambient atmosphere"
+              type="button"
+              onClick={() => void toggleSound()}
+              title={
+                soundEnabled
+                  ? "Mute atmospheric tone"
+                  : "Enable subtle atmospheric tone"
+              }
+              aria-pressed={soundEnabled}
+              aria-label={
+                soundEnabled
+                  ? "Mute atmospheric tone"
+                  : "Enable subtle atmospheric tone"
+              }
+              className={`inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-sm text-[11px] uppercase tracking-[0.16em] transition-colors cursor-pointer ${
+                isDark
+                  ? "text-[#D6CEC0] hover:text-[#FAF7F2] hover:bg-[#FAF7F2]/10"
+                  : "text-[#57524C] hover:text-[#1C1917] hover:bg-[#F3EDE2]"
+              }`}
             >
               {soundEnabled ? (
-                <Volume2 className="w-4 h-4 text-[#5B6356]" />
+                <Volume2 className="w-3.5 h-3.5 text-[#545E4E]" />
               ) : (
-                <VolumeX className="w-4 h-4" />
+                <VolumeX className="w-3.5 h-3.5" />
               )}
+              <span className="hidden md:inline">
+                {soundEnabled ? "Sound On" : "Atmosphere"}
+              </span>
             </button>
 
             <Link
               href="/privacy"
-              title="Privacy & Methodology"
-              className="p-2 text-[#78716C] hover:text-[#1C1917] transition-colors rounded-full hover:bg-[#F2ECE2]"
+              className={`text-[11px] uppercase tracking-[0.18em] px-2 py-1.5 rounded-sm transition-colors ${
+                isDark
+                  ? "text-[#D6CEC0] hover:text-[#FAF7F2]"
+                  : "text-[#57524C] hover:text-[#1C1917]"
+              }`}
             >
-              <ShieldCheck className="w-4 h-4" />
+              Privacy
             </Link>
-          </div>
+          </nav>
         )}
       </div>
     </header>
   );
 }
-

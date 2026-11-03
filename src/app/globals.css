@@ -1,34 +1,30 @@
 @import "tailwindcss";
 
 @theme {
-  --color-paper: #FAF8F5;
-  --color-paper-card: #F4EFE7;
-  --color-paper-muted: #ECE5DA;
-  --color-paper-border: #E0D7CB;
-  
+  --color-ivory: #FAF7F2;
+  --color-cream: #F3EDE2;
+  --color-stone-surface: #E7E0D3;
+  --color-stone-border: #DDD4C5;
   --color-charcoal: #1C1917;
-  --color-charcoal-muted: #57534E;
-  --color-charcoal-light: #78716C;
+  --color-espresso: #12100E;
+  --color-ink-muted: #57524C;
+  --color-taupe: #8A8178;
+  --color-olive: #545E4E;
+  --color-olive-soft: #E9ECE6;
+  --color-rose: #9E6B68;
+  --color-rose-soft: #F5EBEA;
 
-  --color-taupe: #8C827A;
-  --color-taupe-light: #D6D3D1;
-
-  --color-olive: #5B6356;
-  --color-olive-dark: #3E443A;
-  --color-olive-light: #828B7C;
-  --color-olive-subtle: #EDF0EB;
-
-  --color-rose: #A37070;
-  --color-rose-dark: #7D4F4F;
-  --color-rose-subtle: #F7EFEF;
-
-  --font-serif: var(--font-serif), "Newsreader", "Playfair Display", Georgia, serif;
-  --font-sans: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: var(--font-serif), "Newsreader", Georgia, serif;
+  --font-sans: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 :root {
-  --background: #FAF8F5;
+  --background: #FAF7F2;
   --foreground: #1C1917;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -37,23 +33,31 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  letter-spacing: -0.011em;
+  letter-spacing: -0.01em;
 }
 
-/* Custom editorial typography & subtle utility styles */
-.font-serif-title {
-  font-family: var(--font-serif);
-  letter-spacing: -0.02em;
+/* Tactile museum-paper grain overlay (pure CSS SVG data URI, zero external request) */
+.paper-grain {
+  background-image: radial-gradient(rgba(28, 25, 23, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
 }
 
-.editorial-card {
-  background-color: #F4EFE7;
-  border: 1px solid #E0D7CB;
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+/* Accessible keyboard focus treatment */
+:focus-visible {
+  outline: 2px solid #545E4E;
+  outline-offset: 2px;
 }
 
-.editorial-card:hover {
-  border-color: #8C827A;
+/* Respect user reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 /* Restrained scrollbar */
@@ -67,10 +71,10 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #D6D3D1;
+  background: #D6CEC0;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #8C827A;
+  background: #8A8178;
 }

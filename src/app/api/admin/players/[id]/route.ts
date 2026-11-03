@@ -1,48 +1,53 @@
 import { NextRequest, NextResponse } from "next/server";
 import { verifyAdminAccess } from "@/lib/admin-auth";
-import { getSessionFullData } from "@/lib/storage";
+import { getAdminDetailByPlayerOrSessionId } from "@/lib/storage";
 import { evaluateReport } from "@/lib/scoring";
 
 interface RouteProps {
   params: Promise<{ id: string }>;
 }
 
-export async function GET(req: NextRequest, props: RouteProps) {
+export async function GET(_req: NextRequest, props: RouteProps) {
   const auth = await verifyAdminAccess();
   if (!auth.authorized) {
     return NextResponse.json(
-      { error: auth.error || "Administrator access unauthorized" },
-      { status: 401 }
+      { error: auth.error || "Unauthorized" },
+      { status: auth.statusCode || 401 }
     );
   }
 
   try {
     const { id } = await props.params;
-    const { session, player, events, preferences } = await getSessionFullData(id);
+    const detail = await getAdminDetailByPlayerOrSessionId(id);
 
-    const playerName = player?.display_name || "Anonymous Traveler";
+    if (!detail) {
+      return NextResponse.json(
+        { error: "Player or session record not found." },
+        { status: 404 }
+      );
+    }
+
     const report = evaluateReport(
-      session.id,
-      playerName,
-      events,
-      preferences,
-      session.completed_at || session.started_at
+      detail.primarySession.id,
+      detail.player?.display_name || "Anonymous Traveler",
+      detail.events,
+      detail.preferences,
+      detail.primarySession.completed_at || detail.primarySession.started_at,
+      detail.primarySession.character_presentation
     );
 
     return NextResponse.json({
       success: true,
-      session,
-      player,
-      events,
-      preferences,
+      player: detail.player,
+      sessions: detail.sessions,
+      session: detail.primarySession,
+      events: detail.events,
+      preferences: detail.preferences,
       report,
     });
-  } catch (err: any) {
-    console.error("Error retrieving player detail:", err);
-    return NextResponse.json(
-      { error: err.message || "Failed to load player details" },
-      { status: 500 }
-    );
+  } catch (err: unknown) {
+    const message =
+      err instanceof Error ? err.message : "Failed to load player detail.";
+    return NextResponse.json({ error: message }, { status: 500 });
   }
 }
-

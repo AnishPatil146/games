@@ -1,329 +1,453 @@
 "use client";
 
-import { useEffect, useState, useRef } from "react";
+import { use, useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { useParams } from "next/navigation";
-import { motion } from "framer-motion";
-import confetti from "canvas-confetti";
-import {
-  Share2,
-  Check,
-  RotateCcw,
-  Sparkles,
-  ShieldAlert,
-  Compass,
-  CheckCircle2,
-  Clock,
-  HelpCircle,
-  Award,
-} from "lucide-react";
-import { GameplayReport } from "@/lib/types";
+import { motion, useReducedMotion } from "framer-motion";
+import { Check, RotateCcw, Share2 } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/Button";
+import { GameplayReport } from "@/lib/types";
+import { useGameSession } from "@/lib/useGameSession";
 
-export default function ResultPage() {
-  const params = useParams();
-  const sessionId = (params?.sessionId as string) || "";
+interface PageProps {
+  params: Promise<{ sessionId: string }>;
+}
+
+export default function ResultReportPage({ params }: PageProps) {
+  const resolvedParams = use(params);
+  const router = useRouter();
+  const prefersReducedMotion = useReducedMotion();
+  const { startFreshSession } = useGameSession();
 
   const [report, setReport] = useState<GameplayReport | null>(null);
-  const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string | null>(null);
-  const [copiedLink, setCopiedLink] = useState<boolean>(false);
-  const reportRef = useRef<HTMLDivElement>(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
+  const [copied, setCopied] = useState(false);
+  const [isResetting, setIsResetting] = useState(false);
 
   useEffect(() => {
-    // Fire celebratory subtle confetti
+    let active = true;
+    const load = async () => {
+      try {
+        const res = await fetch(`/api/result/${resolvedParams.sessionId}`);
+        const data = (await res.json()) as {
+          report?: GameplayReport;
+          error?: string;
+        };
+        if (!res.ok || !data.report) {
+          throw new Error(
+            data.error ||
+              "This session report is unavailable or requires active session authorization."
+          );
+        }
+        if (active) {
+          setReport(data.report);
+        }
+      } catch (err: unknown) {
+        if (active) {
+          setErrorMsg(
+            err instanceof Error ? err.message : "Unable to load report."
+          );
+        }
+      } finally {
+        if (active) setIsLoading(false);
+      }
+    };
+    void load();
+    return () => {
+      active = false;
+    };
+  }, [resolvedParams.sessionId]);
+
+  const handleShare = async () => {
+    if (!report) return;
+    const shareText = `THE UNWRITTEN — Narrative Dossier: ${report.archetype}. "${report.subtitle}"`;
+    const url = window.location.origin;
+
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: `THE UNWRITTEN — ${report.archetype}`,
+          text: shareText,
+          url,
+        });
+        return;
+      } catch {
+        // Fallback to clipboard
+      }
+    }
+
     try {
-      confetti({
-        particleCount: 40,
-        spread: 60,
-        origin: { y: 0.6 },
-        colors: ["#5B6356", "#8C827A", "#A37070", "#E0D7CB"],
-      });
+      await navigator.clipboard.writeText(`${shareText} — ${url}`);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2500);
     } catch {
       // ignore
     }
+  };
 
-    fetch(`/api/result/${sessionId}`)
-      .then((res) => {
-        if (!res.ok) throw new Error("Failed to load personal report");
-        return res.json();
-      })
-      .then((data) => {
-        if (data.report) {
-          setReport(data.report);
-        } else {
-          throw new Error("No report data returned");
-        }
-      })
-      .catch((err) => {
-        console.error(err);
-        setError(err.message);
-      })
-      .finally(() => setLoading(false));
-  }, [sessionId]);
-
-  const handleShare = () => {
-    if (typeof window !== "undefined") {
-      navigator.clipboard.writeText(window.location.href);
-      setCopiedLink(true);
-      setTimeout(() => setCopiedLink(false), 3000);
+  const handleReplay = async () => {
+    setIsResetting(true);
+    try {
+      await startFreshSession("UNSPECIFIED");
+      router.push("/play");
+    } catch {
+      router.push("/play");
     }
   };
 
-  if (loading) {
-    return (
-      <div className="min-h-screen flex flex-col bg-[#FAF8F5] text-[#1C1917]">
-        <Header />
-        <main className="flex-1 flex flex-col items-center justify-center p-6 text-center">
-          <div className="w-8 h-8 rounded-full border-2 border-[#1C1917] border-t-transparent animate-spin mb-4" />
-          <p className="text-xs uppercase tracking-[0.2em] text-[#78716C]">
-            Synthesizing Your Choices & Patterns...
-          </p>
-        </main>
-        <Footer />
-      </div>
-    );
-  }
-
-  if (error || !report) {
-    return (
-      <div className="min-h-screen flex flex-col bg-[#FAF8F5] text-[#1C1917]">
-        <Header />
-        <main className="flex-1 flex flex-col items-center justify-center p-6 text-center space-y-4">
-          <p className="text-sm text-[#A37070]">{error || "Report not found"}</p>
-          <Link href="/play" className="text-xs uppercase tracking-wider underline">
-            Return to Beginning
-          </Link>
-        </main>
-        <Footer />
-      </div>
-    );
-  }
-
   return (
-    <div className="min-h-screen flex flex-col bg-[#FAF8F5] text-[#1C1917]">
+    <div className="min-h-screen flex flex-col bg-[#FAF7F2] text-[#1C1917] paper-grain">
       <Header />
 
-      <main className="flex-1 max-w-2xl mx-auto px-6 py-12 sm:py-16 w-full space-y-10">
-        {/* Screenshot-ready Editorial Card */}
-        <motion.div
-          ref={reportRef}
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="p-8 sm:p-10 rounded border border-[#E0D7CB] bg-[#F4EFE7] shadow-sm space-y-8 relative overflow-hidden"
-        >
-          {/* Subtle watermark background seal */}
-          <div className="absolute -right-12 -top-12 opacity-5 pointer-events-none select-none text-[#1C1917]">
-            <Compass className="w-64 h-64" />
-          </div>
-
-          {/* Dossier Header */}
-          <div className="border-b border-[#E0D7CB] pb-6 space-y-1 flex items-start justify-between">
-            <div>
-              <span className="text-[10px] uppercase tracking-[0.3em] text-[#78716C] block">
-                The Unwritten • Personal Dossier
-              </span>
-              <h1 className="text-sm font-semibold uppercase tracking-wider text-[#1C1917]">
-                Record of {report.playerName}
-              </h1>
-            </div>
-            <div className="text-right">
-              <span className="text-[10px] uppercase tracking-wider text-[#8C827A] block">
-                Date Completed
-              </span>
-              <span className="text-xs text-[#57534E]">
-                {new Date(report.completedAt).toLocaleDateString()}
-              </span>
-            </div>
-          </div>
-
-          {/* Main Archetype Banner */}
-          <div className="text-center py-4 space-y-2">
-            <span className="text-[11px] uppercase tracking-[0.25em] text-[#5B6356] font-medium">
-              Primary Inferred Archetype
-            </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-[#1C1917] font-normal">
-              {report.archetype}
-            </h2>
-            <p className="text-xs sm:text-sm font-serif italic text-[#78716C] max-w-md mx-auto">
-              &ldquo;{report.subtitle}&rdquo;
-            </p>
-            <div className="pt-1 flex items-center justify-center space-x-2">
-              <span className="text-[10px] uppercase tracking-wider text-[#78716C]">
-                Pattern Confidence:
-              </span>
-              <span
-                className={`text-[10px] uppercase tracking-wider px-2 py-0.5 rounded font-semibold ${
-                  report.confidence === "Strong"
-                    ? "bg-[#5B6356] text-[#FAF8F5]"
-                    : "bg-[#E0D7CB] text-[#1C1917]"
-                }`}
-              >
-                {report.confidence}
-              </span>
-            </div>
-          </div>
-
-          {/* Interpretation Body */}
-          <div className="p-5 rounded bg-[#FAF8F5] border border-[#E0D7CB] space-y-3">
-            <h3 className="text-xs uppercase tracking-wider font-semibold text-[#1C1917]">
-              Synthesized Interpretation
-            </h3>
-            <p className="text-xs sm:text-sm font-serif text-[#292524] leading-relaxed">
-              {report.interpretation}
+      <main className="flex-1 max-w-4xl w-full mx-auto px-5 sm:px-8 py-12 sm:py-16">
+        {isLoading ? (
+          <div className="py-28 flex flex-col items-center justify-center space-y-4">
+            <div className="w-6 h-6 border-2 border-[#1C1917] border-t-transparent rounded-full animate-spin" />
+            <p className="text-[11px] uppercase tracking-[0.26em] text-[#8A8178]">
+              Synthesizing Personal Monograph
             </p>
           </div>
+        ) : errorMsg || !report ? (
+          <div className="max-w-lg mx-auto py-20 text-center space-y-5">
+            <p className="text-[11px] uppercase tracking-[0.26em] text-[#9E6B68]">
+              Restricted or Missing Folio
+            </p>
+            <h1 className="font-serif text-3xl text-[#1C1917]">
+              Session dossier could not be opened.
+            </h1>
+            <p className="text-sm text-[#57524C] leading-relaxed">
+              {errorMsg ||
+                "Each personal report is bound to the browser session that authored it."}
+            </p>
+            <div className="pt-3">
+              <Link href="/play">
+                <Button size="md">Begin Your Own Journey</Button>
+              </Link>
+            </div>
+          </div>
+        ) : (
+          <motion.article
+            initial={prefersReducedMotion ? false : { opacity: 0, y: 14 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
+            className="space-y-12"
+          >
+            {/* Shareable Monograph Cover Plate */}
+            <section className="bg-[#141210] text-[#FAF7F2] border border-[#3E3730] rounded-sm p-7 sm:p-12 relative overflow-hidden">
+              <div
+                className="absolute inset-4 border border-[#FAF7F2]/12 pointer-events-none"
+                aria-hidden="true"
+              />
 
-          {/* Observed Strengths */}
-          <div className="space-y-3">
-            <h3 className="text-xs uppercase tracking-wider font-semibold text-[#1C1917]">
-              Observed Behavioral Hallmarks
-            </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
-              {report.observedStrengths.map((str, idx) => (
-                <div
-                  key={idx}
-                  className="p-3 bg-[#FAF8F5] rounded border border-[#E0D7CB] text-xs text-[#44403C] flex items-start space-x-2"
-                >
-                  <Award className="w-3.5 h-3.5 text-[#5B6356] flex-shrink-0 mt-0.5" />
-                  <span>{str}</span>
+              <div className="relative z-10 space-y-8">
+                <div className="flex flex-wrap items-center justify-between gap-3 text-[10px] uppercase tracking-[0.26em] text-[#A89F93] border-b border-[#FAF7F2]/12 pb-4">
+                  <span>THE UNWRITTEN · PERSONAL DOSSIER</span>
+                  <span>
+                    Prepared for{" "}
+                    <strong className="text-[#FAF7F2] font-medium">
+                      {report.playerName}
+                    </strong>
+                  </span>
                 </div>
-              ))}
+
+                <div className="space-y-4 py-2">
+                  <p className="text-[11px] uppercase tracking-[0.28em] text-[#C8B28E]">
+                    Primary Narrative Archetype
+                  </p>
+                  <h1 className="font-serif text-4xl sm:text-6xl text-[#FAF7F2] tracking-tight leading-none">
+                    {report.archetype}
+                  </h1>
+                  <p className="font-serif italic text-lg sm:text-xl text-[#D6CEC0] max-w-2xl">
+                    {report.subtitle}
+                  </p>
+                </div>
+
+                <p className="text-sm sm:text-base text-[#E7E0D3] leading-relaxed max-w-2xl font-light">
+                  {report.interpretation}
+                </p>
+
+                <div className="pt-4 border-t border-[#FAF7F2]/12 flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs">
+                  <div className="space-y-1">
+                    <span className="text-[10px] uppercase tracking-[0.22em] text-[#A89F93] block">
+                      Pattern Confidence · {report.confidence}
+                    </span>
+                    <span className="text-[#D6CEC0] text-xs">
+                      {report.confidenceRationale}
+                    </span>
+                  </div>
+                  <div className="text-[10px] uppercase tracking-[0.22em] text-[#A89F93] shrink-0">
+                    Secondary Resonance:{" "}
+                    <span className="text-[#FAF7F2]">
+                      {report.runnerUpArchetype}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* Share & Replay Bar */}
+            <div className="flex flex-wrap items-center justify-between gap-3 bg-[#F3EDE2] border border-[#DDD4C5] px-5 py-4 rounded-sm">
+              <p className="text-xs text-[#57524C]">
+                Capture a screenshot of your monograph cover above or share an
+                invitation link.
+              </p>
+              <div className="flex items-center gap-2.5">
+                <Button
+                  type="button"
+                  variant="secondary"
+                  size="sm"
+                  onClick={() => void handleShare()}
+                >
+                  {copied ? (
+                    <>
+                      <Check className="w-3.5 h-3.5 mr-1.5 text-[#545E4E]" />
+                      Copied Summary
+                    </>
+                  ) : (
+                    <>
+                      <Share2 className="w-3.5 h-3.5 mr-1.5" />
+                      Share Experience
+                    </>
+                  )}
+                </Button>
+                <Button
+                  type="button"
+                  variant="primary"
+                  size="sm"
+                  disabled={isResetting}
+                  onClick={() => void handleReplay()}
+                >
+                  <RotateCcw className="w-3.5 h-3.5 mr-1.5" />
+                  New Journey
+                </Button>
+              </div>
             </div>
-          </div>
 
-          {/* Concrete Gameplay Evidence */}
-          <div className="space-y-2">
-            <h3 className="text-xs uppercase tracking-wider font-semibold text-[#1C1917]">
-              Supporting Gameplay Decisions
-            </h3>
-            <ul className="space-y-2 text-xs text-[#57534E]">
-              {report.supportingEvidence.map((ev, idx) => (
-                <li key={idx} className="flex items-start space-x-2">
-                  <span className="text-[#5B6356] font-bold">•</span>
-                  <span>{ev}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Separate Puzzle & Deduction Metrics */}
-          <div className="p-5 rounded bg-[#FAF8F5] border border-[#E0D7CB] space-y-3">
-            <div className="flex items-center justify-between border-b border-[#E0D7CB] pb-2">
-              <h3 className="text-xs uppercase tracking-wider font-semibold text-[#1C1917]">
-                Logical & Problem-Solving Performance
-              </h3>
-              <span className="text-[10px] uppercase tracking-wider text-[#8C827A]">
-                Factual Metrics
-              </span>
-            </div>
-
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
-              <div>
-                <span className="text-[10px] uppercase tracking-wider text-[#78716C] block">
-                  Accuracy
-                </span>
-                <span className="text-base font-semibold text-[#1C1917]">
-                  {report.puzzlePerformance.accuracyRate}
+            {/* SECTION I: Strictly Factual Gameplay Results */}
+            <section className="space-y-4">
+              <div className="border-b border-[#DDD4C5] pb-3 flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+                <h2 className="font-serif text-2xl text-[#1C1917]">
+                  I. Factual Gameplay Telemetry
+                </h2>
+                <span className="text-[11px] uppercase tracking-[0.2em] text-[#8A8178]">
+                  Directly Measured Session Counts
                 </span>
               </div>
-              <div>
-                <span className="text-[10px] uppercase tracking-wider text-[#78716C] block">
-                  Puzzles Solved
-                </span>
-                <span className="text-base font-semibold text-[#1C1917]">
-                  {report.puzzlePerformance.solvedCorrectly} / {report.puzzlePerformance.totalPuzzles}
+
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
+                <div className="p-4 bg-[#F3EDE2]/65 border border-[#DDD4C5] rounded-sm">
+                  <span className="block text-[10px] uppercase tracking-[0.18em] text-[#8A8178]">
+                    Chapters
+                  </span>
+                  <span className="block font-serif text-2xl text-[#1C1917] mt-1">
+                    {report.factualResults.chaptersCompleted}/6
+                  </span>
+                </div>
+
+                <div className="p-4 bg-[#F3EDE2]/65 border border-[#DDD4C5] rounded-sm">
+                  <span className="block text-[10px] uppercase tracking-[0.18em] text-[#8A8178]">
+                    Puzzles Solved
+                  </span>
+                  <span className="block font-serif text-2xl text-[#1C1917] mt-1">
+                    {report.factualResults.puzzlesSolved}/
+                    {report.factualResults.puzzlesAttempted}
+                  </span>
+                </div>
+
+                <div className="p-4 bg-[#F3EDE2]/65 border border-[#DDD4C5] rounded-sm">
+                  <span className="block text-[10px] uppercase tracking-[0.18em] text-[#8A8178]">
+                    Accuracy
+                  </span>
+                  <span className="block font-serif text-2xl text-[#1C1917] mt-1">
+                    {report.factualResults.accuracyPct !== null
+                      ? `${report.factualResults.accuracyPct}%`
+                      : "—"}
+                  </span>
+                </div>
+
+                <div className="p-4 bg-[#F3EDE2]/65 border border-[#DDD4C5] rounded-sm">
+                  <span className="block text-[10px] uppercase tracking-[0.18em] text-[#8A8178]">
+                    Clues Examined
+                  </span>
+                  <span className="block font-serif text-2xl text-[#1C1917] mt-1">
+                    {report.factualResults.cluesInspectedCount}
+                  </span>
+                </div>
+
+                <div className="p-4 bg-[#F3EDE2]/65 border border-[#DDD4C5] rounded-sm">
+                  <span className="block text-[10px] uppercase tracking-[0.18em] text-[#8A8178]">
+                    Hints Used
+                  </span>
+                  <span className="block font-serif text-2xl text-[#1C1917] mt-1">
+                    {report.factualResults.hintsUsed}
+                  </span>
+                </div>
+
+                <div className="p-4 bg-[#F3EDE2]/65 border border-[#DDD4C5] rounded-sm">
+                  <span className="block text-[10px] uppercase tracking-[0.18em] text-[#8A8178]">
+                    Avg Pace
+                  </span>
+                  <span className="block font-serif text-2xl text-[#1C1917] mt-1">
+                    {report.factualResults.avgResponseTimeSeconds !== null
+                      ? `${report.factualResults.avgResponseTimeSeconds}s`
+                      : "—"}
+                  </span>
+                </div>
+              </div>
+            </section>
+
+            {/* SECTION II: Explicitly Selected Preferences */}
+            <section className="space-y-4">
+              <div className="border-b border-[#DDD4C5] pb-3 flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+                <h2 className="font-serif text-2xl text-[#1C1917]">
+                  II. Explicitly Selected Preferences
+                </h2>
+                <span className="text-[11px] uppercase tracking-[0.2em] text-[#8A8178]">
+                  Direct Choices Without Inference
                 </span>
               </div>
-              <div>
-                <span className="text-[10px] uppercase tracking-wider text-[#78716C] block">
-                  Hints Requested
-                </span>
-                <span className="text-base font-semibold text-[#1C1917]">
-                  {report.puzzlePerformance.hintsUsed}
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="p-5 bg-[#FAF7F2] border border-[#DDD4C5] rounded-sm space-y-3">
+                  <p className="text-[10px] uppercase tracking-[0.22em] text-[#545E4E] font-semibold">
+                    Chapter 04 · Atelier Composition
+                  </p>
+                  <dl className="space-y-2 text-sm">
+                    <div className="flex justify-between gap-4">
+                      <dt className="text-[#8A8178]">Ground Tone</dt>
+                      <dd className="text-[#1C1917] font-medium text-right">
+                        {report.explicitPreferences.canvasPalette || "—"}
+                      </dd>
+                    </div>
+                    <div className="flex justify-between gap-4">
+                      <dt className="text-[#8A8178]">Arrangement</dt>
+                      <dd className="text-[#1C1917] font-medium text-right">
+                        {report.explicitPreferences.canvasArrangement || "—"}
+                      </dd>
+                    </div>
+                    <div className="flex justify-between gap-4">
+                      <dt className="text-[#8A8178]">Placed Forms</dt>
+                      <dd className="text-[#1C1917] font-medium text-right">
+                        {report.explicitPreferences.canvasObjects.length > 0
+                          ? report.explicitPreferences.canvasObjects.join(", ")
+                          : "—"}
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+
+                <div className="p-5 bg-[#FAF7F2] border border-[#DDD4C5] rounded-sm space-y-3">
+                  <p className="text-[10px] uppercase tracking-[0.22em] text-[#545E4E] font-semibold">
+                    Chapter 06 · Closing Sanctuary
+                  </p>
+                  <dl className="space-y-2 text-sm">
+                    <div className="flex justify-between gap-4">
+                      <dt className="text-[#8A8178]">Horizon</dt>
+                      <dd className="text-[#1C1917] font-medium text-right">
+                        {report.explicitPreferences.worldEnvironment || "—"}
+                      </dd>
+                    </div>
+                    <div className="flex justify-between gap-4">
+                      <dt className="text-[#8A8178]">Claimed Relic</dt>
+                      <dd className="text-[#1C1917] font-medium text-right">
+                        {report.explicitPreferences.worldObject || "—"}
+                      </dd>
+                    </div>
+                    <div className="flex justify-between gap-4">
+                      <dt className="text-[#8A8178]">First Hour</dt>
+                      <dd className="text-[#1C1917] font-medium text-right max-w-[230px]">
+                        {report.explicitPreferences.worldActivity || "—"}
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+            </section>
+
+            {/* SECTION III: Tentative Inferred Tendencies & Chapter Trace */}
+            <section className="space-y-6">
+              <div className="border-b border-[#DDD4C5] pb-3 flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+                <h2 className="font-serif text-2xl text-[#1C1917]">
+                  III. Tentative In-Story Tendencies
+                </h2>
+                <span className="text-[11px] uppercase tracking-[0.2em] text-[#8A8178]">
+                  Interpretive Reflection Based on Decisions
                 </span>
               </div>
-              <div>
-                <span className="text-[10px] uppercase tracking-wider text-[#78716C] block">
-                  Avg Time
-                </span>
-                <span className="text-base font-semibold text-[#1C1917]">
-                  {report.puzzlePerformance.avgResponseTimeSeconds}s
-                </span>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="p-6 bg-[#F3EDE2]/65 border border-[#DDD4C5] rounded-sm space-y-4">
+                  <h3 className="text-xs uppercase tracking-[0.2em] text-[#1C1917] font-semibold">
+                    Observed Narrative Leanings
+                  </h3>
+                  <ul className="space-y-2.5 text-sm text-[#1C1917]">
+                    {report.observedTendencies.map((t) => (
+                      <li key={t} className="flex items-start gap-2.5">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#545E4E] mt-2 shrink-0" />
+                        <span>{t}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <div className="pt-3 border-t border-[#DDD4C5] space-y-2">
+                    <h4 className="text-[10px] uppercase tracking-[0.2em] text-[#8A8178]">
+                      Supporting Evidence in Session
+                    </h4>
+                    <ul className="space-y-1.5 text-xs text-[#57524C] leading-relaxed">
+                      {report.supportingEvidence.map((ev, i) => (
+                        <li key={i}>· {ev}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="p-6 bg-[#FAF7F2] border border-[#DDD4C5] rounded-sm space-y-4">
+                  <h3 className="text-xs uppercase tracking-[0.2em] text-[#1C1917] font-semibold">
+                    Notable Crossroads
+                  </h3>
+                  {report.interestingDecisions.length === 0 ? (
+                    <p className="text-xs text-[#8A8178]">
+                      Complete additional chapters to populate decision notes.
+                    </p>
+                  ) : (
+                    <ol className="space-y-3.5">
+                      {report.interestingDecisions.map((item) => (
+                        <li
+                          key={`${item.chapter}-${item.chapterTitle}`}
+                          className="text-sm border-l-2 border-[#DDD4C5] pl-3.5 space-y-0.5"
+                        >
+                          <span className="block text-[10px] uppercase tracking-[0.2em] text-[#8A8178]">
+                            Chapter 0{item.chapter} · {item.chapterTitle}
+                          </span>
+                          <span className="block text-[#1C1917] leading-snug">
+                            {item.summary}
+                          </span>
+                        </li>
+                      ))}
+                    </ol>
+                  )}
+                </div>
               </div>
-            </div>
-          </div>
+            </section>
 
-          {/* Selected World Preferences */}
-          <div className="space-y-2">
-            <h3 className="text-xs uppercase tracking-wider font-semibold text-[#1C1917]">
-              Explored Sanctuary & Aesthetic Choices
-            </h3>
-            <p className="text-xs text-[#57534E]">
-              Primary environment:{" "}
-              <strong>{report.exploredEnvironments.join(", ")}</strong>
-              {report.creativeComposition && (
-                <>
-                  {" "}• Canvas mood: <strong>{report.creativeComposition.mood}</strong>
-                </>
-              )}
-            </p>
-          </div>
-
-          {/* Closing Message */}
-          <div className="pt-4 border-t border-[#E0D7CB] text-center space-y-1">
-            <p className="text-sm font-serif italic text-[#1C1917]">
-              &ldquo;{report.closingMessage}&rdquo;
-            </p>
-            <span className="text-[10px] uppercase tracking-[0.25em] text-[#8C827A]">
-              THE UNWRITTEN • ARCHIVAL RECORD
-            </span>
-          </div>
-        </motion.div>
-
-        {/* Ethical Non-Clinical Disclaimer */}
-        <div className="p-4 rounded border border-[#E0D7CB] bg-[#FAF8F5] flex items-start space-x-3 text-xs text-[#78716C] leading-relaxed">
-          <ShieldAlert className="w-4 h-4 text-[#8C827A] flex-shrink-0 mt-0.5" />
-          <p>
-            <strong>Methodology Note:</strong> This report reflects behavioral
-            tendencies, priorities, and pacing recorded solely within this fictional
-            experience. It does not constitute a clinical, psychological, or
-            medical assessment.
-          </p>
-        </div>
-
-        {/* Social Sharing & Replay Actions */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
-          <Button
-            variant="primary"
-            size="md"
-            onClick={handleShare}
-            className="w-full sm:w-auto"
-          >
-            {copiedLink ? (
-              <>
-                <Check className="w-4 h-4 mr-2" />
-                <span>LINK COPIED TO CLIPBOARD</span>
-              </>
-            ) : (
-              <>
-                <Share2 className="w-4 h-4 mr-2" />
-                <span>SHARE THIS REPORT</span>
-              </>
-            )}
-          </Button>
-
-          <Link
-            href="/play"
-            className="w-full sm:w-auto inline-flex items-center justify-center px-5 py-2.5 text-xs tracking-[0.15em] uppercase font-medium border border-[#D6D3D1] bg-[#FAF8F5] text-[#57534E] hover:border-[#1C1917] hover:text-[#1C1917] rounded transition-colors"
-          >
-            <RotateCcw className="w-3.5 h-3.5 mr-2" />
-            <span>PLAY AGAIN WITH NEW CHOICES</span>
-          </Link>
-        </div>
+            {/* Closing Reflection & Explicit Non-Clinical Disclaimer */}
+            <section className="p-7 sm:p-9 bg-[#F3EDE2] border border-[#DDD4C5] rounded-sm text-center space-y-4">
+              <p className="font-serif italic text-xl sm:text-2xl text-[#1C1917] max-w-2xl mx-auto leading-relaxed">
+                &ldquo;{report.closingMessage}&rdquo;
+              </p>
+              <p className="text-xs text-[#57524C] max-w-xl mx-auto leading-relaxed pt-2 border-t border-[#DDD4C5]">
+                <strong>Methodological Disclaimer:</strong> THE UNWRITTEN is a
+                work of interactive narrative fiction. Archetypes and inferred
+                tendencies reflect patterns within six fictional game chapters
+                only—they do not measure IQ, mental health, clinical traits, or
+                real-world psychological diagnoses.
+              </p>
+            </section>
+          </motion.article>
+        )}
       </main>
 
       <Footer />

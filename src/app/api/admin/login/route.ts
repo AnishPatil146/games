@@ -2,74 +2,82 @@ import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 import { isEmailAllowed } from "@/lib/admin-auth";
 import { createClient } from "@/lib/supabase/server";
+import { checkRateLimit } from "@/lib/rate-limit";
+import { getEnvConfig } from "@/lib/env";
 
 const LoginSchema = z.object({
-  email: z.string().email(),
-  password: z.string().min(6).optional(),
+  email: z.string().trim().email("Enter a valid administrator email address."),
+  password: z.string().min(6, "Administrator password is required."),
 });
 
 export async function POST(req: NextRequest) {
-  try {
-    const body = await req.json();
-    const validated = LoginSchema.parse(body);
-    const email = validated.email.toLowerCase().trim();
+  const rl = checkRateLimit(req, "admin_login", 8, 60_000);
+  if (!rl.allowed) {
+    return NextResponse.json(
+      { error: "Too many sign-in attempts. Please wait a minute and try again." },
+      { status: 429, headers: { "Retry-After": String(rl.retryAfterSeconds) } }
+    );
+  }
 
+  const { isSupabaseConfigured } = getEnvConfig();
+  if (!isSupabaseConfigured) {
+    return NextResponse.json(
+      { error: "Supabase Auth is not configured in environment variables." },
+      { status: 503 }
+    );
+  }
+
+  try {
+    const body: unknown = await req.json();
+    const parsed = LoginSchema.safeParse(body);
+    if (!parsed.success) {
+      return NextResponse.json(
+        { error: parsed.error.issues[0]?.message || "Invalid credentials format." },
+        { status: 400 }
+      );
+    }
+
+    const email = parsed.data.email.toLowerCase();
+
+    // Server-side single-administrator allowlist enforcement
     if (!isEmailAllowed(email)) {
       return NextResponse.json(
-        { error: "Access denied. This email is not in the administrator allowlist." },
+        { error: "Access denied. This identity is not authorized for Control access." },
         { status: 403 }
       );
     }
 
-    // Attempt Supabase Auth login if password is provided
-    if (validated.password) {
-      try {
-        const supabase = await createClient();
-        const { data, error } = await supabase.auth.signInWithPassword({
-          email,
-          password: validated.password,
-        });
+    const supabase = await createClient();
+    const { data, error } = await supabase.auth.signInWithPassword({
+      email,
+      password: parsed.data.password,
+    });
 
-        if (error) {
-          console.warn("Supabase auth sign in warning:", error.message);
-          // If Supabase Auth failed (e.g., user not yet signed up in Supabase Auth),
-          // check if password matches admin secret or allowlist fallback
-        }
-      } catch (authErr) {
-        console.warn("Auth client notice:", authErr);
-      }
+    if (error || !data.user) {
+      return NextResponse.json(
+        {
+          error:
+            "Invalid administrator credentials. Ensure the authorized account is created in Supabase Auth.",
+        },
+        { status: 401 }
+      );
     }
 
-    // Create admin session token
-    const tokenPayload = {
-      email,
-      timestamp: Date.now(),
-    };
-    const sessionToken = Buffer.from(JSON.stringify(tokenPayload)).toString(
-      "base64"
-    );
+    if (!isEmailAllowed(data.user.email)) {
+      await supabase.auth.signOut().catch(() => {});
+      return NextResponse.json(
+        { error: "Access denied. Account is not in ADMIN_EMAILS allowlist." },
+        { status: 403 }
+      );
+    }
 
-    const response = NextResponse.json({
+    return NextResponse.json({
       success: true,
-      message: "Administrator session established",
-      email,
+      email: data.user.email,
     });
-
-    response.cookies.set("the_unwritten_admin_session", sessionToken, {
-      httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
-      sameSite: "lax",
-      maxAge: 7 * 24 * 60 * 60, // 7 days
-      path: "/",
-    });
-
-    return response;
-  } catch (err: any) {
-    console.error("Admin login error:", err);
-    return NextResponse.json(
-      { error: err.errors || err.message || "Authentication failed" },
-      { status: 400 }
-    );
+  } catch (err: unknown) {
+    const message =
+      err instanceof Error ? err.message : "Authentication request failed.";
+    return NextResponse.json({ error: message }, { status: 500 });
   }
 }
-

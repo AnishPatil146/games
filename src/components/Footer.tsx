@@ -2,19 +2,30 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="w-full border-t border-[#E8E2D8] bg-[#FAF8F5] py-10 mt-auto">
-      <div className="max-w-4xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between text-xs text-[#78716C] gap-4">
-        <div>
-          <span className="font-serif italic mr-2">The Unwritten</span>
-          <span>© {new Date().getFullYear()} — An Interactive Narrative Experiment</span>
+    <footer className="w-full border-t border-[#DDD4C5] bg-[#FAF7F2] py-10 mt-auto">
+      <div className="max-w-5xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#57524C] gap-4">
+        <div className="flex flex-col sm:flex-row items-center gap-1 sm:gap-3 text-center sm:text-left">
+          <span className="font-serif italic text-sm text-[#1C1917]">
+            The Unwritten
+          </span>
+          <span className="hidden sm:inline text-[#DDD4C5]">/</span>
+          <span className="text-[11px] tracking-[0.06em] text-[#8A8178]">
+            Interactive Narrative Monograph · Fictional Behavioral Exploration
+          </span>
         </div>
 
-        <div className="flex items-center space-x-6 text-[11px] uppercase tracking-wider">
+        <div className="flex items-center space-x-6 text-[11px] uppercase tracking-[0.18em]">
+          <Link
+            href="/play"
+            className="text-[#57524C] hover:text-[#1C1917] transition-colors"
+          >
+            Begin
+          </Link>
           <Link
             href="/privacy"
-            className="hover:text-[#1C1917] transition-colors underline-offset-4 hover:underline"
+            className="text-[#57524C] hover:text-[#1C1917] transition-colors"
           >
-            Privacy & Ethics
+            Privacy &amp; Data Governance
           </Link>
         </div>
       </div>

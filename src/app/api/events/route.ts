@@ -1,13 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
-import {
-  recordGameplayEvent,
-  updateSessionChapter,
-  completeGameSession,
-} from "@/lib/storage";
+import { getPublicSessionDossier, recordEventByToken } from "@/lib/storage";
+import { evaluateReport } from "@/lib/scoring";
+import { checkRateLimit } from "@/lib/rate-limit";
+
+const TOKEN_COOKIE = "the_unwritten_token";
 
 const EventSchema = z.object({
-  sessionId: z.string().min(1),
   chapter: z.number().int().min(0).max(6),
   eventType: z.enum([
     "landing_view",
@@ -22,42 +21,73 @@ const EventSchema = z.object({
     "game_completed",
   ]),
   eventData: z.record(z.string(), z.unknown()).default({}),
-  resultArchetype: z.string().optional(),
 });
 
 export async function POST(req: NextRequest) {
-  try {
-    const body = await req.json();
-    const validated = EventSchema.parse(body);
-
-    await recordGameplayEvent(
-      validated.sessionId,
-      validated.chapter,
-      validated.eventType,
-      validated.eventData
+  const rl = checkRateLimit(req, "gameplay_events", 120, 60_000);
+  if (!rl.allowed) {
+    return NextResponse.json(
+      { error: "Rate limit exceeded for event telemetry." },
+      { status: 429, headers: { "Retry-After": String(rl.retryAfterSeconds) } }
     );
+  }
 
-    // If chapter started or completed, update current chapter on session
-    if (validated.eventType === "chapter_started") {
-      await updateSessionChapter(validated.sessionId, validated.chapter);
-    } else if (validated.eventType === "chapter_completed") {
-      await updateSessionChapter(
-        validated.sessionId,
-        Math.min(6, validated.chapter + 1)
-      );
-    } else if (validated.eventType === "game_completed") {
-      await completeGameSession(
-        validated.sessionId,
-        validated.resultArchetype || "The Observer"
+  const sessionToken = req.cookies.get(TOKEN_COOKIE)?.value;
+  if (!sessionToken || sessionToken.length < 16) {
+    return NextResponse.json(
+      { error: "Session cookie missing or expired." },
+      { status: 401 }
+    );
+  }
+
+  try {
+    const body: unknown = await req.json();
+    const parsed = EventSchema.safeParse(body);
+    if (!parsed.success) {
+      return NextResponse.json(
+        { error: parsed.error.issues[0]?.message || "Invalid event payload." },
+        { status: 400 }
       );
     }
 
-    return NextResponse.json({ success: true });
-  } catch (err: any) {
-    console.error("Error in /api/events:", err);
-    return NextResponse.json(
-      { error: err.errors || err.message || "Failed to record event" },
-      { status: 400 }
+    const { chapter, eventType, eventData } = parsed.data;
+
+    let computedArchetype: string | undefined;
+    let resolvedSessionId: string | undefined;
+
+    if (eventType === "game_completed") {
+      const currentDossier = await getPublicSessionDossier(sessionToken);
+      if (currentDossier) {
+        resolvedSessionId = currentDossier.session.id;
+        const report = evaluateReport(
+          currentDossier.session.id,
+          currentDossier.playerDisplayName || "Anonymous Traveler",
+          currentDossier.events,
+          currentDossier.preferences,
+          new Date().toISOString(),
+          currentDossier.session.character_presentation
+        );
+        computedArchetype = report.archetype;
+      }
+    }
+
+    const result = await recordEventByToken(
+      sessionToken,
+      chapter,
+      eventType,
+      eventData,
+      computedArchetype
     );
+
+    return NextResponse.json({
+      success: true,
+      ...result,
+      sessionId: resolvedSessionId,
+      archetype: computedArchetype,
+    });
+  } catch (err: unknown) {
+    const message =
+      err instanceof Error ? err.message : "Failed to record gameplay event.";
+    return NextResponse.json({ error: message }, { status: 500 });
   }
 }

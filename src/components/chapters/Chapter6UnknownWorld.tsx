@@ -1,300 +1,323 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
-import { motion } from "framer-motion";
-import { Globe, Compass, Eye, Heart, Sparkles, ArrowRight, Check } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { motion, useReducedMotion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/Button";
+import {
+  ArtifactVectorGlyph,
+  WorldEnvironmentArtwork,
+} from "@/components/artwork/SceneArtwork";
+import { EventType } from "@/lib/types";
 
 interface Chapter6Props {
-  onComplete: (data: {
-    environment: string;
-    object: string;
-    activity: string;
-  }) => void;
-  onEvent: (eventType: string, data: Record<string, unknown>) => void;
-  onPreference: (category: string, value: string) => void;
+  onTrackEvent: (
+    eventType: EventType,
+    data?: Record<string, unknown>
+  ) => Promise<unknown>;
+  onSavePreference: (category: string, value: string) => Promise<unknown>;
+  onComplete: () => void;
 }
 
 const ENVIRONMENTS = [
   {
     id: "observatory",
-    title: "The Sunlit Observatory",
-    subtitle: "High Altitude & Starlight",
+    label: "High Altitude Observatory",
     description:
-      "A mountain aerie surrounded by golden cloud banks. Polished brass telescopes point toward silent constellations.",
-    icon: "🔭",
+      "Clear cold air, brass meridian circles, and an unobstructed dome open to stellar drift.",
   },
   {
     id: "archives",
-    title: "The Whispering Archives",
-    subtitle: "Vellum, Leather & Shadows",
+    label: "Subterranean Archives",
     description:
-      "A spiraling labyrinth of towering bookshelves with iron ladders, echoing footfalls, and forgotten folios.",
-    icon: "📜",
+      "Miles of vaulted cedar shelving illuminated by warm pendant lamps and uncatalogued maps.",
   },
   {
     id: "coastal",
-    title: "The Forgotten Coastal Ruins",
-    subtitle: "Salt Spray & Ancient Marble",
+    label: "Sunlit Coastal Ruins",
     description:
-      "Pillars rising out of the turquoise tide pools. The sound of crashing waves against weathered limestone.",
-    icon: "🌊",
+      "Limestone colonnades above tidal water, salt wind, and open sea horizons.",
   },
   {
     id: "greenhouse",
-    title: "The Secret Botanical Greenhouse",
-    subtitle: "Verdant Glass & Living Earth",
+    label: "Botanical Greenhouse",
     description:
-      "A soaring Victorian glasshouse filled with overgrown ferns, damp gravel paths, and quiet stone pools.",
-    icon: "🌿",
+      "Condensation on wrought-iron glass, rare night-blooming flora, and hushed stillness.",
   },
 ];
 
-const OBJECTS_OF_ATTENTION = [
+const RELICS = [
   {
-    id: "letter",
-    title: "An Unsent Letter",
-    tagline: "Unspoken longing",
-    symbol: "✉",
+    id: "unsent_letter",
+    label: "Sealed Wax Letter",
+    note: "Addressed in familiar handwriting",
   },
   {
-    id: "prism",
-    title: "A Fractured Prism",
-    tagline: "Split spectral light",
-    symbol: "◇",
+    id: "crystal_prism",
+    label: "Optical Glass Prism",
+    note: "Splits white light into quiet spectra",
   },
   {
     id: "astrolabe",
-    title: "A Brass Astrolabe",
-    tagline: "Lost celestial coordinates",
-    symbol: "✦",
+    label: "Pocket Brass Astrolabe",
+    note: "Calibrated for unfamiliar latitudes",
   },
   {
-    id: "key",
-    title: "An Unmarked Key",
-    tagline: "A door not yet found",
-    symbol: "🗝",
+    id: "antique_key",
+    label: "Unmarked Iron Key",
+    note: "Warm to the touch, teeth worn smooth",
   },
 ];
 
-const PREFERRED_ACTIVITIES = [
+const ACTIVITIES = [
   {
-    id: "document",
-    title: "Document every nuance silently",
-    description: "Record flora, inscriptions, and architectural anomalies in an archival journal.",
+    id: "Document every detail quietly in a field journal",
+    short: "Observation & Record",
   },
   {
-    id: "chart",
-    title: "Chart the quickest route forward",
-    description: "Map terrain elevation, assess perimeter risks, and establish strategic orientation.",
+    id: "Chart the perimeter and map every hidden passage",
+    short: "Structure & Cartography",
   },
   {
-    id: "venture",
-    title: "Venture down unmapped corridors",
-    description: "Ignore posted directional markers and walk toward the unexplained glow in the distance.",
+    id: "Venture beyond the boundary wall toward the horizon",
+    short: "Threshold & Discovery",
   },
   {
-    id: "listen",
-    title: "Sit quietly and absorb the atmosphere",
-    description: "Rest on a stone ledge, listening to the ambient breeze and the passage of time.",
+    id: "Sit in stillness and absorb the atmosphere first",
+    short: "Presence & Resonance",
   },
 ];
 
 export function Chapter6UnknownWorld({
+  onTrackEvent,
+  onSavePreference,
   onComplete,
-  onEvent,
-  onPreference,
 }: Chapter6Props) {
-  const [selectedEnv, setSelectedEnv] = useState<string | null>(null);
-  const [selectedObj, setSelectedObj] = useState<string | null>(null);
-  const [selectedAct, setSelectedAct] = useState<string | null>(null);
-  const [isFinishing, setIsFinishing] = useState(false);
-  const startTimeRef = useRef<number>(0);
+  const prefersReducedMotion = useReducedMotion();
+  const mountTimeRef = useRef<number>(0);
+
+  const [selectedEnvId, setSelectedEnvId] = useState<string>("observatory");
+  const [confirmedEnv, setConfirmedEnv] = useState<boolean>(false);
+  const [selectedRelicLabel, setSelectedRelicLabel] = useState<string | null>(
+    null
+  );
+  const [selectedActivity, setSelectedActivity] = useState<string | null>(null);
+  const [isCompiling, setIsCompiling] = useState<boolean>(false);
 
   useEffect(() => {
-    startTimeRef.current = Date.now();
-    onEvent("chapter_started", { chapter: 6, title: "The Unknown World" });
-  }, [onEvent]);
+    mountTimeRef.current = performance.now();
+  }, []);
 
-  const handleFinish = () => {
-    if (!selectedEnv || !selectedObj || !selectedAct) return;
-    setIsFinishing(true);
+  const currentEnv =
+    ENVIRONMENTS.find((e) => e.id === selectedEnvId) || ENVIRONMENTS[0];
 
-    const envData = ENVIRONMENTS.find((e) => e.id === selectedEnv)!;
-    const objData = OBJECTS_OF_ATTENTION.find((o) => o.id === selectedObj)!;
-    const actData = PREFERRED_ACTIVITIES.find((a) => a.id === selectedAct)!;
+  const canComplete =
+    confirmedEnv && Boolean(selectedRelicLabel) && Boolean(selectedActivity);
 
-    // Explicit preferences recorded
-    onPreference("world_environment", envData.title);
-    onPreference("world_object", objData.title);
-    onPreference("world_activity", actData.title);
+  const handleFinalizeJourney = async () => {
+    if (!canComplete || !selectedRelicLabel || !selectedActivity || isCompiling)
+      return;
+    setIsCompiling(true);
 
-    const elapsed = Date.now() - startTimeRef.current;
-    onEvent("choice_selected", {
-      chapter: 6,
-      environment: envData.title,
-      object: objData.title,
-      activity: actData.title,
-      durationMs: elapsed,
+    await onSavePreference("world_environment", currentEnv.label);
+    await onSavePreference("world_object", selectedRelicLabel);
+    await onSavePreference("world_activity", selectedActivity);
+
+    const durationMs = Math.max(
+      120,
+      Math.round(performance.now() - mountTimeRef.current)
+    );
+
+    await onTrackEvent("choice_selected", {
+      choiceId: currentEnv.label,
+      environment: currentEnv.label,
+      relic: selectedRelicLabel,
+      activity: selectedActivity,
+      durationMs,
     });
 
-    onComplete({
-      environment: envData.title,
-      object: objData.title,
-      activity: actData.title,
+    await onTrackEvent("chapter_completed", {
+      environment: currentEnv.label,
+      relic: selectedRelicLabel,
+      activity: selectedActivity,
+      durationMs,
     });
+
+    onComplete();
   };
-
-  const isFormComplete = selectedEnv && selectedObj && selectedAct;
 
   return (
     <div className="space-y-8">
       {/* Header */}
-      <div className="space-y-2 border-b border-[#E8E2D8] pb-6">
-        <div className="flex items-center space-x-2 text-[#78716C] text-xs uppercase tracking-[0.2em]">
-          <Globe className="w-3.5 h-3.5" />
-          <span>The Horizon Threshold • Final Exploration</span>
+      <div className="space-y-2 border-b border-[#DDD4C5] pb-5">
+        <div className="flex items-center justify-between text-[11px] uppercase tracking-[0.24em] text-[#8A8178]">
+          <span>Chapter 06 · Final Threshold</span>
+          <span className="font-mono text-[#545E4E]">Closing Folio</span>
         </div>
-        <h2 className="text-2xl sm:text-3xl font-serif text-[#1C1917] font-normal">
+        <h1 className="font-serif text-3xl sm:text-4xl text-[#1C1917]">
           The Unknown World
-        </h2>
-        <p className="text-xs sm:text-sm text-[#78716C] italic font-serif">
-          The heavy library vault opens into an unmapped landscape. Where does your eye wander first?
-        </p>
+        </h1>
       </div>
 
-      {/* Part 1: Choose Environment */}
-      <div className="space-y-3">
-        <label className="block text-[11px] uppercase tracking-[0.2em] text-[#78716C]">
-          1. Select the Environment You Would Inhabit
-        </label>
+      <p className="font-serif text-lg leading-relaxed text-[#1C1917]">
+        The locks and transmissions are behind you. Four distinct sanctuaries
+        open beyond the terrace. Choose where you step, which relic you carry,
+        and how you spend your first hour.
+      </p>
 
+      {/* Live Architectural Horizon Plate */}
+      <figure className="border border-[#DDD4C5] rounded-sm overflow-hidden bg-[#181512]">
+        <WorldEnvironmentArtwork environmentId={selectedEnvId} />
+        <figcaption className="px-4 py-3 bg-[#141210] text-[#D6CEC0] text-xs flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+          <span className="font-serif text-sm text-[#FAF7F2]">
+            {currentEnv.label}
+          </span>
+          <span className="text-[11px] text-[#A89F93]">
+            {currentEnv.description}
+          </span>
+        </figcaption>
+      </figure>
+
+      {/* Step 1: Sanctuary Selection */}
+      <div className="space-y-3">
+        <p className="text-[11px] uppercase tracking-[0.22em] text-[#8A8178]">
+          01 · Choose Your Horizon
+        </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {ENVIRONMENTS.map((env) => {
-            const isSelected = selectedEnv === env.id;
+            const active = selectedEnvId === env.id && confirmedEnv;
+            const previewing = selectedEnvId === env.id;
             return (
               <button
                 key={env.id}
                 type="button"
-                onClick={() => setSelectedEnv(env.id)}
-                className={`p-4 rounded border text-left transition-all ${
-                  isSelected
-                    ? "border-[#1C1917] bg-[#FAF8F5] shadow-sm"
-                    : "border-[#E0D7CB] bg-[#F4EFE7]/50 hover:bg-[#FAF8F5] hover:border-[#8C827A]"
+                onClick={() => {
+                  setSelectedEnvId(env.id);
+                  setConfirmedEnv(true);
+                }}
+                aria-pressed={active}
+                className={`p-4 text-left border rounded-sm transition-all cursor-pointer ${
+                  active
+                    ? "bg-[#1C1917] text-[#FAF7F2] border-[#1C1917]"
+                    : previewing
+                    ? "bg-[#F3EDE2] text-[#1C1917] border-[#8A8178]"
+                    : "bg-[#FAF7F2] text-[#1C1917] border-[#DDD4C5] hover:bg-[#F3EDE2]"
                 }`}
               >
-                <div className="flex items-center justify-between mb-1">
-                  <span className="text-2xl">{env.icon}</span>
-                  {isSelected && (
-                    <span className="p-1 rounded-full bg-[#1C1917] text-[#FAF8F5]">
-                      <Check className="w-3 h-3" />
-                    </span>
-                  )}
-                </div>
-                <h4 className="text-xs uppercase tracking-wider font-semibold text-[#1C1917]">
-                  {env.title}
-                </h4>
-                <span className="text-[10px] text-[#5B6356] font-medium uppercase tracking-wider block mb-1">
-                  {env.subtitle}
-                </span>
-                <p className="text-xs text-[#78716C] leading-relaxed">
+                <span className="block font-serif text-lg">{env.label}</span>
+                <span
+                  className={`block text-xs mt-1 leading-relaxed ${
+                    active ? "text-[#D6CEC0]" : "text-[#57524C]"
+                  }`}
+                >
                   {env.description}
-                </p>
+                </span>
               </button>
             );
           })}
         </div>
       </div>
 
-      {/* Part 2: Object of Attention */}
-      <div className="space-y-3 pt-2">
-        <label className="block text-[11px] uppercase tracking-[0.2em] text-[#78716C]">
-          2. The Artifact That Compels Your Touch
-        </label>
-
+      {/* Step 2: Claim Relic */}
+      <motion.div
+        initial={prefersReducedMotion ? false : { opacity: 0.9 }}
+        animate={{ opacity: 1 }}
+        className="space-y-3"
+      >
+        <p className="text-[11px] uppercase tracking-[0.22em] text-[#8A8178]">
+          02 · Claim One Relic from the Parapet
+        </p>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-          {OBJECTS_OF_ATTENTION.map((obj) => {
-            const isSelected = selectedObj === obj.id;
+          {RELICS.map((relic) => {
+            const selected = selectedRelicLabel === relic.label;
             return (
               <button
-                key={obj.id}
+                key={relic.id}
                 type="button"
-                onClick={() => setSelectedObj(obj.id)}
-                className={`p-3 rounded border text-left transition-all ${
-                  isSelected
-                    ? "border-[#1C1917] bg-[#FAF8F5] shadow-sm"
-                    : "border-[#E0D7CB] bg-[#F4EFE7]/50 hover:border-[#8C827A]"
+                onClick={() => setSelectedRelicLabel(relic.label)}
+                aria-pressed={selected}
+                className={`p-4 text-left border rounded-sm transition-all cursor-pointer flex flex-col justify-between gap-3 ${
+                  selected
+                    ? "bg-[#1C1917] text-[#FAF7F2] border-[#1C1917]"
+                    : "bg-[#FAF7F2] text-[#1C1917] border-[#DDD4C5] hover:bg-[#F3EDE2]"
                 }`}
               >
-                <div className="text-xl mb-1">{obj.symbol}</div>
-                <h5 className="text-xs uppercase tracking-wider font-semibold text-[#1C1917] line-clamp-1">
-                  {obj.title}
-                </h5>
-                <p className="text-[10px] text-[#78716C] italic line-clamp-1">
-                  {obj.tagline}
-                </p>
+                <ArtifactVectorGlyph
+                  artifactId={relic.id}
+                  stroke={selected ? "#FAF7F2" : "#1C1917"}
+                  className="w-7 h-7"
+                />
+                <div>
+                  <span className="block text-xs font-medium">
+                    {relic.label}
+                  </span>
+                  <span
+                    className={`block text-[11px] mt-0.5 ${
+                      selected ? "text-[#D6CEC0]" : "text-[#8A8178]"
+                    }`}
+                  >
+                    {relic.note}
+                  </span>
+                </div>
               </button>
             );
           })}
         </div>
-      </div>
+      </motion.div>
 
-      {/* Part 3: Activity Preference */}
-      <div className="space-y-3 pt-2">
-        <label className="block text-[11px] uppercase tracking-[0.2em] text-[#78716C]">
-          3. Your Instinctive Mode of Being
-        </label>
-
+      {/* Step 3: First Deliberate Act */}
+      <div className="space-y-3">
+        <p className="text-[11px] uppercase tracking-[0.22em] text-[#8A8178]">
+          03 · Your First Hour Inside
+        </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          {PREFERRED_ACTIVITIES.map((act) => {
-            const isSelected = selectedAct === act.id;
+          {ACTIVITIES.map((act) => {
+            const selected = selectedActivity === act.id;
             return (
               <button
                 key={act.id}
                 type="button"
-                onClick={() => setSelectedAct(act.id)}
-                className={`p-4 rounded border text-left transition-all ${
-                  isSelected
-                    ? "border-[#1C1917] bg-[#FAF8F5] shadow-sm"
-                    : "border-[#E0D7CB] bg-[#F4EFE7]/50 hover:border-[#8C827A]"
+                onClick={() => setSelectedActivity(act.id)}
+                aria-pressed={selected}
+                className={`p-4 text-left border rounded-sm transition-all cursor-pointer ${
+                  selected
+                    ? "bg-[#1C1917] text-[#FAF7F2] border-[#1C1917]"
+                    : "bg-[#FAF7F2] text-[#1C1917] border-[#DDD4C5] hover:bg-[#F3EDE2]"
                 }`}
               >
-                <h5 className="text-xs uppercase tracking-wider font-semibold text-[#1C1917] mb-1">
-                  {act.title}
-                </h5>
-                <p className="text-xs text-[#78716C] leading-relaxed">
-                  {act.description}
-                </p>
+                <span
+                  className={`block text-[10px] uppercase tracking-[0.2em] ${
+                    selected ? "text-[#D8CCB8]" : "text-[#8A8178]"
+                  }`}
+                >
+                  {act.short}
+                </span>
+                <span className="block text-sm font-medium mt-1">{act.id}</span>
               </button>
             );
           })}
         </div>
       </div>
 
-      {/* Complete Journey CTA */}
-      <div className="pt-6 border-t border-[#E8E2D8] flex flex-col sm:flex-row items-center justify-between gap-4">
-        <div className="text-xs text-[#78716C]">
-          <span>All six chapters complete. Ready to compile your personal report.</span>
-        </div>
+      <div className="pt-4 border-t border-[#DDD4C5] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <p className="text-xs text-[#57524C]">
+          {!confirmedEnv
+            ? "Confirm your preferred horizon in Step 01 above to seal your journey."
+            : "Your explicit selections will be preserved alongside your behavioral dossier."}
+        </p>
 
         <Button
-          variant="primary"
+          type="button"
           size="lg"
-          onClick={handleFinish}
-          disabled={!isFormComplete || isFinishing}
-          className="w-full sm:w-auto"
+          disabled={!canComplete || isCompiling}
+          onClick={() => void handleFinalizeJourney()}
         >
-          {isFinishing ? (
-            "SYNTHESIZING REPORT..."
-          ) : (
-            <>
-              <span>CONCLUDE & VIEW REPORT</span>
-              <ArrowRight className="w-4 h-4 ml-2" />
-            </>
-          )}
+          <span>
+            {isCompiling ? "Compiling Monograph..." : "Reveal Your Report"}
+          </span>
+          <ArrowRight className="w-4 h-4 ml-2.5" />
         </Button>
       </div>
     </div>
   );
 }
-

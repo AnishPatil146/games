@@ -1,112 +1,235 @@
-import Link from "next/link";
-import { ShieldCheck, EyeOff, Lock, FileText, ArrowLeft } from "lucide-react";
+"use client";
+
+import { useState } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { Button } from "@/components/Button";
 
-export default function PrivacyPage() {
+export default function PrivacyGovernancePage() {
+  const [identifier, setIdentifier] = useState("");
+  const [reason, setReason] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [feedback, setFeedback] = useState<{
+    type: "success" | "error";
+    message: string;
+  } | null>(null);
+
+  const handleDeletionRequest = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setFeedback(null);
+
+    if (identifier.trim().length < 2) {
+      setFeedback({
+        type: "error",
+        message:
+          "Please provide the display name, Instagram handle, or session ID you wish to erase.",
+      });
+      return;
+    }
+
+    setIsSubmitting(true);
+    try {
+      const res = await fetch("/api/privacy/deletion", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          identifier: identifier.trim(),
+          reason: reason.trim() || undefined,
+        }),
+      });
+      const data = (await res.json()) as {
+        message?: string;
+        error?: string;
+      };
+      if (!res.ok) {
+        throw new Error(data.error || "Unable to submit deletion request.");
+      }
+      setFeedback({
+        type: "success",
+        message:
+          data.message ||
+          "Your deletion request has been logged for review and permanent removal.",
+      });
+      setIdentifier("");
+      setReason("");
+    } catch (err: unknown) {
+      setFeedback({
+        type: "error",
+        message:
+          err instanceof Error
+            ? err.message
+            : "Something went wrong submitting your request.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
-    <div className="min-h-screen flex flex-col bg-[#FAF8F5] text-[#1C1917]">
+    <div className="min-h-screen flex flex-col bg-[#FAF7F2] text-[#1C1917] paper-grain">
       <Header />
 
-      <main className="flex-1 max-w-2xl mx-auto px-6 py-12 sm:py-16 w-full space-y-10">
-        {/* Header */}
-        <div className="space-y-3 border-b border-[#E8E2D8] pb-6">
-          <Link
-            href="/"
-            className="inline-flex items-center text-xs uppercase tracking-wider text-[#78716C] hover:text-[#1C1917] transition-colors"
-          >
-            <ArrowLeft className="w-3.5 h-3.5 mr-1" />
-            <span>Return to Experience</span>
-          </Link>
-          <h1 className="text-3xl sm:text-4xl font-serif text-[#1C1917] font-normal">
-            Privacy & Methodology
+      <main className="flex-1 max-w-3xl w-full mx-auto px-5 sm:px-8 py-14 sm:py-20 space-y-12">
+        <header className="space-y-3 border-b border-[#DDD4C5] pb-7">
+          <p className="text-[11px] uppercase tracking-[0.28em] text-[#8A8178]">
+            Privacy, Ethics &amp; Data Governance
+          </p>
+          <h1 className="font-serif text-3xl sm:text-5xl text-[#1C1917]">
+            Transparent by design.
           </h1>
-          <p className="text-xs sm:text-sm text-[#78716C] italic font-serif">
-            Transparency regarding data collection, storage, and interpretive ethics.
+          <p className="text-sm sm:text-base text-[#57524C] leading-relaxed">
+            THE UNWRITTEN collects only the minimum gameplay telemetry required
+            to render your six-chapter narrative report, with voluntary identity
+            and straightforward erasure.
           </p>
+        </header>
+
+        <div className="space-y-8 text-sm text-[#1C1917] leading-relaxed">
+          <section className="space-y-2">
+            <h2 className="font-serif text-xl text-[#1C1917]">
+              1. Optional Personal Details
+            </h2>
+            <p className="text-[#57524C]">
+              Providing a Display Name or Instagram handle before Chapter 01 is{" "}
+              <strong>entirely optional</strong>, and requires checking an
+              explicit consent box before submission. Visitors who choose{" "}
+              <em>Continue Anonymously</em> experience the exact same story,
+              puzzles, and personalized final report without submitting any name
+              or social handle.
+            </p>
+          </section>
+
+          <section className="space-y-2">
+            <h2 className="font-serif text-xl text-[#1C1917]">
+              2. Gameplay Events &amp; Session Cookies
+            </h2>
+            <p className="text-[#57524C]">
+              During a playthrough, we record structured chapter events—such as
+              chapter starts, selected story branches, clues inspected, puzzle
+              attempt counts, hint usage, response timing, creative studio
+              selections, and optional referral campaign tags (such as{" "}
+              <code>utm_source</code>). An encrypted <code>httpOnly</code>{" "}
+              session token cookie binds your in-progress chapters to your
+              browser so refreshing a page preserves your place and prevents
+              others from guessing your report URL. We do not log or persist raw
+              IP addresses in our database.
+            </p>
+          </section>
+
+          <section className="space-y-2">
+            <h2 className="font-serif text-xl text-[#1C1917]">
+              3. Access Control &amp; Retention
+            </h2>
+            <p className="text-[#57524C]">
+              Submitted player profiles and session records are never sold,
+              shared with advertising networks, or listed publicly. Database
+              Row-Level Security restricts administrative review exclusively to
+              the single authenticated project curator. Records are retained
+              solely to maintain report links and aggregate story analytics, and
+              are permanently purged upon verified deletion request.
+            </p>
+          </section>
+
+          <section className="space-y-2">
+            <h2 className="font-serif text-xl text-[#1C1917]">
+              4. Non-Clinical Fictional Scope
+            </h2>
+            <p className="text-[#57524C]">
+              THE UNWRITTEN is an artistic work of interactive fiction. Its
+              seven archetypes summarize stylistic choices inside fictional
+              scenarios and must never be interpreted as clinical, medical,
+              cognitive, IQ, or psychological assessments.
+            </p>
+          </section>
         </div>
 
-        {/* Core Principles */}
-        <div className="space-y-6 text-sm text-[#292524] leading-relaxed">
-          <section className="space-y-2">
-            <h2 className="text-xs uppercase tracking-[0.2em] font-semibold text-[#1C1917] flex items-center space-x-2">
-              <EyeOff className="w-4 h-4 text-[#5B6356]" />
-              <span>1. Zero Covert Tracking</span>
-            </h2>
-            <p className="text-xs sm:text-sm text-[#57534E]">
-              THE UNWRITTEN does not employ browser canvas fingerprinting, biometric
-              tracking, covert keystroke logging, or clandestine third-party
-              marketing scripts. Arriving from an Instagram Story link does not and
-              cannot automatically expose your identity or account credentials.
+        {/* Interactive Personal Data Deletion Request Form */}
+        <section
+          aria-labelledby="deletion-heading"
+          className="p-6 sm:p-8 bg-[#F3EDE2]/80 border border-[#DDD4C5] rounded-sm space-y-5"
+        >
+          <div className="space-y-1">
+            <p className="text-[10px] uppercase tracking-[0.24em] text-[#9E6B68] font-semibold">
+              Right to Erasure
             </p>
-          </section>
-
-          <section className="space-y-2">
-            <h2 className="text-xs uppercase tracking-[0.2em] font-semibold text-[#1C1917] flex items-center space-x-2">
-              <ShieldCheck className="w-4 h-4 text-[#5B6356]" />
-              <span>2. Voluntary Profile Details</span>
+            <h2
+              id="deletion-heading"
+              className="font-serif text-2xl text-[#1C1917]"
+            >
+              Request Deletion of Personal Data
             </h2>
-            <p className="text-xs sm:text-sm text-[#57534E]">
-              Before entering, travelers may choose to play entirely anonymously
-              or optionally provide a display name and Instagram handle. If
-              provided, this information is stored alongside your in-game choices
-              and is solely accessible by the administrator to review participation
-              and curate personal narrative reports.
+            <p className="text-xs text-[#57524C] leading-relaxed">
+              Submitted a display name or Instagram handle and want your record
+              removed? Submit your identifier below and the curator queue will
+              permanently erase matching profile and session entries.
             </p>
-          </section>
+          </div>
 
-          <section className="space-y-2">
-            <h2 className="text-xs uppercase tracking-[0.2em] font-semibold text-[#1C1917] flex items-center space-x-2">
-              <Lock className="w-4 h-4 text-[#5B6356]" />
-              <span>3. Data Storage & Security</span>
-            </h2>
-            <p className="text-xs sm:text-sm text-[#57534E]">
-              All persisted gameplay data is housed in a secure Supabase PostgreSQL
-              database with strict server-side validation and Row Level Security
-              (RLS) policies. Other players cannot query the database or access
-              the records of fellow participants.
-            </p>
-          </section>
-
-          <section className="space-y-2">
-            <h2 className="text-xs uppercase tracking-[0.2em] font-semibold text-[#1C1917] flex items-center space-x-2">
-              <FileText className="w-4 h-4 text-[#5B6356]" />
-              <span>4. Interpretive Disclaimer</span>
-            </h2>
-            <p className="text-xs sm:text-sm text-[#57534E]">
-              The narrative archetypes (The Observer, The Strategist, The Creative
-              Soul, etc.) are deterministic game outcomes derived solely from your
-              fictional choices within these six chapters. They do not claim to
-              measure psychological health, clinical personality traits, or
-              cognitive aptitude.
-            </p>
-          </section>
-        </div>
-
-        {/* Consent Summary Box */}
-        <div className="p-5 rounded border border-[#E0D7CB] bg-[#F4EFE7] space-y-2 text-xs text-[#57534E]">
-          <span className="font-semibold uppercase tracking-wider text-[11px] text-[#1C1917] block">
-            Summary for Travelers
-          </span>
-          <p>
-            You have full sovereignty. You may explore without registering, inspect
-            every mystery, and receive your personal dossier without providing any
-            personally identifiable information.
-          </p>
-        </div>
-
-        <div className="pt-4">
-          <Link
-            href="/play"
-            className="inline-flex items-center justify-center px-6 py-3 bg-[#1C1917] text-[#FAF8F5] text-xs uppercase tracking-[0.2em] font-medium hover:bg-[#2F2B28] transition-colors rounded"
+          <form
+            onSubmit={(e) => void handleDeletionRequest(e)}
+            className="space-y-4"
           >
-            ENTER THE EXPERIENCE
-          </Link>
-        </div>
+            <div>
+              <label
+                htmlFor="erasure-identifier"
+                className="block text-[11px] uppercase tracking-[0.18em] text-[#57524C] mb-1.5"
+              >
+                Display Name, @Instagram Handle, or Session ID
+              </label>
+              <input
+                id="erasure-identifier"
+                type="text"
+                required
+                value={identifier}
+                onChange={(e) => setIdentifier(e.target.value)}
+                placeholder="e.g. @username or session UUID"
+                maxLength={120}
+                className="w-full px-4 py-2.5 bg-[#FAF7F2] border border-[#DDD4C5] rounded-sm text-sm text-[#1C1917] focus:outline-none focus:border-[#1C1917]"
+              />
+            </div>
+
+            <div>
+              <label
+                htmlFor="erasure-notes"
+                className="block text-[11px] uppercase tracking-[0.18em] text-[#57524C] mb-1.5"
+              >
+                Additional Context{" "}
+                <span className="text-[#8A8178] normal-case">(optional)</span>
+              </label>
+              <textarea
+                id="erasure-notes"
+                rows={2}
+                value={reason}
+                onChange={(e) => setReason(e.target.value)}
+                maxLength={500}
+                placeholder="Approximate date played or verification note"
+                className="w-full px-4 py-2.5 bg-[#FAF7F2] border border-[#DDD4C5] rounded-sm text-sm text-[#1C1917] focus:outline-none focus:border-[#1C1917]"
+              />
+            </div>
+
+            {feedback && (
+              <p
+                role="status"
+                className={`text-xs px-4 py-3 rounded-sm border ${
+                  feedback.type === "success"
+                    ? "bg-[#E9ECE6] text-[#545E4E] border-[#545E4E]/30"
+                    : "bg-[#F5EBEA] text-[#9E6B68] border-[#9E6B68]/30"
+                }`}
+              >
+                {feedback.message}
+              </p>
+            )}
+
+            <Button type="submit" size="md" disabled={isSubmitting}>
+              {isSubmitting
+                ? "Logging Request..."
+                : "Submit Deletion Request"}
+            </Button>
+          </form>
+        </section>
       </main>
 
       <Footer />
     </div>
   );
 }
-

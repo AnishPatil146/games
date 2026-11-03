@@ -1,542 +1,1168 @@
-import { createAdminClient } from "./supabase/server";
+import fs from "fs";
+import path from "path";
+import crypto from "crypto";
+import { createPrivilegedClient } from "./supabase/server";
+import { getEnvConfig } from "./env";
 import {
-  GameSession,
-  Player,
-  GameplayEvent,
-  PlayerPreference,
   AdminMetrics,
+  AdminPlayerListItem,
+  CampaignAttributionRow,
+  ChapterAnalyticsRow,
   CharacterPresentation,
+  ChoiceDistributionRow,
+  DeletionRequest,
+  GameSession,
+  GameplayEvent,
+  Player,
+  PlayerPreference,
+  PuzzleAnalyticsRow,
+  SessionStatus,
 } from "./types";
 
-// In-memory fallback store to ensure zero-crash resilience if DB tables are pending migration
-interface FallbackStore {
-  players: Map<string, Player>;
-  sessions: Map<string, GameSession>;
+interface LocalStoreData {
+  players: Player[];
+  sessions: (GameSession & { session_token: string })[];
   events: GameplayEvent[];
   preferences: PlayerPreference[];
+  deletionRequests: DeletionRequest[];
 }
 
-const globalFallbackStore: FallbackStore = {
-  players: new Map(),
-  sessions: new Map(),
+const LOCAL_STORE_PATH = path.join(process.cwd(), ".data", "local-store.json");
+
+let memoryStore: LocalStoreData = {
+  players: [],
+  sessions: [],
   events: [],
   preferences: [],
+  deletionRequests: [],
 };
 
-export async function getOrCreateSession(
-  sessionToken: string,
-  utmParams?: { source?: string; medium?: string; campaign?: string },
-  presentation: CharacterPresentation = "UNSPECIFIED"
-): Promise<GameSession> {
-  const supabase = createAdminClient();
-
+function readLocalStore(): LocalStoreData {
   try {
-    const { data: existingSession, error: fetchError } = await supabase
-      .from("game_sessions")
-      .select("*, player:players(*)")
-      .eq("session_token", sessionToken)
-      .maybeSingle();
-
-    if (!fetchError && existingSession) {
-      return existingSession as GameSession;
-    }
-
-    if (fetchError && fetchError.code !== "PGRST116") {
-      // Table may not exist yet or connection issue
-      console.warn("Supabase fetch session notice:", fetchError.message);
-      throw fetchError;
-    }
-
-    // Create new session in Supabase
-    const newSession = {
-      session_token: sessionToken,
-      character_presentation: presentation,
-      current_chapter: 1,
-      status: "in_progress",
-      started_at: new Date().toISOString(),
-      utm_source: utmParams?.source || null,
-      utm_medium: utmParams?.medium || null,
-      utm_campaign: utmParams?.campaign || null,
-    };
-
-    const { data: inserted, error: insertError } = await supabase
-      .from("game_sessions")
-      .insert([newSession])
-      .select("*, player:players(*)")
-      .single();
-
-    if (insertError) {
-      throw insertError;
-    }
-
-    return inserted as GameSession;
-  } catch (err) {
-    console.warn("Using in-memory fallback for session creation:", err);
-    let session = globalFallbackStore.sessions.get(sessionToken);
-    if (!session) {
-      session = {
-        id: "mem_" + Math.random().toString(36).substring(2, 10),
-        session_token: sessionToken,
-        character_presentation: presentation,
-        started_at: new Date().toISOString(),
-        current_chapter: 1,
-        status: "in_progress",
-        utm_source: utmParams?.source || null,
-        utm_medium: utmParams?.medium || null,
-        utm_campaign: utmParams?.campaign || null,
-        created_at: new Date().toISOString(),
+    if (fs.existsSync(LOCAL_STORE_PATH)) {
+      const raw = fs.readFileSync(LOCAL_STORE_PATH, "utf8");
+      const parsed = JSON.parse(raw) as Partial<LocalStoreData>;
+      memoryStore = {
+        players: Array.isArray(parsed.players) ? parsed.players : [],
+        sessions: Array.isArray(parsed.sessions) ? parsed.sessions : [],
+        events: Array.isArray(parsed.events) ? parsed.events : [],
+        preferences: Array.isArray(parsed.preferences) ? parsed.preferences : [],
+        deletionRequests: Array.isArray(parsed.deletionRequests)
+          ? parsed.deletionRequests
+          : [],
       };
-      globalFallbackStore.sessions.set(sessionToken, session);
     }
-    return session;
+  } catch {
+    // Serverless read-only fs fallback uses memoryStore cleanly
+  }
+  return memoryStore;
+}
+
+function writeLocalStore(data: LocalStoreData): void {
+  memoryStore = data;
+  try {
+    const dir = path.dirname(LOCAL_STORE_PATH);
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir, { recursive: true });
+    }
+    fs.writeFileSync(LOCAL_STORE_PATH, JSON.stringify(data, null, 2), "utf8");
+  } catch {
+    // Read-only filesystem in serverless; memoryStore remains active
   }
 }
 
-export async function updatePlayerProfile(
-  sessionId: string,
+function isSchemaMissingError(err: unknown): boolean {
+  if (!err || typeof err !== "object") return false;
+  const code = "code" in err ? String((err as { code?: unknown }).code) : "";
+  const msg = "message" in err ? String((err as { message?: unknown }).message) : "";
+  return (
+    code === "PGRST205" ||
+    code === "PGRST202" ||
+    code === "42P01" ||
+    code === "42883" ||
+    msg.includes("Could not find the table") ||
+    msg.includes("Could not find the function") ||
+    msg.includes("does not exist")
+  );
+}
+
+const CHAPTER_TITLES: Record<number, string> = {
+  1: "The Last Train",
+  2: "The Locked Room",
+  3: "The Unknown Message",
+  4: "The Empty Canvas",
+  5: "The Final Ten Seconds",
+  6: "The Unknown World",
+};
+
+const CHOICE_LABELS: Record<string, string> = {
+  return_wallet: "Return the Wallet",
+  call_out: "Call Out to Stranger",
+  investigate_first: "Inspect Wallet First",
+  catch_train: "Board the Train",
+  investigate_sender: "Trace Sender Metadata",
+  look_for_evidence: "Sweep Study Perimeter",
+  ignore_message: "Withhold Engagement",
+  confront_sender: "Demand Identity",
+  reply_immediately: "Send Direct Reply",
+};
+
+// =============================================================================
+// PUBLIC GAMEPLAY STORAGE (STRICTLY TOKEN-SCOPED)
+// =============================================================================
+
+export async function getOrCreateSession(
+  sessionToken: string,
+  campaign?: { source?: string; medium?: string; name?: string },
+  presentation: CharacterPresentation = "UNSPECIFIED"
+): Promise<{
+  session: Omit<GameSession, "session_token">;
+  playerDisplayName: string | null;
+}> {
+  const { isSupabaseConfigured } = getEnvConfig();
+
+  if (isSupabaseConfigured) {
+    const supabase = await createPrivilegedClient();
+    const { data, error } = await supabase.rpc("rpc_upsert_session", {
+      p_session_token: sessionToken,
+      p_presentation: presentation,
+      p_campaign_source: campaign?.source || null,
+      p_campaign_medium: campaign?.medium || null,
+      p_campaign_name: campaign?.name || null,
+    });
+
+    if (!error && data && typeof data === "object") {
+      const d = data as Record<string, unknown>;
+      return {
+        session: {
+          id: String(d.id),
+          player_id: (d.player_id as string | null) ?? null,
+          character_presentation:
+            (d.character_presentation as CharacterPresentation) || "UNSPECIFIED",
+          started_at: String(d.started_at),
+          completed_at: (d.completed_at as string | null) ?? null,
+          current_chapter: Number(d.current_chapter || 1),
+          status: (d.status as SessionStatus) || "in_progress",
+          result_archetype: (d.result_archetype as string | null) ?? null,
+          campaign_source: (d.campaign_source as string | null) ?? null,
+          campaign_medium: (d.campaign_medium as string | null) ?? null,
+          campaign_name: (d.campaign_name as string | null) ?? null,
+          created_at: String(d.created_at || d.started_at),
+        },
+        playerDisplayName: (d.player_display_name as string | null) ?? null,
+      };
+    }
+
+    if (error && !isSchemaMissingError(error)) {
+      throw new Error(`Session persistence error: ${error.message}`);
+    }
+  }
+
+  // Local store when Supabase schema is pending installation
+  const store = readLocalStore();
+  let existing = store.sessions.find((s) => s.session_token === sessionToken);
+  const now = new Date().toISOString();
+
+  if (!existing) {
+    existing = {
+      id: crypto.randomUUID(),
+      player_id: null,
+      session_token: sessionToken,
+      character_presentation: presentation,
+      started_at: now,
+      completed_at: null,
+      current_chapter: 1,
+      status: "in_progress",
+      result_archetype: null,
+      campaign_source: campaign?.source || null,
+      campaign_medium: campaign?.medium || null,
+      campaign_name: campaign?.name || null,
+      utm_source: campaign?.source || null,
+      utm_medium: campaign?.medium || null,
+      utm_campaign: campaign?.name || null,
+      created_at: now,
+    };
+    store.sessions.push(existing);
+    writeLocalStore(store);
+  } else if (
+    presentation !== "UNSPECIFIED" &&
+    existing.character_presentation === "UNSPECIFIED"
+  ) {
+    existing.character_presentation = presentation;
+    writeLocalStore(store);
+  }
+
+  const linkedPlayer = existing.player_id
+    ? store.players.find((p) => p.id === existing?.player_id)
+    : undefined;
+
+  const { session_token: _omitted, ...publicSession } = existing;
+  void _omitted;
+  return {
+    session: publicSession,
+    playerDisplayName: linkedPlayer?.display_name || null,
+  };
+}
+
+export async function updateSessionPresentationByToken(
+  sessionToken: string,
+  presentation: CharacterPresentation
+): Promise<void> {
+  const { isSupabaseConfigured } = getEnvConfig();
+  if (isSupabaseConfigured) {
+    const supabase = await createPrivilegedClient();
+    const { error } = await supabase.rpc("rpc_upsert_session", {
+      p_session_token: sessionToken,
+      p_presentation: presentation,
+      p_campaign_source: null,
+      p_campaign_medium: null,
+      p_campaign_name: null,
+    });
+    if (!error) return;
+    if (!isSchemaMissingError(error)) {
+      throw new Error(error.message);
+    }
+  }
+
+  const store = readLocalStore();
+  const existing = store.sessions.find((s) => s.session_token === sessionToken);
+  if (existing) {
+    existing.character_presentation = presentation;
+    writeLocalStore(store);
+  }
+}
+
+export async function submitProfileByToken(
+  sessionToken: string,
   profile: {
     displayName: string;
     instagramUsername?: string;
     consent: boolean;
-    characterPresentation?: CharacterPresentation;
+    characterPresentation: CharacterPresentation;
   }
-): Promise<{ player: Player; session: GameSession }> {
-  const supabase = createAdminClient();
+): Promise<{
+  playerId: string;
+  displayName: string;
+  characterPresentation: CharacterPresentation;
+  sessionId: string;
+}> {
+  if (!profile.consent) {
+    throw new Error("Explicit consent is required to link profile details.");
+  }
 
-  try {
-    // 1. Insert or update player
-    const { data: playerData, error: playerError } = await supabase
-      .from("players")
-      .insert([
-        {
-          display_name: profile.displayName,
-          instagram_username: profile.instagramUsername || null,
-          profile_consent: profile.consent,
-          character_presentation: profile.characterPresentation || "UNSPECIFIED",
-        },
-      ])
-      .select()
-      .single();
+  const { isSupabaseConfigured } = getEnvConfig();
+  if (isSupabaseConfigured) {
+    const supabase = await createPrivilegedClient();
+    const { data, error } = await supabase.rpc("rpc_submit_profile", {
+      p_session_token: sessionToken,
+      p_display_name: profile.displayName.trim(),
+      p_instagram_username: profile.instagramUsername || null,
+      p_consent: true,
+      p_presentation: profile.characterPresentation,
+    });
 
-    if (playerError) throw playerError;
-
-    // 2. Link player to session
-    const { data: sessionData, error: sessionError } = await supabase
-      .from("game_sessions")
-      .update({
-        player_id: playerData.id,
-        character_presentation:
-          profile.characterPresentation || "UNSPECIFIED",
-      })
-      .eq("id", sessionId)
-      .select("*, player:players(*)")
-      .single();
-
-    if (sessionError) throw sessionError;
-
-    return { player: playerData as Player, session: sessionData as GameSession };
-  } catch (err) {
-    console.warn("Fallback store for player profile update:", err);
-    const newPlayer: Player = {
-      id: "mem_p_" + Math.random().toString(36).substring(2, 9),
-      display_name: profile.displayName,
-      instagram_username: profile.instagramUsername,
-      profile_consent: profile.consent,
-      character_presentation: profile.characterPresentation || "UNSPECIFIED",
-      created_at: new Date().toISOString(),
-    };
-    globalFallbackStore.players.set(newPlayer.id, newPlayer);
-
-    // Update session in fallback store
-    for (const [token, s] of globalFallbackStore.sessions.entries()) {
-      if (s.id === sessionId || s.session_token === sessionId) {
-        s.player_id = newPlayer.id;
-        s.player = newPlayer;
-        if (profile.characterPresentation) {
-          s.character_presentation = profile.characterPresentation;
-        }
-        globalFallbackStore.sessions.set(token, s);
-        return { player: newPlayer, session: s };
-      }
+    if (!error && data && typeof data === "object") {
+      const d = data as Record<string, unknown>;
+      return {
+        playerId: String(d.player_id),
+        displayName: String(d.display_name),
+        characterPresentation:
+          (d.character_presentation as CharacterPresentation) || "UNSPECIFIED",
+        sessionId: String(d.session_id),
+      };
     }
 
-    return {
-      player: newPlayer,
-      session: {
-        id: sessionId,
-        session_token: sessionId,
-        character_presentation: profile.characterPresentation || "UNSPECIFIED",
-        started_at: new Date().toISOString(),
-        current_chapter: 1,
-        status: "in_progress",
-        created_at: new Date().toISOString(),
-        player: newPlayer,
-      },
+    if (error && !isSchemaMissingError(error)) {
+      throw new Error(`Profile persistence error: ${error.message}`);
+    }
+  }
+
+  const store = readLocalStore();
+  let session = store.sessions.find((s) => s.session_token === sessionToken);
+  const now = new Date().toISOString();
+
+  if (!session) {
+    session = {
+      id: crypto.randomUUID(),
+      player_id: null,
+      session_token: sessionToken,
+      character_presentation: profile.characterPresentation,
+      started_at: now,
+      completed_at: null,
+      current_chapter: 1,
+      status: "in_progress",
+      result_archetype: null,
+      created_at: now,
     };
+    store.sessions.push(session);
   }
+
+  const cleanIg = profile.instagramUsername
+    ? profile.instagramUsername.replace(/^@+/, "").trim() || null
+    : null;
+
+  let player = session.player_id
+    ? store.players.find((p) => p.id === session?.player_id)
+    : undefined;
+
+  if (player) {
+    player.display_name = profile.displayName.trim();
+    player.instagram_username = cleanIg;
+    player.profile_consent = true;
+    player.character_presentation = profile.characterPresentation;
+  } else {
+    player = {
+      id: crypto.randomUUID(),
+      display_name: profile.displayName.trim(),
+      instagram_username: cleanIg,
+      profile_consent: true,
+      character_presentation: profile.characterPresentation,
+      created_at: now,
+    };
+    store.players.push(player);
+  }
+
+  session.player_id = player.id;
+  session.character_presentation = profile.characterPresentation;
+  writeLocalStore(store);
+
+  return {
+    playerId: player.id,
+    displayName: player.display_name,
+    characterPresentation: session.character_presentation,
+    sessionId: session.id,
+  };
 }
 
-export async function recordGameplayEvent(
-  sessionId: string,
+export async function recordEventByToken(
+  sessionToken: string,
   chapter: number,
-  eventType: string,
-  eventData: Record<string, unknown>
-): Promise<void> {
-  const supabase = createAdminClient();
+  eventType: GameplayEvent["event_type"],
+  eventData: Record<string, unknown>,
+  resultArchetype?: string
+): Promise<{ recorded: boolean; deduplicated: boolean }> {
+  const { isSupabaseConfigured } = getEnvConfig();
 
-  try {
-    const { error } = await supabase.from("gameplay_events").insert([
-      {
-        session_id: sessionId,
-        chapter,
-        event_type: eventType,
-        event_data: eventData,
-      },
-    ]);
-
-    if (error) throw error;
-  } catch (err) {
-    console.warn("Fallback store for gameplay event:", err);
-    globalFallbackStore.events.push({
-      session_id: sessionId,
-      chapter,
-      event_type: eventType as any,
-      event_data: eventData,
-      created_at: new Date().toISOString(),
+  if (isSupabaseConfigured) {
+    const supabase = await createPrivilegedClient();
+    const { data, error } = await supabase.rpc("rpc_record_event", {
+      p_session_token: sessionToken,
+      p_chapter: chapter,
+      p_event_type: eventType,
+      p_event_data: eventData,
+      p_result_archetype: resultArchetype || null,
     });
+
+    if (!error && data && typeof data === "object") {
+      const d = data as Record<string, unknown>;
+      return {
+        recorded: Boolean(d.recorded),
+        deduplicated: Boolean(d.deduplicated),
+      };
+    }
+
+    if (error && !isSchemaMissingError(error)) {
+      throw new Error(`Event persistence error: ${error.message}`);
+    }
   }
+
+  const store = readLocalStore();
+  let session = store.sessions.find((s) => s.session_token === sessionToken);
+  const now = new Date().toISOString();
+
+  if (!session) {
+    session = {
+      id: crypto.randomUUID(),
+      player_id: null,
+      session_token: sessionToken,
+      character_presentation: "UNSPECIFIED",
+      started_at: now,
+      completed_at: null,
+      current_chapter: Math.max(1, Math.min(6, chapter || 1)),
+      status: "in_progress",
+      result_archetype: null,
+      created_at: now,
+    };
+    store.sessions.push(session);
+  }
+
+  // Deduplicate completion and landing events
+  if (
+    eventType === "chapter_completed" ||
+    eventType === "game_completed" ||
+    eventType === "landing_view"
+  ) {
+    const dup = store.events.find(
+      (e) =>
+        e.session_id === session?.id &&
+        e.chapter === chapter &&
+        e.event_type === eventType
+    );
+    if (dup) {
+      if (eventType === "game_completed" && resultArchetype) {
+        session.status = "completed";
+        session.completed_at = session.completed_at || now;
+        session.result_archetype = resultArchetype;
+        writeLocalStore(store);
+      }
+      return { recorded: true, deduplicated: true };
+    }
+  }
+
+  store.events.push({
+    id: crypto.randomUUID(),
+    session_id: session.id,
+    chapter,
+    event_type: eventType,
+    event_data: eventData,
+    created_at: now,
+  });
+
+  if (eventType === "chapter_started" && chapter >= 1 && chapter <= 6) {
+    session.current_chapter = Math.max(session.current_chapter, chapter);
+  } else if (eventType === "chapter_completed" && chapter >= 1 && chapter <= 6) {
+    session.current_chapter = Math.max(
+      session.current_chapter,
+      Math.min(6, chapter + 1)
+    );
+  } else if (eventType === "game_completed") {
+    session.status = "completed";
+    session.completed_at = session.completed_at || now;
+    session.current_chapter = 6;
+    if (resultArchetype) {
+      session.result_archetype = resultArchetype;
+    }
+  }
+
+  writeLocalStore(store);
+  return { recorded: true, deduplicated: false };
 }
 
-export async function recordPlayerPreference(
-  sessionId: string,
+export async function recordPreferenceByToken(
+  sessionToken: string,
   category: string,
   selectedValue: string
 ): Promise<void> {
-  const supabase = createAdminClient();
+  const { isSupabaseConfigured } = getEnvConfig();
 
-  try {
-    const { error } = await supabase.from("player_preferences").insert([
-      {
-        session_id: sessionId,
-        preference_category: category,
-        selected_value: selectedValue,
-      },
-    ]);
-
-    if (error) throw error;
-  } catch (err) {
-    console.warn("Fallback store for preference:", err);
-    globalFallbackStore.preferences.push({
-      session_id: sessionId,
-      preference_category: category,
-      selected_value: selectedValue,
-      created_at: new Date().toISOString(),
+  if (isSupabaseConfigured) {
+    const supabase = await createPrivilegedClient();
+    const { error } = await supabase.rpc("rpc_record_preference", {
+      p_session_token: sessionToken,
+      p_category: category,
+      p_selected_value: selectedValue,
     });
-  }
-}
 
-export async function updateSessionChapter(
-  sessionId: string,
-  chapter: number
-): Promise<void> {
-  const supabase = createAdminClient();
-
-  try {
-    const { error } = await supabase
-      .from("game_sessions")
-      .update({ current_chapter: chapter })
-      .eq("id", sessionId);
-
-    if (error) throw error;
-  } catch (err) {
-    console.warn("Fallback store for update chapter:", err);
-    for (const s of globalFallbackStore.sessions.values()) {
-      if (s.id === sessionId || s.session_token === sessionId) {
-        s.current_chapter = Math.max(s.current_chapter, chapter);
-      }
+    if (!error) return;
+    if (!isSchemaMissingError(error)) {
+      throw new Error(`Preference persistence error: ${error.message}`);
     }
   }
+
+  const store = readLocalStore();
+  const session = store.sessions.find((s) => s.session_token === sessionToken);
+  if (!session) {
+    throw new Error("Session not initialized.");
+  }
+
+  store.preferences = store.preferences.filter(
+    (p) =>
+      !(
+        p.session_id === session.id &&
+        p.preference_category === category &&
+        (category !== "canvas_object" || p.selected_value === selectedValue)
+      )
+  );
+
+  store.preferences.push({
+    id: crypto.randomUUID(),
+    session_id: session.id,
+    preference_category: category,
+    selected_value: selectedValue,
+    created_at: new Date().toISOString(),
+  });
+  writeLocalStore(store);
 }
 
-export async function completeGameSession(
-  sessionId: string,
-  archetype: string
-): Promise<void> {
-  const supabase = createAdminClient();
+/**
+ * Public-safe session dossier lookup for /result/[sessionId] and /api/session/state.
+ * NEVER returns instagram_username or session_token.
+ * NEVER fabricates a session if lookup does not exist.
+ */
+export async function getPublicSessionDossier(
+  lookupIdOrToken: string,
+  computedArchetypeToSave?: string
+): Promise<{
+  session: Omit<GameSession, "session_token" | "player">;
+  playerDisplayName: string | null;
+  events: GameplayEvent[];
+  preferences: PlayerPreference[];
+} | null> {
+  const { isSupabaseConfigured } = getEnvConfig();
 
-  try {
-    const { error } = await supabase
-      .from("game_sessions")
-      .update({
-        status: "completed",
-        completed_at: new Date().toISOString(),
-        result_archetype: archetype,
-      })
-      .eq("id", sessionId);
+  if (isSupabaseConfigured) {
+    const supabase = await createPrivilegedClient();
+    const { data, error } = await supabase.rpc("rpc_get_session_dossier", {
+      p_lookup: lookupIdOrToken,
+      p_archetype_if_complete: computedArchetypeToSave || null,
+    });
 
-    if (error) throw error;
-  } catch (err) {
-    console.warn("Fallback store for complete session:", err);
-    for (const s of globalFallbackStore.sessions.values()) {
-      if (s.id === sessionId || s.session_token === sessionId) {
-        s.status = "completed";
-        s.completed_at = new Date().toISOString();
-        s.result_archetype = archetype;
-      }
+    if (!error) {
+      if (!data || typeof data !== "object") return null;
+      const d = data as Record<string, unknown>;
+      const s = (d.session || {}) as Record<string, unknown>;
+      return {
+        session: {
+          id: String(s.id),
+          character_presentation:
+            (s.character_presentation as CharacterPresentation) || "UNSPECIFIED",
+          started_at: String(s.started_at),
+          completed_at: (s.completed_at as string | null) ?? null,
+          current_chapter: Number(s.current_chapter || 1),
+          status: (s.status as SessionStatus) || "in_progress",
+          result_archetype: (s.result_archetype as string | null) ?? null,
+          created_at: String(s.created_at || s.started_at),
+        },
+        playerDisplayName: (d.player_display_name as string | null) ?? null,
+        events: Array.isArray(d.events) ? (d.events as GameplayEvent[]) : [],
+        preferences: Array.isArray(d.preferences)
+          ? (d.preferences as PlayerPreference[])
+          : [],
+      };
+    }
+
+    if (!isSchemaMissingError(error)) {
+      throw new Error(`Result lookup error: ${error.message}`);
     }
   }
+
+  const store = readLocalStore();
+  const matched = store.sessions.find(
+    (s) => s.id === lookupIdOrToken || s.session_token === lookupIdOrToken
+  );
+
+  if (!matched) {
+    return null;
+  }
+
+  if (computedArchetypeToSave && !matched.result_archetype) {
+    matched.result_archetype = computedArchetypeToSave;
+    if (matched.current_chapter >= 6) {
+      matched.status = "completed";
+      matched.completed_at = matched.completed_at || new Date().toISOString();
+    }
+    writeLocalStore(store);
+  }
+
+  const linkedPlayer = matched.player_id
+    ? store.players.find((p) => p.id === matched.player_id)
+    : undefined;
+
+  const events = store.events
+    .filter((e) => e.session_id === matched.id)
+    .sort(
+      (a, b) =>
+        new Date(a.created_at || 0).getTime() -
+        new Date(b.created_at || 0).getTime()
+    );
+
+  const preferences = store.preferences.filter((p) => p.session_id === matched.id);
+
+  const { session_token: _omitted, ...publicSession } = matched;
+  void _omitted;
+
+  return {
+    session: publicSession,
+    playerDisplayName: linkedPlayer?.display_name || null,
+    events,
+    preferences,
+  };
 }
 
-export async function getSessionFullData(sessionId: string) {
-  const supabase = createAdminClient();
+export async function submitDeletionRequest(
+  identifier: string,
+  reason?: string
+): Promise<{ requestId: string }> {
+  const { isSupabaseConfigured } = getEnvConfig();
 
-  try {
-    // Check by id or session_token
-    let query = supabase
-      .from("game_sessions")
-      .select("*, player:players(*)");
+  if (isSupabaseConfigured) {
+    const supabase = await createPrivilegedClient();
+    const { data, error } = await supabase.rpc("rpc_submit_deletion_request", {
+      p_identifier: identifier.trim(),
+      p_reason: reason?.trim() || null,
+    });
 
-    if (sessionId.includes("-") && sessionId.length > 20) {
-      query = query.or(`id.eq.${sessionId},session_token.eq.${sessionId}`);
-    } else {
-      query = query.eq("session_token", sessionId);
+    if (!error && data && typeof data === "object") {
+      const d = data as Record<string, unknown>;
+      return { requestId: String(d.request_id) };
     }
 
-    const { data: session, error: sessionErr } = await query.maybeSingle();
+    if (error && !isSchemaMissingError(error)) {
+      throw new Error(`Deletion request error: ${error.message}`);
+    }
+  }
 
-    if (sessionErr || !session) throw sessionErr || new Error("Session not found");
+  const store = readLocalStore();
+  const reqItem: DeletionRequest = {
+    id: crypto.randomUUID(),
+    identifier: identifier.trim(),
+    reason: reason?.trim() || null,
+    status: "pending",
+    created_at: new Date().toISOString(),
+  };
+  store.deletionRequests.push(reqItem);
+  writeLocalStore(store);
 
-    const [{ data: events }, { data: preferences }] = await Promise.all([
+  return { requestId: reqItem.id };
+}
+
+// =============================================================================
+// PRIVATE ADMINISTRATOR CONTROL CENTRE QUERIES (SERVER-SIDE AUTHORIZED ONLY)
+// =============================================================================
+
+async function loadRawAdminDataset(): Promise<{
+  backend: "supabase" | "local_fallback";
+  schemaReady: boolean;
+  schemaNotice?: string;
+  players: Player[];
+  sessions: GameSession[];
+  events: GameplayEvent[];
+  preferences: PlayerPreference[];
+  deletionRequests: DeletionRequest[];
+}> {
+  const { isSupabaseConfigured } = getEnvConfig();
+
+  if (isSupabaseConfigured) {
+    const supabase = await createPrivilegedClient();
+    const [playersRes, sessionsRes, eventsRes, prefsRes, delRes] = await Promise.all([
+      supabase.from("players").select("*").order("created_at", { ascending: false }),
+      supabase
+        .from("game_sessions")
+        .select("*, player:players(*)")
+        .order("started_at", { ascending: false }),
       supabase
         .from("gameplay_events")
         .select("*")
-        .eq("session_id", session.id)
         .order("created_at", { ascending: true }),
       supabase
         .from("player_preferences")
         .select("*")
-        .eq("session_id", session.id)
         .order("created_at", { ascending: true }),
+      supabase
+        .from("deletion_requests")
+        .select("*")
+        .order("created_at", { ascending: false }),
     ]);
 
-    return {
-      session: session as GameSession,
-      player: (session.player as Player) || null,
-      events: (events || []) as GameplayEvent[],
-      preferences: (preferences || []) as PlayerPreference[],
-    };
-  } catch (err) {
-    console.warn("Fallback store for getSessionFullData:", err);
-    let matchedSession: GameSession | undefined;
-    for (const s of globalFallbackStore.sessions.values()) {
-      if (s.id === sessionId || s.session_token === sessionId) {
-        matchedSession = s;
-        break;
-      }
-    }
+    const primaryErr = playersRes.error || sessionsRes.error || eventsRes.error;
 
-    if (!matchedSession) {
-      // create simulated anonymous session if needed
-      matchedSession = {
-        id: sessionId,
-        session_token: sessionId,
-        character_presentation: "UNSPECIFIED",
-        started_at: new Date().toISOString(),
-        current_chapter: 6,
-        status: "completed",
-        result_archetype: "The Observer",
-        created_at: new Date().toISOString(),
+    if (!primaryErr) {
+      return {
+        backend: "supabase",
+        schemaReady: true,
+        players: (playersRes.data || []) as Player[],
+        sessions: (sessionsRes.data || []) as GameSession[],
+        events: (eventsRes.data || []) as GameplayEvent[],
+        preferences: (prefsRes.data || []) as PlayerPreference[],
+        deletionRequests: delRes.error ? [] : ((delRes.data || []) as DeletionRequest[]),
       };
     }
 
-    const matchedEvents = globalFallbackStore.events.filter(
-      (e) => e.session_id === matchedSession?.id || e.session_id === sessionId
-    );
-    const matchedPrefs = globalFallbackStore.preferences.filter(
-      (p) => p.session_id === matchedSession?.id || p.session_id === sessionId
+    if (!isSchemaMissingError(primaryErr)) {
+      throw new Error(`Database query failed: ${primaryErr.message}`);
+    }
+  }
+
+  const store = readLocalStore();
+  const playersById = new Map(store.players.map((p) => [p.id, p]));
+  const joinedSessions: GameSession[] = store.sessions
+    .map((s) => ({
+      ...s,
+      player: s.player_id ? playersById.get(s.player_id) || null : null,
+    }))
+    .sort(
+      (a, b) =>
+        new Date(b.started_at).getTime() - new Date(a.started_at).getTime()
     );
 
-    return {
-      session: matchedSession,
-      player: matchedSession.player || null,
-      events: matchedEvents,
-      preferences: matchedPrefs,
-    };
-  }
+  return {
+    backend: "local_fallback",
+    schemaReady: false,
+    schemaNotice:
+      "Supabase tables are not yet installed in this project. Showing strictly real local events; run supabase/schema.sql in Supabase SQL Editor to activate PostgreSQL storage.",
+    players: [...store.players].sort(
+      (a, b) =>
+        new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
+    ),
+    sessions: joinedSessions,
+    events: store.events,
+    preferences: store.preferences,
+    deletionRequests: store.deletionRequests,
+  };
 }
 
 export async function getAdminMetrics(): Promise<AdminMetrics> {
-  const supabase = createAdminClient();
+  const dataset = await loadRawAdminDataset();
+  const { players, sessions, events } = dataset;
 
-  try {
-    const [{ data: sessions, error: sErr }, { data: events, error: eErr }] =
-      await Promise.all([
-        supabase
-          .from("game_sessions")
-          .select("*, player:players(*)")
-          .order("started_at", { ascending: false }),
-        supabase
-          .from("gameplay_events")
-          .select("*")
-          .order("created_at", { ascending: false }),
-      ]);
+  const landingViewCount = events.filter(
+    (e) => e.event_type === "landing_view"
+  ).length;
+  const uniqueSessions = sessions.length;
+  const totalVisits = landingViewCount;
 
-    if (sErr || eErr) throw sErr || eErr;
+  const registeredSessionsCount = sessions.filter((s) => Boolean(s.player_id)).length;
+  const registeredPlayers = players.length;
+  const anonymousPlayers = Math.max(0, uniqueSessions - registeredSessionsCount);
 
-    const allSessions = (sessions || []) as GameSession[];
-    const allEvents = (events || []) as GameplayEvent[];
+  const startedSessionIds = new Set<string>();
+  for (const ev of events) {
+    if (ev.event_type === "game_started" || ev.event_type === "chapter_started") {
+      startedSessionIds.add(ev.session_id);
+    }
+  }
+  const gamesStarted = startedSessionIds.size;
 
-    const totalVisits = allEvents.filter((e) => e.event_type === "landing_view").length || allSessions.length;
-    const uniqueSessions = allSessions.length;
-    const registeredPlayers = allSessions.filter((s) => s.player_id).length;
-    const anonymousPlayers = uniqueSessions - registeredPlayers;
-    const gamesCompleted = allSessions.filter((s) => s.status === "completed").length;
-    const gamesInProgress = allSessions.filter((s) => s.status === "in_progress").length;
-    const completionRate = uniqueSessions > 0 ? Math.round((gamesCompleted / uniqueSessions) * 100) : 0;
+  const completedSessions = sessions.filter((s) => s.status === "completed");
+  const gamesCompleted = completedSessions.length;
+  const gamesInProgress = sessions.filter(
+    (s) => s.status === "in_progress" && startedSessionIds.has(s.id)
+  ).length;
 
-    // Chapter drop off
-    const chapterNames = [
-      "The Last Train",
-      "The Locked Room",
-      "The Unknown Message",
-      "The Empty Canvas",
-      "The Final Ten Seconds",
-      "The Unknown World",
-    ];
+  const completionDenominator = gamesStarted > 0 ? gamesStarted : uniqueSessions;
+  const completionRatePct =
+    completionDenominator > 0
+      ? Math.round((gamesCompleted / completionDenominator) * 100)
+      : null;
 
-    const chapterDropOff = [1, 2, 3, 4, 5, 6].map((ch, idx) => {
-      const reached = allSessions.filter((s) => s.current_chapter >= ch).length;
-      const previousReached = idx === 0 ? uniqueSessions : allSessions.filter((s) => s.current_chapter >= ch - 1).length;
-      const dropOffPct = previousReached > 0 ? Math.round(((previousReached - reached) / previousReached) * 100) : 0;
-      return {
-        chapter: ch,
-        title: chapterNames[idx],
-        sessionsReached: reached,
-        dropOffPct: Math.max(0, dropOffPct),
-      };
-    });
-
-    // Top choices
-    const choiceEvents = allEvents.filter((e) => e.event_type === "choice_selected");
-    const choiceCounts: Record<string, { chapter: number; action: string; count: number }> = {};
-
-    choiceEvents.forEach((ev) => {
-      const action = (ev.event_data?.choiceId || ev.event_data?.action || "Unknown") as string;
-      const key = `${ev.chapter}_${action}`;
-      if (!choiceCounts[key]) {
-        choiceCounts[key] = { chapter: ev.chapter, action, count: 0 };
+  // Average completion duration (measured strictly from started_at to completed_at)
+  const validCompletionDurationsSec: number[] = [];
+  for (const s of completedSessions) {
+    if (s.started_at && s.completed_at) {
+      const diffSec =
+        (new Date(s.completed_at).getTime() - new Date(s.started_at).getTime()) /
+        1000;
+      if (diffSec > 0 && diffSec < 86_400) {
+        validCompletionDurationsSec.push(diffSec);
       }
-      choiceCounts[key].count += 1;
-    });
+    }
+  }
+  const avgCompletionDurationSeconds =
+    validCompletionDurationsSec.length > 0
+      ? Math.round(
+          validCompletionDurationsSec.reduce((acc, v) => acc + v, 0) /
+            validCompletionDurationsSec.length
+        )
+      : null;
 
-    const topChoices = Object.values(choiceCounts)
-      .sort((a, b) => b.count - a.count)
-      .slice(0, 10);
+  // Per-chapter engagement, completion, drop-off & average duration
+  const chapterAnalytics: ChapterAnalyticsRow[] = [1, 2, 3, 4, 5, 6].map((ch) => {
+    const startedSet = new Set<string>();
+    const completedSet = new Set<string>();
+    const startTimes = new Map<string, number>();
+    const durationsSec: number[] = [];
 
-    // Puzzle stats
-    const puzzleAttempts = allEvents.filter((e) => e.event_type === "puzzle_attempted");
-    const hintEvents = allEvents.filter((e) => e.event_type === "hint_used");
+    for (const s of sessions) {
+      if (s.current_chapter > ch || s.status === "completed") {
+        startedSet.add(s.id);
+        completedSet.add(s.id);
+      } else if (s.current_chapter === ch && startedSessionIds.has(s.id)) {
+        startedSet.add(s.id);
+      }
+    }
 
-    const puzzleStats = [2, 5].map((ch) => {
-      const attempts = puzzleAttempts.filter((e) => e.chapter === ch);
-      const hints = hintEvents.filter((e) => e.chapter === ch).length;
-      const successful = attempts.filter((e) => e.event_data?.isCorrect === true).length;
-      const rate = attempts.length > 0 ? Math.round((successful / attempts.length) * 100) : 0;
-      return {
-        chapter: ch,
-        puzzleName: ch === 2 ? "The Clock & Note Cipher" : "The Rapid Logic Challenge",
-        totalAttempts: attempts.length,
-        successRate: rate,
-        hintsUsedTotal: hints,
-      };
-    });
-
-    // Campaign Attribution
-    const campaignCounts: Record<string, { source: string; medium: string; campaign: string; count: number }> = {};
-    allSessions.forEach((s) => {
-      if (s.utm_source || s.utm_campaign) {
-        const key = `${s.utm_source || "direct"}_${s.utm_medium || "none"}_${s.utm_campaign || "none"}`;
-        if (!campaignCounts[key]) {
-          campaignCounts[key] = {
-            source: s.utm_source || "direct",
-            medium: s.utm_medium || "none",
-            campaign: s.utm_campaign || "none",
-            count: 0,
-          };
+    for (const ev of events) {
+      if (ev.chapter !== ch) continue;
+      if (ev.event_type === "chapter_started") {
+        startedSet.add(ev.session_id);
+        if (ev.created_at && !startTimes.has(ev.session_id)) {
+          startTimes.set(ev.session_id, new Date(ev.created_at).getTime());
         }
-        campaignCounts[key].count += 1;
+      } else if (ev.event_type === "chapter_completed") {
+        startedSet.add(ev.session_id);
+        completedSet.add(ev.session_id);
+        const explicitMs = Number(
+          ev.event_data?.durationMs || ev.event_data?.timeMs || 0
+        );
+        if (explicitMs > 0 && explicitMs < 3_600_000) {
+          durationsSec.push(explicitMs / 1000);
+        } else if (ev.created_at && startTimes.has(ev.session_id)) {
+          const deltaSec =
+            (new Date(ev.created_at).getTime() -
+              (startTimes.get(ev.session_id) || 0)) /
+            1000;
+          if (deltaSec > 0 && deltaSec < 3_600) {
+            durationsSec.push(deltaSec);
+          }
+        }
       }
-    });
+    }
 
-    const campaignAttribution = Object.values(campaignCounts).sort((a, b) => b.count - a.count);
-
-    return {
-      totalVisits,
-      uniqueSessions,
-      registeredPlayers,
-      anonymousPlayers,
-      gamesCompleted,
-      gamesInProgress,
-      completionRate,
-      chapterDropOff,
-      topChoices,
-      puzzleStats,
-      campaignAttribution,
-    };
-  } catch (err) {
-    console.warn("Fallback store for getAdminMetrics:", err);
-    const sessions = Array.from(globalFallbackStore.sessions.values());
-    const events = globalFallbackStore.events;
-
-    const uniqueSessions = sessions.length;
-    const registeredPlayers = sessions.filter((s) => s.player_id).length;
-    const anonymousPlayers = uniqueSessions - registeredPlayers;
-    const gamesCompleted = sessions.filter((s) => s.status === "completed").length;
-    const gamesInProgress = sessions.filter((s) => s.status === "in_progress").length;
-    const completionRate = uniqueSessions > 0 ? Math.round((gamesCompleted / uniqueSessions) * 100) : 0;
+    const sessionsStarted = startedSet.size;
+    const sessionsCompleted = completedSet.size;
+    const completionPct =
+      sessionsStarted > 0
+        ? Math.round((sessionsCompleted / sessionsStarted) * 100)
+        : null;
+    const dropOffPct =
+      sessionsStarted > 0
+        ? Math.max(
+            0,
+            Math.round(((sessionsStarted - sessionsCompleted) / sessionsStarted) * 100)
+          )
+        : null;
+    const avgDurationSeconds =
+      durationsSec.length > 0
+        ? Math.round(
+            durationsSec.reduce((sum, d) => sum + d, 0) / durationsSec.length
+          )
+        : null;
 
     return {
-      totalVisits: Math.max(events.filter((e) => e.event_type === "landing_view").length, uniqueSessions),
-      uniqueSessions,
-      registeredPlayers,
-      anonymousPlayers,
-      gamesCompleted,
-      gamesInProgress,
-      completionRate,
-      chapterDropOff: [
-        { chapter: 1, title: "The Last Train", sessionsReached: uniqueSessions, dropOffPct: 0 },
-        { chapter: 2, title: "The Locked Room", sessionsReached: Math.round(uniqueSessions * 0.85), dropOffPct: 15 },
-        { chapter: 3, title: "The Unknown Message", sessionsReached: Math.round(uniqueSessions * 0.75), dropOffPct: 10 },
-        { chapter: 4, title: "The Empty Canvas", sessionsReached: Math.round(uniqueSessions * 0.65), dropOffPct: 10 },
-        { chapter: 5, title: "The Final Ten Seconds", sessionsReached: Math.round(uniqueSessions * 0.55), dropOffPct: 10 },
-        { chapter: 6, title: "The Unknown World", sessionsReached: gamesCompleted, dropOffPct: 5 },
-      ],
-      topChoices: [],
-      puzzleStats: [
-        { chapter: 2, puzzleName: "The Clock & Note Cipher", totalAttempts: 0, successRate: 0, hintsUsedTotal: 0 },
-        { chapter: 5, puzzleName: "The Rapid Logic Challenge", totalAttempts: 0, successRate: 0, hintsUsedTotal: 0 },
-      ],
-      campaignAttribution: [],
+      chapter: ch,
+      title: CHAPTER_TITLES[ch],
+      sessionsStarted,
+      sessionsCompleted,
+      completionRatePct: completionPct,
+      dropOffPct,
+      avgDurationSeconds,
     };
-  }
-}
+  });
 
-export async function getAdminPlayersList() {
-  const supabase = createAdminClient();
+  // Most selected choices across chapters
+  const choiceEvents = events.filter((e) => e.event_type === "choice_selected");
+  const chapterChoiceTotals = new Map<number, number>();
+  const choiceMap = new Map<
+    string,
+    { chapter: number; choiceKey: string; count: number }
+  >();
 
-  try {
-    const { data: sessions, error } = await supabase
-      .from("game_sessions")
-      .select("*, player:players(*)")
-      .order("started_at", { ascending: false });
+  for (const ev of choiceEvents) {
+    const rawKey =
+      (ev.event_data?.choiceId as string | undefined) ||
+      (ev.event_data?.environment as string | undefined) ||
+      (ev.event_data?.mood as string | undefined);
+    if (!rawKey) continue;
 
-    if (error) throw error;
-    return (sessions || []) as GameSession[];
-  } catch (err) {
-    console.warn("Fallback store for getAdminPlayersList:", err);
-    return Array.from(globalFallbackStore.sessions.values()).sort(
-      (a, b) => new Date(b.started_at).getTime() - new Date(a.started_at).getTime()
+    chapterChoiceTotals.set(
+      ev.chapter,
+      (chapterChoiceTotals.get(ev.chapter) || 0) + 1
     );
+    const mapKey = `${ev.chapter}::${rawKey}`;
+    const current = choiceMap.get(mapKey);
+    if (current) {
+      current.count += 1;
+    } else {
+      choiceMap.set(mapKey, {
+        chapter: ev.chapter,
+        choiceKey: rawKey,
+        count: 1,
+      });
+    }
   }
+
+  const choiceDistributions: ChoiceDistributionRow[] = Array.from(
+    choiceMap.values()
+  )
+    .map((item) => {
+      const chTotal = chapterChoiceTotals.get(item.chapter) || 1;
+      return {
+        chapter: item.chapter,
+        chapterTitle: CHAPTER_TITLES[item.chapter] || `Chapter ${item.chapter}`,
+        choiceKey: item.choiceKey,
+        choiceLabel: CHOICE_LABELS[item.choiceKey] || item.choiceKey,
+        count: item.count,
+        sharePct: Math.round((item.count / chTotal) * 100),
+      };
+    })
+    .sort((a, b) => b.count - a.count);
+
+  // Puzzle analytics (Chapters 2 & 5)
+  const puzzleAnalytics: PuzzleAnalyticsRow[] = [
+    { chapter: 2, puzzleName: "Archive Clock & Tumbler Cipher" },
+    { chapter: 5, puzzleName: "Ten-Second Vault Relay" },
+  ].map(({ chapter, puzzleName }) => {
+    const chAttempts = events.filter(
+      (e) => e.chapter === chapter && e.event_type === "puzzle_attempted"
+    );
+    const chHints = events.filter(
+      (e) => e.chapter === chapter && e.event_type === "hint_used"
+    );
+
+    const attemptedSessions = new Set(chAttempts.map((a) => a.session_id));
+    const solvedSessions = new Set(
+      chAttempts
+        .filter((a) => a.event_data?.isCorrect === true)
+        .map((a) => a.session_id)
+    );
+    const correctAttempts = chAttempts.filter(
+      (a) => a.event_data?.isCorrect === true
+    );
+
+    const solveTimesSec: number[] = [];
+    for (const ca of correctAttempts) {
+      const ms = Number(
+        ca.event_data?.timeToSolveMs || ca.event_data?.durationMs || 0
+      );
+      if (ms > 0 && ms < 600_000) {
+        solveTimesSec.push(ms / 1000);
+      }
+    }
+
+    return {
+      chapter,
+      puzzleName,
+      sessionsAttempted: attemptedSessions.size,
+      totalAttempts: chAttempts.length,
+      sessionsSolved: solvedSessions.size,
+      completionRatePct:
+        attemptedSessions.size > 0
+          ? Math.round((solvedSessions.size / attemptedSessions.size) * 100)
+          : null,
+      accuracyRatePct:
+        chAttempts.length > 0
+          ? Math.round((correctAttempts.length / chAttempts.length) * 100)
+          : null,
+      hintsUsedTotal: chHints.length,
+      avgSolveSeconds:
+        solveTimesSec.length > 0
+          ? Math.round(
+              (solveTimesSec.reduce((sum, v) => sum + v, 0) /
+                solveTimesSec.length) *
+                10
+            ) / 10
+          : null,
+    };
+  });
+
+  // Campaign attribution
+  const campMap = new Map<string, CampaignAttributionRow>();
+  for (const s of sessions) {
+    const source = s.campaign_source || s.utm_source || "direct";
+    const medium = s.campaign_medium || s.utm_medium || "none";
+    const campaign = s.campaign_name || s.utm_campaign || "none";
+    const key = `${source}|${medium}|${campaign}`;
+    const existing = campMap.get(key);
+    if (existing) {
+      existing.sessions += 1;
+      if (s.status === "completed") existing.completed += 1;
+    } else {
+      campMap.set(key, {
+        source,
+        medium,
+        campaign,
+        sessions: 1,
+        completed: s.status === "completed" ? 1 : 0,
+      });
+    }
+  }
+  const campaignAttribution = Array.from(campMap.values()).sort(
+    (a, b) => b.sessions - a.sessions
+  );
+
+  // Archetype distribution across completed sessions
+  const archCounts = new Map<string, number>();
+  for (const s of completedSessions) {
+    if (s.result_archetype) {
+      archCounts.set(
+        s.result_archetype,
+        (archCounts.get(s.result_archetype) || 0) + 1
+      );
+    }
+  }
+  const archetypeDistribution = Array.from(archCounts.entries())
+    .map(([archetype, count]) => ({ archetype, count }))
+    .sort((a, b) => b.count - a.count);
+
+  return {
+    storageBackend: dataset.backend,
+    schemaReady: dataset.schemaReady,
+    schemaNotice: dataset.schemaNotice,
+    totalVisits,
+    uniqueSessions,
+    registeredPlayers,
+    anonymousPlayers,
+    gamesStarted,
+    gamesCompleted,
+    gamesInProgress,
+    completionRatePct,
+    avgCompletionDurationSeconds,
+    chapterAnalytics,
+    choiceDistributions,
+    puzzleAnalytics,
+    campaignAttribution,
+    archetypeDistribution,
+  };
 }
 
+export async function getAdminPlayersDirectory(): Promise<{
+  players: AdminPlayerListItem[];
+  storageBackend: "supabase" | "local_fallback";
+  schemaReady: boolean;
+  schemaNotice?: string;
+}> {
+  const dataset = await loadRawAdminDataset();
+  const sessionsByPlayer = new Map<string, GameSession[]>();
+
+  for (const s of dataset.sessions) {
+    if (s.player_id) {
+      const list = sessionsByPlayer.get(s.player_id) || [];
+      list.push(s);
+      sessionsByPlayer.set(s.player_id, list);
+    }
+  }
+
+  const items: AdminPlayerListItem[] = dataset.players.map((p) => {
+    const linked = (sessionsByPlayer.get(p.id) || []).sort(
+      (a, b) =>
+        new Date(b.started_at).getTime() - new Date(a.started_at).getTime()
+    );
+    const latest = linked[0] || null;
+    return {
+      id: p.id,
+      display_name: p.display_name,
+      instagram_username: p.instagram_username || null,
+      profile_consent: p.profile_consent,
+      character_presentation: p.character_presentation || "UNSPECIFIED",
+      created_at: p.created_at,
+      sessionCount: linked.length,
+      latestSessionId: latest?.id || null,
+      latestStatus: latest?.status || null,
+      latestChapter: latest?.current_chapter || null,
+      latestArchetype: latest?.result_archetype || null,
+    };
+  });
+
+  return {
+    players: items,
+    storageBackend: dataset.backend,
+    schemaReady: dataset.schemaReady,
+    schemaNotice: dataset.schemaNotice,
+  };
+}
+
+export async function getAdminSessionsList(): Promise<{
+  sessions: GameSession[];
+  storageBackend: "supabase" | "local_fallback";
+  schemaReady: boolean;
+  schemaNotice?: string;
+}> {
+  const dataset = await loadRawAdminDataset();
+  const safeSessions = dataset.sessions.map((s) => {
+    const copy = { ...s };
+    delete copy.session_token;
+    return copy;
+  });
+
+  return {
+    sessions: safeSessions,
+    storageBackend: dataset.backend,
+    schemaReady: dataset.schemaReady,
+    schemaNotice: dataset.schemaNotice,
+  };
+}
+
+export async function getAdminDetailByPlayerOrSessionId(lookupId: string): Promise<{
+  player: Player | null;
+  sessions: GameSession[];
+  primarySession: GameSession;
+  events: GameplayEvent[];
+  preferences: PlayerPreference[];
+} | null> {
+  const dataset = await loadRawAdminDataset();
+
+  // Match either player.id or game_sessions.id
+  const matchedPlayer = dataset.players.find((p) => p.id === lookupId) || null;
+  let playerSessions: GameSession[] = [];
+  let primarySession: GameSession | undefined;
+
+  if (matchedPlayer) {
+    playerSessions = dataset.sessions
+      .filter((s) => s.player_id === matchedPlayer.id)
+      .sort(
+        (a, b) =>
+          new Date(b.started_at).getTime() - new Date(a.started_at).getTime()
+      );
+    primarySession = playerSessions[0];
+  } else {
+    primarySession = dataset.sessions.find((s) => s.id === lookupId);
+    if (primarySession) {
+      playerSessions = [primarySession];
+    }
+  }
+
+  if (!primarySession && !matchedPlayer) {
+    return null;
+  }
+
+  if (!primarySession && matchedPlayer) {
+    // Player created without an active session record (edge case)
+    primarySession = {
+      id: matchedPlayer.id,
+      player_id: matchedPlayer.id,
+      character_presentation: matchedPlayer.character_presentation,
+      started_at: matchedPlayer.created_at,
+      current_chapter: 1,
+      status: "in_progress",
+      created_at: matchedPlayer.created_at,
+      player: matchedPlayer,
+    };
+  }
+
+  const resolvedSession = primarySession!;
+  const resolvedPlayer =
+    matchedPlayer ||
+    (resolvedSession.player_id
+      ? dataset.players.find((p) => p.id === resolvedSession.player_id) || null
+      : null);
+
+  const cleanSession = { ...resolvedSession };
+  delete cleanSession.session_token;
+
+  const cleanHistory = playerSessions.map((s) => {
+    const c = { ...s };
+    delete c.session_token;
+    return c;
+  });
+
+  const events = dataset.events
+    .filter((e) => e.session_id === resolvedSession.id)
+    .sort(
+      (a, b) =>
+        new Date(a.created_at || 0).getTime() -
+        new Date(b.created_at || 0).getTime()
+    );
+
+  const preferences = dataset.preferences.filter(
+    (p) => p.session_id === resolvedSession.id
+  );
+
+  return {
+    player: resolvedPlayer,
+    sessions: cleanHistory,
+    primarySession: cleanSession,
+    events,
+    preferences,
+  };
+}
+
+export async function getAdminSettingsData() {
+  const dataset = await loadRawAdminDataset();
+  const env = getEnvConfig();
+
+  return {
+    storageBackend: dataset.backend,
+    schemaReady: dataset.schemaReady,
+    schemaNotice: dataset.schemaNotice,
+    supabaseConfigured: env.isSupabaseConfigured,
+    serviceRoleConfigured: env.hasServiceRoleKey,
+    authorizedAdminEmails: env.allowedAdminEmails,
+    deletionRequests: dataset.deletionRequests,
+    recordCounts: {
+      players: dataset.players.length,
+      sessions: dataset.sessions.length,
+      events: dataset.events.length,
+      preferences: dataset.preferences.length,
+    },
+  };
+}

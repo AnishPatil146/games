@@ -1,274 +1,338 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { MessageSquare, Search, Send, ShieldAlert, ArrowRight, CornerDownRight, CheckCircle2 } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
+import { ArrowRight, Radio, Search, Send } from "lucide-react";
 import { Button } from "@/components/Button";
+import { UnknownMessageArtwork } from "@/components/artwork/SceneArtwork";
+import { EventType } from "@/lib/types";
 
-interface Chapter3Props {
-  onComplete: (choiceId: string, durationMs: number, pathTaken: string[]) => void;
-  onEvent: (eventType: string, data: Record<string, unknown>) => void;
+interface ChapterProps {
+  onTrackEvent: (
+    eventType: EventType,
+    data?: Record<string, unknown>
+  ) => Promise<unknown>;
+  onComplete: () => void;
 }
 
-export function Chapter3UnknownMessage({ onComplete, onEvent }: Chapter3Props) {
-  const [selectedAction, setSelectedAction] = useState<string | null>(null);
-  const [replyText, setReplyText] = useState<string>("");
-  const [hasInspectedMetadata, setHasInspectedMetadata] = useState(false);
-  const [hasExaminedSurroundings, setHasExaminedSurroundings] = useState(false);
-  const [outcomeRevealed, setOutcomeRevealed] = useState(false);
-  const [actionHistory, setActionHistory] = useState<string[]>([]);
-  const startTimeRef = useRef<number>(0);
+const PRESET_REPLIES = [
+  "State which station and what time.",
+  "Who gave you this frequency?",
+  "If you know, say it plainly.",
+];
+
+export function Chapter3UnknownMessage({
+  onTrackEvent,
+  onComplete,
+}: ChapterProps) {
+  const prefersReducedMotion = useReducedMotion();
+  const mountTimeRef = useRef<number>(0);
+
+  const [tracedSender, setTracedSender] = useState(false);
+  const [sweptPerimeter, setSweptPerimeter] = useState(false);
+  const [replyComposerOpen, setReplyComposerOpen] = useState(false);
+  const [replyText, setReplyText] = useState("");
+  const [finalOutcome, setFinalOutcome] = useState<
+    "replied" | "ignored" | null
+  >(null);
+  const [sentMessageCopy, setSentMessageCopy] = useState<string | null>(null);
 
   useEffect(() => {
-    startTimeRef.current = Date.now();
-    onEvent("chapter_started", { chapter: 3, title: "The Unknown Message" });
-  }, [onEvent]);
+    mountTimeRef.current = performance.now();
+  }, []);
 
-  const handleActionClick = (actionId: string) => {
-    const elapsed = Date.now() - startTimeRef.current;
-    const nextHistory = [...actionHistory, actionId];
-    setActionHistory(nextHistory);
+  const getElapsedMs = () =>
+    Math.max(100, Math.round(performance.now() - mountTimeRef.current));
 
-    onEvent("choice_selected", {
-      chapter: 3,
-      choiceId: actionId,
-      durationMs: elapsed,
-      step: nextHistory.length,
+  const handleTraceSender = async () => {
+    if (tracedSender || finalOutcome) return;
+    setTracedSender(true);
+    await onTrackEvent("clue_inspected", {
+      clueId: "relay_routing_header",
+      elapsedMs: getElapsedMs(),
     });
-
-    if (actionId === "investigate_sender") {
-      setHasInspectedMetadata(true);
-    } else if (actionId === "look_for_evidence") {
-      setHasExaminedSurroundings(true);
-    } else {
-      setSelectedAction(actionId);
-      setOutcomeRevealed(true);
-    }
+    await onTrackEvent("choice_selected", {
+      choiceId: "investigate_sender",
+      durationMs: getElapsedMs(),
+    });
   };
 
-  const handleSendCustomReply = () => {
-    const elapsed = Date.now() - startTimeRef.current;
-    const actionId = "reply_immediately";
-    const nextHistory = [...actionHistory, actionId];
-    setActionHistory(nextHistory);
-    setSelectedAction(actionId);
-
-    onEvent("choice_selected", {
-      chapter: 3,
-      choiceId: actionId,
-      customReply: replyText,
-      durationMs: elapsed,
-      step: nextHistory.length,
+  const handleSweepPerimeter = async () => {
+    if (sweptPerimeter || finalOutcome) return;
+    setSweptPerimeter(true);
+    await onTrackEvent("clue_inspected", {
+      clueId: "casement_window_sedan",
+      elapsedMs: getElapsedMs(),
     });
-
-    setOutcomeRevealed(true);
+    await onTrackEvent("choice_selected", {
+      choiceId: "look_for_evidence",
+      durationMs: getElapsedMs(),
+    });
   };
 
-  const handleProceed = () => {
-    const elapsed = Date.now() - startTimeRef.current;
-    onComplete(selectedAction || "investigate_sender", elapsed, actionHistory);
+  const handleSendReply = async (textToSend: string) => {
+    const cleaned = textToSend.trim();
+    if (!cleaned || finalOutcome) return;
+    setSentMessageCopy(cleaned);
+    setFinalOutcome("replied");
+    await onTrackEvent("choice_selected", {
+      choiceId: "reply_immediately",
+      replyPreview: cleaned.slice(0, 120),
+      tracedSender,
+      sweptPerimeter,
+      durationMs: getElapsedMs(),
+    });
+  };
+
+  const handleIgnoreMessage = async () => {
+    if (finalOutcome) return;
+    setFinalOutcome("ignored");
+    await onTrackEvent("choice_selected", {
+      choiceId: "ignore_message",
+      tracedSender,
+      sweptPerimeter,
+      durationMs: getElapsedMs(),
+    });
+  };
+
+  const handleProceed = async () => {
+    await onTrackEvent("chapter_completed", {
+      outcome: finalOutcome,
+      tracedSender,
+      sweptPerimeter,
+      durationMs: getElapsedMs(),
+    });
+    onComplete();
   };
 
   return (
     <div className="space-y-8">
-      {/* Narrative Header */}
-      <div className="space-y-2 border-b border-[#E8E2D8] pb-6">
-        <div className="flex items-center space-x-2 text-[#78716C] text-xs uppercase tracking-[0.2em]">
-          <MessageSquare className="w-3.5 h-3.5" />
-          <span>Encrypted Transmission • 03:14 AM</span>
+      {/* Chapter Header */}
+      <div className="space-y-2 border-b border-[#DDD4C5] pb-5">
+        <div className="flex items-center justify-between text-[11px] uppercase tracking-[0.24em] text-[#8A8178]">
+          <span>Chapter 03 · Upper Study</span>
+          <span className="font-mono text-[#9E6B68]">03:14 AM</span>
         </div>
-        <h2 className="text-2xl sm:text-3xl font-serif text-[#1C1917] font-normal">
+        <h1 className="font-serif text-3xl sm:text-4xl text-[#1C1917]">
           The Unknown Message
-        </h2>
-        <p className="text-xs sm:text-sm text-[#78716C] italic font-serif">
-          A low vibration on the glass desk. A single line from an unlisted frequency.
-        </p>
+        </h1>
       </div>
 
-      {/* The Incoming Message Display */}
-      <div className="p-6 rounded border border-[#E0D7CB] bg-[#F4EFE7]/80 max-w-lg mx-auto shadow-sm space-y-4">
-        <div className="flex items-center justify-between border-b border-[#E0D7CB] pb-2 text-[11px] text-[#78716C]">
-          <span className="uppercase tracking-wider">Origin: UNKNOWN_NODE_49</span>
-          <span>Just now</span>
-        </div>
+      {/* Bespoke Study & Receiver Scene */}
+      <figure className="border border-[#DDD4C5] rounded-sm overflow-hidden bg-[#171615]">
+        <UnknownMessageArtwork sweptPerimeter={sweptPerimeter} />
+        <figcaption className="px-4 py-2.5 bg-[#141210] text-[#A89F93] text-[11px] flex items-center justify-between">
+          <span>Encrypted Short-Range Receiver · Channel 09</span>
+          <span>
+            {tracedSender ? "Relay Node: 400m Radius" : "Origin Unverified"}
+          </span>
+        </figcaption>
+      </figure>
 
-        <div className="p-4 bg-[#FAF8F5] rounded border border-[#E0D7CB] font-serif text-lg text-[#1C1917] text-center italic">
+      {/* Incoming Transmission Display */}
+      <div className="p-6 bg-[#141210] text-[#FAF7F2] rounded-sm border border-[#3E3730] space-y-4">
+        <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.24em] text-[#8A8178]">
+          <span>Unlisted Sender · Direct Packet</span>
+          <span>Delivered 03:14:08</span>
+        </div>
+        <blockquote className="font-serif text-2xl sm:text-[26px] text-[#FAF7F2] leading-snug">
           &ldquo;I know what happened yesterday.&rdquo;
-        </div>
+        </blockquote>
 
-        <div className="text-[11px] text-[#8C827A] flex items-center justify-center space-x-1">
-          <ShieldAlert className="w-3.5 h-3.5 text-[#A37070]" />
-          <span>Encrypted routing • No caller ID available</span>
-        </div>
+        {sentMessageCopy && (
+          <div className="pt-3 border-t border-[#FAF7F2]/10 space-y-2">
+            <p className="text-[10px] uppercase tracking-[0.2em] text-[#8FA184]">
+              Your Outgoing Transmission
+            </p>
+            <p className="text-sm text-[#E7E0D3] font-mono">
+              &gt; {sentMessageCopy}
+            </p>
+          </div>
+        )}
       </div>
 
-      {/* Atmospheric Investigation Details */}
-      <div className="space-y-3">
-        <AnimatePresence>
-          {hasInspectedMetadata && (
-            <motion.div
-              initial={{ opacity: 0, y: 6 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="p-4 rounded border border-[#5B6356]/40 bg-[#EDF0EB] text-xs space-y-1.5 text-[#2C3328]"
-            >
-              <div className="flex items-center space-x-2 font-medium uppercase tracking-wider text-[11px] text-[#5B6356]">
-                <Search className="w-3.5 h-3.5" />
-                <span>Transmission Analysis</span>
+      {/* Optional Investigative Findings */}
+      <AnimatePresence>
+        {(tracedSender || sweptPerimeter) && (
+          <motion.div
+            initial={prefersReducedMotion ? false : { opacity: 0, y: 6 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="space-y-3"
+          >
+            {tracedSender && (
+              <div className="p-4 bg-[#F3EDE2] border-l-2 border-[#545E4E] rounded-r-sm text-sm text-[#1C1917]">
+                <span className="block text-[10px] uppercase tracking-[0.2em] text-[#545E4E] font-semibold mb-1">
+                  Signal Trace
+                </span>
+                Packet headers show zero external hops: the message originated
+                from a portable repeater within four hundred meters of this
+                building, timed to expire in ninety seconds.
               </div>
-              <p className="leading-relaxed">
-                The timestamp originates from an internal relay located in the
-                same metropolitan exchange as the railway terminal from Chapter 1.
-                The signal hopped through three relay stations before reaching your device.
-              </p>
-            </motion.div>
-          )}
-
-          {hasExaminedSurroundings && (
-            <motion.div
-              initial={{ opacity: 0, y: 6 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="p-4 rounded border border-[#5B6356]/40 bg-[#EDF0EB] text-xs space-y-1.5 text-[#2C3328]"
-            >
-              <div className="flex items-center space-x-2 font-medium uppercase tracking-wider text-[11px] text-[#5B6356]">
-                <CheckCircle2 className="w-3.5 h-3.5" />
-                <span>Environmental Sweep</span>
+            )}
+            {sweptPerimeter && (
+              <div className="p-4 bg-[#F3EDE2] border-l-2 border-[#1C1917] rounded-r-sm text-sm text-[#1C1917]">
+                <span className="block text-[10px] uppercase tracking-[0.2em] text-[#8A8178] font-semibold mb-1">
+                  Perimeter Sweep
+                </span>
+                Parting the casement blind by an inch, you spot an unlit dark
+                sedan parked directly beneath the corner streetlamp, exhaust
+                curling faintly into the cold air.
               </div>
-              <p className="leading-relaxed">
-                You step toward the tall library window overlooking the street.
-                A dark sedan is parked under the streetlamp with its hazard lights off.
-                No footprints in the fresh damp gravel, yet someone has recently cleared the sill.
-              </p>
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </div>
+            )}
+          </motion.div>
+        )}
+      </AnimatePresence>
 
-      {/* Decision Selection */}
-      {!outcomeRevealed ? (
-        <div className="space-y-4 pt-2">
-          <label className="block text-[11px] uppercase tracking-[0.2em] text-[#78716C]">
-            How do you respond to the unknown sender?
-          </label>
-
+      {/* Interactive Response Choices */}
+      {!finalOutcome ? (
+        <div className="space-y-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {!hasInspectedMetadata && (
-              <button
-                onClick={() => handleActionClick("investigate_sender")}
-                className="p-4 rounded border border-[#E0D7CB] bg-[#FAF8F5] hover:bg-[#F4EFE7] hover:border-[#1C1917] text-left transition-all group"
-              >
-                <span className="block text-xs uppercase tracking-wider font-semibold text-[#1C1917] mb-1 group-hover:text-[#5B6356]">
-                  Investigate Sender First
-                </span>
-                <span className="block text-xs text-[#78716C]">
-                  Trace the IP packets, gateway relay, and origin metadata before communicating.
-                </span>
-              </button>
-            )}
-
-            {!hasExaminedSurroundings && (
-              <button
-                onClick={() => handleActionClick("look_for_evidence")}
-                className="p-4 rounded border border-[#E0D7CB] bg-[#FAF8F5] hover:bg-[#F4EFE7] hover:border-[#1C1917] text-left transition-all group"
-              >
-                <span className="block text-xs uppercase tracking-wider font-semibold text-[#1C1917] mb-1 group-hover:text-[#5B6356]">
-                  Look for Evidence First
-                </span>
-                <span className="block text-xs text-[#78716C]">
-                  Observe your immediate perimeter, windows, and surveillance blind spots.
-                </span>
-              </button>
-            )}
-
             <button
-              onClick={() => handleActionClick("ignore_message")}
-              className="p-4 rounded border border-[#E0D7CB] bg-[#FAF8F5] hover:bg-[#F4EFE7] hover:border-[#1C1917] text-left transition-all group"
+              type="button"
+              disabled={tracedSender}
+              onClick={() => void handleTraceSender()}
+              className={`p-4 text-left border rounded-sm transition-all cursor-pointer ${
+                tracedSender
+                  ? "bg-[#E9ECE6]/60 border-[#545E4E]/40 opacity-75 cursor-default"
+                  : "bg-[#FAF7F2] border-[#DDD4C5] hover:bg-[#F3EDE2] hover:border-[#1C1917]"
+              }`}
             >
-              <span className="block text-xs uppercase tracking-wider font-semibold text-[#1C1917] mb-1 group-hover:text-[#5B6356]">
-                Ignore the Message
-              </span>
-              <span className="block text-xs text-[#78716C]">
-                Turn off notifications. Do not grant them the leverage of your attention.
-              </span>
+              <div className="flex items-center gap-2 text-xs uppercase tracking-[0.16em] text-[#545E4E] font-medium">
+                <Radio className="w-3.5 h-3.5" />
+                <span>
+                  {tracedSender ? "Metadata Traced" : "Investigate the sender"}
+                </span>
+              </div>
+              <p className="text-xs text-[#57524C] mt-1.5">
+                Inspect packet routing headers before deciding whether to
+                engage.
+              </p>
             </button>
 
             <button
-              onClick={() => handleActionClick("confront_sender")}
-              className="p-4 rounded border border-[#E0D7CB] bg-[#FAF8F5] hover:bg-[#F4EFE7] hover:border-[#1C1917] text-left transition-all group"
+              type="button"
+              disabled={sweptPerimeter}
+              onClick={() => void handleSweepPerimeter()}
+              className={`p-4 text-left border rounded-sm transition-all cursor-pointer ${
+                sweptPerimeter
+                  ? "bg-[#E9ECE6]/60 border-[#545E4E]/40 opacity-75 cursor-default"
+                  : "bg-[#FAF7F2] border-[#DDD4C5] hover:bg-[#F3EDE2] hover:border-[#1C1917]"
+              }`}
             >
-              <span className="block text-xs uppercase tracking-wider font-semibold text-[#1C1917] mb-1 group-hover:text-[#5B6356]">
-                Demand Immediate Identity
-              </span>
-              <span className="block text-xs text-[#78716C]">
-                Send a direct response: &ldquo;Who are you and what do you want?&rdquo;
-              </span>
+              <div className="flex items-center gap-2 text-xs uppercase tracking-[0.16em] text-[#1C1917] font-medium">
+                <Search className="w-3.5 h-3.5" />
+                <span>
+                  {sweptPerimeter
+                    ? "Street Observed"
+                    : "Look for physical evidence"}
+                </span>
+              </div>
+              <p className="text-xs text-[#57524C] mt-1.5">
+                Check the study casement window and doorway before touching the
+                console.
+              </p>
             </button>
           </div>
 
-          {/* Custom Reply Box */}
-          <div className="pt-2">
-            <div className="p-4 rounded border border-[#E0D7CB] bg-[#FAF8F5] space-y-2">
-              <label className="block text-[11px] uppercase tracking-wider text-[#57534E]">
-                Or Type a Specific Reply:
-              </label>
-              <div className="flex gap-2">
+          {!replyComposerOpen ? (
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+              <button
+                type="button"
+                onClick={() => setReplyComposerOpen(true)}
+                className="p-5 text-left border border-[#1C1917] bg-[#1C1917] text-[#FAF7F2] hover:bg-[#2E2925] rounded-sm transition-colors cursor-pointer"
+              >
+                <span className="block text-xs uppercase tracking-[0.18em] font-medium">
+                  Reply immediately
+                </span>
+                <span className="block text-xs text-[#D6CEC0] mt-1">
+                  Challenge the sender directly to test what they actually know.
+                </span>
+              </button>
+
+              <button
+                type="button"
+                onClick={() => void handleIgnoreMessage()}
+                className="p-5 text-left border border-[#DDD4C5] bg-[#F3EDE2]/75 hover:bg-[#E7E0D3] hover:border-[#1C1917] rounded-sm transition-colors cursor-pointer"
+              >
+                <span className="block text-xs uppercase tracking-[0.18em] text-[#1C1917] font-medium">
+                  Ignore the message
+                </span>
+                <span className="block text-xs text-[#57524C] mt-1">
+                  Sever the carrier link and deny the sender confirmation of
+                  your presence.
+                </span>
+              </button>
+            </div>
+          ) : (
+            <div className="p-5 sm:p-6 bg-[#F3EDE2] border border-[#DDD4C5] rounded-sm space-y-4">
+              <div className="flex items-center justify-between">
+                <span className="text-[11px] uppercase tracking-[0.2em] text-[#1C1917] font-medium">
+                  Compose Direct Response
+                </span>
+                <button
+                  type="button"
+                  onClick={() => setReplyComposerOpen(false)}
+                  className="text-xs text-[#57524C] underline cursor-pointer"
+                >
+                  Cancel
+                </button>
+              </div>
+
+              <div className="flex flex-wrap gap-2">
+                {PRESET_REPLIES.map((preset) => (
+                  <button
+                    key={preset}
+                    type="button"
+                    onClick={() => void handleSendReply(preset)}
+                    className="text-xs px-3 py-2 bg-[#FAF7F2] border border-[#DDD4C5] hover:border-[#1C1917] rounded-sm text-[#1C1917] transition-colors cursor-pointer"
+                  >
+                    &ldquo;{preset}&rdquo;
+                  </button>
+                ))}
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-2.5">
                 <input
                   type="text"
                   value={replyText}
                   onChange={(e) => setReplyText(e.target.value)}
-                  placeholder="Type your reply here..."
-                  maxLength={120}
-                  className="flex-1 px-3.5 py-2 text-xs sm:text-sm bg-[#FAF8F5] border border-[#D6D3D1] rounded focus:outline-none focus:border-[#1C1917]"
+                  placeholder="Or write your own response..."
+                  maxLength={100}
+                  aria-label="Custom reply to unknown sender"
+                  className="flex-1 px-3.5 py-2.5 bg-[#FAF7F2] border border-[#DDD4C5] rounded-sm text-sm text-[#1C1917] focus:outline-none focus:border-[#1C1917]"
                 />
                 <Button
-                  variant="primary"
+                  type="button"
                   size="sm"
-                  onClick={handleSendCustomReply}
-                  disabled={replyText.trim().length === 0}
+                  disabled={!replyText.trim()}
+                  onClick={() => void handleSendReply(replyText)}
                 >
-                  <Send className="w-3.5 h-3.5 mr-1" />
-                  <span>Send</span>
+                  <Send className="w-3.5 h-3.5 mr-1.5" />
+                  Transmit
                 </Button>
               </div>
             </div>
-          </div>
+          )}
         </div>
       ) : (
-        /* Consequence & Transition */
         <motion.div
-          initial={{ opacity: 0, y: 12 }}
+          initial={prefersReducedMotion ? false : { opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="p-6 rounded border border-[#E0D7CB] bg-[#F4EFE7] space-y-4"
+          className="p-6 sm:p-7 bg-[#F3EDE2]/80 border border-[#DDD4C5] rounded-sm space-y-4"
         >
-          <div className="flex items-center space-x-2 text-xs uppercase tracking-widest text-[#5B6356] font-semibold">
-            <CornerDownRight className="w-4 h-4" />
-            <span>Echoes in the Static</span>
-          </div>
-
-          <div className="text-sm font-serif text-[#292524] leading-relaxed">
-            {selectedAction === "ignore_message" ? (
-              <p>
-                You slide the receiver into the leather folder and walk away from the desk.
-                Five minutes pass in absolute stillness. By refusing to engage in another&apos;s
-                game of suspense, you retain initiative. No further transmission arrives.
-              </p>
-            ) : selectedAction === "reply_immediately" || selectedAction === "confront_sender" ? (
-              <p>
-                Your response transmits across the wire. Three dots appear instantly on the
-                recipient screen, pulsing in sync with your pulse. A second text follows:
-                &ldquo;You answer faster than you look. Let us see if you can create as boldly as you react.&rdquo;
-              </p>
-            ) : (
-              <p>
-                Your analytical delay gave you vital context. You now know you are not dealing
-                with a stranger across the globe, but a spectator in your immediate perimeter.
-                The game has shifted from passive defense to deliberate awareness.
-              </p>
-            )}
-          </div>
-
-          <div className="pt-3 flex justify-end">
-            <Button variant="primary" size="md" onClick={handleProceed}>
-              <span>PROCEED TO CHAPTER 04</span>
+          <p className="text-[10px] uppercase tracking-[0.24em] text-[#8A8178]">
+            {finalOutcome === "replied"
+              ? "Carrier Response Logged"
+              : "Channel Terminated"}
+          </p>
+          <p className="font-serif italic text-lg text-[#1C1917] leading-relaxed">
+            {finalOutcome === "replied"
+              ? "For six seconds the receiver cursor pulses in silence. Then a single acknowledgement code flashes—and outside on the wet avenue, headlamps ignite and pull quietly out of sight."
+              : "You switch off the receiver without transmitting a byte. Starved of confirmation, the anonymous relay times out; a minute later, the dark sedan down on the avenue pulls away into the rain."}
+          </p>
+          <div className="flex justify-end">
+            <Button onClick={() => void handleProceed()} size="md">
+              <span>Continue to Chapter 04</span>
               <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
           </div>
@@ -277,4 +341,3 @@ export function Chapter3UnknownMessage({ onComplete, onEvent }: Chapter3Props) {
     </div>
   );
 }
-

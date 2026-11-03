@@ -1,139 +1,220 @@
 "use client";
 
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { useEffect } from "react";
-import { motion } from "framer-motion";
-import { ArrowRight, Compass, Eye, Sparkles } from "lucide-react";
+import { motion, useReducedMotion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
+import { HeroMonographArtwork } from "@/components/artwork/SceneArtwork";
+import { Button } from "@/components/Button";
 import { useGameSession } from "@/lib/useGameSession";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
+
+const CHAPTER_PLATES = [
+  { numeral: "I", title: "The Last Train", motif: "Urgency & Regard" },
+  { numeral: "II", title: "The Locked Room", motif: "Scrutiny & Cipher" },
+  { numeral: "III", title: "The Unknown Message", motif: "Signal & Restraint" },
+  { numeral: "IV", title: "The Empty Canvas", motif: "Form & Atmosphere" },
+  { numeral: "V", title: "The Final Ten Seconds", motif: "Composure & Logic" },
+  { numeral: "VI", title: "The Unknown World", motif: "Horizon & Relic" },
+];
 
 export default function LandingPage() {
-  const { trackEvent } = useGameSession();
+  const router = useRouter();
+  const prefersReducedMotion = useReducedMotion();
+  const [isEntering, setIsEntering] = useState(false);
+  const [parallax, setParallax] = useState({ x: 0, y: 0 });
 
-  useEffect(() => {
-    // Record initial landing view
-    trackEvent(0, "landing_view", {
-      path: "/",
-      referrer: typeof document !== "undefined" ? document.referrer : "",
-    });
-  }, [trackEvent]);
+  // Accurately records a real landing_view event & captures campaign UTM params
+  useGameSession({ recordLandingOnInit: true });
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLElement>) => {
+    if (prefersReducedMotion) return;
+    const rect = e.currentTarget.getBoundingClientRect();
+    const normX = (e.clientX - rect.left) / rect.width - 0.5;
+    const normY = (e.clientY - rect.top) / rect.height - 0.5;
+    setParallax({ x: normX * 14, y: normY * 10 });
+  };
+
+  const handleEnter = () => {
+    if (isEntering) return;
+    setIsEntering(true);
+    const delayMs = prefersReducedMotion ? 80 : 620;
+    setTimeout(() => {
+      router.push("/play");
+    }, delayMs);
+  };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#FAF8F5] text-[#1C1917]">
-      <Header />
-
-      <main className="flex-1 flex flex-col items-center justify-center px-6 py-16 sm:py-24 max-w-4xl mx-auto text-center w-full">
-        {/* Subtle decorative emblem */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="mb-8 inline-flex items-center justify-center p-3 rounded-full border border-[#E0D7CB] bg-[#F4EFE7]/80 text-[#5B6356]"
-        >
-          <Compass className="w-5 h-5 stroke-[1.5]" />
-        </motion.div>
-
-        {/* Title */}
-        <motion.h1
-          initial={{ opacity: 0, y: 14 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-          className="text-4xl sm:text-6xl md:text-7xl font-serif tracking-tight text-[#1C1917] mb-6 font-normal leading-tight"
-        >
-          THE UNWRITTEN
-        </motion.h1>
-
-        {/* Tagline */}
-        <motion.p
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          className="text-lg sm:text-xl md:text-2xl font-serif italic text-[#57534E] max-w-xl mx-auto mb-8 font-light"
-        >
-          &ldquo;Every choice leaves a trace. Every story reveals something.&rdquo;
-        </motion.p>
-
-        {/* Supporting description */}
-        <motion.p
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-          className="text-sm sm:text-base text-[#78716C] max-w-md mx-auto mb-12 leading-relaxed"
-        >
-          An interactive experiment in choices, curiosity, observation, and
-          imagination.
-        </motion.p>
-
-        {/* Primary CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-          className="w-full sm:w-auto flex flex-col items-center gap-4"
-        >
-          <Link
-            href="/play"
-            className="w-full sm:w-auto px-8 py-4 bg-[#1C1917] text-[#FAF8F5] text-xs sm:text-sm tracking-[0.2em] uppercase font-medium hover:bg-[#2F2B28] transition-all duration-300 shadow-sm hover:shadow flex items-center justify-center space-x-3 group active:scale-[0.98]"
-          >
-            <span>ENTER THE EXPERIENCE</span>
-            <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-          </Link>
-
-          <p className="text-[11px] uppercase tracking-[0.18em] text-[#8C827A] mt-2">
-            Six chapters. No perfect answers. Just your decisions.
-          </p>
-        </motion.div>
-
-        {/* Three core pillars */}
+    <div className="min-h-screen flex flex-col bg-[#12100E] text-[#FAF7F2] selection:bg-[#FAF7F2] selection:text-[#12100E]">
+      {/* Meaningful Curtain Transition into Prologue */}
+      {isEntering && (
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1.2, delay: 0.6 }}
-          className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 mt-20 pt-16 border-t border-[#E8E2D8] w-full text-left"
+          transition={{ duration: prefersReducedMotion ? 0.05 : 0.55, ease: [0.22, 1, 0.36, 1] }}
+          className="fixed inset-0 z-50 bg-[#FAF7F2] flex flex-col items-center justify-center pointer-events-none"
+          aria-live="polite"
         >
-          <div className="p-5 rounded border border-[#E8E2D8] bg-[#F4EFE7]/50">
-            <div className="w-8 h-8 rounded-full bg-[#EAE3D6] flex items-center justify-center mb-3 text-[#5B6356]">
-              <Eye className="w-4 h-4" />
-            </div>
-            <h3 className="text-xs uppercase tracking-[0.18em] font-semibold text-[#1C1917] mb-1">
-              Observation
-            </h3>
-            <p className="text-xs text-[#78716C] leading-relaxed">
-              Every room holds subtle details. How closely you inspect your
-              environment shapes the possibilities ahead.
-            </p>
-          </div>
-
-          <div className="p-5 rounded border border-[#E8E2D8] bg-[#F4EFE7]/50">
-            <div className="w-8 h-8 rounded-full bg-[#EAE3D6] flex items-center justify-center mb-3 text-[#5B6356]">
-              <Compass className="w-4 h-4" />
-            </div>
-            <h3 className="text-xs uppercase tracking-[0.18em] font-semibold text-[#1C1917] mb-1">
-              Deduction
-            </h3>
-            <p className="text-xs text-[#78716C] leading-relaxed">
-              Puzzles and locked doors require reasoning. There are no luck-based
-              answers, only cause and consequence.
-            </p>
-          </div>
-
-          <div className="p-5 rounded border border-[#E8E2D8] bg-[#F4EFE7]/50">
-            <div className="w-8 h-8 rounded-full bg-[#EAE3D6] flex items-center justify-center mb-3 text-[#5B6356]">
-              <Sparkles className="w-4 h-4" />
-            </div>
-            <h3 className="text-xs uppercase tracking-[0.18em] font-semibold text-[#1C1917] mb-1">
-              Personal Report
-            </h3>
-            <p className="text-xs text-[#78716C] leading-relaxed">
-              At the journey&apos;s conclusion, receive a deterministic report
-              reflecting your natural patterns and choices.
-            </p>
-          </div>
+          <span className="text-[11px] uppercase tracking-[0.34em] text-[#57524C]">
+            Opening Folio I
+          </span>
         </motion.div>
-      </main>
+      )}
 
-      <Footer />
+      {/* Full-Screen Cinematic Hero Composition */}
+      <section
+        onMouseMove={handleMouseMove}
+        className="relative min-h-[94vh] w-full flex flex-col justify-between overflow-hidden border-b border-[#FAF7F2]/10"
+      >
+        {/* Layered Parallax Artwork */}
+        <div
+          className="absolute inset-0 pointer-events-none transition-transform duration-500 ease-out"
+          style={{
+            transform: prefersReducedMotion
+              ? undefined
+              : `translate3d(${parallax.x}px, ${parallax.y}px, 0) scale(1.03)`,
+          }}
+        >
+          <HeroMonographArtwork />
+        </div>
+
+        {/* Vignette & Legibility Scrim */}
+        <div
+          className="absolute inset-0 pointer-events-none bg-gradient-to-b from-[#12100E]/75 via-[#12100E]/35 to-[#12100E]/92"
+          aria-hidden="true"
+        />
+
+        {/* Minimal Editorial Masthead */}
+        <header className="relative z-10 max-w-6xl w-full mx-auto px-6 sm:px-10 pt-7 flex items-center justify-between">
+          <span className="text-[11px] uppercase tracking-[0.32em] text-[#FAF7F2]/90 font-medium">
+            THE UNWRITTEN
+          </span>
+          <div className="flex items-center space-x-6 text-[11px] uppercase tracking-[0.2em] text-[#D6CEC0]">
+            <span className="hidden sm:inline text-[#8A8178]">Edition I</span>
+            <Link
+              href="/privacy"
+              className="hover:text-[#FAF7F2] transition-colors"
+            >
+              Privacy
+            </Link>
+          </div>
+        </header>
+
+        {/* Central Editorial Typography & Threshold CTA */}
+        <div className="relative z-10 max-w-3xl mx-auto px-6 sm:px-10 py-16 text-center space-y-8">
+          <motion.div
+            initial={prefersReducedMotion ? false : { opacity: 0, y: 14 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
+            className="space-y-5"
+          >
+            <p className="text-[11px] sm:text-xs uppercase tracking-[0.36em] text-[#D6CEC0]">
+              THE UNWRITTEN
+            </p>
+
+            <h1 className="font-serif text-4xl sm:text-6xl md:text-[4.25rem] leading-[1.06] tracking-[-0.02em] text-[#FAF7F2]">
+              Every choice leaves a trace.
+            </h1>
+
+            <p className="text-base sm:text-lg text-[#D6CEC0] max-w-xl mx-auto leading-relaxed font-light">
+              Six chapters. Unexpected decisions. A story that becomes your own.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={prefersReducedMotion ? false : { opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.75, delay: 0.18, ease: [0.22, 1, 0.36, 1] }}
+            className="pt-2 flex flex-col items-center space-y-4"
+          >
+            <Button
+              variant="ivory"
+              size="lg"
+              onClick={handleEnter}
+              className="group min-w-[260px]"
+            >
+              <span>ENTER THE EXPERIENCE</span>
+              <ArrowRight className="w-4 h-4 ml-3 transition-transform duration-300 group-hover:translate-x-1" />
+            </Button>
+
+            <p className="text-xs tracking-[0.08em] text-[#A89F93] font-serif italic">
+              No perfect answers. Just the choices you make.
+            </p>
+          </motion.div>
+        </div>
+
+        {/* Bottom Architectural Monograph Strip */}
+        <div className="relative z-10 max-w-6xl w-full mx-auto px-6 sm:px-10 pb-7 flex flex-col sm:flex-row items-center justify-between gap-2 text-[10px] uppercase tracking-[0.24em] text-[#8A8178]">
+          <span>Interactive Narrative Monograph</span>
+          <span>Estimated Duration · 4–6 Minutes</span>
+        </div>
+      </section>
+
+      {/* Quiet Museum Folio Index (Restrained Warm Ivory Colophon) */}
+      <section
+        aria-label="Chapter Index"
+        className="bg-[#FAF7F2] text-[#1C1917] py-20 px-6 sm:px-10 paper-grain"
+      >
+        <div className="max-w-4xl mx-auto space-y-12">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-[#DDD4C5] pb-6">
+            <div>
+              <p className="text-[11px] uppercase tracking-[0.26em] text-[#8A8178]">
+                Folio Sequence
+              </p>
+              <h2 className="font-serif text-2xl sm:text-3xl text-[#1C1917] mt-1">
+                Six threshold situations, observed in real time.
+              </h2>
+            </div>
+            <p className="text-xs text-[#57524C] max-w-xs leading-relaxed">
+              Designed for mobile and desktop reading. Play anonymously or sign
+              your dossier before entering.
+            </p>
+          </div>
+
+          <ol className="divide-y divide-[#DDD4C5] border-b border-[#DDD4C5]">
+            {CHAPTER_PLATES.map((ch) => (
+              <li
+                key={ch.numeral}
+                className="py-4 flex items-baseline justify-between gap-4 text-sm"
+              >
+                <div className="flex items-baseline gap-5">
+                  <span className="font-mono text-xs text-[#8A8178] w-6">
+                    {ch.numeral}
+                  </span>
+                  <span className="font-serif text-lg sm:text-xl text-[#1C1917]">
+                    {ch.title}
+                  </span>
+                </div>
+                <span className="text-[11px] uppercase tracking-[0.18em] text-[#8A8178] text-right">
+                  {ch.motif}
+                </span>
+              </li>
+            ))}
+          </ol>
+
+          <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#57524C]">
+            <p className="font-serif italic text-sm text-[#57524C]">
+              Fictional narrative exploration — not a clinical or psychological
+              assessment.
+            </p>
+            <div className="flex items-center gap-6 text-[11px] uppercase tracking-[0.18em]">
+              <button
+                type="button"
+                onClick={handleEnter}
+                className="text-[#1C1917] font-medium underline underline-offset-4 cursor-pointer hover:text-[#545E4E]"
+              >
+                Begin Chapter 01
+              </button>
+              <Link
+                href="/privacy"
+                className="text-[#8A8178] hover:text-[#1C1917] transition-colors"
+              >
+                Privacy &amp; Data Deletion
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

@@ -1,166 +1,147 @@
 "use client";
 
-import { useEffect } from "react";
-import { useRouter, useParams } from "next/navigation";
-import { motion, AnimatePresence } from "framer-motion";
-import { useGameSession } from "@/lib/useGameSession";
+import { use, useEffect, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { useGameSession } from "@/lib/useGameSession";
 import { Chapter1LastTrain } from "@/components/chapters/Chapter1LastTrain";
 import { Chapter2LockedRoom } from "@/components/chapters/Chapter2LockedRoom";
 import { Chapter3UnknownMessage } from "@/components/chapters/Chapter3UnknownMessage";
 import { Chapter4EmptyCanvas } from "@/components/chapters/Chapter4EmptyCanvas";
 import { Chapter5FinalTenSeconds } from "@/components/chapters/Chapter5FinalTenSeconds";
 import { Chapter6UnknownWorld } from "@/components/chapters/Chapter6UnknownWorld";
+import { EventType } from "@/lib/types";
 
-export default function ChapterPage() {
-  const params = useParams();
-  const chapterNumber = parseInt((params?.chapter as string) || "1", 10);
+interface PageProps {
+  params: Promise<{ chapter: string }>;
+}
+
+export default function ChapterPage({ params }: PageProps) {
+  const resolvedParams = use(params);
   const router = useRouter();
-  const { sessionId, trackEvent, savePreference } = useGameSession();
+  const prefersReducedMotion = useReducedMotion();
+  const chapterNum = parseInt(resolvedParams.chapter, 10);
 
-  // Validate chapter bounds
+  const { sessionId, isLoading, trackEvent, savePreference } = useGameSession();
+  const [isTransitioning, setIsTransitioning] = useState(false);
+  const loggedChapterStart = useRef<number | null>(null);
+
   useEffect(() => {
-    if (isNaN(chapterNumber) || chapterNumber < 1 || chapterNumber > 6) {
-      router.replace("/play/1");
+    if (isNaN(chapterNum) || chapterNum < 1 || chapterNum > 6) {
+      router.replace("/play");
+      return;
     }
-  }, [chapterNumber, router]);
 
-  // Generic event forwarder
-  const handleEvent = (eventType: string, data: Record<string, unknown>) => {
-    trackEvent(chapterNumber, eventType as any, data);
-  };
+    if (!isLoading && loggedChapterStart.current !== chapterNum) {
+      loggedChapterStart.current = chapterNum;
+      void trackEvent(chapterNum, "chapter_started", {
+        chapter: chapterNum,
+      });
+    }
+  }, [chapterNum, isLoading, router, trackEvent]);
 
-  // Chapter 1 Complete
-  const handleChapter1Complete = async (
-    choiceId: string,
-    durationMs: number,
-    history: string[]
+  const handleTrackEvent = async (
+    eventType: EventType,
+    data: Record<string, unknown> = {}
   ) => {
-    await trackEvent(1, "chapter_completed", {
-      choiceId,
-      durationMs,
-      history,
-    });
-    router.push("/play/2");
+    return trackEvent(chapterNum, eventType, data);
   };
 
-  // Chapter 2 Complete
-  const handleChapter2Complete = async (data: {
-    cluesInspected: string[];
-    attempts: number;
-    hintsUsed: number;
-    timeMs: number;
-  }) => {
-    await trackEvent(2, "chapter_completed", data);
-    router.push("/play/3");
+  const handleSavePreference = async (category: string, value: string) => {
+    return savePreference(category, value);
   };
 
-  // Chapter 3 Complete
-  const handleChapter3Complete = async (
-    choiceId: string,
-    durationMs: number,
-    pathTaken: string[]
-  ) => {
-    await trackEvent(3, "chapter_completed", {
-      choiceId,
-      durationMs,
-      pathTaken,
-    });
-    router.push("/play/4");
+  const handleChapterComplete = async () => {
+    setIsTransitioning(true);
+    if (chapterNum < 6) {
+      setTimeout(
+        () => {
+          router.push(`/play/${chapterNum + 1}`);
+        },
+        prefersReducedMotion ? 50 : 280
+      );
+    } else {
+      const res = await trackEvent(6, "game_completed", {
+        finishedAllChapters: true,
+      });
+      const targetId = res.sessionId || sessionId || "current";
+      router.push(`/result/${targetId}`);
+    }
   };
 
-  // Chapter 4 Complete
-  const handleChapter4Complete = async (data: {
-    selectedObjects: string[];
-    mood: string;
-    compositionTitle: string;
-  }) => {
-    await trackEvent(4, "chapter_completed", data);
-    router.push("/play/5");
-  };
-
-  // Chapter 5 Complete
-  const handleChapter5Complete = async (data: {
-    isCorrect: boolean;
-    durationMs: number;
-    attempts: number;
-    hintsUsed: number;
-  }) => {
-    await trackEvent(5, "chapter_completed", data);
-    router.push("/play/6");
-  };
-
-  // Chapter 6 Complete (Finalizes Experience)
-  const handleChapter6Complete = async (data: {
-    environment: string;
-    object: string;
-    activity: string;
-  }) => {
-    await trackEvent(6, "chapter_completed", data);
-    await trackEvent(6, "game_completed", {
-      finishedAt: new Date().toISOString(),
-      ...data,
-    });
-
-    // Navigate to personal report
-    const targetSession = sessionId || localStorage.getItem("the_unwritten_session_token") || "current";
-    router.push(`/result/${targetSession}`);
-  };
+  if (isNaN(chapterNum) || chapterNum < 1 || chapterNum > 6) {
+    return null;
+  }
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#FAF8F5] text-[#1C1917]">
-      <Header currentChapter={chapterNumber} totalChapters={6} />
+    <div className="min-h-screen flex flex-col bg-[#FAF7F2] text-[#1C1917] paper-grain">
+      <Header currentChapter={chapterNum} totalChapters={6} />
 
-      <main className="flex-1 max-w-2xl mx-auto px-6 py-10 sm:py-14 w-full">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={chapterNumber}
-            initial={{ opacity: 0, y: 14 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -14 }}
-            transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+      <main className="flex-1 max-w-3xl w-full mx-auto px-5 sm:px-8 py-10 sm:py-14">
+        {isLoading ? (
+          <div
+            className="py-28 flex flex-col items-center justify-center space-y-4"
+            aria-live="polite"
           >
-            {chapterNumber === 1 && (
-              <Chapter1LastTrain
-                onComplete={handleChapter1Complete}
-                onEvent={handleEvent}
-              />
+            <div className="w-6 h-6 border-2 border-[#1C1917] border-t-transparent rounded-full animate-spin" />
+            <p className="text-[11px] uppercase tracking-[0.24em] text-[#8A8178]">
+              Opening Chapter 0{chapterNum}
+            </p>
+          </div>
+        ) : (
+          <AnimatePresence mode="wait">
+            {!isTransitioning && (
+              <motion.div
+                key={chapterNum}
+                initial={prefersReducedMotion ? false : { opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={prefersReducedMotion ? undefined : { opacity: 0, y: -12 }}
+                transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+              >
+                {chapterNum === 1 && (
+                  <Chapter1LastTrain
+                    onTrackEvent={handleTrackEvent}
+                    onComplete={() => void handleChapterComplete()}
+                  />
+                )}
+                {chapterNum === 2 && (
+                  <Chapter2LockedRoom
+                    onTrackEvent={handleTrackEvent}
+                    onComplete={() => void handleChapterComplete()}
+                  />
+                )}
+                {chapterNum === 3 && (
+                  <Chapter3UnknownMessage
+                    onTrackEvent={handleTrackEvent}
+                    onComplete={() => void handleChapterComplete()}
+                  />
+                )}
+                {chapterNum === 4 && (
+                  <Chapter4EmptyCanvas
+                    onTrackEvent={handleTrackEvent}
+                    onSavePreference={handleSavePreference}
+                    onComplete={() => void handleChapterComplete()}
+                  />
+                )}
+                {chapterNum === 5 && (
+                  <Chapter5FinalTenSeconds
+                    onTrackEvent={handleTrackEvent}
+                    onComplete={() => void handleChapterComplete()}
+                  />
+                )}
+                {chapterNum === 6 && (
+                  <Chapter6UnknownWorld
+                    onTrackEvent={handleTrackEvent}
+                    onSavePreference={handleSavePreference}
+                    onComplete={() => void handleChapterComplete()}
+                  />
+                )}
+              </motion.div>
             )}
-            {chapterNumber === 2 && (
-              <Chapter2LockedRoom
-                onComplete={handleChapter2Complete}
-                onEvent={handleEvent}
-              />
-            )}
-            {chapterNumber === 3 && (
-              <Chapter3UnknownMessage
-                onComplete={handleChapter3Complete}
-                onEvent={handleEvent}
-              />
-            )}
-            {chapterNumber === 4 && (
-              <Chapter4EmptyCanvas
-                onComplete={handleChapter4Complete}
-                onEvent={handleEvent}
-                onPreference={savePreference}
-              />
-            )}
-            {chapterNumber === 5 && (
-              <Chapter5FinalTenSeconds
-                onComplete={handleChapter5Complete}
-                onEvent={handleEvent}
-              />
-            )}
-            {chapterNumber === 6 && (
-              <Chapter6UnknownWorld
-                onComplete={handleChapter6Complete}
-                onEvent={handleEvent}
-                onPreference={savePreference}
-              />
-            )}
-          </motion.div>
-        </AnimatePresence>
+          </AnimatePresence>
+        )}
       </main>
 
       <Footer />

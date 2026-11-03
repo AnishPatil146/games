@@ -1,0 +1,215 @@
+"use client";
+
+import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
+import { useState } from "react";
+import {
+  Activity,
+  BarChart3,
+  ExternalLink,
+  LayoutDashboard,
+  LogOut,
+  Menu,
+  Settings,
+  Shield,
+  Users,
+  X,
+} from "lucide-react";
+
+interface AdminShellProps {
+  adminEmail: string;
+  children: React.ReactNode;
+}
+
+const NAV_ITEMS = [
+  {
+    href: "/admin/dashboard",
+    label: "Overview",
+    icon: LayoutDashboard,
+  },
+  {
+    href: "/admin/players",
+    label: "Players",
+    icon: Users,
+  },
+  {
+    href: "/admin/sessions",
+    label: "Sessions",
+    icon: Activity,
+  },
+  {
+    href: "/admin/analytics",
+    label: "Analytics",
+    icon: BarChart3,
+  },
+  {
+    href: "/admin/settings",
+    label: "Settings",
+    icon: Settings,
+  },
+];
+
+export function AdminShell({ adminEmail, children }: AdminShellProps) {
+  const pathname = usePathname();
+  const router = useRouter();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isLoggingOut, setIsLoggingOut] = useState(false);
+
+  const handleLogout = async () => {
+    setIsLoggingOut(true);
+    try {
+      await fetch("/api/admin/logout", { method: "POST" });
+    } finally {
+      router.replace("/admin/login");
+      router.refresh();
+    }
+  };
+
+  const isRouteActive = (href: string) => {
+    if (href === "/admin/dashboard") {
+      return pathname === "/admin" || pathname === "/admin/dashboard";
+    }
+    return pathname === href || pathname.startsWith(`${href}/`);
+  };
+
+  return (
+    <div className="min-h-screen flex flex-col lg:flex-row bg-[#F6F3EC] text-[#1C1917]">
+      {/* Desktop Sidebar */}
+      <aside className="hidden lg:flex lg:w-64 lg:flex-col lg:fixed lg:inset-y-0 bg-[#141210] text-[#FAF7F2] border-r border-[#2B2723]">
+        <div className="px-6 h-16 flex items-center justify-between border-b border-[#2B2723]">
+          <div>
+            <span className="block text-[10px] uppercase tracking-[0.28em] text-[#FAF7F2] font-semibold">
+              THE UNWRITTEN
+            </span>
+            <span className="block text-[9px] uppercase tracking-[0.24em] text-[#8FA184] mt-0.5 font-mono">
+              / CONTROL CENTRE
+            </span>
+          </div>
+          <Shield className="w-4 h-4 text-[#8FA184]" aria-hidden="true" />
+        </div>
+
+        <nav
+          aria-label="Administrator navigation"
+          className="flex-1 px-3 py-6 space-y-1"
+        >
+          {NAV_ITEMS.map((item) => {
+            const Icon = item.icon;
+            const active = isRouteActive(item.href);
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={`flex items-center gap-3 px-3.5 py-2.5 rounded-sm text-xs uppercase tracking-[0.16em] transition-colors ${
+                  active
+                    ? "bg-[#FAF7F2] text-[#141210] font-semibold"
+                    : "text-[#A89F93] hover:text-[#FAF7F2] hover:bg-[#1F1C19]"
+                }`}
+              >
+                <Icon className="w-4 h-4 shrink-0" />
+                <span>{item.label}</span>
+              </Link>
+            );
+          })}
+        </nav>
+
+        <div className="p-4 border-t border-[#2B2723] space-y-3">
+          <Link
+            href="/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-between px-3 py-2 text-[11px] text-[#A89F93] hover:text-[#FAF7F2] rounded-sm hover:bg-[#1F1C19] transition-colors"
+          >
+            <span>Open Public Site</span>
+            <ExternalLink className="w-3.5 h-3.5" />
+          </Link>
+
+          <div className="px-3 py-2 bg-[#1C1916] rounded-sm border border-[#2B2723]">
+            <span className="block text-[9px] uppercase tracking-[0.2em] text-[#8A8178]">
+              Authorized Curator
+            </span>
+            <span className="block text-xs text-[#E7E0D3] truncate mt-0.5 font-mono">
+              {adminEmail}
+            </span>
+          </div>
+
+          <button
+            type="button"
+            disabled={isLoggingOut}
+            onClick={() => void handleLogout()}
+            className="w-full flex items-center justify-center gap-2 px-3 py-2 text-xs uppercase tracking-[0.16em] text-[#D8A7A4] hover:text-[#FAF7F2] hover:bg-[#9E6B68]/25 border border-[#2B2723] rounded-sm transition-colors cursor-pointer"
+          >
+            <LogOut className="w-3.5 h-3.5" />
+            <span>{isLoggingOut ? "Signing out..." : "Sign Out"}</span>
+          </button>
+        </div>
+      </aside>
+
+      {/* Mobile Top Header */}
+      <header className="lg:hidden sticky top-0 z-40 bg-[#141210] text-[#FAF7F2] border-b border-[#2B2723] px-4 h-14 flex items-center justify-between">
+        <div className="flex items-center gap-2.5">
+          <Shield className="w-4 h-4 text-[#8FA184]" />
+          <span className="text-[11px] uppercase tracking-[0.24em] font-semibold">
+            THE UNWRITTEN <span className="text-[#8FA184]">/ CONTROL</span>
+          </span>
+        </div>
+        <button
+          type="button"
+          onClick={() => setMobileMenuOpen((v) => !v)}
+          aria-label="Toggle administrator menu"
+          className="p-2 text-[#D6CEC0] hover:text-[#FAF7F2] cursor-pointer"
+        >
+          {mobileMenuOpen ? (
+            <X className="w-5 h-5" />
+          ) : (
+            <Menu className="w-5 h-5" />
+          )}
+        </button>
+      </header>
+
+      {/* Mobile Drawer */}
+      {mobileMenuOpen && (
+        <div className="lg:hidden bg-[#141210] text-[#FAF7F2] border-b border-[#2B2723] px-4 py-4 space-y-2">
+          {NAV_ITEMS.map((item) => {
+            const Icon = item.icon;
+            const active = isRouteActive(item.href);
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={() => setMobileMenuOpen(false)}
+                className={`flex items-center gap-3 px-3.5 py-2.5 rounded-sm text-xs uppercase tracking-[0.16em] ${
+                  active
+                    ? "bg-[#FAF7F2] text-[#141210] font-semibold"
+                    : "text-[#D6CEC0] hover:bg-[#1F1C19]"
+                }`}
+              >
+                <Icon className="w-4 h-4" />
+                <span>{item.label}</span>
+              </Link>
+            );
+          })}
+          <div className="pt-2 border-t border-[#2B2723] flex items-center justify-between px-2">
+            <span className="text-xs font-mono text-[#A89F93] truncate">
+              {adminEmail}
+            </span>
+            <button
+              type="button"
+              onClick={() => void handleLogout()}
+              className="text-xs uppercase tracking-[0.14em] text-[#D8A7A4] py-1.5 px-3 cursor-pointer"
+            >
+              Sign Out
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Main Analytical Workspace */}
+      <div className="flex-1 lg:pl-64 flex flex-col min-h-screen">
+        <main className="flex-1 max-w-6xl w-full mx-auto px-4 sm:px-8 py-8 sm:py-10">
+          {children}
+        </main>
+      </div>
+    </div>
+  );
+}
+

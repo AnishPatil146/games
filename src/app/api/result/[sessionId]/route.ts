@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getSessionFullData, completeGameSession } from "@/lib/storage";
+import { getPublicSessionDossier } from "@/lib/storage";
 import { evaluateReport } from "@/lib/scoring";
 
 interface RouteProps {
@@ -9,44 +9,46 @@ interface RouteProps {
 export async function GET(req: NextRequest, props: RouteProps) {
   try {
     const { sessionId } = await props.params;
+    const cookieToken = req.cookies.get("the_unwritten_token")?.value;
 
-    if (!sessionId) {
+    const lookupTarget =
+      sessionId === "current" && cookieToken ? cookieToken : sessionId;
+
+    if (!lookupTarget) {
       return NextResponse.json(
-        { error: "Session ID is required" },
+        { error: "Session identifier is required." },
         { status: 400 }
       );
     }
 
-    const { session, player, events, preferences } = await getSessionFullData(
-      sessionId
-    );
+    const dossier = await getPublicSessionDossier(lookupTarget);
+    if (!dossier) {
+      return NextResponse.json(
+        { error: "No recorded gameplay session was found for this identifier." },
+        { status: 404 }
+      );
+    }
 
-    const playerName = player?.display_name || "Anonymous Traveler";
     const report = evaluateReport(
-      session.id,
-      playerName,
-      events,
-      preferences,
-      session.completed_at || new Date().toISOString()
+      dossier.session.id,
+      dossier.playerDisplayName || "Anonymous Traveler",
+      dossier.events,
+      dossier.preferences,
+      dossier.session.completed_at || dossier.session.started_at,
+      dossier.session.character_presentation
     );
 
-    // Ensure session is marked completed in storage if not already
-    if (session.status !== "completed") {
-      await completeGameSession(session.id, report.archetype);
+    if (!dossier.session.result_archetype && dossier.session.current_chapter >= 6) {
+      await getPublicSessionDossier(lookupTarget, report.archetype);
     }
 
     return NextResponse.json({
       success: true,
       report,
-      player,
-      session,
     });
-  } catch (err: any) {
-    console.error("Error in /api/result/[sessionId]:", err);
-    return NextResponse.json(
-      { error: err.message || "Failed to generate gameplay report" },
-      { status: 500 }
-    );
+  } catch (err: unknown) {
+    const message =
+      err instanceof Error ? err.message : "Failed to generate gameplay report.";
+    return NextResponse.json({ error: message }, { status: 500 });
   }
 }
-
