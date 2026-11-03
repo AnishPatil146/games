@@ -78,7 +78,7 @@ interface PlatformPersistenceData {
 }
 
 const DEFAULT_STORE_FILE = path.join(
-  process.cwd(),
+  /* turbopackIgnore: true */ process.cwd(),
   ".data",
   "platform-store.json"
 );
@@ -122,8 +122,8 @@ function readPlatformStore(): PlatformPersistenceData {
     // Re-sync from disk if present so multi-route dev calls stay coherent
   }
   try {
-    if (fs.existsSync(storePath)) {
-      const raw = fs.readFileSync(storePath, "utf8");
+    if (fs.existsSync(/*turbopackIgnore: true*/ storePath)) {
+      const raw = fs.readFileSync(/*turbopackIgnore: true*/ storePath, "utf8");
       const parsed = JSON.parse(raw) as Partial<PlatformPersistenceData>;
       memoryCache = {
         boards: Array.isArray(parsed.boards)
@@ -197,7 +197,7 @@ export function loadSeededSubjectQuestions(
   }
 
   const filePath = path.join(
-    process.cwd(),
+    /* turbopackIgnore: true */ process.cwd(),
     "src",
     "data",
     "question-bank",
@@ -206,8 +206,8 @@ export function loadSeededSubjectQuestions(
   );
 
   try {
-    if (fs.existsSync(filePath)) {
-      const raw = fs.readFileSync(filePath, "utf8");
+    if (fs.existsSync(/*turbopackIgnore: true*/ filePath)) {
+      const raw = fs.readFileSync(/*turbopackIgnore: true*/ filePath, "utf8");
       const parsed = JSON.parse(raw) as QuestionBankRecord[];
       if (Array.isArray(parsed) && parsed.length > 0) {
         seededSubjectCache.set(subjectSlug, parsed);

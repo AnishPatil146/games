@@ -1,0 +1,4522 @@
+[
+  {
+    "id": "msb-11-art-pol-001",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 1,
+    "chapter": "The State",
+    "topic": "Elements of the State",
+    "difficulty": "Easy",
+    "questionText": "Which of the following is NOT one of the four essential elements of a State?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Political party"
+      },
+      {
+        "key": "B",
+        "text": "Population"
+      },
+      {
+        "key": "C",
+        "text": "Territory"
+      },
+      {
+        "key": "D",
+        "text": "Sovereignty"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "The four essential elements of a State are population, territory, government and sovereignty; political parties are not essential elements.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: The State",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-002",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 1,
+    "chapter": "The State",
+    "topic": "Sovereignty",
+    "difficulty": "Easy",
+    "questionText": "Which element of the State refers to its supreme power, both internal and external?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Government"
+      },
+      {
+        "key": "B",
+        "text": "Sovereignty"
+      },
+      {
+        "key": "C",
+        "text": "Territory"
+      },
+      {
+        "key": "D",
+        "text": "Population"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Sovereignty is the supreme authority of the State, making it independent externally and supreme internally.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: The State",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-003",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 1,
+    "chapter": "The State",
+    "topic": "Origin of the term State",
+    "difficulty": "Easy",
+    "questionText": "The modern term 'State' was first popularised in political writing by which thinker?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Aristotle"
+      },
+      {
+        "key": "B",
+        "text": "Karl Marx"
+      },
+      {
+        "key": "C",
+        "text": "Niccolo Machiavelli"
+      },
+      {
+        "key": "D",
+        "text": "Mahatma Gandhi"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Machiavelli used the term 'lo stato' in The Prince, popularising the modern concept of the State.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: The State",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-004",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 1,
+    "chapter": "The State",
+    "topic": "State and Government",
+    "difficulty": "Medium",
+    "questionText": "Which statement best distinguishes the State from the government?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "The government is permanent while the State keeps changing"
+      },
+      {
+        "key": "B",
+        "text": "Both the State and government are temporary"
+      },
+      {
+        "key": "C",
+        "text": "The State has no sovereignty while the government does"
+      },
+      {
+        "key": "D",
+        "text": "The State is permanent while governments keep changing"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Governments change through elections or other means, but the State as a permanent entity continues.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: The State",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-005",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 1,
+    "chapter": "The State",
+    "topic": "Territory",
+    "difficulty": "Medium",
+    "questionText": "Territory of a State includes which of the following?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Land, territorial waters and airspace above them"
+      },
+      {
+        "key": "B",
+        "text": "Only the land area within its borders"
+      },
+      {
+        "key": "C",
+        "text": "Only land and rivers"
+      },
+      {
+        "key": "D",
+        "text": "Land and the territory of its allies"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "The territory of a State covers its land, territorial waters and the airspace above them.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: The State",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-006",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 1,
+    "chapter": "The State",
+    "topic": "Theories of the State",
+    "difficulty": "Medium",
+    "questionText": "Which theory explains the origin of the State as an agreement among individuals living in a state of nature?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Divine Origin theory"
+      },
+      {
+        "key": "B",
+        "text": "Social Contract theory"
+      },
+      {
+        "key": "C",
+        "text": "Force theory"
+      },
+      {
+        "key": "D",
+        "text": "Evolutionary theory"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Hobbes, Locke and Rousseau explained the State as arising from a social contract among individuals.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: The State",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-007",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 1,
+    "chapter": "The State",
+    "topic": "Liberal view of the State",
+    "difficulty": "Medium",
+    "questionText": "In the liberal perspective, the primary purpose of the State is to:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Abolish private property"
+      },
+      {
+        "key": "B",
+        "text": "Establish a single-party system"
+      },
+      {
+        "key": "C",
+        "text": "Protect individual rights and liberty"
+      },
+      {
+        "key": "D",
+        "text": "Wither away after a revolution"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Liberalism views the State as a means to protect the rights, liberty and property of individuals.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: The State",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-008",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 1,
+    "chapter": "The State",
+    "topic": "Marxist view of the State",
+    "difficulty": "Hard",
+    "questionText": "According to the Marxist perspective, the State is best described as:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "A neutral arbiter serving the common good"
+      },
+      {
+        "key": "B",
+        "text": "A divine institution created by God"
+      },
+      {
+        "key": "C",
+        "text": "A natural institution necessary for the good life"
+      },
+      {
+        "key": "D",
+        "text": "An instrument of class domination that will eventually wither away"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Marxists see the State as a tool of the dominant class that will wither away in a classless society.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: The State",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-009",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 1,
+    "chapter": "The State",
+    "topic": "Hobbes's state of nature",
+    "difficulty": "Hard",
+    "questionText": "Thomas Hobbes described life in the state of nature as:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Solitary, poor, nasty, brutish and short"
+      },
+      {
+        "key": "B",
+        "text": "Peaceful, cooperative and governed by natural law"
+      },
+      {
+        "key": "C",
+        "text": "Idyllic, with the noble savage living freely"
+      },
+      {
+        "key": "D",
+        "text": "Organised under a hereditary monarch"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "In Leviathan, Hobbes described the state of nature as a war of all against all, with life 'solitary, poor, nasty, brutish and short'.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: The State",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-010",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 1,
+    "chapter": "The State",
+    "topic": "Gandhian view of the State",
+    "difficulty": "Hard",
+    "questionText": "Why did Mahatma Gandhi regard the State with suspicion?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "He believed it was too weak to maintain order"
+      },
+      {
+        "key": "B",
+        "text": "He saw it as representing violence in a concentrated and organised form"
+      },
+      {
+        "key": "C",
+        "text": "He considered it a divine institution beyond criticism"
+      },
+      {
+        "key": "D",
+        "text": "He wanted the State to control all economic activity"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Gandhi viewed the State as a soulless machine based on coercion and favoured decentralised self-rule.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: The State",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-011",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 2,
+    "chapter": "Liberty and Rights",
+    "topic": "Meaning of liberty",
+    "difficulty": "Easy",
+    "questionText": "The English word 'liberty' is derived from the Latin word:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Libra"
+      },
+      {
+        "key": "B",
+        "text": "Lex"
+      },
+      {
+        "key": "C",
+        "text": "Liber"
+      },
+      {
+        "key": "D",
+        "text": "Polis"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "The word liberty comes from the Latin 'liber', meaning free.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Liberty and Rights",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-012",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 2,
+    "chapter": "Liberty and Rights",
+    "topic": "On Liberty",
+    "difficulty": "Easy",
+    "questionText": "Who wrote the famous essay 'On Liberty' (1859)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "John Locke"
+      },
+      {
+        "key": "B",
+        "text": "Jean-Jacques Rousseau"
+      },
+      {
+        "key": "C",
+        "text": "Isaiah Berlin"
+      },
+      {
+        "key": "D",
+        "text": "John Stuart Mill"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "J.S. Mill's On Liberty defended individual freedom and the harm principle.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Liberty and Rights",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-013",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 2,
+    "chapter": "Liberty and Rights",
+    "topic": "Universal Declaration",
+    "difficulty": "Easy",
+    "questionText": "The Universal Declaration of Human Rights was adopted by the UN General Assembly in which year?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1948"
+      },
+      {
+        "key": "B",
+        "text": "1945"
+      },
+      {
+        "key": "C",
+        "text": "1950"
+      },
+      {
+        "key": "D",
+        "text": "1966"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "The UDHR was adopted on 10 December 1948, now observed as Human Rights Day.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Liberty and Rights",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-014",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 2,
+    "chapter": "Liberty and Rights",
+    "topic": "Negative and positive liberty",
+    "difficulty": "Medium",
+    "questionText": "The distinction between 'negative liberty' and 'positive liberty' was famously drawn by:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Thomas Hobbes"
+      },
+      {
+        "key": "B",
+        "text": "Isaiah Berlin"
+      },
+      {
+        "key": "C",
+        "text": "Karl Marx"
+      },
+      {
+        "key": "D",
+        "text": "B.R. Ambedkar"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Isaiah Berlin's essay 'Two Concepts of Liberty' distinguished freedom from interference and freedom to achieve self-mastery.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Liberty and Rights",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-015",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 2,
+    "chapter": "Liberty and Rights",
+    "topic": "Negative liberty",
+    "difficulty": "Medium",
+    "questionText": "Negative liberty primarily means:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Provision of opportunities by the State for self-development"
+      },
+      {
+        "key": "B",
+        "text": "Freedom to disobey all laws"
+      },
+      {
+        "key": "C",
+        "text": "Absence of external restraints on the individual"
+      },
+      {
+        "key": "D",
+        "text": "Collective freedom of a nation from colonial rule"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Negative liberty is freedom from interference, marking an area where the individual is not restrained.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Liberty and Rights",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-016",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 2,
+    "chapter": "Liberty and Rights",
+    "topic": "Harm principle",
+    "difficulty": "Medium",
+    "questionText": "According to J.S. Mill's harm principle, the State may restrict an individual's liberty only to:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Promote the individual's own good"
+      },
+      {
+        "key": "B",
+        "text": "Enforce majority moral preferences"
+      },
+      {
+        "key": "C",
+        "text": "Increase national wealth"
+      },
+      {
+        "key": "D",
+        "text": "Prevent harm to others"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Mill argued power can be rightfully exercised over an individual only to prevent harm to others.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Liberty and Rights",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-017",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 2,
+    "chapter": "Liberty and Rights",
+    "topic": "Natural rights",
+    "difficulty": "Medium",
+    "questionText": "John Locke identified which three natural rights?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Life, liberty and property"
+      },
+      {
+        "key": "B",
+        "text": "Equality, fraternity and justice"
+      },
+      {
+        "key": "C",
+        "text": "Speech, religion and assembly"
+      },
+      {
+        "key": "D",
+        "text": "Work, education and health"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Locke held that individuals possess natural rights to life, liberty and property, which government must protect.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Liberty and Rights",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-018",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 2,
+    "chapter": "Liberty and Rights",
+    "topic": "Generations of rights",
+    "difficulty": "Hard",
+    "questionText": "Which of the following is generally classified as a 'third generation' right?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Right to vote"
+      },
+      {
+        "key": "B",
+        "text": "Right to a clean environment"
+      },
+      {
+        "key": "C",
+        "text": "Right to freedom of speech"
+      },
+      {
+        "key": "D",
+        "text": "Right to a fair trial"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Third-generation rights are collective or solidarity rights such as development and a clean environment; civil and political rights are first generation.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Liberty and Rights",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-019",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 2,
+    "chapter": "Liberty and Rights",
+    "topic": "Rights and duties",
+    "difficulty": "Hard",
+    "questionText": "Which statement best expresses the relationship between rights and duties?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Rights and duties are completely unrelated"
+      },
+      {
+        "key": "B",
+        "text": "Duties exist only for the State, not for citizens"
+      },
+      {
+        "key": "C",
+        "text": "Rights of one person imply duties on others to respect them"
+      },
+      {
+        "key": "D",
+        "text": "Rights are absolute and impose no obligations"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Rights and duties are correlative: every right claimed implies a duty on others and on the right-holder to respect others' rights.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Liberty and Rights",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-020",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 2,
+    "chapter": "Liberty and Rights",
+    "topic": "Positive liberty critique",
+    "difficulty": "Hard",
+    "questionText": "A common criticism of positive liberty, as raised by Isaiah Berlin, is that it:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Ignores the role of the State altogether"
+      },
+      {
+        "key": "B",
+        "text": "Denies all forms of self-development"
+      },
+      {
+        "key": "C",
+        "text": "Gives too little power to governments"
+      },
+      {
+        "key": "D",
+        "text": "May be used to justify coercion in the name of a person's 'true' self"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Berlin warned that positive liberty could be distorted to justify authoritarian coercion in the name of people's 'real' interests.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Liberty and Rights",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-021",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 3,
+    "chapter": "Equality and Justice",
+    "topic": "A Theory of Justice",
+    "difficulty": "Easy",
+    "questionText": "Who wrote 'A Theory of Justice' (1971)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "John Rawls"
+      },
+      {
+        "key": "B",
+        "text": "Robert Nozick"
+      },
+      {
+        "key": "C",
+        "text": "Amartya Sen"
+      },
+      {
+        "key": "D",
+        "text": "Plato"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "John Rawls proposed 'justice as fairness' in A Theory of Justice.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Equality and Justice",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-022",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 3,
+    "chapter": "Equality and Justice",
+    "topic": "Legal equality",
+    "difficulty": "Easy",
+    "questionText": "The principle of 'equality before the law' means:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Everyone must earn the same income"
+      },
+      {
+        "key": "B",
+        "text": "No person is above the law and all are subject to the same laws"
+      },
+      {
+        "key": "C",
+        "text": "All citizens hold the same government post"
+      },
+      {
+        "key": "D",
+        "text": "Laws apply only to citizens, not officials"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Equality before the law means everyone, regardless of status, is subject to the ordinary law of the land.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Equality and Justice",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-023",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 3,
+    "chapter": "Equality and Justice",
+    "topic": "Plato on justice",
+    "difficulty": "Easy",
+    "questionText": "In which work did Plato discuss his idea of justice?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Politics"
+      },
+      {
+        "key": "B",
+        "text": "Leviathan"
+      },
+      {
+        "key": "C",
+        "text": "The Republic"
+      },
+      {
+        "key": "D",
+        "text": "The Social Contract"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Plato's Republic presents justice as each class performing its proper function.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Equality and Justice",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-024",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 3,
+    "chapter": "Equality and Justice",
+    "topic": "Types of equality",
+    "difficulty": "Medium",
+    "questionText": "Universal adult franchise is an example of which type of equality?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Economic equality"
+      },
+      {
+        "key": "B",
+        "text": "Natural equality"
+      },
+      {
+        "key": "C",
+        "text": "Social hierarchy"
+      },
+      {
+        "key": "D",
+        "text": "Political equality"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Political equality gives all adult citizens an equal right to vote and participate in politics.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Equality and Justice",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-025",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 3,
+    "chapter": "Equality and Justice",
+    "topic": "Veil of ignorance",
+    "difficulty": "Medium",
+    "questionText": "In Rawls's theory, the 'veil of ignorance' requires people choosing principles of justice to:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Not know their own position, talents or status in society"
+      },
+      {
+        "key": "B",
+        "text": "Know exactly how wealthy they will be"
+      },
+      {
+        "key": "C",
+        "text": "Follow the decisions of the ruling class"
+      },
+      {
+        "key": "D",
+        "text": "Base choices only on religious texts"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Behind the veil of ignorance, people choose fair principles because they do not know where they will end up in society.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Equality and Justice",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-026",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 3,
+    "chapter": "Equality and Justice",
+    "topic": "Difference principle",
+    "difficulty": "Medium",
+    "questionText": "Rawls's 'difference principle' permits social and economic inequalities only if they:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Benefit the most talented individuals"
+      },
+      {
+        "key": "B",
+        "text": "Benefit the least advantaged members of society"
+      },
+      {
+        "key": "C",
+        "text": "Are approved by a majority vote"
+      },
+      {
+        "key": "D",
+        "text": "Arise from inheritance"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "The difference principle allows inequalities only when they work to the greatest benefit of the least advantaged.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Equality and Justice",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-027",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 3,
+    "chapter": "Equality and Justice",
+    "topic": "Equality of opportunity",
+    "difficulty": "Medium",
+    "questionText": "Equality of opportunity primarily aims to ensure that:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Everyone achieves the same outcome"
+      },
+      {
+        "key": "B",
+        "text": "Only the talented receive education"
+      },
+      {
+        "key": "C",
+        "text": "All individuals have fair conditions to develop their abilities"
+      },
+      {
+        "key": "D",
+        "text": "Inheritance determines social position"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Equality of opportunity focuses on removing barriers so everyone has a fair chance, not on identical outcomes.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Equality and Justice",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-028",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 3,
+    "chapter": "Equality and Justice",
+    "topic": "Affirmative action",
+    "difficulty": "Hard",
+    "questionText": "The rationale for affirmative action (such as reservations in India) is that:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "All citizens must be treated identically in every case"
+      },
+      {
+        "key": "B",
+        "text": "Merit should never be considered"
+      },
+      {
+        "key": "C",
+        "text": "Inequality is natural and must be preserved"
+      },
+      {
+        "key": "D",
+        "text": "Formal equality alone may not remove historical disadvantages"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Affirmative action recognises that substantive equality may require special measures for historically disadvantaged groups.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Equality and Justice",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-029",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 3,
+    "chapter": "Equality and Justice",
+    "topic": "Social justice in India",
+    "difficulty": "Hard",
+    "questionText": "Which Indian leader, chairman of the Drafting Committee, strongly linked political democracy with social and economic democracy?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "B.R. Ambedkar"
+      },
+      {
+        "key": "B",
+        "text": "Sardar Vallabhbhai Patel"
+      },
+      {
+        "key": "C",
+        "text": "C. Rajagopalachari"
+      },
+      {
+        "key": "D",
+        "text": "Rajendra Prasad"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Ambedkar warned that political democracy cannot last unless it rests on social democracy based on liberty, equality and fraternity.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Equality and Justice",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-030",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 3,
+    "chapter": "Equality and Justice",
+    "topic": "Entitlement theory",
+    "difficulty": "Hard",
+    "questionText": "Robert Nozick's entitlement theory of justice emphasises:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Redistribution of wealth by a strong welfare State"
+      },
+      {
+        "key": "B",
+        "text": "Justice in acquisition and transfer of holdings, with a minimal State"
+      },
+      {
+        "key": "C",
+        "text": "Abolition of private property"
+      },
+      {
+        "key": "D",
+        "text": "Distribution according to need"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Nozick argued that holdings are just if acquired and transferred justly, supporting a minimal State and opposing redistribution.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Equality and Justice",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-031",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 4,
+    "chapter": "Constitutional Government",
+    "topic": "Constituent Assembly",
+    "difficulty": "Easy",
+    "questionText": "Who was the President of the Constituent Assembly of India?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Dr. B.R. Ambedkar"
+      },
+      {
+        "key": "B",
+        "text": "Jawaharlal Nehru"
+      },
+      {
+        "key": "C",
+        "text": "Dr. Rajendra Prasad"
+      },
+      {
+        "key": "D",
+        "text": "Sardar Patel"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Dr. Rajendra Prasad was elected permanent President of the Constituent Assembly in December 1946.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Constitutional Government",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-032",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 4,
+    "chapter": "Constitutional Government",
+    "topic": "Constitution adoption",
+    "difficulty": "Easy",
+    "questionText": "The Constitution of India came into force on:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "15 August 1947"
+      },
+      {
+        "key": "B",
+        "text": "26 November 1949"
+      },
+      {
+        "key": "C",
+        "text": "2 October 1950"
+      },
+      {
+        "key": "D",
+        "text": "26 January 1950"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "The Constitution was adopted on 26 November 1949 and came into force on 26 January 1950.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Constitutional Government",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-033",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 4,
+    "chapter": "Constitutional Government",
+    "topic": "Magna Carta",
+    "difficulty": "Easy",
+    "questionText": "The Magna Carta, an early landmark in limiting royal power, was signed in England in:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1215"
+      },
+      {
+        "key": "B",
+        "text": "1688"
+      },
+      {
+        "key": "C",
+        "text": "1789"
+      },
+      {
+        "key": "D",
+        "text": "1066"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "King John sealed the Magna Carta in 1215, limiting the arbitrary powers of the monarch.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Constitutional Government",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-034",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 4,
+    "chapter": "Constitutional Government",
+    "topic": "Constitutionalism",
+    "difficulty": "Medium",
+    "questionText": "The central idea of constitutionalism is:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Unlimited power of the ruler"
+      },
+      {
+        "key": "B",
+        "text": "Limited government bound by rules"
+      },
+      {
+        "key": "C",
+        "text": "Rule by a single party"
+      },
+      {
+        "key": "D",
+        "text": "Government without any written laws"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Constitutionalism means government power is limited and exercised according to a constitution.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Constitutional Government",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-035",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 4,
+    "chapter": "Constitutional Government",
+    "topic": "Rigid constitution",
+    "difficulty": "Medium",
+    "questionText": "A constitution that requires a special procedure for amendment is called:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Flexible"
+      },
+      {
+        "key": "B",
+        "text": "Unwritten"
+      },
+      {
+        "key": "C",
+        "text": "Rigid"
+      },
+      {
+        "key": "D",
+        "text": "Unitary"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "A rigid constitution cannot be amended by the ordinary legislative process; a special procedure is required.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Constitutional Government",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-036",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 4,
+    "chapter": "Constitutional Government",
+    "topic": "Unwritten constitution",
+    "difficulty": "Medium",
+    "questionText": "Which country is best known for having an uncodified (unwritten) constitution?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "United States"
+      },
+      {
+        "key": "B",
+        "text": "India"
+      },
+      {
+        "key": "C",
+        "text": "France"
+      },
+      {
+        "key": "D",
+        "text": "United Kingdom"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "The UK constitution is found in statutes, conventions and judicial decisions rather than a single document.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Constitutional Government",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-037",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 4,
+    "chapter": "Constitutional Government",
+    "topic": "Preamble",
+    "difficulty": "Medium",
+    "questionText": "Which words were added to the Preamble of the Indian Constitution by the 42nd Amendment (1976)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Socialist, Secular and Integrity"
+      },
+      {
+        "key": "B",
+        "text": "Sovereign, Democratic and Republic"
+      },
+      {
+        "key": "C",
+        "text": "Justice, Liberty and Equality"
+      },
+      {
+        "key": "D",
+        "text": "Fraternity, Dignity and Unity"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "The 42nd Amendment added 'Socialist', 'Secular' and 'Integrity' to the Preamble.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Constitutional Government",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-038",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 4,
+    "chapter": "Constitutional Government",
+    "topic": "Basic structure",
+    "difficulty": "Hard",
+    "questionText": "The 'basic structure' doctrine was laid down by the Supreme Court of India in which case?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Golaknath v. State of Punjab (1967)"
+      },
+      {
+        "key": "B",
+        "text": "Kesavananda Bharati v. State of Kerala (1973)"
+      },
+      {
+        "key": "C",
+        "text": "Maneka Gandhi v. Union of India (1978)"
+      },
+      {
+        "key": "D",
+        "text": "A.K. Gopalan v. State of Madras (1950)"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "In Kesavananda Bharati, the Court held that Parliament can amend the Constitution but cannot alter its basic structure.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Constitutional Government",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-039",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 4,
+    "chapter": "Constitutional Government",
+    "topic": "Separation of powers",
+    "difficulty": "Hard",
+    "questionText": "The theory of separation of powers is most closely associated with which thinker?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Rousseau"
+      },
+      {
+        "key": "B",
+        "text": "Hobbes"
+      },
+      {
+        "key": "C",
+        "text": "Montesquieu"
+      },
+      {
+        "key": "D",
+        "text": "Machiavelli"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Montesquieu, in The Spirit of the Laws (1748), argued that liberty requires separating legislative, executive and judicial powers.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Constitutional Government",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-040",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 4,
+    "chapter": "Constitutional Government",
+    "topic": "Functions of a constitution",
+    "difficulty": "Hard",
+    "questionText": "Which is the most fundamental reason a constitution is needed in a diverse society?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "To ensure one group permanently governs others"
+      },
+      {
+        "key": "B",
+        "text": "To eliminate all disagreement among citizens"
+      },
+      {
+        "key": "C",
+        "text": "To replace the need for elections"
+      },
+      {
+        "key": "D",
+        "text": "To provide agreed basic rules that coordinate and limit power"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "A constitution provides a set of basic rules that generate trust, specify who decides, and limit government power.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Constitutional Government",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-041",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 5,
+    "chapter": "Concept of Representation",
+    "topic": "Universal adult franchise",
+    "difficulty": "Easy",
+    "questionText": "What is the present minimum voting age in India?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "18 years"
+      },
+      {
+        "key": "B",
+        "text": "21 years"
+      },
+      {
+        "key": "C",
+        "text": "25 years"
+      },
+      {
+        "key": "D",
+        "text": "16 years"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "The 61st Amendment (1988) lowered the voting age from 21 to 18 years.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Concept of Representation",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-042",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 5,
+    "chapter": "Concept of Representation",
+    "topic": "Election Commission",
+    "difficulty": "Easy",
+    "questionText": "Which body conducts elections to Parliament and State Legislatures in India?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Supreme Court of India"
+      },
+      {
+        "key": "B",
+        "text": "Election Commission of India"
+      },
+      {
+        "key": "C",
+        "text": "Union Public Service Commission"
+      },
+      {
+        "key": "D",
+        "text": "Finance Commission"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Article 324 vests the superintendence and control of elections in the Election Commission of India.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Concept of Representation",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-043",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 5,
+    "chapter": "Concept of Representation",
+    "topic": "Direct democracy",
+    "difficulty": "Easy",
+    "questionText": "In which form of democracy do citizens make decisions themselves rather than through representatives?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Representative democracy"
+      },
+      {
+        "key": "B",
+        "text": "Parliamentary democracy"
+      },
+      {
+        "key": "C",
+        "text": "Direct democracy"
+      },
+      {
+        "key": "D",
+        "text": "Presidential democracy"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "In direct democracy citizens participate personally in law-making, as in ancient Athens.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Concept of Representation",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-044",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 5,
+    "chapter": "Concept of Representation",
+    "topic": "FPTP system",
+    "difficulty": "Medium",
+    "questionText": "Under the First-Past-the-Post system, a candidate wins by:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Securing an absolute majority of over 50 percent"
+      },
+      {
+        "key": "B",
+        "text": "Being nominated by the President"
+      },
+      {
+        "key": "C",
+        "text": "Winning votes in proportion to party lists"
+      },
+      {
+        "key": "D",
+        "text": "Securing more votes than any other candidate"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "In FPTP the candidate with the most votes (plurality) wins even without a majority.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Concept of Representation",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-045",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 5,
+    "chapter": "Concept of Representation",
+    "topic": "Proportional representation",
+    "difficulty": "Medium",
+    "questionText": "In India, the President and members of the Rajya Sabha are elected using:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Proportional representation by single transferable vote"
+      },
+      {
+        "key": "B",
+        "text": "First-Past-the-Post"
+      },
+      {
+        "key": "C",
+        "text": "Party list system"
+      },
+      {
+        "key": "D",
+        "text": "Direct popular vote"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Indirect elections for the President and Rajya Sabha use proportional representation by single transferable vote.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Concept of Representation",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-046",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 5,
+    "chapter": "Concept of Representation",
+    "topic": "Burke's view",
+    "difficulty": "Medium",
+    "questionText": "Edmund Burke argued that an elected representative should act as a:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Delegate strictly following voter instructions"
+      },
+      {
+        "key": "B",
+        "text": "Trustee exercising independent judgment"
+      },
+      {
+        "key": "C",
+        "text": "Servant of the party leadership only"
+      },
+      {
+        "key": "D",
+        "text": "Agent of the monarch"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Burke held that representatives owe constituents their judgment, not mere obedience to instructions.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Concept of Representation",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-047",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 5,
+    "chapter": "Concept of Representation",
+    "topic": "Reserved constituencies",
+    "difficulty": "Medium",
+    "questionText": "Reserved constituencies in Lok Sabha and State Assemblies are provided for:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Religious minorities"
+      },
+      {
+        "key": "B",
+        "text": "Linguistic minorities"
+      },
+      {
+        "key": "C",
+        "text": "Scheduled Castes and Scheduled Tribes"
+      },
+      {
+        "key": "D",
+        "text": "Retired government officials"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "The Constitution reserves seats for SCs and STs to ensure their representation in legislatures.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Concept of Representation",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-048",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 5,
+    "chapter": "Concept of Representation",
+    "topic": "Merits of FPTP",
+    "difficulty": "Hard",
+    "questionText": "Why did the Constitution makers prefer FPTP for Lok Sabha elections?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "It guarantees seats exactly proportional to votes"
+      },
+      {
+        "key": "B",
+        "text": "It eliminates all regional parties"
+      },
+      {
+        "key": "C",
+        "text": "It removes the need for constituencies"
+      },
+      {
+        "key": "D",
+        "text": "It is simple and tends to produce stable governments"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "FPTP is simple for voters, links representatives to constituencies and usually produces stable majorities.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Concept of Representation",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-049",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 5,
+    "chapter": "Concept of Representation",
+    "topic": "Weakness of FPTP",
+    "difficulty": "Hard",
+    "questionText": "A major criticism of the FPTP system is that:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "A party's share of seats can differ greatly from its share of votes"
+      },
+      {
+        "key": "B",
+        "text": "It requires highly complex counting"
+      },
+      {
+        "key": "C",
+        "text": "It always produces hung legislatures"
+      },
+      {
+        "key": "D",
+        "text": "Voters cannot identify their representative"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Under FPTP, parties may win a seat share much larger or smaller than their vote share.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Concept of Representation",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-050",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 5,
+    "chapter": "Concept of Representation",
+    "topic": "Functional representation",
+    "difficulty": "Hard",
+    "questionText": "Representation based on occupation or professional groups rather than territory is called:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Territorial representation"
+      },
+      {
+        "key": "B",
+        "text": "Functional representation"
+      },
+      {
+        "key": "C",
+        "text": "Proportional representation"
+      },
+      {
+        "key": "D",
+        "text": "Virtual representation"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Functional representation, advocated by guild socialists, gives representation to occupational and professional groups.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Concept of Representation",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-051",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 6,
+    "chapter": "Role of the Judiciary",
+    "topic": "Supreme Court",
+    "difficulty": "Easy",
+    "questionText": "The Supreme Court of India was established in:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1947"
+      },
+      {
+        "key": "B",
+        "text": "1935"
+      },
+      {
+        "key": "C",
+        "text": "1950"
+      },
+      {
+        "key": "D",
+        "text": "1956"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "The Supreme Court was inaugurated on 28 January 1950, two days after the Constitution came into force.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Role of the Judiciary",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-052",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 6,
+    "chapter": "Role of the Judiciary",
+    "topic": "Writs",
+    "difficulty": "Easy",
+    "questionText": "Which writ is issued to produce a detained person before the court?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Mandamus"
+      },
+      {
+        "key": "B",
+        "text": "Certiorari"
+      },
+      {
+        "key": "C",
+        "text": "Quo Warranto"
+      },
+      {
+        "key": "D",
+        "text": "Habeas Corpus"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Habeas Corpus means 'you may have the body' and protects against unlawful detention.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Role of the Judiciary",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-053",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 6,
+    "chapter": "Role of the Judiciary",
+    "topic": "Judicial review origin",
+    "difficulty": "Easy",
+    "questionText": "The principle of judicial review was established in the USA by which case?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Marbury v. Madison (1803)"
+      },
+      {
+        "key": "B",
+        "text": "Brown v. Board of Education (1954)"
+      },
+      {
+        "key": "C",
+        "text": "Roe v. Wade (1973)"
+      },
+      {
+        "key": "D",
+        "text": "Plessy v. Ferguson (1896)"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chief Justice John Marshall established judicial review in Marbury v. Madison in 1803.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Role of the Judiciary",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-054",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 6,
+    "chapter": "Role of the Judiciary",
+    "topic": "Judicial review",
+    "difficulty": "Medium",
+    "questionText": "Judicial review refers to the power of courts to:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Make new laws on any subject"
+      },
+      {
+        "key": "B",
+        "text": "Examine the constitutionality of laws and executive actions"
+      },
+      {
+        "key": "C",
+        "text": "Appoint ministers"
+      },
+      {
+        "key": "D",
+        "text": "Conduct elections"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Through judicial review, courts can strike down laws and actions that violate the Constitution.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Role of the Judiciary",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-055",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 6,
+    "chapter": "Role of the Judiciary",
+    "topic": "PIL",
+    "difficulty": "Medium",
+    "questionText": "Public Interest Litigation in India relaxed which traditional legal rule?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Double jeopardy"
+      },
+      {
+        "key": "B",
+        "text": "Res judicata"
+      },
+      {
+        "key": "C",
+        "text": "Locus standi"
+      },
+      {
+        "key": "D",
+        "text": "Habeas corpus"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "PIL relaxed locus standi, allowing any public-spirited person to approach courts on behalf of others.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Role of the Judiciary",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-056",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 6,
+    "chapter": "Role of the Judiciary",
+    "topic": "Writ of Mandamus",
+    "difficulty": "Medium",
+    "questionText": "The writ of Mandamus is issued to:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Release an illegally detained person"
+      },
+      {
+        "key": "B",
+        "text": "Question a person's right to hold a public office"
+      },
+      {
+        "key": "C",
+        "text": "Quash the order of a lower court"
+      },
+      {
+        "key": "D",
+        "text": "Command a public official to perform a public duty"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Mandamus ('we command') directs a public authority to perform a duty it has failed to perform.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Role of the Judiciary",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-057",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 6,
+    "chapter": "Role of the Judiciary",
+    "topic": "Independence of judiciary",
+    "difficulty": "Medium",
+    "questionText": "Which provision helps protect the independence of Supreme Court judges in India?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Judges can be removed only through a special parliamentary process"
+      },
+      {
+        "key": "B",
+        "text": "Judges are elected every five years"
+      },
+      {
+        "key": "C",
+        "text": "Judges' salaries can be reduced by the executive at will"
+      },
+      {
+        "key": "D",
+        "text": "Judges are appointed by the ruling party"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Removal requires a special majority in both Houses on grounds of proved misbehaviour or incapacity, securing tenure.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Role of the Judiciary",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-058",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 6,
+    "chapter": "Role of the Judiciary",
+    "topic": "Judicial activism",
+    "difficulty": "Hard",
+    "questionText": "Judicial activism is best described as:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Courts refusing to hear constitutional cases"
+      },
+      {
+        "key": "B",
+        "text": "Courts taking a proactive role to protect rights and ensure accountability"
+      },
+      {
+        "key": "C",
+        "text": "The executive overruling court judgments"
+      },
+      {
+        "key": "D",
+        "text": "Courts restricting themselves to technical interpretation only"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Judicial activism refers to courts proactively expanding rights and checking government, often through PIL.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Role of the Judiciary",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-059",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 6,
+    "chapter": "Role of the Judiciary",
+    "topic": "Judicial overreach concern",
+    "difficulty": "Hard",
+    "questionText": "A frequent criticism of excessive judicial activism is that it:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Strengthens the separation of powers too rigidly"
+      },
+      {
+        "key": "B",
+        "text": "Prevents citizens from approaching courts"
+      },
+      {
+        "key": "C",
+        "text": "May blur the separation of powers between organs of government"
+      },
+      {
+        "key": "D",
+        "text": "Gives Parliament power to appoint judges"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Critics argue that when courts enter executive or legislative domains, the balance among the three organs may be disturbed.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Role of the Judiciary",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-060",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 6,
+    "chapter": "Role of the Judiciary",
+    "topic": "Original jurisdiction",
+    "difficulty": "Hard",
+    "questionText": "Which type of dispute falls under the original jurisdiction of the Supreme Court of India?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Appeals in all criminal cases from district courts"
+      },
+      {
+        "key": "B",
+        "text": "Petty civil disputes between neighbours"
+      },
+      {
+        "key": "C",
+        "text": "Election disputes of municipal councils"
+      },
+      {
+        "key": "D",
+        "text": "Disputes between the Union and one or more States"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Under Article 131, federal disputes between the Union and States, or between States, come under the Supreme Court's original jurisdiction.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Role of the Judiciary",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-061",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 7,
+    "chapter": "Public Administration",
+    "topic": "Father of Public Administration",
+    "difficulty": "Easy",
+    "questionText": "Who is regarded as the father of Public Administration as a discipline?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Woodrow Wilson"
+      },
+      {
+        "key": "B",
+        "text": "Max Weber"
+      },
+      {
+        "key": "C",
+        "text": "F.W. Taylor"
+      },
+      {
+        "key": "D",
+        "text": "Henri Fayol"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Woodrow Wilson's 1887 essay 'The Study of Administration' laid the foundation of the discipline.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Public Administration",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-062",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 7,
+    "chapter": "Public Administration",
+    "topic": "UPSC",
+    "difficulty": "Easy",
+    "questionText": "Which body recruits officers to All India Services such as the IAS?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Election Commission"
+      },
+      {
+        "key": "B",
+        "text": "Union Public Service Commission"
+      },
+      {
+        "key": "C",
+        "text": "NITI Aayog"
+      },
+      {
+        "key": "D",
+        "text": "Comptroller and Auditor General"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "The UPSC conducts the Civil Services Examination for recruitment to the IAS, IPS and other services.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Public Administration",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-063",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 7,
+    "chapter": "Public Administration",
+    "topic": "Bureaucracy theory",
+    "difficulty": "Easy",
+    "questionText": "The classical theory of bureaucracy is associated with:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Karl Marx"
+      },
+      {
+        "key": "B",
+        "text": "John Locke"
+      },
+      {
+        "key": "C",
+        "text": "Max Weber"
+      },
+      {
+        "key": "D",
+        "text": "Kautilya"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Max Weber described the ideal-type bureaucracy with hierarchy, rules and impersonality.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Public Administration",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-064",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 7,
+    "chapter": "Public Administration",
+    "topic": "Politics-administration dichotomy",
+    "difficulty": "Medium",
+    "questionText": "Woodrow Wilson's 'politics-administration dichotomy' suggests that:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Administrators should contest elections"
+      },
+      {
+        "key": "B",
+        "text": "Politics and administration are identical"
+      },
+      {
+        "key": "C",
+        "text": "Courts should run the administration"
+      },
+      {
+        "key": "D",
+        "text": "Policy-making and policy implementation should be separate"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Wilson argued that politics sets policy while administration should implement it efficiently and neutrally.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Public Administration",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-065",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 7,
+    "chapter": "Public Administration",
+    "topic": "Features of bureaucracy",
+    "difficulty": "Medium",
+    "questionText": "Which is a key feature of Weber's ideal bureaucracy?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Hierarchy of authority with written rules"
+      },
+      {
+        "key": "B",
+        "text": "Appointment based on personal loyalty"
+      },
+      {
+        "key": "C",
+        "text": "Absence of any record-keeping"
+      },
+      {
+        "key": "D",
+        "text": "Decisions taken on whims"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Weber's bureaucracy features hierarchy, rule-based conduct, written records and merit-based appointment.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Public Administration",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-066",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 7,
+    "chapter": "Public Administration",
+    "topic": "Right to Information",
+    "difficulty": "Medium",
+    "questionText": "The Right to Information Act in India was enacted in:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1995"
+      },
+      {
+        "key": "B",
+        "text": "2005"
+      },
+      {
+        "key": "C",
+        "text": "2010"
+      },
+      {
+        "key": "D",
+        "text": "2000"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "The RTI Act, 2005 empowers citizens to seek information from public authorities, promoting transparency.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Public Administration",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-067",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 7,
+    "chapter": "Public Administration",
+    "topic": "Civil servants' neutrality",
+    "difficulty": "Medium",
+    "questionText": "Political neutrality of civil servants means they should:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Campaign for the ruling party"
+      },
+      {
+        "key": "B",
+        "text": "Oppose government policies publicly"
+      },
+      {
+        "key": "C",
+        "text": "Serve the government of the day impartially regardless of party"
+      },
+      {
+        "key": "D",
+        "text": "Join political parties openly"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Neutrality requires civil servants to implement policies impartially, whichever party is in power.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Public Administration",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-068",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 7,
+    "chapter": "Public Administration",
+    "topic": "New Public Management",
+    "difficulty": "Hard",
+    "questionText": "New Public Management (NPM) emphasises:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Expanding rigid rules and red tape"
+      },
+      {
+        "key": "B",
+        "text": "Abolishing all public services"
+      },
+      {
+        "key": "C",
+        "text": "Returning to hereditary appointments"
+      },
+      {
+        "key": "D",
+        "text": "Applying market-oriented, results-based practices to government"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "NPM, emerging in the 1980s, stresses efficiency, performance measurement, and citizen-as-customer approaches.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Public Administration",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-069",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 7,
+    "chapter": "Public Administration",
+    "topic": "E-governance",
+    "difficulty": "Hard",
+    "questionText": "The main objective of e-governance is to:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Make government services more efficient, transparent and accessible using ICT"
+      },
+      {
+        "key": "B",
+        "text": "Replace elected representatives with computers"
+      },
+      {
+        "key": "C",
+        "text": "Reduce citizen access to information"
+      },
+      {
+        "key": "D",
+        "text": "Centralise all records on paper"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "E-governance uses information technology to improve service delivery, transparency and citizen participation.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Public Administration",
+    "abilityTags": [
+      "creative_thinking",
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-070",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 7,
+    "chapter": "Public Administration",
+    "topic": "Criticism of bureaucracy",
+    "difficulty": "Hard",
+    "questionText": "Which is a common criticism of bureaucracy?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Too much flexibility in following rules"
+      },
+      {
+        "key": "B",
+        "text": "Excessive red tape and rigidity"
+      },
+      {
+        "key": "C",
+        "text": "Complete absence of hierarchy"
+      },
+      {
+        "key": "D",
+        "text": "Lack of any written procedures"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Bureaucracy is often criticised for red tape, delays and rigid adherence to procedures over outcomes.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Public Administration",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-071",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 8,
+    "chapter": "Development Administration",
+    "topic": "Coining of the term",
+    "difficulty": "Easy",
+    "questionText": "The term 'Development Administration' was first used by:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Woodrow Wilson"
+      },
+      {
+        "key": "B",
+        "text": "Max Weber"
+      },
+      {
+        "key": "C",
+        "text": "U.L. Goswami"
+      },
+      {
+        "key": "D",
+        "text": "Fred Riggs"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Indian scholar U.L. Goswami first used the term in 1955; it was later popularised by Edward Weidner and Fred Riggs.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Development Administration",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-072",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 8,
+    "chapter": "Development Administration",
+    "topic": "Panchayati Raj",
+    "difficulty": "Easy",
+    "questionText": "Which constitutional amendment gave constitutional status to Panchayati Raj institutions?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "74th Amendment"
+      },
+      {
+        "key": "B",
+        "text": "42nd Amendment"
+      },
+      {
+        "key": "C",
+        "text": "86th Amendment"
+      },
+      {
+        "key": "D",
+        "text": "73rd Amendment"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "The 73rd Amendment (1992) gave constitutional status to Panchayati Raj institutions.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Development Administration",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-073",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 8,
+    "chapter": "Development Administration",
+    "topic": "Urban local bodies",
+    "difficulty": "Easy",
+    "questionText": "The 74th Constitutional Amendment Act deals with:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Urban local bodies (municipalities)"
+      },
+      {
+        "key": "B",
+        "text": "Rural panchayats"
+      },
+      {
+        "key": "C",
+        "text": "Right to education"
+      },
+      {
+        "key": "D",
+        "text": "Anti-defection law"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "The 74th Amendment (1992) gave constitutional status to municipalities.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Development Administration",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-074",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 8,
+    "chapter": "Development Administration",
+    "topic": "Meaning of development administration",
+    "difficulty": "Medium",
+    "questionText": "Development administration primarily focuses on:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Maintaining law and order only"
+      },
+      {
+        "key": "B",
+        "text": "Administration of programmes for socio-economic change"
+      },
+      {
+        "key": "C",
+        "text": "Collecting land revenue only"
+      },
+      {
+        "key": "D",
+        "text": "Conducting foreign policy"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Development administration is goal-oriented and concerned with planned socio-economic progress.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Development Administration",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-075",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 8,
+    "chapter": "Development Administration",
+    "topic": "Community Development Programme",
+    "difficulty": "Medium",
+    "questionText": "India's Community Development Programme was launched in:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1947"
+      },
+      {
+        "key": "B",
+        "text": "1965"
+      },
+      {
+        "key": "C",
+        "text": "1952"
+      },
+      {
+        "key": "D",
+        "text": "1977"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "The Community Development Programme began on 2 October 1952 to promote rural development.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Development Administration",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-076",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 8,
+    "chapter": "Development Administration",
+    "topic": "Balwant Rai Mehta Committee",
+    "difficulty": "Medium",
+    "questionText": "The Balwant Rai Mehta Committee (1957) recommended:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Abolition of local bodies"
+      },
+      {
+        "key": "B",
+        "text": "A two-party system"
+      },
+      {
+        "key": "C",
+        "text": "Creation of linguistic states"
+      },
+      {
+        "key": "D",
+        "text": "A three-tier Panchayati Raj system"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "The committee recommended democratic decentralisation through a three-tier structure at village, block and district levels.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Development Administration",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-077",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 8,
+    "chapter": "Development Administration",
+    "topic": "Women's reservation in local bodies",
+    "difficulty": "Medium",
+    "questionText": "The 73rd and 74th Amendments reserve at least what proportion of seats in local bodies for women?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "One-third"
+      },
+      {
+        "key": "B",
+        "text": "One-half"
+      },
+      {
+        "key": "C",
+        "text": "One-fourth"
+      },
+      {
+        "key": "D",
+        "text": "Two-thirds"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "The amendments mandate at least one-third reservation for women; several states, including Maharashtra, have raised it to 50 percent.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Development Administration",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-078",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 8,
+    "chapter": "Development Administration",
+    "topic": "Traditional vs development administration",
+    "difficulty": "Hard",
+    "questionText": "How does development administration differ from traditional administration?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "It relies solely on rigid rules and status quo"
+      },
+      {
+        "key": "B",
+        "text": "It is change-oriented and flexible rather than focused only on maintaining order"
+      },
+      {
+        "key": "C",
+        "text": "It avoids citizen participation"
+      },
+      {
+        "key": "D",
+        "text": "It deals only with revenue collection"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Traditional administration is regulatory; development administration is innovative, goal-directed and participative.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Development Administration",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-079",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 8,
+    "chapter": "Development Administration",
+    "topic": "People's participation",
+    "difficulty": "Hard",
+    "questionText": "Why is people's participation considered vital for development administration?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "It removes the need for government funding"
+      },
+      {
+        "key": "B",
+        "text": "It allows officials to avoid accountability"
+      },
+      {
+        "key": "C",
+        "text": "It makes programmes responsive to local needs and builds ownership"
+      },
+      {
+        "key": "D",
+        "text": "It replaces elected bodies with bureaucrats"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Participation ensures programmes reflect local needs, improves implementation and strengthens accountability.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Development Administration",
+    "abilityTags": [
+      "creative_thinking",
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-080",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 8,
+    "chapter": "Development Administration",
+    "topic": "Fred Riggs",
+    "difficulty": "Hard",
+    "questionText": "Fred Riggs's 'prismatic society' model describes societies that are:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Fully traditional with no differentiation"
+      },
+      {
+        "key": "B",
+        "text": "Fully industrialised and differentiated"
+      },
+      {
+        "key": "C",
+        "text": "Governed only by religious authorities"
+      },
+      {
+        "key": "D",
+        "text": "Transitional, combining traditional and modern features"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Riggs used the prism analogy to describe developing societies midway between fused (traditional) and diffracted (modern) types.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Development Administration",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-081",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 9,
+    "chapter": "The World Since 1945 - I",
+    "topic": "United Nations",
+    "difficulty": "Easy",
+    "questionText": "The United Nations was formally established in:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1945"
+      },
+      {
+        "key": "B",
+        "text": "1919"
+      },
+      {
+        "key": "C",
+        "text": "1939"
+      },
+      {
+        "key": "D",
+        "text": "1950"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "The UN Charter came into force on 24 October 1945, now celebrated as UN Day.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: The World Since 1945 - I",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-082",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 9,
+    "chapter": "The World Since 1945 - I",
+    "topic": "Cold War superpowers",
+    "difficulty": "Easy",
+    "questionText": "The Cold War was primarily a rivalry between:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "UK and France"
+      },
+      {
+        "key": "B",
+        "text": "USA and USSR"
+      },
+      {
+        "key": "C",
+        "text": "China and Japan"
+      },
+      {
+        "key": "D",
+        "text": "Germany and Italy"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "The Cold War was a geopolitical and ideological rivalry between the USA and the Soviet Union.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: The World Since 1945 - I",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-083",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 9,
+    "chapter": "The World Since 1945 - I",
+    "topic": "NATO",
+    "difficulty": "Easy",
+    "questionText": "NATO was established in which year?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1955"
+      },
+      {
+        "key": "B",
+        "text": "1945"
+      },
+      {
+        "key": "C",
+        "text": "1949"
+      },
+      {
+        "key": "D",
+        "text": "1961"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "The North Atlantic Treaty Organization was founded in April 1949.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: The World Since 1945 - I",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-084",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 9,
+    "chapter": "The World Since 1945 - I",
+    "topic": "Warsaw Pact",
+    "difficulty": "Medium",
+    "questionText": "The Warsaw Pact (1955) was a military alliance led by:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "The United States"
+      },
+      {
+        "key": "B",
+        "text": "Britain"
+      },
+      {
+        "key": "C",
+        "text": "China"
+      },
+      {
+        "key": "D",
+        "text": "The Soviet Union"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "The Warsaw Pact was the Soviet-led alliance of Eastern European communist states, formed in response to NATO.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: The World Since 1945 - I",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-085",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 9,
+    "chapter": "The World Since 1945 - I",
+    "topic": "Marshall Plan",
+    "difficulty": "Medium",
+    "questionText": "The Marshall Plan was a US programme aimed at:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Economic recovery of Western Europe after World War II"
+      },
+      {
+        "key": "B",
+        "text": "Arming the Soviet Union"
+      },
+      {
+        "key": "C",
+        "text": "Colonising Asia"
+      },
+      {
+        "key": "D",
+        "text": "Building nuclear weapons in Africa"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "The Marshall Plan (1948) provided US aid for rebuilding Western European economies.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: The World Since 1945 - I",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-086",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 9,
+    "chapter": "The World Since 1945 - I",
+    "topic": "Non-Aligned Movement",
+    "difficulty": "Medium",
+    "questionText": "The first summit of the Non-Aligned Movement was held in 1961 at:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Bandung"
+      },
+      {
+        "key": "B",
+        "text": "Belgrade"
+      },
+      {
+        "key": "C",
+        "text": "New Delhi"
+      },
+      {
+        "key": "D",
+        "text": "Cairo"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "The first NAM summit was held in Belgrade, Yugoslavia, in September 1961.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: The World Since 1945 - I",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-087",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 9,
+    "chapter": "The World Since 1945 - I",
+    "topic": "Cuban Missile Crisis",
+    "difficulty": "Medium",
+    "questionText": "The Cuban Missile Crisis of 1962 involved:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "A US invasion of the Soviet Union"
+      },
+      {
+        "key": "B",
+        "text": "A civil war in Vietnam"
+      },
+      {
+        "key": "C",
+        "text": "Soviet nuclear missiles placed in Cuba"
+      },
+      {
+        "key": "D",
+        "text": "The building of the Berlin Wall"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "The crisis arose when the USSR placed nuclear missiles in Cuba, bringing the superpowers close to nuclear war.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: The World Since 1945 - I",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-088",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 9,
+    "chapter": "The World Since 1945 - I",
+    "topic": "Founders of NAM",
+    "difficulty": "Hard",
+    "questionText": "Which group of leaders is credited as key founders of the Non-Aligned Movement?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Churchill, Roosevelt and Stalin"
+      },
+      {
+        "key": "B",
+        "text": "Mao, Ho Chi Minh and Castro"
+      },
+      {
+        "key": "C",
+        "text": "Truman, Attlee and de Gaulle"
+      },
+      {
+        "key": "D",
+        "text": "Nehru, Tito and Nasser"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Jawaharlal Nehru, Josip Broz Tito and Gamal Abdel Nasser were key founders, along with Sukarno and Nkrumah.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: The World Since 1945 - I",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-089",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 9,
+    "chapter": "The World Since 1945 - I",
+    "topic": "Nature of non-alignment",
+    "difficulty": "Hard",
+    "questionText": "Non-alignment, as practised by India, meant:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Independence from military blocs while engaging actively in world affairs"
+      },
+      {
+        "key": "B",
+        "text": "Complete isolation from international politics"
+      },
+      {
+        "key": "C",
+        "text": "Joining the Western bloc for economic aid"
+      },
+      {
+        "key": "D",
+        "text": "Neutrality that prohibited taking any position on issues"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Non-alignment was not passive neutrality; it allowed India to judge issues on merit without joining either bloc.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: The World Since 1945 - I",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-090",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 9,
+    "chapter": "The World Since 1945 - I",
+    "topic": "Decolonisation",
+    "difficulty": "Hard",
+    "questionText": "The process by which many Asian and African countries gained independence after 1945 is called:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Globalisation"
+      },
+      {
+        "key": "B",
+        "text": "Decolonisation"
+      },
+      {
+        "key": "C",
+        "text": "Balkanisation"
+      },
+      {
+        "key": "D",
+        "text": "Containment"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Decolonisation saw dozens of colonies become independent states, greatly expanding UN membership.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: The World Since 1945 - I",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-091",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 10,
+    "chapter": "The World Since 1945 - II",
+    "topic": "Fall of Berlin Wall",
+    "difficulty": "Easy",
+    "questionText": "The Berlin Wall fell in:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1991"
+      },
+      {
+        "key": "B",
+        "text": "1961"
+      },
+      {
+        "key": "C",
+        "text": "1989"
+      },
+      {
+        "key": "D",
+        "text": "1975"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "The Berlin Wall fell on 9 November 1989, symbolising the end of the Cold War division of Europe.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: The World Since 1945 - II",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-092",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 10,
+    "chapter": "The World Since 1945 - II",
+    "topic": "Disintegration of USSR",
+    "difficulty": "Easy",
+    "questionText": "The Soviet Union disintegrated in:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1989"
+      },
+      {
+        "key": "B",
+        "text": "1985"
+      },
+      {
+        "key": "C",
+        "text": "2000"
+      },
+      {
+        "key": "D",
+        "text": "1991"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "The USSR was formally dissolved in December 1991, giving rise to 15 independent republics.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: The World Since 1945 - II",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-093",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 10,
+    "chapter": "The World Since 1945 - II",
+    "topic": "SAARC",
+    "difficulty": "Easy",
+    "questionText": "SAARC was established in 1985 at:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Dhaka"
+      },
+      {
+        "key": "B",
+        "text": "New Delhi"
+      },
+      {
+        "key": "C",
+        "text": "Kathmandu"
+      },
+      {
+        "key": "D",
+        "text": "Colombo"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "The South Asian Association for Regional Cooperation was established at Dhaka in December 1985.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: The World Since 1945 - II",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-094",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 10,
+    "chapter": "The World Since 1945 - II",
+    "topic": "Gorbachev's reforms",
+    "difficulty": "Medium",
+    "questionText": "Mikhail Gorbachev's policies of 'glasnost' and 'perestroika' referred to:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Collectivisation and industrialisation"
+      },
+      {
+        "key": "B",
+        "text": "Openness and restructuring"
+      },
+      {
+        "key": "C",
+        "text": "Expansion and militarisation"
+      },
+      {
+        "key": "D",
+        "text": "Isolation and self-reliance"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Glasnost meant openness and perestroika meant economic and political restructuring.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: The World Since 1945 - II",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-095",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 10,
+    "chapter": "The World Since 1945 - II",
+    "topic": "Unipolarity",
+    "difficulty": "Medium",
+    "questionText": "The international system after the end of the Cold War is often described as:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Bipolar, dominated by USA and USSR"
+      },
+      {
+        "key": "B",
+        "text": "Without any major powers"
+      },
+      {
+        "key": "C",
+        "text": "Unipolar, dominated by the USA"
+      },
+      {
+        "key": "D",
+        "text": "Dominated solely by Europe"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "With the Soviet collapse, the USA emerged as the sole superpower, leading many to describe a unipolar world.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: The World Since 1945 - II",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-096",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 10,
+    "chapter": "The World Since 1945 - II",
+    "topic": "European Union",
+    "difficulty": "Medium",
+    "questionText": "The treaty that established the European Union in 1992 is the:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Treaty of Versailles"
+      },
+      {
+        "key": "B",
+        "text": "Treaty of Rome"
+      },
+      {
+        "key": "C",
+        "text": "Warsaw Treaty"
+      },
+      {
+        "key": "D",
+        "text": "Maastricht Treaty"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "The Maastricht Treaty, signed in 1992, created the European Union.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: The World Since 1945 - II",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-097",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 10,
+    "chapter": "The World Since 1945 - II",
+    "topic": "ASEAN",
+    "difficulty": "Medium",
+    "questionText": "ASEAN was founded in 1967 in:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Bangkok"
+      },
+      {
+        "key": "B",
+        "text": "Jakarta"
+      },
+      {
+        "key": "C",
+        "text": "Singapore"
+      },
+      {
+        "key": "D",
+        "text": "Manila"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "The Bangkok Declaration of 1967 established the Association of Southeast Asian Nations.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: The World Since 1945 - II",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-098",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 10,
+    "chapter": "The World Since 1945 - II",
+    "topic": "Globalisation",
+    "difficulty": "Hard",
+    "questionText": "Which best describes globalisation?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Complete isolation of national economies"
+      },
+      {
+        "key": "B",
+        "text": "Growing interconnectedness of economies, cultures and societies across the world"
+      },
+      {
+        "key": "C",
+        "text": "The domination of one religion worldwide"
+      },
+      {
+        "key": "D",
+        "text": "The return to colonial empires"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Globalisation involves increasing flows of goods, capital, people, ideas and technology across borders.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: The World Since 1945 - II",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-099",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 10,
+    "chapter": "The World Since 1945 - II",
+    "topic": "WTO",
+    "difficulty": "Hard",
+    "questionText": "The World Trade Organization, which replaced GATT, was established in:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1947"
+      },
+      {
+        "key": "B",
+        "text": "1985"
+      },
+      {
+        "key": "C",
+        "text": "1995"
+      },
+      {
+        "key": "D",
+        "text": "2001"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "The WTO began functioning on 1 January 1995, succeeding the General Agreement on Tariffs and Trade.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: The World Since 1945 - II",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-pol-100",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-political-science",
+    "subjectName": "Political Science",
+    "chapterNumber": 10,
+    "chapter": "The World Since 1945 - II",
+    "topic": "Shock therapy",
+    "difficulty": "Hard",
+    "questionText": "The 'shock therapy' model adopted in many post-Soviet states involved:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Gradual return to a planned economy"
+      },
+      {
+        "key": "B",
+        "text": "Strengthening collective farms"
+      },
+      {
+        "key": "C",
+        "text": "Closing borders to foreign trade"
+      },
+      {
+        "key": "D",
+        "text": "Rapid transition to a market economy through privatisation"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Shock therapy meant a sudden shift to capitalism through privatisation and liberalisation, causing severe economic hardship.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: The World Since 1945 - II",
+    "abilityTags": [
+      "creative_thinking",
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  }
+]

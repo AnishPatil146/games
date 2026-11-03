@@ -1,0 +1,4512 @@
+[
+  {
+    "id": "msb-11-art-soc-001",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 1,
+    "chapter": "Introduction to Sociology",
+    "topic": "Origin of Sociology",
+    "difficulty": "Easy",
+    "questionText": "Who coined the term 'Sociology' in 1838?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Auguste Comte"
+      },
+      {
+        "key": "B",
+        "text": "Emile Durkheim"
+      },
+      {
+        "key": "C",
+        "text": "Herbert Spencer"
+      },
+      {
+        "key": "D",
+        "text": "Max Weber"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Auguste Comte coined the term 'sociology' in 1838 and is regarded as the father of sociology.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Introduction to Sociology",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-002",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 1,
+    "chapter": "Introduction to Sociology",
+    "topic": "Meaning of Sociology",
+    "difficulty": "Easy",
+    "questionText": "The word 'Sociology' is derived from which two words?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Societas (Latin) and graphia (Greek)"
+      },
+      {
+        "key": "B",
+        "text": "Socius (Latin) and logos (Greek)"
+      },
+      {
+        "key": "C",
+        "text": "Socius (Greek) and logia (Latin)"
+      },
+      {
+        "key": "D",
+        "text": "Social (English) and logic (Latin)"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Sociology combines the Latin 'socius' (companion/associate) and the Greek 'logos' (study or science).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Introduction to Sociology",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-003",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 1,
+    "chapter": "Introduction to Sociology",
+    "topic": "Intellectual Background",
+    "difficulty": "Easy",
+    "questionText": "Which intellectual movement of the 18th century emphasised reason and scientific inquiry and helped prepare the ground for sociology?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "The Renaissance"
+      },
+      {
+        "key": "B",
+        "text": "The Reformation"
+      },
+      {
+        "key": "C",
+        "text": "The Enlightenment"
+      },
+      {
+        "key": "D",
+        "text": "The Counter-Reformation"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Enlightenment thinkers stressed reason, rational inquiry and progress, influencing the scientific study of society.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Introduction to Sociology",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-004",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 1,
+    "chapter": "Introduction to Sociology",
+    "topic": "Revolutions and Sociology",
+    "difficulty": "Easy",
+    "questionText": "Which revolution transformed production through factories and machines, creating conditions that early sociologists sought to understand?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "The Glorious Revolution"
+      },
+      {
+        "key": "B",
+        "text": "The Green Revolution"
+      },
+      {
+        "key": "C",
+        "text": "The Russian Revolution"
+      },
+      {
+        "key": "D",
+        "text": "The Industrial Revolution"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "The Industrial Revolution brought urbanisation, factory labour and new class relations, prompting sociological inquiry.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Introduction to Sociology",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-005",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 1,
+    "chapter": "Introduction to Sociology",
+    "topic": "Positivism",
+    "difficulty": "Medium",
+    "questionText": "Comte's 'Law of Three Stages' describes the development of human thought in which order?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Theological, Metaphysical, Positive"
+      },
+      {
+        "key": "B",
+        "text": "Metaphysical, Theological, Positive"
+      },
+      {
+        "key": "C",
+        "text": "Positive, Theological, Metaphysical"
+      },
+      {
+        "key": "D",
+        "text": "Theological, Positive, Metaphysical"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Comte argued that human thought moves from theological to metaphysical and finally to the positive (scientific) stage.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Introduction to Sociology",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-006",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 1,
+    "chapter": "Introduction to Sociology",
+    "topic": "Nature of Sociology",
+    "difficulty": "Medium",
+    "questionText": "Sociology is described as a 'generalising science' because it:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Studies only unique historical events"
+      },
+      {
+        "key": "B",
+        "text": "Seeks general patterns and principles of social life"
+      },
+      {
+        "key": "C",
+        "text": "Focuses on individual personalities"
+      },
+      {
+        "key": "D",
+        "text": "Prescribes moral rules for society"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Sociology looks for recurrent patterns and general principles rather than describing unique, one-time events.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Introduction to Sociology",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-007",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 1,
+    "chapter": "Introduction to Sociology",
+    "topic": "Nature of Sociology",
+    "difficulty": "Medium",
+    "questionText": "Sociology is called a 'categorical' rather than a 'normative' discipline because it:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Lays down what society ought to be"
+      },
+      {
+        "key": "B",
+        "text": "Deals only with laws of the state"
+      },
+      {
+        "key": "C",
+        "text": "Describes social reality as it is, without value judgements"
+      },
+      {
+        "key": "D",
+        "text": "Studies only religious norms"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "As a categorical science, sociology studies what is, not what ought to be, and avoids value judgements.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Introduction to Sociology",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-008",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 1,
+    "chapter": "Introduction to Sociology",
+    "topic": "Scope of Sociology",
+    "difficulty": "Medium",
+    "questionText": "The view that sociology studies only specific forms of social relationships, distinct from other social sciences, is associated with which school?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Synthetic school"
+      },
+      {
+        "key": "B",
+        "text": "Functionalist school"
+      },
+      {
+        "key": "C",
+        "text": "Conflict school"
+      },
+      {
+        "key": "D",
+        "text": "Formalistic (specialistic) school"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Thinkers like Simmel and Vierkandt held the formalistic view, treating sociology as the study of forms of social relations.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Introduction to Sociology",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-009",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 1,
+    "chapter": "Introduction to Sociology",
+    "topic": "Sociological Imagination",
+    "difficulty": "Medium",
+    "questionText": "Who introduced the concept of the 'sociological imagination' to link personal troubles with public issues?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "C. Wright Mills"
+      },
+      {
+        "key": "B",
+        "text": "Talcott Parsons"
+      },
+      {
+        "key": "C",
+        "text": "Robert K. Merton"
+      },
+      {
+        "key": "D",
+        "text": "Anthony Giddens"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "C. Wright Mills (1959) described the sociological imagination as the ability to connect individual biography with history and social structure.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Introduction to Sociology",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-010",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 1,
+    "chapter": "Introduction to Sociology",
+    "topic": "Scope of Sociology",
+    "difficulty": "Hard",
+    "questionText": "The synthetic school, represented by Durkheim and Sorokin, holds that sociology should:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Restrict itself to the forms of social interaction"
+      },
+      {
+        "key": "B",
+        "text": "Study society as a whole and synthesise the findings of other social sciences"
+      },
+      {
+        "key": "C",
+        "text": "Study only primitive societies"
+      },
+      {
+        "key": "D",
+        "text": "Avoid any connection with other social sciences"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "The synthetic school sees sociology as a general science of society that coordinates and synthesises the specialised social sciences.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Introduction to Sociology",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-011",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 1,
+    "chapter": "Introduction to Sociology",
+    "topic": "Sociological Imagination",
+    "difficulty": "Hard",
+    "questionText": "A student loses a job during a nationwide recession. Applying the sociological imagination, this is best understood as:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Solely the result of the individual's lack of effort"
+      },
+      {
+        "key": "B",
+        "text": "A purely psychological problem"
+      },
+      {
+        "key": "C",
+        "text": "A personal trouble linked to a wider public issue of economic structure"
+      },
+      {
+        "key": "D",
+        "text": "An event unrelated to social structure"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Mills argued that when many people face the same problem, its causes lie in social structure and history, not just individual failings.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Introduction to Sociology",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-012",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 1,
+    "chapter": "Introduction to Sociology",
+    "topic": "Sociology and Other Sciences",
+    "difficulty": "Hard",
+    "questionText": "Which statement best distinguishes sociology from psychology?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Sociology studies the mind, while psychology studies institutions"
+      },
+      {
+        "key": "B",
+        "text": "Both disciplines study only economic behaviour"
+      },
+      {
+        "key": "C",
+        "text": "Psychology studies groups, while sociology studies individuals only"
+      },
+      {
+        "key": "D",
+        "text": "Sociology studies group behaviour and social relations, while psychology focuses on individual mental processes"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Sociology focuses on social relationships, groups and institutions; psychology centres on individual behaviour and mental processes.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Introduction to Sociology",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-013",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 1,
+    "chapter": "Introduction to Sociology",
+    "topic": "Applications of Sociology",
+    "difficulty": "Hard",
+    "questionText": "Using sociological research to design a public health awareness campaign for a rural community is an example of:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Applied sociology"
+      },
+      {
+        "key": "B",
+        "text": "Pure metaphysics"
+      },
+      {
+        "key": "C",
+        "text": "Speculative philosophy"
+      },
+      {
+        "key": "D",
+        "text": "Normative theology"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Applied sociology uses sociological knowledge and methods to address practical social problems and policy needs.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Introduction to Sociology",
+    "abilityTags": [
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-014",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 2,
+    "chapter": "Contribution of Western and Indian Sociologists",
+    "topic": "Emile Durkheim",
+    "difficulty": "Easy",
+    "questionText": "Which sociologist wrote 'The Rules of Sociological Method' and introduced the concept of 'social facts'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Max Weber"
+      },
+      {
+        "key": "B",
+        "text": "Emile Durkheim"
+      },
+      {
+        "key": "C",
+        "text": "Karl Marx"
+      },
+      {
+        "key": "D",
+        "text": "Herbert Spencer"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Durkheim defined social facts as ways of acting, thinking and feeling external to the individual and exercising constraint.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Contribution of Western and Indian Sociologists",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-015",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 2,
+    "chapter": "Contribution of Western and Indian Sociologists",
+    "topic": "Karl Marx",
+    "difficulty": "Easy",
+    "questionText": "Which thinker co-authored 'The Communist Manifesto' with Friedrich Engels?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Auguste Comte"
+      },
+      {
+        "key": "B",
+        "text": "Max Weber"
+      },
+      {
+        "key": "C",
+        "text": "Karl Marx"
+      },
+      {
+        "key": "D",
+        "text": "Georg Simmel"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Karl Marx and Friedrich Engels published 'The Communist Manifesto' in 1848.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Contribution of Western and Indian Sociologists",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-016",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 2,
+    "chapter": "Contribution of Western and Indian Sociologists",
+    "topic": "G.S. Ghurye",
+    "difficulty": "Easy",
+    "questionText": "Who is widely regarded as the father of Indian sociology and wrote 'Caste and Race in India'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "M.N. Srinivas"
+      },
+      {
+        "key": "B",
+        "text": "A.R. Desai"
+      },
+      {
+        "key": "C",
+        "text": "D.P. Mukerji"
+      },
+      {
+        "key": "D",
+        "text": "G.S. Ghurye"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "G.S. Ghurye headed the Department of Sociology at Bombay University and wrote 'Caste and Race in India' (1932).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Contribution of Western and Indian Sociologists",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-017",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 2,
+    "chapter": "Contribution of Western and Indian Sociologists",
+    "topic": "Jyotirao Phule",
+    "difficulty": "Easy",
+    "questionText": "Which social reformer founded the Satyashodhak Samaj in 1873?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Jyotirao Phule"
+      },
+      {
+        "key": "B",
+        "text": "Raja Ram Mohan Roy"
+      },
+      {
+        "key": "C",
+        "text": "Dayanand Saraswati"
+      },
+      {
+        "key": "D",
+        "text": "Gopal Krishna Gokhale"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Jyotirao Phule founded the Satyashodhak Samaj in 1873 to promote equality and challenge caste-based discrimination.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Contribution of Western and Indian Sociologists",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-018",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 2,
+    "chapter": "Contribution of Western and Indian Sociologists",
+    "topic": "Max Weber",
+    "difficulty": "Medium",
+    "questionText": "Max Weber's book 'The Protestant Ethic and the Spirit of Capitalism' links the rise of capitalism to:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Class struggle over the means of production"
+      },
+      {
+        "key": "B",
+        "text": "Religious values encouraging disciplined work and saving"
+      },
+      {
+        "key": "C",
+        "text": "Geographical determinism"
+      },
+      {
+        "key": "D",
+        "text": "The division of labour in society"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Weber argued that Calvinist values such as hard work, frugality and a sense of calling fostered the spirit of capitalism.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Contribution of Western and Indian Sociologists",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-019",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 2,
+    "chapter": "Contribution of Western and Indian Sociologists",
+    "topic": "Emile Durkheim",
+    "difficulty": "Medium",
+    "questionText": "According to Durkheim, the solidarity in simple societies based on likeness and shared beliefs is called:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Organic solidarity"
+      },
+      {
+        "key": "B",
+        "text": "Functional solidarity"
+      },
+      {
+        "key": "C",
+        "text": "Mechanical solidarity"
+      },
+      {
+        "key": "D",
+        "text": "Contractual solidarity"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "In 'The Division of Labour in Society', Durkheim described mechanical solidarity as resting on similarity, and organic solidarity on interdependence.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Contribution of Western and Indian Sociologists",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-020",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 2,
+    "chapter": "Contribution of Western and Indian Sociologists",
+    "topic": "Irawati Karve",
+    "difficulty": "Medium",
+    "questionText": "Irawati Karve's well-known work 'Kinship Organization in India' compared kinship patterns across:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "European and Indian royal families only"
+      },
+      {
+        "key": "B",
+        "text": "Urban industrial workers in Mumbai"
+      },
+      {
+        "key": "C",
+        "text": "Tribal societies of Africa"
+      },
+      {
+        "key": "D",
+        "text": "Different cultural and linguistic zones of India"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Karve analysed kinship systems in the northern, central, southern and eastern zones of India.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Contribution of Western and Indian Sociologists",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-021",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 2,
+    "chapter": "Contribution of Western and Indian Sociologists",
+    "topic": "M.N. Srinivas",
+    "difficulty": "Medium",
+    "questionText": "M.N. Srinivas introduced the concept of 'dominant caste' based on his fieldwork in which village?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Rampura"
+      },
+      {
+        "key": "B",
+        "text": "Senapur"
+      },
+      {
+        "key": "C",
+        "text": "Shamirpet"
+      },
+      {
+        "key": "D",
+        "text": "Kishan Garhi"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Srinivas's study of Rampura village in Karnataka led to the concepts of dominant caste and his ethnographic work 'The Remembered Village'.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Contribution of Western and Indian Sociologists",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-022",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 2,
+    "chapter": "Contribution of Western and Indian Sociologists",
+    "topic": "B.R. Ambedkar",
+    "difficulty": "Medium",
+    "questionText": "Which work by Dr. B.R. Ambedkar was prepared as a speech critiquing the caste system but was never delivered as planned?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Gulamgiri"
+      },
+      {
+        "key": "B",
+        "text": "Annihilation of Caste"
+      },
+      {
+        "key": "C",
+        "text": "Caste and Race in India"
+      },
+      {
+        "key": "D",
+        "text": "The Discovery of India"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "'Annihilation of Caste' (1936) was written for a conference that was cancelled; Ambedkar published it himself.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Contribution of Western and Indian Sociologists",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-023",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 2,
+    "chapter": "Contribution of Western and Indian Sociologists",
+    "topic": "Max Weber",
+    "difficulty": "Hard",
+    "questionText": "Weber's concept of 'Verstehen' refers to:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Statistical measurement of suicide rates"
+      },
+      {
+        "key": "B",
+        "text": "Analysis of class conflict over property"
+      },
+      {
+        "key": "C",
+        "text": "Interpretive understanding of the meanings actors attach to their actions"
+      },
+      {
+        "key": "D",
+        "text": "The evolution of societies from simple to complex"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Verstehen is Weber's method of grasping the subjective meanings behind social action.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Contribution of Western and Indian Sociologists",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-024",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 2,
+    "chapter": "Contribution of Western and Indian Sociologists",
+    "topic": "Emile Durkheim",
+    "difficulty": "Hard",
+    "questionText": "In his study 'Suicide', Durkheim argued that suicide rates vary mainly according to:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Individual biological weaknesses"
+      },
+      {
+        "key": "B",
+        "text": "Climate and geographical factors alone"
+      },
+      {
+        "key": "C",
+        "text": "Levels of personal wealth only"
+      },
+      {
+        "key": "D",
+        "text": "Degrees of social integration and regulation"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Durkheim showed that suicide rates are social facts shaped by integration and regulation, giving types such as egoistic, altruistic and anomic.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Contribution of Western and Indian Sociologists",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-025",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 2,
+    "chapter": "Contribution of Western and Indian Sociologists",
+    "topic": "Karl Marx",
+    "difficulty": "Hard",
+    "questionText": "In Marx's theory, the term 'alienation' describes the condition in which workers:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Are estranged from the product, process of labour, fellow humans and their own human nature"
+      },
+      {
+        "key": "B",
+        "text": "Voluntarily migrate to cities for better wages"
+      },
+      {
+        "key": "C",
+        "text": "Achieve a sense of fulfilment through specialised work"
+      },
+      {
+        "key": "D",
+        "text": "Own the means of production collectively"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Marx argued that under capitalism workers lose control over their labour and its products, leading to multiple forms of estrangement.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Contribution of Western and Indian Sociologists",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-026",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 2,
+    "chapter": "Contribution of Western and Indian Sociologists",
+    "topic": "Tarabai Shinde",
+    "difficulty": "Hard",
+    "questionText": "Tarabai Shinde's 1882 text 'Stri Purush Tulana' is significant in Indian social thought because it:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Defended the caste hierarchy"
+      },
+      {
+        "key": "B",
+        "text": "Offered an early feminist critique of patriarchal double standards"
+      },
+      {
+        "key": "C",
+        "text": "Called for the abolition of all religious practice"
+      },
+      {
+        "key": "D",
+        "text": "Proposed the theory of Sanskritisation"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Tarabai Shinde, associated with the Satyashodhak movement, critically compared the treatment of women and men in society.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Contribution of Western and Indian Sociologists",
+    "abilityTags": [
+      "interpretation",
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-027",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 3,
+    "chapter": "Basic Concepts in Sociology",
+    "topic": "Social Groups",
+    "difficulty": "Easy",
+    "questionText": "Who classified groups into primary and secondary groups, introducing the term 'primary group'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "William Graham Sumner"
+      },
+      {
+        "key": "B",
+        "text": "Robert K. Merton"
+      },
+      {
+        "key": "C",
+        "text": "Charles Horton Cooley"
+      },
+      {
+        "key": "D",
+        "text": "Ferdinand Tonnies"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Cooley introduced the concept of the primary group in 'Social Organization' (1909), citing family, play group and neighbourhood.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Basic Concepts in Sociology",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-028",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 3,
+    "chapter": "Basic Concepts in Sociology",
+    "topic": "Social Groups",
+    "difficulty": "Easy",
+    "questionText": "Which of the following is an example of a primary group?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Political party"
+      },
+      {
+        "key": "B",
+        "text": "Trade union"
+      },
+      {
+        "key": "C",
+        "text": "Large corporation"
+      },
+      {
+        "key": "D",
+        "text": "Family"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "The family involves intimate, face-to-face and enduring relationships, which are typical of primary groups.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Basic Concepts in Sociology",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-029",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 3,
+    "chapter": "Basic Concepts in Sociology",
+    "topic": "In-group and Out-group",
+    "difficulty": "Easy",
+    "questionText": "The distinction between 'in-group' and 'out-group' was given by:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "William Graham Sumner"
+      },
+      {
+        "key": "B",
+        "text": "Charles Horton Cooley"
+      },
+      {
+        "key": "C",
+        "text": "Emile Durkheim"
+      },
+      {
+        "key": "D",
+        "text": "Talcott Parsons"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "W.G. Sumner, in 'Folkways' (1906), distinguished between the 'we-group' (in-group) and the 'they-group' (out-group).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Basic Concepts in Sociology",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-030",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 3,
+    "chapter": "Basic Concepts in Sociology",
+    "topic": "Community",
+    "difficulty": "Easy",
+    "questionText": "A group of people living in a specific locality and sharing a sense of 'we-feeling' is called a:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Association"
+      },
+      {
+        "key": "B",
+        "text": "Community"
+      },
+      {
+        "key": "C",
+        "text": "Crowd"
+      },
+      {
+        "key": "D",
+        "text": "Audience"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "A community is defined by a definite locality and community sentiment or we-feeling.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Basic Concepts in Sociology",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-031",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 3,
+    "chapter": "Basic Concepts in Sociology",
+    "topic": "Society and Community",
+    "difficulty": "Medium",
+    "questionText": "Ferdinand Tonnies contrasted 'Gemeinschaft' with 'Gesellschaft'. Gemeinschaft refers to:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Association based on impersonal, contractual ties"
+      },
+      {
+        "key": "B",
+        "text": "A formal bureaucratic organisation"
+      },
+      {
+        "key": "C",
+        "text": "Community based on close, personal and traditional ties"
+      },
+      {
+        "key": "D",
+        "text": "A temporary crowd"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Tonnies used Gemeinschaft for community-like relations and Gesellschaft for impersonal, interest-based association.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Basic Concepts in Sociology",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-032",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 3,
+    "chapter": "Basic Concepts in Sociology",
+    "topic": "Association",
+    "difficulty": "Medium",
+    "questionText": "Which feature distinguishes an association from a community?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "It is based on a definite locality"
+      },
+      {
+        "key": "B",
+        "text": "Membership is by birth only"
+      },
+      {
+        "key": "C",
+        "text": "It always lasts permanently"
+      },
+      {
+        "key": "D",
+        "text": "It is deliberately formed to pursue specific interests"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "An association is a group organised deliberately to pursue particular interests, whereas a community arises spontaneously in a locality.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Basic Concepts in Sociology",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-033",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 3,
+    "chapter": "Basic Concepts in Sociology",
+    "topic": "Status and Role",
+    "difficulty": "Medium",
+    "questionText": "A status acquired through individual effort, such as becoming a doctor, is called:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Achieved status"
+      },
+      {
+        "key": "B",
+        "text": "Ascribed status"
+      },
+      {
+        "key": "C",
+        "text": "Master status"
+      },
+      {
+        "key": "D",
+        "text": "Role set"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Achieved status is gained through personal effort or choice, unlike ascribed status which is assigned at birth.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Basic Concepts in Sociology",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-034",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 3,
+    "chapter": "Basic Concepts in Sociology",
+    "topic": "Reference Group",
+    "difficulty": "Medium",
+    "questionText": "The concept of 'reference group', a group whose standards an individual uses to evaluate themselves, was developed notably by:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Auguste Comte"
+      },
+      {
+        "key": "B",
+        "text": "Robert K. Merton"
+      },
+      {
+        "key": "C",
+        "text": "Karl Marx"
+      },
+      {
+        "key": "D",
+        "text": "G.S. Ghurye"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Herbert Hyman coined the term and Robert K. Merton developed reference group theory in detail.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Basic Concepts in Sociology",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-035",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 3,
+    "chapter": "Basic Concepts in Sociology",
+    "topic": "Social Norms",
+    "difficulty": "Medium",
+    "questionText": "Informal norms whose violation brings only mild disapproval, such as table manners, are known as:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Mores"
+      },
+      {
+        "key": "B",
+        "text": "Laws"
+      },
+      {
+        "key": "C",
+        "text": "Folkways"
+      },
+      {
+        "key": "D",
+        "text": "Taboos"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Sumner described folkways as customary ways of behaving whose violation draws mild social disapproval.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Basic Concepts in Sociology",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-036",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 3,
+    "chapter": "Basic Concepts in Sociology",
+    "topic": "Status and Role",
+    "difficulty": "Hard",
+    "questionText": "A teacher who must deal with students, parents, colleagues and the principal, each with different expectations, illustrates Merton's concept of:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Status sequence"
+      },
+      {
+        "key": "B",
+        "text": "Ascribed status"
+      },
+      {
+        "key": "C",
+        "text": "Role taking"
+      },
+      {
+        "key": "D",
+        "text": "Role set"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Merton used 'role set' for the array of role relationships attached to a single status.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Basic Concepts in Sociology",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-037",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 3,
+    "chapter": "Basic Concepts in Sociology",
+    "topic": "Status and Role",
+    "difficulty": "Hard",
+    "questionText": "A working parent who cannot attend an important office meeting and a child's school event at the same time experiences:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Role conflict"
+      },
+      {
+        "key": "B",
+        "text": "Role set"
+      },
+      {
+        "key": "C",
+        "text": "Status symbol"
+      },
+      {
+        "key": "D",
+        "text": "Role distance"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Role conflict arises when the demands of two or more statuses held by a person clash with each other.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Basic Concepts in Sociology",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-038",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 3,
+    "chapter": "Basic Concepts in Sociology",
+    "topic": "Social Norms",
+    "difficulty": "Hard",
+    "questionText": "Which of the following correctly differentiates mores from folkways?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Mores are trivial customs with no sanctions"
+      },
+      {
+        "key": "B",
+        "text": "Mores carry strong moral significance and their violation brings severe sanction"
+      },
+      {
+        "key": "C",
+        "text": "Folkways are always codified into law"
+      },
+      {
+        "key": "D",
+        "text": "Folkways carry stronger moral weight than mores"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Mores are norms considered vital to group welfare, so their breach invites strong disapproval, unlike folkways.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Basic Concepts in Sociology",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-039",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 3,
+    "chapter": "Basic Concepts in Sociology",
+    "topic": "Social Groups",
+    "difficulty": "Hard",
+    "questionText": "Which characteristic is most typical of a secondary group?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Relationships are intimate and face-to-face"
+      },
+      {
+        "key": "B",
+        "text": "Membership is small and enduring"
+      },
+      {
+        "key": "C",
+        "text": "Relationships are impersonal, formal and goal-oriented"
+      },
+      {
+        "key": "D",
+        "text": "Relations are valued for their own sake"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Secondary groups are usually large, with formal and instrumental relationships aimed at specific goals.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Basic Concepts in Sociology",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-040",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 4,
+    "chapter": "Social Institutions",
+    "topic": "Family",
+    "difficulty": "Easy",
+    "questionText": "A family consisting of a married couple and their unmarried children is called a:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Joint family"
+      },
+      {
+        "key": "B",
+        "text": "Extended family"
+      },
+      {
+        "key": "C",
+        "text": "Matrilocal family"
+      },
+      {
+        "key": "D",
+        "text": "Nuclear family"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "The nuclear family is the basic unit of parents and their dependent children.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Social Institutions",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-041",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 4,
+    "chapter": "Social Institutions",
+    "topic": "Marriage",
+    "difficulty": "Easy",
+    "questionText": "The form of marriage in which a person has only one spouse at a time is:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Monogamy"
+      },
+      {
+        "key": "B",
+        "text": "Polygyny"
+      },
+      {
+        "key": "C",
+        "text": "Polyandry"
+      },
+      {
+        "key": "D",
+        "text": "Group marriage"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Monogamy refers to marriage between one man and one woman at a time.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Social Institutions",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-042",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 4,
+    "chapter": "Social Institutions",
+    "topic": "Marriage",
+    "difficulty": "Easy",
+    "questionText": "A rule requiring a person to marry within their own group is called:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Exogamy"
+      },
+      {
+        "key": "B",
+        "text": "Endogamy"
+      },
+      {
+        "key": "C",
+        "text": "Hypergamy"
+      },
+      {
+        "key": "D",
+        "text": "Polygamy"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Endogamy is the rule of marrying within one's own social group.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Social Institutions",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-043",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 4,
+    "chapter": "Social Institutions",
+    "topic": "Social Institutions",
+    "difficulty": "Easy",
+    "questionText": "Which of the following is a social institution concerned with the production and distribution of goods and services?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Religion"
+      },
+      {
+        "key": "B",
+        "text": "Family"
+      },
+      {
+        "key": "C",
+        "text": "Economy"
+      },
+      {
+        "key": "D",
+        "text": "Education"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "The economic institution organises production, distribution and consumption of goods and services.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Social Institutions",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-044",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 4,
+    "chapter": "Social Institutions",
+    "topic": "Family",
+    "difficulty": "Medium",
+    "questionText": "In a patrilineal family, descent and inheritance are traced through the:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Mother's line"
+      },
+      {
+        "key": "B",
+        "text": "Both parents equally"
+      },
+      {
+        "key": "C",
+        "text": "Maternal uncle only"
+      },
+      {
+        "key": "D",
+        "text": "Father's line"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Patrilineal descent traces lineage and inheritance through the male line.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Social Institutions",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-045",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 4,
+    "chapter": "Social Institutions",
+    "topic": "Family",
+    "difficulty": "Medium",
+    "questionText": "The traditional matrilineal Tharavad system was historically found among which community?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Nairs of Kerala"
+      },
+      {
+        "key": "B",
+        "text": "Marathas of Maharashtra"
+      },
+      {
+        "key": "C",
+        "text": "Jats of Haryana"
+      },
+      {
+        "key": "D",
+        "text": "Rajputs of Rajasthan"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "The Nairs of Kerala followed the matrilineal joint family system called Tharavad.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Social Institutions",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-046",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 4,
+    "chapter": "Social Institutions",
+    "topic": "Marriage",
+    "difficulty": "Medium",
+    "questionText": "A rule prohibiting marriage within one's own clan or gotra is called:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Endogamy"
+      },
+      {
+        "key": "B",
+        "text": "Exogamy"
+      },
+      {
+        "key": "C",
+        "text": "Monogamy"
+      },
+      {
+        "key": "D",
+        "text": "Hypogamy"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Exogamy requires marriage outside a specified group such as one's clan or gotra.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Social Institutions",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-047",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 4,
+    "chapter": "Social Institutions",
+    "topic": "Religion",
+    "difficulty": "Medium",
+    "questionText": "Durkheim defined religion as a unified system of beliefs and practices relative to:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Economic production"
+      },
+      {
+        "key": "B",
+        "text": "Political authority"
+      },
+      {
+        "key": "C",
+        "text": "Sacred things"
+      },
+      {
+        "key": "D",
+        "text": "Scientific knowledge"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "In 'The Elementary Forms of Religious Life', Durkheim defined religion in terms of the sacred, which unites believers into a moral community.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Social Institutions",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-048",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 4,
+    "chapter": "Social Institutions",
+    "topic": "Education",
+    "difficulty": "Medium",
+    "questionText": "Which function of education involves transmitting a society's culture and values to the next generation?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Economic redistribution"
+      },
+      {
+        "key": "B",
+        "text": "Political mobilisation"
+      },
+      {
+        "key": "C",
+        "text": "Biological reproduction"
+      },
+      {
+        "key": "D",
+        "text": "Cultural transmission"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Education transmits knowledge, values and culture from one generation to the next.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Social Institutions",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-049",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 4,
+    "chapter": "Social Institutions",
+    "topic": "Political Institution",
+    "difficulty": "Hard",
+    "questionText": "According to Max Weber, authority based on rules and legal procedures, as in a modern bureaucracy, is called:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Rational-legal authority"
+      },
+      {
+        "key": "B",
+        "text": "Traditional authority"
+      },
+      {
+        "key": "C",
+        "text": "Charismatic authority"
+      },
+      {
+        "key": "D",
+        "text": "Patriarchal authority"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Weber identified traditional, charismatic and rational-legal authority; the last rests on belief in legally established rules.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Social Institutions",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-050",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 4,
+    "chapter": "Social Institutions",
+    "topic": "Family",
+    "difficulty": "Hard",
+    "questionText": "Which change best reflects the impact of urbanisation and industrialisation on the Indian joint family?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "The complete disappearance of all kinship obligations"
+      },
+      {
+        "key": "B",
+        "text": "A growing trend towards nuclear households with continuing kinship ties"
+      },
+      {
+        "key": "C",
+        "text": "An increase in polyandrous marriages"
+      },
+      {
+        "key": "D",
+        "text": "A return to strictly matrilineal descent everywhere"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Sociologists note a rise in nuclear households, though many retain functional joint-family ties and obligations.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Social Institutions",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-051",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 4,
+    "chapter": "Social Institutions",
+    "topic": "Education",
+    "difficulty": "Hard",
+    "questionText": "The idea that schools teach punctuality, obedience and respect for authority without these being part of the formal syllabus is called the:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Formal curriculum"
+      },
+      {
+        "key": "B",
+        "text": "Manifest function"
+      },
+      {
+        "key": "C",
+        "text": "Hidden curriculum"
+      },
+      {
+        "key": "D",
+        "text": "Cultural lag"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "The hidden curriculum refers to the unofficial norms and values learned through schooling.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Social Institutions",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-052",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 4,
+    "chapter": "Social Institutions",
+    "topic": "Social Institutions",
+    "difficulty": "Hard",
+    "questionText": "Which statement best describes the relationship among social institutions?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Each institution functions in complete isolation"
+      },
+      {
+        "key": "B",
+        "text": "Only the economy influences other institutions"
+      },
+      {
+        "key": "C",
+        "text": "Institutions never change over time"
+      },
+      {
+        "key": "D",
+        "text": "Institutions are interrelated, so change in one affects the others"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Institutions such as family, economy, polity, religion and education are interdependent parts of the social system.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Social Institutions",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-053",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 5,
+    "chapter": "Culture",
+    "topic": "Definition of Culture",
+    "difficulty": "Easy",
+    "questionText": "Who defined culture as 'that complex whole which includes knowledge, belief, art, morals, law, custom' and other capabilities acquired by man as a member of society?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "E.B. Tylor"
+      },
+      {
+        "key": "B",
+        "text": "Bronislaw Malinowski"
+      },
+      {
+        "key": "C",
+        "text": "Franz Boas"
+      },
+      {
+        "key": "D",
+        "text": "Ruth Benedict"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "E.B. Tylor gave this classic definition in 'Primitive Culture' (1871).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Culture",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-054",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 5,
+    "chapter": "Culture",
+    "topic": "Material Culture",
+    "difficulty": "Easy",
+    "questionText": "Which of the following is an example of material culture?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Beliefs and values"
+      },
+      {
+        "key": "B",
+        "text": "Tools and buildings"
+      },
+      {
+        "key": "C",
+        "text": "Language and ideas"
+      },
+      {
+        "key": "D",
+        "text": "Customs and traditions"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Material culture consists of tangible objects made by humans, such as tools, clothing and buildings.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Culture",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-055",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 5,
+    "chapter": "Culture",
+    "topic": "Characteristics of Culture",
+    "difficulty": "Easy",
+    "questionText": "Culture is described as 'learned' because it is:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Transmitted through genes"
+      },
+      {
+        "key": "B",
+        "text": "Identical in all societies"
+      },
+      {
+        "key": "C",
+        "text": "Acquired through socialisation rather than biological inheritance"
+      },
+      {
+        "key": "D",
+        "text": "Created anew by every individual"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Culture is transmitted socially through learning and interaction, not biologically.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Culture",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-056",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 5,
+    "chapter": "Culture",
+    "topic": "Subculture",
+    "difficulty": "Easy",
+    "questionText": "A group within a larger society that shares distinctive values and practices while also sharing the wider culture is said to have a:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Counterculture"
+      },
+      {
+        "key": "B",
+        "text": "Cultural lag"
+      },
+      {
+        "key": "C",
+        "text": "Mass culture"
+      },
+      {
+        "key": "D",
+        "text": "Subculture"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "A subculture has distinctive features but remains part of the broader culture.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Culture",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-057",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 5,
+    "chapter": "Culture",
+    "topic": "Cultural Lag",
+    "difficulty": "Medium",
+    "questionText": "Who introduced the concept of 'cultural lag'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "William F. Ogburn"
+      },
+      {
+        "key": "B",
+        "text": "Herbert Spencer"
+      },
+      {
+        "key": "C",
+        "text": "Talcott Parsons"
+      },
+      {
+        "key": "D",
+        "text": "Kingsley Davis"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "W.F. Ogburn used 'cultural lag' for the delay of non-material culture in adjusting to changes in material culture.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Culture",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-058",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 5,
+    "chapter": "Culture",
+    "topic": "Ethnocentrism",
+    "difficulty": "Medium",
+    "questionText": "Judging other cultures by the standards of one's own culture and considering it superior is called:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Cultural relativism"
+      },
+      {
+        "key": "B",
+        "text": "Ethnocentrism"
+      },
+      {
+        "key": "C",
+        "text": "Acculturation"
+      },
+      {
+        "key": "D",
+        "text": "Assimilation"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Ethnocentrism treats one's own culture as the yardstick for judging others.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Culture",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-059",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 5,
+    "chapter": "Culture",
+    "topic": "Cultural Relativism",
+    "difficulty": "Medium",
+    "questionText": "Understanding a cultural practice in terms of the values and context of the culture in which it occurs is known as:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Ethnocentrism"
+      },
+      {
+        "key": "B",
+        "text": "Cultural imperialism"
+      },
+      {
+        "key": "C",
+        "text": "Cultural relativism"
+      },
+      {
+        "key": "D",
+        "text": "Xenophobia"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Cultural relativism encourages interpreting practices within their own cultural context.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Culture",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-060",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 5,
+    "chapter": "Culture",
+    "topic": "Counterculture",
+    "difficulty": "Medium",
+    "questionText": "A group whose values and norms actively oppose those of the dominant culture forms a:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Subculture"
+      },
+      {
+        "key": "B",
+        "text": "High culture"
+      },
+      {
+        "key": "C",
+        "text": "Folk culture"
+      },
+      {
+        "key": "D",
+        "text": "Counterculture"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "A counterculture rejects and opposes key elements of mainstream culture.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Culture",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-061",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 5,
+    "chapter": "Culture",
+    "topic": "Culture Contact",
+    "difficulty": "Medium",
+    "questionText": "The process by which a group adopts elements of another culture through prolonged contact is called:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Acculturation"
+      },
+      {
+        "key": "B",
+        "text": "Enculturation"
+      },
+      {
+        "key": "C",
+        "text": "Socialisation"
+      },
+      {
+        "key": "D",
+        "text": "Cultural lag"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Acculturation refers to cultural change resulting from sustained contact between different cultures.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Culture",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-062",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 5,
+    "chapter": "Culture",
+    "topic": "Cultural Lag",
+    "difficulty": "Hard",
+    "questionText": "Social norms around online privacy taking years to catch up with rapid growth of smartphones best illustrates:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Cultural diffusion"
+      },
+      {
+        "key": "B",
+        "text": "Cultural lag"
+      },
+      {
+        "key": "C",
+        "text": "Ethnocentrism"
+      },
+      {
+        "key": "D",
+        "text": "Counterculture"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Here material culture (technology) changes faster than non-material culture (norms and laws), which is Ogburn's cultural lag.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Culture",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-063",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 5,
+    "chapter": "Culture",
+    "topic": "Diffusion",
+    "difficulty": "Hard",
+    "questionText": "The spread of yoga from India to many countries around the world is an example of:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Cultural lag"
+      },
+      {
+        "key": "B",
+        "text": "Enculturation"
+      },
+      {
+        "key": "C",
+        "text": "Cultural diffusion"
+      },
+      {
+        "key": "D",
+        "text": "Cultural relativism"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Cultural diffusion is the spread of cultural traits from one society to another.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Culture",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-064",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 5,
+    "chapter": "Culture",
+    "topic": "Enculturation",
+    "difficulty": "Hard",
+    "questionText": "How does enculturation differ from acculturation?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Enculturation involves contact with foreign cultures; acculturation involves learning one's own"
+      },
+      {
+        "key": "B",
+        "text": "Both terms refer only to material culture"
+      },
+      {
+        "key": "C",
+        "text": "Enculturation applies only to adults"
+      },
+      {
+        "key": "D",
+        "text": "Enculturation is learning one's own culture; acculturation is change through contact with another culture"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Enculturation is the process of acquiring one's own culture, while acculturation results from contact between cultures.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Culture",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-065",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 6,
+    "chapter": "Socialization",
+    "topic": "Meaning of Socialisation",
+    "difficulty": "Easy",
+    "questionText": "The lifelong process through which individuals learn the norms, values and roles of their society is called:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Socialisation"
+      },
+      {
+        "key": "B",
+        "text": "Stratification"
+      },
+      {
+        "key": "C",
+        "text": "Mobility"
+      },
+      {
+        "key": "D",
+        "text": "Urbanisation"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Socialisation is the process by which individuals become functioning members of society.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Socialization",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-066",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 6,
+    "chapter": "Socialization",
+    "topic": "Agencies of Socialisation",
+    "difficulty": "Easy",
+    "questionText": "Which is generally considered the primary and earliest agency of socialisation?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Mass media"
+      },
+      {
+        "key": "B",
+        "text": "Family"
+      },
+      {
+        "key": "C",
+        "text": "Workplace"
+      },
+      {
+        "key": "D",
+        "text": "State"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "The family is the first agency through which a child learns language, values and behaviour.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Socialization",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-067",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 6,
+    "chapter": "Socialization",
+    "topic": "Looking-Glass Self",
+    "difficulty": "Easy",
+    "questionText": "The concept of the 'looking-glass self' was proposed by:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "George Herbert Mead"
+      },
+      {
+        "key": "B",
+        "text": "Sigmund Freud"
+      },
+      {
+        "key": "C",
+        "text": "Charles Horton Cooley"
+      },
+      {
+        "key": "D",
+        "text": "Jean Piaget"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Cooley argued that our self-concept develops through how we imagine others see and judge us.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Socialization",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-068",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 6,
+    "chapter": "Socialization",
+    "topic": "Agencies of Socialisation",
+    "difficulty": "Easy",
+    "questionText": "Friends of a similar age who influence an individual's attitudes and behaviour are known as a:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Reference category"
+      },
+      {
+        "key": "B",
+        "text": "Secondary institution"
+      },
+      {
+        "key": "C",
+        "text": "Out-group"
+      },
+      {
+        "key": "D",
+        "text": "Peer group"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Peer groups are an important agency of socialisation, especially in childhood and adolescence.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Socialization",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-069",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 6,
+    "chapter": "Socialization",
+    "topic": "Theories of Self",
+    "difficulty": "Medium",
+    "questionText": "G.H. Mead divided the self into two parts. The socialised part reflecting society's expectations is the:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Me"
+      },
+      {
+        "key": "B",
+        "text": "I"
+      },
+      {
+        "key": "C",
+        "text": "Id"
+      },
+      {
+        "key": "D",
+        "text": "Ego"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Mead's 'Me' is the internalised attitudes of others, while the 'I' is the spontaneous, active self.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Socialization",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-070",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 6,
+    "chapter": "Socialization",
+    "topic": "Theories of Self",
+    "difficulty": "Medium",
+    "questionText": "In Mead's theory, the 'generalised other' refers to:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "A child's closest friend"
+      },
+      {
+        "key": "B",
+        "text": "The internalised attitudes and expectations of society as a whole"
+      },
+      {
+        "key": "C",
+        "text": "The unconscious mind"
+      },
+      {
+        "key": "D",
+        "text": "A foreign culture"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "The generalised other represents the organised attitudes of the whole community that guide behaviour.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Socialization",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-071",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 6,
+    "chapter": "Socialization",
+    "topic": "Types of Socialisation",
+    "difficulty": "Medium",
+    "questionText": "Learning the norms of a group one hopes to join in the future, such as a medical student adopting doctors' values, is called:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Primary socialisation"
+      },
+      {
+        "key": "B",
+        "text": "Resocialisation"
+      },
+      {
+        "key": "C",
+        "text": "Anticipatory socialisation"
+      },
+      {
+        "key": "D",
+        "text": "Desocialisation"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Merton described anticipatory socialisation as preparing for future roles by adopting the group's values in advance.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Socialization",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-072",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 6,
+    "chapter": "Socialization",
+    "topic": "Types of Socialisation",
+    "difficulty": "Medium",
+    "questionText": "The process of unlearning old norms and learning new ones, often in prisons or military training, is called:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Primary socialisation"
+      },
+      {
+        "key": "B",
+        "text": "Enculturation"
+      },
+      {
+        "key": "C",
+        "text": "Anticipatory socialisation"
+      },
+      {
+        "key": "D",
+        "text": "Resocialisation"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Resocialisation involves replacing previous behaviour patterns with new ones, often in total institutions.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Socialization",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-073",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 6,
+    "chapter": "Socialization",
+    "topic": "Agencies of Socialisation",
+    "difficulty": "Medium",
+    "questionText": "How do mass media act as an agency of socialisation?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "By shaping attitudes, values and role models through information and entertainment"
+      },
+      {
+        "key": "B",
+        "text": "By assigning ascribed statuses at birth"
+      },
+      {
+        "key": "C",
+        "text": "By enforcing legal sanctions"
+      },
+      {
+        "key": "D",
+        "text": "By determining biological traits"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Television, films, newspapers and social media spread ideas and images that influence values and behaviour.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Socialization",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-074",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 6,
+    "chapter": "Socialization",
+    "topic": "Total Institutions",
+    "difficulty": "Hard",
+    "questionText": "Erving Goffman used the term 'total institution' for settings like prisons and asylums where:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "People freely move between home and work"
+      },
+      {
+        "key": "B",
+        "text": "Inmates live under a single authority, cut off from wider society"
+      },
+      {
+        "key": "C",
+        "text": "Individuals form voluntary associations"
+      },
+      {
+        "key": "D",
+        "text": "Socialisation occurs only through mass media"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Goffman described total institutions as enclosed, formally administered settings that often resocialise inmates.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Socialization",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-075",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 6,
+    "chapter": "Socialization",
+    "topic": "Theories of Self",
+    "difficulty": "Hard",
+    "questionText": "In Mead's stages of self-development, the stage in which a child takes on the roles of several others at once in organised games is the:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Play stage"
+      },
+      {
+        "key": "B",
+        "text": "Preparatory stage"
+      },
+      {
+        "key": "C",
+        "text": "Game stage"
+      },
+      {
+        "key": "D",
+        "text": "Imitation stage"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "In the game stage children understand multiple roles and rules simultaneously, leading to the generalised other.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Socialization",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-076",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 6,
+    "chapter": "Socialization",
+    "topic": "Gender Socialisation",
+    "difficulty": "Hard",
+    "questionText": "Giving dolls to girls and toy cars to boys from an early age is best understood sociologically as:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "A purely biological instinct"
+      },
+      {
+        "key": "B",
+        "text": "Resocialisation in a total institution"
+      },
+      {
+        "key": "C",
+        "text": "An example of cultural lag"
+      },
+      {
+        "key": "D",
+        "text": "Gender socialisation that shapes expectations about roles"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Gendered toys reflect and reinforce socially learned expectations rather than fixed biological differences.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Socialization",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-077",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 7,
+    "chapter": "Social Stratification",
+    "topic": "Meaning of Stratification",
+    "difficulty": "Easy",
+    "questionText": "The arrangement of individuals and groups in a hierarchy of unequal positions in society is called:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Social stratification"
+      },
+      {
+        "key": "B",
+        "text": "Social mobility"
+      },
+      {
+        "key": "C",
+        "text": "Socialisation"
+      },
+      {
+        "key": "D",
+        "text": "Social control"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Social stratification is the ranking of people into layers based on unequal access to resources, power and prestige.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Social Stratification",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-078",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 7,
+    "chapter": "Social Stratification",
+    "topic": "Types of Stratification",
+    "difficulty": "Easy",
+    "questionText": "A system of stratification in which status is ascribed at birth and mobility is highly restricted is a:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Open system"
+      },
+      {
+        "key": "B",
+        "text": "Closed system"
+      },
+      {
+        "key": "C",
+        "text": "Meritocracy"
+      },
+      {
+        "key": "D",
+        "text": "Class system"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Closed systems such as caste fix status by birth and allow little mobility.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Social Stratification",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-079",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 7,
+    "chapter": "Social Stratification",
+    "topic": "Social Mobility",
+    "difficulty": "Easy",
+    "questionText": "Movement of an individual from one social position to a higher or lower position is called:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Horizontal mobility"
+      },
+      {
+        "key": "B",
+        "text": "Cultural lag"
+      },
+      {
+        "key": "C",
+        "text": "Vertical mobility"
+      },
+      {
+        "key": "D",
+        "text": "Diffusion"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Vertical mobility involves a change in rank, either upward or downward.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Social Stratification",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-080",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 7,
+    "chapter": "Social Stratification",
+    "topic": "Class",
+    "difficulty": "Medium",
+    "questionText": "According to Karl Marx, social classes are primarily determined by:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Religious beliefs"
+      },
+      {
+        "key": "B",
+        "text": "Level of education only"
+      },
+      {
+        "key": "C",
+        "text": "Place of residence"
+      },
+      {
+        "key": "D",
+        "text": "Relationship to the means of production"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Marx defined classes such as bourgeoisie and proletariat by their ownership or non-ownership of the means of production.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Social Stratification",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-081",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 7,
+    "chapter": "Social Stratification",
+    "topic": "Dimensions of Stratification",
+    "difficulty": "Medium",
+    "questionText": "Max Weber identified three dimensions of stratification. Which set is correct?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Class, status and party (power)"
+      },
+      {
+        "key": "B",
+        "text": "Caste, kinship and religion"
+      },
+      {
+        "key": "C",
+        "text": "Income, age and gender"
+      },
+      {
+        "key": "D",
+        "text": "Bourgeoisie, proletariat and peasantry"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Weber argued that stratification has economic (class), social (status) and political (party/power) dimensions.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Social Stratification",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-082",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 7,
+    "chapter": "Social Stratification",
+    "topic": "Sanskritisation",
+    "difficulty": "Medium",
+    "questionText": "The process by which castes seek upward mobility by adopting customs and practices of castes considered higher was termed 'Sanskritisation' by:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "G.S. Ghurye"
+      },
+      {
+        "key": "B",
+        "text": "M.N. Srinivas"
+      },
+      {
+        "key": "C",
+        "text": "Louis Dumont"
+      },
+      {
+        "key": "D",
+        "text": "Yogendra Singh"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "M.N. Srinivas introduced the concept in 'Religion and Society Among the Coorgs of South India' (1952).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Social Stratification",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-083",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 7,
+    "chapter": "Social Stratification",
+    "topic": "Social Mobility",
+    "difficulty": "Medium",
+    "questionText": "A change in social status between parents and their children, such as a farmer's child becoming an engineer, is:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Intragenerational mobility"
+      },
+      {
+        "key": "B",
+        "text": "Horizontal mobility"
+      },
+      {
+        "key": "C",
+        "text": "Intergenerational mobility"
+      },
+      {
+        "key": "D",
+        "text": "Downward mobility"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Intergenerational mobility compares the status of different generations within a family.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Social Stratification",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-084",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 7,
+    "chapter": "Social Stratification",
+    "topic": "Gender Stratification",
+    "difficulty": "Medium",
+    "questionText": "Unequal access to resources, power and opportunities based on gender is studied as:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Cultural relativism"
+      },
+      {
+        "key": "B",
+        "text": "Role set"
+      },
+      {
+        "key": "C",
+        "text": "Cultural diffusion"
+      },
+      {
+        "key": "D",
+        "text": "Gender stratification"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Gender stratification refers to the hierarchical distribution of resources and power between genders.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Social Stratification",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-085",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 7,
+    "chapter": "Social Stratification",
+    "topic": "Caste",
+    "difficulty": "Hard",
+    "questionText": "G.S. Ghurye identified features of caste in India. Which of the following is one of them?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Segmental division of society"
+      },
+      {
+        "key": "B",
+        "text": "Open membership based on achievement"
+      },
+      {
+        "key": "C",
+        "text": "Free choice of occupation for all"
+      },
+      {
+        "key": "D",
+        "text": "Absence of rules on marriage"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Ghurye listed segmental division, hierarchy, restrictions on commensality, civil and religious disabilities, restricted occupational choice and endogamy.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Social Stratification",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-086",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 7,
+    "chapter": "Social Stratification",
+    "topic": "Constitutional Measures",
+    "difficulty": "Hard",
+    "questionText": "Which constitutional provision abolishes untouchability in India and forbids its practice in any form?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Article 21"
+      },
+      {
+        "key": "B",
+        "text": "Article 17"
+      },
+      {
+        "key": "C",
+        "text": "Article 32"
+      },
+      {
+        "key": "D",
+        "text": "Article 44"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Article 17 of the Indian Constitution abolishes untouchability and makes its enforcement a punishable offence.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Social Stratification",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-087",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 7,
+    "chapter": "Social Stratification",
+    "topic": "Functionalist Theory",
+    "difficulty": "Hard",
+    "questionText": "The Davis-Moore thesis argues that stratification exists because:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "The ruling class exploits workers to extract surplus value"
+      },
+      {
+        "key": "B",
+        "text": "Religious beliefs alone fix social position"
+      },
+      {
+        "key": "C",
+        "text": "Society must motivate the most qualified people to fill important positions through unequal rewards"
+      },
+      {
+        "key": "D",
+        "text": "All positions in society are equally important"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Davis and Moore (1945) offered a functionalist view; critics such as Tumin argued it overlooks inherited advantage and inequality of opportunity.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Social Stratification",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-088",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 7,
+    "chapter": "Social Stratification",
+    "topic": "Social Mobility",
+    "difficulty": "Hard",
+    "questionText": "A person who moves from a teaching job to a clerical job of similar income and prestige experiences:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Upward vertical mobility"
+      },
+      {
+        "key": "B",
+        "text": "Downward vertical mobility"
+      },
+      {
+        "key": "C",
+        "text": "Intergenerational mobility"
+      },
+      {
+        "key": "D",
+        "text": "Horizontal mobility"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Horizontal mobility is a change of position without a change in rank.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Social Stratification",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-089",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 8,
+    "chapter": "Social Change",
+    "topic": "Meaning of Social Change",
+    "difficulty": "Easy",
+    "questionText": "Alterations in social structure, institutions and patterns of behaviour over time are called:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Social change"
+      },
+      {
+        "key": "B",
+        "text": "Social control"
+      },
+      {
+        "key": "C",
+        "text": "Socialisation"
+      },
+      {
+        "key": "D",
+        "text": "Social stratification"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Social change refers to significant transformations in social structure and relationships over time.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Social Change",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-090",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 8,
+    "chapter": "Social Change",
+    "topic": "Factors of Change",
+    "difficulty": "Easy",
+    "questionText": "The introduction of the internet and mobile phones changing how people communicate is an example of which factor of social change?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Biological factor"
+      },
+      {
+        "key": "B",
+        "text": "Technological factor"
+      },
+      {
+        "key": "C",
+        "text": "Geographical factor"
+      },
+      {
+        "key": "D",
+        "text": "Demographic factor"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "New technologies alter patterns of interaction, work and communication, driving social change.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Social Change",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-091",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 8,
+    "chapter": "Social Change",
+    "topic": "Westernisation",
+    "difficulty": "Easy",
+    "questionText": "M.N. Srinivas used the term 'Westernisation' for changes in Indian society resulting from:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "The Bhakti movement"
+      },
+      {
+        "key": "B",
+        "text": "The Mughal administration"
+      },
+      {
+        "key": "C",
+        "text": "Over 150 years of British rule"
+      },
+      {
+        "key": "D",
+        "text": "The Green Revolution"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Srinivas defined Westernisation as changes brought about by British rule in technology, institutions, ideology and values.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Social Change",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-092",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 8,
+    "chapter": "Social Change",
+    "topic": "Theories of Change",
+    "difficulty": "Medium",
+    "questionText": "The theory that societies progress from simple to complex forms, like biological organisms, is associated with:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Karl Marx"
+      },
+      {
+        "key": "B",
+        "text": "Pitirim Sorokin"
+      },
+      {
+        "key": "C",
+        "text": "Oswald Spengler"
+      },
+      {
+        "key": "D",
+        "text": "Herbert Spencer"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Spencer applied evolutionary ideas to society, describing a movement from simple to complex, differentiated structures.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Social Change",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-093",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 8,
+    "chapter": "Social Change",
+    "topic": "Theories of Change",
+    "difficulty": "Medium",
+    "questionText": "Pitirim Sorokin's cyclical theory describes societies fluctuating between which cultural types?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Ideational and sensate"
+      },
+      {
+        "key": "B",
+        "text": "Mechanical and organic"
+      },
+      {
+        "key": "C",
+        "text": "Theological and positive"
+      },
+      {
+        "key": "D",
+        "text": "Traditional and charismatic"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Sorokin argued that cultures swing between ideational (spiritual) and sensate (material) orientations, with an idealistic mix in between.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Social Change",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-094",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 8,
+    "chapter": "Social Change",
+    "topic": "Modernisation",
+    "difficulty": "Medium",
+    "questionText": "Which feature is most closely associated with modernisation?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Strict adherence to inherited occupations"
+      },
+      {
+        "key": "B",
+        "text": "Rationality, scientific outlook and industrialisation"
+      },
+      {
+        "key": "C",
+        "text": "Rejection of all technology"
+      },
+      {
+        "key": "D",
+        "text": "Reliance solely on oral tradition"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Modernisation involves rational, scientific attitudes and changes such as industrialisation, urbanisation and secularisation.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Social Change",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-095",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 8,
+    "chapter": "Social Change",
+    "topic": "Conflict Theory",
+    "difficulty": "Medium",
+    "questionText": "According to Marx, the main driving force of social change is:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Climate change"
+      },
+      {
+        "key": "B",
+        "text": "Population growth"
+      },
+      {
+        "key": "C",
+        "text": "Class struggle"
+      },
+      {
+        "key": "D",
+        "text": "Religious revival"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Marx stated that 'the history of all hitherto existing society is the history of class struggles'.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Social Change",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-096",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 8,
+    "chapter": "Social Change",
+    "topic": "Demographic Factor",
+    "difficulty": "Medium",
+    "questionText": "A rapid fall in death rates while birth rates remain high, leading to population growth, is an example of change driven by the:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Ideological factor"
+      },
+      {
+        "key": "B",
+        "text": "Legal factor"
+      },
+      {
+        "key": "C",
+        "text": "Cultural lag"
+      },
+      {
+        "key": "D",
+        "text": "Demographic factor"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Changes in birth, death and migration rates shape social structure and are demographic factors of change.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Social Change",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-097",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 8,
+    "chapter": "Social Change",
+    "topic": "Legislation and Change",
+    "difficulty": "Hard",
+    "questionText": "The Hindu Succession (Amendment) Act, 2005, which gave daughters equal coparcenary rights in ancestral property, illustrates social change through:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Legislation"
+      },
+      {
+        "key": "B",
+        "text": "Cultural lag"
+      },
+      {
+        "key": "C",
+        "text": "Sanskritisation"
+      },
+      {
+        "key": "D",
+        "text": "Cyclical change"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Laws can deliberately reshape social relations; this amendment advanced gender equality in inheritance.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Social Change",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-098",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 8,
+    "chapter": "Social Change",
+    "topic": "Social Movements",
+    "difficulty": "Hard",
+    "questionText": "Jyotirao and Savitribai Phule opening a school for girls in Pune in 1848 is an example of social change brought about by:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Natural disaster"
+      },
+      {
+        "key": "B",
+        "text": "Social reform and education"
+      },
+      {
+        "key": "C",
+        "text": "Demographic transition"
+      },
+      {
+        "key": "D",
+        "text": "Cultural lag"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "The Phules used education as a tool of social reform to challenge gender and caste inequalities.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Social Change",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-099",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 8,
+    "chapter": "Social Change",
+    "topic": "Sanskritisation and Westernisation",
+    "difficulty": "Hard",
+    "questionText": "Which statement correctly distinguishes Sanskritisation from Westernisation?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Both terms mean exactly the same process"
+      },
+      {
+        "key": "B",
+        "text": "Westernisation refers only to change within the caste hierarchy"
+      },
+      {
+        "key": "C",
+        "text": "Sanskritisation involves imitation of castes ranked higher, while Westernisation involves adoption of British-influenced practices"
+      },
+      {
+        "key": "D",
+        "text": "Sanskritisation refers only to technological change"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Srinivas used Sanskritisation for mobility within the caste system and Westernisation for changes from British contact.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Social Change",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-soc-100",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-sociology",
+    "subjectName": "Sociology",
+    "chapterNumber": 8,
+    "chapter": "Social Change",
+    "topic": "Resistance to Change",
+    "difficulty": "Hard",
+    "questionText": "Which of the following is most likely to act as a barrier to social change?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Spread of education"
+      },
+      {
+        "key": "B",
+        "text": "Growth of communication technology"
+      },
+      {
+        "key": "C",
+        "text": "Increased contact with other cultures"
+      },
+      {
+        "key": "D",
+        "text": "Strong attachment to tradition and vested interests"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Traditionalism, fear of the new and vested interests can slow the acceptance of innovations.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Social Change",
+    "abilityTags": [
+      "critical_thinking",
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  }
+]

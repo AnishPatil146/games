@@ -1,0 +1,4505 @@
+[
+  {
+    "id": "msb-11-art-psy-001",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 1,
+    "chapter": "Story of Psychology",
+    "topic": "Origin of Psychology",
+    "difficulty": "Easy",
+    "questionText": "Who established the first formal psychology laboratory at Leipzig in 1879?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Wilhelm Wundt"
+      },
+      {
+        "key": "B",
+        "text": "William James"
+      },
+      {
+        "key": "C",
+        "text": "Sigmund Freud"
+      },
+      {
+        "key": "D",
+        "text": "John B. Watson"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Wilhelm Wundt set up the first experimental psychology laboratory at Leipzig, Germany, in 1879, marking psychology's birth as a science.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Story of Psychology",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-002",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 1,
+    "chapter": "Story of Psychology",
+    "topic": "Meaning of Psychology",
+    "difficulty": "Easy",
+    "questionText": "The word 'psychology' is derived from the Greek words 'psyche' and 'logos'. What do they mean?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Mind and body"
+      },
+      {
+        "key": "B",
+        "text": "Soul and study"
+      },
+      {
+        "key": "C",
+        "text": "Behaviour and science"
+      },
+      {
+        "key": "D",
+        "text": "Brain and nerves"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Psyche means soul (or mind) and logos means study or discourse, so psychology originally meant the study of the soul.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Story of Psychology",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-003",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 1,
+    "chapter": "Story of Psychology",
+    "topic": "Schools of Psychology",
+    "difficulty": "Easy",
+    "questionText": "Which school of psychology was founded by Sigmund Freud?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Behaviourism"
+      },
+      {
+        "key": "B",
+        "text": "Gestalt psychology"
+      },
+      {
+        "key": "C",
+        "text": "Psychoanalysis"
+      },
+      {
+        "key": "D",
+        "text": "Structuralism"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Freud founded psychoanalysis, which emphasises the role of the unconscious mind in shaping behaviour.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Story of Psychology",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-004",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 1,
+    "chapter": "Story of Psychology",
+    "topic": "Schools of Psychology",
+    "difficulty": "Easy",
+    "questionText": "Which American psychologist is associated with functionalism and wrote 'The Principles of Psychology'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Edward Titchener"
+      },
+      {
+        "key": "B",
+        "text": "Max Wertheimer"
+      },
+      {
+        "key": "C",
+        "text": "Carl Rogers"
+      },
+      {
+        "key": "D",
+        "text": "William James"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "William James led functionalism, focusing on how mental processes help organisms adapt, and wrote 'The Principles of Psychology' (1890).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Story of Psychology",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-005",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 1,
+    "chapter": "Story of Psychology",
+    "topic": "Structuralism",
+    "difficulty": "Medium",
+    "questionText": "Which method did structuralists such as Titchener mainly use to analyse the elements of conscious experience?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Introspection"
+      },
+      {
+        "key": "B",
+        "text": "Free association"
+      },
+      {
+        "key": "C",
+        "text": "Naturalistic observation"
+      },
+      {
+        "key": "D",
+        "text": "Classical conditioning"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Structuralists trained observers to introspect, that is, to report their own sensations and feelings systematically.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Story of Psychology",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-006",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 1,
+    "chapter": "Story of Psychology",
+    "topic": "Behaviourism",
+    "difficulty": "Medium",
+    "questionText": "John B. Watson argued that psychology should study only what?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Unconscious desires"
+      },
+      {
+        "key": "B",
+        "text": "Observable behaviour"
+      },
+      {
+        "key": "C",
+        "text": "Conscious experience"
+      },
+      {
+        "key": "D",
+        "text": "Personal growth and self-actualisation"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Watson's behaviourism rejected mental states as unscientific and limited psychology to observable, measurable behaviour.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Story of Psychology",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-007",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 1,
+    "chapter": "Story of Psychology",
+    "topic": "Gestalt Psychology",
+    "difficulty": "Medium",
+    "questionText": "Which idea best summarises Gestalt psychology?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Behaviour is shaped only by reinforcement"
+      },
+      {
+        "key": "B",
+        "text": "The mind is made of basic sensory elements"
+      },
+      {
+        "key": "C",
+        "text": "The whole is different from the sum of its parts"
+      },
+      {
+        "key": "D",
+        "text": "Human beings strive for self-actualisation"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Gestalt psychologists like Wertheimer held that we perceive organised wholes rather than isolated elements.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Story of Psychology",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-008",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 1,
+    "chapter": "Story of Psychology",
+    "topic": "Humanistic Perspective",
+    "difficulty": "Medium",
+    "questionText": "Which pair of psychologists is most closely associated with the humanistic perspective?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Ivan Pavlov and B. F. Skinner"
+      },
+      {
+        "key": "B",
+        "text": "Wilhelm Wundt and Edward Titchener"
+      },
+      {
+        "key": "C",
+        "text": "Wolfgang Kohler and Kurt Koffka"
+      },
+      {
+        "key": "D",
+        "text": "Abraham Maslow and Carl Rogers"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Maslow and Rogers emphasised free will, personal growth and self-actualisation, forming the humanistic 'third force'.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Story of Psychology",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-009",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 1,
+    "chapter": "Story of Psychology",
+    "topic": "Cognitive Perspective",
+    "difficulty": "Medium",
+    "questionText": "The cognitive perspective in psychology mainly focuses on which of the following?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Mental processes such as thinking, memory and problem solving"
+      },
+      {
+        "key": "B",
+        "text": "Inherited instincts and drives"
+      },
+      {
+        "key": "C",
+        "text": "Unconscious conflicts from childhood"
+      },
+      {
+        "key": "D",
+        "text": "Only stimulus-response associations"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Cognitive psychology studies how people acquire, process and store information.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Story of Psychology",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-010",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 1,
+    "chapter": "Story of Psychology",
+    "topic": "Definition of Psychology",
+    "difficulty": "Hard",
+    "questionText": "Which definition best reflects the modern view of psychology?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "The study of the soul"
+      },
+      {
+        "key": "B",
+        "text": "The scientific study of behaviour and mental processes"
+      },
+      {
+        "key": "C",
+        "text": "The study of consciousness alone"
+      },
+      {
+        "key": "D",
+        "text": "The study of observable behaviour alone"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Modern psychology combines the study of overt behaviour with internal mental processes, using scientific methods.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Story of Psychology",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-011",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 1,
+    "chapter": "Story of Psychology",
+    "topic": "Psychology in India",
+    "difficulty": "Hard",
+    "questionText": "Where was the first department of experimental psychology in India established in 1915?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "University of Mumbai"
+      },
+      {
+        "key": "B",
+        "text": "University of Madras"
+      },
+      {
+        "key": "C",
+        "text": "University of Calcutta"
+      },
+      {
+        "key": "D",
+        "text": "Banaras Hindu University"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "The University of Calcutta started India's first experimental psychology department in 1915, with N. N. Sengupta playing a key role.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Story of Psychology",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-012",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 1,
+    "chapter": "Story of Psychology",
+    "topic": "Critique of Introspection",
+    "difficulty": "Hard",
+    "questionText": "Why was introspection criticised as a scientific method?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "It relied too heavily on animal experiments"
+      },
+      {
+        "key": "B",
+        "text": "It ignored conscious experience completely"
+      },
+      {
+        "key": "C",
+        "text": "It required expensive brain-imaging equipment"
+      },
+      {
+        "key": "D",
+        "text": "Reports were subjective and could not be independently verified"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Different observers gave different reports of the same stimulus, and private experience could not be checked by others.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Story of Psychology",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-013",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 1,
+    "chapter": "Story of Psychology",
+    "topic": "Behaviourism",
+    "difficulty": "Hard",
+    "questionText": "Ivan Pavlov's work on salivation in dogs contributed which concept to behaviourism?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Classical conditioning"
+      },
+      {
+        "key": "B",
+        "text": "Operant conditioning"
+      },
+      {
+        "key": "C",
+        "text": "Insight learning"
+      },
+      {
+        "key": "D",
+        "text": "Observational learning"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Pavlov showed that a neutral stimulus paired with food could come to elicit salivation, the basis of classical conditioning.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Story of Psychology",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-014",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 2,
+    "chapter": "Branches of Psychology",
+    "topic": "Clinical Psychology",
+    "difficulty": "Easy",
+    "questionText": "Which branch of psychology deals with the assessment and treatment of psychological disorders?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Industrial psychology"
+      },
+      {
+        "key": "B",
+        "text": "Clinical psychology"
+      },
+      {
+        "key": "C",
+        "text": "Sports psychology"
+      },
+      {
+        "key": "D",
+        "text": "Environmental psychology"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Clinical psychologists assess, diagnose and treat psychological disorders using therapy and testing.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Branches of Psychology",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-015",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 2,
+    "chapter": "Branches of Psychology",
+    "topic": "Educational Psychology",
+    "difficulty": "Easy",
+    "questionText": "Which branch applies psychological principles to teaching and learning in schools?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Forensic psychology"
+      },
+      {
+        "key": "B",
+        "text": "Health psychology"
+      },
+      {
+        "key": "C",
+        "text": "Educational psychology"
+      },
+      {
+        "key": "D",
+        "text": "Neuropsychology"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Educational psychology studies how students learn and how teaching can be made more effective.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Branches of Psychology",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-016",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 2,
+    "chapter": "Branches of Psychology",
+    "topic": "Industrial-Organisational Psychology",
+    "difficulty": "Easy",
+    "questionText": "Employee selection, training and workplace motivation are studied mainly in which branch?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Developmental psychology"
+      },
+      {
+        "key": "B",
+        "text": "Clinical psychology"
+      },
+      {
+        "key": "C",
+        "text": "Cross-cultural psychology"
+      },
+      {
+        "key": "D",
+        "text": "Industrial-organisational psychology"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "I-O psychology applies psychology to the workplace, including recruitment, training and productivity.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Branches of Psychology",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-017",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 2,
+    "chapter": "Branches of Psychology",
+    "topic": "Sports Psychology",
+    "difficulty": "Easy",
+    "questionText": "A psychologist helping athletes manage performance anxiety before a match is working in which field?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Sports psychology"
+      },
+      {
+        "key": "B",
+        "text": "Forensic psychology"
+      },
+      {
+        "key": "C",
+        "text": "Educational psychology"
+      },
+      {
+        "key": "D",
+        "text": "Environmental psychology"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Sports psychology deals with mental factors such as motivation, focus and anxiety that affect athletic performance.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Branches of Psychology",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-018",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 2,
+    "chapter": "Branches of Psychology",
+    "topic": "Forensic Psychology",
+    "difficulty": "Medium",
+    "questionText": "Evaluating the reliability of eyewitness testimony in a court case falls under which branch?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Health psychology"
+      },
+      {
+        "key": "B",
+        "text": "Forensic psychology"
+      },
+      {
+        "key": "C",
+        "text": "Counselling psychology"
+      },
+      {
+        "key": "D",
+        "text": "Developmental psychology"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Forensic psychology applies psychology to the legal and criminal justice system, including eyewitness accounts.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Branches of Psychology",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-019",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 2,
+    "chapter": "Branches of Psychology",
+    "topic": "Health Psychology",
+    "difficulty": "Medium",
+    "questionText": "Which branch studies how psychological factors such as lifestyle and stress influence physical illness?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Social psychology"
+      },
+      {
+        "key": "B",
+        "text": "Industrial psychology"
+      },
+      {
+        "key": "C",
+        "text": "Health psychology"
+      },
+      {
+        "key": "D",
+        "text": "Educational psychology"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Health psychology examines the links between behaviour, psychological factors and physical health.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Branches of Psychology",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-020",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 2,
+    "chapter": "Branches of Psychology",
+    "topic": "Developmental Psychology",
+    "difficulty": "Medium",
+    "questionText": "Which branch studies changes in a person from conception through old age?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Clinical psychology"
+      },
+      {
+        "key": "B",
+        "text": "Environmental psychology"
+      },
+      {
+        "key": "C",
+        "text": "Forensic psychology"
+      },
+      {
+        "key": "D",
+        "text": "Developmental psychology"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Developmental psychology studies physical, cognitive and social changes across the life span.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Branches of Psychology",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-021",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 2,
+    "chapter": "Branches of Psychology",
+    "topic": "Social Psychology",
+    "difficulty": "Medium",
+    "questionText": "Studying how the presence of others influences conformity and attitudes belongs to which branch?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Social psychology"
+      },
+      {
+        "key": "B",
+        "text": "Neuropsychology"
+      },
+      {
+        "key": "C",
+        "text": "Sports psychology"
+      },
+      {
+        "key": "D",
+        "text": "Educational psychology"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Social psychology studies how individuals think, feel and behave in social situations.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Branches of Psychology",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-022",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 2,
+    "chapter": "Branches of Psychology",
+    "topic": "Counselling Psychology",
+    "difficulty": "Medium",
+    "questionText": "How does counselling psychology usually differ from clinical psychology?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "It works only with animals"
+      },
+      {
+        "key": "B",
+        "text": "It focuses mainly on everyday adjustment problems rather than severe disorders"
+      },
+      {
+        "key": "C",
+        "text": "It deals only with criminal offenders"
+      },
+      {
+        "key": "D",
+        "text": "It studies only brain structures"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Counsellors typically help people with career, family and adjustment issues, while clinical psychologists handle more severe disorders.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Branches of Psychology",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-023",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 2,
+    "chapter": "Branches of Psychology",
+    "topic": "Environmental Psychology",
+    "difficulty": "Hard",
+    "questionText": "Research on how noise, crowding and pollution affect behaviour is part of which branch?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Cognitive psychology"
+      },
+      {
+        "key": "B",
+        "text": "Health psychology"
+      },
+      {
+        "key": "C",
+        "text": "Environmental psychology"
+      },
+      {
+        "key": "D",
+        "text": "Organisational psychology"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Environmental psychology studies the interaction between people and their physical surroundings.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Branches of Psychology",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-024",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 2,
+    "chapter": "Branches of Psychology",
+    "topic": "Neuropsychology",
+    "difficulty": "Hard",
+    "questionText": "Which branch studies the relationship between brain functioning and behaviour, often in people with brain injuries?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Social psychology"
+      },
+      {
+        "key": "B",
+        "text": "Counselling psychology"
+      },
+      {
+        "key": "C",
+        "text": "Cross-cultural psychology"
+      },
+      {
+        "key": "D",
+        "text": "Neuropsychology"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Neuropsychology links specific brain structures and damage to changes in cognition and behaviour.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Branches of Psychology",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-025",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 2,
+    "chapter": "Branches of Psychology",
+    "topic": "Pure vs Applied Branches",
+    "difficulty": "Hard",
+    "questionText": "Which statement correctly distinguishes pure from applied branches of psychology?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Pure branches build basic theory, while applied branches use that knowledge to solve practical problems"
+      },
+      {
+        "key": "B",
+        "text": "Pure branches use experiments, while applied branches never use research"
+      },
+      {
+        "key": "C",
+        "text": "Pure branches study humans, while applied branches study only animals"
+      },
+      {
+        "key": "D",
+        "text": "Pure branches are practised only in hospitals"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Pure (basic) branches like general psychology develop principles; applied branches like clinical or I-O psychology put them into practice.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Branches of Psychology",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-026",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 3,
+    "chapter": "Self",
+    "topic": "Self-Concept",
+    "difficulty": "Easy",
+    "questionText": "The organised set of beliefs a person holds about who they are is called what?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Self-efficacy"
+      },
+      {
+        "key": "B",
+        "text": "Self-concept"
+      },
+      {
+        "key": "C",
+        "text": "Self-control"
+      },
+      {
+        "key": "D",
+        "text": "Self-actualisation"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Self-concept is the overall picture or perception a person has of themselves.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Self",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-027",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 3,
+    "chapter": "Self",
+    "topic": "Self-Esteem",
+    "difficulty": "Easy",
+    "questionText": "A person's overall evaluation of their own worth is known as what?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Self-concept"
+      },
+      {
+        "key": "B",
+        "text": "Self-awareness"
+      },
+      {
+        "key": "C",
+        "text": "Self-esteem"
+      },
+      {
+        "key": "D",
+        "text": "Self-disclosure"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Self-esteem is the evaluative, value-based judgement of oneself as worthy or unworthy.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Self",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-028",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 3,
+    "chapter": "Self",
+    "topic": "Johari Window",
+    "difficulty": "Easy",
+    "questionText": "Who developed the Johari Window model of self-awareness?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Carl Rogers and Abraham Maslow"
+      },
+      {
+        "key": "B",
+        "text": "William James and Charles Cooley"
+      },
+      {
+        "key": "C",
+        "text": "Albert Bandura and Leon Festinger"
+      },
+      {
+        "key": "D",
+        "text": "Joseph Luft and Harrington Ingham"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "The Johari Window (1955) was named after its creators, Joseph Luft and Harry Ingham.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Self",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-029",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 3,
+    "chapter": "Self",
+    "topic": "Real and Ideal Self",
+    "difficulty": "Easy",
+    "questionText": "According to Carl Rogers, the person one would like to be is called the what?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Ideal self"
+      },
+      {
+        "key": "B",
+        "text": "Real self"
+      },
+      {
+        "key": "C",
+        "text": "Social self"
+      },
+      {
+        "key": "D",
+        "text": "Material self"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Rogers distinguished the real self (who we are) from the ideal self (who we wish to be).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Self",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-030",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 3,
+    "chapter": "Self",
+    "topic": "Johari Window",
+    "difficulty": "Medium",
+    "questionText": "In the Johari Window, information known to both oneself and others belongs to which area?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Blind area"
+      },
+      {
+        "key": "B",
+        "text": "Open area"
+      },
+      {
+        "key": "C",
+        "text": "Hidden area"
+      },
+      {
+        "key": "D",
+        "text": "Unknown area"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "The open (arena) quadrant contains traits and facts known to the self and to others.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Self",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-031",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 3,
+    "chapter": "Self",
+    "topic": "Johari Window",
+    "difficulty": "Medium",
+    "questionText": "A friend points out that you interrupt people often, which you had never noticed. This trait was in which Johari area?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Open area"
+      },
+      {
+        "key": "B",
+        "text": "Hidden area"
+      },
+      {
+        "key": "C",
+        "text": "Blind area"
+      },
+      {
+        "key": "D",
+        "text": "Unknown area"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "The blind area contains things others know about us that we ourselves are unaware of.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Self",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-032",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 3,
+    "chapter": "Self",
+    "topic": "Johari Window",
+    "difficulty": "Medium",
+    "questionText": "Private fears you know about but deliberately keep from others belong to which Johari area?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Blind area"
+      },
+      {
+        "key": "B",
+        "text": "Open area"
+      },
+      {
+        "key": "C",
+        "text": "Unknown area"
+      },
+      {
+        "key": "D",
+        "text": "Hidden area"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "The hidden (facade) area contains what we know about ourselves but do not disclose.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Self",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-033",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 3,
+    "chapter": "Self",
+    "topic": "Theories of Self",
+    "difficulty": "Medium",
+    "questionText": "William James distinguished the self as knower from the self as known. What did he call these?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "'I' and 'Me'"
+      },
+      {
+        "key": "B",
+        "text": "Id and Ego"
+      },
+      {
+        "key": "C",
+        "text": "Real self and Ideal self"
+      },
+      {
+        "key": "D",
+        "text": "Public self and Private self"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "James described the 'I' as the subjective knower and the 'Me' as the self that is known or observed.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Self",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-034",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 3,
+    "chapter": "Self",
+    "topic": "Looking-Glass Self",
+    "difficulty": "Medium",
+    "questionText": "Charles Cooley's 'looking-glass self' suggests that self-concept develops mainly through what?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Biological maturation of the brain"
+      },
+      {
+        "key": "B",
+        "text": "How we imagine others see and judge us"
+      },
+      {
+        "key": "C",
+        "text": "Unconscious childhood conflicts"
+      },
+      {
+        "key": "D",
+        "text": "Rewards and punishments alone"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Cooley proposed that we form our self-image by reflecting on how others perceive and evaluate us.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Self",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-035",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 3,
+    "chapter": "Self",
+    "topic": "Rogers' Theory",
+    "difficulty": "Hard",
+    "questionText": "According to Rogers, a large gap between the real self and the ideal self leads to what?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Self-actualisation"
+      },
+      {
+        "key": "B",
+        "text": "Greater self-efficacy"
+      },
+      {
+        "key": "C",
+        "text": "Incongruence, which can cause anxiety"
+      },
+      {
+        "key": "D",
+        "text": "Increased open area"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Rogers held that incongruence between real and ideal self produces tension and anxiety, while congruence supports well-being.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Self",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-036",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 3,
+    "chapter": "Self",
+    "topic": "Self-Efficacy",
+    "difficulty": "Hard",
+    "questionText": "Albert Bandura defined self-efficacy as what?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Overall liking for oneself"
+      },
+      {
+        "key": "B",
+        "text": "Awareness of one's own emotions"
+      },
+      {
+        "key": "C",
+        "text": "The tendency to compare oneself with others"
+      },
+      {
+        "key": "D",
+        "text": "Belief in one's ability to succeed in a specific task or situation"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Self-efficacy is a task-specific belief in one's capability, which influences effort and persistence.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Self",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-037",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 3,
+    "chapter": "Self",
+    "topic": "Johari Window",
+    "difficulty": "Hard",
+    "questionText": "Which change in the Johari Window is generally encouraged for healthy relationships?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Enlarging the open area through self-disclosure and feedback"
+      },
+      {
+        "key": "B",
+        "text": "Enlarging the hidden area by sharing less"
+      },
+      {
+        "key": "C",
+        "text": "Enlarging the blind area by avoiding feedback"
+      },
+      {
+        "key": "D",
+        "text": "Keeping all four areas equal in size"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Self-disclosure shrinks the hidden area and seeking feedback shrinks the blind area, expanding the open area.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Self",
+    "abilityTags": [
+      "critical_thinking",
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-038",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 3,
+    "chapter": "Self",
+    "topic": "Social Comparison",
+    "difficulty": "Hard",
+    "questionText": "Leon Festinger's social comparison theory states that people evaluate themselves by doing what?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Looking only at their past achievements"
+      },
+      {
+        "key": "B",
+        "text": "Comparing their abilities and opinions with those of others"
+      },
+      {
+        "key": "C",
+        "text": "Relying solely on parental instructions"
+      },
+      {
+        "key": "D",
+        "text": "Following unconscious instincts"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Festinger proposed that, lacking objective standards, people judge themselves by comparison with others.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Self",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-039",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 4,
+    "chapter": "Human Development",
+    "topic": "Prenatal Development",
+    "difficulty": "Easy",
+    "questionText": "When does the prenatal period of development begin?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "At birth"
+      },
+      {
+        "key": "B",
+        "text": "At the end of the first month"
+      },
+      {
+        "key": "C",
+        "text": "At conception"
+      },
+      {
+        "key": "D",
+        "text": "When the heart begins to beat"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "The prenatal period runs from conception (fertilisation) to birth.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Human Development",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-040",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 4,
+    "chapter": "Human Development",
+    "topic": "Cognitive Development",
+    "difficulty": "Easy",
+    "questionText": "Which psychologist proposed four stages of cognitive development in children?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Erik Erikson"
+      },
+      {
+        "key": "B",
+        "text": "Sigmund Freud"
+      },
+      {
+        "key": "C",
+        "text": "Lev Vygotsky"
+      },
+      {
+        "key": "D",
+        "text": "Jean Piaget"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Piaget proposed the sensorimotor, preoperational, concrete operational and formal operational stages.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Human Development",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-041",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 4,
+    "chapter": "Human Development",
+    "topic": "Adolescence",
+    "difficulty": "Easy",
+    "questionText": "The biological process of sexual maturation that marks the start of adolescence is called what?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Puberty"
+      },
+      {
+        "key": "B",
+        "text": "Menopause"
+      },
+      {
+        "key": "C",
+        "text": "Maturation lag"
+      },
+      {
+        "key": "D",
+        "text": "Senescence"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Puberty involves hormonal changes and development of secondary sexual characteristics.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Human Development",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-042",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 4,
+    "chapter": "Human Development",
+    "topic": "Life-Span Stages",
+    "difficulty": "Easy",
+    "questionText": "Which stage of development covers roughly the first two years after birth?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Adolescence"
+      },
+      {
+        "key": "B",
+        "text": "Infancy"
+      },
+      {
+        "key": "C",
+        "text": "Middle childhood"
+      },
+      {
+        "key": "D",
+        "text": "Early adulthood"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Infancy spans from birth to about two years and is marked by rapid physical and motor growth.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Human Development",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-043",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 4,
+    "chapter": "Human Development",
+    "topic": "Piaget's Stages",
+    "difficulty": "Medium",
+    "questionText": "Object permanence develops during which Piagetian stage?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Preoperational stage"
+      },
+      {
+        "key": "B",
+        "text": "Concrete operational stage"
+      },
+      {
+        "key": "C",
+        "text": "Sensorimotor stage"
+      },
+      {
+        "key": "D",
+        "text": "Formal operational stage"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "During the sensorimotor stage (0-2 years) infants learn that objects continue to exist when out of sight.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Human Development",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-044",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 4,
+    "chapter": "Human Development",
+    "topic": "Piaget's Stages",
+    "difficulty": "Medium",
+    "questionText": "A four-year-old assumes everyone sees the same view she does. Piaget called this what?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Conservation"
+      },
+      {
+        "key": "B",
+        "text": "Object permanence"
+      },
+      {
+        "key": "C",
+        "text": "Hypothetical reasoning"
+      },
+      {
+        "key": "D",
+        "text": "Egocentrism"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Egocentrism, the inability to take another's perspective, is typical of the preoperational stage.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Human Development",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-045",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 4,
+    "chapter": "Human Development",
+    "topic": "Piaget's Stages",
+    "difficulty": "Medium",
+    "questionText": "Understanding that the amount of water stays the same when poured into a taller glass is called what?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Conservation"
+      },
+      {
+        "key": "B",
+        "text": "Egocentrism"
+      },
+      {
+        "key": "C",
+        "text": "Animism"
+      },
+      {
+        "key": "D",
+        "text": "Assimilation"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Conservation is mastered in the concrete operational stage (about 7-11 years).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Human Development",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-046",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 4,
+    "chapter": "Human Development",
+    "topic": "Piaget's Stages",
+    "difficulty": "Medium",
+    "questionText": "Abstract and hypothetical-deductive reasoning first appears in which stage?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Concrete operational stage"
+      },
+      {
+        "key": "B",
+        "text": "Formal operational stage"
+      },
+      {
+        "key": "C",
+        "text": "Preoperational stage"
+      },
+      {
+        "key": "D",
+        "text": "Sensorimotor stage"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "From about age 11-12, adolescents can reason about abstract ideas and hypothetical possibilities.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Human Development",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-047",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 4,
+    "chapter": "Human Development",
+    "topic": "Erikson's Stages",
+    "difficulty": "Medium",
+    "questionText": "According to Erikson, the main psychosocial crisis of adolescence is what?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Trust vs mistrust"
+      },
+      {
+        "key": "B",
+        "text": "Intimacy vs isolation"
+      },
+      {
+        "key": "C",
+        "text": "Identity vs role confusion"
+      },
+      {
+        "key": "D",
+        "text": "Integrity vs despair"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Erikson held that adolescents must form a stable sense of identity or face role confusion.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Human Development",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-048",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 4,
+    "chapter": "Human Development",
+    "topic": "Prenatal Periods",
+    "difficulty": "Hard",
+    "questionText": "Which is the correct order of the prenatal periods?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Embryonic, germinal, foetal"
+      },
+      {
+        "key": "B",
+        "text": "Foetal, embryonic, germinal"
+      },
+      {
+        "key": "C",
+        "text": "Germinal, foetal, embryonic"
+      },
+      {
+        "key": "D",
+        "text": "Germinal, embryonic, foetal"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "The germinal period (first two weeks) is followed by the embryonic (to about 8 weeks) and then the foetal period until birth.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Human Development",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-049",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 4,
+    "chapter": "Human Development",
+    "topic": "Maturation and Learning",
+    "difficulty": "Hard",
+    "questionText": "A baby starts walking at about the same age regardless of training. This mainly shows the role of what?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Maturation"
+      },
+      {
+        "key": "B",
+        "text": "Reinforcement"
+      },
+      {
+        "key": "C",
+        "text": "Imitation"
+      },
+      {
+        "key": "D",
+        "text": "Formal instruction"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Maturation is the biologically programmed unfolding of abilities, largely independent of practice.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Human Development",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-050",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 4,
+    "chapter": "Human Development",
+    "topic": "Erikson's Stages",
+    "difficulty": "Hard",
+    "questionText": "Consistent, responsive caregiving during infancy helps resolve which Eriksonian crisis?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Autonomy vs shame and doubt"
+      },
+      {
+        "key": "B",
+        "text": "Trust vs mistrust"
+      },
+      {
+        "key": "C",
+        "text": "Initiative vs guilt"
+      },
+      {
+        "key": "D",
+        "text": "Industry vs inferiority"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "In the first stage, reliable care leads infants to develop basic trust in the world.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Human Development",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-051",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 5,
+    "chapter": "Healthy Me - Normal Me",
+    "topic": "Concept of Health",
+    "difficulty": "Easy",
+    "questionText": "According to the WHO, health is a state of complete physical, mental and social well-being, and not merely what?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "The presence of physical fitness"
+      },
+      {
+        "key": "B",
+        "text": "The absence of stress"
+      },
+      {
+        "key": "C",
+        "text": "The absence of disease or infirmity"
+      },
+      {
+        "key": "D",
+        "text": "A high income level"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "The WHO definition stresses positive well-being across physical, mental and social domains.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Healthy Me - Normal Me",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-052",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 5,
+    "chapter": "Healthy Me - Normal Me",
+    "topic": "Positive Psychology",
+    "difficulty": "Easy",
+    "questionText": "Who is widely regarded as the founder of positive psychology?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Sigmund Freud"
+      },
+      {
+        "key": "B",
+        "text": "John B. Watson"
+      },
+      {
+        "key": "C",
+        "text": "Wilhelm Wundt"
+      },
+      {
+        "key": "D",
+        "text": "Martin Seligman"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Martin Seligman promoted positive psychology in 1998, focusing on strengths and well-being.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Healthy Me - Normal Me",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-053",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 5,
+    "chapter": "Healthy Me - Normal Me",
+    "topic": "Criteria of Abnormality",
+    "difficulty": "Easy",
+    "questionText": "Defining behaviour as abnormal because it is rare or far from the average uses which criterion?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Statistical criterion"
+      },
+      {
+        "key": "B",
+        "text": "Social norm criterion"
+      },
+      {
+        "key": "C",
+        "text": "Personal distress criterion"
+      },
+      {
+        "key": "D",
+        "text": "Maladaptiveness criterion"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "The statistical criterion treats behaviour that deviates greatly from the population average as abnormal.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Healthy Me - Normal Me",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-054",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 5,
+    "chapter": "Healthy Me - Normal Me",
+    "topic": "Criteria of Abnormality",
+    "difficulty": "Medium",
+    "questionText": "Judging behaviour as abnormal because it violates the accepted rules of a society uses which criterion?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Statistical rarity"
+      },
+      {
+        "key": "B",
+        "text": "Deviation from social norms"
+      },
+      {
+        "key": "C",
+        "text": "Personal distress"
+      },
+      {
+        "key": "D",
+        "text": "Biological dysfunction"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "The social norm criterion compares behaviour against the expectations of a given society.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Healthy Me - Normal Me",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-055",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 5,
+    "chapter": "Healthy Me - Normal Me",
+    "topic": "Criteria of Abnormality",
+    "difficulty": "Medium",
+    "questionText": "Behaviour that prevents a person from carrying out daily activities such as work or study is described as what?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Statistically average"
+      },
+      {
+        "key": "B",
+        "text": "Culturally normal"
+      },
+      {
+        "key": "C",
+        "text": "Maladaptive"
+      },
+      {
+        "key": "D",
+        "text": "Socially desirable"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "The maladaptiveness criterion focuses on whether behaviour interferes with everyday functioning.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Healthy Me - Normal Me",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-056",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 5,
+    "chapter": "Healthy Me - Normal Me",
+    "topic": "Positive Mental Health",
+    "difficulty": "Medium",
+    "questionText": "Marie Jahoda's view of mental health emphasised which idea?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Only the absence of symptoms"
+      },
+      {
+        "key": "B",
+        "text": "Conformity to every social rule"
+      },
+      {
+        "key": "C",
+        "text": "High intelligence test scores"
+      },
+      {
+        "key": "D",
+        "text": "Positive features such as self-acceptance, growth and environmental mastery"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Jahoda described positive mental health in terms of qualities like autonomy, accurate perception and self-acceptance.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Healthy Me - Normal Me",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-057",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 5,
+    "chapter": "Healthy Me - Normal Me",
+    "topic": "Resilience",
+    "difficulty": "Medium",
+    "questionText": "The ability to bounce back and adapt well after adversity is called what?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Resilience"
+      },
+      {
+        "key": "B",
+        "text": "Regression"
+      },
+      {
+        "key": "C",
+        "text": "Repression"
+      },
+      {
+        "key": "D",
+        "text": "Rumination"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Resilience is the capacity to recover from difficulties and adapt positively.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Healthy Me - Normal Me",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-058",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 5,
+    "chapter": "Healthy Me - Normal Me",
+    "topic": "Normality",
+    "difficulty": "Medium",
+    "questionText": "Which statement about normality is most accurate?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Normal people never experience negative emotions"
+      },
+      {
+        "key": "B",
+        "text": "Normality and abnormality lie on a continuum rather than being strict opposites"
+      },
+      {
+        "key": "C",
+        "text": "Normality is identical in every culture"
+      },
+      {
+        "key": "D",
+        "text": "Any unusual behaviour is a disorder"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Most psychologists see behaviour as varying by degree along a continuum from healthy to unhealthy functioning.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Healthy Me - Normal Me",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-059",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 5,
+    "chapter": "Healthy Me - Normal Me",
+    "topic": "Limits of the Statistical Criterion",
+    "difficulty": "Hard",
+    "questionText": "Why is the statistical criterion alone an inadequate definition of abnormality?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "It cannot be measured numerically"
+      },
+      {
+        "key": "B",
+        "text": "It treats all common behaviours as disorders"
+      },
+      {
+        "key": "C",
+        "text": "Some rare traits, such as exceptional giftedness, are desirable rather than abnormal"
+      },
+      {
+        "key": "D",
+        "text": "It depends entirely on personal distress"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Statistical rarity does not distinguish between desirable and undesirable deviations.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Healthy Me - Normal Me",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-060",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 5,
+    "chapter": "Healthy Me - Normal Me",
+    "topic": "Cultural Relativity",
+    "difficulty": "Hard",
+    "questionText": "What is a major limitation of the social norm criterion of abnormality?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "It ignores what society expects"
+      },
+      {
+        "key": "B",
+        "text": "It applies only to children"
+      },
+      {
+        "key": "C",
+        "text": "It relies on brain scans"
+      },
+      {
+        "key": "D",
+        "text": "Norms differ across cultures and change over time"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Because norms are culture- and era-specific, the same behaviour may be judged normal in one setting and abnormal in another.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Healthy Me - Normal Me",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-061",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 5,
+    "chapter": "Healthy Me - Normal Me",
+    "topic": "Well-Being",
+    "difficulty": "Hard",
+    "questionText": "In Seligman's PERMA model of well-being, what does the letter 'M' stand for?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Meaning"
+      },
+      {
+        "key": "B",
+        "text": "Memory"
+      },
+      {
+        "key": "C",
+        "text": "Motivation"
+      },
+      {
+        "key": "D",
+        "text": "Maturity"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "PERMA stands for Positive emotion, Engagement, Relationships, Meaning and Accomplishment.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Healthy Me - Normal Me",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-062",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 5,
+    "chapter": "Healthy Me - Normal Me",
+    "topic": "Criteria of Abnormality",
+    "difficulty": "Hard",
+    "questionText": "Why is personal distress alone not sufficient as a criterion of abnormality?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Distress can never be reported by individuals"
+      },
+      {
+        "key": "B",
+        "text": "Some people with serious problems feel no distress, while distress is normal after events like bereavement"
+      },
+      {
+        "key": "C",
+        "text": "Distress is only a physical symptom"
+      },
+      {
+        "key": "D",
+        "text": "Distress always indicates a statistical rarity"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Distress can be a normal reaction to life events, and some disturbed behaviour occurs without distress to the person.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Healthy Me - Normal Me",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-063",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 6,
+    "chapter": "Stress",
+    "topic": "Stress Research",
+    "difficulty": "Easy",
+    "questionText": "Who proposed the General Adaptation Syndrome (GAS) model of stress?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Richard Lazarus"
+      },
+      {
+        "key": "B",
+        "text": "Walter Cannon"
+      },
+      {
+        "key": "C",
+        "text": "Hans Selye"
+      },
+      {
+        "key": "D",
+        "text": "Martin Seligman"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Endocrinologist Hans Selye described the body's three-stage response to prolonged stress.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Stress",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-064",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 6,
+    "chapter": "Stress",
+    "topic": "Types of Stress",
+    "difficulty": "Easy",
+    "questionText": "Positive stress that motivates a person and improves performance is called what?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Distress"
+      },
+      {
+        "key": "B",
+        "text": "Burnout"
+      },
+      {
+        "key": "C",
+        "text": "Hypostress"
+      },
+      {
+        "key": "D",
+        "text": "Eustress"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Eustress is beneficial stress, such as the excitement before an important performance.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Stress",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-065",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 6,
+    "chapter": "Stress",
+    "topic": "Types of Stress",
+    "difficulty": "Easy",
+    "questionText": "Harmful stress that leads to anxiety and reduced performance is called what?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Distress"
+      },
+      {
+        "key": "B",
+        "text": "Eustress"
+      },
+      {
+        "key": "C",
+        "text": "Resilience"
+      },
+      {
+        "key": "D",
+        "text": "Arousal"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Distress is negative stress that overwhelms coping resources and impairs functioning.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Stress",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-066",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 6,
+    "chapter": "Stress",
+    "topic": "Stressors",
+    "difficulty": "Easy",
+    "questionText": "An event or situation that triggers a stress response is known as what?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Coping strategy"
+      },
+      {
+        "key": "B",
+        "text": "Stressor"
+      },
+      {
+        "key": "C",
+        "text": "Appraisal"
+      },
+      {
+        "key": "D",
+        "text": "Buffer"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "A stressor is any internal or external demand perceived as challenging or threatening.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Stress",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-067",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 6,
+    "chapter": "Stress",
+    "topic": "General Adaptation Syndrome",
+    "difficulty": "Medium",
+    "questionText": "What is the correct sequence of stages in Selye's General Adaptation Syndrome?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Resistance, alarm, exhaustion"
+      },
+      {
+        "key": "B",
+        "text": "Exhaustion, alarm, resistance"
+      },
+      {
+        "key": "C",
+        "text": "Alarm, resistance, exhaustion"
+      },
+      {
+        "key": "D",
+        "text": "Alarm, exhaustion, resistance"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "The body first reacts with alarm, then tries to adapt (resistance), and finally becomes depleted (exhaustion).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Stress",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-068",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 6,
+    "chapter": "Stress",
+    "topic": "General Adaptation Syndrome",
+    "difficulty": "Medium",
+    "questionText": "The sudden activation of the sympathetic nervous system when a stressor appears occurs in which GAS stage?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Resistance stage"
+      },
+      {
+        "key": "B",
+        "text": "Exhaustion stage"
+      },
+      {
+        "key": "C",
+        "text": "Recovery stage"
+      },
+      {
+        "key": "D",
+        "text": "Alarm stage"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "In the alarm reaction the body mobilises for fight or flight, raising heart rate and releasing stress hormones.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Stress",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-069",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 6,
+    "chapter": "Stress",
+    "topic": "Cognitive Appraisal",
+    "difficulty": "Medium",
+    "questionText": "In Lazarus's model, deciding whether an event is threatening or irrelevant is called what?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Primary appraisal"
+      },
+      {
+        "key": "B",
+        "text": "Secondary appraisal"
+      },
+      {
+        "key": "C",
+        "text": "Reappraisal"
+      },
+      {
+        "key": "D",
+        "text": "Emotion-focused coping"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Primary appraisal evaluates the significance of an event for one's well-being.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Stress",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-070",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 6,
+    "chapter": "Stress",
+    "topic": "Cognitive Appraisal",
+    "difficulty": "Medium",
+    "questionText": "Assessing whether one has the resources to cope with a stressor is called what?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Primary appraisal"
+      },
+      {
+        "key": "B",
+        "text": "Secondary appraisal"
+      },
+      {
+        "key": "C",
+        "text": "Alarm reaction"
+      },
+      {
+        "key": "D",
+        "text": "Displacement"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Secondary appraisal evaluates one's coping abilities and resources for handling the stressor.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Stress",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-071",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 6,
+    "chapter": "Stress",
+    "topic": "Coping",
+    "difficulty": "Medium",
+    "questionText": "Making a study timetable to deal with exam pressure is an example of which coping style?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Emotion-focused coping"
+      },
+      {
+        "key": "B",
+        "text": "Avoidance coping"
+      },
+      {
+        "key": "C",
+        "text": "Problem-focused coping"
+      },
+      {
+        "key": "D",
+        "text": "Denial"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Problem-focused coping tackles the source of stress directly by planning and taking action.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Stress",
+    "abilityTags": [
+      "interpretation",
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-072",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 6,
+    "chapter": "Stress",
+    "topic": "Conflict as a Stressor",
+    "difficulty": "Hard",
+    "questionText": "A student wants to join a prestigious college but dreads its high fees. This is which type of conflict?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Approach-approach conflict"
+      },
+      {
+        "key": "B",
+        "text": "Avoidance-avoidance conflict"
+      },
+      {
+        "key": "C",
+        "text": "Double approach conflict"
+      },
+      {
+        "key": "D",
+        "text": "Approach-avoidance conflict"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Approach-avoidance conflict involves a single goal with both attractive and unattractive features.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Stress",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-073",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 6,
+    "chapter": "Stress",
+    "topic": "Conflict as a Stressor",
+    "difficulty": "Hard",
+    "questionText": "Having to choose between two unpleasant options, such as cleaning the house or doing a disliked chore, is which conflict?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Avoidance-avoidance conflict"
+      },
+      {
+        "key": "B",
+        "text": "Approach-approach conflict"
+      },
+      {
+        "key": "C",
+        "text": "Approach-avoidance conflict"
+      },
+      {
+        "key": "D",
+        "text": "Role conflict"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Avoidance-avoidance conflict arises when one must choose between two undesirable alternatives.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Stress",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-074",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 6,
+    "chapter": "Stress",
+    "topic": "General Adaptation Syndrome",
+    "difficulty": "Hard",
+    "questionText": "According to Selye, why does prolonged exposure to stress increase vulnerability to illness?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "The alarm stage permanently strengthens immunity"
+      },
+      {
+        "key": "B",
+        "text": "Bodily resources become depleted in the exhaustion stage"
+      },
+      {
+        "key": "C",
+        "text": "Resistance stage hormones disappear immediately"
+      },
+      {
+        "key": "D",
+        "text": "Stress affects only thoughts, not the body"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Long-term stress drains physiological reserves, weakening immunity and raising the risk of disease.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Stress",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-075",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 6,
+    "chapter": "Stress",
+    "topic": "Personality and Stress",
+    "difficulty": "Hard",
+    "questionText": "Which personality pattern, marked by time urgency, competitiveness and hostility, has been linked to heart disease?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Type B personality"
+      },
+      {
+        "key": "B",
+        "text": "Hardy personality"
+      },
+      {
+        "key": "C",
+        "text": "Type A personality"
+      },
+      {
+        "key": "D",
+        "text": "Introverted personality"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Friedman and Rosenman linked the Type A pattern, especially its hostility component, to coronary heart disease.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Stress",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-076",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 7,
+    "chapter": "Nervous System",
+    "topic": "Neuron",
+    "difficulty": "Easy",
+    "questionText": "What is the basic structural and functional unit of the nervous system?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Nephron"
+      },
+      {
+        "key": "B",
+        "text": "Glial cell"
+      },
+      {
+        "key": "C",
+        "text": "Hormone"
+      },
+      {
+        "key": "D",
+        "text": "Neuron"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Neurons are specialised cells that receive, process and transmit information.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Nervous System",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-077",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 7,
+    "chapter": "Nervous System",
+    "topic": "Divisions of the Nervous System",
+    "difficulty": "Easy",
+    "questionText": "The central nervous system consists of which structures?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Brain and spinal cord"
+      },
+      {
+        "key": "B",
+        "text": "Brain and cranial nerves"
+      },
+      {
+        "key": "C",
+        "text": "Spinal cord and spinal nerves"
+      },
+      {
+        "key": "D",
+        "text": "Sympathetic and parasympathetic systems"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "The CNS comprises the brain and spinal cord; all other nerves form the peripheral nervous system.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Nervous System",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-078",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 7,
+    "chapter": "Nervous System",
+    "topic": "Neuron Structure",
+    "difficulty": "Easy",
+    "questionText": "Which part of a neuron mainly receives incoming signals from other neurons?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Axon terminals"
+      },
+      {
+        "key": "B",
+        "text": "Dendrites"
+      },
+      {
+        "key": "C",
+        "text": "Myelin sheath"
+      },
+      {
+        "key": "D",
+        "text": "Axon"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Dendrites are branching extensions that receive messages and carry them toward the cell body.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Nervous System",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-079",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 7,
+    "chapter": "Nervous System",
+    "topic": "Brain Structures",
+    "difficulty": "Easy",
+    "questionText": "Which part of the brain coordinates balance and smooth voluntary movement?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Medulla oblongata"
+      },
+      {
+        "key": "B",
+        "text": "Thalamus"
+      },
+      {
+        "key": "C",
+        "text": "Cerebellum"
+      },
+      {
+        "key": "D",
+        "text": "Frontal lobe"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "The cerebellum ('little brain') coordinates posture, balance and fine motor movement.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Nervous System",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-080",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 7,
+    "chapter": "Nervous System",
+    "topic": "Neuron Structure",
+    "difficulty": "Medium",
+    "questionText": "What is the main function of the myelin sheath?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "To produce neurotransmitters"
+      },
+      {
+        "key": "B",
+        "text": "To receive signals from other neurons"
+      },
+      {
+        "key": "C",
+        "text": "To store memories"
+      },
+      {
+        "key": "D",
+        "text": "To speed up transmission of nerve impulses along the axon"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Myelin insulates the axon so impulses jump between nodes, greatly increasing conduction speed.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Nervous System",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-081",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 7,
+    "chapter": "Nervous System",
+    "topic": "Synapse",
+    "difficulty": "Medium",
+    "questionText": "How is a message usually passed from one neuron to the next across a synapse?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "By chemical neurotransmitters released into the synaptic gap"
+      },
+      {
+        "key": "B",
+        "text": "By blood carrying the impulse"
+      },
+      {
+        "key": "C",
+        "text": "By direct physical fusion of the two neurons"
+      },
+      {
+        "key": "D",
+        "text": "By hormones from the pituitary gland"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Neurotransmitters released from axon terminals cross the synaptic cleft and bind to receptors on the next neuron.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Nervous System",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-082",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 7,
+    "chapter": "Nervous System",
+    "topic": "Brain Structures",
+    "difficulty": "Medium",
+    "questionText": "Which brain structure controls vital functions such as breathing and heart rate?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Cerebellum"
+      },
+      {
+        "key": "B",
+        "text": "Medulla oblongata"
+      },
+      {
+        "key": "C",
+        "text": "Occipital lobe"
+      },
+      {
+        "key": "D",
+        "text": "Corpus callosum"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "The medulla in the brainstem regulates automatic life-sustaining functions.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Nervous System",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-083",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 7,
+    "chapter": "Nervous System",
+    "topic": "Autonomic Nervous System",
+    "difficulty": "Medium",
+    "questionText": "Which division of the autonomic nervous system prepares the body for 'fight or flight'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Parasympathetic nervous system"
+      },
+      {
+        "key": "B",
+        "text": "Somatic nervous system"
+      },
+      {
+        "key": "C",
+        "text": "Sympathetic nervous system"
+      },
+      {
+        "key": "D",
+        "text": "Central nervous system"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "The sympathetic division increases heart rate and energy mobilisation during emergencies.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Nervous System",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-084",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 7,
+    "chapter": "Nervous System",
+    "topic": "Cerebral Lobes",
+    "difficulty": "Medium",
+    "questionText": "Which lobe of the cerebral cortex is primarily responsible for processing visual information?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Temporal lobe"
+      },
+      {
+        "key": "B",
+        "text": "Parietal lobe"
+      },
+      {
+        "key": "C",
+        "text": "Frontal lobe"
+      },
+      {
+        "key": "D",
+        "text": "Occipital lobe"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "The occipital lobe at the back of the brain contains the primary visual cortex.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Nervous System",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-085",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 7,
+    "chapter": "Nervous System",
+    "topic": "Language Areas",
+    "difficulty": "Hard",
+    "questionText": "Damage to Broca's area in the left frontal lobe most typically affects what?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Speech production"
+      },
+      {
+        "key": "B",
+        "text": "Understanding spoken words"
+      },
+      {
+        "key": "C",
+        "text": "Visual recognition of faces"
+      },
+      {
+        "key": "D",
+        "text": "Balance and posture"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Broca's area is involved in producing fluent speech; damage leads to slow, effortful speech.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Nervous System",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-086",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 7,
+    "chapter": "Nervous System",
+    "topic": "Brain Structures",
+    "difficulty": "Hard",
+    "questionText": "Which structure regulates hunger, thirst, body temperature and controls the pituitary gland?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Thalamus"
+      },
+      {
+        "key": "B",
+        "text": "Hypothalamus"
+      },
+      {
+        "key": "C",
+        "text": "Hippocampus"
+      },
+      {
+        "key": "D",
+        "text": "Pons"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "The hypothalamus maintains homeostasis and links the nervous system to the endocrine system.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Nervous System",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-087",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 7,
+    "chapter": "Nervous System",
+    "topic": "Brain Structures",
+    "difficulty": "Hard",
+    "questionText": "What is the function of the corpus callosum?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "It relays sensory information to the cortex"
+      },
+      {
+        "key": "B",
+        "text": "It controls breathing during sleep"
+      },
+      {
+        "key": "C",
+        "text": "It connects the two cerebral hemispheres and allows them to communicate"
+      },
+      {
+        "key": "D",
+        "text": "It produces cerebrospinal fluid"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "The corpus callosum is a thick band of nerve fibres linking the left and right hemispheres.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Nervous System",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-088",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 7,
+    "chapter": "Nervous System",
+    "topic": "Reflex Action",
+    "difficulty": "Hard",
+    "questionText": "Why can you pull your hand away from a hot object before you consciously feel pain?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "The cerebellum interprets pain faster than the cortex"
+      },
+      {
+        "key": "B",
+        "text": "Hormones carry the signal directly to the muscles"
+      },
+      {
+        "key": "C",
+        "text": "The parasympathetic system blocks pain signals"
+      },
+      {
+        "key": "D",
+        "text": "The reflex arc is processed in the spinal cord without first going to the brain"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "In a reflex arc, sensory neurons connect via interneurons in the spinal cord to motor neurons, producing a rapid response.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Nervous System",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-089",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 8,
+    "chapter": "Memory",
+    "topic": "Memory Processes",
+    "difficulty": "Easy",
+    "questionText": "What are the three basic processes of memory, in order?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Encoding, storage, retrieval"
+      },
+      {
+        "key": "B",
+        "text": "Storage, encoding, retrieval"
+      },
+      {
+        "key": "C",
+        "text": "Retrieval, storage, encoding"
+      },
+      {
+        "key": "D",
+        "text": "Encoding, retrieval, storage"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Information must first be encoded, then stored, and later retrieved when needed.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Memory",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-090",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 8,
+    "chapter": "Memory",
+    "topic": "Short-Term Memory",
+    "difficulty": "Easy",
+    "questionText": "According to George Miller, the capacity of short-term memory is about how many items?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "3 plus or minus 1"
+      },
+      {
+        "key": "B",
+        "text": "7 plus or minus 2"
+      },
+      {
+        "key": "C",
+        "text": "15 plus or minus 5"
+      },
+      {
+        "key": "D",
+        "text": "Unlimited"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Miller's 'magical number seven, plus or minus two' describes the limited capacity of short-term memory.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Memory",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-091",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 8,
+    "chapter": "Memory",
+    "topic": "Forgetting",
+    "difficulty": "Easy",
+    "questionText": "Who first plotted the 'forgetting curve' using nonsense syllables?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Endel Tulving"
+      },
+      {
+        "key": "B",
+        "text": "Frederic Bartlett"
+      },
+      {
+        "key": "C",
+        "text": "Hermann Ebbinghaus"
+      },
+      {
+        "key": "D",
+        "text": "George Miller"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Ebbinghaus showed that forgetting is rapid at first and then levels off over time.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Memory",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-092",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 8,
+    "chapter": "Memory",
+    "topic": "Multi-Store Model",
+    "difficulty": "Medium",
+    "questionText": "Who proposed the multi-store (three-store) model of memory?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Craik and Lockhart"
+      },
+      {
+        "key": "B",
+        "text": "Baddeley and Hitch"
+      },
+      {
+        "key": "C",
+        "text": "Luft and Ingham"
+      },
+      {
+        "key": "D",
+        "text": "Atkinson and Shiffrin"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Atkinson and Shiffrin (1968) described sensory memory, short-term memory and long-term memory.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Memory",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-093",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 8,
+    "chapter": "Memory",
+    "topic": "Sensory Memory",
+    "difficulty": "Medium",
+    "questionText": "Which memory store holds a very brief, large-capacity record of incoming sensory information?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Sensory memory"
+      },
+      {
+        "key": "B",
+        "text": "Short-term memory"
+      },
+      {
+        "key": "C",
+        "text": "Long-term memory"
+      },
+      {
+        "key": "D",
+        "text": "Semantic memory"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Sensory memory holds information for a fraction of a second to a few seconds before it fades or is attended to.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Memory",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-094",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 8,
+    "chapter": "Memory",
+    "topic": "Retrieval",
+    "difficulty": "Medium",
+    "questionText": "Answering a multiple-choice question rather than a fill-in-the-blank question mainly involves which retrieval method?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Recall"
+      },
+      {
+        "key": "B",
+        "text": "Recognition"
+      },
+      {
+        "key": "C",
+        "text": "Relearning"
+      },
+      {
+        "key": "D",
+        "text": "Rehearsal"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Recognition requires identifying previously learned material among options, which is usually easier than recall.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Memory",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-095",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 8,
+    "chapter": "Memory",
+    "topic": "Long-Term Memory",
+    "difficulty": "Medium",
+    "questionText": "Remembering your last birthday celebration is an example of which type of memory?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Semantic memory"
+      },
+      {
+        "key": "B",
+        "text": "Procedural memory"
+      },
+      {
+        "key": "C",
+        "text": "Episodic memory"
+      },
+      {
+        "key": "D",
+        "text": "Sensory memory"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Tulving defined episodic memory as memory for personally experienced events tied to time and place.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Memory",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-096",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 8,
+    "chapter": "Memory",
+    "topic": "Long-Term Memory",
+    "difficulty": "Medium",
+    "questionText": "Knowing how to ride a bicycle is stored as which type of memory?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Episodic memory"
+      },
+      {
+        "key": "B",
+        "text": "Semantic memory"
+      },
+      {
+        "key": "C",
+        "text": "Iconic memory"
+      },
+      {
+        "key": "D",
+        "text": "Procedural memory"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Procedural memory stores skills and habits that are performed without conscious recollection.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Memory",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-097",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 8,
+    "chapter": "Memory",
+    "topic": "Interference",
+    "difficulty": "Hard",
+    "questionText": "You keep writing your old phone number when asked for your new one. This illustrates what?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Proactive interference"
+      },
+      {
+        "key": "B",
+        "text": "Retroactive interference"
+      },
+      {
+        "key": "C",
+        "text": "Decay theory"
+      },
+      {
+        "key": "D",
+        "text": "Anterograde amnesia"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "In proactive interference, old learning disrupts the recall of newer information.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Memory",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-098",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 8,
+    "chapter": "Memory",
+    "topic": "Interference",
+    "difficulty": "Hard",
+    "questionText": "After learning French, a student finds it harder to recall Spanish learned earlier. This is an example of what?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Proactive interference"
+      },
+      {
+        "key": "B",
+        "text": "Retroactive interference"
+      },
+      {
+        "key": "C",
+        "text": "Encoding failure"
+      },
+      {
+        "key": "D",
+        "text": "State-dependent memory"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "In retroactive interference, new learning disrupts the recall of previously learned information.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Memory",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-099",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 8,
+    "chapter": "Memory",
+    "topic": "Serial Position Effect",
+    "difficulty": "Hard",
+    "questionText": "Better recall of the first and last items in a list than the middle items is known as what?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "The levels of processing effect"
+      },
+      {
+        "key": "B",
+        "text": "The tip-of-the-tongue phenomenon"
+      },
+      {
+        "key": "C",
+        "text": "The serial position effect"
+      },
+      {
+        "key": "D",
+        "text": "Chunking"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "The serial position effect combines the primacy effect (early items) and the recency effect (final items).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Memory",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-psy-100",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-psychology",
+    "subjectName": "Psychology",
+    "chapterNumber": 8,
+    "chapter": "Memory",
+    "topic": "Levels of Processing",
+    "difficulty": "Hard",
+    "questionText": "According to Craik and Lockhart, which kind of processing leads to the most durable memories?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Shallow processing of physical appearance"
+      },
+      {
+        "key": "B",
+        "text": "Processing of sound alone"
+      },
+      {
+        "key": "C",
+        "text": "Brief sensory registration"
+      },
+      {
+        "key": "D",
+        "text": "Deep, semantic processing of meaning"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "The levels of processing approach holds that analysing meaning produces stronger, longer-lasting memory traces.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Memory",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  }
+]

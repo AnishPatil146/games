@@ -1,0 +1,4565 @@
+[
+  {
+    "id": "msb-11-art-his-001",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 1,
+    "chapter": "First Farmers",
+    "topic": "Neolithic Revolution",
+    "difficulty": "Easy",
+    "questionText": "Which Australian archaeologist coined the term 'Neolithic Revolution' to describe humanity's transition from foraging to settled agriculture?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Vere Gordon Childe"
+      },
+      {
+        "key": "B",
+        "text": "Mortimer Wheeler"
+      },
+      {
+        "key": "C",
+        "text": "John Marshall"
+      },
+      {
+        "key": "D",
+        "text": "Robert Bruce Foote"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vere Gordon Childe introduced the concept of the 'Neolithic Revolution' to highlight how food production fundamentally transformed human settlement, demography, and social organisation.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: First Farmers",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-002",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 1,
+    "chapter": "First Farmers",
+    "topic": "Mehrgarh Neolithic Settlement",
+    "difficulty": "Easy",
+    "questionText": "Near which strategic mountain pass in Balochistan is the early Neolithic agricultural settlement of Mehrgarh located?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Khyber Pass"
+      },
+      {
+        "key": "B",
+        "text": "Bolan Pass"
+      },
+      {
+        "key": "C",
+        "text": "Gomal Pass"
+      },
+      {
+        "key": "D",
+        "text": "Shipki La Pass"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Mehrgarh lies on the Kacchi Plain near the Bolan Pass in Balochistan, linking the Iranian plateau with the Indus plains and preserving evidence of early wheat and barley cultivation.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: First Farmers",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-003",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 1,
+    "chapter": "First Farmers",
+    "topic": "Early Rice Cultivation in Ganga Plains",
+    "difficulty": "Medium",
+    "questionText": "Archaeological excavations at Lahuradewa in Uttar Pradesh pushed back the antiquity of early rice cultivation in the Indian subcontinent to approximately which period?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Around 2600–1900 BCE"
+      },
+      {
+        "key": "B",
+        "text": "Around 1500–1000 BCE"
+      },
+      {
+        "key": "C",
+        "text": "Around 7000–6500 BCE"
+      },
+      {
+        "key": "D",
+        "text": "Around 600–300 BCE"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Micro-charcoal and phytolith evidence from Lahuradewa in Sant Kabir Nagar district revealed domesticated rice cultivation in the Middle Ganga valley dating back to around the seventh millennium BCE.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: First Farmers",
+    "abilityTags": [
+      "interpretation",
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-004",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 1,
+    "chapter": "First Farmers",
+    "topic": "Prehistoric Craft and Exchange",
+    "difficulty": "Medium",
+    "questionText": "In Neolithic villages, why did the invention of the potter's wheel mark a decisive economic shift compared to hand-moulded Mesolithic vessels?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "It allowed Neolithic communities to smelt iron ore inside high-temperature ceramic kilns"
+      },
+      {
+        "key": "B",
+        "text": "It eliminated the need for agricultural granaries by sealing crops beneath riverbeds"
+      },
+      {
+        "key": "C",
+        "text": "It replaced barter exchange entirely with stamped gold and silver coinage"
+      },
+      {
+        "key": "D",
+        "text": "It enabled standardised mass production and fostered specialised artisan groups within village economies"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Wheel-made pottery accelerated vessel output, encouraged craft specialisation, and supported surplus food storage and inter-village barter long before metallic currency existed.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: First Farmers",
+    "abilityTags": [
+      "critical_thinking",
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-005",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 1,
+    "chapter": "First Farmers",
+    "topic": "Aceramic Neolithic Evidence at Mehrgarh",
+    "difficulty": "Hard",
+    "questionText": "What is the significance of finding lapis lazuli, turquoise, and marine shell ornaments inside Period I (aceramic Neolithic) burials at Mehrgarh?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "They demonstrate long-distance exchange networks operating even before pottery manufacture began at the site"
+      },
+      {
+        "key": "B",
+        "text": "They prove that Mehrgarh functioned primarily as a maritime naval port on the Arabian Sea coast"
+      },
+      {
+        "key": "C",
+        "text": "They indicate that iron ploughshares were imported from Central Asia during the seventh millennium BCE"
+      },
+      {
+        "key": "D",
+        "text": "They show that burial goods were restricted exclusively to inscribed bronze royal seals"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Period I at Mehrgarh lacked pottery (aceramic), yet graves contained marine shells from the Makran coast and lapis lazuli from Badakhshan, attesting to extensive prehistoric trade networks.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: First Farmers",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-006",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 1,
+    "chapter": "First Farmers",
+    "topic": "Bio-archaeology of First Farmers",
+    "difficulty": "Hard",
+    "questionText": "Palaeo-odontological examination of eleven human molars from Neolithic Mehrgarh revealed which remarkable prehistoric medical practice?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Replacement of fractured jaws using cast-bronze prosthetic plates"
+      },
+      {
+        "key": "B",
+        "text": "In-vivo drilling of human teeth using flint micro-drills to treat dental caries"
+      },
+      {
+        "key": "C",
+        "text": "Application of mercury-silver amalgam fillings described in Atharvavedic hymns"
+      },
+      {
+        "key": "D",
+        "text": "Ritual extraction of incisors restricted to defeated war captives"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Microscopic wear striations on drilled molars from Neolithic Mehrgarh showed concentric grooves made with bow-driven flint drills on living individuals, representing the earliest known proto-dentistry.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: First Farmers",
+    "abilityTags": [
+      "interpretation",
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-007",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 2,
+    "chapter": "First Cities of India",
+    "topic": "Harappan Maritime Infrastructure",
+    "difficulty": "Easy",
+    "questionText": "Which Harappan urban centre in Gujarat is renowned for its fired-brick tidal dockyard connected to the Gulf of Khambhat via the Bhogavo river channel?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Kalibangan"
+      },
+      {
+        "key": "B",
+        "text": "Banawali"
+      },
+      {
+        "key": "C",
+        "text": "Lothal"
+      },
+      {
+        "key": "D",
+        "text": "Ropar"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Lothal in Gujarat featured a monumental trapezoid brick basin engineered to handle tidal fluctuations for berthing merchant vessels trading in beads, ivory, and semi-precious stones.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: First Cities of India",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-008",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 2,
+    "chapter": "First Cities of India",
+    "topic": "Ploughed Field at Kalibangan",
+    "difficulty": "Easy",
+    "questionText": "Excavations at which Harappan site in Rajasthan uncovered an Early Harappan furrowed field preserving two perpendicular sets of plough-marks?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Chanhudaro"
+      },
+      {
+        "key": "B",
+        "text": "Surkotada"
+      },
+      {
+        "key": "C",
+        "text": "Alamgirpur"
+      },
+      {
+        "key": "D",
+        "text": "Kalibangan"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "At Kalibangan on the Ghaggar (ancient Saraswati) river, archaeologists uncovered a grid of closely and widely spaced furrows indicating intercropping of two crops such as mustard and horse gram.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: First Cities of India",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-009",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 2,
+    "chapter": "First Cities of India",
+    "topic": "Tripartite Urban Layout of Dholavira",
+    "difficulty": "Medium",
+    "questionText": "How did the town planning of Dholavira (Khadir Bet, Kutch) differ structurally from most mature Harappan cities such as Harappa and Mohenjo-daro?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "It was divided into three fortified sectors—Citadel, Middle Town, and Lower Town—built extensively with dressed stone"
+      },
+      {
+        "key": "B",
+        "text": "It was laid out in concentric circular rings radiating outward from a central Buddhist stupa"
+      },
+      {
+        "key": "C",
+        "text": "It lacked any drainage channels or water-harvesting reservoirs due to perennial Himalayan snowmelt"
+      },
+      {
+        "key": "D",
+        "text": "It consisted solely of subterranean pit-dwellings carved into basaltic cliffs"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Unlike the typical bipartite Citadel and Lower Town built of baked bricks in the Indus plains, Dholavira featured a three-tier layout (Citadel, Middle Town, Lower Town) and rock-cut water reservoirs.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: First Cities of India",
+    "abilityTags": [
+      "interpretation",
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-010",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 2,
+    "chapter": "First Cities of India",
+    "topic": "Mesopotamian Cuneiform Trade Records",
+    "difficulty": "Medium",
+    "questionText": "In Mesopotamian cuneiform inscriptions of Sargon of Akkad, by what name is the Indus Valley region referred to as a source of carnelian, ivory, timber, and lapis lazuli?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Dilmun"
+      },
+      {
+        "key": "B",
+        "text": "Meluhha"
+      },
+      {
+        "key": "C",
+        "text": "Magan"
+      },
+      {
+        "key": "D",
+        "text": "Bactria"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Mesopotamian records mention ships from Dilmun (Bahrain), Magan (Oman/Makran), and Meluhha—widely identified with the Harappan civilisation—carrying etched carnelian beads, ivory, and timber.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: First Cities of India",
+    "abilityTags": [
+      "communication",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-011",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 2,
+    "chapter": "First Cities of India",
+    "topic": "Resource Procurement Networks",
+    "difficulty": "Medium",
+    "questionText": "Which Harappan outpost in northern Afghanistan was established specifically near Badakhshan mines to procure high-grade lapis lazuli?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Sutkagendor"
+      },
+      {
+        "key": "B",
+        "text": "Nageshwar"
+      },
+      {
+        "key": "C",
+        "text": "Shortughai"
+      },
+      {
+        "key": "D",
+        "text": "Balakot"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Shortughai on the Oxus (Amu Darya) plains served as a dedicated Harappan trading and procurement colony controlling access to Badakhshan lapis lazuli and Central Asian tin.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: First Cities of India",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-012",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 2,
+    "chapter": "First Cities of India",
+    "topic": "Rakhigarhi Scale and Bio-Archaeology",
+    "difficulty": "Hard",
+    "questionText": "Why is Rakhigarhi in Haryana considered pivotal in contemporary scholarship on the Mature Harappan phase?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "It is the sole Harappan settlement where bilingual inscriptions in Brahmi andHarappan script were deciphered"
+      },
+      {
+        "key": "B",
+        "text": "It preserves the earliest iron-smelting blast furnaces contemporaneous with Mohenjo-daro"
+      },
+      {
+        "key": "C",
+        "text": "It served as an Achaemenid provincial garrison built over an abandoned Neolithic mound"
+      },
+      {
+        "key": "D",
+        "text": "Spread across over 350 hectares on the Saraswati-Drishadvati plain, it is the largest Harappan metropolis in India and yielded ancient skeletal DNA"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Rakhigarhi in Hisar district is the largest Harappan site in the subcontinent, showcasing mature urban planning, craft workshops, and cemetery excavations crucial for bio-archaeological studies.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: First Cities of India",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-013",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 2,
+    "chapter": "First Cities of India",
+    "topic": "De-urbanisation and Late Harappan Transition",
+    "difficulty": "Hard",
+    "questionText": "Which combination of factors best explains the gradual transformation of Mature Harappan cities around 1900 BCE into dispersed Late Harappan rural settlements?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Tectonic shifts and aridification affecting the Ghaggar-Hakra river system alongside disruption of long-distance West Asian trade"
+      },
+      {
+        "key": "B",
+        "text": "Sudden conquest by Alexander's Macedonian phalanxes across the Punjab plains"
+      },
+      {
+        "key": "C",
+        "text": "Complete abandonment of agriculture across India in favour of nomadic reindeer herding"
+      },
+      {
+        "key": "D",
+        "text": "Destruction of all brick cities by Mauryan imperial siege engines"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Rather than an abrupt demographic extinction, environmental aridification, hydrological shifts in the Indus and Saraswati basins, and declining Mesopotamian trade drove urban de-concentration and eastward/southward migration.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: First Cities of India",
+    "abilityTags": [
+      "critical_thinking",
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-014",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 3,
+    "chapter": "Chalcolithic Villages in India",
+    "topic": "Jorwe Culture Type-Site",
+    "difficulty": "Easy",
+    "questionText": "The Jorwe Chalcolithic culture of Maharashtra is named after the type-site of Jorwe situated in which district on the Pravara river?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Ratnagiri"
+      },
+      {
+        "key": "B",
+        "text": "Ahilyanagar (Ahmednagar)"
+      },
+      {
+        "key": "C",
+        "text": "Gadchiroli"
+      },
+      {
+        "key": "D",
+        "text": "Sindhudurg"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Jorwe, located on the Pravara river in Ahilyanagar (Ahmednagar) district, gave its name to the prominent painted-pottery Chalcolithic culture of western Maharashtra (c. 1400–700 BCE).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Chalcolithic Villages in India",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-015",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 3,
+    "chapter": "Chalcolithic Villages in India",
+    "topic": "Ahar-Banas Metallurgy",
+    "difficulty": "Easy",
+    "questionText": "Which Chalcolithic culture of southeastern Rajasthan, Known for white-painted Black-and-Red Ware, earned the ancient name 'Tambavati' due to abundant local copper smelting?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Kayatha culture"
+      },
+      {
+        "key": "B",
+        "text": "Savalda culture"
+      },
+      {
+        "key": "C",
+        "text": "Ahar (Banas) culture"
+      },
+      {
+        "key": "D",
+        "text": "Prabhas culture"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Ahar near Udaipur in the Banas valley lay close to the Khetri-Mewar copper belt; its inhabitants extensively smelted copper rather than relying heavily on microlithic blades, earning the name Tambavati.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Chalcolithic Villages in India",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-016",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 3,
+    "chapter": "Chalcolithic Villages in India",
+    "topic": "Daimabad Bronzes",
+    "difficulty": "Medium",
+    "questionText": "Excavations at Daimabad on the Pravara river yielded a famous cache of four heavy solid-cast bronze sculptures depicting which figures?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "A seated yogi, a dancing girl, a winged lion, and a twin-headed eagle"
+      },
+      {
+        "key": "B",
+        "text": "Four armed horsemen carrying iron lances and spoked shields"
+      },
+      {
+        "key": "C",
+        "text": "Miniature stupas inscribed with Pali donor records"
+      },
+      {
+        "key": "D",
+        "text": "A chariot yoked to two bulls, an elephant, a two-horned rhinoceros, and a water buffalo"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "The Late Harappan phase hoard at Daimabad consists of an ox-drawn chariot driven by a standing man alongside bronze figures of an elephant, rhinoceros, and buffalo mounted on wheeled axles.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Chalcolithic Villages in India",
+    "abilityTags": [
+      "interpretation",
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-017",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 3,
+    "chapter": "Chalcolithic Villages in India",
+    "topic": "Ochre Coloured Pottery and Copper Hoards",
+    "difficulty": "Medium",
+    "questionText": "In the Ganga-Yamuna Doab, sites yielding Ochre Coloured Pottery (OCP) are frequently associated with hoards of copper artefacts featuring which distinctive forms?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Antennae swords, barbed harpoons, and anthropomorphic figures"
+      },
+      {
+        "key": "B",
+        "text": "Punch-marked silver coins and iron ploughshares"
+      },
+      {
+        "key": "C",
+        "text": "Roman amphorae and cameo glass vessels"
+      },
+      {
+        "key": "D",
+        "text": "Glazed porcelain bowls and celadon chargers"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Copper Hoards from sites such as Bisauli, Fatehgarh, and Saipai in the Ganga-Yamuna Doab characteristically include harpoons, antennae-hilted swords, lugged celts, and enigmatic anthropomorphs alongside OCP.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Chalcolithic Villages in India",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-018",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 3,
+    "chapter": "Chalcolithic Villages in India",
+    "topic": "Social Differentiation at Inamgaon",
+    "difficulty": "Hard",
+    "questionText": "At the Jorwe-phase site of Inamgaon on the Ghod river, what archaeological evidence indicates emerging chiefdom-level social hierarchy?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "A monumental rock-cut granite throne room containing bilingual Sanskrit-Prakrit royal charters"
+      },
+      {
+        "key": "B",
+        "text": "A central five-roomed rectangular house adjacent to the public granary and an adult buried seated inside a four-legged unbaked clay urn"
+      },
+      {
+        "key": "C",
+        "text": "Fortified citadels housing standing armies equipped with cast-iron artillery"
+      },
+      {
+        "key": "D",
+        "text": "Uniform circular pit-huts lacking any differences in size, storage capacity, or burial goods"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Excavators H.D. Sankalia, Z.D. Ansari, and M.K. Dhavalikar identified a large multi-roomed residence next to the mud-platform granary, an irrigation canal/embankment, and a distinctive four-legged urn burial in the courtyard suggesting hereditary chieftainship.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Chalcolithic Villages in India",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-019",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 3,
+    "chapter": "Chalcolithic Villages in India",
+    "topic": "Subsistence Adaptation in Late Jorwe Phase",
+    "difficulty": "Hard",
+    "questionText": "Around 1000 BCE at Inamgaon, how did inhabitants adapt structurally and economically when increasing aridity marked the transition from Early Jorwe to Late Jorwe phase?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Villagers constructed snow-fed perennial marble aqueducts and shifted exclusively to wet-paddy transplantation"
+      },
+      {
+        "key": "B",
+        "text": "Communities relocated entirely to Andaman coral islands to pursue deep-sea pearl diving"
+      },
+      {
+        "key": "C",
+        "text": "Rectangular mud houses gave way to small circular huts as agriculture declined and sheep-goat pastoralism and hunting increased"
+      },
+      {
+        "key": "D",
+        "text": "Iron coinage replaced grain storage, turning Inamgaon into a purely banking metropolis"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Faunal and architectural strata at Inamgaon show a clear ecological adaptation during Late Jorwe (c. 1000–700 BCE): decline of wheat/barley, rise of drought-hardy kulith/ragi and caprine pastoralism, and replacement of spacious rectangular homes by round wattle-and-daub huts.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Chalcolithic Villages in India",
+    "abilityTags": [
+      "critical_thinking",
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-020",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 4,
+    "chapter": "Vedic Period",
+    "topic": "Vedic Corpus Classification",
+    "difficulty": "Easy",
+    "questionText": "Which philosophical texts positioned at the culmination of the Vedic corpus are known as 'Vedanta' and explore questions concerning Brahman, Atman, and the origin of the cosmos?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Samhitas"
+      },
+      {
+        "key": "B",
+        "text": "Pratishakhyas"
+      },
+      {
+        "key": "C",
+        "text": "Dharmasutras"
+      },
+      {
+        "key": "D",
+        "text": "Upanishads"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "The Upanishads form the concluding philosophical portion of Vedic literature—hence 'Vedanta'—moving from ritual sacrifice toward metaphysical inquiry into ultimate reality (Brahman) and self (Atman).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Vedic Period",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-021",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 4,
+    "chapter": "Vedic Period",
+    "topic": "Early Vedic Assemblies",
+    "difficulty": "Easy",
+    "questionText": "In Rigvedic polity, which two deliberative assemblies exercised counsel and check over the authority of the tribal chief ('Rajan')?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Sabha and Samiti"
+      },
+      {
+        "key": "B",
+        "text": "Parishad and Nigama"
+      },
+      {
+        "key": "C",
+        "text": "Ur and Nagaram"
+      },
+      {
+        "key": "D",
+        "text": "Puga and Shreni"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "In Early Vedic society, the Sabha (council of elders/select elites) and Samiti (broader tribal folk assembly) participated in governance, cattle distribution, and ratification of the Rajan.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Vedic Period",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-022",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 4,
+    "chapter": "Vedic Period",
+    "topic": "Battle of Ten Kings (Dasarajna)",
+    "difficulty": "Medium",
+    "questionText": "On the banks of which river—identified with the modern Ravi—was the Rigvedic 'Dasarajna' (Battle of Ten Kings) fought, resulting in the victory of Sudas of the Bharata tribe?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Shutudri"
+      },
+      {
+        "key": "B",
+        "text": "Parushni"
+      },
+      {
+        "key": "C",
+        "text": "Vipasha"
+      },
+      {
+        "key": "D",
+        "text": "Narmada"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Hymns of the Seventh Mandala of the Rigveda describe how King Sudas of the Tritsu-Bharata clan, advised by Vasishtha, defeated a confederacy of ten tribes led by Vishvamitra along the river Parushni (Ravi).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Vedic Period",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-023",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 4,
+    "chapter": "Vedic Period",
+    "topic": "Pastoral Economy Terminology",
+    "difficulty": "Medium",
+    "questionText": "Why was the Rigvedic word for conflict or raid termed 'Gavishti'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Because wars were fought solely over maritime pearl fisheries along the Coromandel coast"
+      },
+      {
+        "key": "B",
+        "text": "Because royal succession required capturing wild elephants from Magadhan forests"
+      },
+      {
+        "key": "C",
+        "text": "Because cattle constituted the primary measure of wealth, making the 'search or raid for cows' the chief cause of inter-tribal skirmishes"
+      },
+      {
+        "key": "D",
+        "text": "Because land grants engraved on copper plates were auctioned during winter solstices"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Early Rigvedic society was predominantly agro-pastoral; terms like Gavishti (literally 'searching for cows'), Gomat (wealthy person), and Gopati (protector/chief) reflect the centrality of cattle to wealth and warfare.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Vedic Period",
+    "abilityTags": [
+      "interpretation",
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-024",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 4,
+    "chapter": "Vedic Period",
+    "topic": "Later Vedic Agrarian and Political Shift",
+    "difficulty": "Hard",
+    "questionText": "How did the eastward expansion into the Kuru-Panchala and Kosala-Videha plains during the Later Vedic period alter political and ritual life?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Tribal assemblies abolished hereditary kingship entirely and instituted universal secret-ballot republics across Sapta Sindhu"
+      },
+      {
+        "key": "B",
+        "text": "Pastoral nomadism intensified so sharply that permanent villages disappeared until the Gupta period"
+      },
+      {
+        "key": "C",
+        "text": "Women's participation in the Vidatha and royal consecration ceremonies expanded to exclude male priests altogether"
+      },
+      {
+        "key": "D",
+        "text": "Iron tools ('Shyama ayas') aided forest clearance and surplus paddy-barley farming, elevating territorial kingship reinforced by grand sacrifices like Rajasuya and Ashvamedha"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "In the Later Vedic era (c. 1000–600 BCE), settled plough agriculture in the Ganga valley generated regular tribute ('Bali' becoming compulsory), weakened tribal assemblies like the Vidatha, hardened hereditary varna boundaries, and magnified royal authority.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Vedic Period",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-025",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 4,
+    "chapter": "Vedic Period",
+    "topic": "Ashrama Framework in Later Vedic Thought",
+    "difficulty": "Hard",
+    "questionText": "In the social philosophy crystallising by the end of the Later Vedic and Upanishadic age, what social tension did the fourfold 'Ashrama' scheme attempt to reconcile?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "It balanced householder obligations toward family and material society ('Grihastha') with the growing ascetic quest for spiritual renunciation ('Vanaprastha' and 'Sannyasa')"
+      },
+      {
+        "key": "B",
+        "text": "It divided urban guilds into four tax brackets based on overseas shipping tonnage"
+      },
+      {
+        "key": "C",
+        "text": "It assigned military conscription quotas among infantry, cavalry, chariots, and war-elephants"
+      },
+      {
+        "key": "D",
+        "text": "It separated speakers of Sanskrit, Prakrit, Pali, and Tamil into distinct geographical provinces"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "By sequencing Brahmacharya, Grihastha, Vanaprastha, and Sannyasa across an individual's lifespan, Brahmanical thought accommodated renunciatory spirituality only after fulfilling social, ritual, and familial duties.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Vedic Period",
+    "abilityTags": [
+      "critical_thinking",
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-026",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 5,
+    "chapter": "Janapadas and Republics",
+    "topic": "Southernmost Mahajanapada",
+    "difficulty": "Easy",
+    "questionText": "Which was the only one among the sixteen Mahajanapadas located in Dakshinapatha (Maharashtra/Godavari basin), with its capital at Potali or Pratishthana?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Avanti"
+      },
+      {
+        "key": "B",
+        "text": "Ashmaka (Assaka)"
+      },
+      {
+        "key": "C",
+        "text": "Chedi"
+      },
+      {
+        "key": "D",
+        "text": "Matsya"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Ashmaka (Pali: Assaka), situated along the Godavari valley around modern Nanded–Paithan in Maharashtra, was the sole Mahajanapada south of the Vindhya range.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Janapadas and Republics",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-027",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 5,
+    "chapter": "Janapadas and Republics",
+    "topic": "Canonical List of Sixteen Mahajanapadas",
+    "difficulty": "Easy",
+    "questionText": "Which early Buddhist canonical text is a primary historical source listing the sixteen Mahajanapadas of sixth-century BCE India?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Milindapanha"
+      },
+      {
+        "key": "B",
+        "text": "Buddhacharita"
+      },
+      {
+        "key": "C",
+        "text": "Anguttara Nikaya"
+      },
+      {
+        "key": "D",
+        "text": "Abhidharmakosha"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "The Anguttara Nikaya of the Sutta Pitaka (alongside the Jaina Bhagavati Sutra, with slight variations) enumerates the sixteen prominent territorial states of northern and central-peninsular India.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Janapadas and Republics",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-028",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 5,
+    "chapter": "Janapadas and Republics",
+    "topic": "Deliberative Mechanics of Gana-Sanghas",
+    "difficulty": "Medium",
+    "questionText": "In oligarchic republics ('Gana-sanghas') such as the Vajji confederacy and the Shakyas, what was the 'Santhagara'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "A royal treasury vault reserved exclusively for storing Persian gold darics"
+      },
+      {
+        "key": "B",
+        "text": "A fortified prison where insolvent debtors were held by Magadhan tax collectors"
+      },
+      {
+        "key": "C",
+        "text": "An astronomical observatory built to calculate monsoon eclipses"
+      },
+      {
+        "key": "D",
+        "text": "The central assembly hall where clan representatives ('Rajas') debated public affairs and voted using wooden tallies ('Salakas')"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Unlike monarchies centred on a single sovereign's court, Gana-sanghas deliberated collectively in the Santhagara; an official called the Salaka-gahapaka collected wooden voting strips when consensus could not be reached.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Janapadas and Republics",
+    "abilityTags": [
+      "interpretation",
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-029",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 5,
+    "chapter": "Janapadas and Republics",
+    "topic": "Geopolitical Ascendancy of Magadha",
+    "difficulty": "Medium",
+    "questionText": "Which geographical and resource advantages uniquely propelled Magadha ahead of rival Mahajanapadas like Kosala, Vatsa, and Avanti?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Alluvial fertility of the Ganga-Son basin, riverine transport, rich Chotanagpur iron-ore deposits, and forested supplies of timber and war elephants"
+      },
+      {
+        "key": "B",
+        "text": "Control over the Khyber Pass horse trade and direct maritime access to Red Sea ports"
+      },
+      {
+        "key": "C",
+        "text": "Complete isolation behind desert dunes that prevented any neighbouring state from locating its capital"
+      },
+      {
+        "key": "D",
+        "text": "Exclusive monopoly over silk cultivation imported from Han-dynasty China in the sixth century BCE"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Magadha's twin capitals—first Rajagriha ringed by five hills and later river-girt Pataliputra—combined fertile wet-rice plains, river trade routes, nearby southern Bihar iron mines for weaponry/ploughs, and abundant elephants.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Janapadas and Republics",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-030",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 5,
+    "chapter": "Janapadas and Republics",
+    "topic": "Monarchies vs Gana-Sanghas Social Structure",
+    "difficulty": "Hard",
+    "questionText": "How did the socio-political structure of Gana-sanghas like the Licchavis of Vaishali differ critically from Gangetic monarchies?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Every landless labourer and enslaved domestic worker held an equal rotating turn as commander-in-chief"
+      },
+      {
+        "key": "B",
+        "text": "Sovereignty rested collectively in a ruling Kshatriya clan oligarchy that claimed corporate ownership of land and was less bound by orthodox Brahmanical ritual hierarchy"
+      },
+      {
+        "key": "C",
+        "text": "All economic production was managed by hereditary guilds of Greco-Roman mercenaries"
+      },
+      {
+        "key": "D",
+        "text": "Kingship passed strictly through matrilineal succession validated by Vedic Ashvamedha sacrifices"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Gana-sanghas were clan oligarchies rather than egalitarian modern democracies: heads of Kshatriya lineages jointly exercised power, relied on non-kin labour ('dasa-kammakaras'), and fostered heterodox intellectual openness from which Mahavira and Buddha emerged.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Janapadas and Republics",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-031",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 5,
+    "chapter": "Janapadas and Republics",
+    "topic": "Ajatashatru's Campaign Against Vajji",
+    "difficulty": "Hard",
+    "questionText": "According to Buddhist accounts, why did Magadhan ruler Ajatashatru dispatch his minister Vassakara to sow internal dissension among the Licchavis before invading Vaishali?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Because Vaishali possessed Greek catapults imported from Seleucus Nicator's armoury"
+      },
+      {
+        "key": "B",
+        "text": "Because Magadha lacked iron weapons and hoped to purchase bronze swords from Licchavi smiths"
+      },
+      {
+        "key": "C",
+        "text": "Because the Buddha observed that the Vajjis remained invincible so long as they met frequently in concord and upheld their collective republican conventions"
+      },
+      {
+        "key": "D",
+        "text": "Because the Achaemenid emperor Darius commanded Magadha to negotiate a maritime treaty first"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "In the Mahaparinibbana Sutta, Buddha tells Vassakara that the Vajjis could not be conquered by force alone while their seven conditions of welfare (regular, harmonious assemblies) held firm, prompting Vassakara's three-year covert subversion—accompanied by military innovations like the 'Rathamusala' and 'Mahashilakantaka'.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Janapadas and Republics",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-032",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 6,
+    "chapter": "Second Urbanisation in India",
+    "topic": "Diagnostic Ceramic of Second Urbanisation",
+    "difficulty": "Easy",
+    "questionText": "Which glossy, metallic-sounding luxury ceramic ware serves as the hallmark archaeological marker of India's Second Urbanisation in the sixth century BCE?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Painted Grey Ware (PGW)"
+      },
+      {
+        "key": "B",
+        "text": "Malwa Black-on-Red Ware"
+      },
+      {
+        "key": "C",
+        "text": "Rouletted Roman Ware"
+      },
+      {
+        "key": "D",
+        "text": "Northern Black Polished Ware (NBPW)"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Northern Black Polished Ware (NBPW), fired under controlled reducing kiln conditions to achieve a mirror-like sheen, coincides with rising cities, punch-marked coinage, and iron-aided agrarian surplus from c. 600 BCE.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Second Urbanisation in India",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-033",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 6,
+    "chapter": "Second Urbanisation in India",
+    "topic": "Earliest Metallic Coinage in India",
+    "difficulty": "Easy",
+    "questionText": "What were the earliest indigenous silver and copper coins of the Second Urbanisation—stamped with symbols of hills, trees, crescents, and animals rather than royal portraits or legends—called?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Punch-marked coins (Karshapanas)"
+      },
+      {
+        "key": "B",
+        "text": "Indo-Greek drachms"
+      },
+      {
+        "key": "C",
+        "text": "Gupta dinaras"
+      },
+      {
+        "key": "D",
+        "text": "Vijayanagar varahas"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Punch-marked coins (referred to in Pali and Sanskrit texts as Kahapana/Karshapana, Pana, or Shatamana) carried one to five punched geometric/natural motifs verifying weight and metallic purity, issued initially by merchant guilds and janapada authorities.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Second Urbanisation in India",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-034",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 6,
+    "chapter": "Second Urbanisation in India",
+    "topic": "Guilds and Caravan Trade",
+    "difficulty": "Medium",
+    "questionText": "In the urban economy of the sixth to fourth centuries BCE, how did a 'Shresthi' differ functionally from a 'Sarthavaha'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "A Shresthi commanded royal naval fleets, whereas a Sarthavaha collected forest timber royalties"
+      },
+      {
+        "key": "B",
+        "text": "A Shresthi was a settled wealthy banker-financier heading urban merchant/artisan guilds, whereas a Sarthavaha led long-distance overland merchant caravans"
+      },
+      {
+        "key": "C",
+        "text": "A Shresthi officiated Vedic Soma sacrifices, whereas a Sarthavaha edited Jain canonical texts"
+      },
+      {
+        "key": "D",
+        "text": "A Shresthi surveyed agricultural plots, whereas a Sarthavaha minted Roman gold aurei"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Shrenis (craft and merchant guilds) formed autonomous economic institutions with custom laws ('Shreni-dharma'); Shresthis acted as prominent financiers/guild elders in cities, while Sarthavahas organised armed trading caravans along Uttarapatha and Dakshinapatha.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Second Urbanisation in India",
+    "abilityTags": [
+      "interpretation",
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-035",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 6,
+    "chapter": "Second Urbanisation in India",
+    "topic": "Jain Epistemology and Ethics",
+    "difficulty": "Medium",
+    "questionText": "In Vardhamana Mahavira's teachings, what philosophical principle holds that reality is multi-faceted and any single viewpoint captures only a partial aspect of truth?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Pratityasamutpada (dependent origination)"
+      },
+      {
+        "key": "B",
+        "text": "Advaita (absolute non-dualism)"
+      },
+      {
+        "key": "C",
+        "text": "Anekantavada (expressed logically through Syadvada)"
+      },
+      {
+        "key": "D",
+        "text": "Lokayata (radical materialism)"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Anekantavada ('many-sidedness of reality') and Syadvada ('conditional predication') counsel intellectual humility and non-violence in thought, complementing the five Mahavratas led by Ahimsa.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Second Urbanisation in India",
+    "abilityTags": [
+      "interpretation",
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-036",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 6,
+    "chapter": "Second Urbanisation in India",
+    "topic": "Buddhist Middle Path and Urban Patronage",
+    "difficulty": "Medium",
+    "questionText": "Why did Buddhism and Jainism attract strong patronage from urban Vaishya merchants, financiers ('Gahapatis' and 'Setthis'), and artisans during the Second Urbanisation?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Both sects promised military monopolies over weapon manufacture exclusively to iron-guild chiefs"
+      },
+      {
+        "key": "B",
+        "text": "Both movements banned urban residence and required merchants to burn all silver coinage"
+      },
+      {
+        "key": "C",
+        "text": "Both doctrines mandated overseas sea voyages as the sole ritual path to liberation"
+      },
+      {
+        "key": "D",
+        "text": "Both traditions emphasised non-violence ('Ahimsa'), ethical conduct over birth-based hierarchy, and rejected costly cattle-sacrificing rituals while permitting honest trade and money-lending"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Vedic orthodoxy ranked merchants below priests and warriors, frowned upon urban usury, and consumed draught cattle in sacrifices needed for plough agriculture; Buddhism and Jainism offered universal ethics suited to thriving commercial cities.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Second Urbanisation in India",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-037",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 6,
+    "chapter": "Second Urbanisation in India",
+    "topic": "Arterial Trade Corridors: Uttarapatha and Dakshinapatha",
+    "difficulty": "Hard",
+    "questionText": "Trace the primary geographical alignment of 'Dakshinapatha' as described in early historic Indian texts of the Second Urbanisation.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Linking Shravasti and Rajagriha through Ujjayini and Vidisha across the Narmada-Godavari valleys down to Pratishthana (Paithan)"
+      },
+      {
+        "key": "B",
+        "text": "Running exclusively along the Himalayan crest from Kashmir through Nepal to Kamarupa"
+      },
+      {
+        "key": "C",
+        "text": "Connecting Lothal directly by sea canal across the Thar Desert to Taxila"
+      },
+      {
+        "key": "D",
+        "text": "Linking Kanyakumari to Anuradhapura via a continuous stone causeway built by Bindusara"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "While Uttarapatha linked Tamralipti/Champa via Pataliputra, Varanasi, Kaushambi, and Mathura to Taxila and Balkh, Dakshinapatha branched south through Vidisha, Ujjayini, Mahishmati, and Burhanpur gap to Pratishthana in Maharashtra, integrating peninsular trade.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Second Urbanisation in India",
+    "abilityTags": [
+      "interpretation",
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-038",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 7,
+    "chapter": "India and Iran (Persia)",
+    "topic": "Script Derived from Aramaic Contact",
+    "difficulty": "Easy",
+    "questionText": "Which ancient Indian script, written from right to left across northwestern regions like Gandhara, evolved through administrative contact with Achaemenid Aramaic scribes?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Grantha"
+      },
+      {
+        "key": "B",
+        "text": "Kharosthi"
+      },
+      {
+        "key": "C",
+        "text": "Vatteluttu"
+      },
+      {
+        "key": "D",
+        "text": "Sharada"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Achaemenid Persian rule in Gandhara and Sindh introduced Imperial Aramaic clerks; adapting Aramaic consonantal signs to local Prakrit phonetics produced the right-to-left Kharosthi script later used in Ashoka's Shahbazgarhi and Mansehra edicts.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: India and Iran (Persia)",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-039",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 7,
+    "chapter": "India and Iran (Persia)",
+    "topic": "Battle of Hydaspes (326 BCE)",
+    "difficulty": "Easy",
+    "questionText": "On the banks of which river—known to Greek historians as the Hydaspes—did King Porus (Puru) mount fierce resistance against Alexander of Macedon in 326 BCE?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Chenab (Asikni)"
+      },
+      {
+        "key": "B",
+        "text": "Beas (Vipasha)"
+      },
+      {
+        "key": "C",
+        "text": "Jhelum (Vitasta)"
+      },
+      {
+        "key": "D",
+        "text": "Sutlej (Shutudri)"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Crossing the flooded Jhelum (Hydaspes) during monsoon rains, Alexander fought his hardest Indian battle against Porus's war elephants; impressed by Porus's dignity, Alexander reinstated him as an allied ruler.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: India and Iran (Persia)",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-040",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 7,
+    "chapter": "India and Iran (Persia)",
+    "topic": "Darius I's Inscriptions and the Twentieth Satrapy",
+    "difficulty": "Medium",
+    "questionText": "According to the Greek historian Herodotus and Achaemenid inscriptions at Behistun, Persepolis, and Naqsh-i-Rustam, what distinguished 'Hidush' (the Indus valley province) within Darius I's empire?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "It was exempted from all taxation in exchange for supplying marble statues for Athens"
+      },
+      {
+        "key": "B",
+        "text": "It was governed directly by Spartan ephors leased to Cyrus the Great"
+      },
+      {
+        "key": "C",
+        "text": "It contributed solely silk cocoons harvested from the Brahmaputra delta"
+      },
+      {
+        "key": "D",
+        "text": "As the most populous satrapy, it paid an annual tribute of 360 talents of gold dust—the highest revenue contribution in the Persian Empire"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Darius I annexed Gandhara ('Gadara') and the lower Indus valley ('Hidush'—from Sanskrit Sindhu, origin of 'Hindu'/'India'); Herodotus notes Hidush paid 360 Euboic talents of alluvial gold dust and supplied cotton-clad archers to Xerxes's army.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: India and Iran (Persia)",
+    "abilityTags": [
+      "interpretation",
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-041",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 7,
+    "chapter": "India and Iran (Persia)",
+    "topic": "Skylax of Caryanda's Maritime Reconnaissance",
+    "difficulty": "Medium",
+    "questionText": "For what strategic purpose did Achaemenid Emperor Darius I commission the Greek navigator Skylax of Caryanda around 515 BCE?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "To sail down the Indus river from Gandhara into the Arabian Sea and chart the maritime route westward to Suez on the Red Sea"
+      },
+      {
+        "key": "B",
+        "text": "To circumnavigate Africa from Gibraltar to Calicut in search of black pepper"
+      },
+      {
+        "key": "C",
+        "text": "To map overland caravan trails from Taxila to Beijing across the Taklamakan desert"
+      },
+      {
+        "key": "D",
+        "text": "To excavate a freshwater canal connecting the Caspian Sea with the Aral Sea"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Skylax's 30-month expedition proved navigable maritime connectivity between the Indus mouth, the Persian Gulf, and Red Sea ports, preceding Darius's formal annexation of Hidush and expansion of Indo-West Asian sea trade.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: India and Iran (Persia)",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-042",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 7,
+    "chapter": "India and Iran (Persia)",
+    "topic": "Comparing Achaemenid Persepolitan and Ashokan Pillars",
+    "difficulty": "Hard",
+    "questionText": "Critically evaluating Mauryan art alongside Persian Persepolitan columns, which structural contrast proves that Ashokan pillars were not mere copies of Achaemenid architecture?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Ashokan pillars were cast entirely in hollow bronze, whereas Persepolitan columns were carved out of Himalayan cedar"
+      },
+      {
+        "key": "B",
+        "text": "Ashokan pillars are free-standing monolithic Chunar sandstone shafts erected in open spaces without bases, whereas Persepolitan columns are fluted multi-drum architectural supports standing on pedestals inside hypostyle halls"
+      },
+      {
+        "key": "C",
+        "text": "Ashokan capitals never depict animals, whereas Persepolitan capitals depict exclusively the four-lion Sarnath emblem"
+      },
+      {
+        "key": "D",
+        "text": "Ashokan shafts taper downward toward the ground, whereas Persepolitan columns are octagonal brick minarets"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "While lustrous polish and bell/inverted-lotus motifs reflect shared West Asian–Indian artistic dialogue, Mauryan pillars are un-fluted monoliths standing independently as civic-moral monuments without bases, crowned by dynamic sculptures rooted in Indian symbolism.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: India and Iran (Persia)",
+    "abilityTags": [
+      "critical_thinking",
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-043",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 7,
+    "chapter": "India and Iran (Persia)",
+    "topic": "Consequences of Alexander's Retreat at the Beas",
+    "difficulty": "Hard",
+    "questionText": "What was the primary geopolitical consequence inside northwestern India immediately following Alexander's army refusing to cross the Beas (Hyphasis) and his death at Babylon in 323 BCE?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Permanent annexation of the entire Gangetic basin into the Ptolemaic Kingdom of Egypt for four centuries"
+      },
+      {
+        "key": "B",
+        "text": "Immediate replacement of Prakrit and Sanskrit across northern India with Classical Attic Greek"
+      },
+      {
+        "key": "C",
+        "text": "Fragmented autonomous principalities and weakened Macedonian satrapies created a power vacuum swiftly unified by Chandragupta Maurya"
+      },
+      {
+        "key": "D",
+        "text": "Consolidation of Dhana Nanda's Nanda dynasty over Persia, Mesopotamia, and Anatolia"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Alexander's campaign dismantled small warring republics and kingdoms across Punjab and Sindh without establishing durable imperial administration; Chandragupta Maurya and Kautilya leveraged this fluidity to expel Greek garrisons and overthrow the Nandas.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: India and Iran (Persia)",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-044",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 8,
+    "chapter": "India during Mauryan Period",
+    "topic": "Treaty of 303 BCE with Seleucus Nicator",
+    "difficulty": "Easy",
+    "questionText": "Which Hellenistic ruler concluded an alliance with Chandragupta Maurya around 303 BCE, ceding territories including Aria, Arachosia, Gedrosia, and Paropamisadae, and sending Megasthenes as envoy to Pataliputra?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Antiochus III"
+      },
+      {
+        "key": "B",
+        "text": "Ptolemy II Philadelphus"
+      },
+      {
+        "key": "C",
+        "text": "Demetrius I"
+      },
+      {
+        "key": "D",
+        "text": "Seleucus I Nicator"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Defeated on the northwestern frontier, Seleucus Nicator ceded eastern Afghanistan and Balochistan to Chandragupta Maurya, received 500 war elephants crucial at the Battle of Ipsus, concluded a matrimonial alliance ('Epigamia'), and dispatched Megasthenes.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: India during Mauryan Period",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-045",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 8,
+    "chapter": "India during Mauryan Period",
+    "topic": "Kalinga War and Major Rock Edict XIII",
+    "difficulty": "Easy",
+    "questionText": "Which Major Rock Edict of Emperor Ashoka expresses deep remorse over the massive casualties and deportations of the Kalinga War (c. 261 BCE) and proclaims conquest through Dhamma ('Dhammavijaya')?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Major Rock Edict XIII"
+      },
+      {
+        "key": "B",
+        "text": "Minor Rock Edict I at Maski"
+      },
+      {
+        "key": "C",
+        "text": "Bhabru-Bairat Edict"
+      },
+      {
+        "key": "D",
+        "text": "Barabar Cave Inscription"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Major Rock Edict XIII candidly records 100,000 slain and 150,000 deported in Kalinga, marking Ashoka's shift from territorial aggression ('Bherighosha') to moral persuasion ('Dhammaghosha') and naming contemporary Hellenistic kings.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: India during Mauryan Period",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-046",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 8,
+    "chapter": "India during Mauryan Period",
+    "topic": "Kautilya's Saptanga Theory of the State",
+    "difficulty": "Medium",
+    "questionText": "In Kautilya's 'Arthashastra', which seven interdependent limbs ('Prakritis') constitute the 'Saptanga' organic conception of the state?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Purohita, Senani, Gramani, Sangrahitri, Bhagadugha, Suta, and Akshavapa"
+      },
+      {
+        "key": "B",
+        "text": "Swami (Sovereign), Amatya (Ministers/Bureaucracy), Janapada (Territory & Population), Durga (Fortified Capital), Kosha (Treasury), Danda/Bala (Army), and Mitra (Ally)"
+      },
+      {
+        "key": "C",
+        "text": "Brahmana, Kshatriya, Vaishya, Shudra, Sannyasi, Shreshthi, and Sarthavaha"
+      },
+      {
+        "key": "D",
+        "text": "Dharma, Artha, Kama, Moksha, Ahimsa, Satya, and Asteya"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Book VI of the Arthashastra conceptualises statecraft through seven mutually reinforcing elements—from the ruler (Swami) and administrative apparatus (Amatya) to fiscal capacity (Kosha), coercion/defence (Danda), and diplomacy (Mitra).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: India during Mauryan Period",
+    "abilityTags": [
+      "interpretation",
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-047",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 8,
+    "chapter": "India during Mauryan Period",
+    "topic": "Rummindei Pillar Fiscal Evidence",
+    "difficulty": "Medium",
+    "questionText": "What concrete administrative measure recorded on Ashoka's Rummindei (Lumbini) Pillar Inscription illuminates Mauryan agrarian revenue policy?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Ashoka abolished all coinage across Nepal and mandated forced labour for temple construction"
+      },
+      {
+        "key": "B",
+        "text": "Ashoka transferred ownership of all Gangetic forests exclusively to Greek ambassadors"
+      },
+      {
+        "key": "C",
+        "text": "Ashoka exempted Buddha's birthplace village of Lummini from religious cess ('Bali') and reduced its crown land-produce share ('Bhaga') to one-eighth ('Atthabhagiye')"
+      },
+      {
+        "key": "D",
+        "text": "Ashoka imposed a fifty-percent emergency war tariff on silk merchants entering Kapilavastu"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Visited in his twentieth regnal year, Lumbini's pillar inscription offers direct epigraphic proof of two distinct Mauryan fiscal levies—'Bali' (tribute/cess) and 'Bhaga' (regular share of produce, normally around 1/6th or 1/4th, lowered here to 1/8th).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: India during Mauryan Period",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-048",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 8,
+    "chapter": "India during Mauryan Period",
+    "topic": "Mauryan Hydraulic Engineering in Saurashtra",
+    "difficulty": "Medium",
+    "questionText": "Who constructed the celebrated Sudarshana Lake dam at Girnar in Saurashtra under Chandragupta Maurya's reign before Governor Tushaspha later added conduits under Ashoka?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Kharavela of Kalinga"
+      },
+      {
+        "key": "B",
+        "text": "Megasthenes of Macedon"
+      },
+      {
+        "key": "C",
+        "text": "Radhagupta of Pataliputra"
+      },
+      {
+        "key": "D",
+        "text": "Pushyagupta Vaishya, the provincial governor ('Rashtriya')"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Known from Rudradaman's later Junagadh rock inscription (150 CE), Pushyagupta Vaishya built the Sudarshana reservoir under Chandragupta Maurya, and Yavana-raja Tushaspha equipped it with irrigation canals under Ashoka—demonstrating sustained state investment in western dryland agriculture.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: India during Mauryan Period",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-049",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 8,
+    "chapter": "India during Mauryan Period",
+    "topic": "Nature of Ashoka's Dhamma",
+    "difficulty": "Hard",
+    "questionText": "Analysing the full corpus of Ashokan edicts, why do historians characterise Ashoka's 'Dhamma' as a civic-ethical code rather than sectarian Theravada Buddhist dogma?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "The edicts omit core doctrinal metaphysics like the Four Noble Truths or Nirvana, stressing instead social harmony, non-violence toward living beings, filial respect, humane treatment of servants, and mutual courtesy ('Samavaya') among all sects"
+      },
+      {
+        "key": "B",
+        "text": "The edicts outlaw the Buddhist Sangha and mandate daily Vedic horse sacrifices across all provincial capitals"
+      },
+      {
+        "key": "C",
+        "text": "The edicts were composed exclusively in esoteric Sanskrit accessible only to court astrologers"
+      },
+      {
+        "key": "D",
+        "text": "The edicts demand allegiance to Ashoka as an immortal solar deity incarnate"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "While personally a devout Buddhist (as seen in the Minor Rock Edicts and Bhabru edict), Ashoka designed his public 'Dhamma'—supervised by Dhamma-Mahamattas—to bind a vast pluralistic empire inhabited by Brahmanas, Shramanas, Ajivikas, Jains, Greeks, and forest communities.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: India during Mauryan Period",
+    "abilityTags": [
+      "critical_thinking",
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-050",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 8,
+    "chapter": "India during Mauryan Period",
+    "topic": "Critiquing Megasthenes' Seven-Fold Social Division",
+    "difficulty": "Hard",
+    "questionText": "In his 'Indica', Megasthenes described Indian society as divided into seven endogamous occupational groups (philosophers, farmers, herdsmen, artisans, soldiers, overseers, councillors). Why did he misread the fourfold Varna system in this manner?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Mauryan law had formally enacted a seven-caste constitution copied from Platonic Athens"
+      },
+      {
+        "key": "B",
+        "text": "He conflated hereditary indigenous varna/jati boundaries with functional economic occupations and familiar Herodotan classifications of Egyptian society"
+      },
+      {
+        "key": "C",
+        "text": "He never visited Pataliputra and relied solely on medieval Arabic translations of the Rigveda"
+      },
+      {
+        "key": "D",
+        "text": "All four varnas had been abolished by Dhana Nanda prior to Chandragupta's accession"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "As an outside Hellenistic observer unfamiliar with the distinction between ritual varna and occupational jati/state service, Megasthenes mapped observable administrative and economic categories (like spies/overseers and councillors) as closed hereditary classes.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: India during Mauryan Period",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-051",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 9,
+    "chapter": "Post Mauryan India",
+    "topic": "Satavahana Capital",
+    "difficulty": "Easy",
+    "questionText": "Which city on the banks of the Godavari river in Maharashtra served as the imperial capital of the Satavahana dynasty?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Vatapi (modern Badami)"
+      },
+      {
+        "key": "B",
+        "text": "Manyakheta (modern Malkhed)"
+      },
+      {
+        "key": "C",
+        "text": "Pratishthana (modern Paithan)"
+      },
+      {
+        "key": "D",
+        "text": "Kanchipuram"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Pratishthana (modern Paithan in Chhatrapati Sambhajinagar district) stood at the crossroads of Dakshinapatha trade routes and served as the vibrant capital of the Satavahanas.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Post Mauryan India",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-052",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 9,
+    "chapter": "Post Mauryan India",
+    "topic": "Maharashtri Prakrit Anthology",
+    "difficulty": "Easy",
+    "questionText": "Which Satavahana ruler is credited with compiling 'Gathasaptashati' ('Gahasattasai'), an anthology of 700 lyrical verses in Maharashtri Prakrit?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Simuka"
+      },
+      {
+        "key": "B",
+        "text": "Pulumavi II"
+      },
+      {
+        "key": "C",
+        "text": "Yajnashri Satakarni"
+      },
+      {
+        "key": "D",
+        "text": "King Hala"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "King Hala compiled the Gathasaptashati in Maharashtri Prakrit, vividly portraying rural Maharashtra's agrarian life, monsoon seasons, village headmen ('Gamika'), and human emotions.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Post Mauryan India",
+    "abilityTags": [
+      "communication",
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-053",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 9,
+    "chapter": "Post Mauryan India",
+    "topic": "Naneghat Inscription and Pass",
+    "difficulty": "Medium",
+    "questionText": "Why was the rock-cut Naneghat pass near Junnar bearing Queen Naganika's Prakrit inscription economically vital to the early Satavahanas?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "It linked the inland Deccan plateau cities of Junnar and Paithan directly with Konkan maritime ports like Kalyan and Sopara"
+      },
+      {
+        "key": "B",
+        "text": "It served as a Himalayan watchtower guarding jade caravans from Khotan"
+      },
+      {
+        "key": "C",
+        "text": "It marked the southernmost naval dockyard on the Kaveri delta"
+      },
+      {
+        "key": "D",
+        "text": "It housed iron-foundries operated by Seleucid ambassadors"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Carved through the Western Ghats, Naneghat functioned as a toll-collecting mountain artery funnelling Deccan cotton, muslin, and spices down to Konkan ports for Indo-Roman maritime trade.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Post Mauryan India",
+    "abilityTags": [
+      "interpretation",
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-054",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 9,
+    "chapter": "Post Mauryan India",
+    "topic": "Nashik Prashasti of Gautami Balasri",
+    "difficulty": "Medium",
+    "questionText": "In the Nashik Cave 3 inscription of Queen-Mother Gautami Balasri, what geopolitical claim is symbolised by describing Gautamiputra Satakarni as 'Trisamudratoyapitavahana'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "That he excavated three freshwater canals linking the Indus, Ganga, and Brahmaputra"
+      },
+      {
+        "key": "B",
+        "text": "That his war-steeds drank the waters of the three seas—the Arabian Sea, Bay of Bengal, and Indian Ocean—signifying pan-peninsular suzerainty"
+      },
+      {
+        "key": "C",
+        "text": "That he dispatched three diplomatic embassies to Rome, Alexandria, and Antioch"
+      },
+      {
+        "key": "D",
+        "text": "That he banned all maritime navigation across Indian coastal waters"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Following his decisive victory over Western Kshatrapa ruler Nahapana and restruck Jogalthambi silver hoard coins, Gautamiputra Satakarni's panegyric celebrated Satavahana dominance across the Deccan peninsula.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Post Mauryan India",
+    "abilityTags": [
+      "interpretation",
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-055",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 9,
+    "chapter": "Post Mauryan India",
+    "topic": "Indo-Roman Maritime Trade in the Periplus",
+    "difficulty": "Hard",
+    "questionText": "According to the first-century CE Greek maritime handbook 'Periplus of the Erythraean Sea', why were merchant vessels bound for Kalyan frequently escorted under guard to Barygaza (Bharuch) during Kshatrapa-Satavahana rivalry?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Kalyan had silted into an inland desert 300 kilometres away from the Arabian Sea"
+      },
+      {
+        "key": "B",
+        "text": "Roman law prohibited ships from anchoring anywhere south of the Indus delta"
+      },
+      {
+        "key": "C",
+        "text": "Western Kshatrapa ruler Nahapana blockaded Satavahana-controlled Konkan ports to divert lucrative Roman bullion and customs revenue to his own port at Bharuch"
+      },
+      {
+        "key": "D",
+        "text": "Satavahana rulers rejected all foreign trade and burned imported amphorae on sight"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "The Periplus vividly documents commercial geopolitics: rivalry between the Kshaharata Kshatrapas (Mambanus/Nahapana) at Barygaza and the Satavahanas over western sea-borne customs from Roman gold/silver, wine amphorae, textiles, and pepper.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Post Mauryan India",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-056",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 9,
+    "chapter": "Post Mauryan India",
+    "topic": "Shunga Patronage and Narrative Art",
+    "difficulty": "Hard",
+    "questionText": "Although Pushyamitra Shunga revived Brahmanical Ashvamedha sacrifices after overthrowing Brihadratha Maurya, what architectural developments at Bharhut and Sanchi reveal the social base of Post-Mauryan religious patronage?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "All Buddhist stupas across central India were demolished and converted into iron armouries"
+      },
+      {
+        "key": "B",
+        "text": "Stupa construction was funded exclusively through compulsory tributes levied on Roman senators"
+      },
+      {
+        "key": "C",
+        "text": "Sculptural reliefs abandoned narrative Jataka storytelling in favour of geometric calligraphy"
+      },
+      {
+        "key": "D",
+        "text": "Collective 'dana' (votive inscriptions) from merchants, weavers, ivory-carvers of Vidisha, nuns, and householders financed stone railings ('vedikas') and gateways ('toranas') of Buddhist stupas"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Post-Mauryan art shifted from state-monopolised imperial pillars to community-patronised stupa embellishments, recorded in hundreds of short Brahmi donor inscriptions by guilds, monks, nuns, and laywomen.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Post Mauryan India",
+    "abilityTags": [
+      "critical_thinking",
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-057",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 10,
+    "chapter": "Changing Times",
+    "topic": "Prayag Prashasti Author",
+    "difficulty": "Easy",
+    "questionText": "Which court poet and senior minister ('Sandhivigrahika') composed the Sanskrit Prayag Prashasti engraved on the Allahabad Pillar detailing Samudragupta's campaigns?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Harishena"
+      },
+      {
+        "key": "B",
+        "text": "Banabhatta"
+      },
+      {
+        "key": "C",
+        "text": "Ravikirti"
+      },
+      {
+        "key": "D",
+        "text": "Kalidasa"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Harishena composed the 33-line Prayag Prashasti in elegant Champu (mixed verse and prose) Sanskrit on the Ashokan pillar at Allahabad, outlining Samudragupta's varied policies toward northern and southern rulers.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Changing Times",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-058",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 10,
+    "chapter": "Changing Times",
+    "topic": "Karkota Dynasty Monument in Kashmir",
+    "difficulty": "Easy",
+    "questionText": "Which eighth-century ruler of Kashmir's Karkota dynasty, chronicled in Kalhana's 'Rajatarangini', commissioned the monumental Martand Sun Temple?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Avantivarman"
+      },
+      {
+        "key": "B",
+        "text": "Lalitaditya Muktapida"
+      },
+      {
+        "key": "C",
+        "text": "Harshavardhana"
+      },
+      {
+        "key": "D",
+        "text": "Bhaskaravarman"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Lalitaditya Muktapida expanded Karkota power beyond Kashmir and built the grand peristylar Martand Sun Temple near Anantnag, blending Gandharan, Gupta, and Kashmiri architectural elements.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Changing Times",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-059",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 10,
+    "chapter": "Changing Times",
+    "topic": "Samudragupta's Dakshinapatha Policy",
+    "difficulty": "Medium",
+    "questionText": "In the Prayag Prashasti, why did Samudragupta pursue the policy of 'Grahanamokshanugraha' (capture, liberation, and reinstatement as tributary) toward twelve rulers of Dakshinapatha rather than direct annexation?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Gupta armies lacked horses and were constitutionally forbidden from crossing the Narmada river"
+      },
+      {
+        "key": "B",
+        "text": "Southern kingdoms possessed gunpowder artillery that forced Samudragupta to surrender"
+      },
+      {
+        "key": "C",
+        "text": "Governing distant peninsular territories directly across Vindhyan forests from Pataliputra was logistically impractical compared to securing tribute and trade corridor allegiance"
+      },
+      {
+        "key": "D",
+        "text": "Chinese pilgrim Faxian mediated an unconditional withdrawal treaty at Kanchipuram"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Contrastingly uprooting ('Prasabhoddharana') nearby Aryavarta kings in the Gangetic core while reinstating distant Dakshinapatha rulers as tribute-paying feudatories reflects astute geopolitical realism.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Changing Times",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-060",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 10,
+    "chapter": "Changing Times",
+    "topic": "Vakataka Patronage of Ajanta Caves",
+    "difficulty": "Medium",
+    "questionText": "Under which ruler of the Vatsagulma (Washim) branch of the Vakataka dynasty—linked by marriage to the Guptas via Prabhavatigupta in the sister Nandivardhana line—were the finest Mahayana painted caves (such as Caves 16, 17, and 19) excavated at Ajanta?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Vindhyashakti"
+      },
+      {
+        "key": "B",
+        "text": "Pravarasena I"
+      },
+      {
+        "key": "C",
+        "text": "Rudrasena II"
+      },
+      {
+        "key": "D",
+        "text": "Harishena"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Vakataka sovereign Harishena (late fifth century CE) and his minister Varahadeva (donor of Cave 16) presided over the golden phase of Ajanta's rock-cut chaityas, viharas, and murals.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Changing Times",
+    "abilityTags": [
+      "interpretation",
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-061",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 10,
+    "chapter": "Changing Times",
+    "topic": "Harshavardhana and Kamarupa Diplomacy",
+    "difficulty": "Medium",
+    "questionText": "Which ruler of Kamarupa (Assam) from the Varman dynasty forged a strategic eastern alliance with Harshavardhana against Shashanka of Gauda and hosted Chinese pilgrim Xuanzang?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Bhaskaravarman"
+      },
+      {
+        "key": "B",
+        "text": "Pushyavarman"
+      },
+      {
+        "key": "C",
+        "text": "Gopala"
+      },
+      {
+        "key": "D",
+        "text": "Dharmapala"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Described in Banabhatta's Harshacharita (via envoy Hamsavega) and Xuanzang's Si-Yu-Ki, Bhaskaravarman allied with Harsha to flank Shashanka of Bengal and attended the grand Kannauj assembly.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Changing Times",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-062",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 10,
+    "chapter": "Changing Times",
+    "topic": "Agrahara Grants and Structural Decentralisation",
+    "difficulty": "Hard",
+    "questionText": "How did the proliferation of copper-plate 'Agrahara' and 'Brahmadeya' land grants from the Gupta-Vakataka period onward reshape Indian polity and rural society?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Land grants nationalised all private farms under central salaried bureaucrats paid strictly in gold dinaras"
+      },
+      {
+        "key": "B",
+        "text": "Transferring fiscal revenues along with administrative-judicial immunities ('pariharas') over villages created intermediary landed elites, encouraging agrarian expansion into tribal fringes while decentralising state authority"
+      },
+      {
+        "key": "C",
+        "text": "Agrahara charters abolished caste distinctions and turned villages into maritime shipyards"
+      },
+      {
+        "key": "D",
+        "text": "Copper-plate grants applied solely to barren desert dunes devoid of human cultivators"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Inscriptions recording exemptions from royal troops/police entry ('achata-bhata-praveshya') and transfer of tax rights fostered feudal/samanta decentralisation alongside Sanskritisation and plough agriculture in peripheral zones.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Changing Times",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-063",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 11,
+    "chapter": "Kingdoms in South India",
+    "topic": "Monolithic Kailasa Temple at Ellora",
+    "difficulty": "Easy",
+    "questionText": "Which Rashtrakuta monarch commissioned the astonishing top-down monolithic excavation of the Kailasa Temple (Cave 16) at Ellora?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Dantidurga"
+      },
+      {
+        "key": "B",
+        "text": "Govinda III"
+      },
+      {
+        "key": "C",
+        "text": "Krishna I"
+      },
+      {
+        "key": "D",
+        "text": "Indra III"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Carved vertically downward out of a single basalt cliff at Verul (Ellora) in Maharashtra, the Kailasanatha temple was commissioned in the eighth century CE by Rashtrakuta ruler Krishna I.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Kingdoms in South India",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-064",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 11,
+    "chapter": "Kingdoms in South India",
+    "topic": "Aihole Prashasti and the Narmada Frontier",
+    "difficulty": "Easy",
+    "questionText": "According to Ravikirti's Aihole inscription (634 CE), which Badami Chalukya sovereign checked Harshavardhana's southward march on the banks of the Narmada river?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Kirtivarman I"
+      },
+      {
+        "key": "B",
+        "text": "Vikramaditya II"
+      },
+      {
+        "key": "C",
+        "text": "Mangalesha"
+      },
+      {
+        "key": "D",
+        "text": "Pulakeshin II"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Pulakeshin II defeated Harshavardhana's elephant corps along the Narmada frontier, establishing the river as the boundary between Harsha's northern empire and Chalukyan Dakshinapatha.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Kingdoms in South India",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-065",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 11,
+    "chapter": "Kingdoms in South India",
+    "topic": "Sangam Ecological Poetics (Tinai)",
+    "difficulty": "Medium",
+    "questionText": "In Classical Tamil Sangam literature ('Ettuttokai' and 'Pattuppattu'), what does the concept of five 'Tinais' (Kurinji, Mullai, Marutam, Neytal, Palai) signify?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Eco-cultural landscapes linking distinct physiographic zones—hills, pastoral forests, riverine plains, littoral coasts, and arid tracts—with specific livelihoods and poetic moods"
+      },
+      {
+        "key": "B",
+        "text": "Five hereditary military regiments of Roman legionaries stationed at Madurai"
+      },
+      {
+        "key": "C",
+        "text": "Five maritime customs tariffs levied exclusively by Pallava kings at Mamallapuram"
+      },
+      {
+        "key": "D",
+        "text": "Five astronomical calendars borrowed from Babylonian cuneiform tablets"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Sangam poetics ('Aham' and 'Puram') organically weaves human emotion, subsistence modes (hunting-gathering, pastoralism, wet-rice farming, salt-making/fishing), and regional ecology through the five Tinai micro-regions.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Kingdoms in South India",
+    "abilityTags": [
+      "interpretation",
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-066",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 11,
+    "chapter": "Kingdoms in South India",
+    "topic": "Pallava-Chalukya Conflict and Vatapikonda",
+    "difficulty": "Medium",
+    "questionText": "Why did Pallava king Narasimhavarman I assume the title 'Vatapikonda' and establish rock-cut rathas at the port of Mamallapuram?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "He peacefully inherited Vatapi through marriage to Harshavardhana's daughter"
+      },
+      {
+        "key": "B",
+        "text": "He stormed the Chalukyan capital Vatapi (Badami) in 642 CE to avenge Pulakeshin II's earlier incursions and developed Mamallapuram ('Mahabalipuram', named after his epithet Mamalla) as a royal port and sculptural showcase"
+      },
+      {
+        "key": "C",
+        "text": "He relocated the entire population of Kanchipuram permanently to Sri Lanka"
+      },
+      {
+        "key": "D",
+        "text": "He converted wooden Roman galleys into floating granite temples"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Narasimhavarman I ('Mamalla'), aided by exiled Sri Lankan prince Manavarma and general Paranjothi, captured Badami ('Vatapikonda' = conqueror of Vatapi) and patronised the monolithic Pancha Rathas and open-air Gangavatarana relief.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Kingdoms in South India",
+    "abilityTags": [
+      "interpretation",
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-067",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 11,
+    "chapter": "Kingdoms in South India",
+    "topic": "Chola Village Self-Governance at Uttaramerur",
+    "difficulty": "Hard",
+    "questionText": "What institutional mechanism do the tenth-century Parantaka I inscriptions on the Vaikuntha Perumal temple walls at Uttaramerur reveal about Chola 'Sabha' administration?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Universal suffrage elections conducted every month without age, residence, or accounting qualifications"
+      },
+      {
+        "key": "B",
+        "text": "Direct appointment of hereditary Persian qazis to collect land revenue in gold varahas"
+      },
+      {
+        "key": "C",
+        "text": "A 'Kudavolai' palm-leaf pot-ticket selection of qualified ward representatives into specialised standing committees ('Variyams') overseeing tanks, gardens, and gold verification, subject to strict property, educational, and audit rules"
+      },
+      {
+        "key": "D",
+        "text": "Abolition of village assemblies ('Ur' and 'Sabha') in favour of military governors"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "The Uttaramerur inscriptions detail autonomous Brahmadeya governance: 30 wards nominated candidates meeting land, Vedic/administrative knowledge, and probity criteria (disqualifying defaulters of public accounts), drawn by lot ('Kudavolai') to staff Variyam committees.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Kingdoms in South India",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-068",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 11,
+    "chapter": "Kingdoms in South India",
+    "topic": "Rajendra Chola I's 1025 CE Naval Expedition",
+    "difficulty": "Hard",
+    "questionText": "What commercial-geopolitical motive best explains Rajendra Chola I's unprecedented 1025 CE overseas naval expedition against Kadaram and ports of the Srivijaya Empire across the Bay of Bengal?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Searching for snowy polar pastures to breed Central Asian war-horses"
+      },
+      {
+        "key": "B",
+        "text": "Attempting to rescue Mauryan ambassadors imprisoned in Sumatra"
+      },
+      {
+        "key": "C",
+        "text": "Enforcing a total ban on spices and camphor entering South Indian temples"
+      },
+      {
+        "key": "D",
+        "text": "Securing unobstructed maritime passage through the Malacca and Sunda Straits for Tamil merchant guilds (such as the Ayyavole-500 and Manigramam) trading directly with Song-dynasty China"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "As Song China aggressively promoted maritime commerce, Srivijaya's chokehold over the Straits threatened direct Indian guild access; Rajendra I's raid asserted Chola sea power along the Indian Ocean–South China Sea trade axis.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Kingdoms in South India",
+    "abilityTags": [
+      "critical_thinking",
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-069",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 12,
+    "chapter": "India, Nations in the Northwest and China",
+    "topic": "Milindapanha Dialogue",
+    "difficulty": "Easy",
+    "questionText": "Which Indo-Greek king is celebrated in the Pali philosophical text 'Milindapanha' for his probing dialogues on Buddhist doctrine with the monk Nagasena?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Menander I (Milinda)"
+      },
+      {
+        "key": "B",
+        "text": "Eucratides"
+      },
+      {
+        "key": "C",
+        "text": "Antialcidas"
+      },
+      {
+        "key": "D",
+        "text": "Apollodotus"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Ruling from Sagala (Sialkot) in the second century BCE, Menander I is remembered as Milinda in the Milindapanha ('Questions of Milinda'), illustrating rich Hellenised–Buddhist intellectual synthesis.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: India, Nations in the Northwest and China",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-070",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 12,
+    "chapter": "India, Nations in the Northwest and China",
+    "topic": "Rudradaman I's Junagadh Rock Inscription",
+    "difficulty": "Medium",
+    "questionText": "Why is Western Kshatrapa ruler Rudradaman I's Junagadh (Girnar) inscription of 150 CE a landmark in Indian literary and administrative history?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "It is the only bilingual Greek-Chinese decree prohibiting Sanskrit usage in western India"
+      },
+      {
+        "key": "B",
+        "text": "It is the earliest long royal panegyric composed in chaste classical Kavya Sanskrit, recording the restoration of the storm-breached Sudarshana dam entirely from the royal treasury without imposing 'Vishti' (forced labour) or extra cesses"
+      },
+      {
+        "key": "C",
+        "text": "It announces the permanent abandonment of Saurashtra's agricultural lands to marine marshes"
+      },
+      {
+        "key": "D",
+        "text": "It records Kanishka's coronation inside the Sanchi stupa"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Despite his Central Asian Saka lineage, Rudradaman championed high Sanskrit literary culture and benevolent public works, financing huge masonry repairs after a catastrophic tempest without burdening subjects with emergency taxes ('Pranaya' or 'Vishti').",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: India, Nations in the Northwest and China",
+    "abilityTags": [
+      "interpretation",
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-071",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 12,
+    "chapter": "India, Nations in the Northwest and China",
+    "topic": "Gandhara vs Mathura Sculptural Idioms",
+    "difficulty": "Medium",
+    "questionText": "Under Kushana patronage, how did the Gandhara school of Buddhist sculpture differ stylistically and materially from the contemporary Mathura school?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Gandhara strictly forbade human depictions of the Buddha, whereas Mathura carved only bronze miniature portraits"
+      },
+      {
+        "key": "B",
+        "text": "Gandhara worked exclusively in white Makrana marble, whereas Mathura used imported Baltic amber"
+      },
+      {
+        "key": "C",
+        "text": "Gandhara used bluish-grey schist/stucco with Greco-Roman naturalistic drapery and wavy Apollo-like curls, whereas Mathura carved spotted red sandstone steeped in indigenous Yaksha vigour and sheer clinging robes"
+      },
+      {
+        "key": "D",
+        "text": "Both schools avoided religious imagery and sculpted solely Roman emperors"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Thriving simultaneously under Kanishka and his successors, Gandhara synthesised Hellenistic-Roman anatomical realism with Buddhist iconography, while Mathura evolved robust, spiritually radiant forms for Buddhist, Jain, and Brahmanical deities alike.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: India, Nations in the Northwest and China",
+    "abilityTags": [
+      "interpretation",
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-072",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 12,
+    "chapter": "India, Nations in the Northwest and China",
+    "topic": "Kushana Control of the Silk Route",
+    "difficulty": "Medium",
+    "questionText": "How did the territorial configuration of Kanishka I's Kushana Empire—stretching from Bactria and the Tarim Basin margins to Purushapura and Mathura—enrich Indian commerce?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "By sealing every mountain pass in the Hindu Kush to isolate India from Eurasian trade"
+      },
+      {
+        "key": "B",
+        "text": "By replacing overland camel caravans with trans-Pacific steamships"
+      },
+      {
+        "key": "C",
+        "text": "By banning gold coinage in favour of cowrie-shell barter across Bactria"
+      },
+      {
+        "key": "D",
+        "text": "By straddling Central Asian oases link-roads between Han China, Parthia, and western Indian sea-ports, Kushanas mediated trans-Eurasian silk-spice trade and issued high-purity gold dinars modelled on Roman weight standards"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Controlling the southern Silk Route spur through Taxila to Barbaricum and Barygaza allowed Kushana middlemen to tax Chinese silk bound for Rome while minting abundant standardized gold coins.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: India, Nations in the Northwest and China",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-073",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 12,
+    "chapter": "India, Nations in the Northwest and China",
+    "topic": "Monastic Translators Along the Oasis Cities",
+    "difficulty": "Hard",
+    "questionText": "Which scholar-monk born in Kucha on the northern Silk Route (of Indian noble parentage) translated foundational Madhyamaka Mahayana texts of Nagarjuna into luminous literary Chinese at Chang'an around 401 CE?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Kumarajiva"
+      },
+      {
+        "key": "B",
+        "text": "Bodhidharma"
+      },
+      {
+        "key": "C",
+        "text": "Atisha Dipankara"
+      },
+      {
+        "key": "D",
+        "text": "Megasthenes"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Educated in Kashmir and Kucha before heading a state translation bureau of thousands of monks in Chang'an, Kumarajiva produced authoritative, idiomatic Chinese renderings of the Lotus Sutra, Diamond Sutra, and Madhyamaka treatises.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: India, Nations in the Northwest and China",
+    "abilityTags": [
+      "communication",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-074",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 12,
+    "chapter": "India, Nations in the Northwest and China",
+    "topic": "Heliodorus Pillar and Cultural Assimilation",
+    "difficulty": "Hard",
+    "questionText": "What historical process is illuminated by the second-century BCE Besnagar (Vidisha) Garuda Pillar erected by Heliodorus, Greek ambassador of King Antialcidas of Taxila?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Indo-Greek ambassadors forcibly imposed worship of Zeus inside Shunga court temples"
+      },
+      {
+        "key": "B",
+        "text": "Northwest foreign elites actively assimilated into indigenous Indian devotional traditions—Heliodorus calls himself a 'Bhagavata' worshipping Vasudeva and cites ethical virtues matching the Mahabharata"
+      },
+      {
+        "key": "C",
+        "text": "Sanskrit and Prakrit had been displaced by Latin across Malwa"
+      },
+      {
+        "key": "D",
+        "text": "Diplomatic relations did not exist between Taxila and central Indian states"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Inscribed in Prakrit Brahmi, the Besnagar pillar demonstrates early Bhagavata (Vaishnava) bhakti attracting Greek envoys through open cultural absorptiveness rather than rigid exclusion.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: India, Nations in the Northwest and China",
+    "abilityTags": [
+      "critical_thinking",
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-075",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 13,
+    "chapter": "India, Sri Lanka and Southeast Asia",
+    "topic": "Ashokan Mission to Sri Lanka",
+    "difficulty": "Easy",
+    "questionText": "During the reign of Sri Lankan king Devanampiya Tissa of Anuradhapura, whom did Emperor Ashoka send with a sapling of the Mahabodhi tree to propagate Buddhism?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Kumarajiva and Kashyapa Matanga"
+      },
+      {
+        "key": "B",
+        "text": "Xuanzang and Yijing"
+      },
+      {
+        "key": "C",
+        "text": "Thera Mahinda (Mahendra) and Bhikkhuni Sanghamitta (Sanghamitra)"
+      },
+      {
+        "key": "D",
+        "text": "Kautilya and Upagupta"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Recorded in the Pali chronicles Dipavamsa and Mahavamsa, Mahinda established the Mahavihara monastic lineage while Sanghamitta brought the southern branch of the Bodhi tree—still revered as Jaya Sri Maha Bodhi at Anuradhapura—and founded the Sri Lankan nuns' order.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 13: India, Sri Lanka and Southeast Asia",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-076",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 13,
+    "chapter": "India, Sri Lanka and Southeast Asia",
+    "topic": "Angkor Wat Architectural Complex",
+    "difficulty": "Easy",
+    "questionText": "Which twelfth-century Khmer monarch constructed the vast moated temple complex of Angkor Wat in Cambodia (Kambujadesha), originally dedicated to Vishnu?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Jayavarman VII"
+      },
+      {
+        "key": "B",
+        "text": "Kaundinya I"
+      },
+      {
+        "key": "C",
+        "text": "Airlangga"
+      },
+      {
+        "key": "D",
+        "text": "Suryavarman II"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Suryavarman II built Angkor Wat symbolically mirroring Mount Meru surrounded by cosmic oceans, adorned with sweeping bas-relief galleries of the Samudra Manthan, Ramayana, and Mahabharata.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 13: India, Sri Lanka and Southeast Asia",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-077",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 13,
+    "chapter": "India, Sri Lanka and Southeast Asia",
+    "topic": "Borobudur Monument in Central Java",
+    "difficulty": "Medium",
+    "questionText": "Commissioned under the Sailendra dynasty in Central Java, how does the ninth-century monument of Borobudur architecturally embody Mahayana Buddhist cosmology?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "As a stepped mandala mountain ascending from narrative earthly relief galleries ('Kamadhatu' and 'Rupadhatu') to circular open terraces of bell-stupas ('Arupadhatu') crowning spiritual liberation"
+      },
+      {
+        "key": "B",
+        "text": "As an underground granite labyrinth housing royal war-chariots"
+      },
+      {
+        "key": "C",
+        "text": "As an Islamic madrasa dome copied from Ottoman Istanbul"
+      },
+      {
+        "key": "D",
+        "text": "As a fortified naval lighthouse guarding Makassar Strait"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "As pilgrims circumambulate Borobudur's nine stacked platforms upward past 2,600 relief panels (including the Gandavyuha and Jatakas), dense stone walls open onto boundless sky and perforated stupas representing formless enlightenment.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 13: India, Sri Lanka and Southeast Asia",
+    "abilityTags": [
+      "interpretation",
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-078",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 13,
+    "chapter": "India, Sri Lanka and Southeast Asia",
+    "topic": "Srivijaya as an Intellectual-Maritime Hub",
+    "difficulty": "Medium",
+    "questionText": "Why did the seventh-century Chinese pilgrim Yijing (I-Tsing) recommend that Chinese monks bound for Nalanda spend one to two years studying first at Palembang in Srivijaya (Sumatra)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Nalanda University had closed down permanently before the fifth century CE"
+      },
+      {
+        "key": "B",
+        "text": "Srivijaya sustained over a thousand Buddhist scholars where monks could master Sanskrit grammar ('Shabdavidya') and monastic Vinaya while awaiting favourable monsoon winds across the Bay of Bengal"
+      },
+      {
+        "key": "C",
+        "text": "Srivijaya required foreign travellers to serve in its cavalry for two years as transit tax"
+      },
+      {
+        "key": "D",
+        "text": "Sanskrit manuscripts were outlawed everywhere on the Indian mainland"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Situated astride the Malacca Strait monsoon hinge, Srivijaya paired maritime entrepôt wealth with cosmopolitan Buddhist scholarship—later even endowing a monastery at Nalanda under King Balaputradeva (Devapala's copper-plate).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 13: India, Sri Lanka and Southeast Asia",
+    "abilityTags": [
+      "interpretation",
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-079",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 13,
+    "chapter": "India, Sri Lanka and Southeast Asia",
+    "topic": "Critiquing Colonial 'Greater India' Theories of Southeast Asian Contact",
+    "difficulty": "Hard",
+    "questionText": "Why do modern historians reject the older colonial-nationalist view of ancient Southeast Asia ('Suvarnabhumi') as passive Indian political colonies, emphasising selective localisation instead?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Archaeology proves zero Indian ships, scripts, or sculptures ever reached Cambodia, Champa, or Java before 1800 CE"
+      },
+      {
+        "key": "B",
+        "text": "Mauryan governors ruled Java, Bali, and Vietnam directly as taxable districts of Pataliputra"
+      },
+      {
+        "key": "C",
+        "text": "Except for brief eleventh-century Chola raids, Indian contact unfolded peacefully via merchants, Brahmins, and monks; Southeast Asian rulers selectively adapted Sanskrit epigraphy, Rajadharma, and Hindu-Buddhist art onto vibrant indigenous social structures (including higher female status and ancestor reverence)"
+      },
+      {
+        "key": "D",
+        "text": "Southeast Asian societies abandoned rice farming and local languages like Old Khmer and Old Javanese completely"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Indigenous polities (Funan, Champa, Khmer, Mataram, Srivijaya) retained political sovereignty and vernacular traditions—such as Kakawin Ramayana in Old Javanese and Khmer hydraulic barays—creatively localising Indic cultural vocabulary.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 13: India, Sri Lanka and Southeast Asia",
+    "abilityTags": [
+      "critical_thinking",
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-080",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 13,
+    "chapter": "India, Sri Lanka and Southeast Asia",
+    "topic": "Sigiriya and Polonnaruwa Cultural Dialogue",
+    "difficulty": "Hard",
+    "questionText": "How do the fifth-century rock-citadel murals of Sigiriya (under Kassapa I) and medieval Polonnaruwa bronzes reflect sustained artistic dialogue between Sri Lanka and peninsular India?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Both sites exclusively copy Achaemenid winged-bull reliefs from Persepolis"
+      },
+      {
+        "key": "B",
+        "text": "Sri Lankan monarchs prohibited sculptural painting throughout the Anuradhapura and Polonnaruwa eras"
+      },
+      {
+        "key": "C",
+        "text": "Sigiriya was constructed by Portuguese conquistadors in the sixteenth century"
+      },
+      {
+        "key": "D",
+        "text": "Sigiriya's cloud-maiden frescoes share chiaroscuro shading and graceful mudras akin to Vakataka Ajanta murals, while Polonnaruwa Hindu-Buddhist bronzes and stone shrines engage directly with Chola-era South Indian aesthetics"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Across centuries of diplomatic alliances, monastic exchanges, and occasional dynastic wars, Sri Lankan artisans synthesised Ajanta-like pictorial lyricism and Pallava-Chola structural idioms into distinctly Sinhalese masterpieces.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 13: India, Sri Lanka and Southeast Asia",
+    "abilityTags": [
+      "interpretation",
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-081",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 14,
+    "chapter": "Delhi Sultanate, Vijayanagar and Bahamani Kingdom",
+    "topic": "Foundation of Vijayanagar Empire",
+    "difficulty": "Easy",
+    "questionText": "On the southern bank of the Tungabhadra river in 1336 CE, which two brothers of the Sangama dynasty founded the Vijayanagar Empire?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Harihara I and Bukka Raya I"
+      },
+      {
+        "key": "B",
+        "text": "Krishnadevaraya and Achyutadevaraya"
+      },
+      {
+        "key": "C",
+        "text": "Rama Raya and Tirumala"
+      },
+      {
+        "key": "D",
+        "text": "Narasimha Saluva and Virupaksha"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Inspired by sage Vidyaranya, Harihara and Bukka established Vijayanagar (Hampi) in 1336 CE amidst the political rebellions shaking Muhammad bin Tughlaq's southern provinces.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Delhi Sultanate, Vijayanagar and Bahamani Kingdom",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-082",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 14,
+    "chapter": "Delhi Sultanate, Vijayanagar and Bahamani Kingdom",
+    "topic": "Mahmud Gawan's Madrasa",
+    "difficulty": "Easy",
+    "questionText": "In which capital city of the Bahamani Sultanate did Prime Minister ('Wakil-us-Sultanat') Mahmud Gawan construct his renowned three-storeyed Persianate residential college (Madrasa) in 1472 CE?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Gulbarga (Kalaburagi)"
+      },
+      {
+        "key": "B",
+        "text": "Bidar"
+      },
+      {
+        "key": "C",
+        "text": "Vijayanagara"
+      },
+      {
+        "key": "D",
+        "text": "Warangal"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "After Ahmad Shah Wali shifted the Bahamani capital from Gulbarga to Bidar, scholar-statesman Mahmud Gawan built a grand glazed-tile Madrasa housing a 3,000-manuscript library, lecture halls, and scholars from across the Islamic world.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Delhi Sultanate, Vijayanagar and Bahamani Kingdom",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-083",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 14,
+    "chapter": "Delhi Sultanate, Vijayanagar and Bahamani Kingdom",
+    "topic": "Alauddin Khalji's Agrarian and Market Reforms",
+    "difficulty": "Medium",
+    "questionText": "What underlying strategic objective connected Alauddin Khalji's 50% land-revenue assessment ('Kharaj' measured per 'Biswa') with his strict Delhi price controls ('Shahna-i-Mandi') and 'Dagh-Chehra' military rolls?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Eliminating military forces altogether in favour of mercantile free-trade guilds"
+      },
+      {
+        "key": "B",
+        "text": "Subsidising Portuguese silver imports from Goa into Doab villages"
+      },
+      {
+        "key": "C",
+        "text": "Maintaining a massive, battle-ready standing cavalry at modest cash salaries to repel Chagatai Mongol invasions and fund imperial expansion without bankrupting the treasury"
+      },
+      {
+        "key": "D",
+        "text": "Converting all Doab cropland into uncultivated royal hunting reserves"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Faced with relentless Mongol sieges, Alauddin fixed prices of grain ('Sarai-Adl' & grain mandi), cloth, horses, and necessities so troopers on fixed cash pay could subsist comfortably, backed by branding horses ('Dagh') and descriptive rolls ('Chehra') to curb muster fraud.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Delhi Sultanate, Vijayanagar and Bahamani Kingdom",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-084",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 14,
+    "chapter": "Delhi Sultanate, Vijayanagar and Bahamani Kingdom",
+    "topic": "Krishnadevaraya's Statecraft in Amuktamalyada",
+    "difficulty": "Medium",
+    "questionText": "In his Telugu treatise 'Amuktamalyada', what counsel did Vijayanagar Emperor Krishnadevaraya formulate regarding foreign maritime traders and irrigation?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "A king must close every coastal port and prohibit the import of Arabian and Persian horses"
+      },
+      {
+        "key": "B",
+        "text": "A king should delegate all state revenues permanently to autonomous European trading companies"
+      },
+      {
+        "key": "C",
+        "text": "A king should tax drought-stricken peasants double to finance desert pyramids"
+      },
+      {
+        "key": "D",
+        "text": "A king should expand tanks to ease peasant taxes and actively improve harbours so foreign merchants importing war-horses, elephants, and gems remain attached to his realm rather than passing to rivals"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Lacking indigenous war-horse breeding grounds in peninsular India, Vijayanagar relied critically on Persian Gulf and Portuguese-controlled horse imports; Krishnadevaraya combined agrarian hydraulic investment (e.g., Nagalapuram tank) with astute mercantile diplomacy.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Delhi Sultanate, Vijayanagar and Bahamani Kingdom",
+    "abilityTags": [
+      "interpretation",
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-085",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 14,
+    "chapter": "Delhi Sultanate, Vijayanagar and Bahamani Kingdom",
+    "topic": "Muhammad bin Tughlaq's Token Currency Experiment",
+    "difficulty": "Medium",
+    "questionText": "Why did Muhammad bin Tughlaq's 1330 CE introduction of brass and copper token coins—pegged at par with silver 'Tankas' amid a global fourteenth-century silver shortage—collapse financially?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Unlike Kublai Khan's state-monopolised paper currency in China, the Sultanate failed to secure royal minting dies against domestic counterfeiting, flooding treasuries with forged copper while merchants hoarded genuine silver and gold"
+      },
+      {
+        "key": "B",
+        "text": "Subjects refused to touch copper because copper mines did not exist anywhere in Asia"
+      },
+      {
+        "key": "C",
+        "text": "Vijayanagar fleets sank all ships carrying copper coins in the Yamuna river"
+      },
+      {
+        "key": "D",
+        "text": "The Sultan refused to redeem forged or genuine token coins and fled permanently to Persia"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "As Barani famously observed, every Hindu goldsmith's house became a mint; foreign merchants accepted only bullion while land taxes were paid in base tokens, forcing Muhammad bin Tughlaq to redeem tokens in silver at massive fiscal loss.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Delhi Sultanate, Vijayanagar and Bahamani Kingdom",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-086",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 14,
+    "chapter": "Delhi Sultanate, Vijayanagar and Bahamani Kingdom",
+    "topic": "Iqta vs Amara-Nayaka Institutional Comparison",
+    "difficulty": "Hard",
+    "questionText": "Compare the Sultanate's 'Iqta' system (consolidated under Iltutmish and Balban) with Vijayanagar's 'Nayankara' ('Amara-nayaka') system.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Iqtadars were unpaid monastic ascetics whereas Amara-nayakas were salaried maritime admirals with zero land rights"
+      },
+      {
+        "key": "B",
+        "text": "Both assigned territorial revenue collection in lieu of military contingents and tribute, but Sultanate 'Muqtis' were periodically transferred to curb local roots whereas Vijayanagar 'Amara-nayakas' increasingly entrenched semi-autonomous hereditary power in the provinces"
+      },
+      {
+        "key": "C",
+        "text": "Both systems abolished cavalry service and relied exclusively on peasant referendums"
+      },
+      {
+        "key": "D",
+        "text": "Iqtas existed only south of the Kaveri river whereas Amaram estates existed only in Punjab"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "While Delhi Sultans rotated Muqtis/Walis and audited surplus ('Fawazil') rigorously when central authority was strong, Vijayanagar's Nayakas—though bound to maintain troops and pay annual tribute at Mahanavami—grew regionally entrenched, contributing to centrifugal fractures after Talikota (1565).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Delhi Sultanate, Vijayanagar and Bahamani Kingdom",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-087",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 14,
+    "chapter": "Delhi Sultanate, Vijayanagar and Bahamani Kingdom",
+    "topic": "Factionalism and Fragmentation of the Bahamani Kingdom",
+    "difficulty": "Hard",
+    "questionText": "Which structural rift inside the Bahamani nobility precipitated Mahmud Gawan's execution in 1481 and the subsequent breakup of the Sultanate into five Deccan Shahi states?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "A religious war between Theravada Buddhists and Nestorian Christians at Gulbarga"
+      },
+      {
+        "key": "B",
+        "text": "Direct annexation of Bidar by Babur's Mughal artillery in 1480"
+      },
+      {
+        "key": "C",
+        "text": "Bitter court rivalry between indigenous 'Dakhani' (Deccani Muslim and Habshi) nobles and newly arrived 'Afaqi' ('Pardesi' Persian, Central Asian, and Arab) immigrants over high offices and 'Taraf' governorships"
+      },
+      {
+        "key": "D",
+        "text": "Complete desiccation of the Krishna-Godavari river delta forcing evacuation of the Deccan"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Mahmud Gawan subdivided the four large provinces ('Tarafs') into eight and curtailed nobles' unchecked military-fiscal powers while trying to balance Dakhani and Afaqi factions; forged treason letters led to his execution, accelerating fragmentation into Ahmednagar, Bijapur, Golconda, Berar, and Bidar.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Delhi Sultanate, Vijayanagar and Bahamani Kingdom",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-088",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 15,
+    "chapter": "India during Mughal Period",
+    "topic": "Sher Shah Suri's Currency and Highway Reforms",
+    "difficulty": "Easy",
+    "questionText": "Which ruler of the Sur dynasty standardised the 178-grain silver 'Rupiya'—precursor of the modern rupee—and restored the arterial 'Sadak-i-Azam' (Grand Trunk Road) lined with 'Sarais'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Humayun"
+      },
+      {
+        "key": "B",
+        "text": "Ibrahim Lodi"
+      },
+      {
+        "key": "C",
+        "text": "Bahlul Lodi"
+      },
+      {
+        "key": "D",
+        "text": "Sher Shah Suri"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "During his brief five-year imperial reign (1540–1545), Sher Shah Suri overhauled currency (tri-metallic gold Mohur, silver Rupiya, copper Dam), highway inns/post-stations ('Sarais'), and measured land revenue ('Patta' and 'Qabuliyat'), laying administrative foundations later refined under Akbar.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 15: India during Mughal Period",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-089",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 15,
+    "chapter": "India during Mughal Period",
+    "topic": "Zat and Sawar in Akbar's Mansabdari System",
+    "difficulty": "Medium",
+    "questionText": "Within Akbar's steel-frame 'Mansabdari' hierarchy, what precise distinction did the dual numerical ranks of 'Zat' and 'Sawar' designate?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "'Zat' fixed an officer's personal status in the imperial order of precedence and personal pay scale, while 'Sawar' specified the exact quota of branded cavalrymen he was obligated to maintain"
+      },
+      {
+        "key": "B",
+        "text": "'Zat' measured a noble's hereditary caste ritual rank, while 'Sawar' counted the merchant ships docked at Surat"
+      },
+      {
+        "key": "C",
+        "text": "'Zat' denoted tax-free temple lands, while 'Sawar' denoted penalties for crop failure"
+      },
+      {
+        "key": "D",
+        "text": "'Zat' applied exclusively to artillery gunners, while 'Sawar' applied exclusively to court painters"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Introduced in the later part of Akbar's reign, dual Zat-Sawar ranks graded nobles ('Umara') precisely, backed by 'Dagh' (imperial + noble's brand on horses) and transferable revenue assignments ('Jagirs') or cash ('Naqdi').",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 15: India during Mughal Period",
+    "abilityTags": [
+      "interpretation",
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-090",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 15,
+    "chapter": "India during Mughal Period",
+    "topic": "Todar Mal's Ain-i-Dahsala (Zabt) Settlement",
+    "difficulty": "Medium",
+    "questionText": "How did Raja Todar Mal's 'Dahshala' system (1580) insulate both peasant cultivators and the Mughal exchequer from arbitrary annual price spikes?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "By collecting taxes solely in imported European silver regardless of whether crops were sown or failed"
+      },
+      {
+        "key": "B",
+        "text": "By calculating ten-year moving averages of crop yields and local market prices (1570–1580) per 'Dastur' assessment circle, converting the state's one-third share into predictable cash schedules per 'Bigha'"
+      },
+      {
+        "key": "C",
+        "text": "By auctioning entire provinces to the highest-bidding tax-farmer ('Ijaradar') for life"
+      },
+      {
+        "key": "D",
+        "text": "By abolishing land measurement ('Paimash') and charging a flat poll tax on infants"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Replacing bamboo ropes with iron-ringed bamboo rods ('Tanab') for accurate measurement and classifying land by continuity of cultivation (Polaj, Parauti, Chachar, Banjar), Dahshala stabilised revenue collection across core northern 'Zabt' provinces.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 15: India during Mughal Period",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-091",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 15,
+    "chapter": "India during Mughal Period",
+    "topic": "Ahom Resistance and Battle of Saraighat (1671)",
+    "difficulty": "Medium",
+    "questionText": "On the Brahmaputra river near Guwahati in 1671, which Ahom commander-in-chief outmanoeuvred Mughal general Raja Ram Singh's fleet using agile riverine boats, mud ramparts, and psychological warfare?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Suhungmung"
+      },
+      {
+        "key": "B",
+        "text": "Rani Durgavati"
+      },
+      {
+        "key": "C",
+        "text": "Lachit Borphukan"
+      },
+      {
+        "key": "D",
+        "text": "Chilarai"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Despite severe illness, Lachit Borphukan rallied Ahom forces under the Paik military-labour system at the narrow Brahmaputra chokepoint of Saraighat, decisively halting Aurangzeb's eastward expansion into Assam.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 15: India during Mughal Period",
+    "abilityTags": [
+      "communication",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-092",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 15,
+    "chapter": "India during Mughal Period",
+    "topic": "Akbar's Sulh-i-Kul as Political Ideology",
+    "difficulty": "Hard",
+    "questionText": "As articulated in Abul Fazl's 'Akbarnama', how did 'Sulh-i-Kul' (universal peace) serve simultaneously as an ethical ideal and a pragmatic instrument of Mughal statecraft?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "It required every citizen of the Mughal Empire to renounce Hinduism, Islam, and Jainism and adopt Latin liturgy"
+      },
+      {
+        "key": "B",
+        "text": "It surrendered imperial legislative authority unconditionally to the chief Qazi of Mecca"
+      },
+      {
+        "key": "C",
+        "text": "It dismantled the Mansabdari army and disarmed all Rajput fortresses"
+      },
+      {
+        "key": "D",
+        "text": "By grounding sovereignty in divine illumination ('Farr-i-Izadi') above sectarian ulama orthodoxy—paired with abolishing 'Jizya' (1564) and pilgrimage tax—Akbar integrated Rajput rajas, Indian Muslims, Irani, and Turani elites into a composite imperial ruling class"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Debates in the Fatehpur Sikri Ibadat Khana convinced Akbar that no single sect held a monopoly on truth; Sulh-i-Kul legitimised a pluralistic composite nobility loyal directly to the Padshah.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 15: India during Mughal Period",
+    "abilityTags": [
+      "critical_thinking",
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-093",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 15,
+    "chapter": "India during Mughal Period",
+    "topic": "Jagirdari Crisis in the Late Seventeenth Century",
+    "difficulty": "Hard",
+    "questionText": "Why did Aurangzeb's protracted quarter-century Deccan campaigns against Bijapur, Golconda, and the Marathas trigger an acute structural 'Jagirdari crisis' ('Be-jagiri')?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Rapid induction of Deccani nobles outstripped available productive 'Paibaqi' revenue lands—especially after Aurangzeb retained prime estates as crown 'Khalisa'—leading to delayed assignments, inflated paper assessments ('Jama'), and squeeze on peasantry"
+      },
+      {
+        "key": "B",
+        "text": "Aurangzeb abolished the Mansabdari system in 1680 and distributed all crown lands free to British East India Company factors"
+      },
+      {
+        "key": "C",
+        "text": "Gold mines discovered in Delhi made land revenue totally unnecessary for paying cavalry"
+      },
+      {
+        "key": "D",
+        "text": "All Mughal nobles voluntarily resigned their ranks to become Sufi mendicants"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "As Satish Chandra and contemporary observer Bhimsen ('Nuskha-i-Dilkusha') noted, 'one pomegranate among a hundred sick' captured the mismatch between expanding Mansabdar numbers, Maratha disruption of 'Hasil' (actual collections), and intensifying agrarian distress.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 15: India during Mughal Period",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-094",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 16,
+    "chapter": "Swarajya to Empire (Maratha Period)",
+    "topic": "Coronation at Raigad (1674)",
+    "difficulty": "Easy",
+    "questionText": "On 6 June 1674 at Fort Raigad, Chhatrapati Shivaji Maharaj inaugurated which new sovereign regnal calendar alongside minting the gold 'Hon' and copper 'Shivarai'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Vikrama Samvat"
+      },
+      {
+        "key": "B",
+        "text": "Rajyabhisheka Shaka"
+      },
+      {
+        "key": "C",
+        "text": "Valabhi Samvat"
+      },
+      {
+        "key": "D",
+        "text": "Ilahi Era"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Officiated by Kashi scholar Gaga Bhatt, the 1674 coronation asserted full de-jure Hindavi Swarajya sovereignty through a royal umbrella ('Chhatra'), sovereign coinage, the Rajyabhisheka Shaka era, and the Sanskrit-Marathi administrative lexicon 'Rajyavyavaharakosha'.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 16: Swarajya to Empire (Maratha Period)",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-095",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 16,
+    "chapter": "Swarajya to Empire (Maratha Period)",
+    "topic": "Treatise on Maratha Statecraft (Ajnapatra)",
+    "difficulty": "Easy",
+    "questionText": "Which seasoned minister ('Amatya') who served from Shivaji Maharaj's era through Chhatrapati Sambhaji, Rajaram, and Tarabai authored the 'Ajnapatra' (1715), famously declaring 'Forts are the very essence of the kingdom'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Moropant Trimbak Pingle"
+      },
+      {
+        "key": "B",
+        "text": "Annaji Datto"
+      },
+      {
+        "key": "C",
+        "text": "Ramchandra Pant Amatya"
+      },
+      {
+        "key": "D",
+        "text": "Balaji Vishwanath"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Issued under Sambhaji II of Kolhapur, Ramchandra Pant Amatya's Ajnapatra distils Shivaji Maharaj's statecraft on hill-fort maintenance, naval sovereignty, cautious dealings with European merchant-fortresses ('Topikars'), and non-hereditary cash administration.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 16: Swarajya to Empire (Maratha Period)",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-096",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 16,
+    "chapter": "Swarajya to Empire (Maratha Period)",
+    "topic": "Shivaji Maharaj's Agrarian Reforms vs Deshmukhi Arbitrariness",
+    "difficulty": "Medium",
+    "questionText": "How did Chhatrapati Shivaji Maharaj reform rural administration in Swarajya to protect 'Rayat' cultivators from entrenched hereditary 'Watandars' (Deshmukhs and Deshpandes)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "He auctioned peasant villages permanently to Portuguese and Siddi revenue contractors"
+      },
+      {
+        "key": "B",
+        "text": "He confiscated all peasant ploughs and mandated uncompensated forced labour across Maval valleys"
+      },
+      {
+        "key": "C",
+        "text": "He abolished agriculture in Konkan and forced villagers into overseas piracy"
+      },
+      {
+        "key": "D",
+        "text": "He curbed Watandars' private fortified bastions and arbitrary exactions, instituted standardized 'Kathi' rod measurement under Annaji Datto, paid state officials ('Karkuns') in cash rather than hereditary jagirs, and offered 'Tagai' seed-cattle loans in distress"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Shivaji Maharaj warned revenue officers in his famous circular letters that not even a vegetable stem belonged to state troops without payment, curbing feudal intermediary oppression while ensuring predictable state share.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 16: Swarajya to Empire (Maratha Period)",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-097",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 16,
+    "chapter": "Swarajya to Empire (Maratha Period)",
+    "topic": "Indigenous Blue-Water Maratha Navy",
+    "difficulty": "Medium",
+    "questionText": "Why is Chhatrapati Shivaji Maharaj regarded as the 'Father of the Indian Navy' in early modern South Asian history?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Recognising that command of the sea dictates coastal sovereignty against Portuguese, Siddi of Janjira, English, and Dutch fleets, he built sea-forts like Sindhudurg and Vijaydurg and indigenous shallow-draft squadrons ('Gurabs' and 'Galbats') under Kanhoji Angre's predecessors Maynak Bhandari and Daulat Khan"
+      },
+      {
+        "key": "B",
+        "text": "He leased Ottoman galleons to conquer Lisbon and Amsterdam in 1670"
+      },
+      {
+        "key": "C",
+        "text": "He abandoned all hill-forts in Sahyadri to live permanently aboard an English frigate"
+      },
+      {
+        "key": "D",
+        "text": "He signed over coastal customs sovereignty ('Cartaz') willingly to Goa's viceroy"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Unlike land-focused continental empires like the Mughals who relied on foreign European ships for Hajj/trade escorts, Shivaji Maharaj built shipyards at Kalyan, Bhivandi, and Pen to contest European 'Cartaz' sea-pass monopolies.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 16: Swarajya to Empire (Maratha Period)",
+    "abilityTags": [
+      "interpretation",
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-098",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 16,
+    "chapter": "Swarajya to Empire (Maratha Period)",
+    "topic": "Maharani Tarabai's War of Independence (1700–1707)",
+    "difficulty": "Medium",
+    "questionText": "After Chhatrapati Sambhaji Maharaj's martyrdom (1689) and Chhatrapati Rajaram's death at Sinhagad (1700), how did Maharani Tarabai defeat Aurangzeb's grand imperial army?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "She surrendered Raigad, Panhala, and Jinji in exchange for a Mansabdari jagir near Agra"
+      },
+      {
+        "key": "B",
+        "text": "Leading mobile cavalry columns as regent for young Shivaji II, she combined nimble fort-retaking tactics in the Sahyadris with counter-offensives levying 'Chauth' deep inside Mughal Malwa and Gujarat until Aurangzeb died exhausted in 1707"
+      },
+      {
+        "key": "C",
+        "text": "She hired French artillery battalions from Pondicherry to storm Delhi in 1701"
+      },
+      {
+        "key": "D",
+        "text": "She retreated across the sea to Sri Lanka until the British East India Company intervened"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Contemporary Mughal chronicler Khafi Khan marvelled at Tarabai's administrative intelligence and strategic audacity, noting how Maratha columns pierced Mughal supply lines from Burhanpur to Surat while the aged Emperor besieged one fort after another in vain.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 16: Swarajya to Empire (Maratha Period)",
+    "abilityTags": [
+      "interpretation",
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-099",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 16,
+    "chapter": "Swarajya to Empire (Maratha Period)",
+    "topic": "Institutional Shift from Ashtapradhan Swarajya to Peshwa Confederacy",
+    "difficulty": "Hard",
+    "questionText": "How did the political structure of the Maratha state evolve between Chhatrapati Shivaji Maharaj's 'Ashtapradhan Mandal' and the eighteenth-century expansion under Balaji Vishwanath and Peshwa Bajirao I?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Peshwa Bajirao I abolished cavalry and restored strictly non-hereditary village republics limited to Pune district"
+      },
+      {
+        "key": "B",
+        "text": "The Ashtapradhan council merged formally into the British Parliament in 1720"
+      },
+      {
+        "key": "C",
+        "text": "Shivaji's centralized non-hereditary council of eight ministers paid in cash gave way under Chhatrapati Shahu to hereditary Peshwaship and decentralized military confederates—Shinde, Holkar, Gaikwad, and Bhosale of Nagpur—financed by 'Saranjam' assignments and 'Chauth-Sardeshmukhi' grants across India"
+      },
+      {
+        "key": "D",
+        "text": "Maratha expansion northward relied exclusively on camel-mounted naval marines"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Securing Mughal imperial 'Sanads' for Chauth (25%) and Sardeshmukhi (10%) of the six Deccan subahs in 1719 and expanding across Malwa, Gujarat, and Bundelkhand turned Swarajya into a pan-Indian empire, though Saranjam autonomy later strained unified command.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 16: Swarajya to Empire (Maratha Period)",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-his-100",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-history",
+    "subjectName": "History",
+    "chapterNumber": 16,
+    "chapter": "Swarajya to Empire (Maratha Period)",
+    "topic": "Third Battle of Panipat (1761) and Maratha Resurgence",
+    "difficulty": "Hard",
+    "questionText": "Evaluating the Third Battle of Panipat (14 January 1761) against Ahmad Shah Abdali alongside the decade that followed, which assessment is historically accurate?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Abdali permanently annexed Delhi, Agra, and Pune into the Durrani Empire until 1857"
+      },
+      {
+        "key": "B",
+        "text": "Panipat resulted in an immediate British takeover of Maharashtra in February 1761"
+      },
+      {
+        "key": "C",
+        "text": "Maratha forces fought at Panipat without any artillery, whereas Ibrahim Khan Gardi commanded Durrani cannons"
+      },
+      {
+        "key": "D",
+        "text": "Although logistical overextension, famine in the Kunjpura-Panipat camp, and diplomatic alienation of northern powers caused a devastating Maratha defeat under Sadashivrao Bhau, Peshwa Madhavrao I, Mahadji Shinde, and Nana Phadnavis rapidly restored Maratha paramountcy in Delhi by 1771"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Despite losing a generation of leaders (Sadashivrao Bhau, Vishwasrao, Ibrahim Khan Gardi's valiant French-trained artillery corps), Abdali could not hold northern India; under young Peshwa Madhavrao I and Mahadji Shinde, the Marathas escorted Mughal Emperor Shah Alam II back to Delhi's throne in 1771.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 16: Swarajya to Empire (Maratha Period)",
+    "abilityTags": [
+      "critical_thinking",
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  }
+]

@@ -7,11 +7,11 @@ import path from "node:path";
 import {
   ACADEMIC_STREAMS,
   INITIAL_ACADEMIC_SUBJECTS,
-} from "../src/lib/academic-catalogue.ts";
+} from "../src/lib/academic-catalogue";
 import {
   evaluateJuniorAttempt,
   JUNIOR_SCORING_ALGORITHM_VERSION,
-} from "../src/lib/services/junior-scoring-service.ts";
+} from "../src/lib/services/junior-scoring-service";
 import {
   createAdminQuestion,
   exportQuestionsAsCsv,
@@ -35,15 +35,15 @@ import {
   submitJuniorAttempt,
   updateAdminQuestion,
   upsertAcademicSubject,
-} from "../src/lib/services/platform-store.ts";
+} from "../src/lib/services/platform-store";
 import {
   getOrCreateSession,
   recordEventByToken,
   setLocalStorePathForTests,
   submitProfileByToken,
-} from "../src/lib/storage.ts";
-import { evaluateReport } from "../src/lib/scoring.ts";
-import { isEmailAllowed } from "../src/lib/admin-auth.ts";
+} from "../src/lib/storage";
+import { evaluateReport } from "../src/lib/scoring";
+import { isEmailAllowed } from "../src/lib/admin-auth";
 
 const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "unwritten-platform-qa-"));
 const tmpPlatformPath = path.join(tmpDir, "platform-store.json");

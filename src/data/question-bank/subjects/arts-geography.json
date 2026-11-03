@@ -1,0 +1,4564 @@
+[
+  {
+    "id": "msb-11-art-geo-001",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 1,
+    "chapter": "Earth Movements",
+    "topic": "Endogenic Forces Classification",
+    "difficulty": "Easy",
+    "questionText": "Which term describes slow, continuous vertical earth movements responsible for continental uplift and subsidence?",
+    "diagramType": "earth_layers",
+    "options": [
+      {
+        "key": "A",
+        "text": "Epeirogenic movements"
+      },
+      {
+        "key": "B",
+        "text": "Orogenic movements"
+      },
+      {
+        "key": "C",
+        "text": "Exogenic denudation"
+      },
+      {
+        "key": "D",
+        "text": "Mass wasting"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Epeirogenic (continent-building) movements act vertically along Earth's radius over vast timescales, lifting or submerging large crustal tracts without intense folding.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Earth Movements",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-002",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 1,
+    "chapter": "Earth Movements",
+    "topic": "Seismic Origin Point",
+    "difficulty": "Easy",
+    "questionText": "In seismology, what is the exact underground point within the lithosphere where rock rupture initiates an earthquake?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Epicentre"
+      },
+      {
+        "key": "B",
+        "text": "Focus (Hypocentre)"
+      },
+      {
+        "key": "C",
+        "text": "Shadow zone"
+      },
+      {
+        "key": "D",
+        "text": "Benioff trench"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Strain energy is released at the subterranean focus (hypocentre), whereas the epicentre is the point directly above it on Earth's surface.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Earth Movements",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-003",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 1,
+    "chapter": "Earth Movements",
+    "topic": "Fold Geometry",
+    "difficulty": "Easy",
+    "questionText": "In a simple symmetrical fold formed by horizontal compressional forces, what is the up-arched crest called?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Syncline"
+      },
+      {
+        "key": "B",
+        "text": "Graben"
+      },
+      {
+        "key": "C",
+        "text": "Anticline"
+      },
+      {
+        "key": "D",
+        "text": "Horst"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Compressional waves bend strata into alternating upward arches called anticlines and downward troughs called synclines.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Earth Movements",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-004",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 1,
+    "chapter": "Earth Movements",
+    "topic": "Rift Valley Formation",
+    "difficulty": "Easy",
+    "questionText": "Between which two parallel geological structures does a rift valley (graben) subside when tensional forces pull the crust apart?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Recumbent folds"
+      },
+      {
+        "key": "B",
+        "text": "Transform ridges"
+      },
+      {
+        "key": "C",
+        "text": "Volcanic necks"
+      },
+      {
+        "key": "D",
+        "text": "Normal faults"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Tensional stress causes crustal blocks to slip downward along two parallel normal fault planes, creating a rift valley such as the Narmada or East African Rift.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Earth Movements",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-005",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 1,
+    "chapter": "Earth Movements",
+    "topic": "Seismic Wave Propagation through Earth's Interior",
+    "difficulty": "Medium",
+    "questionText": "Why do Secondary (S) body waves disappear completely beyond an angular distance of 105° from an earthquake epicentre?",
+    "diagramType": "earth_layers",
+    "options": [
+      {
+        "key": "A",
+        "text": "Transverse S-waves require shear rigidity and cannot propagate through the liquid outer core"
+      },
+      {
+        "key": "B",
+        "text": "S-waves travel faster than P-waves and escape into the upper atmosphere"
+      },
+      {
+        "key": "C",
+        "text": "The granitic continental crust absorbs all shear waves within 50 km"
+      },
+      {
+        "key": "D",
+        "text": "Oceanic trenches reflect S-waves back to the epicentre without refraction"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Because liquids have zero shear modulus, transverse S-waves terminate at the mantle–outer core boundary (2,900 km depth), proving the outer core is liquid.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Earth Movements",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-006",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 1,
+    "chapter": "Earth Movements",
+    "topic": "Block Mountains vs Fold Mountains",
+    "difficulty": "Medium",
+    "questionText": "How does the Vosges–Black Forest–Rhine system structurally differ from the Himalayan mountain system?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Vosges formed at an oceanic subduction trench, whereas the Himalayas formed by tensional rifting"
+      },
+      {
+        "key": "B",
+        "text": "Vosges and Black Forest are fault-bounded horsts flanking the subsided Rhine graben, whereas the Himalayas are young compressional fold mountains"
+      },
+      {
+        "key": "C",
+        "text": "Both formed solely through basaltic fissure eruptions without tectonic stress"
+      },
+      {
+        "key": "D",
+        "text": "The Rhine valley is an uplifted anticline flanked by two synclinal plateaus"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Tensional faulting elevated the Vosges and Black Forest horst blocks while dropping the central Rhine graben, unlike Tethyan sedimentary folding in the Himalayas.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Earth Movements",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-007",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 1,
+    "chapter": "Earth Movements",
+    "topic": "Volcanic Landforms and Magma Silica Content",
+    "difficulty": "Medium",
+    "questionText": "Why did the Deccan Traps form extensive flat-topped basaltic plateaus rather than steep conical stratovolcanoes like Mount Fuji?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "High-silica rhyolitic magma exploded violently from a single central vent in Maharashtra"
+      },
+      {
+        "key": "B",
+        "text": "Glacial ice sheets planed down tall volcanic cones across peninsular India"
+      },
+      {
+        "key": "C",
+        "text": "Low-silica mafic lava erupted quietly through long crustal fissures with low viscosity, spreading across vast distances before solidifying"
+      },
+      {
+        "key": "D",
+        "text": "Submarine turbidity currents deposited limestone layers over granitic batholiths"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Basic (mafic) basaltic magma (~45–52% silica) is hot and fluid, flowing smoothly out of fissure vents in stacked horizontal sheets.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Earth Movements",
+    "abilityTags": [
+      "interpretation",
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-008",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 1,
+    "chapter": "Earth Movements",
+    "topic": "Richter Magnitude vs Mercalli Intensity",
+    "difficulty": "Medium",
+    "questionText": "What fundamental distinction separates the Richter (or Moment Magnitude) scale from the Modified Mercalli scale?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Richter measures volcanic ash height, whereas Mercalli measures tsunami wave speed"
+      },
+      {
+        "key": "B",
+        "text": "Mercalli is purely instrumental and constant worldwide, whereas Richter varies with building quality"
+      },
+      {
+        "key": "C",
+        "text": "Both measure identical ground velocity in kilometres per hour"
+      },
+      {
+        "key": "D",
+        "text": "Magnitude quantifies logarithmic energy/amplitude recorded on seismographs, whereas Mercalli intensity rates observed structural damage and human impact at a locality"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "A single earthquake has one objective source magnitude, but its Mercalli intensity (I–XII) varies with epicentral distance, focal depth, and soil/building resilience.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Earth Movements",
+    "abilityTags": [
+      "communication",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-009",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 1,
+    "chapter": "Earth Movements",
+    "topic": "Overturned and Recumbent Folds",
+    "difficulty": "Medium",
+    "questionText": "Under progressively intensifying asymmetrical compression, when does an overturned fold transition into a recumbent fold?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "When the axial plane becomes nearly horizontal so one limb lies almost flat beneath the other"
+      },
+      {
+        "key": "B",
+        "text": "When both limbs dip symmetrically away from a vertical axial plane at 45°"
+      },
+      {
+        "key": "C",
+        "text": "When tensional stress pulls the crest open into a volcanic caldera"
+      },
+      {
+        "key": "D",
+        "text": "When erosion strips away the syncline leaving an inverted plateau"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Extreme unilateral compression tilts the axial plane until it approaches the horizontal, producing recumbent folds and, if sheared along a thrust plane, nappes.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Earth Movements",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-010",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 1,
+    "chapter": "Earth Movements",
+    "topic": "P-Wave Shadow Zone Refraction",
+    "difficulty": "Hard",
+    "questionText": "Why does a P-wave shadow zone appear between 105° and 140° from the epicentre even though longitudinal P-waves can pass through liquids?",
+    "diagramType": "earth_layers",
+    "options": [
+      {
+        "key": "A",
+        "text": "P-waves convert permanently into L-surface waves at 105° epicentral distance"
+      },
+      {
+        "key": "B",
+        "text": "Abrupt velocity drop across the Gutenberg discontinuity sharply refracts P-waves inward into the liquid outer core, leaving an unreached ring between 105° and 140°"
+      },
+      {
+        "key": "C",
+        "text": "Solid inner-core iron reflects all P-waves straight back to 0°"
+      },
+      {
+        "key": "D",
+        "text": "Mantle convection currents cancel acoustic compression between 105° and 140°"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Entering the denser but non-rigid liquid outer core drops P-wave speed from ~13.6 km/s to ~8.1 km/s, bending rays strongly toward the normal and creating the 105°–140° shadow belt.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Earth Movements",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-011",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 1,
+    "chapter": "Earth Movements",
+    "topic": "Circum-Pacific vs Mid-World Mountain Seismicity",
+    "difficulty": "Hard",
+    "questionText": "Why are deep-focus earthquakes (>300 km) characteristic of Circum-Pacific island arcs (like Japan-Tonga) rather than mid-oceanic spreading ridges?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Mid-oceanic ridges contain 700-km-thick continental roots that prevent faulting"
+      },
+      {
+        "key": "B",
+        "text": "Subduction zones experience purely tensional forces without lithospheric slab descent"
+      },
+      {
+        "key": "C",
+        "text": "Cold, dense oceanic lithosphere subducts steeply into the mantle along Wadati-Benioff zones, whereas thin hot crust at spreading ridges fractures only at shallow depths"
+      },
+      {
+        "key": "D",
+        "text": "Deep-focus earthquakes are triggered exclusively by tidal pull in shallow continental shelves"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Brittle failure at 300–700 km occurs inside cold descending oceanic slabs along convergent Benioff zones; divergent ridges are thermally ductile below ~15–20 km.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Earth Movements",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-012",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 1,
+    "chapter": "Earth Movements",
+    "topic": "Nappe Tectonics in Alpine-Himalayan Orogeny",
+    "difficulty": "Hard",
+    "questionText": "In Himalayan structural geology, how is an allochthonous 'nappe' formed during continental collision?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Vertical magma diapirs dome upward without fracturing overlying sedimentary beds"
+      },
+      {
+        "key": "B",
+        "text": "Aeolian deflation hollows out a desert basin down to the water table"
+      },
+      {
+        "key": "C",
+        "text": "Submarine slumping deposits graded turbidites on the abyssal plain"
+      },
+      {
+        "key": "D",
+        "text": "A recumbent fold shears along its stretched lower limb under sustained horizontal thrusting, sliding kilometres over younger autochthonous rocks"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "When shear stress exceeds rock strength in a recumbent fold, the upper block overrides distant strata along a low-angle thrust fault, forming a nappe.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Earth Movements",
+    "abilityTags": [
+      "critical_thinking",
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-013",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 1,
+    "chapter": "Earth Movements",
+    "topic": "Caldera Collapse Mechanism",
+    "difficulty": "Hard",
+    "questionText": "What volcanological sequence produces a broad sunken caldera such as Krakatoa or Toba rather than an ordinary summit crater?",
+    "diagramType": "earth_layers",
+    "options": [
+      {
+        "key": "A",
+        "text": "Catastrophic evacuation of a shallow magma chamber leaves the roof unsupported, causing inward ring-fault collapse of the overlying volcanic edifice"
+      },
+      {
+        "key": "B",
+        "text": "Slow effusive lava pooling gradually builds a wide convex shield summit"
+      },
+      {
+        "key": "C",
+        "text": "Meteoric impact melts oceanic basalt along transform faults"
+      },
+      {
+        "key": "D",
+        "text": "Periglacial freeze-thaw widens a mountain cirque into a circular lake"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Rapid pyroclastic drainage empties the underlying reservoir; lithostatic load then collapses the chamber roof along concentric ring fractures.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Earth Movements",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-014",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 2,
+    "chapter": "Weathering and Mass Wasting",
+    "topic": "In-Situ Disintegration Definition",
+    "difficulty": "Easy",
+    "questionText": "How is 'weathering' fundamentally distinguished from 'erosion' in geomorphology?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Weathering occurs only on ocean floors whereas erosion occurs only on mountain peaks"
+      },
+      {
+        "key": "B",
+        "text": "Weathering breaks down or alters rock in situ without large-scale transport by mobile geomorphic agents"
+      },
+      {
+        "key": "C",
+        "text": "Weathering requires flowing river water whereas erosion requires tectonic uplift"
+      },
+      {
+        "key": "D",
+        "text": "Weathering builds new igneous rock whereas erosion metamorphoses shale"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Weathering is the static, in-place mechanical disintegration and chemical decomposition of rock; erosion involves detachment and transport by water, wind, ice, or waves.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Weathering and Mass Wasting",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-015",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 2,
+    "chapter": "Weathering and Mass Wasting",
+    "topic": "Exfoliation (Onion-Skin Weathering)",
+    "difficulty": "Easy",
+    "questionText": "Curved concentric outer shells peeling off coarse-grained granitic domes due to diurnal thermal stress and pressure unloading exemplify:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Carbonation"
+      },
+      {
+        "key": "B",
+        "text": "Solifluction"
+      },
+      {
+        "key": "C",
+        "text": "Exfoliation"
+      },
+      {
+        "key": "D",
+        "text": "Saltation"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Unloading of overlying rock and repeated surface heating/cooling expand outer granitic layers relative to the core, spalling concentric sheets like onion skins.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Weathering and Mass Wasting",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-016",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 2,
+    "chapter": "Weathering and Mass Wasting",
+    "topic": "Slowest Form of Mass Wasting",
+    "difficulty": "Easy",
+    "questionText": "Tilted utility poles, curved tree trunks, and bulged retaining walls on gentle soil-covered slopes without a sudden scar indicate:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Rock avalanche"
+      },
+      {
+        "key": "B",
+        "text": "Lahars"
+      },
+      {
+        "key": "C",
+        "text": "Debris chute"
+      },
+      {
+        "key": "D",
+        "text": "Soil creep"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Soil creep is an imperceptibly slow, grain-by-grain downslope movement driven by gravity and freeze-thaw or wetting-drying cycles.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Weathering and Mass Wasting",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-017",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 2,
+    "chapter": "Weathering and Mass Wasting",
+    "topic": "Frost Shattering Climate Optimum",
+    "difficulty": "Medium",
+    "questionText": "In which thermal regime is mechanical frost wedging (congelifraction) most destructive to jointed bedrock?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "High-altitude or subpolar zones with frequent diurnal freeze-thaw oscillations across 0°C and adequate cleft moisture"
+      },
+      {
+        "key": "B",
+        "text": "Permanently frozen interior ice caps where temperatures remain continuously below -30°C"
+      },
+      {
+        "key": "C",
+        "text": "Equatorial rainforest lowlands with constant high humidity and 27°C temperatures"
+      },
+      {
+        "key": "D",
+        "text": "Hyper-arid tropical ergs where rainfall is virtually absent"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Water expands by ~9% upon freezing, exerting intense prying pressure inside rock joints; repeated cycling across 0°C maximizes shattering, whereas permanent deep freeze stays static.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Weathering and Mass Wasting",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-018",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 2,
+    "chapter": "Weathering and Mass Wasting",
+    "topic": "Carbonation in Karst Landscapes",
+    "difficulty": "Medium",
+    "questionText": "Which reversible chemical reaction drives the dissolution of jointed limestone pavements into sinkholes and caverns?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Ferric oxide combines with atmospheric nitrogen to precipitate insoluble laterite crusts"
+      },
+      {
+        "key": "B",
+        "text": "Atmospheric and soil CO2 dissolves in rainwater to form weak carbonic acid, converting insoluble calcium carbonate into soluble calcium bicarbonate"
+      },
+      {
+        "key": "C",
+        "text": "Quartz grains hydrolyse directly into liquid silica in arid salt pans"
+      },
+      {
+        "key": "D",
+        "text": "Feldspar oxidises into pure metallic aluminium under ultraviolet light"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Rainwater enriched with biogenic soil CO2 forms H2CO3, reacting with CaCO3 to yield soluble Ca(HCO3)2 carried away in groundwater.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Weathering and Mass Wasting",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-019",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 2,
+    "chapter": "Weathering and Mass Wasting",
+    "topic": "Oxidation in Ferruginous Rocks",
+    "difficulty": "Medium",
+    "questionText": "Why do basaltic plateaus in humid tropical Maharashtra frequently weather into reddish-brown regolith and lateritic horizons?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Silica precipitates out of dry desert winds onto unweathered granite"
+      },
+      {
+        "key": "B",
+        "text": "Frost crystals bleach iron minerals into pure white kaolinite"
+      },
+      {
+        "key": "C",
+        "text": "Ferrous iron (Fe2+) in mafic minerals reacts with dissolved oxygen and moisture to form rusty ferric oxides and hydroxides (Fe3+)"
+      },
+      {
+        "key": "D",
+        "text": "Burrowing rodents deposit marine coral shells across upland plateaus"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Mafic Deccan basalts are rich in iron-bearing pyroxenes and olivines; warm monsoon moisture oxidises ferrous iron into reddish hematite and yellowish limonite.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Weathering and Mass Wasting",
+    "abilityTags": [
+      "interpretation",
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-020",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 2,
+    "chapter": "Weathering and Mass Wasting",
+    "topic": "Salt Crystallization (Haloclasty)",
+    "difficulty": "Medium",
+    "questionText": "Why are honeycomb weathering pits (tafoni) especially common along rocky arid coasts and desert piedmonts?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Heavy snowfall compacts sandstone grains into hexagonal basalt columns"
+      },
+      {
+        "key": "B",
+        "text": "Dense moss carpets secrete nitric acid only in hyper-arid dunes"
+      },
+      {
+        "key": "C",
+        "text": "Subterranean magma boils coastal groundwater into geysers"
+      },
+      {
+        "key": "D",
+        "text": "Saline pore moisture evaporates rapidly under heat, allowing growing salt crystals to exert expansive pressure against mineral grain boundaries"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Capillary draw brings saline solutions to rock pores; evaporation precipitates halite/gypsum crystals whose thermal expansion and growth pry grains loose.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Weathering and Mass Wasting",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-021",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 2,
+    "chapter": "Weathering and Mass Wasting",
+    "topic": "Solifluction in Periglacial Environments",
+    "difficulty": "Medium",
+    "questionText": "Why does waterlogged active-layer soil flow sluggishly down even 2°–5° slopes during brief tundra summers?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Underlying impermeable permafrost blocks vertical drainage, saturating thawed topsoil and slashing internal friction"
+      },
+      {
+        "key": "B",
+        "text": "Torrential monsoon cyclones strip vegetation from tropical laterite hills"
+      },
+      {
+        "key": "C",
+        "text": "Windblown loess buries desert wadis under dry sand sheets"
+      },
+      {
+        "key": "D",
+        "text": "Tectonic subduction Liquefies deep granitic batholiths"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "In periglacial zones, summer thaw melts only the top metre while frozen ground beneath traps meltwater, creating viscous lobe-like solifluction.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Weathering and Mass Wasting",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-022",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 2,
+    "chapter": "Weathering and Mass Wasting",
+    "topic": "Peltier's Morphogenetic Weathering Regime",
+    "difficulty": "Hard",
+    "questionText": "Evaluating temperature and rainfall interactions globally, why is deep chemical regolith thickest in humid equatorial basins rather than hot deserts or polar tundras?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Equatorial bedrock lacks quartz and consists solely of water-soluble rock salt"
+      },
+      {
+        "key": "B",
+        "text": "Van 't Hoff's thermal kinetics accelerate hydrolysis, oxidation, and chelation exponentially only when abundant warm percolating water and humic acids continuously flush reaction products"
+      },
+      {
+        "key": "C",
+        "text": "High diurnal frost cycles pulverise Amazonian bedrock to 60 metres depth every night"
+      },
+      {
+        "key": "D",
+        "text": "Equatorial winds import pre-weathered clay from Antarctica"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Chemical decomposition requires both thermal energy and continuous aqueous solvent supply plus organic acids from dense litter; deserts lack water while tundras lack heat.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Weathering and Mass Wasting",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-023",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 2,
+    "chapter": "Weathering and Mass Wasting",
+    "topic": "Rotational Slump vs Translational Rockslide",
+    "difficulty": "Hard",
+    "questionText": "In slope stability analysis, what geometric feature distinguishes a rotational slump in thick clay from a translational rockslide in dipping strata?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "A slump occurs only on vertical granite cliffs in dry weather, whereas a rockslide occurs only underwater"
+      },
+      {
+        "key": "B",
+        "text": "A slump moves individual dry sand grains by wind, whereas a rockslide moves dissolved ions"
+      },
+      {
+        "key": "C",
+        "text": "A slump rotates backward along a concave-upward spoon-shaped rupture surface (often tilting toe blocks upward), whereas a rockslide glides along a planar bedding or joint surface parallel to the slope"
+      },
+      {
+        "key": "D",
+        "text": "Both share identical concave slip planes and zero internal deformation"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Homogeneous cohesive clays fail along curved circular arcs (producing stepped scarps and back-tilted benches), whereas bedded rocks dipping downslope slide rapidly along flat weakness planes.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Weathering and Mass Wasting",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-024",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 2,
+    "chapter": "Weathering and Mass Wasting",
+    "topic": "Anthropogenic Acceleration of Western Ghats Landslides",
+    "difficulty": "Hard",
+    "questionText": "Which combination of human interventions and monsoon triggers most directly destabilises steep saprolite-mantled slopes in the Sahyadris (e.g., Malin / Taliye)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Afforestation with deep-rooted native trees combined with contour stone bunding"
+      },
+      {
+        "key": "B",
+        "text": "Winter fog condensation on flat basaltic river terraces far from escarpments"
+      },
+      {
+        "key": "C",
+        "text": "Tidal bore propagation up estuaries 150 km below the plateau crest"
+      },
+      {
+        "key": "D",
+        "text": "Toe-cutting for hill roads without drainage, deforestation reducing root cohesion, and extreme cloudburst pore-water pressure lowering effective shear strength along the soil-bedrock interface"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Removing lateral toe support and tree roots while intense rainfall elevates positive pore pressure reduces effective normal stress in weathered basaltic regolith until shear stress exceeds strength.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Weathering and Mass Wasting",
+    "abilityTags": [
+      "critical_thinking",
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-025",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 3,
+    "chapter": "Agents of Erosion",
+    "topic": "Fluvial Youthful Landform",
+    "difficulty": "Easy",
+    "questionText": "Steep-sided V-shaped valleys, interlocking spurs, potholes, and plunge pools are diagnostic landforms of which stage of a river?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Youthful (upper) course"
+      },
+      {
+        "key": "B",
+        "text": "Senile deltaic plain"
+      },
+      {
+        "key": "C",
+        "text": "Submerged estuarine mouth"
+      },
+      {
+        "key": "D",
+        "text": "Aeolian deflation basin"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "High channel gradient in mountainous headwaters concentrates energy on vertical downcutting and pothole abrasion, carving narrow V-shaped gorges.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Agents of Erosion",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-026",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 3,
+    "chapter": "Agents of Erosion",
+    "topic": "Cut-Off Meander Lake",
+    "difficulty": "Easy",
+    "questionText": "When a river erodes through the narrow neck of a pronounced meander loop on a floodplain and seals the abandoned bend with silt, it forms an:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Cirque tarn"
+      },
+      {
+        "key": "B",
+        "text": "Ox-bow lake"
+      },
+      {
+        "key": "C",
+        "text": "Lagoon spit"
+      },
+      {
+        "key": "D",
+        "text": "Playa pan"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Outer-bank undercutting and inner-bank point-bar deposition narrow the meander neck until floodwaters breach straight across, isolating an ox-bow lake.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Agents of Erosion",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-027",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 3,
+    "chapter": "Agents of Erosion",
+    "topic": "Aeolian Crescentic Dune",
+    "difficulty": "Easy",
+    "questionText": "Which crescent-shaped mobile sand dune has two horns pointing downwind in regions of unidirectional winds and moderate sand supply?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Seif (longitudinal dune)"
+      },
+      {
+        "key": "B",
+        "text": "Drumlin"
+      },
+      {
+        "key": "C",
+        "text": "Barchan"
+      },
+      {
+        "key": "D",
+        "text": "Esker"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Barchans feature a gentle windward slope (~10°–15°), a steep concave slip face (~32°–34°), and lower lateral wings advancing faster downwind.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Agents of Erosion",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-028",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 3,
+    "chapter": "Agents of Erosion",
+    "topic": "Glacial Armchair Hollow",
+    "difficulty": "Easy",
+    "questionText": "What is a steep-walled, amphitheatre-like hollow excavated at a valley glacier's head by plucking and abrasion?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Moraine"
+      },
+      {
+        "key": "B",
+        "text": "Yardang"
+      },
+      {
+        "key": "C",
+        "text": "Tombolo"
+      },
+      {
+        "key": "D",
+        "text": "Cirque (Corrie)"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Rotational ice movement, freeze-thaw plucking on the headwall, and subglacial abrasion deepen pre-glacial hollows into cirques, often holding tarn lakes after thaw.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Agents of Erosion",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-029",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 3,
+    "chapter": "Agents of Erosion",
+    "topic": "Alluvial Fan vs Arcuate Delta",
+    "difficulty": "Medium",
+    "questionText": "Why are piedmont alluvial fans substantially coarser and more poorly sorted than coastal deltaic sediments?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Abrupt gradient drop where a confined mountain torrent exits onto a plain causes rapid loss of competence, dumping boulders and gravel near the apex before finer silt"
+      },
+      {
+        "key": "B",
+        "text": "Alluvial fans are deposited by slow ocean tides sorting clay over centuries"
+      },
+      {
+        "key": "C",
+        "text": "Mountain torrents carry only dissolved salts and zero bedload"
+      },
+      {
+        "key": "D",
+        "text": "Coastal deltas experience steeper gradients than Himalayan foothills"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Channel widening and infiltration at the mountain front abruptly drop stream velocity and competence, depositing coarse gravel fans, whereas deltas receive long-sorted fine silt and clay.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Agents of Erosion",
+    "abilityTags": [
+      "interpretation",
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-030",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 3,
+    "chapter": "Agents of Erosion",
+    "topic": "Zeugen vs Yardangs in Arid Landscapes",
+    "difficulty": "Medium",
+    "questionText": "How does lithological orientation differentiate desert 'Zeugen' from 'Yardangs' under wind abrasion?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Zeugen are depositional sand sheets, whereas Yardangs are glacial boulder clay hills"
+      },
+      {
+        "key": "B",
+        "text": "Zeugen form tabular mushroom-topped ridges in horizontally alternating hard and soft strata, whereas Yardangs form streamlined keel-like ridges in vertically tilted alternating bands aligned with the wind"
+      },
+      {
+        "key": "C",
+        "text": "Zeugen form underwater on coral reefs, whereas Yardangs form in tundra bogs"
+      },
+      {
+        "key": "D",
+        "text": "Both require horizontal limestone dissolved solely by underground rivers"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "In Zeugen, resistant horizontal caprock protects softer underlying beds opened along joints; in Yardangs, steeply dipping parallel soft bands are grooved into wind-aligned corridors.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Agents of Erosion",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-031",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 3,
+    "chapter": "Agents of Erosion",
+    "topic": "Roche Moutonnée Ice-Flow Reconstruction",
+    "difficulty": "Medium",
+    "questionText": "A glacially sculpted bedrock knoll displays a smooth, gently striated slope on its northern side and a jagged, steep, shattered face on its southern side. In which direction did the glacier advance?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "From south to north"
+      },
+      {
+        "key": "B",
+        "text": "From east to west"
+      },
+      {
+        "key": "C",
+        "text": "From north to south"
+      },
+      {
+        "key": "D",
+        "text": "Vertically upward as a pingo"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "In a roche moutonnée, ice overrides and polishes the upstream (stoss) side by abrasion while freeze-thaw meltwater refreezing plucks blocks from the low-pressure downstream (lee) side.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Agents of Erosion",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-032",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 3,
+    "chapter": "Agents of Erosion",
+    "topic": "Coastal Wave Refraction on Headlands",
+    "difficulty": "Medium",
+    "questionText": "Why do sea caves, arches, and stacks concentrate on protruding rocky headlands while beaches accumulate in adjacent bays?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Deep ocean currents blow sand uphill onto headland cliffs"
+      },
+      {
+        "key": "B",
+        "text": "Bays always consist of harder granite than protruding headlands"
+      },
+      {
+        "key": "C",
+        "text": "Tides never enter bays and remain restricted to headlands"
+      },
+      {
+        "key": "D",
+        "text": "Wave refraction bends approaching crests into shallow water around headlands, converging erosive wave energy on headland flanks while dispersing low-energy waves into sheltered bays"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "As wave flanks shoal first against submerged headland spurs, crests pivot inward, focusing hydraulic action and corrasion on headlands while refracted waves spread and deposit sediment in bays.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Agents of Erosion",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-033",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 3,
+    "chapter": "Agents of Erosion",
+    "topic": "Karst Speleothems (Stalactites vs Stalagmites)",
+    "difficulty": "Medium",
+    "questionText": "Inside a limestone cavern, why do stalactites hang as slender icicle-like tubes from the ceiling whereas stalagmites rise as broader, blunter mounds from the floor?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Ceiling drips degas CO2 slowly around the drop rim before falling, whereas drops splashing on the cavern floor spread laterally as they degas and precipitate calcite"
+      },
+      {
+        "key": "B",
+        "text": "Stalactites grow upward by capillary action whereas stalagmites dissolve into sinkholes"
+      },
+      {
+        "key": "C",
+        "text": "Stalactites are composed of pure quartz whereas stalagmites are composed of basalt"
+      },
+      {
+        "key": "D",
+        "text": "Bats sculpt ceiling formations while underground rivers polish floor pillars"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Loss of partial CO2 pressure from seeping Ca(HCO3)2 water precipitates CaCO3 rings at ceiling drip points (stalactites) and wider splash-cone layers on the floor below (stalagmites).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Agents of Erosion",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-034",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 3,
+    "chapter": "Agents of Erosion",
+    "topic": "Rejuvenation and Incised Meanders",
+    "difficulty": "Hard",
+    "questionText": "What geomorphic history explains a winding meandering river flowing inside a deep, steep-walledbedrock canyon (entrenched meander)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "A young mountain torrent spontaneously began meandering laterally without downcutting"
+      },
+      {
+        "key": "B",
+        "text": "A mature river meandering across a low-relief floodplain experienced fall in sea level or tectonic uplift, reviving vertical downcutting along its inherited sinuous channel"
+      },
+      {
+        "key": "C",
+        "text": "A valley glacier carved sinuous loops that later filled with rainwater"
+      },
+      {
+        "key": "D",
+        "text": "Aeolian sand dunes blocked a straight river in an equatorial swamp"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Fluvial rejuvenation (negative base-level change or epeirogenic uplift) imparts youthful vertical erosive power to an already established meandering planform, entrenching it into bedrock.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Agents of Erosion",
+    "abilityTags": [
+      "critical_thinking",
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-035",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 3,
+    "chapter": "Agents of Erosion",
+    "topic": "Drumlins vs Eskers in Glaciofluvial Plains",
+    "difficulty": "Hard",
+    "questionText": "When mapping a deglaciated lowland, how do you distinguish a 'drumlin' swarm from a sinuous 'esker' ridge?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Drumlins consist of wind-sorted loess, whereas eskers consist of angular frost-shattered scree"
+      },
+      {
+        "key": "B",
+        "text": "Drumlins form perpendicular to ice flow at glacier snouts, whereas eskers are submerged fjords"
+      },
+      {
+        "key": "C",
+        "text": "Drumlins are streamlined, unsorted glacial till hills (basket-of-eggs topography) moulded beneath active ice, whereas eskers are winding ridges of stratified sand and gravel deposited by subglacial meltwater tunnels"
+      },
+      {
+        "key": "D",
+        "text": "Both are erosional bedrock peaks above the snowline like pyramidal horns"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Drumlins are unstratified boulder-clay (till) streamlined parallel to ice flow (blunt stoss, tapered lee), while eskers show water-sorted cross-bedding cast inside ice-walled meltwater conduits.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Agents of Erosion",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-036",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 3,
+    "chapter": "Agents of Erosion",
+    "topic": "Tombolo and Barrier Spit Hydrodynamics",
+    "difficulty": "Hard",
+    "questionText": "Under what coastal condition does a longshore-drift sand spit evolve into a 'tombolo'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Eustatic sea-level rise drowns a glacial U-shaped trough into a deep inlet"
+      },
+      {
+        "key": "B",
+        "text": "Coral polyps build a circular atoll rim around a subsiding mid-ocean volcano"
+      },
+      {
+        "key": "C",
+        "text": "Rip currents excavate a submarine canyon across the continental slope"
+      },
+      {
+        "key": "D",
+        "text": "Oblique longshore drift extends a sand ridge into the wave-shadow zone behind an nearshore island, linking the island to the mainland"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Wave diffraction and refraction behind an offshore island create a calm slack-water convergence zone where littoral drift deposits sediment until a connecting bar (tombolo) bridges island and shore.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Agents of Erosion",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-037",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 3,
+    "chapter": "Agents of Erosion",
+    "topic": "Hjulström Curve Sediment Entrainment Paradox",
+    "difficulty": "Hard",
+    "questionText": "According to Hjulström's fluvial entrainment principles, why does eroding consolidated clay (<0.002 mm) require higher flow velocity than eroding fine sand (~0.2 mm)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Fine sand protrudes into turbulent eddies with negligible cohesion, whereas flat clay platelets bind tightly via electrostatic cohesion and lie smoothly inside the laminar boundary layer"
+      },
+      {
+        "key": "B",
+        "text": "Individual clay particles are denser and heavier than quartz pebbles"
+      },
+      {
+        "key": "C",
+        "text": "Fine sand dissolves chemically in cold river water whereas clay floats"
+      },
+      {
+        "key": "D",
+        "text": "Rivers transport sand exclusively in solution and clay exclusively by traction"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Although clay stays in suspension at near-zero velocity once entrained, detaching cohesive, smooth clay beds demands high shear velocity comparable to gravel entrainment.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Agents of Erosion",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-038",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 4,
+    "chapter": "Climatic Regions",
+    "topic": "Equatorial Diurnal Rainfall",
+    "difficulty": "Easy",
+    "questionText": "Daily late-afternoon thunderous downpours ('4 o'clock showers') throughout the year with minimal annual temperature range (<3°C) define the:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Mediterranean climate (30°–40° western margins)"
+      },
+      {
+        "key": "B",
+        "text": "Equatorial rainforest climate (0°–10° N/S)"
+      },
+      {
+        "key": "C",
+        "text": "Steppe continental grassland climate"
+      },
+      {
+        "key": "D",
+        "text": "Tundra polar lowland climate"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Intense zenithal solar heating and high humidity inside the ITCZ trigger vigorous afternoon cumulonimbus convection year-round along the equator.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Climatic Regions",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-039",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 4,
+    "chapter": "Climatic Regions",
+    "topic": "Mediterranean Seasonal Rainfall Signature",
+    "difficulty": "Easy",
+    "questionText": "Which world climatic region is uniquely characterised by warm, dry sunny summers and mild, cyclonic rainy winters?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Tropical Monsoon climate"
+      },
+      {
+        "key": "B",
+        "text": "Sudan Savanna climate"
+      },
+      {
+        "key": "C",
+        "text": "Mediterranean climate"
+      },
+      {
+        "key": "D",
+        "text": "China-type Warm Temperate Eastern Margin"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Located on western continental margins between 30° and 40° N/S, Mediterranean regions experience offshore subtropical high pressure in summer and onshore westerly frontal rain in winter.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Climatic Regions",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-040",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 4,
+    "chapter": "Climatic Regions",
+    "topic": "Taiga Boreal Belt Geography",
+    "difficulty": "Easy",
+    "questionText": "Why is the Taiga (Boreal coniferous forest) climatic belt completely absent in the Southern Hemisphere?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Antarctica is covered by tropical broadleaf rainforests at 60°S"
+      },
+      {
+        "key": "B",
+        "text": "Warm trade winds prevent winter snow south of 50°S"
+      },
+      {
+        "key": "C",
+        "text": "High mountain chains block westerly winds across Australia"
+      },
+      {
+        "key": "D",
+        "text": "Very little continental landmass exists between 55°S and 65°S, where uninterrupted Southern Ocean waters prevail"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Unlike vast Eurasia and North America at 55°N–70°N, the Southern Hemisphere tapers sharply south of 45°S into open ocean, precluding severe continental boreal climates.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Climatic Regions",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-041",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 4,
+    "chapter": "Climatic Regions",
+    "topic": "Subtropical Hot Desert Location Mechanism",
+    "difficulty": "Medium",
+    "questionText": "Why do major hot deserts (Sahara, Atacama, Namib, Western Australia) cluster along western continental margins between 15° and 30° latitude?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Subsiding dry air of subtropical anticyclones, offshore trade winds, and cold eastern boundary ocean currents stabilise the lower atmosphere against convection"
+      },
+      {
+        "key": "B",
+        "text": "Onshore equatorial monsoons dump all moisture on western coasts year-round"
+      },
+      {
+        "key": "C",
+        "text": "Subpolar low-pressure fronts remain stationary at 20° latitude"
+      },
+      {
+        "key": "D",
+        "text": "Warm western boundary currents evaporate all soil moisture"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Descending Hadley-cell air warms adiabatically (inhibiting clouds), trade winds blow land-to-sea on west margins, and cold currents (Humboldt, Benguela, Canary) chill basal air into coastal temperature inversions.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Climatic Regions",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-042",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 4,
+    "chapter": "Climatic Regions",
+    "topic": "Savanna ('Parkland') Climatic Transition",
+    "difficulty": "Medium",
+    "questionText": "How does seasonal ITCZ migration shape vegetation structure across the Sudan (Tropical Wet-and-Dry) climatic belt?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Uniform monthly rainfall above 250 mm supports four-tiered evergreen canopy vines"
+      },
+      {
+        "key": "B",
+        "text": "Alternation between a convective summer rainy season and a prolonged trade-wind winter drought favours tall C4 grasses interspersed with drought-adapted, umbrella-crowned or bottle-trunked trees"
+      },
+      {
+        "key": "C",
+        "text": "Winter snowfall restricts plant life to ground-hugging lichens and mosses"
+      },
+      {
+        "key": "D",
+        "text": "Sclerophyllous olive and cork-oak shrubs bloom during winter rains"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Poleward summer ITCZ shift brings rains, while winter subtropical highs enforce 5–7 dry months; fire and moisture stress prevent closed forest, producing tropical savanna parkland.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Climatic Regions",
+    "abilityTags": [
+      "interpretation",
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-043",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 4,
+    "chapter": "Climatic Regions",
+    "topic": "Tropical Monsoon vs Equatorial Rainforest",
+    "difficulty": "Medium",
+    "questionText": "Although Mumbai and Singapore both receive over 2,000 mm of annual rainfall, why does Mumbai's surrounding natural forest shed leaves seasonally unlike Singapore's evergreen canopy?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Mumbai experiences sub-zero winter blizzards that freeze broadleaf foliage"
+      },
+      {
+        "key": "B",
+        "text": "Singapore rests on limestone whereas Mumbai rests solely on pure quartz sand"
+      },
+      {
+        "key": "C",
+        "text": "Mumbai's rainfall is intensely concentrated in four southwest-monsoon months followed by an eight-month dry season, prompting tropical deciduous trees to shed leaves to conserve moisture"
+      },
+      {
+        "key": "D",
+        "text": "Singapore receives rainfall only during winter western disturbances"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Total annual precipitation alone does not govern phenology; monsoon seasonal drought forces teak, sal, and ain to drop foliage before peak pre-monsoon heat.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Climatic Regions",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-044",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 4,
+    "chapter": "Climatic Regions",
+    "topic": "West European Marine vs Laurentian Climate",
+    "difficulty": "Medium",
+    "questionText": "At ~50°N latitude, why is London's port ice-free in winter with mild annual thermal range (~12°C), whereas eastern Canadian ports at the same latitude experience severe freezing winters?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "London lies 2,000 metres below sea level inside a geothermal rift"
+      },
+      {
+        "key": "B",
+        "text": "Eastern Canada lies inside the subtropical horse latitudes"
+      },
+      {
+        "key": "C",
+        "text": "Solar insolation at 50°N is twice as intense over Europe as over North America"
+      },
+      {
+        "key": "D",
+        "text": "Onshore prevailing Westerlies Blowing across the warm North Atlantic Drift moderate Western Europe, whereas eastern North America receives cold continental air masses and the cold Labrador Current"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Maritime westerly air warmed by the Gulf Stream–North Atlantic Drift keeps NW Europe anomalously mild in winter compared to continental/cold-current eastern margins.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Climatic Regions",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-045",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 4,
+    "chapter": "Climatic Regions",
+    "topic": "Steppe Mid-Latitude Grasslands vs Tropical Savanna",
+    "difficulty": "Medium",
+    "questionText": "What distinguishes temperate Steppe/Prairie grasslands economically and pedologically from tropical Savannas?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Cool-climate calcification under short sod grasses produces dark, humus-rich, nutrient-retentive Chernozem soils ideal for mechanised wheat farming, unlike leached ferruginous Savanna soils"
+      },
+      {
+        "key": "B",
+        "text": "Steppes receive 3,000 mm of monsoon rain ideal for paddy and jute"
+      },
+      {
+        "key": "C",
+        "text": "Steppes have permafrost 10 cm below the surface year-round"
+      },
+      {
+        "key": "D",
+        "text": "Savannas experience -40°C continental winters under polar anticyclones"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Moderate 300–500 mm rainfall prevents nutrient leaching while decomposed grass roots enrich black Chernozems across Prairies, Pampas, and Eurasian Steppes, earning them the title 'granaries of the world'.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Climatic Regions",
+    "abilityTags": [
+      "interpretation",
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-046",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 4,
+    "chapter": "Climatic Regions",
+    "topic": "Mediterranean Viticulture & Sclerophyll Adaptation",
+    "difficulty": "Hard",
+    "questionText": "Which anatomical adaptations enable native Mediterranean flora (olive, cork oak, rosemary, maquis) to survive peak summer insolation coinciding with minimum soil moisture?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Broad, thin drip-tip leaves and shallow buttress roots maximise rapid water loss"
+      },
+      {
+        "key": "B",
+        "text": "Sclerophyllous thick waxy/leathery cuticles, sunken stomata, deep taproots, and suberised bark minimise transpiration during summer subtropical high-pressure drought"
+      },
+      {
+        "key": "C",
+        "text": "Pneumatophores (breathing roots) project above saline tidal mudflats"
+      },
+      {
+        "key": "D",
+        "text": "Succulent leafless stems remain dormant during mild wet winters and photosynthesise only under snow"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Because warmth and moisture are out of phase in Cs climates, plants evolve xeromorphic sclerophyll traits while deep roots tap winter-recharged subsoil moisture.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Climatic Regions",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-047",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 4,
+    "chapter": "Climatic Regions",
+    "topic": "Extreme Continentality in Subarctic Siberia (Verkhoyansk)",
+    "difficulty": "Hard",
+    "questionText": "Why do Verkhoyansk and Oymyakon in interior Yakutia record Earth's widest annual temperature ranges (>60°C, from ~-50°C winter means to +16°C summers)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Alternating warm Kuroshio and cold Oyashio ocean currents washing directly against Yakutia"
+      },
+      {
+        "key": "B",
+        "text": "High equatorial sun angles in December followed by polar night in July"
+      },
+      {
+        "key": "C",
+        "text": "Extreme distance from maritime moisture, winter radiative cooling under the stagnant Siberian High in enclosed basins, and long summer daylight hours over low-specific-heat land"
+      },
+      {
+        "key": "D",
+        "text": "Volcanic geothermal vents erupting every July and freezing every January"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Land heats and cools ~3–5× faster than ocean; snow-covered winter basins trap dense radiating cold air under clear anticyclonic skies, while 20-hour July sunlight rapidly warms snow-free ground.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Climatic Regions",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-048",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 4,
+    "chapter": "Climatic Regions",
+    "topic": "Patagonian Aridity vs Chilean Westerlies",
+    "difficulty": "Hard",
+    "questionText": "At 45°S in South America, western Chile receives heavy year-round rain whereas eastern Patagonia right across the Andes is a cool temperatedesert. Which process explains this contrast?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Offshore southeast trade winds blow from the Atlantic into the Pacific at 45°S"
+      },
+      {
+        "key": "B",
+        "text": "A warm Brazilian ocean current chills Patagonian air into perpetual fog without rain"
+      },
+      {
+        "key": "C",
+        "text": "Patagonia lies beneath the subsiding equatorial Hadley cell"
+      },
+      {
+        "key": "D",
+        "text": "Prevailing Roaring Forties Westerlies ascend windward Andean slopes dumping orographic rain, then descend leeward into Patagonia warming adiabatically as a dry rain-shadow wind"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Unlike low-latitude hot deserts on west coasts, mid-latitude Patagonia is a classic leeward orographic rain-shadow desert east of the Andean cordillera under Westerly flow.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Climatic Regions",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-049",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 5,
+    "chapter": "Global Climate Change",
+    "topic": "Radiative Greenhouse Mechanism",
+    "difficulty": "Easy",
+    "questionText": "Greenhouse gases warm Earth's lower troposphere primarily because they are largely transparent to incoming shortwave solar radiation but strongly absorb:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Outgoing terrestrial longwave infrared radiation"
+      },
+      {
+        "key": "B",
+        "text": "Incoming cosmic gamma rays"
+      },
+      {
+        "key": "C",
+        "text": "Stratospheric ultraviolet-C photons exclusively"
+      },
+      {
+        "key": "D",
+        "text": "Geomagnetic aurora particles"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "CO2, CH4, N2O, and water vapour absorb Earth's 4–100 µm thermal infrared emission and re-radiate energy back toward the surface.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Global Climate Change",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-050",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 5,
+    "chapter": "Global Climate Change",
+    "topic": "Paleoclimatic Ice Core Archives",
+    "difficulty": "Easy",
+    "questionText": "Tiny air bubbles trapped inside deep Antarctic and Greenland ice cores allow paleoclimatologists to directly measure past:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Exact Richter magnitudes of Precambrian earthquakes"
+      },
+      {
+        "key": "B",
+        "text": "Atmospheric CO2 and CH4 concentrations alongside oxygen-isotope temperature proxies over hundreds of millennia"
+      },
+      {
+        "key": "C",
+        "text": "Daily wind direction in equatorial deserts"
+      },
+      {
+        "key": "D",
+        "text": "Oceanic trench subduction velocities in mm/day"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Occluded air bubbles preserve ancient atmospheric gas samples up to ~800,000 years BP, while δ18O and deuterium ratios in the ice lattice track condensation temperatures.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Global Climate Change",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-051",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 5,
+    "chapter": "Global Climate Change",
+    "topic": "UNFCCC Paris Agreement Benchmark",
+    "difficulty": "Easy",
+    "questionText": "What central temperature threshold did the 2015 Paris Agreement (COP21) establish for international climate action?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Eliminating the natural greenhouse effect completely to drop global mean temperature to -18°C"
+      },
+      {
+        "key": "B",
+        "text": "Stabilising atmospheric CO2 at exactly 1,000 ppm by 2030"
+      },
+      {
+        "key": "C",
+        "text": "Holding global mean warming well below 2°C above pre-industrial levels while pursuing efforts to limit it to 1.5°C"
+      },
+      {
+        "key": "D",
+        "text": "Freezing Arctic sea ice southward to 45°N latitude"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Under the Paris Agreement, parties submit Nationally Determined Contributions (NDCs) to hold warming well below 2°C and strive for 1.5°C above pre-industrial baselines.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Global Climate Change",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-052",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 5,
+    "chapter": "Global Climate Change",
+    "topic": "Milankovitch Orbital Forcing",
+    "difficulty": "Medium",
+    "questionText": "Which triad of long-term astronomical cycles paces Pleistocene glacial–interglacial transitions by altering seasonal and latitudinal insolation distribution?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "11-year sunspot cycles, lunar fortnightly tides, and Halley's comet perihelia"
+      },
+      {
+        "key": "B",
+        "text": "Continental drift, basaltic dyke intrusion, and lunar eclipse frequency"
+      },
+      {
+        "key": "C",
+        "text": "El Niño–Southern Oscillation, Indian Ocean Dipole, and Madden-Julian Oscillation"
+      },
+      {
+        "key": "D",
+        "text": "Orbital eccentricity (~100 kyr), axial obliquity/tilt (~41 kyr), and axial precession (~23–26 kyr)"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Milutin Milankovitch demonstrated that when orbital geometry reduces northern high-latitude summer insolation (~65°N), winter snow survives summer melt, triggering ice-sheet growth.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Global Climate Change",
+    "abilityTags": [
+      "interpretation",
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-053",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 5,
+    "chapter": "Global Climate Change",
+    "topic": "Global Warming Potential vs Radiative Dominance",
+    "difficulty": "Medium",
+    "questionText": "Although methane (CH4) has ~28 times the 100-year Global Warming Potential per molecule of CO2, why does anthropogenic CO2 remain the primary long-term driver of climate forcing?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "CO2 is emitted in vastly larger gigatonne volumes and persists in the atmosphere-ocean-biosphere system for centuries to millennia, whereas CH4 oxidises in ~12 years"
+      },
+      {
+        "key": "B",
+        "text": "Methane reflects incoming sunlight like sulphate aerosols"
+      },
+      {
+        "key": "C",
+        "text": "Methane exists only in the mesosphere above 70 km altitude"
+      },
+      {
+        "key": "D",
+        "text": "Plants absorb 100% of fossil CO2 within 48 hours of combustion"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Short-lived climate pollutants like CH4 drive rapid near-term warming, but cumulative long-lived CO2 dictates peak multi-century temperature commitment.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Global Climate Change",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-054",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 5,
+    "chapter": "Global Climate Change",
+    "topic": "Dendroclimatology Principles",
+    "difficulty": "Medium",
+    "questionText": "Why must dendroclimatologists sample trees from climatically stressed ecotones (e.g., semi-arid margins or alpine treelines) rather than irrigated city parks?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Urban park trees form ten growth rings every week regardless of season"
+      },
+      {
+        "key": "B",
+        "text": "Ring-width variance reflects regional moisture or thermal anomalies only when water or warmth acts as a clear limiting factor on annual cambial growth"
+      },
+      {
+        "key": "C",
+        "text": "Equatorial swamp trees without seasons show sharper annual rings than alpine conifers"
+      },
+      {
+        "key": "D",
+        "text": "Tree rings record atmospheric argon rather than growing-season climate"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "By the principle of limiting factors, trees at dry or cold thresholds produce wide rings in favourable years and narrow rings in droughts/cold summers, enabling cross-dated reconstructions.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Global Climate Change",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-055",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 5,
+    "chapter": "Global Climate Change",
+    "topic": "Eustatic vs Steric Sea-Level Rise",
+    "difficulty": "Medium",
+    "questionText": "Global mean sea-level rise since 1900 combines two roughly comparable physical mechanisms:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Melting of floating Arctic sea ice floes alone, plus subsea limestone precipitation"
+      },
+      {
+        "key": "B",
+        "text": "Increased river silt deposition alone, plus lunar orbital recession"
+      },
+      {
+        "key": "C",
+        "text": "Barystatic (eustatic) addition of meltwater from mountain glaciers and Greenland/Antarctic land ice sheets, plus steric thermal expansion of warming ocean water"
+      },
+      {
+        "key": "D",
+        "text": "Tectonic uplift of mid-ocean trenches without any change in ocean heat content"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "By Archimedes' principle, floating sea-ice melt barely alters sea level; real sea-level rise stems from land-based ice mass transfer into oceans and seawater volume expansion as oceans absorb >90% of excess heat.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Global Climate Change",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-056",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 5,
+    "chapter": "Global Climate Change",
+    "topic": "Ice-Albedo and Permafrost Positive Feedbacks",
+    "difficulty": "Hard",
+    "questionText": "Why does Arctic amplification warm northern polar latitudes nearly three to four times faster than the global average?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Fossil-fuel power plants are concentrated almost entirely north of 80°N"
+      },
+      {
+        "key": "B",
+        "text": "Stratospheric ozone holes focus direct zenithal sunlight onto the North Pole in December"
+      },
+      {
+        "key": "C",
+        "text": "Melting ice increases planetary albedo and cools the tropical Pacific"
+      },
+      {
+        "key": "D",
+        "text": "Retreating bright sea ice/snow (albedo ~0.6–0.85) exposes dark ocean/tundra (albedo ~0.07–0.2), amplifying solar absorption and triggering secondary permafrost carbon/methane release"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Ice-albedo feedback is a classic destabilising positive feedback loop, compounded by shallow Arctic atmospheric lapse-rate inversions and thawing permafrost microbial respiration.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Global Climate Change",
+    "abilityTags": [
+      "critical_thinking",
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-057",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 5,
+    "chapter": "Global Climate Change",
+    "topic": "Ocean Acidification Carbonate Chemistry",
+    "difficulty": "Hard",
+    "questionText": "How does oceanic uptake of ~25–30% of anthropogenic CO2 threaten calcifying marine organisms (pteropods, corals, coccolithophores) even while seawater pH stays above 7.0?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Dissolved CO2 forms carbonic acid that releases H+ ions; excess H+ scavenges free carbonate ions (CO3^2-) into bicarbonate (HCO3-), lowering aragonite saturation so shells dissolve or require higher metabolic energy to calcify"
+      },
+      {
+        "key": "B",
+        "text": "Seawater turns into concentrated pH 2.0 hydrochloric acid across tropical reefs"
+      },
+      {
+        "key": "C",
+        "text": "Excess CO2 precipitates all oceanic calcium onto abyssal plains instantly"
+      },
+      {
+        "key": "D",
+        "text": "Higher dissolved CO2 freezes coral polyps at 28°C"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "'Acidification' refers to shifting down from ~8.2 toward ~8.05 (a ~30% rise in [H+]); the critical biological bottleneck is depletion of free CO3^2- needed to precipitate CaCO3.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Global Climate Change",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-058",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 5,
+    "chapter": "Global Climate Change",
+    "topic": "Stratospheric Volcanic Aerosols vs Greenhouse Gases",
+    "difficulty": "Hard",
+    "questionText": "Following the 1991 Mount Pinatubo eruption, global mean surface temperature dropped by ~0.5°C for 1–2 years despite volcanic CO2 release. Why?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Volcanic ash permanently absorbed all atmospheric CO2 and methane worldwide"
+      },
+      {
+        "key": "B",
+        "text": "Sulphur dioxide injected into the stable stratosphere oxidised into reflective H2SO4 sulphate aerosol droplets, increasing planetary albedo and backscattering incoming solar shortwave radiation"
+      },
+      {
+        "key": "C",
+        "text": "Pinatubo shifted Earth's axial tilt by 2 degrees away from the Sun"
+      },
+      {
+        "key": "D",
+        "text": "Ash clouds trapped outgoing infrared radiation, cooling the surface via greenhouse action"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Unlike short-lived tropospheric rain-out, stratospheric sulphate aerosols linger 1–3 years, scattering incoming solar radiation (negative radiative forcing) before settling out.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Global Climate Change",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-059",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 5,
+    "chapter": "Global Climate Change",
+    "topic": "NAPCC & Maharashtra Climate Resilience Integration",
+    "difficulty": "Hard",
+    "questionText": "Within India's National Action Plan on Climate Change (NAPCC), why must mitigation (National Solar & Enhanced Energy Efficiency Missions) be paired with adaptation (Sustainable Agriculture & Water Missions) in Maharashtra?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Solar panels in Vidarbha instantly stop cyclones in the Arabian Sea within weeks"
+      },
+      {
+        "key": "B",
+        "text": "Adaptation replaces the need to reduce coal emissions anywhere on Earth"
+      },
+      {
+        "key": "C",
+        "text": "Even aggressive global decarbonisation cannot erase locked-in monsoon variability—erratic dry spells in Marathwada and extreme Konkan downpours—requiring drought-tolerant cultivars, micro-irrigation, and coastal resilience alongside clean energy"
+      },
+      {
+        "key": "D",
+        "text": "Maharashtra's climate is decoupled from Indian Ocean sea-surface temperatures"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Climate policy requires twin tracks: mitigation curbs long-term radiative forcing, while adaptation reduces vulnerability of rainfed agriculture, watersheds, and coastal cities to committed warming.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Global Climate Change",
+    "abilityTags": [
+      "critical_thinking",
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-060",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 6,
+    "chapter": "Ocean Resources",
+    "topic": "Continental Shelf Fisheries Productivity",
+    "difficulty": "Easy",
+    "questionText": "Why do shallow continental shelves (<200 m depth) such as Dogger Bank and Grand Banks yield the vast majority of world marine fish harvests?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Hydrothermal vents boil shelf waters to 350°C year-round"
+      },
+      {
+        "key": "B",
+        "text": "Abyssal trenches >6,000 m deep receive more sunlight than shelves"
+      },
+      {
+        "key": "C",
+        "text": "Salinity on continental shelves is ten times higher than in the Dead Sea"
+      },
+      {
+        "key": "D",
+        "text": "Sunlight penetrates the entire photic water column and river/upwelling nutrients fuel dense phytoplankton blooms at the base of marine food webs"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Shallow neritic waters combine full euphotic illumination, tidal mixing, riverine mineral input, and cold/warm current convergence (e.g., Labrador + Gulf Stream on Grand Banks).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Ocean Resources",
+    "abilityTags": [
+      "communication",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-061",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 6,
+    "chapter": "Ocean Resources",
+    "topic": "Offshore Hydrocarbon Province of India",
+    "difficulty": "Easy",
+    "questionText": "India's largest offshore crude oil and natural gas production field is located on the broad western continental shelf off Maharashtra at:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Mumbai High (Bombay High)"
+      },
+      {
+        "key": "B",
+        "text": "Palk Strait abyssal plain"
+      },
+      {
+        "key": "C",
+        "text": "Chilika Lagoon spit"
+      },
+      {
+        "key": "D",
+        "text": "Ninety East Ridge summit"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Discovered in 1974 ~160 km west of Mumbai in shallow Arabian Sea shelf carbonate reservoirs, Mumbai High remains India's premier offshore hydrocarbon asset.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Ocean Resources",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-062",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 6,
+    "chapter": "Ocean Resources",
+    "topic": "UNCLOS Exclusive Economic Zone (EEZ)",
+    "difficulty": "Easy",
+    "questionText": "Under the 1982 UN Convention on the Law of the Sea (UNCLOS), up to how many nautical miles from the coastal baseline does a nation hold sovereign rights to explore and manage living and non-living marine resources?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "12 nautical miles"
+      },
+      {
+        "key": "B",
+        "text": "200 nautical miles"
+      },
+      {
+        "key": "C",
+        "text": "24 nautical miles"
+      },
+      {
+        "key": "D",
+        "text": "1,000 nautical miles"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "UNCLOS defines 12 NM territorial sea, 24 NM contiguous zone, and a 200 NM Exclusive Economic Zone (EEZ) granting sovereign resource jurisdiction over water column, seabed, and subsoil.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Ocean Resources",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-063",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 6,
+    "chapter": "Ocean Resources",
+    "topic": "Abyssal Polymetallic Nodules",
+    "difficulty": "Medium",
+    "questionText": "Why has India been allocated pioneer exploration blocks by the International Seabed Authority (ISA) in the Central Indian Ocean Basin?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "To drill shallow coal seams in coral lagoons"
+      },
+      {
+        "key": "B",
+        "text": "To harvest freshwater icebergs drifting north of the equator"
+      },
+      {
+        "key": "C",
+        "text": "To survey and develop potato-sized abyssal polymetallic nodules rich in manganese, nickel, copper, and cobalt critical for clean-energy batteries and alloys"
+      },
+      {
+        "key": "D",
+        "text": "To reclaim volcanic islands for wheat cultivation"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "At 4,000–6,000 m depth on abyssal plains, hydrogenetic/diagenetic polymetallic nodules concentrate battery-grade Co, Ni, Cu, and Mn regulated in 'The Area' by ISA.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Ocean Resources",
+    "abilityTags": [
+      "interpretation",
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-064",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 6,
+    "chapter": "Ocean Resources",
+    "topic": "OTEC (Ocean Thermal Energy Conversion) Feasibility",
+    "difficulty": "Medium",
+    "questionText": "Which physical ocean condition makes tropical seas surrounding Lakshadweep and Andaman-Nicobar viable for Ocean Thermal Energy Conversion (OTEC)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Tidal ranges exceeding 18 metres every six hours"
+      },
+      {
+        "key": "B",
+        "text": "Submarine basalt eruptions heating shallow bays to 100°C"
+      },
+      {
+        "key": "C",
+        "text": "Surface sea-ice sheets alternating every fortnight"
+      },
+      {
+        "key": "D",
+        "text": "A persistent vertical temperature differential of at least 20°C between warm surface waters (~27–29°C) and cold deep waters (~5–7°C at ~1,000 m)"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "OTEC Rankine-cycle engines vaporise a low-boiling working fluid (like ammonia) with warm tropical surface water and condense it using cold deep seawater pumped from ~1 km depth.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Ocean Resources",
+    "abilityTags": [
+      "interpretation",
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-065",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 6,
+    "chapter": "Ocean Resources",
+    "topic": "Monazite Coastal Placer Deposits",
+    "difficulty": "Medium",
+    "questionText": "Wave winnowing along Kerala and south Tamil Nadu beaches concentrates heavy black-sand placer deposits of 'monazite', valued strategically for:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Thorium and rare-earth elements vital to India's three-stage nuclear energy programme"
+      },
+      {
+        "key": "B",
+        "text": "Bituminous coking coal for blast furnaces"
+      },
+      {
+        "key": "C",
+        "text": "Potash and rock phosphate for desert irrigation"
+      },
+      {
+        "key": "D",
+        "text": "Bauxite ore for aircraft fuselages"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Wave swash/backwash selectively washes away lighter quartz while concentrating dense heavy minerals (ilmenite, rutile, zircon, and thorium-bearing monazite) derived from Western Ghats crystalline rocks.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Ocean Resources",
+    "abilityTags": [
+      "communication",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-066",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 6,
+    "chapter": "Ocean Resources",
+    "topic": "Upwelling vs El Niño Fisheries Collapse",
+    "difficulty": "Medium",
+    "questionText": "Why does the Peruvian anchoveta fishery—normally one of Earth's richest—crash sharply during strong El Niño episodes?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Submarine earthquakes drain the Peru-Chile Trench dry"
+      },
+      {
+        "key": "B",
+        "text": "Slackening southeast trade winds halt cold nutrient-rich Humboldt coastal upwelling, capping the eastern Pacific with warm, nutrient-poor water that starves phytoplankton"
+      },
+      {
+        "key": "C",
+        "text": "Antarctic pack ice freezes Lima harbour during December"
+      },
+      {
+        "key": "D",
+        "text": "Overabundant river silt turns coastal waters into freshwater swamps"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Normally, offshore Ekman transport draws cold nitrate/phosphate-rich deep water to the sunlit surface; El Niño deepens the thermocline with warm oligotrophic water, collapsing trophic productivity.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Ocean Resources",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-067",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 6,
+    "chapter": "Ocean Resources",
+    "topic": "Marine Gas Hydrates: Energy Promise vs Climate Hazard",
+    "difficulty": "Hard",
+    "questionText": "Crystalline methane clathrates (gas hydrates) locked in continental slope sediments (e.g., Krishna-Godavari and Andaman basins) pose which dual scientific challenge?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "They burn cleanly into solid limestone without emitting any carbon"
+      },
+      {
+        "key": "B",
+        "text": "They exist exclusively on sunlit coral reef crests above 5 m depth"
+      },
+      {
+        "key": "C",
+        "text": "They hold vast natural-gas energy potential under high pressure and low temperature, yet depressurisation or ocean warming during extraction risks seafloor slope failure and potent methane release"
+      },
+      {
+        "key": "D",
+        "text": "They solidify seawater permanently if brought to atmospheric pressure"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "One cubic metre of methane hydrate cages ~164 m³ of CH4 gas at STP inside water-ice lattices; safe commercial production must maintain geomechanical slope stability inside the hydrate stability zone.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Ocean Resources",
+    "abilityTags": [
+      "critical_thinking",
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-068",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 6,
+    "chapter": "Ocean Resources",
+    "topic": "Deep-Sea Mining Ecological Trade-offs",
+    "difficulty": "Hard",
+    "questionText": "Why do marine ecologists urge precautionary environmental baselines before commercial harvesting of abyssal polymetallic nodules and hydrothermal-vent sulphides?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Deep-sea collectors block sunlight from reaching abyssal kelp forests at 5,000 m depth"
+      },
+      {
+        "key": "B",
+        "text": "Nodule harvesting doubles global sea level within a year"
+      },
+      {
+        "key": "C",
+        "text": "Abyssal plains contain zero living organisms or microbial communities"
+      },
+      {
+        "key": "D",
+        "text": "Slow-growing, endemic abyssal and chemosynthetic fauna inhabit ultra-stable substrates taking millions of years to accrete, and collector sediment plumes can smother filter-feeders far beyond mined tracks"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Nodules grow at only a few millimetres per million years and anchor specialized deep-sea sponges/xenophyophores, while midwater tailing plumes disrupt mesopelagic food webs.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Ocean Resources",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-069",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 6,
+    "chapter": "Ocean Resources",
+    "topic": "Blue Economy vs Tragedy of the Marine Commons",
+    "difficulty": "Hard",
+    "questionText": "How does a sustainable 'Blue Economy' framework reconcile coastal livelihoods with marine ecosystem integrity?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "By pairing science-based MSY fishery quotas, seasonal mechanized-trawling bans during breeding, mangrove carbon conservation, and marine spatial planning against ghost gear and eutrophication"
+      },
+      {
+        "key": "B",
+        "text": "By subsidising unlimited bottom-trawling across coral spawning grounds to maximise short-term exports"
+      },
+      {
+        "key": "C",
+        "text": "By converting all coastal mangrove estuaries into concrete industrial landfills"
+      },
+      {
+        "key": "D",
+        "text": "By banning artisanal coastal communities while leaving high-seas factory ships unregulated"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Unlike extractive open-access depletion ('tragedy of the commons'), Blue Economy governance treats mangroves, reefs, and fish stocks as regenerative natural capital.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Ocean Resources",
+    "abilityTags": [
+      "critical_thinking",
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-070",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 7,
+    "chapter": "Indian Ocean - Relief and Strategic Importance",
+    "topic": "Deepest Trench of the Indian Ocean",
+    "difficulty": "Easy",
+    "questionText": "Where does the Indian Ocean reach its greatest bathymetric depth (~7,290 m), formed by subduction of the Indo-Australian plate?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Mariana Trench"
+      },
+      {
+        "key": "B",
+        "text": "Java (Sunda) Trench"
+      },
+      {
+        "key": "C",
+        "text": "Puerto Rico Trench"
+      },
+      {
+        "key": "D",
+        "text": "Carlsberg Ridge"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Unlike the Pacific, the Indian Ocean has relatively few trenches; its deepest structural trough is the arcuate Sunda (Java) Trench off Sumatra and Java.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Indian Ocean - Relief and Strategic Importance",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-071",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 7,
+    "chapter": "Indian Ocean - Relief and Strategic Importance",
+    "topic": "Inverted-Y Mid-Oceanic Ridge",
+    "difficulty": "Easy",
+    "questionText": "Which submarine volcanic ridge forms the northwestern arm of the Indian Ocean's inverted-Y mid-oceanic ridge system, extending toward the Gulf of Aden?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Ninety East Ridge"
+      },
+      {
+        "key": "B",
+        "text": "Walvis Ridge"
+      },
+      {
+        "key": "C",
+        "text": "Carlsberg Ridge"
+      },
+      {
+        "key": "D",
+        "text": "Lomonosov Ridge"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Divergent spreading along the Carlsberg Ridge separates the Indian and Somali/Arabian plates before bifurcating at the Rodrigues Triple Junction into the Southwest and Southeast Indian Ridges.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Indian Ocean - Relief and Strategic Importance",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-072",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 7,
+    "chapter": "Indian Ocean - Relief and Strategic Importance",
+    "topic": "Persian Gulf Energy Chokepoint",
+    "difficulty": "Easy",
+    "questionText": "Nearly one-fifth of globally traded petroleum and LNG transiting out of the Persian Gulf into the Arabian Sea must pass through the narrow:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Strait of Gibraltar"
+      },
+      {
+        "key": "B",
+        "text": "Bering Strait"
+      },
+      {
+        "key": "C",
+        "text": "Dover Strait"
+      },
+      {
+        "key": "D",
+        "text": "Strait of Hormuz"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Linking the Persian Gulf with the Gulf of Oman and Arabian Sea between Iran and Oman/UAE, the Strait of Hormuz is the world's premier maritime oil chokepoint.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Indian Ocean - Relief and Strategic Importance",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-073",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 7,
+    "chapter": "Indian Ocean - Relief and Strategic Importance",
+    "topic": "Unique Monsoon Current Reversal in the North Indian Ocean",
+    "difficulty": "Medium",
+    "questionText": "Why do surface ocean gyres in the Northern Indian Ocean reverse direction completely twice a year, unlike the permanent clockwise gyres of the North Atlantic and North Pacific?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Landlocked north of ~25°N by the Asian landmass, the North Indian Ocean experiences full seasonal wind reversal between winter Northeast Trades/Monsoon and summer Southwest Monsoon winds"
+      },
+      {
+        "key": "B",
+        "text": "Earth's Coriolis force reverses sign across the Tropic of Cancer every June"
+      },
+      {
+        "key": "C",
+        "text": "Melting Himalayan glaciers push Arabian Sea currents southward in July"
+      },
+      {
+        "key": "D",
+        "text": "Tidal pull from the Carlsberg Ridge flips every equinox"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Without an open Arctic outlet, differential heating of Asia drives SW Monsoon winds (clockwise Somali upwelling drift) in summer and NE Monsoon winds (counter-clockwise drift) in winter.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Indian Ocean - Relief and Strategic Importance",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-074",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 7,
+    "chapter": "Indian Ocean - Relief and Strategic Importance",
+    "topic": "Ninety East Ridge Geodynamic Origin",
+    "difficulty": "Medium",
+    "questionText": "Stretching ~5,000 km almost straight along the 90°E meridian from the Bay of Bengal toward the Southeast Indian Ridge, the aseismic Ninety East Ridge represents:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "An active continental collision fold belt rising above sea level"
+      },
+      {
+        "key": "B",
+        "text": "A volcanic hotspot track etched onto the northward-drifting Indian Plate as it passed over the deep Kerguelen mantle plume"
+      },
+      {
+        "key": "C",
+        "text": "A deep oceanic subduction trench swallowing the Burmese plate"
+      },
+      {
+        "key": "D",
+        "text": "A river delta drowned during Holocene sea-level rise"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Unlike spreading mid-ocean ridges, the linear aseismic Ninety East Ridge marks progressive hotspot volcanism during India's rapid Late Cretaceous–Cenozoic northward drift.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Indian Ocean - Relief and Strategic Importance",
+    "abilityTags": [
+      "interpretation",
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-075",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 7,
+    "chapter": "Indian Ocean - Relief and Strategic Importance",
+    "topic": "Arabian Sea vs Bay of Bengal Surface Salinity",
+    "difficulty": "Medium",
+    "questionText": "Why is average surface salinity significantly higher in the Arabian Sea (~36‰) than in the Bay of Bengal (~30–33‰) at identical tropical latitudes?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "The Bay of Bengal is fed directly by melting Antarctic icebergs"
+      },
+      {
+        "key": "B",
+        "text": "Subsea rock-salt domes dissolve exclusively off Mumbai"
+      },
+      {
+        "key": "C",
+        "text": "The Arabian Sea experiences high net evaporation bordered by arid Arabia/Thar with minimal river runoff, whereas the Bay of Bengal receives massive freshwater discharge (Ganga-Brahmaputra, Godavari, Irrawaddy) and heavy rainfall"
+      },
+      {
+        "key": "D",
+        "text": "Rivers flowing into the Arabian Sea carry concentrated brine"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Salinity reflects (Evaporation − Precipitation − River Influx): arid surroundings and Red Sea/Persian Gulf outflow raise Arabian Sea salinity, while giant monsoonal rivers freshen and stratify the Bay of Bengal.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Indian Ocean - Relief and Strategic Importance",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-076",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 7,
+    "chapter": "Indian Ocean - Relief and Strategic Importance",
+    "topic": "Bab-el-Mandeb & Malacca Twin Chokepoints",
+    "difficulty": "Medium",
+    "questionText": "Which pair of straits forms the critical western Red Sea gateway and eastern Pacific gateway framing Indian Ocean East–West container shipping lanes?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Bosporus in the west and Magellan in the east"
+      },
+      {
+        "key": "B",
+        "text": "Palk Strait in the west and Bass Strait in the east"
+      },
+      {
+        "key": "C",
+        "text": "Davis Strait in the west and Sunda Strait in thewest"
+      },
+      {
+        "key": "D",
+        "text": "Bab-el-Mandeb in the west and Strait of Malacca in the east"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Europe–Asia maritime trade enters the Indian Ocean via Suez and Bab-el-Mandeb (between Yemen and Djibouti/Eritrea) and exits to East Asia via the narrow Strait of Malacca.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Indian Ocean - Relief and Strategic Importance",
+    "abilityTags": [
+      "communication",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-077",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 7,
+    "chapter": "Indian Ocean - Relief and Strategic Importance",
+    "topic": "Bay of Bengal Tropical Cyclone Asymmetry",
+    "difficulty": "Hard",
+    "questionText": "Why does the Bay of Bengal generate roughly four times as many severe post-monsoon and pre-monsoon tropical cyclones as the Arabian Sea (though Arabian Sea intensification is now rising)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Freshwater stratification creates a shallow barrier layer keeping Bay SSTs persistently >28°C with low vertical wind shear and incoming West Pacific typhoons/remnants, whereas summer Somali upwelling historically cooled the western Arabian Sea"
+      },
+      {
+        "key": "B",
+        "text": "Coriolis parameter is zero across the entire Arabian Sea"
+      },
+      {
+        "key": "C",
+        "text": "The Bay of Bengal is 10,000 m deeper than the Arabian Sea"
+      },
+      {
+        "key": "D",
+        "text": "Western Ghats block Coriolis rotation over Lakshadweep"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Warm low-salinity surface water inhibits vertical mixing of cool subsurface water in the Bay of Bengal, sustaining high Tropical Cyclone Heat Potential, though anthropogenic warming is now boosting Arabian Sea rapid intensification too.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Indian Ocean - Relief and Strategic Importance",
+    "abilityTags": [
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-078",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 7,
+    "chapter": "Indian Ocean - Relief and Strategic Importance",
+    "topic": "Peninsular India's Geostrategic Maritime Centrality",
+    "difficulty": "Hard",
+    "questionText": "How do Lakshadweep in the west and the Andaman & Nicobar archipelago (Indira Point / Six Degree Channel) in the east amplify India's maritime domain awareness?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "They physically block all international commercial shipping from entering the Indian Ocean"
+      },
+      {
+        "key": "B",
+        "text": "Projecting 1,200 km into the Bay of Bengal right astride the Six-Degree Channel entrance to the Strait of Malacca and guarding Nine-Degree Channel SLOCs in the Arabian Sea, they act as natural unsinkable maritime sentinels and expand India's EEZ by ~30%"
+      },
+      {
+        "key": "C",
+        "text": "They connect mainland India by land bridges to Madagascar and Australia"
+      },
+      {
+        "key": "D",
+        "text": "They lie outside UNCLOS jurisdiction in Antarctic waters"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Great Nicobar sits barely ~90 NM from Aceh at the funnel into Malacca, while Minicoy/Lakshadweep straddle the Nine-Degree Channel linking Suez/Gulf shipping to East Asia, anchoring India's SAGAR ('Security and Growth for All in the Region') doctrine.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Indian Ocean - Relief and Strategic Importance",
+    "abilityTags": [
+      "critical_thinking",
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-079",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 7,
+    "chapter": "Indian Ocean - Relief and Strategic Importance",
+    "topic": "Indian Ocean Dipole (IOD) Teleconnection",
+    "difficulty": "Hard",
+    "questionText": "During a 'Positive Indian Ocean Dipole' (+IOD) summer, how do sea-surface temperature anomalies across the equatorial Indian Ocean modulate Indian monsoon rainfall?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Freezing waters off Somalia shut down the Findlater Jet completely and cause nationwide drought"
+      },
+      {
+        "key": "B",
+        "text": "Warm waters off Sumatra pull all monsoon clouds southward to Antarctica"
+      },
+      {
+        "key": "C",
+        "text": "Warmer-than-normal western Indian Ocean SSTs off East Africa paired with cooler upwelling waters off Sumatra enhance cross-equatorial moisture transport toward India, often buffering monsoon rains even during moderate El Niño years"
+      },
+      {
+        "key": "D",
+        "text": "Positive IOD affects only European winter snowfall and never tropical convection"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Discovered by Saji et al. (1999), a +IOD sets up rising motion and moisture flux over the western/northern Indian Ocean while suppressing convection over Indonesia/Australia (as seen in 1997 and 2019).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Indian Ocean - Relief and Strategic Importance",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-080",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 8,
+    "chapter": "Biomes",
+    "topic": "Biome Ecological Definition",
+    "difficulty": "Easy",
+    "questionText": "In biogeography, what defines a terrestrial 'biome'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "A single species population living inside one laboratory aquarium"
+      },
+      {
+        "key": "B",
+        "text": "A political province delineated by linguistic boundaries"
+      },
+      {
+        "key": "C",
+        "text": "An underground mineral vein unaffected by solar energy"
+      },
+      {
+        "key": "D",
+        "text": "A large-scale regional ecological unit characterised by distinctive climax vegetation and adapted fauna shaped primarily by macroclimate (temperature and precipitation)"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Biomes group ecosystems sharing similar climatic envelopes and plant life-forms (e.g., Tropical Rainforest, Savanna, Desert, Taiga, Tundra) across continents.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Biomes",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-081",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 8,
+    "chapter": "Biomes",
+    "topic": "Drip-Tip Leaf Adaptation",
+    "difficulty": "Easy",
+    "questionText": "Smooth, waxy leaves with elongated pointed 'drip tips' and woody climbing 'lianas' competing for canopy light are classic adaptations of the:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Tropical Evergreen Rainforest biome"
+      },
+      {
+        "key": "B",
+        "text": "Arctic Tundra biome"
+      },
+      {
+        "key": "C",
+        "text": "Subtropical Hot Desert biome"
+      },
+      {
+        "key": "D",
+        "text": "Temperate Steppe grassland biome"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Pointed drip tips shed heavy daily equatorial downpours rapidly to inhibit epiphyllous fungal/algal growth that would block photosynthesis, while lianas climb tall emergents toward sunlight.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Biomes",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-082",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 8,
+    "chapter": "Biomes",
+    "topic": "Permafrost Dwarf Biome",
+    "difficulty": "Easy",
+    "questionText": "Treeless plains beyond the Arctic treeline dominated by mosses, lichens, sedges, dwarf willows, caribou, and snowy owls constitute the:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Chaparral (Mediterranean) biome"
+      },
+      {
+        "key": "B",
+        "text": "Tundra biome"
+      },
+      {
+        "key": "C",
+        "text": "Monsoon Deciduous biome"
+      },
+      {
+        "key": "D",
+        "text": "Pampas Grassland biome"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Short 6–8 week growing seasons, sub-zero annual means, icy winds, and shallow permafrost restrict Arctic Tundra flora to low-stature cryptogams and dwarf shrubs.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Biomes",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-083",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 8,
+    "chapter": "Biomes",
+    "topic": "Coniferous Needle-Leaf Forest",
+    "difficulty": "Easy",
+    "questionText": "Why is commercial softwood lumbering far easier in the Boreal Taiga biome than in species-rich Tropical Rainforests?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Taiga trees grow 10 times faster than equatorial trees due to year-round 35°C heat"
+      },
+      {
+        "key": "B",
+        "text": "Tropical rainforests contain only one species of tree per thousand square kilometres"
+      },
+      {
+        "key": "C",
+        "text": "Taiga forests grow in extensive, nearly pure homogeneous stands of light coniferous softwoods (spruce, pine, fir, larch) over frozen winter ground aiding transport"
+      },
+      {
+        "key": "D",
+        "text": "Coniferous trees lack cellulose and float through the air"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Whereas rainforests scatter hundreds of dense hardwood species per hectare across muddy terrain, boreal forests offer uniform softwood stands suited for pulp, paper, and timber.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Biomes",
+    "abilityTags": [
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-084",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 8,
+    "chapter": "Biomes",
+    "topic": "Tropical Rainforest Soil Fertility Paradox",
+    "difficulty": "Medium",
+    "questionText": "Why do lush, high-biomass Tropical Rainforests often yield poor harvests within 2–3 years when cleared for slash-and-burn monoculture?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Rainforest bedrock consists purely of toxic lead and mercury"
+      },
+      {
+        "key": "B",
+        "text": "Clearing canopy trees drops soil temperatures below freezing year-round"
+      },
+      {
+        "key": "C",
+        "text": "Earthworms convert tropical clay into impermeable glass upon ploughing"
+      },
+      {
+        "key": "D",
+        "text": "Warm torrential rains intensely leach silica and bases into acidic oxisols/latosols; nearly all nutrients are locked inside living biomass and recycled rapidly by surface mycorrhizal fungi rather than stored in deep humus"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "High bacterial decomposition prevents thick litter accumulation while heavy rain leaches bare soil; removing the canopy severs the tight closed nutrient loop and bakes iron-aluminum oxides into hardpan.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Biomes",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-085",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 8,
+    "chapter": "Biomes",
+    "topic": "Xerophytic & Fossorial Desert Adaptations",
+    "difficulty": "Medium",
+    "questionText": "How do desert flora (opuntia/cacti, acacia) and fauna (kangaroo rat, fennec fox) co-adapt to extreme aridity and diurnal thermal swings?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Plants replace leaves with spines, store mucilaginous water in succulent photosynthetic stems (CAM metabolism), or sink phreatophytic taproots, while animals adopt nocturnal/burrowing habits and concentrate metabolic water"
+      },
+      {
+        "key": "B",
+        "text": "Desert cacti open wide stomata at noon to cool down via maximum transpiration"
+      },
+      {
+        "key": "C",
+        "text": "Desert mammals hibernate under thick blubber layers in surface ponds"
+      },
+      {
+        "key": "D",
+        "text": "Desert shrubs rely on aerial roots absorbing fog at 5,000 m altitude"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "CAM plants open stomata at night to fix CO2 with minimal water loss, while nocturnal fossorial rodents avoid daytime ground temperatures (>55°C) and oxidise dry seeds for metabolic moisture.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Biomes",
+    "abilityTags": [
+      "interpretation",
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-086",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 8,
+    "chapter": "Biomes",
+    "topic": "Altitudinal Zonation on High Tropical Mountains",
+    "difficulty": "Medium",
+    "questionText": "Ascending from the base of the Eastern Himalayas (~300 m) to 5,500 m mirrors a latitudinal journey toward the North Pole because:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Gravity weakens by 50% at 5,000 m, preventing tree roots from anchoring"
+      },
+      {
+        "key": "B",
+        "text": "Environmental lapse rate (~6.5°C cooling per 1,000 m) and changing orographic moisture create stacked belts from wet tropical/subtropical broadleaf forest to temperate oaks, subalpine conifers, alpine meadows, and nival ice"
+      },
+      {
+        "key": "C",
+        "text": "Oxygen disappears completely above 1,500 m elevation"
+      },
+      {
+        "key": "D",
+        "text": "Day length changes from 12 hours at the base to 6 months of darkness at the summit"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Alexander von Humboldt pioneered altitudinal zonation: thermal drop with elevation replicates broadleaf-to-taiga-to-tundra structural transitions, though tropical mountains retain diurnal ('winter every night') solar seasonality.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Biomes",
+    "abilityTags": [
+      "interpretation",
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-087",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 8,
+    "chapter": "Biomes",
+    "topic": "Podzolisation in Boreal Coniferous Soils",
+    "difficulty": "Medium",
+    "questionText": "Why are mature soils beneath Boreal Taiga conifers ('Podzols' / Spodosols) strongly acidic, ash-grey in the eluvial horizon, and poorly suited to arable farming?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Calcification precipitates calcium carbonate nodules at the soil surface"
+      },
+      {
+        "key": "B",
+        "text": "Termite mounds mix alkaline limestone evenly to 3 metres depth"
+      },
+      {
+        "key": "C",
+        "text": "Resinous needle litter decomposes slowly under cold temperatures into acidic mor humus; percolating snowmelt chelates and leaches iron, aluminium, and bases out of a bleached E-horizon"
+      },
+      {
+        "key": "D",
+        "text": "High monsoon evaporation draws sodium salts upward into white crusts"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Conifer needles are low in base cations (Ca, Mg, K) and rich in waxy resins/tannins; acidic cold-climate leaching leaves a nutrient-poor silica-bleached ash-grey horizon.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Biomes",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-088",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 8,
+    "chapter": "Biomes",
+    "topic": "Savanna Coexistence of Trees and Grasses (Walter's Hypothesis & Fire)",
+    "difficulty": "Hard",
+    "questionText": "What ecological mechanisms prevent tropical Savannas with 900 mm rainfall from either closing completely into forest or reverting entirely to treeless grassland?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Annual winter blizzards snapping tree crowns above 2 metres"
+      },
+      {
+        "key": "B",
+        "text": "Permafrost blocking taproot penetration below 30 cm"
+      },
+      {
+        "key": "C",
+        "text": "Complete absence of nitrogen-fixing bacteria in tropical soils"
+      },
+      {
+        "key": "D",
+        "text": "Root-niche partitioning (shallow fibrous C4 grass roots capturing light showers vs deep woody taproots), coupled with dry-season wildfires and megafaunal browsing (elephants/ungulates) that suppress tree-sapling recruitment"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Mesic savannas represent disturbance-maintained bistable/dynamic mosaics where fire and herbivory kill juvenile woody seedlings before their bark thickens enough to survive grass fires.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Biomes",
+    "abilityTags": [
+      "critical_thinking",
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-089",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 8,
+    "chapter": "Biomes",
+    "topic": "Coral Reef Symbiosis and Thermal Bleaching",
+    "difficulty": "Hard",
+    "questionText": "Often termed 'rainforests of the sea', why do shallow tropical Scleractinian coral reefs turn stark white ('bleach') when sea-surface temperatures exceed summer maxima by just 1–2°C for several weeks?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Thermal and oxidative stress disrupts intracellular photosystem II in symbiotic dinoflagellate algae (zooxanthellae), prompting coral polyps to expel the pigmented symbionts that supply up to 90% of their metabolic energy"
+      },
+      {
+        "key": "B",
+        "text": "Warm seawater dissolves white quartz sand onto healthy coral skeletons overnight"
+      },
+      {
+        "key": "C",
+        "text": "Crown-of-thorns starfish paint coral branches white to attract prey"
+      },
+      {
+        "key": "D",
+        "text": "Corals migrate into deep aphotic trenches during warm months"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Without zooxanthellae, translucent coral tissue reveals the white CaCO3 skeleton beneath; if thermal stress persists, starved polyps die and macroalgae overgrow the reef framework.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Biomes",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-090",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 8,
+    "chapter": "Biomes",
+    "topic": "Western Ghats Shola–Grassland Sky-Island Mosaic",
+    "difficulty": "Hard",
+    "questionText": "Above ~1,800 m in the Nilgiris and Anamalais, stunted evergreen 'Shola' forests nestle in sheltered valleys while frost-hardy C4 grasslands blanket exposed ridges. Why is planting exotic timber monocultures (wattle, eucalyptus, pine) across these grasslands ecologically harmful?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Exotic eucalyptus trees immediately convert basalt ridges into active glaciers"
+      },
+      {
+        "key": "B",
+        "text": "Montane grasslands are ancient frost- and wind-adapted climax ecosystems acting as high-altitude sponges that regulate dry-season stream baseflow; exotic tree plantations transpire heavily, invade native turf, and displace endemic fauna like the Nilgiri tahr"
+      },
+      {
+        "key": "C",
+        "text": "Shola valleys naturally lack rainfall and survive solely on desert dew"
+      },
+      {
+        "key": "D",
+        "text": "Planting wattle increases endemic Nilgiri pipit and tahr grazing habitat tenfold"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Colonial misclassification of montane grasslands as 'wastelands' led to invasive wattle/pine planting; paleoecological pollen records confirm Shola-grassland mosaics are co-evolved Pleistocene climax communities.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Biomes",
+    "abilityTags": [
+      "critical_thinking",
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-091",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 9,
+    "chapter": "Disaster Management",
+    "topic": "Hazard vs Disaster Equation",
+    "difficulty": "Easy",
+    "questionText": "When does a natural geophysical or hydrometeorological 'hazard' (such as an earthquake or cyclone) become a 'disaster'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Every time a bolt of lightning strikes an uninhabited mid-ocean wave"
+      },
+      {
+        "key": "B",
+        "text": "Whenever daily weather forecasts predict light afternoon breezes"
+      },
+      {
+        "key": "C",
+        "text": "When the hazardous event strikes an exposed, vulnerable human population or asset base whose coping capacity is exceeded"
+      },
+      {
+        "key": "D",
+        "text": "Only when extraterrestrial asteroids strike continental cratons"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "In disaster science, Risk = (Hazard × Exposure × Vulnerability) / Coping Capacity; an M7.5 quake on an uninhabited island is a natural event/hazard, not a human disaster.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Disaster Management",
+    "abilityTags": [
+      "communication",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-092",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 9,
+    "chapter": "Disaster Management",
+    "topic": "Statutory Disaster Governance in India",
+    "difficulty": "Easy",
+    "questionText": "Under India's Disaster Management Act, 2005, which apex national body chaired ex-officio by the Prime Minister formulates disaster management policies and guidelines?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Survey of India (SOI)"
+      },
+      {
+        "key": "B",
+        "text": "Geological Survey of India (GSI)"
+      },
+      {
+        "key": "C",
+        "text": "Central Water Commission (CWC)"
+      },
+      {
+        "key": "D",
+        "text": "National Disaster Management Authority (NDMA)"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Enacted after the 1999 Odisha Super Cyclone and 2004 Indian Ocean Tsunami, the DM Act 2005 established NDMA (national), SDMA (state, chaired by CM), and DDMA (district) alongside NDRF.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Disaster Management",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-093",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 9,
+    "chapter": "Disaster Management",
+    "topic": "Drop, Cover, and Hold On Protocol",
+    "difficulty": "Easy",
+    "questionText": "During strong indoor seismic shaking when immediate open-air exit is impossible, what is the standard life-safety protective action?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Drop to hands and knees, take Cover beneath a sturdy desk/table away from glass and exterior walls, and Hold On until shaking stops"
+      },
+      {
+        "key": "B",
+        "text": "Board the building's high-speed passenger elevator immediately"
+      },
+      {
+        "key": "C",
+        "text": "Stand directly beneath heavy crystal chandeliers or unreinforced parapets"
+      },
+      {
+        "key": "D",
+        "text": "Jump from upper-storey balconies during peak ground acceleration"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "'Drop, Cover, and Hold On' shields the head and torso from falling non-structural debris—the leading cause of injury where engineered frames remain standing—while avoiding lifts and stairwells mid-tremor.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Disaster Management",
+    "abilityTags": [
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-094",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 9,
+    "chapter": "Disaster Management",
+    "topic": "Disaster Management Cycle Phases",
+    "difficulty": "Medium",
+    "questionText": "Constructing cyclone shelters, enforcing BIS seismic building codes, and mapping floodplains BEFORE any emergency occurs belong to which phases of the Disaster Management Cycle?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Post-disaster Relief and Search-and-Rescue"
+      },
+      {
+        "key": "B",
+        "text": "Mitigation (structural/non-structural risk reduction) and Preparedness"
+      },
+      {
+        "key": "C",
+        "text": "Damage Assessment and Ad-hoc Compensation"
+      },
+      {
+        "key": "D",
+        "text": "Emergency Triage and Temporary Camp Rationing"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Modern disaster governance (Sendai Framework 2015–2030) shifts emphasis from reactive post-event relief toward pre-disaster mitigation (reducing structural risk) and preparedness (drills, early warning).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Disaster Management",
+    "abilityTags": [
+      "interpretation",
+      "communication"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-095",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 9,
+    "chapter": "Disaster Management",
+    "topic": "Tsunami Deep-Ocean vs Shoaling Physics",
+    "difficulty": "Medium",
+    "questionText": "Why can a tsunami pass almost unnoticed beneath a fishing vessel in 4,000 m deep ocean water yet rear into a devastating 10–30 m wall upon reaching a gently shelving bay?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Wind storms blow locally inside coastal bays just seconds before tsunami impact"
+      },
+      {
+        "key": "B",
+        "text": "Deep ocean water is denser than coastal granite"
+      },
+      {
+        "key": "C",
+        "text": "In deep ocean, long wavelengths (>100–200 km) travel at ~700–800 km/h with sub-metre amplitude; shallow coastal friction slows the wave front while rear energy catches up, compressing wavelength and conserving energy via dramatic shoaling amplification"
+      },
+      {
+        "key": "D",
+        "text": "Tidal bores pull ocean water away from the coast permanently without returning"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Tsunami phase speed c = √(g·d) drops sharply as depth d decreases on continental shelves; wavelength shortens while wave height swells rapidly (Green's Law shoaling).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Disaster Management",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-096",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 9,
+    "chapter": "Disaster Management",
+    "topic": "Urban Pluvial Flooding vs Fluvial Riverine Flooding",
+    "difficulty": "Medium",
+    "questionText": "Why do metropolitan centres like Mumbai, Chennai, and Pune increasingly suffer flash 'urban flooding' even when upstream major river dams are not overflowing?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Urban asphalt absorbs 100% of rainwater faster than forest soil"
+      },
+      {
+        "key": "B",
+        "text": "Skyscrapers prevent rain clouds from condensing over cities"
+      },
+      {
+        "key": "C",
+        "text": "Municipal storm drains are engineered for 500 mm/hour rainfall everywhere"
+      },
+      {
+        "key": "D",
+        "text": "Impervious concrete paving, encroached natural storm-water nullahs/wetlands, plastic-choked drains, and extreme short-duration cloudbursts coupled with high-tide outfall locking overwhelm drainage capacity"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Replacing permeable watersheds, mangroves, and tanks with concrete raises runoff coefficients near 0.9 and slashes lag time; in coastal Mumbai, spring high tides simultaneously block gravity storm outfalls.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Disaster Management",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-097",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 9,
+    "chapter": "Disaster Management",
+    "topic": "Remote Sensing & GIS in Hazard Zonation",
+    "difficulty": "Medium",
+    "questionText": "Why are Synthetic Aperture Radar (SAR) satellites (such as RISAT / Sentinel-1) indispensable during active monsoon flood mapping compared to optical cameras?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Active microwave SAR signals penetrate dense monsoon cloud cover and operate day or night, cleanly distinguishing smooth floodwater specular reflection from rough terrain"
+      },
+      {
+        "key": "B",
+        "text": "Optical RGB cameras see straight through 12-km cumulonimbus clouds at midnight"
+      },
+      {
+        "key": "C",
+        "text": "SAR satellites physically pump floodwater back into reservoirs from orbit"
+      },
+      {
+        "key": "D",
+        "text": "Microwave sensors measure only subterranean mantle convection"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "During peak cyclones and floods when optical satellites are blinded by thick clouds and darkness, microwave SAR delivers all-weather inundation maps and InSAR ground-deformation interferograms.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Disaster Management",
+    "abilityTags": [
+      "interpretation",
+      "critical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-098",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 9,
+    "chapter": "Disaster Management",
+    "topic": "Sendai Framework 'Build Back Better' Principle",
+    "difficulty": "Hard",
+    "questionText": "After a destructive earthquake or cyclone, what does Priority 4 ('Build Back Better' in recovery, rehabilitation, and reconstruction) of the UN Sendai Framework (2015–2030) require?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Rebuilding identical unreinforced mud-brick structures directly straddling active fault scarps to save immediate costs"
+      },
+      {
+        "key": "B",
+        "text": "Using the reconstruction window to upgrade seismic/wind-resistant engineering, relocate critical hospitals/schools out of high-hazard zones, and address root social vulnerabilities rather than recreating pre-disaster fragility"
+      },
+      {
+        "key": "C",
+        "text": "Abandoning affected districts permanently without consulting local communities"
+      },
+      {
+        "key": "D",
+        "text": "Spending 100% of recovery funds on commemorative monuments instead of lifeline infrastructure"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Simply restoring the status quo rebuilds the exact vulnerability that caused the disaster; 'Build Back Better' embeds multi-hazard resilience into housing, livelihoods, and lifelines.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Disaster Management",
+    "abilityTags": [
+      "critical_thinking",
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-099",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 9,
+    "chapter": "Disaster Management",
+    "topic": "Drought Typology Progression in Rainfed Deccan",
+    "difficulty": "Hard",
+    "questionText": "Trace the causal progression from 'meteorological drought' to 'hydrological' and 'socio-economic drought' in rainfed Marathwada.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Hydrological drought occurs overnight after a single sunny afternoon while reservoirs remain 100% full"
+      },
+      {
+        "key": "B",
+        "text": "Meteorological drought is defined solely by rising global wheat prices irrespective of rainfall"
+      },
+      {
+        "key": "C",
+        "text": "Prolonged seasonal rainfall deficiency (<75% of LPA) first depletes root-zone soil moisture (agricultural drought), then lowers reservoir inflows and basaltic aquifer water tables (hydrological drought), culminating in fodder scarcity, agrarian distress, and livelihood disruption"
+      },
+      {
+        "key": "D",
+        "text": "Hard-rock Deccan basalt aquifers hold infinite multi-decade primary porosity immune to rainfall failure"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Distinguishing drought stages enables early intervention—contingency crop planning during meteorological/agricultural onset before hard-rock groundwater depletion triggers severe drinking-water and distress crises.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Disaster Management",
+    "abilityTags": [
+      "critical_thinking",
+      "interpretation"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-art-geo-100",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "arts",
+    "subjectSlug": "arts-geography",
+    "subjectName": "Geography",
+    "chapterNumber": 9,
+    "chapter": "Disaster Management",
+    "topic": "Last-Mile Early Warning Efficacy (1999 vs Cyclone Phailin/Fani)",
+    "difficulty": "Hard",
+    "questionText": "India reduced eastern-coast cyclone fatalities from ~10,000 in 1999 to double digits during comparable Category-4/5 Cyclones Phailin (2013) and Fani (2019). Which systemic integration drove this transformation?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Artificial cloud seeding dissolved super-cyclones over the Andaman Sea before landfall"
+      },
+      {
+        "key": "B",
+        "text": "Bay of Bengal sea-surface temperatures cooled by 10°C after 2000"
+      },
+      {
+        "key": "C",
+        "text": "Coastal populations permanently migrated to Ladakh in 2001"
+      },
+      {
+        "key": "D",
+        "text": "Coupling IMD Doppler-radar/numerical track forecasts (72–120 h lead time) with community-trusted last-mile alerts, pre-positioned NDRF/ODRAF teams, multipurpose cyclone shelters, and mass evacuation drills"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Accurate meteorological physics succeeds only when translated into actionable, gender- and disability-inclusive community evacuation protocols, livestock shelters, and redundant emergency communications.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Disaster Management",
+    "abilityTags": [
+      "critical_thinking",
+      "creative_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  }
+]

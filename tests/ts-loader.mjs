@@ -50,7 +50,56 @@ export async function resolve(specifier, context, nextResolve) {
     }
   }
 
-  return nextResolve(specifier, context);
+  try {
+    return await nextResolve(specifier, context);
+  } catch (err) {
+    // Packages without an "exports" map (e.g. next/headers) need an explicit .js suffix under ESM.
+    if (
+      err &&
+      err.code === "ERR_MODULE_NOT_FOUND" &&
+      !specifier.startsWith(".") &&
+      !specifier.startsWith("node:") &&
+      !path.extname(specifier)
+    ) {
+      return nextResolve(specifier + ".js", context);
+    }
+    throw err;
+  }
+}
+
+let tsModule = null;
+async function getTs() {
+  if (!tsModule) {
+    const mod = await import(
+      pathToFileURL(path.join(ROOT, "node_modules", "typescript", "lib", "typescript.js")).href
+    );
+    tsModule = mod.default || mod;
+  }
+  return tsModule;
+}
+
+export async function load(url, context, nextLoad) {
+  if (
+    url.startsWith("file:") &&
+    /\\.(ts|tsx)$/.test(url) &&
+    !url.includes("/node_modules/")
+  ) {
+    const ts = await getTs();
+    const filePath = fileURLToPath(url);
+    const source = fs.readFileSync(filePath, "utf8");
+    const out = ts.transpileModule(source, {
+      fileName: filePath,
+      compilerOptions: {
+        module: ts.ModuleKind.ESNext,
+        target: ts.ScriptTarget.ES2022,
+        jsx: ts.JsxEmit.ReactJSX,
+        esModuleInterop: true,
+        isolatedModules: true,
+      },
+    });
+    return { format: "module", source: out.outputText, shortCircuit: true };
+  }
+  return nextLoad(url, context);
 }
 `;
 

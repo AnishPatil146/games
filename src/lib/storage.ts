@@ -27,7 +27,11 @@ interface LocalStoreData {
   deletionRequests: DeletionRequest[];
 }
 
-const DEFAULT_LOCAL_STORE_PATH = path.join(process.cwd(), ".data", "local-store.json");
+const DEFAULT_LOCAL_STORE_PATH = path.join(
+  /* turbopackIgnore: true */ process.cwd(),
+  ".data",
+  "local-store.json"
+);
 let customLocalStorePath: string | null = null;
 
 export function setLocalStorePathForTests(filePath: string | null): void {
@@ -61,8 +65,8 @@ let memoryStore: LocalStoreData = {
 function readLocalStore(): LocalStoreData {
   const storePath = getLocalStorePath();
   try {
-    if (fs.existsSync(storePath)) {
-      const raw = fs.readFileSync(storePath, "utf8");
+    if (fs.existsSync(/*turbopackIgnore: true*/ storePath)) {
+      const raw = fs.readFileSync(/*turbopackIgnore: true*/ storePath, "utf8");
       const parsed = JSON.parse(raw) as Partial<LocalStoreData>;
       memoryStore = {
         players: Array.isArray(parsed.players) ? parsed.players : [],
