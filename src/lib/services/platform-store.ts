@@ -7,7 +7,7 @@ import {
   DEFAULT_ACADEMIC_YEARS,
   INITIAL_ACADEMIC_SUBJECTS,
 } from "../academic-catalogue";
-import {
+import type {
   AbilityIndicatorEvaluation,
   AbilityIndicatorKey,
   AcademicBoardConfig,
@@ -30,7 +30,7 @@ import {
 } from "../platform-types";
 import {
   JUNIOR_SCORING_ALGORITHM_VERSION,
-  RawSubmissionAnswer,
+  type RawSubmissionAnswer,
   aggregateParticipantAbilityIndicators,
   evaluateJuniorAttempt,
 } from "./junior-scoring-service";
@@ -46,7 +46,7 @@ import {
   submitProfileByToken,
 } from "../storage";
 import { evaluateReport } from "../scoring";
-import { GameplayEvent, GameplayReport } from "../types";
+import type { GameplayEvent, GameplayReport } from "../types";
 
 interface PlatformPersistenceData {
   boards: AcademicBoardConfig[];

@@ -3,7 +3,7 @@ import path from "path";
 import crypto from "crypto";
 import { createPrivilegedClient } from "./supabase/server";
 import { getEnvConfig } from "./env";
-import {
+import type {
   AdminMetrics,
   AdminPlayerListItem,
   CampaignAttributionRow,

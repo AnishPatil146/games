@@ -1,5 +1,5 @@
 import { ACADEMIC_STREAMS } from "../academic-catalogue";
-import {
+import type {
   AbilityIndicatorEvaluation,
   AbilityIndicatorKey,
   AttemptQuestionSnapshot,
