@@ -35,7 +35,7 @@ export default function AdminPlayerDetailPage() {
     fetch(`/api/admin/players/${playerId}`)
       .then((res) => {
         if (res.status === 401) {
-          router.replace("/admin/login");
+          router.replace("/curator/login");
           throw new Error("Unauthorized");
         }
         if (!res.ok) throw new Error("Failed to load player dossier");
@@ -77,7 +77,7 @@ export default function AdminPlayerDetailPage() {
         <main className="flex-1 flex flex-col items-center justify-center p-6 space-y-4">
           <p className="text-sm text-[#A37070]">{error || "Record not found"}</p>
           <Link
-            href="/admin/players"
+            href="/curator/players"
             className="text-xs uppercase tracking-wider underline text-[#1C1917]"
           >
             Return to Player Directory
@@ -94,7 +94,7 @@ export default function AdminPlayerDetailPage() {
       <main className="flex-1 max-w-5xl mx-auto px-6 py-10 w-full space-y-8">
         {/* Navigation Breadcrumb */}
         <Link
-          href="/admin/players"
+          href="/curator/players"
           className="inline-flex items-center text-xs uppercase tracking-wider text-[#78716C] hover:text-[#1C1917] transition-colors"
         >
           <ArrowLeft className="w-3.5 h-3.5 mr-1" />

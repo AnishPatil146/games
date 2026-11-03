@@ -32,10 +32,10 @@ An elegant, mobile-first interactive narrative fiction experience designed for v
 | `/play/6` | **Chapter 06: The Unknown World** (Immersive sanctuary exploration) |
 | `/result/[sessionId]` | Deterministic Personal Dossier & Screenshot-ready share card |
 | `/privacy` | Methodological and ethical disclosure (zero covert tracking) |
-| `/admin/login` | Secure administrator access portal |
-| `/admin` | Live database telemetry, KPIs, chapter drop-off funnel, puzzle stats |
-| `/admin/players` | Complete player directory (registered & anonymous sessions) |
-| `/admin/players/[id]` | Deep chronological event timeline, choices, & puzzle precision |
+| `/curator/login` | Secure administrator / curator access portal |
+| `/curator` | Live database telemetry, KPIs, chapter drop-off funnel, puzzle stats |
+| `/curator/players` | Complete player directory (registered & anonymous sessions) |
+| `/curator/players/[id]` | Deep chronological event timeline, choices, & puzzle precision |
 
 ---
 
@@ -102,12 +102,12 @@ http://localhost:3000/?utm_source=instagram&utm_medium=story&utm_campaign=the_un
 
 ---
 
-## Administrator Access
+## Administrator / Curator Access
 
 1. Ensure your email is listed in `ADMIN_EMAILS` inside `.env.local`.
-2. Visit `/admin/login`.
+2. Visit `/curator/login` (discreet private address, not linked publicly in the footer).
 3. Enter your authorized email address.
-4. You will be authenticated and redirected to `/admin`.
+4. You will be authenticated and redirected to `/curator`.
 5. Review live telemetry, session completion funnels, and player dossiers.
 
 ---

@@ -18,7 +18,7 @@ export default function AdminPlayersDirectoryPage() {
     fetch("/api/admin/players")
       .then((res) => {
         if (res.status === 401) {
-          router.replace("/admin/login");
+          router.replace("/curator/login");
           throw new Error("Unauthorized");
         }
         if (!res.ok) throw new Error("Failed to load players");
@@ -189,7 +189,7 @@ export default function AdminPlayersDirectoryPage() {
 
                         <td className="py-3.5 px-4 text-right">
                           <Link
-                            href={`/admin/players/${s.id}`}
+                            href={`/curator/players/${s.id}`}
                             className="inline-flex items-center space-x-1 px-2.5 py-1 rounded border border-[#D6D3D1] hover:border-[#1C1917] hover:bg-[#1C1917] hover:text-[#FAF8F5] transition-all text-[11px] uppercase tracking-wider text-[#57534E]"
                           >
                             <span>Inspect</span>

@@ -31,7 +31,7 @@ export default function AdminLoginPage() {
         throw new Error(data.error || "Failed to authenticate");
       }
 
-      router.push("/admin");
+      router.push("/curator");
     } catch (err: any) {
       setErrorMessage(err.message || "Authentication error occurred");
       setIsLoading(false);

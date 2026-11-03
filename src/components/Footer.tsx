@@ -16,16 +16,8 @@ export function Footer() {
           >
             Privacy & Ethics
           </Link>
-          <span className="text-[#D6D3D1]">•</span>
-          <Link
-            href="/admin/login"
-            className="hover:text-[#1C1917] transition-colors underline-offset-4 hover:underline"
-          >
-            Admin Access
-          </Link>
         </div>
       </div>
     </footer>
   );
 }
-

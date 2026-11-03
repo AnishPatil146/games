@@ -15,24 +15,24 @@ export function AdminNav({ adminEmail }: AdminNavProps) {
   const handleLogout = async () => {
     try {
       await fetch("/api/admin/logout", { method: "POST" });
-      router.push("/admin/login");
+      router.push("/curator/login");
     } catch {
-      router.push("/admin/login");
+      router.push("/curator/login");
     }
   };
 
   const navItems = [
     {
-      href: "/admin",
+      href: "/curator",
       label: "Overview & Analytics",
       icon: LayoutDashboard,
-      active: pathname === "/admin",
+      active: pathname === "/curator",
     },
     {
-      href: "/admin/players",
+      href: "/curator/players",
       label: "Player Directory",
       icon: Users,
-      active: pathname.startsWith("/admin/players"),
+      active: pathname.startsWith("/curator/players"),
     },
   ];
 
@@ -48,7 +48,7 @@ export function AdminNav({ adminEmail }: AdminNavProps) {
             THE UNWRITTEN
           </Link>
           <span className="text-[10px] uppercase tracking-wider px-2 py-0.5 rounded bg-[#EDF0EB] text-[#5B6356] font-medium">
-            ADMIN ARCHIVES
+            CURATOR PORTAL
           </span>
         </div>
 
@@ -92,4 +92,3 @@ export function AdminNav({ adminEmail }: AdminNavProps) {
     </div>
   );
 }
-

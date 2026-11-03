@@ -30,7 +30,7 @@ export default function AdminDashboardPage() {
     fetch("/api/admin/metrics")
       .then((res) => {
         if (res.status === 401) {
-          router.replace("/admin/login");
+          router.replace("/curator/login");
           throw new Error("Unauthorized");
         }
         if (!res.ok) throw new Error("Failed to load metrics");
@@ -97,7 +97,7 @@ export default function AdminDashboardPage() {
 
           <div className="flex items-center space-x-3">
             <Link
-              href="/admin/players"
+              href="/curator/players"
               className="px-4 py-2 bg-[#1C1917] text-[#FAF8F5] text-xs uppercase tracking-wider font-medium hover:bg-[#2F2B28] transition-colors rounded flex items-center space-x-2"
             >
               <Users className="w-3.5 h-3.5" />
