@@ -1,69 +1,139 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import Link from "next/link";
+import { useEffect } from "react";
+import { motion } from "framer-motion";
+import { ArrowRight, Compass, Eye, Sparkles } from "lucide-react";
+import { useGameSession } from "@/lib/useGameSession";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+
+export default function LandingPage() {
+  const { trackEvent } = useGameSession();
+
+  useEffect(() => {
+    // Record initial landing view
+    trackEvent(0, "landing_view", {
+      path: "/",
+      referrer: typeof document !== "undefined" ? document.referrer : "",
+    });
+  }, [trackEvent]);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <div className="min-h-screen flex flex-col bg-[#FAF8F5] text-[#1C1917]">
+      <Header />
+
+      <main className="flex-1 flex flex-col items-center justify-center px-6 py-16 sm:py-24 max-w-4xl mx-auto text-center w-full">
+        {/* Subtle decorative emblem */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          className="mb-8 inline-flex items-center justify-center p-3 rounded-full border border-[#E0D7CB] bg-[#F4EFE7]/80 text-[#5B6356]"
+        >
+          <Compass className="w-5 h-5 stroke-[1.5]" />
+        </motion.div>
+
+        {/* Title */}
+        <motion.h1
+          initial={{ opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+          className="text-4xl sm:text-6xl md:text-7xl font-serif tracking-tight text-[#1C1917] mb-6 font-normal leading-tight"
+        >
+          THE UNWRITTEN
+        </motion.h1>
+
+        {/* Tagline */}
+        <motion.p
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+          className="text-lg sm:text-xl md:text-2xl font-serif italic text-[#57534E] max-w-xl mx-auto mb-8 font-light"
+        >
+          &ldquo;Every choice leaves a trace. Every story reveals something.&rdquo;
+        </motion.p>
+
+        {/* Supporting description */}
+        <motion.p
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+          className="text-sm sm:text-base text-[#78716C] max-w-md mx-auto mb-12 leading-relaxed"
+        >
+          An interactive experiment in choices, curiosity, observation, and
+          imagination.
+        </motion.p>
+
+        {/* Primary CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
+          className="w-full sm:w-auto flex flex-col items-center gap-4"
+        >
+          <Link
+            href="/play"
+            className="w-full sm:w-auto px-8 py-4 bg-[#1C1917] text-[#FAF8F5] text-xs sm:text-sm tracking-[0.2em] uppercase font-medium hover:bg-[#2F2B28] transition-all duration-300 shadow-sm hover:shadow flex items-center justify-center space-x-3 group active:scale-[0.98]"
+          >
+            <span>ENTER THE EXPERIENCE</span>
+            <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+          </Link>
+
+          <p className="text-[11px] uppercase tracking-[0.18em] text-[#8C827A] mt-2">
+            Six chapters. No perfect answers. Just your decisions.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+        </motion.div>
+
+        {/* Three core pillars */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.2, delay: 0.6 }}
+          className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 mt-20 pt-16 border-t border-[#E8E2D8] w-full text-left"
+        >
+          <div className="p-5 rounded border border-[#E8E2D8] bg-[#F4EFE7]/50">
+            <div className="w-8 h-8 rounded-full bg-[#EAE3D6] flex items-center justify-center mb-3 text-[#5B6356]">
+              <Eye className="w-4 h-4" />
+            </div>
+            <h3 className="text-xs uppercase tracking-[0.18em] font-semibold text-[#1C1917] mb-1">
+              Observation
+            </h3>
+            <p className="text-xs text-[#78716C] leading-relaxed">
+              Every room holds subtle details. How closely you inspect your
+              environment shapes the possibilities ahead.
+            </p>
+          </div>
+
+          <div className="p-5 rounded border border-[#E8E2D8] bg-[#F4EFE7]/50">
+            <div className="w-8 h-8 rounded-full bg-[#EAE3D6] flex items-center justify-center mb-3 text-[#5B6356]">
+              <Compass className="w-4 h-4" />
+            </div>
+            <h3 className="text-xs uppercase tracking-[0.18em] font-semibold text-[#1C1917] mb-1">
+              Deduction
+            </h3>
+            <p className="text-xs text-[#78716C] leading-relaxed">
+              Puzzles and locked doors require reasoning. There are no luck-based
+              answers, only cause and consequence.
+            </p>
+          </div>
+
+          <div className="p-5 rounded border border-[#E8E2D8] bg-[#F4EFE7]/50">
+            <div className="w-8 h-8 rounded-full bg-[#EAE3D6] flex items-center justify-center mb-3 text-[#5B6356]">
+              <Sparkles className="w-4 h-4" />
+            </div>
+            <h3 className="text-xs uppercase tracking-[0.18em] font-semibold text-[#1C1917] mb-1">
+              Personal Report
+            </h3>
+            <p className="text-xs text-[#78716C] leading-relaxed">
+              At the journey&apos;s conclusion, receive a deterministic report
+              reflecting your natural patterns and choices.
+            </p>
+          </div>
+        </motion.div>
       </main>
+
+      <Footer />
     </div>
   );
 }
