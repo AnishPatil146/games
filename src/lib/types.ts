@@ -33,6 +33,7 @@ export interface GameSession {
 
 export type EventType =
   | "landing_view"
+  | "mode_selected"
   | "game_started"
   | "profile_submitted"
   | "chapter_started"
@@ -41,6 +42,12 @@ export type EventType =
   | "puzzle_attempted"
   | "hint_used"
   | "chapter_completed"
+  | "seventh_door_unlocked"
+  | "seventh_door_completed"
+  | "hidden_letter_unlocked"
+  | "hidden_letter_read"
+  | "junior_attempt_started"
+  | "junior_attempt_completed"
   | "game_completed";
 
 export interface GameplayEvent {

@@ -4,9 +4,13 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import {
-  Activity,
   BarChart3,
+  BookOpen,
+  ClipboardList,
+  Compass,
+  Database,
   ExternalLink,
+  GraduationCap,
   LayoutDashboard,
   LogOut,
   Menu,
@@ -24,18 +28,38 @@ interface AdminShellProps {
 const NAV_ITEMS = [
   {
     href: "/admin/dashboard",
-    label: "Overview",
+    label: "Dashboard",
     icon: LayoutDashboard,
   },
   {
-    href: "/admin/players",
-    label: "Players",
+    href: "/admin/participants",
+    label: "Participants",
     icon: Users,
   },
   {
-    href: "/admin/sessions",
-    label: "Sessions",
-    icon: Activity,
+    href: "/admin/senior",
+    label: "Senior Mode",
+    icon: Compass,
+  },
+  {
+    href: "/admin/junior",
+    label: "Junior Mode",
+    icon: GraduationCap,
+  },
+  {
+    href: "/admin/subjects",
+    label: "Subjects",
+    icon: BookOpen,
+  },
+  {
+    href: "/admin/questions",
+    label: "Question Bank",
+    icon: Database,
+  },
+  {
+    href: "/admin/attempts",
+    label: "Attempts",
+    icon: ClipboardList,
   },
   {
     href: "/admin/analytics",
@@ -82,7 +106,7 @@ export function AdminShell({ adminEmail, children }: AdminShellProps) {
               THE UNWRITTEN
             </span>
             <span className="block text-[9px] uppercase tracking-[0.24em] text-[#8FA184] mt-0.5 font-mono">
-              / CONTROL CENTRE
+              / CONTROL
             </span>
           </div>
           <Shield className="w-4 h-4 text-[#8FA184]" aria-hidden="true" />
@@ -90,7 +114,7 @@ export function AdminShell({ adminEmail, children }: AdminShellProps) {
 
         <nav
           aria-label="Administrator navigation"
-          className="flex-1 px-3 py-6 space-y-1"
+          className="flex-1 px-3 py-5 space-y-1 overflow-y-auto"
         >
           {NAV_ITEMS.map((item) => {
             const Icon = item.icon;
@@ -99,7 +123,7 @@ export function AdminShell({ adminEmail, children }: AdminShellProps) {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`flex items-center gap-3 px-3.5 py-2.5 rounded-sm text-xs uppercase tracking-[0.16em] transition-colors ${
+                className={`flex items-center gap-3 px-3.5 py-2.5 rounded-sm text-xs uppercase tracking-[0.15em] transition-colors ${
                   active
                     ? "bg-[#FAF7F2] text-[#141210] font-semibold"
                     : "text-[#A89F93] hover:text-[#FAF7F2] hover:bg-[#1F1C19]"
@@ -168,7 +192,7 @@ export function AdminShell({ adminEmail, children }: AdminShellProps) {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-[#141210] text-[#FAF7F2] border-b border-[#2B2723] px-4 py-4 space-y-2">
+        <div className="lg:hidden bg-[#141210] text-[#FAF7F2] border-b border-[#2B2723] px-4 py-4 space-y-1.5">
           {NAV_ITEMS.map((item) => {
             const Icon = item.icon;
             const active = isRouteActive(item.href);
@@ -212,4 +236,3 @@ export function AdminShell({ adminEmail, children }: AdminShellProps) {
     </div>
   );
 }
-

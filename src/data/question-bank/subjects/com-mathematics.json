@@ -1,0 +1,4602 @@
+[
+  {
+    "id": "msb-11-com-mat-001",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 1,
+    "chapter": "Sets and Relations",
+    "topic": "Proper Subsets of a Finite Set",
+    "difficulty": "Easy",
+    "questionText": "If a finite set A contains 5 distinct elements, how many proper subsets does A possess?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "32"
+      },
+      {
+        "key": "B",
+        "text": "31"
+      },
+      {
+        "key": "C",
+        "text": "25"
+      },
+      {
+        "key": "D",
+        "text": "16"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "A set with n = 5 elements has 2⁵ = 32 total subsets in its power set; excluding the set A itself leaves 2⁵ − 1 = 31 proper subsets.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Sets and Relations",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-002",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 1,
+    "chapter": "Sets and Relations",
+    "topic": "Number of Relations Between Two Sets",
+    "difficulty": "Easy",
+    "questionText": "If n(A) = 3 and n(B) = 2, what is the total number of distinct relations that can be defined from set A to set B?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "36"
+      },
+      {
+        "key": "B",
+        "text": "32"
+      },
+      {
+        "key": "C",
+        "text": "64"
+      },
+      {
+        "key": "D",
+        "text": "6"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "The Cartesian product A × B contains 3 × 2 = 6 ordered pairs; every subset of A × B is a relation from A to B, giving 2⁶ = 64 distinct relations.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Sets and Relations",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-003",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 1,
+    "chapter": "Sets and Relations",
+    "topic": "Two-Set Inclusion-Exclusion in Consumer Survey",
+    "difficulty": "Medium",
+    "questionText": "In a retail payment survey of 120 shoppers, 72 use UPI apps, 54 use Credit Cards, and 18 pay exclusively in cash (using neither UPI nor Credit Cards). How many shoppers use BOTH UPI apps and Credit Cards?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "24"
+      },
+      {
+        "key": "B",
+        "text": "42"
+      },
+      {
+        "key": "C",
+        "text": "6"
+      },
+      {
+        "key": "D",
+        "text": "30"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "n(U ∪ C) = 120 − 18 = 102. By inclusion-exclusion, n(U ∩ C) = n(U) + n(C) − n(U ∪ C) = 72 + 54 − 102 = 24.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Sets and Relations",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-004",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 1,
+    "chapter": "Sets and Relations",
+    "topic": "Equivalence Relation Verification",
+    "difficulty": "Medium",
+    "questionText": "On the set Z of all integers, consider the relation R = {(a, b) ∈ Z × Z : (a − b) is divisible by 5}. Which properties does R satisfy?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Reflexive and Symmetric, but NOT Transitive"
+      },
+      {
+        "key": "B",
+        "text": "Symmetric and Transitive, but NOT Reflexive"
+      },
+      {
+        "key": "C",
+        "text": "Reflexive, Symmetric, and Transitive (an Equivalence Relation)"
+      },
+      {
+        "key": "D",
+        "text": "Transitive only"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "a − a = 0 is divisible by 5 (reflexive); if 5 | (a − b) then 5 | (b − a) (symmetric); if 5 | (a − b) and 5 | (b − c) then 5 | (a − c) (transitive). Hence R is an Equivalence Relation.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Sets and Relations",
+    "abilityTags": [
+      "strategic_thinking",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-005",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 1,
+    "chapter": "Sets and Relations",
+    "topic": "Three-Set Readership Exact-One Count",
+    "difficulty": "Hard",
+    "questionText": "Among 200 Commerce students, 110 read Economic Times (E), 90 read Business Standard (B), and 75 read Mint (M); 45 read both E & B, 35 read both B & M, 30 read both E & M, and 15 read all three dailies. How many students read EXACTLY ONE of the three financial newspapers?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "115"
+      },
+      {
+        "key": "B",
+        "text": "85"
+      },
+      {
+        "key": "C",
+        "text": "130"
+      },
+      {
+        "key": "D",
+        "text": "100"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Only E = 110 − (45 + 30 − 15) = 50; Only B = 90 − (45 + 35 − 15) = 25; Only M = 75 − (30 + 35 − 15) = 25. Students reading exactly one paper = 50 + 25 + 25 = 100.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Sets and Relations",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-006",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 1,
+    "chapter": "Sets and Relations",
+    "topic": "Range of a Relation Over Natural Numbers",
+    "difficulty": "Hard",
+    "questionText": "A relation R on the set of natural numbers N = {1, 2, 3, ...} is defined by R = {(x, y) : x, y ∈ N and 2x + y = 11}. What is the sum of all elements in the Range of R?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "24"
+      },
+      {
+        "key": "B",
+        "text": "25"
+      },
+      {
+        "key": "C",
+        "text": "15"
+      },
+      {
+        "key": "D",
+        "text": "30"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "For x ∈ {1, 2, 3, 4, 5}, y = 11 − 2x takes natural values {9, 7, 5, 3, 1} (for x ≥ 6, y ≤ −1 ∉ N). Sum of elements in Range(R) = 1 + 3 + 5 + 7 + 9 = 25.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Sets and Relations",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-007",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 2,
+    "chapter": "Functions",
+    "topic": "Evaluating a Polynomial Function",
+    "difficulty": "Easy",
+    "questionText": "If f(x) = 3x² − 5x + 4, find the value of f(2) + f(−1).",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "18"
+      },
+      {
+        "key": "B",
+        "text": "12"
+      },
+      {
+        "key": "C",
+        "text": "8"
+      },
+      {
+        "key": "D",
+        "text": "14"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "f(2) = 3(4) − 5(2) + 4 = 6, and f(−1) = 3(1) − 5(−1) + 4 = 12. Hence f(2) + f(−1) = 6 + 12 = 18.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Functions",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-008",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 2,
+    "chapter": "Functions",
+    "topic": "Real Domain of Radical Function",
+    "difficulty": "Easy",
+    "questionText": "What is the largest subset of R (real numbers) that forms the domain of f(x) = 1 / √(9 − x²)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "R − {−3, 3}"
+      },
+      {
+        "key": "B",
+        "text": "(−∞, −3) ∪ (3, ∞)"
+      },
+      {
+        "key": "C",
+        "text": "Open interval (−3, 3)"
+      },
+      {
+        "key": "D",
+        "text": "Closed interval [−3, 3]"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "For 1 / √(9 − x²) to be a finite real number, the radicand in the denominator must be strictly positive: 9 − x² > 0 ⇒ x² < 9 ⇒ x ∈ (−3, 3).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Functions",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-009",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 2,
+    "chapter": "Functions",
+    "topic": "Break-Even Analysis Using Cost and Revenue Functions",
+    "difficulty": "Medium",
+    "questionText": "A small manufacturing firm has monthly fixed costs of ₹36,000, variable production cost of ₹140 per unit, and sells each unit at ₹230. Find the break-even output level x where Total Revenue equals Total Cost.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "300 units"
+      },
+      {
+        "key": "B",
+        "text": "360 units"
+      },
+      {
+        "key": "C",
+        "text": "450 units"
+      },
+      {
+        "key": "D",
+        "text": "400 units"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Total Cost C(x) = 36,000 + 140x and Total Revenue R(x) = 230x. At break-even, 230x = 36,000 + 140x ⇒ 90x = 36,000 ⇒ x = 400 units.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Functions",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-010",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 2,
+    "chapter": "Functions",
+    "topic": "Self-Inverse Rational Function",
+    "difficulty": "Medium",
+    "questionText": "If f(x) = (4x + 3) / (5x − 4) for x ≠ 4/5, what is the value of the composite expression (f ∘ f)(7)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "7"
+      },
+      {
+        "key": "B",
+        "text": "1"
+      },
+      {
+        "key": "C",
+        "text": "31/27"
+      },
+      {
+        "key": "D",
+        "text": "4/5"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "f(7) = (28 + 3) / (35 − 4) = 31 / 31 = 1, and f(f(7)) = f(1) = (4 + 3) / (5 − 4) = 7 (since f is a self-inverse function satisfying f(f(x)) = x).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Functions",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-011",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 2,
+    "chapter": "Functions",
+    "topic": "Recovering a Function from Function Composition",
+    "difficulty": "Hard",
+    "questionText": "Let f : R → R be defined by f(x) = 2x + 5, and suppose a function g : R → R satisfies (g ∘ f)(x) = 4x² + 20x + 19 for all x ∈ R. Find the value of g(3).",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "9"
+      },
+      {
+        "key": "B",
+        "text": "−3"
+      },
+      {
+        "key": "C",
+        "text": "3"
+      },
+      {
+        "key": "D",
+        "text": "15"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "To find g(3), set f(x) = 2x + 5 = 3 ⇒ x = −1. Substituting x = −1 into g(f(x)) = 4x² + 20x + 19 gives g(3) = 4(1) − 20 + 19 = 3 (equivalently g(t) = t² − 6).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Functions",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-012",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 3,
+    "chapter": "Complex Numbers",
+    "topic": "Modulus and Conjugate of a Complex Number",
+    "difficulty": "Easy",
+    "questionText": "For the complex number z = 5 − 12i, what are its modulus |z| and complex conjugate z̄ respectively?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "|z| = 169 and z̄ = 5 + 12i"
+      },
+      {
+        "key": "B",
+        "text": "|z| = 13 and z̄ = 5 + 12i"
+      },
+      {
+        "key": "C",
+        "text": "|z| = 17 and z̄ = −5 + 12i"
+      },
+      {
+        "key": "D",
+        "text": "|z| = 13 and z̄ = −5 − 12i"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "|z| = √(5² + (−12)²) = √(25 + 144) = 13, and changing the sign of the imaginary part yields z̄ = 5 + 12i.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Complex Numbers",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-013",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 3,
+    "chapter": "Complex Numbers",
+    "topic": "Integral Powers of Imaginary Unit i",
+    "difficulty": "Medium",
+    "questionText": "Simplify the complex sum: i⁴⁹ + i⁵⁰ + i⁵¹ + i⁵² + i⁵³ (where i = √−1).",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "−i"
+      },
+      {
+        "key": "B",
+        "text": "1"
+      },
+      {
+        "key": "C",
+        "text": "0"
+      },
+      {
+        "key": "D",
+        "text": "i"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Any four consecutive integer powers of i sum to zero (i⁵⁰ + i⁵¹ + i⁵² + i⁵³ = 0), leaving i⁴⁹ = i^(4×12 + 1) = i.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Complex Numbers",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-014",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 3,
+    "chapter": "Complex Numbers",
+    "topic": "Division of Complex Numbers in a + bi Form",
+    "difficulty": "Medium",
+    "questionText": "Express (13 + 13i) / (2 + 3i) in the standard form a + bi, where a, b ∈ R.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "−1 + 5i"
+      },
+      {
+        "key": "B",
+        "text": "5 − i"
+      },
+      {
+        "key": "C",
+        "text": "1 − 5i"
+      },
+      {
+        "key": "D",
+        "text": "5 + i"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Multiply numerator and denominator by (2 − 3i): 13(1 + i)(2 − 3i) / (4 + 9) = (1 + i)(2 − 3i) = 2 − 3i + 2i − 3i² = 5 − i.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Complex Numbers",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-015",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 3,
+    "chapter": "Complex Numbers",
+    "topic": "Algebra of Complex Cube Roots of Unity",
+    "difficulty": "Hard",
+    "questionText": "If ω is a non-real complex cube root of unity (ω³ = 1, 1 + ω + ω² = 0), evaluate the product (2 − ω)(2 − ω²)(2 − ω¹⁰)(2 − ω¹¹).",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "49"
+      },
+      {
+        "key": "B",
+        "text": "36"
+      },
+      {
+        "key": "C",
+        "text": "21"
+      },
+      {
+        "key": "D",
+        "text": "9"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Since ω¹⁰ = ω and ω¹¹ = ω², the expression equals [(2 − ω)(2 − ω²)]². Expanding (2 − ω)(2 − ω²) = 4 − 2(ω + ω²) + ω³ = 4 − 2(−1) + 1 = 7, so 7² = 49.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Complex Numbers",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-016",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 3,
+    "chapter": "Complex Numbers",
+    "topic": "Solving Simultaneous Real Unknowns in a Complex Equation",
+    "difficulty": "Hard",
+    "questionText": "If real numbers x and y satisfy [x / (1 + i)] + [y / (1 − 2i)] = 3, find the value of (x + y).",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "7"
+      },
+      {
+        "key": "B",
+        "text": "11"
+      },
+      {
+        "key": "C",
+        "text": "8"
+      },
+      {
+        "key": "D",
+        "text": "9"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Rationalising denominators: x(1 − i)/2 + y(1 + 2i)/5 = 3 ⇒ (5x + 2y) + i(−5x + 4y) = 30 + 0i. Equating imaginary part to 0 gives 5x = 4y; substituting into 5x + 2y = 30 gives 6y = 30 ⇒ y = 5, x = 4, so x + y = 9.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Complex Numbers",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-017",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 4,
+    "chapter": "Sequences and Series",
+    "topic": "General Term of a Geometric Progression",
+    "difficulty": "Easy",
+    "questionText": "Find the 8th term of the Geometric Progression: 3, 6, 12, 24, ...",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "768"
+      },
+      {
+        "key": "B",
+        "text": "256"
+      },
+      {
+        "key": "C",
+        "text": "384"
+      },
+      {
+        "key": "D",
+        "text": "192"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Here first term a = 3 and common ratio r = 2; T₈ = a·r⁷ = 3 × 2⁷ = 3 × 128 = 384.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Sequences and Series",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-018",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 4,
+    "chapter": "Sequences and Series",
+    "topic": "Relation Among AM, GM, and HM",
+    "difficulty": "Easy",
+    "questionText": "If the Arithmetic Mean (AM) of two positive numbers is 16 and their Harmonic Mean (HM) is 9, what is their Geometric Mean (GM)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "11.5"
+      },
+      {
+        "key": "B",
+        "text": "12.5"
+      },
+      {
+        "key": "C",
+        "text": "144"
+      },
+      {
+        "key": "D",
+        "text": "12"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "For any two positive numbers, GM² = AM × HM = 16 × 9 = 144, so GM = 12.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Sequences and Series",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-019",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 4,
+    "chapter": "Sequences and Series",
+    "topic": "Sum to Infinity of a Convergent G.P.",
+    "difficulty": "Medium",
+    "questionText": "Find the sum to infinity of the Geometric Series: 12 + 8 + 16/3 + 32/9 + ...",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "36"
+      },
+      {
+        "key": "B",
+        "text": "24"
+      },
+      {
+        "key": "C",
+        "text": "48"
+      },
+      {
+        "key": "D",
+        "text": "30"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "First term a = 12 and common ratio r = 8/12 = 2/3 (|r| < 1). Sum to infinity S∞ = a / (1 − r) = 12 / (1 − 2/3) = 36.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Sequences and Series",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-020",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 4,
+    "chapter": "Sequences and Series",
+    "topic": "Special Power Series Evaluation",
+    "difficulty": "Medium",
+    "questionText": "Evaluate the finite series sum: Σ (from r = 1 to 10) of (3r² − 2r).",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1,265"
+      },
+      {
+        "key": "B",
+        "text": "990"
+      },
+      {
+        "key": "C",
+        "text": "1,045"
+      },
+      {
+        "key": "D",
+        "text": "1,155"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Σr² (1..10) = 10 × 11 × 21 / 6 = 385, and Σr (1..10) = 10 × 11 / 2 = 55. Required sum = 3(385) − 2(55) = 1,155 − 110 = 1,045.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Sequences and Series",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-021",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 4,
+    "chapter": "Sequences and Series",
+    "topic": "Three Terms in G.P. from Sum and Product",
+    "difficulty": "Hard",
+    "questionText": "Three positive numbers are in Geometric Progression such that their sum is 26 and their product is 216. What is the largest of the three numbers?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "20"
+      },
+      {
+        "key": "B",
+        "text": "18"
+      },
+      {
+        "key": "C",
+        "text": "16"
+      },
+      {
+        "key": "D",
+        "text": "12"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Let the numbers be a/r, a, ar. Their product a³ = 216 ⇒ a = 6. Sum: 6/r + 6 + 6r = 26 ⇒ 3r² − 10r + 3 = 0 ⇒ r = 3 or 1/3, giving the numbers 2, 6, 18; the largest is 18.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Sequences and Series",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-022",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 4,
+    "chapter": "Sequences and Series",
+    "topic": "Repeated-Digit Series Closed-Form Sum",
+    "difficulty": "Hard",
+    "questionText": "What is the exact sum of the first n terms of the series 5 + 55 + 555 + ...?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "(5 / 81) × (10^(n+1) − 9n − 10)"
+      },
+      {
+        "key": "B",
+        "text": "(5 / 9) × (10^n − 1)"
+      },
+      {
+        "key": "C",
+        "text": "(5 / 81) × (10^n − 9n − 1)"
+      },
+      {
+        "key": "D",
+        "text": "(5 / 9) × (10^(n+1) − 9n − 10)"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Sn = (5/9)[9 + 99 + ... + (10ⁿ − 1)] = (5/9)[Σ10ᵏ − n] = (5/9)[10(10ⁿ − 1)/9 − n] = (5/81)(10^(n+1) − 9n − 10) (at n = 2, (5/81)(972) = 60 = 5 + 55).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Sequences and Series",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-023",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 5,
+    "chapter": "Locus and Straight Line",
+    "topic": "Slope and Y-Intercept of a Line",
+    "difficulty": "Easy",
+    "questionText": "Find the slope and y-intercept of the straight line 3x − 4y + 12 = 0.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Slope = 4/3 and y-intercept = 4"
+      },
+      {
+        "key": "B",
+        "text": "Slope = 3/4 and y-intercept = −3"
+      },
+      {
+        "key": "C",
+        "text": "Slope = −3/4 and y-intercept = −3"
+      },
+      {
+        "key": "D",
+        "text": "Slope = 3/4 and y-intercept = 3"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Rewriting in slope-intercept form y = mx + c: 4y = 3x + 12 ⇒ y = (3/4)x + 3, giving slope m = 3/4 and y-intercept c = 3.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Locus and Straight Line",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-024",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 5,
+    "chapter": "Locus and Straight Line",
+    "topic": "Equation of a Perpendicular Line",
+    "difficulty": "Medium",
+    "questionText": "Find the equation of the straight line passing through the point (2, −3) and perpendicular to the line 4x + 3y − 7 = 0.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "3x + 4y + 6 = 0"
+      },
+      {
+        "key": "B",
+        "text": "3x − 4y − 18 = 0"
+      },
+      {
+        "key": "C",
+        "text": "3x − 4y + 18 = 0"
+      },
+      {
+        "key": "D",
+        "text": "4x + 3y + 1 = 0"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Slope of 4x + 3y − 7 = 0 is −4/3, so the perpendicular slope is 3/4. Using point-slope form: y − (−3) = (3/4)(x − 2) ⇒ 4y + 12 = 3x − 6 ⇒ 3x − 4y − 18 = 0.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Locus and Straight Line",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-025",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 5,
+    "chapter": "Locus and Straight Line",
+    "topic": "Perpendicular Distance from a Point to a Line",
+    "difficulty": "Medium",
+    "questionText": "What is the length of the perpendicular drawn from the point (3, −1) to the straight line 5x − 12y + 12 = 0?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "15/13 units"
+      },
+      {
+        "key": "B",
+        "text": "2 units"
+      },
+      {
+        "key": "C",
+        "text": "3 units"
+      },
+      {
+        "key": "D",
+        "text": "4 units"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Perpendicular distance d = |5(3) − 12(−1) + 12| / √(5² + (−12)²) = |15 + 12 + 12| / 13 = 39 / 13 = 3 units.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Locus and Straight Line",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-026",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 5,
+    "chapter": "Locus and Straight Line",
+    "topic": "Equation of Locus from Difference of Squared Distances",
+    "difficulty": "Hard",
+    "questionText": "Find the equation of the locus of a moving point P(x, y) given A(2, 3) and B(−1, 4) such that PA² − PB² = 14.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "3x − y + 9 = 0"
+      },
+      {
+        "key": "B",
+        "text": "6x + 2y + 9 = 0"
+      },
+      {
+        "key": "C",
+        "text": "3x + y − 5 = 0"
+      },
+      {
+        "key": "D",
+        "text": "3x − y − 9 = 0"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "[(x − 2)² + (y − 3)²] − [(x + 1)² + (y − 4)²] = 14 ⇒ (−4x + 4 − 6y + 9) − (2x + 1 − 8y + 16) = 14 ⇒ −6x + 2y − 4 = 14 ⇒ 3x − y + 9 = 0.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Locus and Straight Line",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-027",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 5,
+    "chapter": "Locus and Straight Line",
+    "topic": "Line Bisected Between Coordinate Axes",
+    "difficulty": "Hard",
+    "questionText": "A straight line meets the X-axis at A and the Y-axis at B such that the segment AB intercepted between the axes is bisected at the point M(3, 4). What is the equation of the line?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "3x + 4y = 25"
+      },
+      {
+        "key": "B",
+        "text": "4x + 3y = 24"
+      },
+      {
+        "key": "C",
+        "text": "3x + 4y = 24"
+      },
+      {
+        "key": "D",
+        "text": "4x + 3y = 12"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Let A = (a, 0) and B = (0, b). Since M(3, 4) is the midpoint of AB, a/2 = 3 ⇒ a = 6 and b/2 = 4 ⇒ b = 8. By double-intercept form: x/6 + y/8 = 1 ⇒ 4x + 3y = 24.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Locus and Straight Line",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-028",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 6,
+    "chapter": "Determinants and Matrices",
+    "topic": "Condition for a Singular Matrix",
+    "difficulty": "Easy",
+    "questionText": "For what value of x is the 2 × 2 matrix A = [[x + 1, 6], [2, 4]] a singular matrix?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "3"
+      },
+      {
+        "key": "B",
+        "text": "−2"
+      },
+      {
+        "key": "C",
+        "text": "2"
+      },
+      {
+        "key": "D",
+        "text": "5"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "A square matrix is singular iff det(A) = 0: 4(x + 1) − (6 × 2) = 0 ⇒ 4x + 4 = 12 ⇒ x = 2.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Determinants and Matrices",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-029",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 6,
+    "chapter": "Determinants and Matrices",
+    "topic": "Diagonal Elements of Skew-Symmetric Matrix",
+    "difficulty": "Easy",
+    "questionText": "If A = [a_ij] is a real skew-symmetric square matrix (so that Aᵀ = −A), what must be the value of every principal diagonal element a_ii?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "−1"
+      },
+      {
+        "key": "B",
+        "text": "Any positive integer"
+      },
+      {
+        "key": "C",
+        "text": "1"
+      },
+      {
+        "key": "D",
+        "text": "0"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "For diagonal entries (i = j), skew-symmetry requires a_ii = −a_ii ⇒ 2a_ii = 0 ⇒ a_ii = 0.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Determinants and Matrices",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-030",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 6,
+    "chapter": "Determinants and Matrices",
+    "topic": "3 × 3 Determinant Evaluation",
+    "difficulty": "Medium",
+    "questionText": "Evaluate the 3 × 3 determinant with rows: Row 1 = (2, −1, 3), Row 2 = (1, 4, −2), Row 3 = (3, 1, 5).",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "14"
+      },
+      {
+        "key": "B",
+        "text": "22"
+      },
+      {
+        "key": "C",
+        "text": "−22"
+      },
+      {
+        "key": "D",
+        "text": "88"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Expanding along Row 1: 2(20 − (−2)) − (−1)(5 − (−6)) + 3(1 − 12) = 2(22) + 1(11) + 3(−11) = 44 + 11 − 33 = 22.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Determinants and Matrices",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-031",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 6,
+    "chapter": "Determinants and Matrices",
+    "topic": "Commercial Revenue via Matrix Multiplication",
+    "difficulty": "Medium",
+    "questionText": "Outlet P sold 10 shirts, 8 trousers, and 5 jackets; Outlet Q sold 12 shirts, 6 trousers, and 4 jackets. Unit selling prices are ₹800, ₹1,200, and ₹2,000 respectively. Using matrix multiplication (Quantity Matrix × Price Column Vector), find total sales revenues of Outlets P and Q.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Outlet P: ₹24,800 and Outlet Q: ₹27,600"
+      },
+      {
+        "key": "B",
+        "text": "Outlet P: ₹26,400 and Outlet Q: ₹25,200"
+      },
+      {
+        "key": "C",
+        "text": "Outlet P: ₹28,000 and Outlet Q: ₹24,000"
+      },
+      {
+        "key": "D",
+        "text": "Outlet P: ₹27,600 and Outlet Q: ₹24,800"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Outlet P revenue = 10(800) + 8(1,200) + 5(2,000) = 8,000 + 9,600 + 10,000 = ₹27,600; Outlet Q revenue = 12(800) + 6(1,200) + 4(2,000) = 9,600 + 7,200 + 8,000 = ₹24,800.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Determinants and Matrices",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-032",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 6,
+    "chapter": "Determinants and Matrices",
+    "topic": "Cramer's Rule for Simultaneous Equations",
+    "difficulty": "Hard",
+    "questionText": "Solving the linear system 2x + 3y = 13 and 5x − 2y = 4 by Cramer's Rule, find the determinants D, D_y, and the solution value of y.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "D = −19, D_y = −57, and y = 3"
+      },
+      {
+        "key": "B",
+        "text": "D = 19, D_y = −57, and y = −3"
+      },
+      {
+        "key": "C",
+        "text": "D = −11, D_y = −33, and y = 3"
+      },
+      {
+        "key": "D",
+        "text": "D = −19, D_y = −38, and y = 2"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "D = (2)(−2) − (3)(5) = −19; D_y = (2)(4) − (13)(5) = 8 − 65 = −57. Hence y = D_y / D = (−57) / (−19) = 3 (with x = 2).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Determinants and Matrices",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-033",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 6,
+    "chapter": "Determinants and Matrices",
+    "topic": "Matrix Polynomial Identity",
+    "difficulty": "Hard",
+    "questionText": "Given the 2 × 2 matrix A = [[3, 1], [−1, 2]] and identity matrix I₂ = [[1, 0], [0, 1]], find the scalar k such that A² − 5A + kI₂ = O (the null matrix).",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "6"
+      },
+      {
+        "key": "B",
+        "text": "5"
+      },
+      {
+        "key": "C",
+        "text": "7"
+      },
+      {
+        "key": "D",
+        "text": "−7"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "A² = [[8, 5], [−5, 3]], so A² − 5A = [[8 − 15, 5 − 5], [−5 + 5, 3 − 10]] = [[−7, 0], [0, −7]] = −7I₂. Adding 7I₂ gives O, hence k = 7.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Determinants and Matrices",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-034",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 7,
+    "chapter": "Limits",
+    "topic": "Standard Algebraic Power Limit",
+    "difficulty": "Easy",
+    "questionText": "Evaluate lim (x → 3) of (x⁴ − 81) / (x − 3).",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "108"
+      },
+      {
+        "key": "B",
+        "text": "27"
+      },
+      {
+        "key": "C",
+        "text": "81"
+      },
+      {
+        "key": "D",
+        "text": "36"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Using lim (x → a) (xⁿ − aⁿ) / (x − a) = n·a^(n−1): for n = 4 and a = 3, the limit equals 4 × 3³ = 4 × 27 = 108.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Limits",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-035",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 7,
+    "chapter": "Limits",
+    "topic": "Standard Exponential Limit",
+    "difficulty": "Easy",
+    "questionText": "What is the exact value of lim (x → 0) of (5ˣ − 1) / x?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1"
+      },
+      {
+        "key": "B",
+        "text": "log₁₀ 5"
+      },
+      {
+        "key": "C",
+        "text": "5"
+      },
+      {
+        "key": "D",
+        "text": "logₑ 5"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "By the standard exponential limit formula, lim (x → 0) (aˣ − 1) / x = logₑ a (for a > 0), giving logₑ 5.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Limits",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-036",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 7,
+    "chapter": "Limits",
+    "topic": "Limit by Rationalisation",
+    "difficulty": "Medium",
+    "questionText": "Evaluate lim (x → 0) of [√(4 + x) − 2] / x.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "0"
+      },
+      {
+        "key": "B",
+        "text": "1/4"
+      },
+      {
+        "key": "C",
+        "text": "1/2"
+      },
+      {
+        "key": "D",
+        "text": "4"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Multiplying numerator and denominator by [√(4 + x) + 2] yields [(4 + x) − 4] / [x(√(4 + x) + 2)] = 1 / [√(4 + x) + 2] → 1 / (2 + 2) = 1/4.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Limits",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-037",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 7,
+    "chapter": "Limits",
+    "topic": "Difference of Exponential Functions Limit",
+    "difficulty": "Medium",
+    "questionText": "Evaluate lim (x → 0) of (e^(5x) − e^(2x)) / x.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "7"
+      },
+      {
+        "key": "B",
+        "text": "5/2"
+      },
+      {
+        "key": "C",
+        "text": "3"
+      },
+      {
+        "key": "D",
+        "text": "0"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Rewriting as [(e^(5x) − 1)/x] − [(e^(2x) − 1)/x] and applying lim (t → 0) (eᵗ − 1)/t = 1 gives 5(1) − 2(1) = 3.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Limits",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-038",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 7,
+    "chapter": "Limits",
+    "topic": "Cubic over Quadratic Factorisation Limit",
+    "difficulty": "Hard",
+    "questionText": "Evaluate lim (x → 2) of (x³ − 7x + 6) / (x² + x − 6).",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "0"
+      },
+      {
+        "key": "B",
+        "text": "3/5"
+      },
+      {
+        "key": "C",
+        "text": "5/4"
+      },
+      {
+        "key": "D",
+        "text": "1"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Factorising numerator: x³ − 7x + 6 = (x − 2)(x² + 2x − 3) = (x − 2)(x − 1)(x + 3). Factorising denominator: x² + x − 6 = (x − 2)(x + 3). Cancelling for x ≠ 2 leaves lim (x → 2) (x − 1) = 1.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Limits",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-039",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 8,
+    "chapter": "Continuity",
+    "topic": "Definition of Continuity at a Point",
+    "difficulty": "Easy",
+    "questionText": "Under what condition is a real-valued function f(x) continuous at x = a in its domain?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "lim (x → a⁻) f(x) = lim (x → a⁺) f(x) = f(a) (finite)"
+      },
+      {
+        "key": "B",
+        "text": "f(x) is defined only for integers"
+      },
+      {
+        "key": "C",
+        "text": "f(a) = 0 regardless of left-hand and right-hand limits"
+      },
+      {
+        "key": "D",
+        "text": "lim (x → a⁻) f(x) ≠ lim (x → a⁺) f(x)"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Continuity at x = a requires that f(a) exists, the two-sided limit lim (x → a) f(x) exists finitely (LHL = RHL), and both equal f(a).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Continuity",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-040",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 8,
+    "chapter": "Continuity",
+    "topic": "Removable Point Value for Continuity",
+    "difficulty": "Medium",
+    "questionText": "If f(x) = (x² − 25) / (x − 5) for x ≠ 5 and f(5) = k is continuous at x = 5, find k.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "5"
+      },
+      {
+        "key": "B",
+        "text": "25"
+      },
+      {
+        "key": "C",
+        "text": "10"
+      },
+      {
+        "key": "D",
+        "text": "0"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "For continuity at x = 5, k = f(5) = lim (x → 5) [(x − 5)(x + 5) / (x − 5)] = lim (x → 5) (x + 5) = 10.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Continuity",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-041",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 8,
+    "chapter": "Continuity",
+    "topic": "Logarithmic Continuity at Zero",
+    "difficulty": "Medium",
+    "questionText": "If f(x) = logₑ(1 + 6x) / (2x) for x ≠ 0 is continuous at x = 0, what must be the value of f(0)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "3"
+      },
+      {
+        "key": "B",
+        "text": "1/3"
+      },
+      {
+        "key": "C",
+        "text": "12"
+      },
+      {
+        "key": "D",
+        "text": "6"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "f(0) = lim (x → 0) [logₑ(1 + 6x) / (6x)] × (6 / 2) = 1 × 3 = 3.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Continuity",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-042",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 8,
+    "chapter": "Continuity",
+    "topic": "Two-Boundary Piecewise Continuity",
+    "difficulty": "Hard",
+    "questionText": "A piecewise function is defined by: f(x) = 3x + 2 for x < 1; f(x) = ax + b for 1 ≤ x ≤ 3; and f(x) = x² + 8 for x > 3. If f(x) is continuous throughout R, find the constants a and b.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "a = 6 and b = 1"
+      },
+      {
+        "key": "B",
+        "text": "a = 6 and b = −1"
+      },
+      {
+        "key": "C",
+        "text": "a = 4 and b = 1"
+      },
+      {
+        "key": "D",
+        "text": "a = 5 and b = 0"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Continuity at x = 1 gives a(1) + b = 3(1) + 2 = 5 ⇒ a + b = 5. Continuity at x = 3 gives 3a + b = 3² + 8 = 17. Subtracting yields 2a = 12 ⇒ a = 6 and b = −1.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Continuity",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-043",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 8,
+    "chapter": "Continuity",
+    "topic": "Jump (Irremovable) Discontinuity Analysis",
+    "difficulty": "Hard",
+    "questionText": "Consider f(x) = |x − 4| / (x − 4) for x ≠ 4, and f(4) = 0. How is the behaviour of f(x) at x = 4 classified?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Continuous at x = 4 because f(4) = (−1 + 1)/2 = 0"
+      },
+      {
+        "key": "B",
+        "text": "Removable discontinuity that can be cured by setting f(4) = 1"
+      },
+      {
+        "key": "C",
+        "text": "Differentiable at x = 4 with derivative 0"
+      },
+      {
+        "key": "D",
+        "text": "Irremovable (jump) discontinuity because LHL = −1 while RHL = +1"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "For x < 4, |x − 4| = −(x − 4) so LHL = −1; for x > 4, |x − 4| = x − 4 so RHL = +1. Since LHL ≠ RHL, lim (x → 4) f(x) does not exist—an irremovable jump discontinuity.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Continuity",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-044",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 9,
+    "chapter": "Differentiation",
+    "topic": "Standard Sum Rule Differentiation",
+    "difficulty": "Easy",
+    "questionText": "Differentiate y = x⁴ − 6eˣ + 8 logₑ x − 15 with respect to x (for x > 0).",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "x³ − 6x·e^(x−1) + 8/x"
+      },
+      {
+        "key": "B",
+        "text": "4x³ + 6eˣ − 8/x²"
+      },
+      {
+        "key": "C",
+        "text": "4x³ − 6eˣ + 8/x"
+      },
+      {
+        "key": "D",
+        "text": "4x³ − 6eˣ + 8x − 15"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Applying standard derivatives term-by-term: d/dx(x⁴) = 4x³, d/dx(−6eˣ) = −6eˣ, d/dx(8 logₑ x) = 8/x, and d/dx(−15) = 0.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Differentiation",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-045",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 9,
+    "chapter": "Differentiation",
+    "topic": "Economic Interpretation of Cost Derivative",
+    "difficulty": "Easy",
+    "questionText": "In commercial applications of calculus, if C = f(x) represents Total Cost of producing x units, what economic concept is measured by the first derivative dC/dx?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Break-Even Revenue"
+      },
+      {
+        "key": "B",
+        "text": "Marginal Cost (MC)"
+      },
+      {
+        "key": "C",
+        "text": "Average Fixed Cost (AFC)"
+      },
+      {
+        "key": "D",
+        "text": "Total Variable Cost (TVC)"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Marginal Cost is the instantaneous rate of change of Total Cost with respect to output x, given in calculus by MC = dC/dx.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Differentiation",
+    "abilityTags": [
+      "financial_understanding",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-046",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 9,
+    "chapter": "Differentiation",
+    "topic": "Product Rule Evaluation",
+    "difficulty": "Medium",
+    "questionText": "If y = x²·eˣ, find the value of dy/dx at x = 1.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "3e"
+      },
+      {
+        "key": "B",
+        "text": "2e"
+      },
+      {
+        "key": "C",
+        "text": "e"
+      },
+      {
+        "key": "D",
+        "text": "4e"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "By the product rule, dy/dx = x²·eˣ + 2x·eˣ = (x² + 2x)eˣ. Evaluating at x = 1 gives (1 + 2)e¹ = 3e.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Differentiation",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-047",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 9,
+    "chapter": "Differentiation",
+    "topic": "Quotient Rule Evaluation",
+    "difficulty": "Medium",
+    "questionText": "If f(x) = (3x + 2) / (2x − 1) for x ≠ 1/2, calculate f′(2).",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "−5/9"
+      },
+      {
+        "key": "B",
+        "text": "1/3"
+      },
+      {
+        "key": "C",
+        "text": "7/9"
+      },
+      {
+        "key": "D",
+        "text": "−7/9"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "By the quotient rule, f′(x) = [(2x − 1)(3) − (3x + 2)(2)] / (2x − 1)² = −7 / (2x − 1)². At x = 2, f′(2) = −7 / 3² = −7/9.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Differentiation",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-048",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 9,
+    "chapter": "Differentiation",
+    "topic": "Output Where Marginal Cost Equals Average Cost",
+    "difficulty": "Hard",
+    "questionText": "A manufacturer's Total Cost function (in ₹) for x units is C(x) = 2x² + 30x + 800 (x > 0). Find the output level x at which Marginal Cost (MC) equals Average Cost (AC).",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "40 units"
+      },
+      {
+        "key": "B",
+        "text": "20 units"
+      },
+      {
+        "key": "C",
+        "text": "15 units"
+      },
+      {
+        "key": "D",
+        "text": "25 units"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "MC = dC/dx = 4x + 30, and AC = C(x)/x = 2x + 30 + 800/x. Setting MC = AC gives 4x + 30 = 2x + 30 + 800/x ⇒ 2x = 800/x ⇒ x² = 400 ⇒ x = 20 units (where AC is minimised at ₹110).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Differentiation",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-049",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 9,
+    "chapter": "Differentiation",
+    "topic": "Demand Law and Marginal Revenue Zero Output",
+    "difficulty": "Hard",
+    "questionText": "The price-demand relation for a firm's product is p = 120 − 3x, where p is unit price (₹) and x is quantity demanded. Find (i) Marginal Revenue at x = 15 units and (ii) the output x at which Marginal Revenue becomes zero.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "MR at x = 15 is ₹75; MR becomes zero at x = 40 units"
+      },
+      {
+        "key": "B",
+        "text": "MR at x = 15 is ₹30; MR becomes zero at x = 40 units"
+      },
+      {
+        "key": "C",
+        "text": "MR at x = 15 is ₹30; MR becomes zero at x = 20 units"
+      },
+      {
+        "key": "D",
+        "text": "MR at x = 15 is ₹45; MR becomes zero at x = 25 units"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Total Revenue R(x) = p·x = 120x − 3x², so Marginal Revenue MR = dR/dx = 120 − 6x. At x = 15, MR = 120 − 90 = ₹30; setting 120 − 6x = 0 gives x = 20 units (revenue-maximising output).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Differentiation",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-050",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 10,
+    "chapter": "Partition Values",
+    "topic": "Graphical Location of Partition Values",
+    "difficulty": "Easy",
+    "questionText": "Which statistical graph is specifically used to locate Quartiles, Deciles, and Percentiles graphically?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Cumulative Frequency Curve (Ogive)"
+      },
+      {
+        "key": "B",
+        "text": "Pie Diagram"
+      },
+      {
+        "key": "C",
+        "text": "Simple Bar Chart"
+      },
+      {
+        "key": "D",
+        "text": "Histogram"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Partition values depend on cumulative frequencies (less-than or more-than ogives), whereas a Histogram is used graphically to locate the Mode.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Partition Values",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-051",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 10,
+    "chapter": "Partition Values",
+    "topic": "Quartiles of Sorted Observations",
+    "difficulty": "Easy",
+    "questionText": "For 11 sorted test scores—14, 18, 21, 24, 27, 30, 33, 36, 40, 44, 48—what are the First Quartile (Q1) and Second Quartile (Q2)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Q1 = 21 and Q2 = 33"
+      },
+      {
+        "key": "B",
+        "text": "Q1 = 18 and Q2 = 27"
+      },
+      {
+        "key": "C",
+        "text": "Q1 = 21 and Q2 = 30"
+      },
+      {
+        "key": "D",
+        "text": "Q1 = 24 and Q2 = 30"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "With n = 11: Q1 = (11 + 1)/4 = 3rd item = 21, and Q2 = 2(11 + 1)/4 = 6th item = 30.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Partition Values",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-052",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 10,
+    "chapter": "Partition Values",
+    "topic": "Inter-Decile Spread (D9 − D1)",
+    "difficulty": "Medium",
+    "questionText": "Nine listed companies have Price-to-Earnings ratios: 15, 8, 28, 12, 20, 10, 32, 24, 18. Compute the inter-decile spread (D9 − D1).",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "16"
+      },
+      {
+        "key": "B",
+        "text": "20"
+      },
+      {
+        "key": "C",
+        "text": "18"
+      },
+      {
+        "key": "D",
+        "text": "24"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Sorted data (n = 9): 8, 10, 12, 15, 18, 20, 24, 28, 32. D1 = 1(9 + 1)/10 = 1st item = 8; D9 = 9(9 + 1)/10 = 9th item = 32. Spread D9 − D1 = 32 − 8 = 24.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Partition Values",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-053",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 10,
+    "chapter": "Partition Values",
+    "topic": "75th Percentile in Discrete Distribution",
+    "difficulty": "Medium",
+    "questionText": "Given values x = (5, 10, 15, 20, 25) with corresponding frequencies f = (3, 6, 8, 4, 2), compute P75.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "25"
+      },
+      {
+        "key": "B",
+        "text": "20"
+      },
+      {
+        "key": "C",
+        "text": "17.5"
+      },
+      {
+        "key": "D",
+        "text": "15"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Total N = 23 and cumulative frequencies (cf) are 3, 9, 17, 21, 23. P75 = size of 75(23 + 1)/100 = 18th observation; the first cf ≥ 18 is 21, corresponding to x = 20.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Partition Values",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-054",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 10,
+    "chapter": "Partition Values",
+    "topic": "40th Percentile of Continuous Distribution",
+    "difficulty": "Medium",
+    "questionText": "Find P40 for the grouped daily sales (₹ '000) distribution: 0–50 (f = 10), 50–100 (f = 18), 100–150 (f = 20), 150–200 (f = 22), 200–250 (f = 10).",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "120"
+      },
+      {
+        "key": "B",
+        "text": "115"
+      },
+      {
+        "key": "C",
+        "text": "108"
+      },
+      {
+        "key": "D",
+        "text": "110"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "N = 80 ⇒ 40N/100 = 32. Cumulative frequencies: 10, 28, 48, 70, 80. P40 class is 100–150 (l = 100, cf = 28, f = 20, h = 50). P40 = 100 + [(32 − 28)/20] × 50 = 100 + 10 = 110.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Partition Values",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-055",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 10,
+    "chapter": "Partition Values",
+    "topic": "Finding Two Missing Frequencies from Q2 and Total N",
+    "difficulty": "Hard",
+    "questionText": "In the distribution 0–10 (f = 5), 10–20 (f = x), 20–30 (f = 20), 30–40 (f = 15), 40–50 (f = y), total frequency N = 60 and Second Quartile (Q2) = 28. Find x and y.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "x = 9 and y = 11"
+      },
+      {
+        "key": "B",
+        "text": "x = 11 and y = 9"
+      },
+      {
+        "key": "C",
+        "text": "x = 8 and y = 12"
+      },
+      {
+        "key": "D",
+        "text": "x = 10 and y = 10"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "N/2 = 30 and Q2 = 28 lies in 20–30 (l = 20, f = 20, h = 10, cf = 5 + x). Thus 28 = 20 + [(30 − 5 − x)/20] × 10 ⇒ 8 = (25 − x)/2 ⇒ x = 9. Since 5 + 9 + 20 + 15 + y = 60, y = 11.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Partition Values",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-056",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 11,
+    "chapter": "Measures of Dispersion",
+    "topic": "Range and Coefficient of Range",
+    "difficulty": "Easy",
+    "questionText": "Six closing prices (in ₹) of a share during a week were: 180, 220, 150, 250, 195, 210. Find the Range and Coefficient of Range.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Range = ₹70 and Coefficient of Range = 0.25"
+      },
+      {
+        "key": "B",
+        "text": "Range = ₹100 and Coefficient of Range = 0.20"
+      },
+      {
+        "key": "C",
+        "text": "Range = ₹100 and Coefficient of Range = 0.25"
+      },
+      {
+        "key": "D",
+        "text": "Range = ₹100 and Coefficient of Range = 0.40"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Largest value L = 250, Smallest value S = 150. Range = L − S = ₹100; Coefficient of Range = (250 − 150) / (250 + 150) = 100 / 400 = 0.25.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Measures of Dispersion",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-057",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 11,
+    "chapter": "Measures of Dispersion",
+    "topic": "Quartile Deviation and Coefficient of QD",
+    "difficulty": "Easy",
+    "questionText": "If the First Quartile (Q1) of a wage distribution is ₹30 and the Third Quartile (Q3) is ₹50, find the Quartile Deviation (QD) and Coefficient of QD.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "QD = ₹40 and Coefficient of QD = 0.50"
+      },
+      {
+        "key": "B",
+        "text": "QD = ₹10 and Coefficient of QD = 0.25"
+      },
+      {
+        "key": "C",
+        "text": "QD = ₹20 and Coefficient of QD = 0.25"
+      },
+      {
+        "key": "D",
+        "text": "QD = ₹10 and Coefficient of QD = 0.40"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "QD (Semi-interquartile range) = (Q3 − Q1)/2 = (50 − 30)/2 = ₹10; Coefficient of QD = (Q3 − Q1)/(Q3 + Q1) = 20/80 = 0.25.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Measures of Dispersion",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-058",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 11,
+    "chapter": "Measures of Dispersion",
+    "topic": "Variance and Standard Deviation of Ungrouped Data",
+    "difficulty": "Medium",
+    "questionText": "Compute the population Variance (σ²) and Standard Deviation (σ) of the observations: 4, 6, 8, 10, 12.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Variance = 8 and Standard Deviation = 2√2"
+      },
+      {
+        "key": "B",
+        "text": "Variance = 10 and Standard Deviation = √10"
+      },
+      {
+        "key": "C",
+        "text": "Variance = 4 and Standard Deviation = 2"
+      },
+      {
+        "key": "D",
+        "text": "Variance = 8 and Standard Deviation = 4"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Mean x̄ = 8; squared deviations from mean are (−4)² + (−2)² + 0² + 2² + 4² = 40. Variance σ² = 40 / 5 = 8, and σ = √8 = 2√2.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Measures of Dispersion",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-059",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 11,
+    "chapter": "Measures of Dispersion",
+    "topic": "Coefficient of Variation Portfolio Consistency",
+    "difficulty": "Medium",
+    "questionText": "Equity Fund X has a mean annual return of 15% with standard deviation 3%; Equity Fund Y has a mean annual return of 20% with standard deviation 5%. Using Coefficient of Variation (CV), which fund is more consistent?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Both funds are equally consistent"
+      },
+      {
+        "key": "B",
+        "text": "Fund X (CV = 5%) is less consistent than Fund Y (CV = 4%)"
+      },
+      {
+        "key": "C",
+        "text": "Fund Y (CV = 25%) is more consistent because its mean return is higher"
+      },
+      {
+        "key": "D",
+        "text": "Fund X (CV = 20%) is more consistent than Fund Y (CV = 25%)"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "CV = (σ / x̄) × 100. CV(X) = (3/15) × 100 = 20%; CV(Y) = (5/20) × 100 = 25%. Lower CV signifies smaller relative variability, so Fund X is more consistent.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Measures of Dispersion",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-060",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 11,
+    "chapter": "Measures of Dispersion",
+    "topic": "Effect of Change of Origin and Scale on Variance",
+    "difficulty": "Hard",
+    "questionText": "A random dataset X has Mean = 12 and Variance = 5. If each observation is transformed according to Y = 3X − 7, what are the Mean and Variance of Y?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Mean of Y = 36 and Variance of Y = 45"
+      },
+      {
+        "key": "B",
+        "text": "Mean of Y = 29 and Variance of Y = 15"
+      },
+      {
+        "key": "C",
+        "text": "Mean of Y = 29 and Variance of Y = 38"
+      },
+      {
+        "key": "D",
+        "text": "Mean of Y = 29 and Variance of Y = 45"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "For Y = aX + b: Mean ȳ = a·x̄ + b = 3(12) − 7 = 29. Variance is invariant to shift of origin (−7) and scales by a²: Var(Y) = 3² × Var(X) = 9 × 5 = 45.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Measures of Dispersion",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-061",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 11,
+    "chapter": "Measures of Dispersion",
+    "topic": "Combined Variance of Two Groups",
+    "difficulty": "Hard",
+    "questionText": "Branch 1 has 40 employees with mean daily incentive ₹45 and SD ₹4; Branch 2 has 60 employees with mean daily incentive ₹55 and SD ₹5. Compute the Combined Variance of all 100 employees.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "21.4"
+      },
+      {
+        "key": "B",
+        "text": "45.4"
+      },
+      {
+        "key": "C",
+        "text": "41.0"
+      },
+      {
+        "key": "D",
+        "text": "49.6"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Combined mean x̄_c = [40(45) + 60(55)] / 100 = 51. Thus d₁ = 45 − 51 = −6 (d₁² = 36) and d₂ = 55 − 51 = 4 (d₂² = 16). Combined Variance = [40(16 + 36) + 60(25 + 16)] / 100 = (2,080 + 2,460) / 100 = 45.4.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Measures of Dispersion",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-062",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 12,
+    "chapter": "Skewness",
+    "topic": "Positively Skewed Distribution Ordering",
+    "difficulty": "Easy",
+    "questionText": "In a unimodal Positively Skewed frequency distribution (longer tail toward higher values on the right), what inequality relates Mean, Median, and Mode?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Mean = Median = Mode"
+      },
+      {
+        "key": "B",
+        "text": "Median > Mean > Mode"
+      },
+      {
+        "key": "C",
+        "text": "Mean > Median > Mode"
+      },
+      {
+        "key": "D",
+        "text": "Mean < Median < Mode"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "High right-tail outliers pull the arithmetic Mean furthest right, with Median in between and Mode at the peak on the left: Mean > Median > Mode.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Skewness",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-063",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 12,
+    "chapter": "Skewness",
+    "topic": "Bounds of Bowley's Coefficient of Skewness",
+    "difficulty": "Easy",
+    "questionText": "Within what closed numerical interval does Bowley's quartile-based Coefficient of Skewness (S_b) always lie?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "−1 ≤ S_b ≤ +1"
+      },
+      {
+        "key": "B",
+        "text": "−∞ < S_b < +∞"
+      },
+      {
+        "key": "C",
+        "text": "−3 ≤ S_b ≤ +3"
+      },
+      {
+        "key": "D",
+        "text": "0 ≤ S_b ≤ +1"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Because Q1 ≤ Q2 ≤ Q3, |(Q3 − Q2) − (Q2 − Q1)| ≤ (Q3 − Q2) + (Q2 − Q1) = Q3 − Q1, bounding S_b strictly between −1 and +1.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Skewness",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-064",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 12,
+    "chapter": "Skewness",
+    "topic": "Karl Pearson's Coefficient of Skewness",
+    "difficulty": "Medium",
+    "questionText": "For a distribution with Mean = 64, Mode = 70, and Variance = 144, compute Karl Pearson's Coefficient of Skewness (S_k).",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "+0.5"
+      },
+      {
+        "key": "B",
+        "text": "−0.5"
+      },
+      {
+        "key": "C",
+        "text": "−0.042"
+      },
+      {
+        "key": "D",
+        "text": "+0.75"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Standard Deviation σ = √144 = 12. Karl Pearson's S_k = (Mean − Mode) / σ = (64 − 70) / 12 = −6 / 12 = −0.5 (negatively skewed).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Skewness",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-065",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 12,
+    "chapter": "Skewness",
+    "topic": "Bowley's Coefficient of Skewness Computation",
+    "difficulty": "Medium",
+    "questionText": "Compute Bowley's Coefficient of Skewness for a dataset having Q1 = 22, Median (Q2) = 30, and Q3 = 46.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1/4 (0.25)"
+      },
+      {
+        "key": "B",
+        "text": "1/2 (0.50)"
+      },
+      {
+        "key": "C",
+        "text": "1/3 (≈ 0.33)"
+      },
+      {
+        "key": "D",
+        "text": "−1/3 (≈ −0.33)"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "S_b = (Q3 + Q1 − 2Q2) / (Q3 − Q1) = (46 + 22 − 60) / (46 − 22) = 8 / 24 = 1/3.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Skewness",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-066",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 12,
+    "chapter": "Skewness",
+    "topic": "Recovering Q1 and Q3 from QD, Median, and Bowley's Skewness",
+    "difficulty": "Hard",
+    "questionText": "For an income distribution, Quartile Deviation is 12, Median (Q2) is 50, and Bowley's Coefficient of Skewness is 0.25. Find Q1 and Q3.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Q1 = 35 and Q3 = 59"
+      },
+      {
+        "key": "B",
+        "text": "Q1 = 38 and Q3 = 62"
+      },
+      {
+        "key": "C",
+        "text": "Q1 = 40 and Q3 = 64"
+      },
+      {
+        "key": "D",
+        "text": "Q1 = 41 and Q3 = 65"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "QD = 12 ⇒ Q3 − Q1 = 24. Also (Q3 + Q1 − 100) / 24 = 0.25 ⇒ Q3 + Q1 = 106. Solving Q3 + Q1 = 106 and Q3 − Q1 = 24 gives Q3 = 65 and Q1 = 41.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Skewness",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-067",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 13,
+    "chapter": "Bivariate Frequency Distribution and Chi-Square",
+    "topic": "Degrees of Freedom in a Contingency Table",
+    "difficulty": "Easy",
+    "questionText": "In a Karl Pearson Chi-Square test of independence on a contingency table having 4 rows and 3 columns, what are the degrees of freedom?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "6"
+      },
+      {
+        "key": "B",
+        "text": "12"
+      },
+      {
+        "key": "C",
+        "text": "7"
+      },
+      {
+        "key": "D",
+        "text": "5"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Degrees of freedom for an r × c contingency table = (r − 1)(c − 1) = (4 − 1)(3 − 1) = 3 × 2 = 6.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 13: Bivariate Frequency Distribution and Chi-Square",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-068",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 13,
+    "chapter": "Bivariate Frequency Distribution and Chi-Square",
+    "topic": "Expected Cell Frequency Under Independence",
+    "difficulty": "Medium",
+    "questionText": "In a contingency table of N = 200 customers cross-classified by Age Group and Payment Mode, Row 1 has marginal total 80 and Column 2 has marginal total 65. Under independence, what is the expected cell frequency E₁₂?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "24"
+      },
+      {
+        "key": "B",
+        "text": "40"
+      },
+      {
+        "key": "C",
+        "text": "26"
+      },
+      {
+        "key": "D",
+        "text": "32.5"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Expected frequency E_ij = (Row i Total × Column j Total) / N = (80 × 65) / 200 = 5,200 / 200 = 26.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 13: Bivariate Frequency Distribution and Chi-Square",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-069",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 13,
+    "chapter": "Bivariate Frequency Distribution and Chi-Square",
+    "topic": "Conditional Frequency Percentage from Bivariate Table",
+    "difficulty": "Medium",
+    "questionText": "A 2 × 2 bivariate table of (X, Y) has cell frequencies: (X₁, Y₁) = 15, (X₁, Y₂) = 25, (X₂, Y₁) = 20, and (X₂, Y₂) = 40 (total N = 100). In the conditional distribution of Y given X = X₁, what percentage belongs to Y₂?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "65.0%"
+      },
+      {
+        "key": "B",
+        "text": "62.5%"
+      },
+      {
+        "key": "C",
+        "text": "25.0%"
+      },
+      {
+        "key": "D",
+        "text": "38.5%"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Marginal total for X = X₁ is 15 + 25 = 40. Within X = X₁, the conditional relative share of Y₂ is (25 / 40) × 100% = 62.5%.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 13: Bivariate Frequency Distribution and Chi-Square",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-070",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 13,
+    "chapter": "Bivariate Frequency Distribution and Chi-Square",
+    "topic": "2 × 2 Chi-Square Statistic Computation",
+    "difficulty": "Hard",
+    "questionText": "Compute Karl Pearson's Chi-Square statistic χ² = Σ[(O − E)² / E] for the observed 2 × 2 table (N = 100): Row 1 = (30, 20) and Row 2 = (10, 40).",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "50/3 (≈ 16.67)"
+      },
+      {
+        "key": "B",
+        "text": "25/3 (≈ 8.33)"
+      },
+      {
+        "key": "C",
+        "text": "10.00"
+      },
+      {
+        "key": "D",
+        "text": "20.00"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Row totals are (50, 50) and column totals are (40, 60), so expected frequencies are Row 1 = (20, 30) and Row 2 = (20, 30). Since |O − E| = 10 in every cell, χ² = 100/20 + 100/30 + 100/20 + 100/30 = 10 + 20/3 = 50/3 ≈ 16.67.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 13: Bivariate Frequency Distribution and Chi-Square",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-071",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 13,
+    "chapter": "Bivariate Frequency Distribution and Chi-Square",
+    "topic": "Goodness-of-Fit Chi-Square for Uniform Weekday Demand",
+    "difficulty": "Hard",
+    "questionText": "A store manager tests whether customer arrivals are uniform across 5 weekdays (expected E_i = 50/day out of 250 customers). Actual arrivals from Monday to Friday were 60, 45, 55, 40, and 50. Find the value of χ².",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "10.0"
+      },
+      {
+        "key": "B",
+        "text": "4.0"
+      },
+      {
+        "key": "C",
+        "text": "2.5"
+      },
+      {
+        "key": "D",
+        "text": "5.0"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Squared deviations (O_i − 50)² are 10² + (−5)² + 5² + (−10)² + 0² = 100 + 25 + 25 + 100 + 0 = 250. Dividing by E = 50 gives χ² = 250 / 50 = 5.0.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 13: Bivariate Frequency Distribution and Chi-Square",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-072",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 14,
+    "chapter": "Correlation",
+    "topic": "Karl Pearson's Correlation from Covariance and SDs",
+    "difficulty": "Easy",
+    "questionText": "If Cov(X, Y) = 18, σ_x = 4, and σ_y = 6, find Karl Pearson's correlation coefficient r.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "0.45"
+      },
+      {
+        "key": "B",
+        "text": "0.75"
+      },
+      {
+        "key": "C",
+        "text": "0.60"
+      },
+      {
+        "key": "D",
+        "text": "0.80"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "r = Cov(X, Y) / (σ_x · σ_y) = 18 / (4 × 6) = 18 / 24 = 0.75.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Correlation",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-073",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 14,
+    "chapter": "Correlation",
+    "topic": "Scatter Diagram Collinear Negative Slope",
+    "difficulty": "Easy",
+    "questionText": "If all plotted points (x_i, y_i) in a scatter diagram lie exactly along a straight line sloping downward from left to right, what is the value of r?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "+1"
+      },
+      {
+        "key": "B",
+        "text": "0"
+      },
+      {
+        "key": "C",
+        "text": "−1"
+      },
+      {
+        "key": "D",
+        "text": "−0.5"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Exact collinearity along a negatively sloped line represents perfect negative linear correlation, so r = −1.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Correlation",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-074",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 14,
+    "chapter": "Correlation",
+    "topic": "Spearman's Rank Correlation Coefficient",
+    "difficulty": "Medium",
+    "questionText": "Two panel judges rank n = 6 candidates in a management case competition, and the sum of squared rank differences is Σd_i² = 14. Compute Spearman's Rank Correlation Coefficient R.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "0.60"
+      },
+      {
+        "key": "B",
+        "text": "0.75"
+      },
+      {
+        "key": "C",
+        "text": "0.65"
+      },
+      {
+        "key": "D",
+        "text": "0.40"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "R = 1 − [6·Σd_i² / n(n² − 1)] = 1 − [(6 × 14) / (6 × 35)] = 1 − 14/35 = 1 − 0.40 = 0.60.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Correlation",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-075",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 14,
+    "chapter": "Correlation",
+    "topic": "Sign Sensitivity of Correlation Under Linear Scaling",
+    "difficulty": "Medium",
+    "questionText": "Given that Karl Pearson's correlation coefficient between X and Y is r(X, Y) = 0.80, find r(U, V) where U = 2X + 5 and V = −3Y + 10.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "−0.27"
+      },
+      {
+        "key": "B",
+        "text": "−0.80"
+      },
+      {
+        "key": "C",
+        "text": "+0.80"
+      },
+      {
+        "key": "D",
+        "text": "−0.40"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Correlation magnitude is invariant under linear change of origin and scale, but because the scale multipliers (+2 and −3) have opposite signs, the sign reverses: r(U, V) = −0.80.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Correlation",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-076",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 14,
+    "chapter": "Correlation",
+    "topic": "Karl Pearson's r from Raw Bivariate Summations",
+    "difficulty": "Hard",
+    "questionText": "For n = 5 pairs of advertising spend (X) and sales (Y): ΣX = 25, ΣY = 40, ΣX² = 135, ΣY² = 360, and ΣXY = 214. Compute Karl Pearson's correlation coefficient r.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "0.85"
+      },
+      {
+        "key": "B",
+        "text": "0.60"
+      },
+      {
+        "key": "C",
+        "text": "0.70"
+      },
+      {
+        "key": "D",
+        "text": "0.75"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "x̄ = 5, ȳ = 8. Σ(x − x̄)(y − ȳ) = 214 − 5(5)(8) = 14; Σ(x − x̄)² = 135 − 5(25) = 10; Σ(y − ȳ)² = 360 − 5(64) = 40. Thus r = 14 / √(10 × 40) = 14 / 20 = 0.70.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Correlation",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-077",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 14,
+    "chapter": "Correlation",
+    "topic": "Spearman's Rank Correlation with Tied Ranks",
+    "difficulty": "Hard",
+    "questionText": "In ranking n = 7 consumer brands, unadjusted Σd_i² = 20.5, with exactly ONE tie of 2 brands sharing equal scores (m = 2). Applying the tie-correction term m(m² − 1)/12, find Spearman's R.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "0.575"
+      },
+      {
+        "key": "B",
+        "text": "0.600"
+      },
+      {
+        "key": "C",
+        "text": "0.634"
+      },
+      {
+        "key": "D",
+        "text": "0.625"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Tie correction for m = 2 is 2(4 − 1)/12 = 0.5. Adjusted R = 1 − [6(20.5 + 0.5) / (7 × 48)] = 1 − (126 / 336) = 1 − 3/8 = 0.625.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Correlation",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-078",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 15,
+    "chapter": "Permutations and Combinations",
+    "topic": "Symmetry Identity of Combinations",
+    "difficulty": "Easy",
+    "questionText": "If ⁿC₈ = ⁿC₆, find the value of n and ⁿC₂.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "n = 48 and ⁴⁸C₂ = 1,128"
+      },
+      {
+        "key": "B",
+        "text": "n = 14 and ¹⁴C₂ = 91"
+      },
+      {
+        "key": "C",
+        "text": "n = 14 and ¹⁴C₂ = 182"
+      },
+      {
+        "key": "D",
+        "text": "n = 12 and ¹²C₂ = 66"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Since ⁿC_a = ⁿC_b (with a ≠ b) implies n = a + b = 8 + 6 = 14, we get ¹⁴C₂ = (14 × 13) / 2 = 91.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 15: Permutations and Combinations",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-079",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 15,
+    "chapter": "Permutations and Combinations",
+    "topic": "Permutations of Repeated Letters",
+    "difficulty": "Medium",
+    "questionText": "How many distinct 8-letter arrangements can be formed using all letters of the word 'COMMERCE'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "5,040"
+      },
+      {
+        "key": "B",
+        "text": "40,320"
+      },
+      {
+        "key": "C",
+        "text": "10,080"
+      },
+      {
+        "key": "D",
+        "text": "2,520"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "'COMMERCE' has 8 letters with C repeated twice, M repeated twice, and E repeated twice. Distinct permutations = 8! / (2! × 2! × 2!) = 40,320 / 8 = 5,040.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 15: Permutations and Combinations",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-080",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 15,
+    "chapter": "Permutations and Combinations",
+    "topic": "Constrained Four-Digit Numbers",
+    "difficulty": "Medium",
+    "questionText": "How many 4-digit numbers strictly greater than 5,000 can be formed from the digits {2, 3, 5, 7, 8} if repetition of digits is NOT allowed?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "48"
+      },
+      {
+        "key": "B",
+        "text": "96"
+      },
+      {
+        "key": "C",
+        "text": "72"
+      },
+      {
+        "key": "D",
+        "text": "120"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "To exceed 5,000, the thousands place can be chosen from {5, 7, 8} in 3 ways; the remaining 3 places are filled from the remaining 4 digits in ⁴P₃ = 24 ways. Total = 3 × 24 = 72.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 15: Permutations and Combinations",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-081",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 15,
+    "chapter": "Permutations and Combinations",
+    "topic": "Governance Committee Selection",
+    "difficulty": "Medium",
+    "questionText": "From 6 Chartered Accountants and 4 Company Secretaries, in how many ways can a 5-member corporate audit committee be formed consisting of exactly 3 Chartered Accountants and 2 Company Secretaries?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "120"
+      },
+      {
+        "key": "B",
+        "text": "144"
+      },
+      {
+        "key": "C",
+        "text": "252"
+      },
+      {
+        "key": "D",
+        "text": "60"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Selecting 3 CAs out of 6 and 2 CSs out of 4 gives ⁶C₃ × ⁴C₂ = 20 × 6 = 120 committees.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 15: Permutations and Combinations",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-082",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 15,
+    "chapter": "Permutations and Combinations",
+    "topic": "Committee Selection with 'At Least' Constraint",
+    "difficulty": "Hard",
+    "questionText": "An economic research panel of 5 members is to be selected from 7 Economists and 5 Statisticians such that AT LEAST 3 Statisticians are included. How many distinct panels are possible?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "210"
+      },
+      {
+        "key": "B",
+        "text": "350"
+      },
+      {
+        "key": "C",
+        "text": "256"
+      },
+      {
+        "key": "D",
+        "text": "246"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Summing mutually exclusive cases: (3 Stat, 2 Econ) = ⁵C₃ × ⁷C₂ = 10 × 21 = 210; (4 Stat, 1 Econ) = ⁵C₄ × ⁷C₁ = 5 × 7 = 35; (5 Stat, 0 Econ) = ⁵C₅ × ⁷C₀ = 1. Total = 210 + 35 + 1 = 246.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 15: Permutations and Combinations",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-083",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 16,
+    "chapter": "Probability",
+    "topic": "Addition Theorem of Probability",
+    "difficulty": "Easy",
+    "questionText": "If P(A) = 0.45, P(B) = 0.35, and P(A ∩ B) = 0.15, find P(A ∪ B).",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "0.55"
+      },
+      {
+        "key": "B",
+        "text": "0.65"
+      },
+      {
+        "key": "C",
+        "text": "0.95"
+      },
+      {
+        "key": "D",
+        "text": "0.80"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "By the addition theorem, P(A ∪ B) = P(A) + P(B) − P(A ∩ B) = 0.45 + 0.35 − 0.15 = 0.65.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 16: Probability",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-084",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 16,
+    "chapter": "Probability",
+    "topic": "Two-Dice Sum Probability",
+    "difficulty": "Easy",
+    "questionText": "When two fair six-sided dice are rolled simultaneously, what is the probability of getting a sum of 9 on the upper faces?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1/12"
+      },
+      {
+        "key": "B",
+        "text": "1/6"
+      },
+      {
+        "key": "C",
+        "text": "1/9"
+      },
+      {
+        "key": "D",
+        "text": "5/36"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Out of 36 equiprobable outcomes, sum = 9 occurs for {(3, 6), (4, 5), (5, 4), (6, 3)} = 4 outcomes; probability = 4/36 = 1/9.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 16: Probability",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-085",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 16,
+    "chapter": "Probability",
+    "topic": "Independent Audit Error Detection",
+    "difficulty": "Medium",
+    "questionText": "Two independent auditors A and B inspect a complex ledger; their individual probabilities of spotting a subtle posting error are 2/3 and 3/4 respectively. What is the probability that the error IS spotted (by at least one auditor)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1/2"
+      },
+      {
+        "key": "B",
+        "text": "5/7"
+      },
+      {
+        "key": "C",
+        "text": "7/12"
+      },
+      {
+        "key": "D",
+        "text": "11/12"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "P(neither spots error) = (1 − 2/3)(1 − 3/4) = (1/3)(1/4) = 1/12. Hence P(at least one spots error) = 1 − 1/12 = 11/12.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 16: Probability",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-086",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 16,
+    "chapter": "Probability",
+    "topic": "Conditional Probability in Banking Products",
+    "difficulty": "Medium",
+    "questionText": "At a commercial bank branch, 60% of customers hold Savings accounts, 40% hold Fixed Deposits, and 25% hold both. Given that a randomly chosen customer holds a Fixed Deposit, what is the conditional probability that she also holds a Savings account?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "5/8 (0.625)"
+      },
+      {
+        "key": "B",
+        "text": "1/4 (0.250)"
+      },
+      {
+        "key": "C",
+        "text": "2/3 (0.667)"
+      },
+      {
+        "key": "D",
+        "text": "5/12 (0.417)"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "P(Savings | FD) = P(Savings ∩ FD) / P(FD) = 0.25 / 0.40 = 25/40 = 5/8 = 0.625.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 16: Probability",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-087",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 16,
+    "chapter": "Probability",
+    "topic": "Bayes' Theorem in Factory Quality Control",
+    "difficulty": "Hard",
+    "questionText": "Machine M1 manufactures 60% of a plant's bolts with a 2% defective rate, while Machine M2 manufactures the remaining 40% with a 5% defective rate. A bolt drawn at random from combined output is found defective. What is the probability that it was produced by Machine M2?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1/2 (0.500)"
+      },
+      {
+        "key": "B",
+        "text": "5/8 (0.625)"
+      },
+      {
+        "key": "C",
+        "text": "3/8 (0.375)"
+      },
+      {
+        "key": "D",
+        "text": "5/7 (0.714)"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "By Bayes' Theorem: P(M2)P(D|M2) = 0.40 × 0.05 = 0.020, and P(M1)P(D|M1) = 0.60 × 0.02 = 0.012. Total P(D) = 0.032, so P(M2 | D) = 0.020 / 0.032 = 5/8 = 0.625.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 16: Probability",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-088",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 16,
+    "chapter": "Probability",
+    "topic": "Sampling Without Replacement",
+    "difficulty": "Hard",
+    "questionText": "A cabinet of 12 tax files contains 4 audited files and 8 unaudited files. If 3 files are selected at random without replacement, find the probability that AT LEAST ONE selected file is audited.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "14/55"
+      },
+      {
+        "key": "B",
+        "text": "2/3"
+      },
+      {
+        "key": "C",
+        "text": "37/55"
+      },
+      {
+        "key": "D",
+        "text": "41/55"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Total ways = ¹²C₃ = 220; ways with zero audited files (all 3 from 8 unaudited) = ⁸C₃ = 56. Thus P(at least 1 audited) = 1 − 56/220 = 1 − 14/55 = 41/55.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 16: Probability",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-089",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 17,
+    "chapter": "Linear Inequations",
+    "topic": "Solving Linear Inequality in One Variable",
+    "difficulty": "Easy",
+    "questionText": "Find the real solution set of the linear inequality: 3x − 7 ≤ 5x + 3.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "[5, ∞)"
+      },
+      {
+        "key": "B",
+        "text": "(−5, 5)"
+      },
+      {
+        "key": "C",
+        "text": "[−5, ∞)"
+      },
+      {
+        "key": "D",
+        "text": "(−∞, −5]"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Subtracting 3x and 3 from both sides: −10 ≤ 2x ⇒ x ≥ −5, giving the closed-left ray [−5, ∞).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 17: Linear Inequations",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-090",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 17,
+    "chapter": "Linear Inequations",
+    "topic": "Absolute Value Linear Inequality",
+    "difficulty": "Medium",
+    "questionText": "Solve the modulus inequality |2x − 5| ≤ 7 for x ∈ R.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "[1, 6]"
+      },
+      {
+        "key": "B",
+        "text": "[−1, 6]"
+      },
+      {
+        "key": "C",
+        "text": "[−6, 1]"
+      },
+      {
+        "key": "D",
+        "text": "(−∞, −1] ∪ [6, ∞)"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "|2x − 5| ≤ 7 ⇔ −7 ≤ 2x − 5 ≤ 7 ⇔ −2 ≤ 2x ≤ 12 ⇔ −1 ≤ x ≤ 6, i.e., [−1, 6].",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 17: Linear Inequations",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-091",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 17,
+    "chapter": "Linear Inequations",
+    "topic": "Half-Plane Origin Test",
+    "difficulty": "Medium",
+    "questionText": "In the XY-coordinate plane, which region represents the solution set of the linear inequation 3x + 4y ≥ 12?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Closed half-plane bounded by 3x + 4y = 12 containing the origin (0, 0)"
+      },
+      {
+        "key": "B",
+        "text": "Only the isolated points (4, 0) and (0, 3)"
+      },
+      {
+        "key": "C",
+        "text": "Closed half-plane bounded by 3x + 4y = 12 lying on the side NOT containing the origin (0, 0)"
+      },
+      {
+        "key": "D",
+        "text": "Open half-plane strictly excluding the boundary line 3x + 4y = 12"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Testing origin (0, 0) in 3x + 4y ≥ 12 yields 0 ≥ 12 (False), and '≥' includes the boundary line; hence the solution is the closed non-origin side of 3x + 4y = 12.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 17: Linear Inequations",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-092",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 17,
+    "chapter": "Linear Inequations",
+    "topic": "Formulating Commercial Resource Inequations",
+    "difficulty": "Medium",
+    "questionText": "A furniture workshop spends ₹500 on timber per chair (x) and ₹1,200 per table (y) within a weekly timber budget of at most ₹24,000, while storage holds at most 30 pieces in total. Which system of linear inequations models the feasible output?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "5x + 12y ≤ 240, x + y ≤ 30, x ≥ 0, y ≥ 0"
+      },
+      {
+        "key": "B",
+        "text": "12x + 5y ≤ 240, x + y ≤ 30, x ≥ 0, y ≥ 0"
+      },
+      {
+        "key": "C",
+        "text": "5x + 12y ≤ 24, x − y ≤ 30, x ≥ 0, y ≥ 0"
+      },
+      {
+        "key": "D",
+        "text": "5x + 12y ≥ 240, x + y ≥ 30, x ≥ 0, y ≥ 0"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "500x + 1,200y ≤ 24,000 simplifies (dividing by 100) to 5x + 12y ≤ 240, storage cap gives x + y ≤ 30, and non-negativity of physical output requires x ≥ 0, y ≥ 0.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 17: Linear Inequations",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-093",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 17,
+    "chapter": "Linear Inequations",
+    "topic": "Corner Points and Maximum Profit Objective Over Feasible Polygon",
+    "difficulty": "Hard",
+    "questionText": "Consider the bounded feasible region in the first quadrant defined by x + 2y ≤ 12, 2x + y ≤ 12, x ≥ 0, y ≥ 0. Find the interior intersection corner point of the two boundary lines and the maximum value of Z = 5x + 4y across the feasible region.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Corner point (4, 4) and maximum Z = 32"
+      },
+      {
+        "key": "B",
+        "text": "Corner point (6, 0) and maximum Z = 30"
+      },
+      {
+        "key": "C",
+        "text": "Corner point (3, 6) and maximum Z = 39"
+      },
+      {
+        "key": "D",
+        "text": "Corner point (4, 4) and maximum Z = 36"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Solving x + 2y = 12 and 2x + y = 12 simultaneously gives x = 4, y = 4. Evaluating Z = 5x + 4y at all four corner points—(0, 0) → 0, (6, 0) → 30, (0, 6) → 24, and (4, 4) → 36—yields maximum Z = 36 at (4, 4).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 17: Linear Inequations",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-094",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 18,
+    "chapter": "Commercial Arithmetic: Percentage, Profit & Brokerage",
+    "topic": "Equivalent Single Discount for Successive Discounts",
+    "difficulty": "Easy",
+    "questionText": "What single flat discount rate is equivalent to two successive trade discounts of 20% followed by 10%?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "30%"
+      },
+      {
+        "key": "B",
+        "text": "26%"
+      },
+      {
+        "key": "C",
+        "text": "25%"
+      },
+      {
+        "key": "D",
+        "text": "28%"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "On ₹100 list price, 20% discount leaves ₹80, and a further 10% discount deducts ₹8 leaving ₹72 net—an equivalent single discount of 100 − 72 = 28%.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 18: Commercial Arithmetic: Percentage, Profit & Brokerage",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-095",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 18,
+    "chapter": "Commercial Arithmetic: Percentage, Profit & Brokerage",
+    "topic": "Del Credere Agent Commission",
+    "difficulty": "Easy",
+    "questionText": "In commercial agency arithmetic, why is a 'Del Credere Agent' paid an extra Del Credere Commission over and above ordinary commission?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Because he guarantees collection of credit-sale proceeds to the principal and personally bears any bad-debt loss from buyer default"
+      },
+      {
+        "key": "B",
+        "text": "Because he pays the manufacturer's income tax out of pocket"
+      },
+      {
+        "key": "C",
+        "text": "Because he manufactures the raw materials himself"
+      },
+      {
+        "key": "D",
+        "text": "Because he sells goods strictly for cash without allowing credit"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "A Del Credere Agent undertakes credit-risk guarantee on goods sold on credit, shielding the principal from bad debts in return for extra del credere commission.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 18: Commercial Arithmetic: Percentage, Profit & Brokerage",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-096",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 18,
+    "chapter": "Commercial Arithmetic: Percentage, Profit & Brokerage",
+    "topic": "Marked Price Setting for Target Profit After Discount",
+    "difficulty": "Medium",
+    "questionText": "A trader buys an appliance for ₹1,800. What Marked Price (catalogue price) must he print on it so that after allowing a 10% discount on Marked Price, he still earns a 25% profit on Cost Price?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "₹2,600"
+      },
+      {
+        "key": "B",
+        "text": "₹2,500"
+      },
+      {
+        "key": "C",
+        "text": "₹2,475"
+      },
+      {
+        "key": "D",
+        "text": "₹2,400"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Target Selling Price = ₹1,800 × 1.25 = ₹2,250. Since Selling Price = 90% of Marked Price, MP = ₹2,250 ÷ 0.90 = ₹2,500.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 18: Commercial Arithmetic: Percentage, Profit & Brokerage",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-097",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 18,
+    "chapter": "Commercial Arithmetic: Percentage, Profit & Brokerage",
+    "topic": "Equity Brokerage on Round-Trip Share Trade",
+    "difficulty": "Medium",
+    "questionText": "An investor buys 200 shares at market price ₹450 per share and later sells all 200 shares at ₹520 per share through a stockbroker charging 0.5% brokerage on market value on EACH leg. What is the investor's net profit?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "₹14,000"
+      },
+      {
+        "key": "B",
+        "text": "₹13,550"
+      },
+      {
+        "key": "C",
+        "text": "₹13,030"
+      },
+      {
+        "key": "D",
+        "text": "₹12,960"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Purchase outlay = 200 × ₹450 = ₹90,000 plus 0.5% brokerage (₹450) = ₹90,450. Sale value = 200 × ₹520 = ₹1,04,000 less 0.5% brokerage (₹520) = ₹1,03,480. Net profit = ₹1,03,480 − ₹90,450 = ₹13,030.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 18: Commercial Arithmetic: Percentage, Profit & Brokerage",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-098",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 18,
+    "chapter": "Commercial Arithmetic: Percentage, Profit & Brokerage",
+    "topic": "Time-Weighted Partnership Profit Sharing",
+    "difficulty": "Medium",
+    "questionText": "Amit starts a trading firm with ₹1,20,000; 4 months later, Bhavesh joins as partner investing ₹1,50,000. At the end of the 12-month year, net profit is ₹88,000. What is Bhavesh's share of profit?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "₹40,000"
+      },
+      {
+        "key": "B",
+        "text": "₹44,000"
+      },
+      {
+        "key": "C",
+        "text": "₹48,889"
+      },
+      {
+        "key": "D",
+        "text": "₹48,000"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Capital × Period ratio = (1,20,000 × 12) : (1,50,000 × 8) = 14,40,000 : 12,00,000 = 6 : 5. Bhavesh's share = (5 / 11) × ₹88,000 = ₹40,000.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 18: Commercial Arithmetic: Percentage, Profit & Brokerage",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-099",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 18,
+    "chapter": "Commercial Arithmetic: Percentage, Profit & Brokerage",
+    "topic": "Slab Commission Reverse Sales Computation",
+    "difficulty": "Hard",
+    "questionText": "A sales representative receives 6% commission on total monthly sales PLUS an incentive bonus of 2% on sales exceeding ₹1,00,000. If her total earnings for the month are ₹13,600, find her total monthly sales.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "₹1,85,000"
+      },
+      {
+        "key": "B",
+        "text": "₹1,95,000"
+      },
+      {
+        "key": "C",
+        "text": "₹1,70,000"
+      },
+      {
+        "key": "D",
+        "text": "₹2,05,000"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Since 6% of ₹1,00,000 = ₹6,000 < ₹13,600, total sales S > ₹1,00,000. Thus 0.06S + 0.02(S − 1,00,000) = 13,600 ⇒ 0.08S − 2,000 = 13,600 ⇒ 0.08S = 15,600 ⇒ S = ₹1,95,000.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 18: Commercial Arithmetic: Percentage, Profit & Brokerage",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-mat-100",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 18,
+    "chapter": "Commercial Arithmetic: Percentage, Profit & Brokerage",
+    "topic": "True Discount, Banker's Discount, and Banker's Gain",
+    "difficulty": "Hard",
+    "questionText": "If the True Discount (TD) on a Bill of Exchange due 6 months hence at 10% p.a. simple interest is ₹2,400, compute the Face Value (Sum Due) of the bill, the Banker's Discount (BD), and the Banker's Gain (BG).",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Face Value = ₹48,000, Banker's Discount = ₹2,400, and Banker's Gain = ₹120"
+      },
+      {
+        "key": "B",
+        "text": "Face Value = ₹50,400, Banker's Discount = ₹2,640, and Banker's Gain = ₹240"
+      },
+      {
+        "key": "C",
+        "text": "Face Value = ₹52,800, Banker's Discount = ₹2,520, and Banker's Gain = ₹120"
+      },
+      {
+        "key": "D",
+        "text": "Face Value = ₹50,400, Banker's Discount = ₹2,520, and Banker's Gain = ₹120"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "For 6 months @ 10% p.a., period rate = 5%. Since TD = 5% of Present Worth (PW) = ₹2,400, PW = ₹48,000 and Face Value = PW + TD = ₹50,400. Banker's Gain = 5% of TD = ₹120, and Banker's Discount = TD + BG = ₹2,520 (which equals 5% of ₹50,400).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 18: Commercial Arithmetic: Percentage, Profit & Brokerage",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  }
+]

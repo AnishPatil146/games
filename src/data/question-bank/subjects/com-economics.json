@@ -1,0 +1,4587 @@
+[
+  {
+    "id": "msb-11-com-eco-001",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 1,
+    "chapter": "Basic Concepts in Economics",
+    "topic": "Scarcity-Oriented Definition of Economics",
+    "difficulty": "Easy",
+    "questionText": "Which economist defined Economics in his 1932 work 'An Essay on the Nature and Significance of Economic Science' as the science studying human behaviour as a relationship between ends and scarce means which have alternative uses?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Lionel Robbins"
+      },
+      {
+        "key": "B",
+        "text": "Adam Smith"
+      },
+      {
+        "key": "C",
+        "text": "Alfred Marshall"
+      },
+      {
+        "key": "D",
+        "text": "Paul Samuelson"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Lionel Robbins formulated the scarcity-oriented definition of Economics in 1932, emphasising unlimited human wants ('ends') and limited resources ('scarce means') having alternative uses.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Basic Concepts in Economics",
+    "abilityTags": [
+      "strategic_thinking",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-002",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 1,
+    "chapter": "Basic Concepts in Economics",
+    "topic": "Factors of Production and Factor Rewards",
+    "difficulty": "Easy",
+    "questionText": "In microeconomic theory, what are the four respective factor rewards paid to Land, Labour, Capital, and Entrepreneur?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Interest, Royalty, Commission, and Subsidy"
+      },
+      {
+        "key": "B",
+        "text": "Rent, Dividend, Brokerage, and Wages"
+      },
+      {
+        "key": "C",
+        "text": "Rent, Wages, Interest, and Profit"
+      },
+      {
+        "key": "D",
+        "text": "Wages, Rent, Profit, and Tax"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "In functional distribution, Land earns Rent, Labour earns Wages, Capital earns Interest, and the risk-bearing Entrepreneur earns Profit.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Basic Concepts in Economics",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-003",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 1,
+    "chapter": "Basic Concepts in Economics",
+    "topic": "Origin of Micro and Macro Terms",
+    "difficulty": "Easy",
+    "questionText": "Who coined the terms 'Microeconomics' and 'Macroeconomics' at Oslo University in 1933?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "David Ricardo"
+      },
+      {
+        "key": "B",
+        "text": "Sir Ragnar Frisch"
+      },
+      {
+        "key": "C",
+        "text": "J. M. Keynes"
+      },
+      {
+        "key": "D",
+        "text": "Kautilya"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Norwegian economist and first Nobel laureate in Economics Sir Ragnar Frisch coined the terms Micro and Macro economics in 1933 from Greek roots 'Mikros' and 'Makros'.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Basic Concepts in Economics",
+    "abilityTags": [
+      "strategic_thinking",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-004",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 1,
+    "chapter": "Basic Concepts in Economics",
+    "topic": "Water-Diamond Paradox of Value",
+    "difficulty": "Medium",
+    "questionText": "Drinking water commands very high 'Value-in-Use' yet low 'Value-in-Exchange', whereas diamonds have low 'Value-in-Use' yet very high 'Value-in-Exchange'. In a demand-and-supply market framework, what explains diamonds' high exchange price?",
+    "diagramType": "demand_supply",
+    "options": [
+      {
+        "key": "A",
+        "text": "Extreme scarcity of supply relative to demand, yielding high marginal value in market exchange"
+      },
+      {
+        "key": "B",
+        "text": "Complete absence of consumer demand for drinking water"
+      },
+      {
+        "key": "C",
+        "text": "Zero cost of mining and cutting diamonds compared to river water"
+      },
+      {
+        "key": "D",
+        "text": "Statutory government ban on selling drinking water in bottles"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "In Adam Smith's Water-Diamond Paradox, water is abundant relative to demand so its market exchange price is low despite immense total utility, whereas diamonds are acutely scarce relative to demand, commanding a high equilibrium price.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Basic Concepts in Economics",
+    "abilityTags": [
+      "strategic_thinking",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-005",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 1,
+    "chapter": "Basic Concepts in Economics",
+    "topic": "Essential Attributes of Economic Wealth",
+    "difficulty": "Medium",
+    "questionText": "Why is a skilled surgeon's inborn surgical talent NOT classified as 'Wealth' in strictly defined economic terms?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Because skilled surgeons are abundant and non-scarce"
+      },
+      {
+        "key": "B",
+        "text": "Because services never generate personal income"
+      },
+      {
+        "key": "C",
+        "text": "Because surgical skill possesses zero utility to patients"
+      },
+      {
+        "key": "D",
+        "text": "Because it lacks 'externality' and 'transferability'—internal human qualities cannot be detached and transferred to another person"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "For anything to constitute economic Wealth, it must satisfy four conditions simultaneously: Utility, Scarcity, Transferability, and Externality. Inborn talent is internal and non-transferable.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Basic Concepts in Economics",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-006",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 1,
+    "chapter": "Basic Concepts in Economics",
+    "topic": "Personal Disposable Income Calculation",
+    "difficulty": "Medium",
+    "questionText": "An individual's annual Personal Income is ₹9,20,000. During the year, she pays ₹74,000 as Personal Income Tax, ₹11,000 as Municipal Property Tax on her residence, and spends ₹6,10,000 on household consumption. What is her Personal Disposable Income (PDI)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "₹3,10,000"
+      },
+      {
+        "key": "B",
+        "text": "₹8,35,000"
+      },
+      {
+        "key": "C",
+        "text": "₹2,25,000"
+      },
+      {
+        "key": "D",
+        "text": "₹8,46,000"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Personal Disposable Income (PDI) = Personal Income − Direct Personal Taxes = ₹9,20,000 − (₹74,000 + ₹11,000) = ₹8,35,000 (which she then allocates between ₹6,10,000 consumption and ₹2,25,000 saving).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Basic Concepts in Economics",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-007",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 1,
+    "chapter": "Basic Concepts in Economics",
+    "topic": "Market Equilibrium Shift Analysis",
+    "difficulty": "Medium",
+    "questionText": "Inspecting a standard market demand-and-supply diagram for cotton textiles, if consumer incomes rise sharply (shifting the Demand curve rightward) while mill supply remains unchanged in the short run, how does market equilibrium adjust?",
+    "diagramType": "demand_supply",
+    "options": [
+      {
+        "key": "A",
+        "text": "Equilibrium price increases while equilibrium quantity falls"
+      },
+      {
+        "key": "B",
+        "text": "Equilibrium price falls while equilibrium quantity increases"
+      },
+      {
+        "key": "C",
+        "text": "Both equilibrium price and equilibrium quantity increase"
+      },
+      {
+        "key": "D",
+        "text": "Both equilibrium price and equilibrium quantity fall"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Along an upward-sloping supply curve, a rightward shift in the market demand curve moves the intersection up and to the right, raising both equilibrium price and equilibrium quantity.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Basic Concepts in Economics",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-008",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 1,
+    "chapter": "Basic Concepts in Economics",
+    "topic": "Economic Growth vs Economic Development",
+    "difficulty": "Hard",
+    "questionText": "Country A records 7.5% annual rise in real GDP for five years, yet literacy stagnates, infant mortality remains high, and income concentration worsens; Country B achieves 6% real GDP growth accompanied by rising healthcare access, skill formation, and cleaner technology. How does macroeconomics classify the two trajectories?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Country A exhibits narrow quantitative 'Economic Growth', whereas Country B achieves qualitative and quantitative 'Economic Development'"
+      },
+      {
+        "key": "B",
+        "text": "Both trajectories represent identical Economic Development since real GDP rose"
+      },
+      {
+        "key": "C",
+        "text": "Country B exhibits microeconomic slicing rather than macroeconomic progress"
+      },
+      {
+        "key": "D",
+        "text": "Country A achieves Economic Development, whereas Country B suffers cyclical depression"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Economic Growth is a narrow, quantitative, unidirectional rise in real national output, whereas Economic Development is broader and qualitative—combining Economic Growth with progressive institutional and human-welfare transformation.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Basic Concepts in Economics",
+    "abilityTags": [
+      "strategic_thinking",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-009",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 1,
+    "chapter": "Basic Concepts in Economics",
+    "topic": "Kautilya's Arthashastra vs Classical Laissez-Faire",
+    "difficulty": "Hard",
+    "questionText": "How did Kautilya's economic framework in the 'Arthashastra' differ fundamentally from Adam Smith's 1776 classical doctrine of 'laissez-faire'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Both rejected private property and advocated barter without metallic coinage"
+      },
+      {
+        "key": "B",
+        "text": "Kautilya assigned an active regulatory, welfare, and treasury-management role to the State/King, whereas Adam Smith advocated minimal state intervention in markets"
+      },
+      {
+        "key": "C",
+        "text": "Kautilya advocated abolishing all taxes and state granaries, whereas Adam Smith demanded total state ownership of land"
+      },
+      {
+        "key": "D",
+        "text": "Kautilya restricted Arthashastra strictly to religious rituals without discussing wealth or agriculture"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Kautilya's Arthashastra emphasised active statecraft, public infrastructure, mine/forest regulation, fair taxation, and social welfare, whereas Adam Smith championed free markets guided by non-intervention (laissez-faire).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Basic Concepts in Economics",
+    "abilityTags": [
+      "strategic_thinking",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-010",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 1,
+    "chapter": "Basic Concepts in Economics",
+    "topic": "Simultaneous Demand and Supply Shifts",
+    "difficulty": "Hard",
+    "questionText": "In a competitive agricultural market, drip-irrigation adoption shifts the Supply curve rightward at the exact same time as export demand shifts the Demand curve rightward. Without knowing the relative magnitudes of the two shifts, what can be concluded with certainty about the new equilibrium?",
+    "diagramType": "demand_supply",
+    "options": [
+      {
+        "key": "A",
+        "text": "Equilibrium price definitely increases, while equilibrium quantity is indeterminate"
+      },
+      {
+        "key": "B",
+        "text": "Equilibrium price definitely falls to zero, while equilibrium quantity doubles"
+      },
+      {
+        "key": "C",
+        "text": "Equilibrium quantity definitely increases, while the direction of change in equilibrium price is indeterminate without comparing shift magnitudes"
+      },
+      {
+        "key": "D",
+        "text": "Both equilibrium price and quantity remain unchanged"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Rightward shifts in both Demand and Supply reinforce higher traded quantity, but Demand pushes price up while Supply pushes price down—leaving net price change dependent on which shift is larger.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Basic Concepts in Economics",
+    "abilityTags": [
+      "strategic_thinking",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-011",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 2,
+    "chapter": "Money",
+    "topic": "Fundamental Difficulty of Barter System",
+    "difficulty": "Easy",
+    "questionText": "A wheat farmer wants shoes, while the village cobbler wants earthen pots rather than wheat. Which classic difficulty of the Barter System prevents direct trade between them?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Token coin seigniorage"
+      },
+      {
+        "key": "B",
+        "text": "Electronic clearing latency"
+      },
+      {
+        "key": "C",
+        "text": "Cognizability of paper currency"
+      },
+      {
+        "key": "D",
+        "text": "Lack of double coincidence of wants"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Double coincidence of wants requires each party in a barter exchange to simultaneously desire the exact commodity offered by the other—its absence was a primary bottleneck of barter.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Money",
+    "abilityTags": [
+      "financial_understanding",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-012",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 2,
+    "chapter": "Money",
+    "topic": "Primary Functions of Money",
+    "difficulty": "Easy",
+    "questionText": "Under Prof. Kinley's functional classification of money, which two functions constitute the 'Primary Functions' of money?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Imparting Liquidity to Wealth and Standard of Deferred Payments"
+      },
+      {
+        "key": "B",
+        "text": "Medium of Exchange and Measure of Value (Unit of Account)"
+      },
+      {
+        "key": "C",
+        "text": "Store of Value and Transfer of Value"
+      },
+      {
+        "key": "D",
+        "text": "Measurement of National Income and Basis of Credit"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Money's two universal Primary Functions are serving as a Medium of Exchange (eliminating double coincidence of wants) and a common Measure of Value / Unit of Account.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Money",
+    "abilityTags": [
+      "financial_understanding",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-013",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 2,
+    "chapter": "Money",
+    "topic": "Token Coins vs Full-Bodied Coins",
+    "difficulty": "Easy",
+    "questionText": "Modern ₹5 and ₹10 stainless-steel/bi-metallic coins circulating in India are examples of 'Token Coins' because:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Their face value is higher than the intrinsic metallic value of the metal they contain"
+      },
+      {
+        "key": "B",
+        "text": "Their intrinsic metallic weight equals 100% of their stamped face value"
+      },
+      {
+        "key": "C",
+        "text": "They are issued privately by cooperative societies rather than sovereign authority"
+      },
+      {
+        "key": "D",
+        "text": "They can only be used in international inter-bank settlements"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Standard (full-bodied) coins had face value equal to intrinsic bullion value, whereas modern Token Coins carry a face value substantially higher than their intrinsic metal cost, backed by legal-tender law.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Money",
+    "abilityTags": [
+      "financial_understanding",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-014",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 2,
+    "chapter": "Money",
+    "topic": "Secondary Function — Transfer of Value",
+    "difficulty": "Medium",
+    "questionText": "An entrepreneur sells his ancestral plot in Nagpur for ₹65 lakh and uses the proceeds via bank transfer to buy an apartment in Mumbai. Which specific secondary function of money facilitates this spatial relocation of wealth?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Cognizability of Bullion"
+      },
+      {
+        "key": "B",
+        "text": "Commodity Barter"
+      },
+      {
+        "key": "C",
+        "text": "Transfer of Value"
+      },
+      {
+        "key": "D",
+        "text": "Basis of Credit Creation"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Money enables purchasing power locked in immovable assets at one place to be liquidated and re-invested in assets at another geographical location—performing the Secondary Function of 'Transfer of Value'.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Money",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-015",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 2,
+    "chapter": "Money",
+    "topic": "Inconvertible Paper Money",
+    "difficulty": "Medium",
+    "questionText": "Why are currency notes issued today by the Reserve Bank of India (₹100, ₹200, ₹500 notes) classified as 'Inconvertible Paper Money'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "They are legal tender backed by statutory sovereign/RBI reserves, but the issuing authority is not legally bound to convert them into equivalent gold or silver coins on demand"
+      },
+      {
+        "key": "B",
+        "text": "They lose legal validity automatically at the end of every calendar month"
+      },
+      {
+        "key": "C",
+        "text": "They cannot be deposited into commercial bank savings accounts"
+      },
+      {
+        "key": "D",
+        "text": "They cannot be exchanged into smaller coin denominations"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Unlike historical convertible notes redeemable in gold/silver bullion on demand, modern fiat/inconvertible currency notes circulate by sovereign legal-tender mandate and managed reserve backing.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Money",
+    "abilityTags": [
+      "financial_understanding",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-016",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 2,
+    "chapter": "Money",
+    "topic": "Contingent Functions of Money",
+    "difficulty": "Medium",
+    "questionText": "Commercial banks accept demand deposits in money and create derivative loan deposits worth several multiples of their cash reserves. Under which category of functions of money is 'Basis of Credit' placed?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Primary Functions of Money"
+      },
+      {
+        "key": "B",
+        "text": "Barter Auxiliaries"
+      },
+      {
+        "key": "C",
+        "text": "Non-Monetary Functions"
+      },
+      {
+        "key": "D",
+        "text": "Contingent Functions of Money"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "In Prof. Kinley's classification, Basis of Credit, Measurement & Distribution of National Income, Imparting Liquidity to Wealth, and Macroeconomic Estimation are Contingent Functions of money.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Money",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-017",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 2,
+    "chapter": "Money",
+    "topic": "Qualities of Good Money — Homogeneity and Divisibility",
+    "difficulty": "Medium",
+    "questionText": "Under the ancient livestock/animal money stage, splitting a cow to pay for half a sack of grain destroyed its value, and two cows differed widely in health and age. Which two qualities of good money were violated?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Illiquidity and Perishability"
+      },
+      {
+        "key": "B",
+        "text": "Divisibility and Homogeneity"
+      },
+      {
+        "key": "C",
+        "text": "Opacity and Bulkiness"
+      },
+      {
+        "key": "D",
+        "text": "Inconvertibility and Volatility"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Good money must be easily divisible into smaller denominations without loss of value (Divisibility) and identical units of the same denomination must be uniform in quality and value (Homogeneity).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Money",
+    "abilityTags": [
+      "financial_understanding",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-018",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 2,
+    "chapter": "Money",
+    "topic": "Legal Issuing Authority in India — Coins & ₹1 Note vs Higher Notes",
+    "difficulty": "Hard",
+    "questionText": "In India's monetary architecture as taught in FYJC Economics, how is currency-issuing authority divided between the Government of India and the Reserve Bank of India?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Commercial banks issue ₹10 and ₹20 notes against gold ornaments"
+      },
+      {
+        "key": "B",
+        "text": "All coins are issued by State Bank of India, while all paper notes including ₹1 are issued by NITI Aayog"
+      },
+      {
+        "key": "C",
+        "text": "One-rupee notes and all metallic coins are issued by the Government of India, whereas all currency notes of ₹2 and above are issued by the Reserve Bank of India"
+      },
+      {
+        "key": "D",
+        "text": "RBI issues ₹1 notes and coins, while Ministry of Finance issues ₹500 notes"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "In India, metallic coins and ₹1 currency notes bear the authority of the Government of India (Ministry of Finance), while currency notes of ₹2 denomination and above are issued under RBI's sole right of note issue.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Money",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-019",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 2,
+    "chapter": "Money",
+    "topic": "Inflationary Erosion of Secondary Money Functions",
+    "difficulty": "Hard",
+    "questionText": "During an episode of hyperinflation when general prices double every few months, which two Secondary Functions of money suffer the severest immediate breakdown, pushing lenders and savers toward real assets?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Portability and Cognizability of notes"
+      },
+      {
+        "key": "B",
+        "text": "Divisibility into paise and Homogeneity of printing"
+      },
+      {
+        "key": "C",
+        "text": "Physical durability of polymer/cotton paper"
+      },
+      {
+        "key": "D",
+        "text": "Store of Value and Standard of Deferred Payments"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Rapid erosion in purchasing power penalises cash holders (destroying Store of Value) and wipes out real repayment value for creditors on future-dated contracts (disrupting Standard of Deferred Payments).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Money",
+    "abilityTags": [
+      "financial_understanding",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-020",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 2,
+    "chapter": "Money",
+    "topic": "Black Money Macroeconomic Impact",
+    "difficulty": "Hard",
+    "questionText": "How does the circulation of 'Black Money' (unaccounted tax-evaded income received in cash or benami channels) distort macroeconomic management?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "It creates a parallel economy, starves public revenue for welfare infrastructure, fuels speculative real-estate/luxury inflation, and blunts RBI monetary-policy transmission"
+      },
+      {
+        "key": "B",
+        "text": "It eliminates income inequality between rural and urban workers"
+      },
+      {
+        "key": "C",
+        "text": "It enters official bank deposits and expands transparent MSME lending"
+      },
+      {
+        "key": "D",
+        "text": "It automatically raises India's official tax-to-GDP ratio"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Black money operates outside tax and banking surveillance—understating official national income, widening fiscal deficits, driving conspicuous/speculative inflation, and weakening policy control.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Money",
+    "abilityTags": [
+      "financial_understanding",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-021",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 3,
+    "chapter": "Partition Values",
+    "topic": "Number of Quartiles, Deciles, and Percentiles",
+    "difficulty": "Easy",
+    "questionText": "How many Quartiles, Deciles, and Percentiles respectively divide an arranged statistical distribution into 4, 10, and 100 equal parts?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "3 Quartiles, 10 Deciles, and 99 Percentiles"
+      },
+      {
+        "key": "B",
+        "text": "3 Quartiles, 9 Deciles, and 99 Percentiles"
+      },
+      {
+        "key": "C",
+        "text": "4 Quartiles, 10 Deciles, and 100 Percentiles"
+      },
+      {
+        "key": "D",
+        "text": "2 Quartiles, 5 Deciles, and 50 Percentiles"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Cutting a line/ordered dataset into k equal segments requires (k − 1) partition points: 3 Quartiles (Q1, Q2, Q3), 9 Deciles (D1..D9), and 99 Percentiles (P1..P99).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Partition Values",
+    "abilityTags": [
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-022",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 3,
+    "chapter": "Partition Values",
+    "topic": "Equivalence Among Partition Values",
+    "difficulty": "Easy",
+    "questionText": "Which set of partition values is always numerically identical to the Median of any frequency distribution?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Q1 = D2 = P25"
+      },
+      {
+        "key": "B",
+        "text": "Q3 = D7 = P75"
+      },
+      {
+        "key": "C",
+        "text": "Q2 = D4 = P40"
+      },
+      {
+        "key": "D",
+        "text": "Q2 = D5 = P50"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "The central 50% mark of an ordered dataset is simultaneously the Second Quartile (2/4), Fifth Decile (5/10), Fiftieth Percentile (50/100), and Median.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Partition Values",
+    "abilityTags": [
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-023",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 3,
+    "chapter": "Partition Values",
+    "topic": "Quartiles of Individual Data",
+    "difficulty": "Easy",
+    "questionText": "Find the First Quartile (Q1) and Third Quartile (Q3) for the daily sales (in ₹ '000) of 7 shops: 18, 12, 25, 10, 30, 15, 22.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Q1 = 12 and Q3 = 30"
+      },
+      {
+        "key": "B",
+        "text": "Q1 = 18 and Q3 = 25"
+      },
+      {
+        "key": "C",
+        "text": "Q1 = 12 and Q3 = 25"
+      },
+      {
+        "key": "D",
+        "text": "Q1 = 15 and Q3 = 22"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Arranging in ascending order (n = 7): 10, 12, 15, 18, 22, 25, 30. Q1 = value of (7 + 1)/4 = 2nd item = 12; Q3 = value of 3(7 + 1)/4 = 6th item = 25.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Partition Values",
+    "abilityTags": [
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-024",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 3,
+    "chapter": "Partition Values",
+    "topic": "Fractional Position Quartile Interpolation",
+    "difficulty": "Medium",
+    "questionText": "The daily wages (in ₹) of 8 workers are: 210, 240, 180, 300, 260, 200, 280, 320. Compute the Third Quartile (Q3).",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "₹300"
+      },
+      {
+        "key": "B",
+        "text": "₹295"
+      },
+      {
+        "key": "C",
+        "text": "₹280"
+      },
+      {
+        "key": "D",
+        "text": "₹290"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Ascending order (n = 8): 180, 200, 210, 240, 260, 280, 300, 320. Position of Q3 = 3(8 + 1)/4 = 6.75th observation. Q3 = 6th item + 0.75 × (7th − 6th) = 280 + 0.75 × (300 − 280) = ₹295.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Partition Values",
+    "abilityTags": [
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-025",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 3,
+    "chapter": "Partition Values",
+    "topic": "Deciles in Discrete Frequency Distribution",
+    "difficulty": "Medium",
+    "questionText": "In a test of 29 students, marks (x) and frequencies (f) are: (10, 4), (20, 7), (30, 10), (40, 6), (50, 2). Find the 4th Decile (D4) and 8th Decile (D8).",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "D4 = 20 and D8 = 40"
+      },
+      {
+        "key": "B",
+        "text": "D4 = 30 and D8 = 50"
+      },
+      {
+        "key": "C",
+        "text": "D4 = 30 and D8 = 40"
+      },
+      {
+        "key": "D",
+        "text": "D4 = 25 and D8 = 35"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Cumulative frequencies (cf) are 4, 11, 21, 27, 29 (N = 29). D4 = size of 4(29 + 1)/10 = 12th observation → lies in cf 21, so D4 = 30. D8 = size of 8(29 + 1)/10 = 24th observation → lies in cf 27, so D8 = 40.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Partition Values",
+    "abilityTags": [
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-026",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 3,
+    "chapter": "Partition Values",
+    "topic": "First Quartile of Continuous Grouped Data",
+    "difficulty": "Medium",
+    "questionText": "For a continuous distribution: 0–20 (f = 6), 20–40 (f = 10), 40–60 (f = 16), 60–80 (f = 8), calculate the First Quartile (Q1).",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "28"
+      },
+      {
+        "key": "B",
+        "text": "30"
+      },
+      {
+        "key": "C",
+        "text": "32"
+      },
+      {
+        "key": "D",
+        "text": "24"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Total N = 40, so N/4 = 10. Cumulative frequencies are 6, 16, 32, 40. Q1 class is 20–40 (l = 20, cf = 6, f = 10, h = 20). Q1 = 20 + [(10 − 6)/10] × 20 = 20 + 8 = 28.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Partition Values",
+    "abilityTags": [
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-027",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 3,
+    "chapter": "Partition Values",
+    "topic": "Seventh Decile of Continuous Data",
+    "difficulty": "Medium",
+    "questionText": "Calculate D7 from the grouped data: 10–20 (f = 8), 20–30 (f = 12), 30–40 (f = 20), 40–50 (f = 10).",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "38.0"
+      },
+      {
+        "key": "B",
+        "text": "35.0"
+      },
+      {
+        "key": "C",
+        "text": "36.5"
+      },
+      {
+        "key": "D",
+        "text": "37.5"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Total N = 50, so 7N/10 = 35. Cumulative frequencies are 8, 20, 40, 50. D7 class is 30–40 (l = 30, cf = 20, f = 20, h = 10). D7 = 30 + [(35 − 20)/20] × 10 = 30 + 7.5 = 37.5.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Partition Values",
+    "abilityTags": [
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-028",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 3,
+    "chapter": "Partition Values",
+    "topic": "Percentile of Inclusive Grouped Series",
+    "difficulty": "Hard",
+    "questionText": "Given inclusive class intervals: 10–19 (f = 7), 20–29 (f = 11), 30–39 (f = 16), 40–49 (f = 10), 50–59 (f = 6), compute the 60th Percentile (P60) after converting to exclusive continuous boundaries.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "37.5"
+      },
+      {
+        "key": "B",
+        "text": "36.75"
+      },
+      {
+        "key": "C",
+        "text": "36.25"
+      },
+      {
+        "key": "D",
+        "text": "37"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "N = 50 ⇒ 60N/100 = 30. Cumulative frequencies: 7, 18, 34, 44, 50. P60 falls in 30–39, whose true continuous boundaries are 29.5–39.5 (l = 29.5, h = 10, cf = 18, f = 16). P60 = 29.5 + [(30 − 18)/16] × 10 = 29.5 + 7.5 = 37.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Partition Values",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-029",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 3,
+    "chapter": "Partition Values",
+    "topic": "Missing Frequency from Given Quartile",
+    "difficulty": "Hard",
+    "questionText": "In the continuous distribution 0–10 (f = 8), 10–20 (f = x), 20–30 (f = 18), 30–40 (f = 12), 40–50 (f = 10), the First Quartile (Q1) is known to be 15. Find the missing frequency x.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "16"
+      },
+      {
+        "key": "B",
+        "text": "14"
+      },
+      {
+        "key": "C",
+        "text": "20"
+      },
+      {
+        "key": "D",
+        "text": "12"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Total N = 48 + x, so N/4 = 12 + 0.25x. Since Q1 = 15 lies in 10–20 (l = 10, cf = 8, f = x, h = 10): 15 = 10 + [(12 + 0.25x − 8)/x] × 10 ⇒ 5 = [10(4 + 0.25x)]/x ⇒ 0.5x = 4 + 0.25x ⇒ 0.25x = 4 ⇒ x = 16.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Partition Values",
+    "abilityTags": [
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-030",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 3,
+    "chapter": "Partition Values",
+    "topic": "Policy Targeting Using Partition Values",
+    "difficulty": "Hard",
+    "questionText": "In an economic survey of 4,000 urban households, monthly income partition values are Q1 = ₹14,500, D6 = ₹28,000, and P85 = ₹52,000. If households earning below ₹14,500 receive a food subsidy and those earning above ₹52,000 pay a civic surcharge, how many surveyed households fall into neither group?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "2,800 households"
+      },
+      {
+        "key": "B",
+        "text": "2,400 households"
+      },
+      {
+        "key": "C",
+        "text": "2,600 households"
+      },
+      {
+        "key": "D",
+        "text": "1,600 households"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Q1 (25th percentile) puts 25% below ₹14,500 (1,000 households) and P85 puts 15% above ₹52,000 (600 households). The remaining 85% − 25% = 60% of 4,000 = 2,400 households lie between ₹14,500 and ₹52,000.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Partition Values",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-031",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 4,
+    "chapter": "The Economy of Maharashtra",
+    "topic": "Administrative Structure of Maharashtra",
+    "difficulty": "Easy",
+    "questionText": "For administrative governance as detailed in the Economic Survey / FYJC syllabus, Maharashtra is divided into how many districts and revenue divisions?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "32 districts and 5 revenue divisions"
+      },
+      {
+        "key": "B",
+        "text": "38 districts and 8 revenue divisions"
+      },
+      {
+        "key": "C",
+        "text": "36 districts and 6 revenue divisions"
+      },
+      {
+        "key": "D",
+        "text": "30 districts and 4 revenue divisions"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Maharashtra comprises 36 districts grouped into 6 administrative revenue divisions: Konkan, Pune, Nashik, Chhatrapati Sambhajinagar (Aurangabad), Amravati, and Nagpur.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: The Economy of Maharashtra",
+    "abilityTags": [
+      "strategic_thinking",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-032",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 4,
+    "chapter": "The Economy of Maharashtra",
+    "topic": "Maharashtra's Rank in GSDP",
+    "difficulty": "Easy",
+    "questionText": "Among all states in India, what position does Maharashtra hold in terms of contribution to national Gross Domestic Product (highest GSDP) and commercial/financial activity?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "First (largest contributor to India's GDP)"
+      },
+      {
+        "key": "B",
+        "text": "Sixth"
+      },
+      {
+        "key": "C",
+        "text": "Eighth"
+      },
+      {
+        "key": "D",
+        "text": "Fourth"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Maharashtra consistently ranks first among Indian states in Gross State Domestic Product (GSDP), anchored by Mumbai as India's financial capital and diversified industrial/service corridors.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: The Economy of Maharashtra",
+    "abilityTags": [
+      "financial_understanding",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-033",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 4,
+    "chapter": "The Economy of Maharashtra",
+    "topic": "Co-operative Movement Stronghold",
+    "difficulty": "Easy",
+    "questionText": "Maharashtra has historically been a national pioneer of the Co-operative Movement, achieving transformative rural industrialisation especially in which agro-processing sector?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Heavy locomotive coach manufacturing"
+      },
+      {
+        "key": "B",
+        "text": "Co-operative Sugar Factories, Dairy, and Cotton Spinning"
+      },
+      {
+        "key": "C",
+        "text": "Deep-sea petroleum refining"
+      },
+      {
+        "key": "D",
+        "text": "Commercial space satellite launches"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Maharashtra's co-operative movement empowered rural farmers notably through co-operative sugar mills, dairy federations, spinning mills, and rural credit societies.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: The Economy of Maharashtra",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-034",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 4,
+    "chapter": "The Economy of Maharashtra",
+    "topic": "Structural Challenge of Maharashtra's Agriculture",
+    "difficulty": "Medium",
+    "questionText": "Despite employing nearly half of Maharashtra's workforce, why does the agricultural and allied sector record high year-to-year output volatility and a much smaller share in GSDP than services?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Complete ban on cultivating cash crops like sugarcane, cotton, and soybean"
+      },
+      {
+        "key": "B",
+        "text": "Excessive 100% canal irrigation flooding every district throughout summer"
+      },
+      {
+        "key": "C",
+        "text": "Absence of any Agricultural Produce Market Committees (APMCs) in the state"
+      },
+      {
+        "key": "D",
+        "text": "Heavy dependence on erratic monsoon rainfall (over 80% rainfed area), fragmented marginal landholdings, and soil moisture stress in drought-prone belts"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Limited perennial irrigation coverage leaves vast tracts in Marathwada and Vidarbha vulnerable to monsoon vagaries, alongside small average holding size and input-cost pressures.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: The Economy of Maharashtra",
+    "abilityTags": [
+      "strategic_thinking",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-035",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 4,
+    "chapter": "The Economy of Maharashtra",
+    "topic": "Role of MIDC and SEZs in Industrial Growth",
+    "difficulty": "Medium",
+    "questionText": "Which state statutory agency established in 1962 develops industrial estates with plotted land, roads, water, and IT parks across Maharashtra to attract domestic and foreign manufacturing/service investment?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "National Sample Survey Office (NSSO)"
+      },
+      {
+        "key": "B",
+        "text": "Maharashtra Industrial Development Corporation (MIDC)"
+      },
+      {
+        "key": "C",
+        "text": "Food Corporation of India (FCI)"
+      },
+      {
+        "key": "D",
+        "text": "Maharashtra Tourism Development Corporation (MTDC)"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "MIDC builds plug-and-play industrial infrastructure, chemical zones, wine parks, and IT parks across Maharashtra to catalyse industrial dispersal and FDI inflows.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: The Economy of Maharashtra",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-036",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 4,
+    "chapter": "The Economy of Maharashtra",
+    "topic": "Dominance of Service Sector in GSDP",
+    "difficulty": "Medium",
+    "questionText": "Which sector contributes the largest share (well above 50%) to Maharashtra's Gross State Value Added / GSDP?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Cottage Pottery Sector alone"
+      },
+      {
+        "key": "B",
+        "text": "Primary Forestry and Logging Sector"
+      },
+      {
+        "key": "C",
+        "text": "Service Sector (finance, banking, IT/ITES, real estate, trade, transport, and tourism)"
+      },
+      {
+        "key": "D",
+        "text": "Inland Fisheries Sector alone"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Driven by financial services in Mumbai, IT/ITES hubs in Pune, Mumbai, and Nagpur, and port/logistics corridors, the Service Sector is the largest contributor to Maharashtra's GSDP.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: The Economy of Maharashtra",
+    "abilityTags": [
+      "financial_understanding",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-037",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 4,
+    "chapter": "The Economy of Maharashtra",
+    "topic": "Port-Led Development — Sagarmala & JNPT",
+    "difficulty": "Medium",
+    "questionText": "With a 720-km Arabian Sea coastline and major ports (Mumbai Port and Jawaharlal Nehru Port at Nhava Sheva) plus minor ports, which national programme accelerates port modernisation and coastal logistics in Maharashtra?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Sagarmala Programme"
+      },
+      {
+        "key": "B",
+        "text": "Desert Development Programme"
+      },
+      {
+        "key": "C",
+        "text": "Operation Flood Phase I"
+      },
+      {
+        "key": "D",
+        "text": "Blue Whale Mining Accord"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Maharashtra's 720-km coastline leverages JNPT (India's premier container port), Mumbai Port, and non-major ports under the Sagarmala port-led development initiative.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: The Economy of Maharashtra",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-038",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 4,
+    "chapter": "The Economy of Maharashtra",
+    "topic": "Intra-State Regional Disparity Diagnosis",
+    "difficulty": "Hard",
+    "questionText": "Industrial output, credit deployment, and per-capita income in Maharashtra have historically clustered heavily in the Mumbai–Thane–Pune–Nashik belt compared to parts of Vidarbha and Marathwada. Which multi-pronged policy response directly targets this regional imbalance?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Discouraging cotton-to-garment value chains in cotton-growing Vidarbha districts"
+      },
+      {
+        "key": "B",
+        "text": "Halting rural electrification and cold-chain warehousing outside Konkan"
+      },
+      {
+        "key": "C",
+        "text": "Expressway connectivity (such as Samruddhi Mahamarg), fiscal package incentives for backward-zone industries, micro-irrigation expansion, and textile/agro-park clusters in Vidarbha–Marathwada"
+      },
+      {
+        "key": "D",
+        "text": "Shifting all existing universities and MIDC estates exclusively into South Mumbai"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Bridging intra-state disparity combines high-speed freight corridors (Mumbai–Nagpur Samruddhi corridor), graded industrial incentives for backward talukas, watershed/irrigation works, and value-added agro-textile parks near raw-material zones.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: The Economy of Maharashtra",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-039",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 4,
+    "chapter": "The Economy of Maharashtra",
+    "topic": "Social Infrastructure — Health & Education Link to Productivity",
+    "difficulty": "Hard",
+    "questionText": "In economic analysis of Maharashtra, why are investments in primary health centres, tribal Ashram schools, skill universities, and women's nutrition classified as 'Social Infrastructure' rather than 'Economic Infrastructure'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Social infrastructure is financed exclusively through foreign commercial borrowings"
+      },
+      {
+        "key": "B",
+        "text": "Social infrastructure generates zero economic return over any time horizon"
+      },
+      {
+        "key": "C",
+        "text": "Economic infrastructure includes only hospitals and primary schools"
+      },
+      {
+        "key": "D",
+        "text": "Economic infrastructure (power, roads, ports) directly powers production logistics, whereas Social infrastructure builds human capital—health, literacy, and skills—that sustains long-run labour productivity and inclusive growth"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Economic infrastructure (energy, transport, communication) supports physical production and trade directly, while Social infrastructure (education, healthcare, sanitation) upgrades human capital quality.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: The Economy of Maharashtra",
+    "abilityTags": [
+      "strategic_thinking",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-040",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 4,
+    "chapter": "The Economy of Maharashtra",
+    "topic": "FDI Magnet Factors in Maharashtra",
+    "difficulty": "Hard",
+    "questionText": "Why has Maharashtra consistently attracted one of the highest shares of cumulative Foreign Direct Investment (FDI) inflows into India since liberalisation?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Complete exemption from corporate income tax and labour statutes across the state"
+      },
+      {
+        "key": "B",
+        "text": "Synergy of deep financial markets (RBI, BSE, NSE, banks), container port gateways, skilled engineering/IT talent pools, industrial corridors, and large consumer market"
+      },
+      {
+        "key": "C",
+        "text": "Reliance solely on unmechanised subsistence farming"
+      },
+      {
+        "key": "D",
+        "text": "Absence of domestic competitors in manufacturing and services"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Agglomeration economies—combining capital-market headquarters, international ports/airports, premier technical institutions, ancillary MSME clusters, and pro-industry infrastructure—make Maharashtra a premier FDI hub.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: The Economy of Maharashtra",
+    "abilityTags": [
+      "strategic_thinking",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-041",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 5,
+    "chapter": "Rural Development in India",
+    "topic": "Tenure Classification of Agricultural Credit",
+    "difficulty": "Easy",
+    "questionText": "Short-term agricultural credit taken by Indian farmers to purchase seasonal seeds, fertilisers, and fodder is repayable within what period?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Not exceeding 15 months"
+      },
+      {
+        "key": "B",
+        "text": "5 years to 15 years"
+      },
+      {
+        "key": "C",
+        "text": "Above 20 years"
+      },
+      {
+        "key": "D",
+        "text": "15 months to 5 years"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "By tenure, agricultural credit in India is classified into Short-term (up to 15 months), Medium-term (15 months to 5 years), and Long-term (above 5 years).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Rural Development in India",
+    "abilityTags": [
+      "financial_understanding",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-042",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 5,
+    "chapter": "Rural Development in India",
+    "topic": "Non-Institutional vs Institutional Rural Credit",
+    "difficulty": "Easy",
+    "questionText": "Which of the following is a 'Non-Institutional' source of agricultural credit in rural India?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "NABARD"
+      },
+      {
+        "key": "B",
+        "text": "Regional Rural Banks (RRBs)"
+      },
+      {
+        "key": "C",
+        "text": "Village Moneylenders (Sahukars) and Commission Agents (Arhatiyas)"
+      },
+      {
+        "key": "D",
+        "text": "Primary Agricultural Credit Societies (PACS)"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Moneylenders, landlords, traders, commission agents, and relatives constitute Non-Institutional (informal) rural credit sources, unmonitored by formal banking interest caps.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Rural Development in India",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-043",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 5,
+    "chapter": "Rural Development in India",
+    "topic": "Apex Institution for Rural Credit",
+    "difficulty": "Easy",
+    "questionText": "Which statutory institution acts as the apex body coordinating, supervising, and refinancing all institutional rural and agricultural credit agencies in India?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "SEBI"
+      },
+      {
+        "key": "B",
+        "text": "IRDAI"
+      },
+      {
+        "key": "C",
+        "text": "SIDBI"
+      },
+      {
+        "key": "D",
+        "text": "NABARD"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "NABARD is the apex institution for agricultural and rural development finance, refinancing cooperative banks, RRBs, and commercial banks.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Rural Development in India",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-044",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 5,
+    "chapter": "Rural Development in India",
+    "topic": "Productive vs Unproductive Rural Credit",
+    "difficulty": "Medium",
+    "questionText": "How does agricultural economics distinguish 'Productive Credit' from 'Unproductive Credit' in rural households?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Productive credit finances farm output-enhancing inputs (tractors, drip irrigation, seeds) that generate repayment capacity, whereas Unproductive credit funds consumption ceremonies (marriages, litigation, festivals) without generating income"
+      },
+      {
+        "key": "B",
+        "text": "Productive credit carries 48% interest, whereas Unproductive credit is interest-free"
+      },
+      {
+        "key": "C",
+        "text": "Productive credit applies only to urban IT firms, whereas Unproductive credit applies to wheat farming"
+      },
+      {
+        "key": "D",
+        "text": "Productive credit is borrowed only from moneylenders, whereas Unproductive credit comes only from NABARD"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Productive loans directly expand agricultural output and self-liquidate out of incremental farm income; Unproductive loans meet social/personal consumption without creating income-earning assets, risking debt traps.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Rural Development in India",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-045",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 5,
+    "chapter": "Rural Development in India",
+    "topic": "Three-Tier Short-Term Co-operative Credit Structure",
+    "difficulty": "Medium",
+    "questionText": "What is the correct three-tier pyramidal structure of Short-Term Co-operative Rural Credit within an Indian state (from village grassroots up to state apex)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "State Co-operative Bank → Urban Co-operative Society → Moneylender"
+      },
+      {
+        "key": "B",
+        "text": "Land Development Bank → World Bank → Gram Panchayat"
+      },
+      {
+        "key": "C",
+        "text": "Primary Agricultural Credit Societies (PACS) → District Central Co-operative Banks (DCCBs) → State Co-operative Bank (SCB)"
+      },
+      {
+        "key": "D",
+        "text": "Commercial Bank → SEBI → Primary Society"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Short- and medium-term rural co-operative credit operates through a three-tier federal pyramid: PACS at village level federated into DCCBs at district level and topped by the State Co-operative Bank.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Rural Development in India",
+    "abilityTags": [
+      "financial_understanding",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-046",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 5,
+    "chapter": "Rural Development in India",
+    "topic": "Medium-Term vs Long-Term Agricultural Credit",
+    "difficulty": "Medium",
+    "questionText": "A farmer takes Loan A (repayable in 3 years) to repair a farm well and buy bullocks, and Loan B (repayable in 10 years) to purchase additional agricultural land and a combine harvester. Classify Loans A and B by tenure.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Both Loan A and Loan B are Short-Term Credit"
+      },
+      {
+        "key": "B",
+        "text": "Loan A is Medium-Term Credit (15 months–5 years) and Loan B is Long-Term Credit (above 5 years)"
+      },
+      {
+        "key": "C",
+        "text": "Loan A is Long-Term Credit and Loan B is Short-Term Credit"
+      },
+      {
+        "key": "D",
+        "text": "Loan A is Unproductive Credit and Loan B is Non-Institutional Credit"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Medium-term loans (15 months to 5 years) fund cattle, implements, and minor well improvements; Long-term loans (> 5 years) fund permanent land improvements, land purchase, and heavy farm machinery.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Rural Development in India",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-047",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 5,
+    "chapter": "Rural Development in India",
+    "topic": "Regional Rural Banks (RRBs)",
+    "difficulty": "Medium",
+    "questionText": "Why were Regional Rural Banks (RRBs) established starting in 1975?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "To replace the Reserve Bank of India in printing currency notes"
+      },
+      {
+        "key": "B",
+        "text": "To lend exclusively to urban stockbrokers"
+      },
+      {
+        "key": "C",
+        "text": "To finance overseas corporate acquisitions by large metropolitan conglomerates"
+      },
+      {
+        "key": "D",
+        "text": "To combine the local rural familiarity of co-operatives with the professional banking discipline and resource mobilisation ability of commercial banks for small/marginal farmers and rural artisans"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "RRBs (sponsored jointly by Central Govt, State Govt, and a Sponsor Commercial Bank in 50:15:35 equity ratio) focus specifically on credit needs of small/marginal farmers, agricultural labourers, and rural artisans.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Rural Development in India",
+    "abilityTags": [
+      "financial_understanding",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-048",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 5,
+    "chapter": "Rural Development in India",
+    "topic": "Rural Occupational Diversification Imperative",
+    "difficulty": "Hard",
+    "questionText": "Why do development economists argue that sustainable 'Rural Development' in India cannot rely solely on crop cultivation and must expand rural secondary and tertiary occupations?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Because World Bank guidelines define rural development as closing down all farms"
+      },
+      {
+        "key": "B",
+        "text": "Because finite arable land cannot productively absorb a growing rural workforce; agro-processing, dairy, cold-chains, rural retail, and repair services raise rural incomes and curb distress migration"
+      },
+      {
+        "key": "C",
+        "text": "Because foodgrain consumption in India has fallen to zero"
+      },
+      {
+        "key": "D",
+        "text": "Because crop farming requires zero credit or irrigation"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Diversifying rural occupational structure into allied livestock/fisheries, agro-processing industries, and rural services relieves disguised agricultural unemployment and captures higher value-added within villages.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Rural Development in India",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-049",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 5,
+    "chapter": "Rural Development in India",
+    "topic": "Persistence and Perils of Informal Moneylender Debt",
+    "difficulty": "Hard",
+    "questionText": "Despite decades of institutional banking expansion, why did small tenant farmers historically fall prey to village moneylenders, and what malpractice deepened rural indebtedness?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Instant 24×7 access without land-title paperwork or collateral drew vulnerable borrowers in, while usurious interest rates, account manipulation, and forced distress-sale of crops trapped them in generational debt"
+      },
+      {
+        "key": "B",
+        "text": "Moneylenders charged 0% interest and audited accounts under RBI supervision"
+      },
+      {
+        "key": "C",
+        "text": "Commercial banks refused to accept deposits in Indian rupees"
+      },
+      {
+        "key": "D",
+        "text": "PACS required borrowers to pledge foreign passports"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Informal moneylenders exploited procedural simplicity and consumption-loan flexibility while charging exorbitant compound interest, deducting upfront cuts, and compelling farmers to sell harvests at depressed prices.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Rural Development in India",
+    "abilityTags": [
+      "financial_understanding",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-050",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 5,
+    "chapter": "Rural Development in India",
+    "topic": "Comparing Rural Credit Interest Burden",
+    "difficulty": "Hard",
+    "questionText": "A marginal farmer borrows ₹50,000 for 12 months. Under Kisan Credit Card institutional lending (effective interest 4% p.a. on timely repayment) versus an informal sahukar charging 3% PER MONTH simple interest, how much extra interest does the farmer lose to the sahukar in one year?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "₹18,000"
+      },
+      {
+        "key": "B",
+        "text": "₹14,000"
+      },
+      {
+        "key": "C",
+        "text": "₹1,500"
+      },
+      {
+        "key": "D",
+        "text": "₹16,000"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Institutional KCC interest @ 4% p.a. = ₹50,000 × 0.04 = ₹2,000. Informal sahukar interest @ 3% per month = 36% p.a. = ₹50,000 × 0.36 = ₹18,000. Extra interest burden = ₹18,000 − ₹2,000 = ₹16,000.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Rural Development in India",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-051",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 6,
+    "chapter": "Population in India",
+    "topic": "Year of the Great Divide (1921)",
+    "difficulty": "Easy",
+    "questionText": "Why is the census year 1921 known as the 'Year of the Great Divide' in India's demographic history?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Urban population exceeded 90% of total population in 1921"
+      },
+      {
+        "key": "B",
+        "text": "India's birth rate dropped permanently to zero in 1921"
+      },
+      {
+        "key": "C",
+        "text": "Before 1921 India's population fluctuated (actually declining in 1911–1921), whereas after 1921 population grew continuously every decade"
+      },
+      {
+        "key": "D",
+        "text": "The first-ever population census in world history was conducted in 1921"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Between 1911 and 1921 epidemics and famines caused a net population drop; from 1921 onward mortality began falling steadily and India's population rose uninterruptedly, marking 1921 as the Great Divide.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Population in India",
+    "abilityTags": [
+      "strategic_thinking",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-052",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 6,
+    "chapter": "Population in India",
+    "topic": "Malthusian Theory of Population",
+    "difficulty": "Easy",
+    "questionText": "In Thomas Robert Malthus's 'Essay on the Principle of Population' (1798), how do unchecked human population and food supply respectively grow?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Population grows in Arithmetic Progression while food supply grows in Geometric Progression"
+      },
+      {
+        "key": "B",
+        "text": "Both population and food supply decline exponentially"
+      },
+      {
+        "key": "C",
+        "text": "Population remains constant while food supply doubles every year"
+      },
+      {
+        "key": "D",
+        "text": "Population grows in Geometric Progression (1, 2, 4, 8, 16...) while food supply grows in Arithmetic Progression (1, 2, 3, 4, 5...)"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Malthus argued that unchecked population outpaces subsistence because population expands geometrically whereas agricultural food supply increases only arithmetically, inviting positive checks unless preventive checks are exercised.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Population in India",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-053",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 6,
+    "chapter": "Population in India",
+    "topic": "Birth Rate and Death Rate Definitions",
+    "difficulty": "Easy",
+    "questionText": "In demography, how is the Crude Birth Rate (CBR) defined?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "The number of live births occurring per 1,000 of the mid-year population in a given year"
+      },
+      {
+        "key": "B",
+        "text": "The ratio of surviving infants to total hospital beds"
+      },
+      {
+        "key": "C",
+        "text": "The percentage growth in urban workforce per century"
+      },
+      {
+        "key": "D",
+        "text": "The number of births per 100 married women over a decade"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Both Birth Rate and Death Rate are expressed per thousand (‰) of population per year: CBR = (Annual live births ÷ Mid-year population) × 1,000.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Population in India",
+    "abilityTags": [
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-054",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 6,
+    "chapter": "Population in India",
+    "topic": "Stage II of Demographic Transition (Population Explosion)",
+    "difficulty": "Medium",
+    "questionText": "According to the Theory of Demographic Transition (Coale & Hoover), what demographic dynamics trigger a 'Population Explosion' during the Second Stage?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Death rate rises steeply while Birth rate drops below replacement"
+      },
+      {
+        "key": "B",
+        "text": "Both Birth rate and Death rate remain extremely high and cancel each other out"
+      },
+      {
+        "key": "C",
+        "text": "Death rate falls sharply due to public health, sanitation, and epidemic control, while Birth rate remains high due to slow-changing socio-cultural norms"
+      },
+      {
+        "key": "D",
+        "text": "Both Birth rate and Death rate fall to very low levels simultaneously"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Stage I has high birth and high death rates (low growth); Stage II sees medical/public-health advances slash mortality rapidly while fertility lags high, opening a wide natural-growth gap (population explosion); Stage III sees low birth and low death rates.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Population in India",
+    "abilityTags": [
+      "strategic_thinking",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-055",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 6,
+    "chapter": "Population in India",
+    "topic": "Preventive vs Positive Checks in Malthusian Theory",
+    "difficulty": "Medium",
+    "questionText": "In Malthusian demography, which of the following is classified as a 'Preventive Check' rather than a 'Positive (Natural) Check'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Famines and widespread crop failure"
+      },
+      {
+        "key": "B",
+        "text": "Late marriage and voluntary moral restraint practised by people to limit family size"
+      },
+      {
+        "key": "C",
+        "text": "Deadly epidemics and plagues"
+      },
+      {
+        "key": "D",
+        "text": "Destructive wars and floods"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Preventive checks are voluntary human decisions reducing the birth rate (late marriage, celibacy, foresight), whereas Positive checks are harsh natural calamities (famine, pestilence, war) that raise the death rate when population overshoots food.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Population in India",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-056",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 6,
+    "chapter": "Population in India",
+    "topic": "Socio-Economic Causes of High Birth Rate in India",
+    "difficulty": "Medium",
+    "questionText": "Which combination of socio-economic factors historically sustained a high birth rate in India for decades after Independence?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Universality and early age of marriage, preference for male child, widespread poverty viewing children as extra earning hands, and low female literacy"
+      },
+      {
+        "key": "B",
+        "text": "Complete urbanisation and nuclear single-person households in 1951"
+      },
+      {
+        "key": "C",
+        "text": "Compulsory state cash bonuses for having ten children"
+      },
+      {
+        "key": "D",
+        "text": "Universal postgraduate education among rural women and late marriage above age 32"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Agrarian structure, early marriage, son preference, high infant mortality (prompting 'insurance births'), poverty, and low female education slowed fertility decline during post-1951 decades.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Population in India",
+    "abilityTags": [
+      "strategic_thinking",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-057",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 6,
+    "chapter": "Population in India",
+    "topic": "Population as Human Resource — Demographic Dividend",
+    "difficulty": "Medium",
+    "questionText": "Under what condition does a large youthful population turn into an economic 'Demographic Dividend' rather than a demographic burden?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "When automation eliminates all formal and informal jobs for youth"
+      },
+      {
+        "key": "B",
+        "text": "Automatically whenever total population crosses 1.4 billion regardless of schooling or employment"
+      },
+      {
+        "key": "C",
+        "text": "When the dependency ratio of children and elderly exceeds 90%"
+      },
+      {
+        "key": "D",
+        "text": "When the share of working-age population (15–59/64 years) bulges AND receives quality education, healthcare, vocational skills, and productive jobs"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "A rising share of working-age adults lowers the dependency ratio, but realising the Demographic Dividend requires human-capital investment (health, education, skills) and gainful employment creation.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Population in India",
+    "abilityTags": [
+      "strategic_thinking",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-058",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 6,
+    "chapter": "Population in India",
+    "topic": "Natural Growth Rate Numerical Calculation",
+    "difficulty": "Hard",
+    "questionText": "In Census Decade X, a region recorded a Crude Birth Rate of 26.4 per 1,000 and a Crude Death Rate of 7.9 per 1,000 (assuming zero net migration). If its mid-year population is 4,00,00,000 (4 crore), what is the annual natural addition to population?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "13,72,000 persons per year (3.43% annual natural growth rate)"
+      },
+      {
+        "key": "B",
+        "text": "7,40,000 persons per year (1.85% annual natural growth rate)"
+      },
+      {
+        "key": "C",
+        "text": "6,80,000 persons per year (1.70% annual natural growth rate)"
+      },
+      {
+        "key": "D",
+        "text": "3,16,000 persons per year (0.79% annual natural growth rate)"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Natural growth rate per 1,000 = CBR − CDR = 26.4 − 7.9 = 18.5 per 1,000 (1.85% p.a.). For 4,00,00,000 population: (18.5 ÷ 1,000) × 4,00,00,000 = 7,40,000 persons added annually.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Population in India",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-059",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 6,
+    "chapter": "Population in India",
+    "topic": "National Population Policy 2000 Strategy",
+    "difficulty": "Hard",
+    "questionText": "How did India's National Population Policy (NPP) 2000 approach long-term population stabilisation?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "By encouraging higher birth rates to match Stage I agrarian societies"
+      },
+      {
+        "key": "B",
+        "text": "By restricting maternal healthcare exclusively to metropolitan capitals"
+      },
+      {
+        "key": "C",
+        "text": "Through a target-free, voluntary, reproductive-and-child-health (RCH) approach emphasising delayed marriage (≥18 for girls, ≥21 for boys), institutional deliveries, universal immunisation, and female empowerment toward replacement-level fertility"
+      },
+      {
+        "key": "D",
+        "text": "Through punitive criminal fines on all rural families and closure of primary health centres"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "NPP 2000 focused on voluntary informed choice, maternal & infant mortality reduction, universal child immunisation, girls' education, and achieving replacement Total Fertility Rate (~2.1) for sustainable stabilisation.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Population in India",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-060",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 6,
+    "chapter": "Population in India",
+    "topic": "UNDP Human Development Concept",
+    "difficulty": "Hard",
+    "questionText": "Pakistani economist Mahbub ul Haq and Nobel laureate Amartya Sen shaped the UNDP Human Development Reports (introduced in 1990) around what core premise regarding population?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "People are the real wealth of nations—development must enlarge human choices across a long healthy life, knowledge/education, and a decent standard of living, rather than treating people merely as passive mouths to feed"
+      },
+      {
+        "key": "B",
+        "text": "Economic growth should maximise factory output by cutting health and schooling budgets"
+      },
+      {
+        "key": "C",
+        "text": "Per-capita gold bullion reserves are the sole valid indicator of national welfare"
+      },
+      {
+        "key": "D",
+        "text": "Human welfare decreases whenever female literacy and life expectancy rise"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Human Resource Development views educated, healthy citizens as active agents of innovation and progress; the Human Development Index (HDI) synthesises longevity, educational attainment, and decent living standards.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Population in India",
+    "abilityTags": [
+      "strategic_thinking",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-061",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 7,
+    "chapter": "Unemployment in India",
+    "topic": "Disguised Unemployment Marginal Productivity",
+    "difficulty": "Easy",
+    "questionText": "On a small family plot where 5 members can harvest the entire crop optimally, 8 family members actually work without adding a single extra kilogram to total output. What is the marginal productivity of the 3 extra workers, and what is this phenomenon called?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Infinite marginal productivity — Frictional Unemployment"
+      },
+      {
+        "key": "B",
+        "text": "Zero marginal productivity — Disguised Unemployment"
+      },
+      {
+        "key": "C",
+        "text": "Negative wage elasticity — Cyclical Unemployment"
+      },
+      {
+        "key": "D",
+        "text": "Voluntary leisure — Educated Unemployment"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Disguised unemployment occurs when more people appear employed than actually needed; withdrawing surplus workers leaves total output unchanged, meaning their marginal productivity is zero.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Unemployment in India",
+    "abilityTags": [
+      "strategic_thinking",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-062",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 7,
+    "chapter": "Unemployment in India",
+    "topic": "Employment Guarantee Scheme Pioneer State",
+    "difficulty": "Easy",
+    "questionText": "Which Indian state pioneered the statutory 'Employment Guarantee Scheme (EGS)' in 1972–73 to provide productive manual work in rural areas—later inspiring the national MGNREGA Act?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Assam"
+      },
+      {
+        "key": "B",
+        "text": "Haryana"
+      },
+      {
+        "key": "C",
+        "text": "Maharashtra"
+      },
+      {
+        "key": "D",
+        "text": "Punjab"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Maharashtra launched the pioneering Employment Guarantee Scheme (EGS) in 1972–73 (architect V. S. Page) guaranteeing manual wage employment to rural adults, serving as the blueprint for MGNREGA (2005).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Unemployment in India",
+    "abilityTags": [
+      "strategic_thinking",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-063",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 7,
+    "chapter": "Unemployment in India",
+    "topic": "Seasonal Unemployment",
+    "difficulty": "Easy",
+    "questionText": "Farm labourers in rainfed districts and workers in sugar-crushing mills or ice factories find work for 5–7 months and remain jobless during the off-season. What type of unemployment is this?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Voluntary Unemployment"
+      },
+      {
+        "key": "B",
+        "text": "Cyclical Unemployment"
+      },
+      {
+        "key": "C",
+        "text": "Frictional Unemployment"
+      },
+      {
+        "key": "D",
+        "text": "Seasonal Unemployment"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Seasonal unemployment arises from regular weather- or season-bound fluctuations in demand for labour in agriculture, agro-processing (sugar mills), tourism, and seasonal manufacturing.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Unemployment in India",
+    "abilityTags": [
+      "business_decision_making",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-064",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 7,
+    "chapter": "Unemployment in India",
+    "topic": "Involuntary vs Voluntary Unemployment",
+    "difficulty": "Medium",
+    "questionText": "In economic measurement of unemployment in India, which person is counted as 'Involuntarily Unemployed'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "A wealthy rentier aged 35 who chooses not to work despite job offers"
+      },
+      {
+        "key": "B",
+        "text": "A 26-year-old skilled electrician actively seeking work at the prevailing market wage rate but unable to find employment"
+      },
+      {
+        "key": "C",
+        "text": "A 10-year-old school pupil studying in Class 5"
+      },
+      {
+        "key": "D",
+        "text": "A 74-year-old retired pensioner resting at home"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Unemployment in economics refers strictly to Involuntary Unemployment within the working-age labour force (15–59 years) among persons able and willing to work at prevailing wages who cannot find jobs.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Unemployment in India",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-065",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 7,
+    "chapter": "Unemployment in India",
+    "topic": "Frictional vs Cyclical vs Technological Unemployment",
+    "difficulty": "Medium",
+    "questionText": "When an automated AI-guided sorting system replaces manual parcel sorters at a logistics hub, AND separately an accountant spends three weeks between resigning one job and joining a better firm, classify the two unemployment types respectively:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Cyclical Unemployment and Seasonal Unemployment"
+      },
+      {
+        "key": "B",
+        "text": "Voluntary Unemployment and Rural Disguised Unemployment"
+      },
+      {
+        "key": "C",
+        "text": "Seasonal Unemployment and Disguised Unemployment"
+      },
+      {
+        "key": "D",
+        "text": "Technological Unemployment and Frictional Unemployment"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Displacement of labour by labour-saving machinery/automation is Technological Unemployment; temporary transitional unemployment due to job-switching, strikes, or temporary raw-material/power breakdowns is Frictional Unemployment.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Unemployment in India",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-066",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 7,
+    "chapter": "Unemployment in India",
+    "topic": "Cyclical vs Structural Unemployment Contrast",
+    "difficulty": "Medium",
+    "questionText": "Why do economists classify unemployment in developing economies like India as predominantly 'Structural' rather than 'Cyclical'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Because Indian unemployment stems mainly from chronic capital scarcity, rapid labour-force growth, and skill-mismatch rather than temporary aggregate-demand recessions in mature industrial economies"
+      },
+      {
+        "key": "B",
+        "text": "Because Structural unemployment disappears automatically within two weeks"
+      },
+      {
+        "key": "C",
+        "text": "Because India has an excess of factories and acute shortage of workers"
+      },
+      {
+        "key": "D",
+        "text": "Because business trade cycles occur exclusively in rural barter villages"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Cyclical unemployment occurs during recessionary dips in aggregate effective demand in advanced economies; Structural unemployment arises from deep-seated supply-side bottlenecks—inadequate capital formation, infrastructure, and skills relative to labour supply.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Unemployment in India",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-067",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 7,
+    "chapter": "Unemployment in India",
+    "topic": "MGNREGA Core Entitlement",
+    "difficulty": "Medium",
+    "questionText": "Under the Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA), what statutory entitlement is provided to rural households?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "365 days of salaried white-collar clerical jobs in metropolitan banks"
+      },
+      {
+        "key": "B",
+        "text": "Interest-free corporate equity capital of ₹50 lakh per household"
+      },
+      {
+        "key": "C",
+        "text": "At least 100 days of guaranteed unskilled manual wage employment in a financial year to every rural household whose adult members volunteer"
+      },
+      {
+        "key": "D",
+        "text": "Guaranteed overseas work visas for engineering graduates"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "MGNREGA legally guarantees at least 100 days of wage employment per financial year to rural households volunteering for unskilled manual asset-creation works (with at least one-third women beneficiaries).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Unemployment in India",
+    "abilityTags": [
+      "strategic_thinking",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-068",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 7,
+    "chapter": "Unemployment in India",
+    "topic": "Jobless Growth Phenomenon",
+    "difficulty": "Hard",
+    "questionText": "Between the late 1990s and 2010s, India's real GDP grew at 6–8% per annum, yet formal employment grew at barely 1–1.5% per annum (low employment elasticity of output). What explains this 'Jobless Growth' paradox?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Growth was led disproportionately by capital-intensive manufacturing and high-skill services (IT/finance) rather than labour-intensive mass manufacturing, alongside rigidities and skill gaps"
+      },
+      {
+        "key": "B",
+        "text": "Indian agriculture absorbed 95% of new university graduates at high wages"
+      },
+      {
+        "key": "C",
+        "text": "All capital machinery was banned across Indian factories after 1991"
+      },
+      {
+        "key": "D",
+        "text": "Real GDP growth mathematically forces total employment to shrink in every country"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "When output expands mainly via rising capital intensity and high-productivity skill enclaves without commensurate expansion in labour-absorbing textiles, food processing, electronics assembly, and construction, employment elasticity stays low ('jobless growth').",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Unemployment in India",
+    "abilityTags": [
+      "strategic_thinking",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-069",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 7,
+    "chapter": "Unemployment in India",
+    "topic": "Wage Rigidity & Surplus Labour in Market Diagram",
+    "difficulty": "Hard",
+    "questionText": "Analysing a competitive labour-market demand-and-supply diagram (wage rate on vertical axis, quantity of labour on horizontal axis): if institutional/minimum wage is set substantially ABOVE the market-clearing equilibrium wage while labour supply is abundant, what appears horizontally between the Supply and Demand curves at that wage?",
+    "diagramType": "demand_supply",
+    "options": [
+      {
+        "key": "A",
+        "text": "Simultaneous rightward shift of the labour demand curve"
+      },
+      {
+        "key": "B",
+        "text": "An acute shortage of workers — forcing employers to import labour"
+      },
+      {
+        "key": "C",
+        "text": "Zero labour supply — causing all workers to exit the market"
+      },
+      {
+        "key": "D",
+        "text": "An excess supply (surplus) of labour — representing involuntary unemployment at that prevailing wage"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "At any wage rate above the intersection of downward-sloping Labour Demand and upward-sloping Labour Supply, quantity of labour supplied exceeds quantity demanded—visualising involuntary unemployment.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Unemployment in India",
+    "abilityTags": [
+      "strategic_thinking",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-070",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 7,
+    "chapter": "Unemployment in India",
+    "topic": "Educated Unemployment & Skill Mismatch Policy",
+    "difficulty": "Hard",
+    "questionText": "Surveys show higher unemployment rates among general degree graduates than among youths trained in applied industrial trades (CNC operation, solar installation, cold-chain maintenance, healthcare diagnostics). Which policy package best addresses this specific mismatch?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Closing down technical institutes and expanding rote clerical examinations"
+      },
+      {
+        "key": "B",
+        "text": "Aligning curricula with industry apprenticeships, expanding vocational training (Skill India / DDU-GKY), and fostering start-up ecosystems (Start-up India / MUDRA) so job-seekers also become job-creators"
+      },
+      {
+        "key": "C",
+        "text": "Restricting bank credit exclusively to capital-heavy无人 automated refineries"
+      },
+      {
+        "key": "D",
+        "text": "Abolishing rural road and housing construction programmes"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Educated unemployment reflects a gap between theoretical degree supply and industry-ready competencies; vocational skilling (Skill India, DDU-GKY) paired with entrepreneurship credit converts educated youth into employable specialists and entrepreneurs.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Unemployment in India",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-071",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 8,
+    "chapter": "Poverty in India",
+    "topic": "Calorie Norms for Absolute Poverty Line",
+    "difficulty": "Easy",
+    "questionText": "Under the traditional Planning Commission nutritional norm (Y. K. Alagh Task Force), what minimum daily per-capita calorie intake defined the Poverty Line for Rural and Urban India respectively?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1,500 calories per day in both Rural and Urban areas"
+      },
+      {
+        "key": "B",
+        "text": "3,200 calories per day in Rural areas and 3,000 calories per day in Urban areas"
+      },
+      {
+        "key": "C",
+        "text": "2,400 calories per day in Rural areas and 2,100 calories per day in Urban areas"
+      },
+      {
+        "key": "D",
+        "text": "2,100 calories per day in Rural areas and 2,400 calories per day in Urban areas"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Because rural agricultural and manual work involves greater physical exertion, the rural norm was set higher at 2,400 kcal/person/day compared to 2,100 kcal/person/day for urban areas.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Poverty in India",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-072",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 8,
+    "chapter": "Poverty in India",
+    "topic": "Absolute Poverty vs Relative Poverty",
+    "difficulty": "Easy",
+    "questionText": "Which concept of poverty cannot be completely eradicated even in affluent developed nations because it compares the living standards of bottom income groups with top income groups?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Seasonal Calorie Deficit"
+      },
+      {
+        "key": "B",
+        "text": "Absolute Nutritional Starvation"
+      },
+      {
+        "key": "C",
+        "text": "Barter Destitution"
+      },
+      {
+        "key": "D",
+        "text": "Relative Poverty"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Relative Poverty reflects income/wealth inequality across population strata; as long as incomes are not 100% identical, lower deciles remain relatively poorer than top deciles even when basic needs are met.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Poverty in India",
+    "abilityTags": [
+      "strategic_thinking",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-073",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 8,
+    "chapter": "Poverty in India",
+    "topic": "Financial Inclusion Flagship Scheme",
+    "difficulty": "Easy",
+    "questionText": "Which national mission launched in August 2014 brought tens of crores of unbanked poor households into formal banking through zero-balance bank accounts, RuPay debit cards, and Direct Benefit Transfer (DBT) access?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Pradhan Mantri Jan Dhan Yojana (PMJDY)"
+      },
+      {
+        "key": "B",
+        "text": "Sagarmala Port Project"
+      },
+      {
+        "key": "C",
+        "text": "Golden Quadrilateral Highway Project"
+      },
+      {
+        "key": "D",
+        "text": "Export Promotion Capital Goods Scheme"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "PMJDY expanded financial inclusion to poor households, plugging leakages in welfare subsidies via Aadhaar-seeded Direct Benefit Transfers.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Poverty in India",
+    "abilityTags": [
+      "financial_understanding",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-074",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 8,
+    "chapter": "Poverty in India",
+    "topic": "Multidimensional Nature of Poverty",
+    "difficulty": "Medium",
+    "questionText": "How does the modern 'Multidimensional Poverty' framework go beyond simple income or calorie headcounts?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "It counts only central government employees' dearness allowance"
+      },
+      {
+        "key": "B",
+        "text": "It replaces health and education data entirely with stock-market indices"
+      },
+      {
+        "key": "C",
+        "text": "It captures both material and non-material deprivations—nutrition, child survival, years of schooling, clean cooking fuel, sanitation, safe drinking water, electricity, housing, and assets"
+      },
+      {
+        "key": "D",
+        "text": "It measures only the number of luxury cars owned per thousand households"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Pioneered conceptually by Amartya Sen's capability approach and operationalised via the Multidimensional Poverty Index (MPI), poverty encompasses deprivation in health, education, dignity, and basic living standards alongside income.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Poverty in India",
+    "abilityTags": [
+      "strategic_thinking",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-075",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 8,
+    "chapter": "Poverty in India",
+    "topic": "Vicious Circle of Poverty",
+    "difficulty": "Medium",
+    "questionText": "Trace Ragnar Nurkse's classic supply-side 'Vicious Circle of Poverty' operating in a low-income economy:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Low real income → Low saving capacity → Low capital formation (investment) → Low labour productivity → Persistent low real income"
+      },
+      {
+        "key": "B",
+        "text": "High wages → High consumption → Rapid industrialisation → Chronic destitution"
+      },
+      {
+        "key": "C",
+        "text": "High real income → High saving → Excess capital machinery → High productivity → Poverty"
+      },
+      {
+        "key": "D",
+        "text": "Zero population → Surplus food exports → High per-capita GDP → Absolute poverty"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "'A country is poor because it is poor': meagre real income leaves negligible savings, starving capital investment, keeping technology and worker productivity low, and perpetuating low income.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Poverty in India",
+    "abilityTags": [
+      "financial_understanding",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-076",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 8,
+    "chapter": "Poverty in India",
+    "topic": "Suresh Tendulkar & C. Rangarajan Committees",
+    "difficulty": "Medium",
+    "questionText": "How did the Suresh Tendulkar (2009) and C. Rangarajan (2014) Expert Groups broaden India's official Poverty Line basket beyond earlier calorie-focused estimates?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "By restricting the poverty basket strictly to coarse cereals and excluding all non-food items"
+      },
+      {
+        "key": "B",
+        "text": "By explicitly incorporating normative private household expenditure on education, healthcare, clothing, shelter, conveyance, and balanced nutrition (fats & proteins alongside calories)"
+      },
+      {
+        "key": "C",
+        "text": "By abolishing separate rural and urban price indices"
+      },
+      {
+        "key": "D",
+        "text": "By defining poverty solely through international air-travel expenditure"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Modern Indian poverty committees recognised that families face inescapable private outlays on health, schooling, rent, and transport alongside calories, proteins, and fats.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Poverty in India",
+    "abilityTags": [
+      "financial_understanding",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-077",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 8,
+    "chapter": "Poverty in India",
+    "topic": "National Food Security Act & Antyodaya Anna Yojana",
+    "difficulty": "Medium",
+    "questionText": "How does 'Antyodaya Anna Yojana (AAY)' integrated under the Targeted Public Distribution System / National Food Security Act, 2013 protect the 'poorest of the poor'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "By replacing ration shops with luxury imported supermarkets"
+      },
+      {
+        "key": "B",
+        "text": "By charging market price plus 28% GST on wheat and rice"
+      },
+      {
+        "key": "C",
+        "text": "By auctioning buffer foodgrains solely to star hotels at international prices"
+      },
+      {
+        "key": "D",
+        "text": "By providing 35 kg of highly subsidised foodgrains per month per Antyodaya household regardless of family size"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Antyodaya Anna Yojana targets the most destitute BPL households (landless labourers, widows, primitive tribal households), assuring 35 kg of highly subsidised foodgrains per household every month.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Poverty in India",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-078",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 8,
+    "chapter": "Poverty in India",
+    "topic": "Urban vs Rural Poverty Cost Paradox",
+    "difficulty": "Hard",
+    "questionText": "Although the traditional daily calorie norm was LOWER in urban India (2,100 kcal) than in rural India (2,400 kcal), why has the monthly per-capita monetary Poverty Line cut-off (in ₹) consistently been set HIGHER for urban areas than for rural areas?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Because rural households pay higher municipal metro fares than city commuters"
+      },
+      {
+        "key": "B",
+        "text": "Because urban residents consume twice as many kilograms of grain as rural farm workers"
+      },
+      {
+        "key": "C",
+        "text": "Because urban retail prices of food as well as essential non-food costs (housing rent, urban transport, water, sanitation, healthcare) are substantially higher than in villages"
+      },
+      {
+        "key": "D",
+        "text": "Because rural prices are inflated by 300% customs duties"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Converting nutritional and essential non-food baskets into rupee expenditure uses Consumer Price Indices; steeper urban food prices, rent, and commuting expenses push the urban monetary threshold higher despite lower calorie requirements.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Poverty in India",
+    "abilityTags": [
+      "financial_understanding",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-079",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 8,
+    "chapter": "Poverty in India",
+    "topic": "Headcount Poverty Ratio & Absolute Numbers Calculation",
+    "difficulty": "Hard",
+    "questionText": "Between Year 1 and Year 10, a state's Headcount Poverty Ratio fell from 30% to 20%, while its total population grew from 8 crore to 10.5 crore. How did the absolute number of persons living below the poverty line change?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Fell by 80 lakh persons (by applying 10% drop solely to 8 crore)"
+      },
+      {
+        "key": "B",
+        "text": "Fell by 30 lakh persons (from 2.40 crore down to 2.10 crore)"
+      },
+      {
+        "key": "C",
+        "text": "Increased by 10 lakh persons due to population growth"
+      },
+      {
+        "key": "D",
+        "text": "Fell by 50 lakh persons"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Poor population in Year 1 = 30% of 8.00 crore = 2.40 crore. Poor population in Year 10 = 20% of 10.50 crore = 2.10 crore. Net reduction = 2.40 cr − 2.10 cr = 0.30 crore = 30 lakh persons (illustrating how rapid population growth slows absolute poverty decline).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Poverty in India",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-080",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 8,
+    "chapter": "Poverty in India",
+    "topic": "Inflation as a Regressive Tax on the Poor",
+    "difficulty": "Hard",
+    "questionText": "Why does high food and fuel inflation act like a harsh 'regressive tax' that pushes borderline households back below the Poverty Line?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Low-income households spend 55–65% of their budget on food and fuel and earn mostly unindexed informal daily wages, so price spikes immediately erode their real consumption"
+      },
+      {
+        "key": "B",
+        "text": "Food inflation increases the purchasing power of fixed ₹300 daily wages"
+      },
+      {
+        "key": "C",
+        "text": "High inflation lowers the rupee cost of reaching the 2,400-calorie norm"
+      },
+      {
+        "key": "D",
+        "text": "Poor households invest 90% of income in inflation-hedged corporate equities"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "By Engel's Law, poorer families devote the largest share of income to food necessities and lack inflation-indexed salaries or assets; food inflation sharply compresses real purchasing power and nutritional intake.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Poverty in India",
+    "abilityTags": [
+      "financial_understanding",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-081",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 9,
+    "chapter": "Economic Policy of India Since 1991",
+    "topic": "Immediate Trigger of 1991 Economic Reforms",
+    "difficulty": "Easy",
+    "questionText": "Which severe macroeconomic crisis compelled the Government of India (under PM P. V. Narasimha Rao and Finance Minister Dr. Manmohan Singh) to launch the New Economic Policy in July 1991?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Merger of Indian currency with the European Euro"
+      },
+      {
+        "key": "B",
+        "text": "Excessive foreign exchange surplus exceeding $1 trillion and deflation"
+      },
+      {
+        "key": "C",
+        "text": "Complete exhaustion of domestic coal and iron-ore mines"
+      },
+      {
+        "key": "D",
+        "text": "Acute Balance of Payments crisis with foreign exchange reserves barely sufficient for two weeks of imports, high fiscal deficit, and double-digit inflation"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Compounded by chronic fiscal deficits and the 1990–91 Gulf War oil shock, India's forex reserves fell to roughly $1.1 billion (~2 weeks of imports) alongside ~16.7% inflation, prompting structural stabilisation and LPG reforms.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Economic Policy of India Since 1991",
+    "abilityTags": [
+      "financial_understanding",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-082",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 9,
+    "chapter": "Economic Policy of India Since 1991",
+    "topic": "Statutory Recognition of SEBI",
+    "difficulty": "Easy",
+    "questionText": "Under financial-sector liberalisation following the 1991 reforms, which capital-market watchdog received statutory powers in 1992 to protect investors and regulate stock exchanges?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Food Safety and Standards Authority of India (FSSAI)"
+      },
+      {
+        "key": "B",
+        "text": "Securities and Exchange Board of India (SEBI)"
+      },
+      {
+        "key": "C",
+        "text": "Khadi Commission (KVIC)"
+      },
+      {
+        "key": "D",
+        "text": "Tariff Commission of 1951"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Established initially in 1988, SEBI was conferred statutory authority under the SEBI Act, 1992 as part of financial-market reforms to ensure transparent, fair capital markets.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Economic Policy of India Since 1991",
+    "abilityTags": [
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-083",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 9,
+    "chapter": "Economic Policy of India Since 1991",
+    "topic": "Maharatna and Navratna Status",
+    "difficulty": "Easy",
+    "questionText": "Within the Privatisation and PSU-reform agenda, why did the Government grant 'Navratna' and 'Maharatna' status to high-performing Public Sector Enterprises like ONGC, NTPC, BHEL, and IOCL?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "To convert them into village-level cooperative credit societies"
+      },
+      {
+        "key": "B",
+        "text": "To ban them from earning profits or declaring dividends"
+      },
+      {
+        "key": "C",
+        "text": "To grant them greater financial, investment, and operational autonomy to compete as global giants without needing ministry approval for every capital decision"
+      },
+      {
+        "key": "D",
+        "text": "To shut down their factories and auction their scrap machinery"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Navratna (1997) and Maharatna (2010) classifications empowered profitable PSUs with board-level autonomy for capital investments, joint ventures, and global expansion.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Economic Policy of India Since 1991",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-084",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 9,
+    "chapter": "Economic Policy of India Since 1991",
+    "topic": "Abolition of Industrial Licensing & MRTP Asset Limit",
+    "difficulty": "Medium",
+    "questionText": "How did the Industrial Policy of July 1991 overhaul the 'Licence-Permit Raj' and the Monopolies and Restrictive Trade Practices (MRTP) Act?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "It abolished compulsory industrial licensing for almost all industries (retaining only a tiny strategic/hazardous list) and removed pre-entry asset limits on MRTP firms to allow capacity expansion"
+      },
+      {
+        "key": "B",
+        "text": "It capped maximum plant capacity of Indian firms at ₹10 lakh"
+      },
+      {
+        "key": "C",
+        "text": "It required every grocery shop and cyber-cafe to obtain a cabinet licence from New Delhi"
+      },
+      {
+        "key": "D",
+        "text": "It nationalised all private textile, cement, and automobile companies"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Delicensing freed entrepreneurs to expand scale, diversify product lines, and reap economies of scale, while MRTP threshold abolition (later succeeded by Competition Act, 2002) shifted focus from 'curbing size' to 'promoting fair competition'.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Economic Policy of India Since 1991",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-085",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 9,
+    "chapter": "Economic Policy of India Since 1991",
+    "topic": "Globalisation — Tariff & Quantitative Restriction Reforms",
+    "difficulty": "Medium",
+    "questionText": "Which pair of external-sector measures formed the core of 'Globalisation' under India's post-1991 trade reforms?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Raising average import tariffs to 350% and banning all foreign technology agreements"
+      },
+      {
+        "key": "B",
+        "text": "Withdrawing India from GATT and refusing to join the WTO in 1995"
+      },
+      {
+        "key": "C",
+        "text": "Phasing out Quantitative Restrictions (import quotas) while steeply reducing peak customs tariff rates, alongside rupee convertibility on the Current Account"
+      },
+      {
+        "key": "D",
+        "text": "Fixing multiple artificial exchange rates for every individual commodity"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Globalisation integrated India with world trade and capital flows by dismantling import licensing/quotas, cutting punitive customs duties, devaluing and floating the rupee (current account convertibility in 1994), and welcoming FDI.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Economic Policy of India Since 1991",
+    "abilityTags": [
+      "financial_understanding",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-086",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 9,
+    "chapter": "Economic Policy of India Since 1991",
+    "topic": "Market Deregulation of Administered Prices",
+    "difficulty": "Medium",
+    "questionText": "Prior to 1991, commodities like cement and steel faced rigid state price ceilings below market-clearing levels, causing chronic black-market shortages. On a demand-and-supply diagram, what happened over the medium term after price decontrol and delicensing?",
+    "diagramType": "demand_supply",
+    "options": [
+      {
+        "key": "A",
+        "text": "Demand curve disappeared altogether"
+      },
+      {
+        "key": "B",
+        "text": "Government ration coupons remained mandatory for buying cement bags"
+      },
+      {
+        "key": "C",
+        "text": "Supply curve shifted leftward to zero and shortages became permanent"
+      },
+      {
+        "key": "D",
+        "text": "Price moved toward market equilibrium and new private capacity shifted the Supply curve rightward, eliminating chronic shortages"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Below-equilibrium price ceilings create excess demand (Qd > Qs) and discourage capacity investment; deregulation restored price signals and delicensing attracted massive private supply expansion, ending queues and black markets.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Economic Policy of India Since 1991",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-087",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 9,
+    "chapter": "Economic Policy of India Since 1991",
+    "topic": "Critical Shortcomings of Post-1991 Reforms",
+    "difficulty": "Medium",
+    "questionText": "In a balanced evaluation of the New Economic Policy 1991 as presented in the MSBSHSE syllabus, which sector experienced relative neglect of public investment and heightened exposure to input-cost and global price volatility?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Private Aviation and Retail Banking"
+      },
+      {
+        "key": "B",
+        "text": "Agriculture and allied rural livelihoods"
+      },
+      {
+        "key": "C",
+        "text": "Information Technology and Business Process Outsourcing (IT-BPO)"
+      },
+      {
+        "key": "D",
+        "text": "Mobile Telecommunications"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "While IT, telecom, automobiles, and financial services boomed post-1991, public capital formation in irrigation/rural extension slowed, fertiliser/power input costs rose, and small farmers faced international price swings.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Economic Policy of India Since 1991",
+    "abilityTags": [
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-088",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 9,
+    "chapter": "Economic Policy of India Since 1991",
+    "topic": "Financial Sector Liberalisation — Interest Rate & Banking Competition",
+    "difficulty": "Hard",
+    "questionText": "How did post-1991 financial-sector reforms (guided by Narasimham Committee recommendations) transform Indian commercial banking?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Raised Statutory Liquidity Ratio (SLR) to 95% and banned all private banks"
+      },
+      {
+        "key": "B",
+        "text": "Directed RBI to fix individual loan rates for every borrower manually"
+      },
+      {
+        "key": "C",
+        "text": "Merged all commercial banks into the Post Office Savings Department"
+      },
+      {
+        "key": "D",
+        "text": "Reduced statutory pre-emptions (SLR & CRR) from peak levels, deregulated administered interest rates, introduced prudential capital-adequacy norms, and licensed competitive new private/foreign banks"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Pre-1991 high CRR/SLR locked up bank funds and administered rates stifled efficiency; gradual SLR/CRR reduction, interest-rate deregulation, prudential NPA norms, and new private banks modernised credit allocation.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Economic Policy of India Since 1991",
+    "abilityTags": [
+      "financial_understanding",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-089",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 9,
+    "chapter": "Economic Policy of India Since 1991",
+    "topic": "Effective Customs Duty & Landed Cost Calculation",
+    "difficulty": "Hard",
+    "questionText": "Before trade liberalisation, an imported precision machine with CIF port value ₹20,00,000 faced a 125% customs tariff. Post-reform, customs tariff on capital goods was lowered to 15%. Assuming identical CIF rupee value, by how much did the initial capital outlay fall for an Indian manufacturer?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "₹22,00,000"
+      },
+      {
+        "key": "B",
+        "text": "₹19,00,000"
+      },
+      {
+        "key": "C",
+        "text": "₹3,00,000"
+      },
+      {
+        "key": "D",
+        "text": "₹25,00,000"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Pre-reform landed cost = ₹20,00,000 + 125% (₹25,00,000) = ₹45,00,000. Post-reform landed cost = ₹20,00,000 + 15% (₹3,00,000) = ₹23,00,000. Capital cost saving = ₹45,00,000 − ₹23,00,000 = ₹22,00,000—sharply boosting export competitiveness.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Economic Policy of India Since 1991",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-090",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 9,
+    "chapter": "Economic Policy of India Since 1991",
+    "topic": "Shrinking Public Sector Reservation",
+    "difficulty": "Hard",
+    "questionText": "Under the Industrial Policy Resolution of 1956, 17 core industries were exclusively reserved for the Public Sector; after progressive post-1991 reforms, exclusive sovereign reservation narrowed down primarily to which strategic areas?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Cement, passenger cars, and domestic airlines"
+      },
+      {
+        "key": "B",
+        "text": "Textiles, footwear, and dairy ice-cream manufacturing"
+      },
+      {
+        "key": "C",
+        "text": "Atomic energy and core railway transport operations (alongside strategic defence controls)"
+      },
+      {
+        "key": "D",
+        "text": "Software exports, hotel management, and mobile handsets"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "The 1991 Industrial Policy slashed the 17 reserved public-sector industries to 8, and subsequent delicensing narrowed exclusive public reservation down to atomic energy and core railway operations.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Economic Policy of India Since 1991",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-091",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 10,
+    "chapter": "Economic Planning in India",
+    "topic": "Establishment of Planning Commission",
+    "difficulty": "Easy",
+    "questionText": "When was the Planning Commission of India established by a Cabinet Resolution, and who served as its ex-officio Chairman?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "January 1947 — Governor of RBI"
+      },
+      {
+        "key": "B",
+        "text": "March 1950 — Prime Minister of India"
+      },
+      {
+        "key": "C",
+        "text": "July 1991 — Union Finance Secretary"
+      },
+      {
+        "key": "D",
+        "text": "April 1969 — Chief Justice of India"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "The Planning Commission was constituted on 15th March 1950 as an extra-constitutional advisory body with the Prime Minister serving as its ex-officio Chairman.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Economic Planning in India",
+    "abilityTags": [
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-092",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 10,
+    "chapter": "Economic Planning in India",
+    "topic": "Formation of NITI Aayog",
+    "difficulty": "Easy",
+    "questionText": "On which date did 'NITI Aayog' (National Institution for Transforming India) replace the 65-year-old Planning Commission?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1st January 2015"
+      },
+      {
+        "key": "B",
+        "text": "1st July 2017"
+      },
+      {
+        "key": "C",
+        "text": "26th January 2016"
+      },
+      {
+        "key": "D",
+        "text": "15th August 2014"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "NITI Aayog was constituted via Union Cabinet resolution on 1st January 2015 to serve as the Government of India's premier policy 'Think Tank' promoting cooperative federalism.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Economic Planning in India",
+    "abilityTags": [
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-093",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 10,
+    "chapter": "Economic Planning in India",
+    "topic": "First vs Second Five-Year Plan Priorities",
+    "difficulty": "Easy",
+    "questionText": "What were the respective primary sectoral priorities of India's First Five-Year Plan (1951–56) and Second Five-Year Plan (1956–61)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "First Plan: Space Exploration; Second Plan: Rolling Plan Holidays"
+      },
+      {
+        "key": "B",
+        "text": "First Plan: Software Exports; Second Plan: Privatisation of Railways"
+      },
+      {
+        "key": "C",
+        "text": "First Plan: Heavy Steel Plants; Second Plan: Disinvestment of PSUs"
+      },
+      {
+        "key": "D",
+        "text": "First Plan: Agriculture and Irrigation; Second Plan: Rapid Heavy and Basic Industrialisation (Mahalanobis Model)"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "The First Plan (Harrod-Domar framework) prioritised agriculture, refugee rehabilitation, and multi-purpose river dams; the Second Plan (P. C. Mahalanobis model) prioritised public-sector heavy industries (Bhilai, Rourkela, Durgapur steel plants).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Economic Planning in India",
+    "abilityTags": [
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-094",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 10,
+    "chapter": "Economic Planning in India",
+    "topic": "Top-Down vs Bottom-Up Approach: Planning Commission vs NITI Aayog",
+    "difficulty": "Medium",
+    "questionText": "Identify the core structural difference between the erstwhile Planning Commission and NITI Aayog regarding fund-allocation power and federal design:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "NITI Aayog levies GST directly and excludes State Chief Ministers from its Governing Council"
+      },
+      {
+        "key": "B",
+        "text": "Planning Commission included all State Chief Ministers as Vice-Chairpersons, whereas NITI Aayog has no Prime Minister"
+      },
+      {
+        "key": "C",
+        "text": "Both institutions exercise identical constitutional authority under Article 280 like the Finance Commission"
+      },
+      {
+        "key": "D",
+        "text": "Planning Commission followed a centralised 'top-down' approach with power to allocate plan funds to ministries/states, whereas NITI Aayog is an advisory 'bottom-up' think tank without direct fund-allocation power (which rests with the Finance Ministry)"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "NITI Aayog replaced 'one-size-fits-all' centralized plan-fund dictation with a bottom-up Think Tank model; its Governing Council includes all State Chief Ministers and Lt. Governors of UTs to foster Cooperative Federalism.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Economic Planning in India",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-095",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 10,
+    "chapter": "Economic Planning in India",
+    "topic": "Plan Holidays (1966–1969)",
+    "difficulty": "Medium",
+    "questionText": "Why did India suspend regular Five-Year Plans and adopt three Annual Plans ('Plan Holidays') between 1966 and 1969 after the Third Plan?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Replacement of Five-Year Plans by NITI Aayog in 1966"
+      },
+      {
+        "key": "B",
+        "text": "Fiscal strain and disruption caused by the 1962 Sino-Indian war, 1965 Indo-Pak war, two consecutive severe droughts (1965–67), food shortage, and rupee devaluation"
+      },
+      {
+        "key": "C",
+        "text": "Discovery of massive oil surpluses eliminating the need for budgeting"
+      },
+      {
+        "key": "D",
+        "text": "Achievement of 100% employment and zero poverty by March 1966"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Twin wars and consecutive monsoon failures depleted resources and triggered inflation, prompting three Annual Plans (1966–69) focused on stabilisation and launching High-Yielding Varieties (Green Revolution).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Economic Planning in India",
+    "abilityTags": [
+      "strategic_thinking",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-096",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 10,
+    "chapter": "Economic Planning in India",
+    "topic": "Twelfth Five-Year Plan Theme (2012–2017)",
+    "difficulty": "Medium",
+    "questionText": "What was the overarching vision theme of India's Twelfth (and final) Five-Year Plan (2012–2017)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Laissez-Faire Deregulation Without Welfare Targets"
+      },
+      {
+        "key": "B",
+        "text": "Self-Sufficiency in Heavy Defence Ordnance Alone"
+      },
+      {
+        "key": "C",
+        "text": "Faster, More Inclusive, and Sustainable Growth"
+      },
+      {
+        "key": "D",
+        "text": "Import Substitution Through 100% State Monopoly"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Building on the Eleventh Plan's 'Faster and More Inclusive Growth', the Twelfth Plan (2012–17) explicitly added ecological and resource sustainability: 'Faster, More Inclusive and Sustainable Growth'.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Economic Planning in India",
+    "abilityTags": [
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-097",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 10,
+    "chapter": "Economic Planning in India",
+    "topic": "Structure of NITI Aayog — Governing vs Regional Councils",
+    "difficulty": "Medium",
+    "questionText": "Within NITI Aayog's organisational architecture, what is the specific purpose of 'Regional Councils'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "They are convened for specified tenures to address specific contingencies or cross-border issues impacting more than one state or a geographical region"
+      },
+      {
+        "key": "B",
+        "text": "They audit the daily cash books of Primary Agricultural Credit Societies"
+      },
+      {
+        "key": "C",
+        "text": "They set repo and reverse-repo monetary policy rates every two months"
+      },
+      {
+        "key": "D",
+        "text": "They act as appellate tribunals over High Court civil decrees"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "While the Governing Council comprises all CMs and Lt. Governors permanently, Regional Councils bring together CMs/Lt. Governors of affected states for a fixed tenure to resolve shared regional bottlenecks (water, corridors, ecology).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Economic Planning in India",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-098",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 10,
+    "chapter": "Economic Planning in India",
+    "topic": "Indicative Planning Shift in Eighth Five-Year Plan (1992–97)",
+    "difficulty": "Hard",
+    "questionText": "Launched immediately after the 1991 LPG reforms, how did the Eighth Five-Year Plan (1992–1997) redefine the nature of economic planning in India?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "It froze foreign trade and reintroduced industrial licensing across 500 sectors"
+      },
+      {
+        "key": "B",
+        "text": "It shifted from rigid 'Imperative (Command) Planning' to 'Indicative Planning'—assigning dynamic leadership to the private sector while focusing state outlays on human development and infrastructure"
+      },
+      {
+        "key": "C",
+        "text": "It shortened the plan horizon permanently to six-month rolling budgets"
+      },
+      {
+        "key": "D",
+        "text": "It abolished private enterprise and nationalised retail trade"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Delayed by two Annual Plans (1990–92) during political/BoP turmoil, the Eighth Plan harmonised planning with market liberalisation via Indicative Planning, achieving ~6.8% growth against a 5.6% target.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Economic Planning in India",
+    "abilityTags": [
+      "strategic_thinking",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-099",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 10,
+    "chapter": "Economic Planning in India",
+    "topic": "Competitive Cooperative Federalism via NITI Indices",
+    "difficulty": "Hard",
+    "questionText": "NITI Aayog publishes transparent state- and district-level performance rankings (such as the Aspirational Districts Programme, SDG India Index, Health & School Education Quality Indices). What strategic governance mechanism do these rankings create?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Replacement of elected state legislatures with corporate boards"
+      },
+      {
+        "key": "B",
+        "text": "Coercive central takeover of state police and municipal administration"
+      },
+      {
+        "key": "C",
+        "text": "Competitive Federalism alongside Cooperative Federalism — motivating states and backward districts through public data benchmarks and best-practice peer learning"
+      },
+      {
+        "key": "D",
+        "text": "Suspension of Finance Commission tax devolution to all states"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "By measuring real-time outcomes across health, nutrition, schooling, and infrastructure transparently, NITI Aayog spurs healthy competition among states/districts ('Competitive Federalism') to replicate proven governance innovations.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Economic Planning in India",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-eco-100",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-economics",
+    "subjectName": "Economics",
+    "chapterNumber": 10,
+    "chapter": "Economic Planning in India",
+    "topic": "Capital-Output Ratio (ICOR) and Required Saving Rate",
+    "difficulty": "Hard",
+    "questionText": "Using the Harrod-Domar / macroeconomic planning relation (Growth Rate g = Investment Rate s ÷ Incremental Capital-Output Ratio ICOR): if planners target an 8% annual real GDP growth rate when the economy's ICOR is 4 : 1, what domestic + net foreign investment rate (% of GDP) is required—and if technology cuts ICOR to 3.5 : 1, how much lower can the investment rate be for the same 8% growth?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "20% of GDP initially; cutting ICOR to 3.5 raises required investment rate to 28% of GDP"
+      },
+      {
+        "key": "B",
+        "text": "36% of GDP initially; cutting ICOR to 3.5 reduces it to 24% of GDP"
+      },
+      {
+        "key": "C",
+        "text": "12% of GDP initially; cutting ICOR to 3.5 reduces it to 11.5% of GDP"
+      },
+      {
+        "key": "D",
+        "text": "32% of GDP initially; cutting ICOR to 3.5 reduces required investment rate to 28% of GDP (4 percentage points lower)"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Required investment rate s = g × ICOR. At ICOR = 4, s = 8% × 4 = 32% of GDP. Improving capital productivity to ICOR = 3.5 lowers required investment to 8% × 3.5 = 28% of GDP—a 4 percentage point saving.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Economic Planning in India",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  }
+]

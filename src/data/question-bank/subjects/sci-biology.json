@@ -1,0 +1,4498 @@
+[
+  {
+    "id": "msb-11-sci-bio-001",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 1,
+    "chapter": "Living World",
+    "topic": "Taxonomic Aids — Herbarium",
+    "difficulty": "Easy",
+    "questionText": "A storehouse of collected plant specimens that are dried, pressed, and preserved on standard sheets arranged according to a universally accepted classification system is called a:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Seed gene bank"
+      },
+      {
+        "key": "B",
+        "text": "Herbarium"
+      },
+      {
+        "key": "C",
+        "text": "Sacred grove"
+      },
+      {
+        "key": "D",
+        "text": "Botanical garden"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "A herbarium preserves dried, pressed, and mounted plant specimens on standard sheets (typically 41 × 29 cm) carrying collector, locality, date, and taxonomic labels for quick reference.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Living World (Taxonomic Aids — Herbarium)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-002",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 1,
+    "chapter": "Living World",
+    "topic": "Metabolism as Defining Property",
+    "difficulty": "Easy",
+    "questionText": "Which characteristic is exhibited by ALL living organisms without exception and never occurs autonomously in non-living objects?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Cellular organization and cellular metabolism"
+      },
+      {
+        "key": "B",
+        "text": "Locomotion from place to place"
+      },
+      {
+        "key": "C",
+        "text": "Reproduction of fertile offspring"
+      },
+      {
+        "key": "D",
+        "text": "Increase in body mass (growth)"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Sand dunes/crystals can grow by accretion and sterile hybrids (mules, worker bees) do not reproduce, whereas cellular organization and coupled metabolic reactions are universal defining properties of life.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Living World (Metabolism as Defining Property)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-003",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 1,
+    "chapter": "Living World",
+    "topic": "Taxonomic Key Structure",
+    "difficulty": "Medium",
+    "questionText": "In an analytical taxonomic key used for specimen identification, each pair of contrasting characters is called a ______, and each individual statement within that pair is called a ______.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Catalogue; flora"
+      },
+      {
+        "key": "B",
+        "text": "Lead; couplet"
+      },
+      {
+        "key": "C",
+        "text": "Taxon; monograph"
+      },
+      {
+        "key": "D",
+        "text": "Couplet; lead"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Taxonomic keys are dichotomous: a contrasting pair of options forms a couplet, and each single statement in the couplet is termed a lead.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Living World (Taxonomic Key Structure)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-004",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 1,
+    "chapter": "Living World",
+    "topic": "In-situ vs Ex-situ Biodiversity Conservation",
+    "difficulty": "Medium",
+    "questionText": "Which of the following pairs represents strictly ex-situ conservation aids rather than in-situ habitat protection?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "National parks and wildlife sanctuaries"
+      },
+      {
+        "key": "B",
+        "text": "Biosphere reserves and sacred groves"
+      },
+      {
+        "key": "C",
+        "text": "Sacred lakes and reserve forests"
+      },
+      {
+        "key": "D",
+        "text": "Zoological parks and botanical gardens"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Zoological parks and botanical gardens maintain threatened plants and animals outside their natural habitats under human care (ex-situ), whereas national parks, sanctuaries, and sacred groves conserve species in-situ.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Living World (In-situ vs Ex-situ Biodiversity Conservation)",
+    "abilityTags": [
+      "analytical_thinking",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-005",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 1,
+    "chapter": "Living World",
+    "topic": "Monograph vs Flora vs Manual",
+    "difficulty": "Hard",
+    "questionText": "A taxonomist requires an exhaustive treatise compiling global diagnostic information on ONE specific plant genus regardless of geographic region, rather than an inventory of all species in a single district. Which taxonomic literature should they consult?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "A monograph"
+      },
+      {
+        "key": "B",
+        "text": "A biodiversity register of the district"
+      },
+      {
+        "key": "C",
+        "text": "A regional flora"
+      },
+      {
+        "key": "D",
+        "text": "A field manual"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "A monograph contains comprehensive taxonomic information on any one selected taxon (e.g., a single genus or family) worldwide, whereas a flora documents plant species distributed in a particular geographical area.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Living World (Monograph vs Flora vs Manual)",
+    "abilityTags": [
+      "logical_reasoning",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-006",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 2,
+    "chapter": "Systematics of Living Organisms",
+    "topic": "Binomial Nomenclature Rules",
+    "difficulty": "Easy",
+    "questionText": "According to Carl Linnaeus's binomial nomenclature rules, how is the scientific name of mango correctly formatted in print?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "MANGIFERA INDICA (printed in bold uppercase Roman type)"
+      },
+      {
+        "key": "B",
+        "text": "mangifera indica (italicized, with both words lowercase)"
+      },
+      {
+        "key": "C",
+        "text": "Mangifera indica (italicized, with genus capitalized and specific epithet lowercase)"
+      },
+      {
+        "key": "D",
+        "text": "Mangifera Indica (italicized, with both words capitalized)"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "ICBN/ICZN rules require Latinized binomials printed in italics (or underlined separately when handwritten), with the generic name starting with a capital letter (Mangifera) and specific epithet in lowercase (indica).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Systematics of Living Organisms (Binomial Nomenclature Rules)",
+    "abilityTags": [
+      "scientific_understanding",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-007",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 2,
+    "chapter": "Systematics of Living Organisms",
+    "topic": "Whittaker's Five-Kingdom Classification",
+    "difficulty": "Easy",
+    "questionText": "In R. H. Whittaker's (1969) five-kingdom system, unicellular eukaryotic organisms such as Amoeba, Euglena, and diatoms are placed in Kingdom:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Protista"
+      },
+      {
+        "key": "B",
+        "text": "Monera"
+      },
+      {
+        "key": "C",
+        "text": "Plantae"
+      },
+      {
+        "key": "D",
+        "text": "Fungi"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Whittaker separated all prokaryotic organisms into Monera and grouped all unicellular eukaryotes (photosynthetic, holozoic, or saprobic) into Kingdom Protista.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Systematics of Living Organisms (Whittaker's Five-Kingdom Classification)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-008",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 2,
+    "chapter": "Systematics of Living Organisms",
+    "topic": "Viroids vs Viruses",
+    "difficulty": "Medium",
+    "questionText": "T. O. Diener (1971) discovered viroids as the causative agent of potato spindle tuber disease. How do viroids structurally differ from typical viruses?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Viroids possess double-stranded circular DNA enclosed within a lipid envelope"
+      },
+      {
+        "key": "B",
+        "text": "Viroids consist exclusively of misfolded infectious protein (prions) with no nucleic acid"
+      },
+      {
+        "key": "C",
+        "text": "Viroids contain both 70S ribosomes and peptidoglycan cell walls"
+      },
+      {
+        "key": "D",
+        "text": "Viroids consist of infectious free low-molecular-weight RNA completely lacking a protein coat (capsid)"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Unlike viruses (nucleoprotein particles with DNA or RNA inside a capsid), viroids are naked, low-molecular-weight single-stranded RNA molecules without any protein coat.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Systematics of Living Organisms (Viroids vs Viruses)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-009",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 2,
+    "chapter": "Systematics of Living Organisms",
+    "topic": "Taxonomic Hierarchy Ascending Order",
+    "difficulty": "Medium",
+    "questionText": "Which sequence lists obligatory taxonomic categories for angiosperms in strictly ascending order from most specific to broadest?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Genus → Species → Family → Order → Division → Class → Kingdom"
+      },
+      {
+        "key": "B",
+        "text": "Species → Genus → Family → Order → Class → Division → Kingdom"
+      },
+      {
+        "key": "C",
+        "text": "Species → Genus → Order → Family → Class → Division → Kingdom"
+      },
+      {
+        "key": "D",
+        "text": "Species → Family → Genus → Class → Order → Division → Kingdom"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Going up the taxonomic hierarchy decreases shared traits and broadens scope: Species → Genus → Family → Order → Class → Division (for plants; Phylum for animals) → Kingdom.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Systematics of Living Organisms (Taxonomic Hierarchy Ascending Order)",
+    "abilityTags": [
+      "logical_reasoning",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-010",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 2,
+    "chapter": "Systematics of Living Organisms",
+    "topic": "Archaebacteria vs Eubacteria Cell Envelope",
+    "difficulty": "Hard",
+    "questionText": "Methanogens, halophiles, and thermoacidophiles survive extreme environments where ordinary eubacteria lyse primarily because archaebacterial membranes and cell walls possess:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Unbranched ester-linked phospholipids and thick N-acetylmuramic acid peptidoglycan walls"
+      },
+      {
+        "key": "B",
+        "text": "Branched-chain ether-linked membrane lipids and non-peptidoglycan (pseudomurein/protein) cell walls"
+      },
+      {
+        "key": "C",
+        "text": "Cellulose microfibrils cross-linked with lignin and pectin"
+      },
+      {
+        "key": "D",
+        "text": "Chitinous cell walls reinforced with ergosterol bilayers"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Archaebacteria lack true peptidoglycan (murein) and feature branched phytanyl hydrocarbons joined to glycerol by chemically resistant ether linkages (rather than ester linkages), conferring extreme thermal, osmotic, and acid stability.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Systematics of Living Organisms (Archaebacteria vs Eubacteria Cell Envelope)",
+    "abilityTags": [
+      "analytical_thinking",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-011",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 2,
+    "chapter": "Systematics of Living Organisms",
+    "topic": "Lichen Symbiosis and Lichenometry",
+    "difficulty": "Hard",
+    "questionText": "In a crustose or foliose lichen thallus, distinguish the functional contributions of the phycobiont and mycobiont, and explain why lichens disappear near coal-burning industrial zones:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Both partners are heterotrophic fungi exchanging plasmids; lichens require heavy-metal smog for spore dispersal"
+      },
+      {
+        "key": "B",
+        "text": "The phycobiont is a bryophyte protonema and the mycobiont is a bacteriophage sensitive to N_2 gas"
+      },
+      {
+        "key": "C",
+        "text": "The fungal mycobiont fixes CO_2 photosynthetically while the algal phycobiont secretes rock-dissolving chitinase; lichens thrive only in high-SO_2 air"
+      },
+      {
+        "key": "D",
+        "text": "The algal/cyanobacterial phycobiont synthesizes organic food while the fungal mycobiont provides shelter, water, and mineral absorption; lichens are acutely sensitive to atmospheric SO_2 pollution"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Lichens are mutualistic associations of an autotrophic phycobiont (alga/cyanobacterium supplying carbohydrates/fixed N) and a heterotrophic mycobiont (fungus providing anchorage, moisture, and minerals). Rapid absorption of airborne SO_2 destroys chlorophyll in the phycobiont, making lichens sensitive bioindicators of SO_2 pollution.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Systematics of Living Organisms (Lichen Symbiosis and Lichenometry)",
+    "abilityTags": [
+      "analytical_thinking",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-012",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 3,
+    "chapter": "Kingdom Plantae",
+    "topic": "Amphibians of the Plant Kingdom",
+    "difficulty": "Easy",
+    "questionText": "Why are bryophytes (mosses and liverworts) traditionally referred to as the 'amphibians of the plant kingdom'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "They alternate seasonally between marine kelp stages and desert xerophyte stages"
+      },
+      {
+        "key": "B",
+        "text": "They possess both gills and lungs inside specialized respiratory rhizoids"
+      },
+      {
+        "key": "C",
+        "text": "They bear naked seeds on submerged cones while flowering above water"
+      },
+      {
+        "key": "D",
+        "text": "They grow on moist terrestrial soil yet require an external film of liquid water for flagellated antherozoids to swim to the archegonium for fertilization"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Although terrestrial, bryophytes practise zoidogamous oogamy—their biflagellate male gametes require external water to reach the female egg inside the archegonium.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Kingdom Plantae (Amphibians of the Plant Kingdom)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-013",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 3,
+    "chapter": "Kingdom Plantae",
+    "topic": "Algal Pigments and Reserve Food",
+    "difficulty": "Easy",
+    "questionText": "Members of Rhodophyceae (red algae, such as Polysiphonia and Gracilaria) store reserve food in the cytoplasm as:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Floridean starch"
+      },
+      {
+        "key": "B",
+        "text": "Chrysolaminarin"
+      },
+      {
+        "key": "C",
+        "text": "Mannitol and laminarin"
+      },
+      {
+        "key": "D",
+        "text": "Paramylon granules"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chlorophyceae store true starch, Phaeophyceae (brown algae) store laminarin and mannitol, and Rhodophyceae (red algae, rich in r-phycoerythrin) store floridean starch, structurally similar to amylopectin and glycogen.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Kingdom Plantae (Algal Pigments and Reserve Food)",
+    "abilityTags": [
+      "scientific_understanding",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-014",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 3,
+    "chapter": "Kingdom Plantae",
+    "topic": "Heterospory in Pteridophytes",
+    "difficulty": "Medium",
+    "questionText": "Most pteridophytes (e.g., Dryopteris, Pteris) are homosporous, whereas two classic heterosporous genera that produce distinct microspores and megaspores—representing a precursor to the seed habit—are:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Equisetum and Lycopodium"
+      },
+      {
+        "key": "B",
+        "text": "Selaginella and Salvinia"
+      },
+      {
+        "key": "C",
+        "text": "Adiantum and Psilotum"
+      },
+      {
+        "key": "D",
+        "text": "Funaria and Marchantia"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Selaginella and Salvinia are heterosporous pteridophytes; retention of the female gametophyte within the megasporangium on the parent sporophyte for variable periods is a key evolutionary step toward the seed habit.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Kingdom Plantae (Heterospory in Pteridophytes)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-015",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 3,
+    "chapter": "Kingdom Plantae",
+    "topic": "Gymnosperm Endosperm Ploidy",
+    "difficulty": "Medium",
+    "questionText": "In a gymnosperm such as Pinus or Cycas, if a root-tip somatic cell contains 2n = 24 chromosomes, how many chromosomes are present in each cell of its nutritive endosperm tissue?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "48 (tetraploid, 4n)"
+      },
+      {
+        "key": "B",
+        "text": "24 (diploid, 2n)"
+      },
+      {
+        "key": "C",
+        "text": "36 (triploid, 3n)"
+      },
+      {
+        "key": "D",
+        "text": "12 (haploid, n)"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Unlike angiosperms (where endosperm develops post-fertilization from triple fusion and is 3n), gymnosperm 'endosperm' is the pre-fertilization haploid female gametophyte tissue (n = 24/2 = 12).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Kingdom Plantae (Gymnosperm Endosperm Ploidy)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-016",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 3,
+    "chapter": "Kingdom Plantae",
+    "topic": "Alternation of Generations Across Plant Groups",
+    "difficulty": "Hard",
+    "questionText": "Compare the dominant photosynthetic free-living phase in the life cycles of (i) Chlamydomonas, (ii) Funaria (moss), and (iii) Pteris (fern):",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Chlamydomonas: diplontic; Funaria: dominant sporophyte; Pteris: dominant gametophyte"
+      },
+      {
+        "key": "B",
+        "text": "Chlamydomonas and Funaria are diplontic, whereas Pteris exhibits zygotic meiosis"
+      },
+      {
+        "key": "C",
+        "text": "All three possess an independent dominant diploid sporophyte and dependent microscopic gametophyte"
+      },
+      {
+        "key": "D",
+        "text": "Chlamydomonas: haplontic (gametophyte, zygotic meiosis); Funaria: haplo-diplontic with dominant gametophyte; Pteris: haplo-diplontic with dominant vascular sporophyte"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Chlamydomonas is haplontic (only the zygote is 2n); bryophytes (Funaria) are haplo-diplontic with a dominant haploid leafy gametophyte and dependent sporophyte; pteridophytes (Pteris) have an independent dominant vascular sporophyte (2n) and a small free-living prothallus gametophyte (n).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Kingdom Plantae (Alternation of Generations Across Plant Groups)",
+    "abilityTags": [
+      "analytical_thinking",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-017",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 3,
+    "chapter": "Kingdom Plantae",
+    "topic": "Angiosperm Double Fertilization Ploidy Analysis",
+    "difficulty": "Hard",
+    "questionText": "A diploid female angiosperm plant (2n = 16) is pollinated by pollen from a tetraploid male plant of the same genus (4n = 32). Assuming normal meiosis in both parents and double fertilization, what will be the chromosome numbers in the resulting embryo and primary endosperm nucleus (PEN)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Embryo = 32 (4x) and PEN = 48 (6x)"
+      },
+      {
+        "key": "B",
+        "text": "Embryo = 24 (3x) and PEN = 40 (5x)"
+      },
+      {
+        "key": "C",
+        "text": "Embryo = 24 (3x) and PEN = 32 (4x)"
+      },
+      {
+        "key": "D",
+        "text": "Embryo = 16 (2x) and PEN = 24 (3x)"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Female parent (2n = 16) produces haploid egg (8 chromosomes) and two polar nuclei (8 + 8 = 16 chromosomes). Tetraploid male parent (4n = 32) produces diploid male gametes via meiosis (16 chromosomes each). Syngamy gives embryo = 8 + 16 = 24; triple fusion gives PEN = (8 + 8) + 16 = 32.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Kingdom Plantae (Angiosperm Double Fertilization Ploidy Analysis)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-018",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 4,
+    "chapter": "Kingdom Animalia",
+    "topic": "Canal System vs Water Vascular System",
+    "difficulty": "Easy",
+    "questionText": "Choanocytes (collar cells) lining the spongocoel and canals are a diagnostic anatomical feature of which animal phylum?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Cnidaria"
+      },
+      {
+        "key": "B",
+        "text": "Porifera"
+      },
+      {
+        "key": "C",
+        "text": "Ctenophora"
+      },
+      {
+        "key": "D",
+        "text": "Echinodermata"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Sponges (Phylum Porifera) possess a water-transport canal system lined by flagellated collar cells (choanocytes) for filter feeding, gas exchange, and waste removal.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Kingdom Animalia (Canal System vs Water Vascular System)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-019",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 4,
+    "chapter": "Kingdom Animalia",
+    "topic": "Largest Phylum of Animalia",
+    "difficulty": "Easy",
+    "questionText": "Jointed chitinous appendages, an open circulatory system with haemocoel, and Malpighian tubules or green glands for excretion characterize Phylum:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Arthropoda"
+      },
+      {
+        "key": "B",
+        "text": "Annelida"
+      },
+      {
+        "key": "C",
+        "text": "Mollusca"
+      },
+      {
+        "key": "D",
+        "text": "Aschelminthes"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Arthropoda (the largest animal phylum) is defined by a segmented body covered by a chitinous exoskeleton and jointed appendages.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Kingdom Animalia (Largest Phylum of Animalia)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-020",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 4,
+    "chapter": "Kingdom Animalia",
+    "topic": "Body Cavity (Coelom) Classification",
+    "difficulty": "Medium",
+    "questionText": "Match the body-cavity organization correctly with its representative phylum:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Platyhelminthes — acoelomate; Aschelminthes — pseudocoelomate; Annelida — eucoelomate (schizocoelomate)"
+      },
+      {
+        "key": "B",
+        "text": "Aschelminthes — eucoelomate; Annelida — pseudocoelomate; Arthropoda — acoelomate"
+      },
+      {
+        "key": "C",
+        "text": "Platyhelminthes — pseudocoelomate; Aschelminthes — acoelomate; Annelida — eucoelomate"
+      },
+      {
+        "key": "D",
+        "text": "Cnidaria — eucoelomate; Platyhelminthes — pseudocoelomate; Mollusca — acoelomate"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Flatworms (Platyhelminthes) lack a body cavity (acoelomate); roundworms (Aschelminthes/Nematoda) have scattered mesodermal pouches (pseudocoelomate); annelids onward possess a true coelom lined completely by mesoderm.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Kingdom Animalia (Body Cavity (Coelom) Classification)",
+    "abilityTags": [
+      "analytical_thinking",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-021",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 4,
+    "chapter": "Kingdom Animalia",
+    "topic": "Bioluminescence and Comb Plates",
+    "difficulty": "Medium",
+    "questionText": "Exclusively marine, radially symmetrical diploblastic animals bearing eight external rows of ciliated comb plates for locomotion and exhibiting marked bioluminescence (e.g., Pleurobrachia) belong to Phylum:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Hemichordata"
+      },
+      {
+        "key": "B",
+        "text": "Ctenophora"
+      },
+      {
+        "key": "C",
+        "text": "Echinodermata"
+      },
+      {
+        "key": "D",
+        "text": "Cnidaria"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Comb jellies or sea walnuts (Phylum Ctenophora) move via eight meridional rows of ciliated comb plates, capture prey using lasso cells (colloblasts, lacking nematocysts), and display striking bioluminescence.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Kingdom Animalia (Bioluminescence and Comb Plates)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-022",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 4,
+    "chapter": "Kingdom Animalia",
+    "topic": "Chondrichthyes vs Osteichthyes",
+    "difficulty": "Medium",
+    "questionText": "Which set of traits distinguishes cartilaginous fishes (Class Chondrichthyes, e.g., Scoliodon) from bony fishes (Class Osteichthyes, e.g., Labeo)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Calcareous endoskeleton, homocercal caudal fin, and ammonotelic excretion"
+      },
+      {
+        "key": "B",
+        "text": "Three-chambered heart, moist scaleless skin, and external fertilization in fresh water"
+      },
+      {
+        "key": "C",
+        "text": "Ventral mouth, placoid scales, gill slits without operculum, and absence of a swim bladder"
+      },
+      {
+        "key": "D",
+        "text": "Terminal mouth, cycloid scales, four pairs of gills covered by an operculum, and presence of an air bladder"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Chondrichthyes have a cartilaginous endoskeleton, ventrally located mouth, dermal placoid scales, uncovered gill slits, heterocercal tail, ureotelic excretion, and lack an air bladder (so they must swim continuously to avoid sinking).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Kingdom Animalia (Chondrichthyes vs Osteichthyes)",
+    "abilityTags": [
+      "analytical_thinking",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-023",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 4,
+    "chapter": "Kingdom Animalia",
+    "topic": "Protochordate Notochord Persistence",
+    "difficulty": "Hard",
+    "questionText": "Compare the fate and extent of the notochord in Subphylum Urochordata (e.g., Ascidia) versus Subphylum Cephalochordata (e.g., Branchiostoma / Amphioxus):",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "In both subphyla the notochord is present only in the adult head region and absent in larvae"
+      },
+      {
+        "key": "B",
+        "text": "In Cephalochordata the notochord disappears in the embryo, whereas in Urochordata it ossifies into a cranium"
+      },
+      {
+        "key": "C",
+        "text": "In Urochordata the notochord is replaced by bony vertebrae in adults, whereas in Cephalochordata it is restricted to the proboscis (stomochord)"
+      },
+      {
+        "key": "D",
+        "text": "In Urochordata the notochord is restricted to the larval tail and lost during retrogressive metamorphosis, whereas in Cephalochordata it extends from head to tail and persists throughout adult life"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Tunicata/Urochordata exhibit a notochord solely in the free-swimming tadpole larva's tail; Cephalochordata retain a full-length (rostrum-to-tail) persistent notochord throughout life.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Kingdom Animalia (Protochordate Notochord Persistence)",
+    "abilityTags": [
+      "analytical_thinking",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-024",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 4,
+    "chapter": "Kingdom Animalia",
+    "topic": "Echinodermata Symmetry Ontogeny and Water Vascular System",
+    "difficulty": "Hard",
+    "questionText": "Adult sea stars (Asterias, Phylum Echinodermata) display pentamerous radial symmetry yet are classified among Bilateria close to chordates because:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Their larvae are radially symmetrical while adults transform into segmented bilateral worms"
+      },
+      {
+        "key": "B",
+        "text": "Their free-swimming larvae are bilaterally symmetrical, they are enterocoelomate deuterostomes, and radial symmetry in adults is a secondary adaptation"
+      },
+      {
+        "key": "C",
+        "text": "They possess a dorsal hollow nerve cord and pharyngeal gill slits in the adult arms"
+      },
+      {
+        "key": "D",
+        "text": "They are diploblastic acoelomates with intracellular digestion like cnidarians"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Echinoderm larvae (e.g., bipinnaria) exhibit clear bilateral symmetry and deuterostome enterocoelous development; pentaradial symmetry develops secondarily during metamorphosis.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Kingdom Animalia (Echinodermata Symmetry Ontogeny and Water Vascular System)",
+    "abilityTags": [
+      "logical_reasoning",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-025",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 5,
+    "chapter": "Cell Structure and Organization",
+    "topic": "Fluid Mosaic Model of Plasma Membrane",
+    "difficulty": "Easy",
+    "questionText": "Who proposed the widely accepted 'Fluid Mosaic Model' (1972) describing the plasma membrane as a quasi-fluid phospholipid bilayer with embedded integral and peripheral proteins?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Singer and Nicolson"
+      },
+      {
+        "key": "B",
+        "text": "Camillo Golgi and George Palade"
+      },
+      {
+        "key": "C",
+        "text": "Schleiden and Schwann"
+      },
+      {
+        "key": "D",
+        "text": "Danielli and Davson"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "S. J. Singer and G. L. Nicolson (1972) formulated the fluid mosaic model, explaining lateral mobility of proteins within the amphipathic lipid bilayer.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Cell Structure and Organization (Fluid Mosaic Model of Plasma Membrane)",
+    "abilityTags": [
+      "scientific_understanding",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-026",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 5,
+    "chapter": "Cell Structure and Organization",
+    "topic": "Ribosome Subunits in Prokaryotes vs Eukaryotes",
+    "difficulty": "Easy",
+    "questionText": "What are the Svedberg sedimentation coefficients of the large and small subunits that assemble into a cytoplasmic 80S eukaryotic ribosome?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "50S and 40S"
+      },
+      {
+        "key": "B",
+        "text": "60S and 20S"
+      },
+      {
+        "key": "C",
+        "text": "60S and 40S"
+      },
+      {
+        "key": "D",
+        "text": "50S and 30S"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Svedberg units (S) measure sedimentation rate (size and shape) and are non-additive: eukaryotic 80S ribosomes comprise 60S + 40S subunits, whereas prokaryotic/organellar 70S ribosomes comprise 50S + 30S subunits.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Cell Structure and Organization (Ribosome Subunits in Prokaryotes vs Eukaryotes)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-027",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 5,
+    "chapter": "Cell Structure and Organization",
+    "topic": "Endomembrane System Membership",
+    "difficulty": "Medium",
+    "questionText": "Which group of eukaryotic organelles functions as a coordinated 'endomembrane system' for protein/lipid synthesis, modification, packaging, and hydrolytic digestion?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Ribosomes, centrosomes, and nucleoli"
+      },
+      {
+        "key": "B",
+        "text": "Endoplasmic reticulum, Golgi complex, lysosomes, and vacuoles"
+      },
+      {
+        "key": "C",
+        "text": "Mitochondria, chloroplasts, and peroxisomes"
+      },
+      {
+        "key": "D",
+        "text": "Chloroplasts, glyoxysomes, and basal bodies"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "ER, Golgi apparatus, lysosomes, and vacuoles have coordinated membrane trafficking and functions; mitochondria, chloroplasts, and peroxisomes are excluded from the endomembrane system.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Cell Structure and Organization (Endomembrane System Membership)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-028",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 5,
+    "chapter": "Cell Structure and Organization",
+    "topic": "Axoneme vs Centriole Microtubule Arrangement",
+    "difficulty": "Medium",
+    "questionText": "Contrast the microtubule ultrastructure in the shaft (axoneme) of a eukaryotic cilium/flagellum with that in a centriole or basal body:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Centrioles consist of actin microfilaments whereas cilia consist of intermediate keratin filaments"
+      },
+      {
+        "key": "B",
+        "text": "Cilium axoneme has a '9 + 0' triplet array, whereas a centriole has a '9 + 2' doublet array"
+      },
+      {
+        "key": "C",
+        "text": "Cilium/flagellum axoneme has a '9 + 2' array (9 peripheral doublets + 2 central singlets), whereas a centriole has a '9 + 0' array (9 peripheral triplets with no central microtubules)"
+      },
+      {
+        "key": "D",
+        "text": "Both eukaryotic cilia and bacterial flagella share an identical '9 + 2' flagellin microtubule array"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Eukaryotic cilia/flagella contain 9 peripheral tubulin doublets surrounding 2 central singlets (9 + 2); basal bodies and centrioles possess 9 peripheral tubulin triplets around a proteinaceous hub without central microtubules (9 + 0).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Cell Structure and Organization (Axoneme vs Centriole Microtubule Arrangement)",
+    "abilityTags": [
+      "analytical_thinking",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-029",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 5,
+    "chapter": "Cell Structure and Organization",
+    "topic": "Chromosome Classification by Centromere Position",
+    "difficulty": "Medium",
+    "questionText": "A chromosome in which the centromere is situated very close to one end, forming one extremely short p-arm and one very long q-arm, is classified as:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Metacentric"
+      },
+      {
+        "key": "B",
+        "text": "Sub-metacentric"
+      },
+      {
+        "key": "C",
+        "text": "Telocentric"
+      },
+      {
+        "key": "D",
+        "text": "Acrocentric"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Metacentric = median centromere (V-shape, equal arms); sub-metacentric = slightly off-centre (L-shape); acrocentric = sub-terminal centromere (one very short and one very long arm); telocentric = strictly terminal centromere.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Cell Structure and Organization (Chromosome Classification by Centromere Position)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-030",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 5,
+    "chapter": "Cell Structure and Organization",
+    "topic": "Semi-Autonomous Organelles and Endosymbiotic Evidence",
+    "difficulty": "Hard",
+    "questionText": "Mitochondria and chloroplasts are described as semi-autonomous organelles. Which set of molecular features present inside BOTH organelles directly supports their prokaryotic endosymbiotic origin while explaining why they remain 'semi'-autonomous?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Single-stranded RNA genomes, lysosomal acid hydrolases, and de novo assembly from Golgi vesicles"
+      },
+      {
+        "key": "B",
+        "text": "Linear histone-bound chromosomes, 80S ribosomes, and complete independence from nuclear genes"
+      },
+      {
+        "key": "C",
+        "text": "Peptidoglycan outer walls, 60S + 40S ribosomes, and absence of an inner membrane"
+      },
+      {
+        "key": "D",
+        "text": "Single circular dsDNA lacking histones, 70S ribosomes, binary-fission-like division, yet dependence on nuclear-encoded cytosolic proteins for most of their proteome"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Both organelles contain circular naked dsDNA and 70S ribosomes (inhibited by chloramphenicol like bacteria) and divide by fission, but most genes transferred to the host nucleus during evolution, making them semi-autonomous.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Cell Structure and Organization (Semi-Autonomous Organelles and Endosymbiotic Evidence)",
+    "abilityTags": [
+      "logical_reasoning",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-031",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 5,
+    "chapter": "Cell Structure and Organization",
+    "topic": "Directional Vesicular Transport Across Golgi Cisternae",
+    "difficulty": "Hard",
+    "questionText": "Trace the correct vectorial pathway of a newly synthesized secretory glycoprotein from synthesis to exocytosis in a pancreatic acinar cell:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Free cytosolic 80S ribosome → lysosome → cis face of Golgi → Rough ER → exocytosis"
+      },
+      {
+        "key": "B",
+        "text": "Rough ER lumen → transport vesicle → cis (forming) face of Golgi → medial/trans (maturing) face of Golgi → secretory vesicle → plasma membrane fusion"
+      },
+      {
+        "key": "C",
+        "text": "Smooth ER → trans face of Golgi → cis face of Golgi → peroxisome → nuclear pore"
+      },
+      {
+        "key": "D",
+        "text": "Rough ER → mitochondrial matrix → trans face of Golgi → tonoplast"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Polypeptides co-translationally enter the RER lumen for core glycosylation, bud in transition vesicles to fuse with the convex cis (forming) Golgi face, undergo glycan remodeling toward the concave trans (maturing) face, and exit in secretory vesicles for exocytosis.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Cell Structure and Organization (Directional Vesicular Transport Across Golgi Cisternae)",
+    "abilityTags": [
+      "logical_reasoning",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-032",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 6,
+    "chapter": "Biomolecules",
+    "topic": "Glycosidic vs Peptide vs Phosphodiester Bonds",
+    "difficulty": "Easy",
+    "questionText": "Successive α-amino acid residues in a polypeptide chain are covalently linked to one another by which chemical bond?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Ester bond between glycerol and fatty acids"
+      },
+      {
+        "key": "B",
+        "text": "β-1,4-Glycosidic bond"
+      },
+      {
+        "key": "C",
+        "text": "3',5'-Phosphodiester bond"
+      },
+      {
+        "key": "D",
+        "text": "Peptide (amide, –CO–NH–) bond formed by dehydration synthesis"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Reaction between the α-carboxyl group (–COOH) of one amino acid and the α-amino group (–NH_2) of the next eliminates a molecule of H_2O to form a peptide (–CO–NH–) bond.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Biomolecules (Glycosidic vs Peptide vs Phosphodiester Bonds)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-033",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 6,
+    "chapter": "Biomolecules",
+    "topic": "Structural Polysaccharide Chitin",
+    "difficulty": "Easy",
+    "questionText": "Chitin, the tough structural homopolysaccharide forming fungal cell walls and arthropod exoskeletons, is a linear polymer of:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "N-Acetyl-D-glucosamine (NAG) linked by β-(1→4) glycosidic bonds"
+      },
+      {
+        "key": "B",
+        "text": "Alternating D-galactose and L-arabinose units"
+      },
+      {
+        "key": "C",
+        "text": "α-D-Glucose units with α-(1→6) branch points"
+      },
+      {
+        "key": "D",
+        "text": "D-Fructose units linked by β-(1→2) bonds (inulin)"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chitin is an unbranched structural homopolysaccharide composed of repeating β-(1→4)-linked N-acetylglucosamine (NAG) monomers.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Biomolecules (Structural Polysaccharide Chitin)",
+    "abilityTags": [
+      "scientific_understanding",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-034",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 6,
+    "chapter": "Biomolecules",
+    "topic": "Zwitterionic Form of Amino Acids",
+    "difficulty": "Medium",
+    "questionText": "At a specific pH known as its isoelectric point (pI), an amino acid with a neutral side chain exists predominantly in aqueous solution as a:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Non-ionic covalent lactam ring insoluble in water"
+      },
+      {
+        "key": "B",
+        "text": "Fully deprotonated anion (H_2N–CHR–COO^-) migrating rapidly to the anode"
+      },
+      {
+        "key": "C",
+        "text": "Dipolar zwitterion (+H_3N–CHR–COO^-) carrying zero net electrical charge"
+      },
+      {
+        "key": "D",
+        "text": "Fully protonated cation (+H_3N–CHR–COOH) migrating rapidly to the cathode"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "At pH = pI, internal proton transfer produces +H_3N–CHR–COO^- (a zwitterion), bearing one +1 and one -1 charge so net charge is zero and electrophoretic migration ceases.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Biomolecules (Zwitterionic Form of Amino Acids)",
+    "abilityTags": [
+      "scientific_understanding",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-035",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 6,
+    "chapter": "Biomolecules",
+    "topic": "Protein Structural Hierarchy",
+    "difficulty": "Medium",
+    "questionText": "Adult human haemoglobin consists of four folded polypeptide chains (two α-globin and two β-globin subunits) assembled together around haem prosthetic groups. This multi-subunit assembly exemplifies which level of protein architecture?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "β-Pleated secondary structure only"
+      },
+      {
+        "key": "B",
+        "text": "Primary structure only"
+      },
+      {
+        "key": "C",
+        "text": "Quaternary structure"
+      },
+      {
+        "key": "D",
+        "text": "Single-chain tertiary structure"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "While folding of a single polypeptide in 3D space defines tertiary structure, the spatial arrangement and non-covalent association of two or more folded polypeptide subunits (α_2β_2) constitutes quaternary structure.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Biomolecules (Protein Structural Hierarchy)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-036",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 6,
+    "chapter": "Biomolecules",
+    "topic": "Chargaff's Base-Equivalence Calculation",
+    "difficulty": "Medium",
+    "questionText": "A double-stranded B-DNA sample isolated from a eukaryotic nucleus contains 18% cytosine (C) on a molar base basis. According to Chargaff's rules, what percentage of the total bases in this dsDNA is adenine (A)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "36%"
+      },
+      {
+        "key": "B",
+        "text": "18%"
+      },
+      {
+        "key": "C",
+        "text": "32%"
+      },
+      {
+        "key": "D",
+        "text": "64%"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "In Watson-Crick dsDNA, %G = %C = 18%, so %(G + C) = 36%. Remaining bases are %(A + T) = 100% - 36% = 64%; since %A = %T, %A = 64% / 2 = 32%.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Biomolecules (Chargaff's Base-Equivalence Calculation)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-037",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 6,
+    "chapter": "Biomolecules",
+    "topic": "Competitive vs Non-Competitive Enzyme Inhibition",
+    "difficulty": "Hard",
+    "questionText": "Malonate inhibits succinate dehydrogenase by closely mimicking the structure of succinate and binding reversibly to the active site. How do the apparent Michaelis constant (K_m) and maximum velocity (V_max) change in the presence of a fixed concentration of malonate?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Both apparent K_m and V_max decrease equally"
+      },
+      {
+        "key": "B",
+        "text": "Apparent K_m decreases to zero while V_max doubles"
+      },
+      {
+        "key": "C",
+        "text": "Apparent K_m remains unchanged while V_max decreases proportionally"
+      },
+      {
+        "key": "D",
+        "text": "Apparent K_m increases while V_max remains unchanged (overcome at saturating substrate concentration)"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Malonate is a classic competitive inhibitor: high [succinate] outcompetes malonate for the active site so V_max is still attainable, but a higher substrate concentration is needed to reach (1/2)V_max, increasing apparent K_m.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Biomolecules (Competitive vs Non-Competitive Enzyme Inhibition)",
+    "abilityTags": [
+      "analytical_thinking",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-038",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 6,
+    "chapter": "Biomolecules",
+    "topic": "B-DNA Helical Geometry and Hydrogen-Bond Count",
+    "difficulty": "Hard",
+    "questionText": "A linear double-stranded B-DNA fragment is 68 nm long (pitch per helical turn = 3.4 nm, 10 base pairs per turn) and 30% of its base pairs are G≡C pairs. How many total base pairs and how many total inter-strand Watson-Crick hydrogen bonds are present in this DNA fragment?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "100 base pairs and 230 hydrogen bonds"
+      },
+      {
+        "key": "B",
+        "text": "200 base pairs and 460 hydrogen bonds"
+      },
+      {
+        "key": "C",
+        "text": "200 base pairs and 540 hydrogen bonds"
+      },
+      {
+        "key": "D",
+        "text": "200 base pairs and 400 hydrogen bonds"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Number of helical turns = 68 nm / 3.4 nm = 20 turns; total base pairs = 20 × 10 = 200 bp. G≡C pairs = 30% of 200 = 60 bp (3 H-bonds each = 180); A=T pairs = 200 - 60 = 140 bp (2 H-bonds each = 280). Total H-bonds = 180 + 280 = 460.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Biomolecules (B-DNA Helical Geometry and Hydrogen-Bond Count)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-039",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 7,
+    "chapter": "Cell Division",
+    "topic": "DNA Replication Phase in Interphase",
+    "difficulty": "Easy",
+    "questionText": "During which phase of the eukaryotic cell cycle does semi-conservative replication of nuclear DNA take place, doubling DNA content from 2C to 4C without changing chromosome number (2n)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "G_2 phase"
+      },
+      {
+        "key": "B",
+        "text": "G_1 phase"
+      },
+      {
+        "key": "C",
+        "text": "Prophase of M phase"
+      },
+      {
+        "key": "D",
+        "text": "S (Synthesis) phase of interphase"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "In S phase, nuclear DNA replicates (2C → 4C) and centrioles duplicate in animal cytoplasm, while sister chromatids remain joined at a single centromere so ploidy stays 2n.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Cell Division (DNA Replication Phase in Interphase)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-040",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 7,
+    "chapter": "Cell Division",
+    "topic": "Quiescent Stage (G_0)",
+    "difficulty": "Easy",
+    "questionText": "Terminally differentiated adult mammalian cardiomyocytes and neurons exit G_1 phase to enter a metabolically active, non-dividing state known as:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Quiescent stage (G_0)"
+      },
+      {
+        "key": "B",
+        "text": "Interkinesis"
+      },
+      {
+        "key": "C",
+        "text": "Diakinesis"
+      },
+      {
+        "key": "D",
+        "text": "Cytokinesis"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Cells in G_0 remain metabolically active and perform specialized physiological roles without proliferating unless stimulated by specific mitogenic signals.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Cell Division (Quiescent Stage (G_0))",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-041",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 7,
+    "chapter": "Cell Division",
+    "topic": "Optimal Stage for Karyotyping",
+    "difficulty": "Medium",
+    "questionText": "Cytogeneticists arrest dividing lymphocytes with colchicine at which mitotic stage to photograph chromosome morphology and construct a karyotype, and why?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Metaphase, because chromosomes reach maximum condensation and align clearly along the equatorial metaphase plate"
+      },
+      {
+        "key": "B",
+        "text": "Early prophase, because chromatin threads are maximally decondensed and tangled"
+      },
+      {
+        "key": "C",
+        "text": "S phase, because replication forks are visible under a compound light microscope"
+      },
+      {
+        "key": "D",
+        "text": "Telophase, because nuclear envelopes have reformed around decondensing chromosomes"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Colchicine inhibits spindle microtubule polymerization, arresting cells at metaphase when chromosomes are shortest, thickest, and distinctly composed of two sister chromatids.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Cell Division (Optimal Stage for Karyotyping)",
+    "abilityTags": [
+      "scientific_understanding",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-042",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 7,
+    "chapter": "Cell Division",
+    "topic": "Sub-Stages of Meiotic Prophase I",
+    "difficulty": "Medium",
+    "questionText": "Match the key meiotic events—(i) synaptonemal complex formation (synapsis), (ii) recombinase-mediated crossing over, and (iii) appearance of X-shaped chiasmata—to their exact Prophase I sub-stages:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "(i) Pachytene, (ii) Diplotene, (iii) Diakinesis"
+      },
+      {
+        "key": "B",
+        "text": "(i) Leptotene, (ii) Zygotene, (iii) Pachytene"
+      },
+      {
+        "key": "C",
+        "text": "(i) Zygotene, (ii) Pachytene, (iii) Diplotene"
+      },
+      {
+        "key": "D",
+        "text": "(i) Zygotene, (ii) Diplotene, (iii) Diakinesis"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Homologous pairing (synapsis) occurs in zygotene; crossing over at recombination nodules is catalysed by recombinase in pachytene; dissolution of the synaptonemal complex reveals chiasmata in diplotene.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Cell Division (Sub-Stages of Meiotic Prophase I)",
+    "abilityTags": [
+      "analytical_thinking",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-043",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 7,
+    "chapter": "Cell Division",
+    "topic": "Mitotic Division Count Problem",
+    "difficulty": "Medium",
+    "questionText": "Starting from a single meristematic root-tip cell, how many total mitotic cell divisions (and how many generations) are required to produce 64 somatic cells?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "6 mitotic divisions across 6 generations"
+      },
+      {
+        "key": "B",
+        "text": "64 mitotic divisions across 6 generations"
+      },
+      {
+        "key": "C",
+        "text": "63 mitotic divisions across 6 generations"
+      },
+      {
+        "key": "D",
+        "text": "32 mitotic divisions across 5 generations"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Each single mitotic division increases total cell count by 1 (1 → 2 takes 1 division; N cells require N - 1 = 64 - 1 = 63 mitotic divisions). Since 2^6 = 64, this spans 6 synchronous division generations.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Cell Division (Mitotic Division Count Problem)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-044",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 7,
+    "chapter": "Cell Division",
+    "topic": "Anaphase I vs Anaphase II Chromosome Mechanics",
+    "difficulty": "Hard",
+    "questionText": "What fundamental mechanical difference distinguishes Anaphase I of meiosis from both Mitotic Anaphase and Meiotic Anaphase II?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "DNA replicates immediately prior to Anaphase II during interkinesis"
+      },
+      {
+        "key": "B",
+        "text": "In Anaphase I homologous chromosomes separate while centromeres do NOT split (sister chromatids remain attached), whereas centromeres split in Mitotic Anaphase and Anaphase II"
+      },
+      {
+        "key": "C",
+        "text": "Spindle fibres attach only to telomeres rather than kinetochores during Anaphase I"
+      },
+      {
+        "key": "D",
+        "text": "Centromeres split during Anaphase I whereas homologous chromosomes pair up during Anaphase II"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Reductional segregation in Anaphase I pulls intact dyads (homologous chromosomes, each still consisting of two sister chromatids joined at an unsplit centromere) to opposite poles; centromeric cohesin cleavage occurs in Anaphase II and mitotic anaphase.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Cell Division (Anaphase I vs Anaphase II Chromosome Mechanics)",
+    "abilityTags": [
+      "logical_reasoning",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-045",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 7,
+    "chapter": "Cell Division",
+    "topic": "Tracking Chromosome Count (n) and DNA Content (C) Across Meiosis",
+    "difficulty": "Hard",
+    "questionText": "A diploid meiocyte in G_1 phase has 2n = 20 chromosomes and nuclear DNA content = 2C. What are the chromosome count and DNA content of (i) a cell at Metaphase I, (ii) one secondaryocyte at Metaphase II, and (iii) one mature haploid gamete after Telophase II?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "(i) 20 chromosomes, 4C; (ii) 20 chromosomes, 2C; (iii) 10 chromosomes, 2C"
+      },
+      {
+        "key": "B",
+        "text": "(i) 20 chromosomes, 4C; (ii) 10 chromosomes, 2C; (iii) 10 chromosomes, 1C"
+      },
+      {
+        "key": "C",
+        "text": "(i) 20 chromosomes, 2C; (ii) 10 chromosomes, 1C; (iii) 5 chromosomes, 0.5C"
+      },
+      {
+        "key": "D",
+        "text": "(i) 40 chromosomes, 4C; (ii) 20 chromosomes, 2C; (iii) 10 chromosomes, 1C"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "S phase doubles DNA to 4C while chromosome count remains 20 (Metaphase I: 20 chromosomes, 4C). Meiosis I halves both chromosome number and DNA content per daughter cell (Metaphase II: 10 chromosomes, 2C). Meiosis II splits sister chromatids, halving DNA content to 1C while retaining 10 chromosomes per gamete.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Cell Division (Tracking Chromosome Count (n) and DNA Content (C) Across Meiosis)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-046",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 8,
+    "chapter": "Plant Tissues and Anatomy",
+    "topic": "Casparian Strips in Endodermis",
+    "difficulty": "Easy",
+    "questionText": "Water-impermeable Casparian strips deposited on radial and tangential walls of root endodermal cells are composed predominantly of:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Chitin"
+      },
+      {
+        "key": "B",
+        "text": "Callose"
+      },
+      {
+        "key": "C",
+        "text": "Pectin"
+      },
+      {
+        "key": "D",
+        "text": "Suberin"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Waxy suberin bands (Casparian strips) in the root endodermis block passive apoplastic movement, forcing water and dissolved ions across selective plasma membranes (symplastic checkpoint).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Plant Tissues and Anatomy (Casparian Strips in Endodermis)",
+    "abilityTags": [
+      "scientific_understanding",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-047",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 8,
+    "chapter": "Plant Tissues and Anatomy",
+    "topic": "Intercalary Meristem",
+    "difficulty": "Easy",
+    "questionText": "Rapid regeneration of grass blades after grazing by herbivores is primarily driven by the activity of which meristem located at internodal bases?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Root cap calyptrogen"
+      },
+      {
+        "key": "B",
+        "text": "Intercalary meristem"
+      },
+      {
+        "key": "C",
+        "text": "Intrafascicular vascular cambium"
+      },
+      {
+        "key": "D",
+        "text": "Cork cambium (phellogen)"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Intercalary meristems are primary meristems situated between mature tissues at leaf/internode bases in grasses and monocots, restoring length removed by grazing.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Plant Tissues and Anatomy (Intercalary Meristem)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-048",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 8,
+    "chapter": "Plant Tissues and Anatomy",
+    "topic": "Monocot vs Dicot Stem Vascular Bundles",
+    "difficulty": "Medium",
+    "questionText": "How do the vascular bundles of a typical monocot stem (e.g., Zea mays) differ anatomically from those of a young dicot stem (e.g., Helianthus)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Monocot stem bundles are radial with alternating patches of exarch xylem and phloem"
+      },
+      {
+        "key": "B",
+        "text": "Monocot stem bundles are arranged in a single ring, conjoint, open with active vascular cambium, and possess a distinct endodermis and pith"
+      },
+      {
+        "key": "C",
+        "text": "Dicot stem bundles are scattered randomly and lack protoxylem or metaxylem"
+      },
+      {
+        "key": "D",
+        "text": "Monocot stem bundles are scattered in ground tissue, conjoint, collateral, closed (lacking cambium), and surrounded by a sclerenchymatous bundle sheath, with water-containing cavities"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Dicot stems have open vascular bundles arranged in a ring (eustele); monocot stems (atactostele) have numerous scattered closed bundles encased in sclerenchymatous sheaths without secondary growth.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Plant Tissues and Anatomy (Monocot vs Dicot Stem Vascular Bundles)",
+    "abilityTags": [
+      "analytical_thinking",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-049",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 8,
+    "chapter": "Plant Tissues and Anatomy",
+    "topic": "Exarch vs Endarch Primary Xylem",
+    "difficulty": "Medium",
+    "questionText": "Why is primary xylem in angiosperm roots described as 'exarch' whereas in stems it is 'endarch'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "In roots xylem surrounds phloem concentrically; in stems phloem surrounds xylem"
+      },
+      {
+        "key": "B",
+        "text": "Roots contain only vessels whereas stems contain only tracheids"
+      },
+      {
+        "key": "C",
+        "text": "In roots protoxylem lies toward the outer periphery and metaxylem toward the centre; in stems protoxylem lies toward the central pith and metaxylem toward the periphery"
+      },
+      {
+        "key": "D",
+        "text": "In roots protoxylem lies at the centre; in stems protoxylem lies next to the epidermis"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Centripetal differentiation in roots places first-formed narrow protoxylem externally near the pericycle (exarch), whereas centrifugal differentiation in stems places protoxylem internally facing the pith (endarch).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Plant Tissues and Anatomy (Exarch vs Endarch Primary Xylem)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-050",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 8,
+    "chapter": "Plant Tissues and Anatomy",
+    "topic": "Periderm Composition and Lenticels",
+    "difficulty": "Hard",
+    "questionText": "During secondary growth in a woody dicot stem, cork cambium (phellogen) divides periclinally on both sides. Which tissues constitute the 'periderm', and which layer is suberized versus parenchymatous?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Phellem (inner living cortex) + phelloderm (outer suberized cork) + pericycle"
+      },
+      {
+        "key": "B",
+        "text": "Epidermis + hypodermis + endodermis"
+      },
+      {
+        "key": "C",
+        "text": "Secondary phloem + vascular cambium + secondary xylem (heartwood and sapwood)"
+      },
+      {
+        "key": "D",
+        "text": "Phellem (outer suberized dead cork) + phellogen (meristematic cork cambium) + phelloderm (inner living parenchymatous secondary cortex)"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Phellogen cuts off outer cells that become suberized dead cork (phellem) and inner living parenchymatous cells (phelloderm). Collectively, phellem + phellogen + phelloderm = periderm, punctuated by lenticels for gas exchange.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Plant Tissues and Anatomy (Periderm Composition and Lenticels)",
+    "abilityTags": [
+      "analytical_thinking",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-051",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 8,
+    "chapter": "Plant Tissues and Anatomy",
+    "topic": "Heartwood (Duramen) vs Sapwood (Alburnum) and Annual Rings",
+    "difficulty": "Hard",
+    "questionText": "In an old temperate dicot tree trunk, why is central heartwood (duramen) dark, durable, and non-conducting for water, whereas peripheral sapwood (alburnum) conducts ascent of sap?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Heartwood tracheary lumina are plugged by balloon-like tyloses and infiltrated with tannins, resins, oils, and gums, giving mechanical support and pest resistance without water conduction"
+      },
+      {
+        "key": "B",
+        "text": "Sapwood lacks xylem vessels altogether and transports water exclusively via medullary rays"
+      },
+      {
+        "key": "C",
+        "text": "Heartwood forms only in tropical trees where cambial activity is uniform year-round"
+      },
+      {
+        "key": "D",
+        "text": "Heartwood consists entirely of living thin-walled sieve tubes whereas sapwood is dead cork"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "As secondary xylem ages centrally, xylem parenchyma extrude tyloses into vessel lumina and deposit aromatic substances, tannins, and resins—rendering heartwood dark, decay-resistant, mechanically strong, and non-conducting, while outer lighter sapwood conducts water.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Plant Tissues and Anatomy (Heartwood (Duramen) vs Sapwood (Alburnum) and Annual Rings)",
+    "abilityTags": [
+      "logical_reasoning",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-052",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 9,
+    "chapter": "Morphology of Flowering Plants",
+    "topic": "Pneumatophores in Mangroves",
+    "difficulty": "Easy",
+    "questionText": "Halophytic mangrove trees such as Rhizophora growing in waterlogged anoxic coastal mudflats develop negatively geotropic vertical roots bearing lenticels/pneumathodes called:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Nodulated tuberous roots"
+      },
+      {
+        "key": "B",
+        "text": "Pneumatophores (respiratory roots)"
+      },
+      {
+        "key": "C",
+        "text": "Velamen epiphytic roots"
+      },
+      {
+        "key": "D",
+        "text": "Haustorial parasitic roots"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Waterlogged saline mud lacks dissolved oxygen; pneumatophores grow vertically upward above the mud surface to aerate submerged root tissues.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Morphology of Flowering Plants (Pneumatophores in Mangroves)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-053",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 9,
+    "chapter": "Morphology of Flowering Plants",
+    "topic": "Parthenocarpic vs True vs False Fruits",
+    "difficulty": "Easy",
+    "questionText": "Why are apple and strawberry classified botanically as 'false (pseudocarpic) fruits' rather than true fruits like mango?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Because they arise from subterranean stem tubers rather than flowers"
+      },
+      {
+        "key": "B",
+        "text": "Because they develop without fertilization and contain zero viable seeds"
+      },
+      {
+        "key": "C",
+        "text": "Because their pericarp is completely dry and dehiscent at maturity"
+      },
+      {
+        "key": "D",
+        "text": "Because floral parts other than the ovary—specifically the fleshy thalamus—contribute substantially to the edible fruit structure"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "A true fruit develops solely from a fertilized ripened ovary; when accessory floral parts such as the thalamus/receptacle enlarge to form the fleshy bulk (apple, pear, strawberry, cashew), it is a false fruit.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Morphology of Flowering Plants (Parthenocarpic vs True vs False Fruits)",
+    "abilityTags": [
+      "scientific_understanding",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-054",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 9,
+    "chapter": "Morphology of Flowering Plants",
+    "topic": "Vexillary (Papilionaceous) Aestivation",
+    "difficulty": "Medium",
+    "questionText": "Pea and bean flowers (Family Fabaceae) display vexillary corolla aestivation consisting of five petals arranged as:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Three outer tepals and three inner tepals fused into a perianth tube (as in Liliaceae)"
+      },
+      {
+        "key": "B",
+        "text": "One largest posterior standard (vexillum) overlapping two lateral wings (alae), which in turn overlap two smallest anterior fused keel petals (carina)"
+      },
+      {
+        "key": "C",
+        "text": "Five petals where each petal overlaps the next in one regular direction (twisted, as in China rose)"
+      },
+      {
+        "key": "D",
+        "text": "Five free petals whose margins touch without overlapping (valvate)"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Papilionaceous (butterfly-shaped) corolla has descending imbricate (vexillary) aestivation: C_1+2+(2) — posterior standard, two lateral wings, and two anterior united keel petals enclosing stamens and pistil.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Morphology of Flowering Plants (Vexillary (Papilionaceous) Aestivation)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-055",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 9,
+    "chapter": "Morphology of Flowering Plants",
+    "topic": "Ovary Position and Flower Insertion",
+    "difficulty": "Medium",
+    "questionText": "In cucumber, guava, and ray florets of sunflower, the margin of the thalamus grows upward enclosing the ovary completely and fusing with it, while sepals, petals, and stamens arise above the ovary. Such flowers and ovaries are termed:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Epigynous flowers with an inferior ovary"
+      },
+      {
+        "key": "B",
+        "text": "Hypogynous flowers with an inferior ovary"
+      },
+      {
+        "key": "C",
+        "text": "Hypogynous flowers with a superior ovary"
+      },
+      {
+        "key": "D",
+        "text": "Perigynous flowers with a half-inferior ovary"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "In epigynous flowers (cucumber, guava), floral whorls arise above the fused thalamus-ovary wall, making the ovary inferior (denoted Ḡ in floral formulae).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Morphology of Flowering Plants (Ovary Position and Flower Insertion)",
+    "abilityTags": [
+      "analytical_thinking",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-056",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 9,
+    "chapter": "Morphology of Flowering Plants",
+    "topic": "Placentation Types",
+    "difficulty": "Medium",
+    "questionText": "In mustard and Argemone, the ovary is initially unilocular with ovules borne on the inner ovary wall, but becomes two-chambered due to the growth of a false septum (replum). What type of placentation is this?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Basal placentation (as in sunflower and marigold)"
+      },
+      {
+        "key": "B",
+        "text": "Free-central placentation (as in Dianthus and Primrose)"
+      },
+      {
+        "key": "C",
+        "text": "Axile placentation (as in tomato, lemon, and China rose)"
+      },
+      {
+        "key": "D",
+        "text": "Parietal placentation"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Parietal placentation features ovules developing on the peripheral inner wall of a multicarpellary syncarpous unilocular ovary; in Brassicaceae (mustard), a false septum (replum) divides it into two locules.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Morphology of Flowering Plants (Placentation Types)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-057",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 9,
+    "chapter": "Morphology of Flowering Plants",
+    "topic": "Interpreting Angiosperm Floral Formulae",
+    "difficulty": "Hard",
+    "questionText": "Examine the floral formula: ⊕ ⚥ K_(5) C_(5) A_5 G_(2) (with an epipetalous arc joining C and A, and a line beneath G). Which family and key diagnostic traits does this formula uniquely represent?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Liliaceae (e.g., Allium cepa): trimerous flower with epiphyllous perianth P_(3+3) A_3+3 and tricarpellary superior ovary"
+      },
+      {
+        "key": "B",
+        "text": "Solanaceae (e.g., Solanum nigrum, Datura): actinomorphic bisexual flower, 5 gamosepalous sepals, 5 gamopetalous petals, 5 epipetalous stamens, bicarpellary syncarpous superior ovary with swollen axile placenta"
+      },
+      {
+        "key": "C",
+        "text": "Asteraceae: epigynous flower with pappus calyx and bicarpellary inferior ovary"
+      },
+      {
+        "key": "D",
+        "text": "Fabaceae (e.g., Pisum sativum): zygomorphic flower with diadelphous stamens A_(9)+1 and monocarpellary superior ovary"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Solanaceae has ⊕ ⚥ K_(5) C_(5) A_5 G_(2) superior, with epipetalous stamens (arc from C to A), persistent calyx, and obliquely placed bicarpellary syncarpous superior ovary bearing numerous ovules on swollen axile placentae.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Morphology of Flowering Plants (Interpreting Angiosperm Floral Formulae)",
+    "abilityTags": [
+      "logical_reasoning",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-058",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 10,
+    "chapter": "Animal Tissue",
+    "topic": "Tendons vs Ligaments",
+    "difficulty": "Easy",
+    "questionText": "In dense regular connective tissue, tendons attach ______ to ______, whereas ligaments attach ______ to ______.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Skeletal muscle to bone; bone to bone"
+      },
+      {
+        "key": "B",
+        "text": "Skin dermis to muscle; cartilage to nerve"
+      },
+      {
+        "key": "C",
+        "text": "Bone to bone; skeletal muscle to bone"
+      },
+      {
+        "key": "D",
+        "text": "Smooth muscle to epithelium; bone to cartilage"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Tendons are inelastic collagen-rich cords transmitting muscle pull to bone; ligaments contain abundant collagen plus elastin fibres connecting bone to bone across joints.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Animal Tissue (Tendons vs Ligaments)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-059",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 10,
+    "chapter": "Animal Tissue",
+    "topic": "Pavement Epithelium in Gas Exchange",
+    "difficulty": "Easy",
+    "questionText": "Which simple epithelium lines pulmonary alveoli and Bowman's capsule podocytes to provide a minimal diffusion barrier?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Keratinized stratified squamous epithelium"
+      },
+      {
+        "key": "B",
+        "text": "Transitional urothelium"
+      },
+      {
+        "key": "C",
+        "text": "Ciliated pseudostratified columnar epithelium"
+      },
+      {
+        "key": "D",
+        "text": "Simple squamous epithelium"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Simple squamous (pavement) epithelium consists of a single layer of thin, flattened polygonal cells with irregular boundaries, ideal for rapid gas diffusion and glomerular filtration.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Animal Tissue (Pavement Epithelium in Gas Exchange)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-060",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 10,
+    "chapter": "Animal Tissue",
+    "topic": "Intercellular Epithelial Junctions",
+    "difficulty": "Medium",
+    "questionText": "Distinguish the physiological roles of 'tight junctions' and 'gap junctions' in vertebrate tissues:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Gap junctions block water diffusion across urinary bladder walls, whereas tight junctions conduct action potentials in heart muscle"
+      },
+      {
+        "key": "B",
+        "text": "Tight junctions pump Na^+ ions between cells, whereas gap junctions cement cells to the basement membrane"
+      },
+      {
+        "key": "C",
+        "text": "Both tight and gap junctions consist solely of extracellular hyaluronic acid"
+      },
+      {
+        "key": "D",
+        "text": "Tight junctions seal adjacent plasma membranes to prevent paracellular leakage, whereas gap junctions form hydrophilic protein channels (connexons) allowing rapid direct ion and small-molecule transfer"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Tight (zonula occludens) junctions prevent leakage across epithelial sheets; adhering junctions/desmosomes mechanically anchor cells; gap junctions couple cytoplasms electrically and metabolically (critical in cardiac and smooth muscle).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Animal Tissue (Intercellular Epithelial Junctions)",
+    "abilityTags": [
+      "analytical_thinking",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-061",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 10,
+    "chapter": "Animal Tissue",
+    "topic": "Haversian System (Osteon)",
+    "difficulty": "Medium",
+    "questionText": "Longitudinal Haversian canals interconnected transversely by Volkmann's canals, surrounded by concentric calcified lamellae housing osteocytes in lacunae, are characteristic of:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Compact mammalian bone"
+      },
+      {
+        "key": "B",
+        "text": "White fibrous cartilage of intervertebral discs"
+      },
+      {
+        "key": "C",
+        "text": "Hyaline articular cartilage"
+      },
+      {
+        "key": "D",
+        "text": "Spongy red bone marrow trabeculae of amphibians"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Haversian systems (osteons) carrying blood vessels and nerves through mineralized hydroxyapatite-collagen matrix are diagnostic histological units of mammalian compact bone.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Animal Tissue (Haversian System (Osteon))",
+    "abilityTags": [
+      "scientific_understanding",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-062",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 10,
+    "chapter": "Animal Tissue",
+    "topic": "Comparative Histology of Muscle Types",
+    "difficulty": "Hard",
+    "questionText": "A biopsy slide shows cylindrical, branched, uninucleate striated muscle fibres joined end-to-end by dark transverse 'intercalated discs' rich in desmosomes and gap junctions. From which organ was this tissue obtained, and why are intercalated discs essential?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Biceps brachii skeletal muscle; intercalated discs store glycogen for voluntary tetanic contraction"
+      },
+      {
+        "key": "B",
+        "text": "Heart wall (myocardium); intercalated discs mechanically anchor fibres and allow action potentials to spread rapidly so chambers contract as a functional syncytium"
+      },
+      {
+        "key": "C",
+        "text": "Intestinal muscularis smooth muscle; intercalated discs inhibit peristaltic waves"
+      },
+      {
+        "key": "D",
+        "text": "Urinary bladder detrusor wall; intercalated discs allow 500% stretching without depolarization"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Cardiac muscle uniquely combines striations, branching uninucleate (occasionally binucleate) fibres, involuntary autorhythmicity, and intercalated discs whose gap junctions electrically couple cells into a functional syncytium.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Animal Tissue (Comparative Histology of Muscle Types)",
+    "abilityTags": [
+      "logical_reasoning",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-063",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 10,
+    "chapter": "Animal Tissue",
+    "topic": "Neuroglia and Myelinogenesis in CNS vs PNS",
+    "difficulty": "Hard",
+    "questionText": "Compare myelination of axons in the peripheral nervous system (PNS) versus the central nervous system (CNS), and state the physiological advantage of Nodes of Ranvier:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Astrocytes myelinate PNS axons whereas microglia myelinate CNS axons; Nodes of Ranvier slow conduction to prevent tetany"
+      },
+      {
+        "key": "B",
+        "text": "Schwann cells myelinate PNS axons whereas oligodendrocytes myelinate CNS axons; voltage-gated Na^+ channels concentrated at unmyelinated Nodes of Ranvier enable fast, energy-efficient saltatory conduction"
+      },
+      {
+        "key": "C",
+        "text": "Neurons secrete their own chitinous myelin sheath without glial support"
+      },
+      {
+        "key": "D",
+        "text": "Schwann cells myelinate CNS axons whereas ependymal cells myelinate PNS axons; myelin generates ATP directly"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "In the PNS each Schwann cell wraps one internode, whereas in the CNS one oligodendrocyte myelinates multiple axons. Insulating lipid myelin restricts transmembrane ion currents to Nodes of Ranvier, producing rapid saltatory conduction and reducing Na^+/K^+-ATPase energy expenditure.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Animal Tissue (Neuroglia and Myelinogenesis in CNS vs PNS)",
+    "abilityTags": [
+      "analytical_thinking",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-064",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 11,
+    "chapter": "Study of Animal Type: Cockroach",
+    "topic": "Mouthparts of Periplaneta americana",
+    "difficulty": "Easy",
+    "questionText": "What type of mouthparts are possessed by the adult American cockroach (Periplaneta americana)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Biting and chewing (mandibulate) type"
+      },
+      {
+        "key": "B",
+        "text": "Sponging and lapping type"
+      },
+      {
+        "key": "C",
+        "text": "Siphoning proboscis type"
+      },
+      {
+        "key": "D",
+        "text": "Piercing and sucking type"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Cockroach mouthparts comprise a labrum (upper lip), paired toothed mandibles, paired first maxillae, a labium (lower lip), and a median hypopharynx (tongue), adapted for biting and chewing solid food.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Study of Animal Type: Cockroach (Mouthparts of Periplaneta americana)",
+    "abilityTags": [
+      "scientific_understanding",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-065",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 11,
+    "chapter": "Study of Animal Type: Cockroach",
+    "topic": "Excretory Organs and Nitrogenous Waste in Cockroach",
+    "difficulty": "Easy",
+    "questionText": "The primary excretory structures opening at the junction of the midgut (mesenteron) and hindgut in Periplaneta americana are ______, and its chief nitrogenous waste product is ______.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Nephridia; urea (ureotelic)"
+      },
+      {
+        "key": "B",
+        "text": "Antennary green glands; guanine"
+      },
+      {
+        "key": "C",
+        "text": "Malpighian tubules; uric acid (uricotelic)"
+      },
+      {
+        "key": "D",
+        "text": "Flame cells; ammonia (ammonotelic)"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "About 100–150 yellow filamentous Malpighian tubules absorb nitrogenous wastes from haemolymph and convert them into insoluble uric acid excreted with dry faecal pellets, conserving water.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Study of Animal Type: Cockroach (Excretory Organs and Nitrogenous Waste in Cockroach)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-066",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 11,
+    "chapter": "Study of Animal Type: Cockroach",
+    "topic": "Sexual Dimorphism in Cockroach",
+    "difficulty": "Medium",
+    "questionText": "Which morphological feature reliably distinguishes an adult male Periplaneta americana from an adult female externally?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Presence of jointed anal cerci only in males and anal styles only in females"
+      },
+      {
+        "key": "B",
+        "text": "Presence of a pair of short, unjointed anal styles on the 9th abdominal sternite in males (absent in females), while both sexes bear jointed anal cerci on the 10th tergite"
+      },
+      {
+        "key": "C",
+        "text": "Boat-shaped 7th abdominal sternite forming a brood pouch in males"
+      },
+      {
+        "key": "D",
+        "text": "Absence of wings (tegmina) in adult males of Periplaneta americana"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Both male and female cockroaches bear 15-segmented sensory anal cerci on the 10th tergite, but ONLY males possess paired unsegmented thread-like anal (caudal) styles on the 9th sternite (and wings extending beyond the abdomen tip).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Study of Animal Type: Cockroach (Sexual Dimorphism in Cockroach)",
+    "abilityTags": [
+      "analytical_thinking",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-067",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 11,
+    "chapter": "Study of Animal Type: Cockroach",
+    "topic": "Alimentary Canal Regions and Gizzard",
+    "difficulty": "Medium",
+    "questionText": "Trace the correct anterior-to-posterior sequence of foregut and midgut structures in cockroach, noting which organ bears six chitinous teeth for grinding food:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Crop → pharynx → mesenteron (6 chitinous teeth) → gizzard → colon"
+      },
+      {
+        "key": "B",
+        "text": "Pharynx → gizzard → crop → Malpighian tubules → mesenteron → hepatic caeca"
+      },
+      {
+        "key": "C",
+        "text": "Pharynx → oesophagus → crop (storage) → gizzard/proventriculus (6 chitinous teeth + bristles) → hepatic caeca at foregut-midgut junction → mesenteron"
+      },
+      {
+        "key": "D",
+        "text": "Oesophagus → hepatic caeca → crop → ileum (6 chitinous teeth) → rectum"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Food stored in the large sac-like crop passes into the muscular proventriculus (gizzard) armed with an outer circular muscle coat and six internal chitinous plates/teeth that pulverize and strain food before entering the midgut (mesenteron), where 6–8 hepatic caeca secrete digestive juice.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Study of Animal Type: Cockroach (Alimentary Canal Regions and Gizzard)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-068",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 11,
+    "chapter": "Study of Animal Type: Cockroach",
+    "topic": "Circulatory and Tracheal Respiratory Integration",
+    "difficulty": "Hard",
+    "questionText": "Why can a cockroach sustain vigorous flight-muscle metabolism even though its colourless haemolymph completely lacks respiratory pigments like haemoglobin or haemocyanin?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Its 13-chambered dorsal tubular heart pumps dissolved O_2 at high arterial pressure of 120 mmHg through closed capillaries"
+      },
+      {
+        "key": "B",
+        "text": "A network of 10 pairs of spiracles, tracheae, and fluid-tipped tracheoles delivers gaseous O_2 directly to individual tissue cells by diffusion without relying on haemolymph for O_2 transport"
+      },
+      {
+        "key": "C",
+        "text": "Cuticular diffusion across thick sclerotized terga supplies 100% of thoracic O_2 demand"
+      },
+      {
+        "key": "D",
+        "text": "Alary muscles perform anaerobic alcoholic fermentation that requires zero O_2"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Insect haemolymph transports nutrients, hormones, and wastes in an open haemocoel at low pressure, whereas gas exchange is decoupled from circulation: air enters via 10 pairs of spiracles (2 thoracic + 8 abdominal) and reaches mitochondria directly via fine intracellular tracheoles.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Study of Animal Type: Cockroach (Circulatory and Tracheal Respiratory Integration)",
+    "abilityTags": [
+      "logical_reasoning",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-069",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 11,
+    "chapter": "Study of Animal Type: Cockroach",
+    "topic": "Mosaic Vision and Nervous Autonomy in Cockroach",
+    "difficulty": "Hard",
+    "questionText": "Evaluate two classic neuro-sensory facts in Periplaneta americana: (1) each compound eye contains ~2000 hexagonal ommatidia, and (2) a decapitated cockroach can survive for several days. What explains both observations?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Each ommatidium forms an inverted mammalian-style camera image; regeneration of a new head occurs within 12 hours"
+      },
+      {
+        "key": "B",
+        "text": "Cockroaches lack a ventral nerve cord and rely solely on endocrine corpora allata for movement"
+      },
+      {
+        "key": "C",
+        "text": "Ommatidia produce nocturnal 'mosaic vision' with high sensitivity to movement but low resolution; the supra-oesophageal brain holds only a small fraction of nervous tissue while segmental thoracic and abdominal ganglia coordinate reflexes, posture, and spiracular breathing"
+      },
+      {
+        "key": "D",
+        "text": "Ommatidia provide acute high-resolution colour vision in bright sunlight; the heart is neurogenic only via the head brain"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Multiple adjacent sub-images from ~2000 ommatidia create mosaic (appositional/superpositional nocturnal) vision highly sensitive to motion. Because the ventral double nerve cord bears 3 thoracic and 6 abdominal ganglia, most motor and respiratory coordination persists after head removal until starvation/dehydration.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Study of Animal Type: Cockroach (Mosaic Vision and Nervous Autonomy in Cockroach)",
+    "abilityTags": [
+      "analytical_thinking",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-070",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 12,
+    "chapter": "Photosynthesis",
+    "topic": "Source of Photosynthetic Oxygen",
+    "difficulty": "Easy",
+    "questionText": "Cornelius van Niel's comparative studies with purple/green sulfur bacteria and Ruben-Kamen's ^18O radioisotope experiments proved conclusively that O_2 evolved during oxygenic photosynthesis comes from:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Photorespiratory oxidation of phosphoglycolate"
+      },
+      {
+        "key": "B",
+        "text": "Direct splitting of CO_2 at the RuBisCO active site"
+      },
+      {
+        "key": "C",
+        "text": "Photolysis (water-splitting) of H_2O, and NOT from CO_2"
+      },
+      {
+        "key": "D",
+        "text": "Degradation of stroma starch granules in the dark"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Supplying H_2^18O + C^16O_2 yields ^18O_2 gas, proving oxygen evolved at the luminal oxygen-evolving complex (Mn-Ca-Cl cluster) associated with Photosystem II originates exclusively from water.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Photosynthesis (Source of Photosynthetic Oxygen)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-071",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 12,
+    "chapter": "Photosynthesis",
+    "topic": "Reaction Centre Wavelengths of PS I and PS II",
+    "difficulty": "Easy",
+    "questionText": "In higher plant thylakoid membranes, what are the peak red-light absorption wavelengths of the chlorophyll-a reaction centres in Photosystem I (PS I) and Photosystem II (PS II) respectively?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "P680 in PS I and P700 in PS II"
+      },
+      {
+        "key": "B",
+        "text": "P720 in PS I and P650 in PS II"
+      },
+      {
+        "key": "C",
+        "text": "P600 in PS I and P800 in PS II"
+      },
+      {
+        "key": "D",
+        "text": "P700 in PS I and P680 in PS II"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "PS I (discovered first) has reaction-centre dimer P700 absorbing maximally at 700 nm, whereas PS II has reaction-centre P680 absorbing maximally at 680 nm.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Photosynthesis (Reaction Centre Wavelengths of PS I and PS II)",
+    "abilityTags": [
+      "scientific_understanding",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-072",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 12,
+    "chapter": "Photosynthesis",
+    "topic": "Cyclic vs Non-Cyclic Photophosphorylation",
+    "difficulty": "Medium",
+    "questionText": "When isolated chloroplasts are illuminated SOLELY with far-red monochromatic light of wavelength > 680 nm (e.g., 700 nm) in stroma lamellae, which photophosphorylation pathway operates and what are its products?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Cyclic photophosphorylation involving only PS I, synthesizing ATP without NADPH + H^+ formation or O_2 evolution"
+      },
+      {
+        "key": "B",
+        "text": "Photolysis of water at PS II releasing O_2 without any ATP synthesis"
+      },
+      {
+        "key": "C",
+        "text": "Oxidative phosphorylation in cristae consuming O_2 to generate NADH"
+      },
+      {
+        "key": "D",
+        "text": "Non-cyclic Z-scheme involving both PS II and PS I, synthesizing ATP, NADPH + H^+, and O_2"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Wavelengths beyond 680 nm cannot excite P680 (PS II, causing red drop); stroma lamellae lack PS II and NADP^+ reductase, so excited electrons from P700 cycle back via Fd → cyt b_6f → PC to P700, pumping H^+ to make ATP only.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Photosynthesis (Cyclic vs Non-Cyclic Photophosphorylation)",
+    "abilityTags": [
+      "logical_reasoning",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-073",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 12,
+    "chapter": "Photosynthesis",
+    "topic": "Chemiosmotic Hypothesis Proton Gradient",
+    "difficulty": "Medium",
+    "questionText": "According to Peter Mitchell's chemiosmotic hypothesis in chloroplasts, where do protons (H^+) accumulate during light reactions to lower pH, and in which direction do they flow through CF_0–CF_1 ATP synthase?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Protons accumulate in the intermembrane space between outer and inner chloroplast envelopes, exactly as in mitochondria"
+      },
+      {
+        "key": "B",
+        "text": "Protons accumulate in the stroma and flow inward into the thylakoid lumen via CF_1–CF_0"
+      },
+      {
+        "key": "C",
+        "text": "Electrons rather than protons flow through CF_0 channels to phosphorylate ADP"
+      },
+      {
+        "key": "D",
+        "text": "Protons accumulate inside the thylakoid lumen (lowering lumen pH) and flow down their electrochemical gradient through CF_0–CF_1 into the stroma to drive ATP synthesis"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Water splitting in the lumen, PQ proton translocation across the thylakoid membrane, and stromal H^+ consumption in NADP^+ reduction build a high [H^+] (low pH) in the thylakoid lumen; efflux via CF_0–CF_1 into the stroma synthesizes ATP.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Photosynthesis (Chemiosmotic Hypothesis Proton Gradient)",
+    "abilityTags": [
+      "analytical_thinking",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-074",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 12,
+    "chapter": "Photosynthesis",
+    "topic": "Calvin Cycle (C_3) Energetics",
+    "difficulty": "Medium",
+    "questionText": "In C_3 plants (absent photorespiration), how many molecules of CO_2, ATP, and NADPH are consumed in the Calvin-Benson cycle for the net synthesis of ONE molecule of glucose (C_6H_12O_6)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "6 CO_2, 30 ATP, and 12 NADPH"
+      },
+      {
+        "key": "B",
+        "text": "1 CO_2, 3 ATP, and 2 NADPH"
+      },
+      {
+        "key": "C",
+        "text": "6 CO_2, 18 ATP, and 12 NADPH"
+      },
+      {
+        "key": "D",
+        "text": "6 CO_2, 12 ATP, and 12 NADPH"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Each turn fixing 1 CO_2 requires 2 ATP + 2 NADPH for reduction of two 3-PGA molecules and 1 ATP for RuBP regeneration (3 ATP + 2 NADPH per CO_2). Six turns for 1 glucose consume 6 CO_2, 18 ATP, and 12 NADPH.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Photosynthesis (Calvin Cycle (C_3) Energetics)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-075",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 12,
+    "chapter": "Photosynthesis",
+    "topic": "Kranz Anatomy and C_4 Pathway (Hatch-Slack) Energetics",
+    "difficulty": "Hard",
+    "questionText": "Maize and sugarcane suppress wasteful photorespiration at high temperatures via Kranz anatomy. Identify (i) the primary CO_2 acceptor and enzyme in mesophyll cells, (ii) where RuBisCO is exclusively localized, and (iii) total ATP consumed per glucose synthesized in C_4 plants:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "(i) Phosphoenolpyruvate (PEP, 3C) via PEP carboxylase; (ii) agranal bundle-sheath chloroplasts; (iii) 30 ATP per glucose"
+      },
+      {
+        "key": "B",
+        "text": "(i) Oxaloacetate (4C) via malic enzyme in bundle sheath; (ii) mesophyll cytosol; (iii) 24 ATP per glucose"
+      },
+      {
+        "key": "C",
+        "text": "(i) PEP (3C) via PEP carboxylase in bundle sheath; (ii) mesophyll grana; (iii) 36 ATP per glucose"
+      },
+      {
+        "key": "D",
+        "text": "(i) RuBP (5C) via RuBisCO in mesophyll; (ii) guard-cell chloroplasts; (iii) 18 ATP per glucose"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Mesophyll cells lack RuBisCO and use cytosolic PEP carboxylase (insensitive to O_2) to fix HCO_3^- + PEP → oxaloacetate (4C); decarboxylation in thick-walled agranal bundle-sheath cells concentrates CO_2 around RuBisCO. Regeneration of PEP from pyruvate via PPDK costs 2 ATP equivalents per CO_2, totalling (3 + 2) × 6 = 30 ATP per glucose.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Photosynthesis (Kranz Anatomy and C_4 Pathway (Hatch-Slack) Energetics)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-076",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 12,
+    "chapter": "Photosynthesis",
+    "topic": "Blackman's Law of Limiting Factors",
+    "difficulty": "Hard",
+    "questionText": "A well-watered potted C_3 leaf kept at 25 °C and low ambient CO_2 (0.03%) reaches light saturation at ~10% of full sunlight; increasing light intensity further fails to raise photosynthetic rate, whereas raising [CO_2] to 0.05% immediately boosts the plateau rate. Which principle explains this?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Blackman's Law of Limiting Factors (1905): when a process is conditioned by several factors, its rate is governed by the pace of the factor closest to its minimal (sub-optimal) value—here CO_2 availability"
+      },
+      {
+        "key": "B",
+        "text": "Warburg effect of high oxygen stimulation on RuBisCO carboxylation"
+      },
+      {
+        "key": "C",
+        "text": "Emerson's enhancement effect between red and far-red wavelengths"
+      },
+      {
+        "key": "D",
+        "text": "Grotthuss-Draper law stating green light is 100% absorbed by carotenoids"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Above light saturation, photochemical ATP/NADPH supply is no longer limiting; carboxylation rate becomes limited by stromal [CO_2], illustrating F. F. Blackman's (1905) Law of Limiting Factors.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Photosynthesis (Blackman's Law of Limiting Factors)",
+    "abilityTags": [
+      "logical_reasoning",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-077",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 13,
+    "chapter": "Respiration and Energy Transfer",
+    "topic": "Universal Pathway — Glycolysis (EMP Pathway)",
+    "difficulty": "Easy",
+    "questionText": "Where in a cell do the ten enzymatic reactions of glycolysis (Embden-Meyerhof-Parnas pathway) occur, and does glycolysis require molecular O_2?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "In the mitochondrial matrix, strictly requiring molecular O_2"
+      },
+      {
+        "key": "B",
+        "text": "On the inner mitochondrial cristae membrane"
+      },
+      {
+        "key": "C",
+        "text": "Inside peroxisomes only under high O_2 tension"
+      },
+      {
+        "key": "D",
+        "text": "In the cytoplasm (cytosol), and it operates independently of molecular O_2 in both aerobes and anaerobes"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Glycolysis takes place in the cytosol of all living cells (prokaryotic and eukaryotic) and converts 1 glucose (6C) into 2 pyruvate (3C) molecules without consuming O_2 or releasing CO_2.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 13: Respiration and Energy Transfer (Universal Pathway — Glycolysis (EMP Pathway))",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-078",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 13,
+    "chapter": "Respiration and Energy Transfer",
+    "topic": "Net Direct ATP and NADH Yield of Glycolysis",
+    "difficulty": "Medium",
+    "questionText": "In converting 1 molecule of glucose to 2 molecules of pyruvic acid via glycolysis, how many ATP are invested in the preparatory phase, synthesized by substrate-level phosphorylation in the payoff phase, and gained as net direct ATP alongside NADH?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "4 ATP invested, 8 ATP synthesized → net gain of 4 ATP and 2 NADH + H^+"
+      },
+      {
+        "key": "B",
+        "text": "2 ATP invested, 4 ATP synthesized → net gain of 2 ATP and 2 NADH + H^+"
+      },
+      {
+        "key": "C",
+        "text": "2 ATP invested, 6 ATP synthesized → net gain of 4 ATP and 2 FADH_2"
+      },
+      {
+        "key": "D",
+        "text": "0 ATP invested, 2 ATP synthesized → net gain of 2 ATP and 4 NADH + H^+"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Hexokinase and phosphofructokinase-1 consume 2 ATP; phosphoglycerate kinase and pyruvate kinase generate 2 × 2 = 4 ATP by substrate-level phosphorylation, yielding a net 2 ATP plus 2 NADH (at GAPDH step).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 13: Respiration and Energy Transfer (Net Direct ATP and NADH Yield of Glycolysis)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-079",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 13,
+    "chapter": "Respiration and Energy Transfer",
+    "topic": "Krebs (TCA) Cycle Substrate-Level Phosphorylation",
+    "difficulty": "Medium",
+    "questionText": "During one turn of the tricarboxylic acid (Krebs) cycle oxidizing 1 molecule of acetyl-CoA, at which specific enzymatic step does substrate-level phosphorylation occur?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Conversion of succinyl-CoA to succinic acid (succinate), generating GTP (coupled to ATP)"
+      },
+      {
+        "key": "B",
+        "text": "Isomerization of citrate to isocitrate via cis-aconitate"
+      },
+      {
+        "key": "C",
+        "text": "Oxidation of succinate to fumarate by Complex II (succinate dehydrogenase)"
+      },
+      {
+        "key": "D",
+        "text": "Condensation of oxaloacetate with acetyl-CoA to form citrate"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Succinyl-CoA synthetase cleaves the high-energy thioester bond of succinyl-CoA to yield succinate and 1 GTP (which transfers phosphate to ADP forming ATP)—the sole substrate-level phosphorylation in the TCA cycle.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 13: Respiration and Energy Transfer (Krebs (TCA) Cycle Substrate-Level Phosphorylation)",
+    "abilityTags": [
+      "scientific_understanding",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-080",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 13,
+    "chapter": "Respiration and Energy Transfer",
+    "topic": "Respiratory Quotient (RQ) Comparison",
+    "difficulty": "Medium",
+    "questionText": "Compare the respiratory quotient (RQ = volume of CO_2 evolved / volume of O_2 consumed) during complete aerobic oxidation of (i) glucose, (ii) tripalmitin (fat), and (iii) proteins:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Glucose = 0.7, tripalmitin = 1.0, proteins = 1.33"
+      },
+      {
+        "key": "B",
+        "text": "Glucose = 1.0, tripalmitin = 1.4, proteins = 0.5"
+      },
+      {
+        "key": "C",
+        "text": "Glucose = 1.0, tripalmitin ≈ 0.7, proteins ≈ 0.9"
+      },
+      {
+        "key": "D",
+        "text": "Glucose = ∞, tripalmitin = 1.0, proteins = 1.0"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "For C_6H_12O_6 + 6O_2 → 6CO_2 + 6H_2O, RQ = 6/6 = 1.0. Fats are oxygen-poor (2 C_51H_98O_6 + 145 O_2 → 102 CO_2 + 98 H_2O ⇒ RQ = 102/145 ≈ 0.70). Proteins average ~0.8–0.9; organic acids (e.g., malic/oxalic) exceed 1.0.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 13: Respiration and Energy Transfer (Respiratory Quotient (RQ) Comparison)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-081",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 13,
+    "chapter": "Respiration and Energy Transfer",
+    "topic": "Mitochondrial Electron Transport Chain Complexes and Terminal Acceptor",
+    "difficulty": "Hard",
+    "questionText": "Trace electron flow from matrix FADH_2 to molecular O_2 along the inner mitochondrial membrane, identifying the mobile carriers and why cyanide (CN^-) is rapidly lethal:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Complex II (succinate dehydrogenase) → ubiquinone (CoQ) → Complex III (cyt bc_1) → cytochrome c → Complex IV (cyt a/a_3 + 2 Cu centres) → O_2; CN^- binds Fe^3+ in Complex IV, halting electron transport, proton pumping, and ATP synthesis"
+      },
+      {
+        "key": "B",
+        "text": "Complex I → plastoquinone → Complex II → ferredoxin → Complex V; CN^- uncouples glycolysis in the cytosol"
+      },
+      {
+        "key": "C",
+        "text": "FADH_2 donates electrons directly to Complex V (F_0–F_1), bypassing ubiquinone and Complex IV"
+      },
+      {
+        "key": "D",
+        "text": "Complex II → cytochrome c → Complex I → ubiquinone → O_2; CN^- competitive-inhibits hexokinase"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "FADH_2 enters at Complex II (bypassing Complex I, hence pumping fewer H^+ and yielding ~1.5–2 ATP vs ~2.5–3 ATP for NADH), reduces mobile lipid-soluble ubiquinone → Complex III → mobile peripheral cyt c → Complex IV (cytochrome c oxidase, inhibited by CN^-/CO) → terminal acceptor O_2 forming metabolic H_2O.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 13: Respiration and Energy Transfer (Mitochondrial Electron Transport Chain Complexes and Terminal Acceptor)",
+    "abilityTags": [
+      "logical_reasoning",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-082",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 13,
+    "chapter": "Respiration and Energy Transfer",
+    "topic": "Quantitative Accounting of CO_2, NADH, and FADH_2 per Glucose",
+    "difficulty": "Hard",
+    "questionText": "During complete aerobic respiration of ONE molecule of glucose through glycolysis, pyruvate oxidative decarboxylation (link reaction), and two turns of the Krebs cycle, how many molecules of NADH + H^+, FADH_2, and CO_2 are produced in total?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "6 NADH + H^+, 2 FADH_2, and 6 CO_2"
+      },
+      {
+        "key": "B",
+        "text": "10 NADH + H^+, 2 FADH_2, and 6 CO_2"
+      },
+      {
+        "key": "C",
+        "text": "8 NADH + H^+, 2 FADH_2, and 6 CO_2"
+      },
+      {
+        "key": "D",
+        "text": "10 NADH + H^+, 4 FADH_2, and 4 CO_2"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Per 1 glucose: Glycolysis → 2 NADH, 0 CO_2; Link reaction (2 pyruvate → 2 acetyl-CoA) → 2 NADH, 2 CO_2; Krebs cycle (2 acetyl-CoA) → 2 × (3 NADH + 1 FADH_2 + 2 CO_2) = 6 NADH, 2 FADH_2, 4 CO_2. Summing gives 2 + 2 + 6 = 10 NADH + H^+, 2 FADH_2, and 2 + 4 = 6 CO_2.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 13: Respiration and Energy Transfer (Quantitative Accounting of CO_2, NADH, and FADH_2 per Glucose)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-083",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 14,
+    "chapter": "Human Nutrition",
+    "topic": "Human Permanent Dental Formula",
+    "difficulty": "Easy",
+    "questionText": "What is the standard dental formula of a healthy adult human with a complete set of 32 permanent teeth?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "I 3/3, C 1/1, PM 2/2, M 2/2 (× 2 = 32)"
+      },
+      {
+        "key": "B",
+        "text": "I 2/2, C 1/1, PM 0/0, M 2/2 (× 2 = 20)"
+      },
+      {
+        "key": "C",
+        "text": "I 2/2, C 1/1, PM 2/2, M 3/3 (× 2 = 32)"
+      },
+      {
+        "key": "D",
+        "text": "I 2/2, C 1/1, PM 3/3, M 2/2 (× 2 = 32)"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Each quadrant of adult human jaws carries 2 incisors, 1 canine, 2 premolars, and 3 molars = 8 teeth; multiplying by 4 quadrants (or upper+lower half × 2) gives 32 permanent thecodont, heterodont, diphyodont teeth (milk dentition is 2102/2102 = 20).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Human Nutrition (Human Permanent Dental Formula)",
+    "abilityTags": [
+      "scientific_understanding",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-084",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 14,
+    "chapter": "Human Nutrition",
+    "topic": "Bile Salts and Emulsification",
+    "difficulty": "Easy",
+    "questionText": "Hepatic bile secreted into the duodenum contains ZERO digestive enzymes, yet it is indispensable for efficient lipid digestion because bile salts (sodium glycocholate and sodium taurocholate):",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Convert trypsinogen directly into active trypsin"
+      },
+      {
+        "key": "B",
+        "text": "Hydrolyse peptide bonds of casein at pH 1.8"
+      },
+      {
+        "key": "C",
+        "text": "Emulsify large dietary fat globules into tiny micelles, vastly increasing surface area for pancreatic lipase action"
+      },
+      {
+        "key": "D",
+        "text": "Ferment dietary cellulose into volatile fatty acids"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Amphipathic bile salts lower interfacial tension to emulsify triglycerides into microscopic droplets and form water-soluble mixed micelles for absorption into lacteals.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Human Nutrition (Bile Salts and Emulsification)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-085",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 14,
+    "chapter": "Human Nutrition",
+    "topic": "Gastric Gland Cell Types and Vitamin B_12 Absorption",
+    "difficulty": "Medium",
+    "questionText": "Damage to oxyntic (parietal) cells of gastric mucosal glands leads not only to achlorhydria (impaired pepsinogen activation) but also to pernicious anaemia because parietal cells secrete:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "HCl and Castle's intrinsic factor (essential for ileal absorption of vitamin B_12 / cobalamin)"
+      },
+      {
+        "key": "B",
+        "text": "Secretin and cholecystokinin (CCK)"
+      },
+      {
+        "key": "C",
+        "text": "Erythropoietin and hepcidin"
+      },
+      {
+        "key": "D",
+        "text": "Pepsinogen and prorennin"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Parietal (oxyntic) cells secrete both HCl (pH 1.5–2.0, converting pepsinogen from chief/peptic cells into pepsin) and Castle's intrinsic factor, a glycoprotein required for receptor-mediated vitamin B_12 uptake in the ileum needed for RBC maturation.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Human Nutrition (Gastric Gland Cell Types and Vitamin B_12 Absorption)",
+    "abilityTags": [
+      "scientific_understanding",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-086",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 14,
+    "chapter": "Human Nutrition",
+    "topic": "Pancreatic Zymogen Activation Cascade",
+    "difficulty": "Medium",
+    "questionText": "Inactive trypsinogen arriving in the duodenal lumen from pancreatic juice is first cleaved into active trypsin by which brush-border enzyme secreted by intestinal mucosa?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Carboxypeptidase"
+      },
+      {
+        "key": "B",
+        "text": "Salivary α-amylase (ptyalin)"
+      },
+      {
+        "key": "C",
+        "text": "Gastric pepsin"
+      },
+      {
+        "key": "D",
+        "text": "Enterokinase (enteropeptidase)"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Duodenal enterocytes express brush-border enterokinase, which specifically cleaves trypsinogen into active trypsin; trypsin then autocatalytically activates more trypsinogen as well as chymotrypsinogen and procarboxypeptidase.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Human Nutrition (Pancreatic Zymogen Activation Cascade)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-087",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 14,
+    "chapter": "Human Nutrition",
+    "topic": "Chylomicron Formation and Lymphatic Lipid Absorption",
+    "difficulty": "Hard",
+    "questionText": "Why do absorbed long-chain fatty acids and 2-monoglycerides enter intestinal 'lacteals' (lymphatics) rather than passing directly into hepatic portal blood capillaries like glucose and amino acids?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Bile salts covalently bind chylomicrons and pump them directly into the gall bladder"
+      },
+      {
+        "key": "B",
+        "text": "Glucose and amino acids enter lacteals whereas fatty acids enter portal veins via SGLT-1 cotransport"
+      },
+      {
+        "key": "C",
+        "text": "Inside enterocytes smooth ER re-esterifies them into triglycerides and Golgi coats them with phospholipids, cholesterol, and apoproteins into large chylomicrons (~80–500 nm) that enter porous lacteals by exocytosis"
+      },
+      {
+        "key": "D",
+        "text": "Portal blood capillaries lack plasma water so lipids would solidify at 37 °C"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Free fatty acids and monoglycerides diffuse from micelles into enterocytes, are resynthesized into triglycerides in SER, packaged into protein-coated lipoprotein droplets (chylomicrons), exocytosed into interstitial fluid, and taken up by wide endothelial clefts of villus lacteals before reaching venous blood via the thoracic duct.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Human Nutrition (Chylomicron Formation and Lymphatic Lipid Absorption)",
+    "abilityTags": [
+      "analytical_thinking",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-088",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 14,
+    "chapter": "Human Nutrition",
+    "topic": "Kwashiorkor vs Marasmus (PEM) Differential Diagnosis",
+    "difficulty": "Hard",
+    "questionText": "Differentiate clinically and nutritionally between 'Marasmus' and 'Kwashiorkor' in young children:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Marasmus (<1 year) results from simultaneous severe deficiency of both proteins and total calories (extreme emaciation, shrivelled skin, no oedema), whereas Kwashiorkor (1–5 years) results primarily from protein deficiency despite near-adequate caloric intake from starchy diet (hypoalbuminaemic pitting oedema and swollen belly)"
+      },
+      {
+        "key": "B",
+        "text": "Marasmus is caused by excess dietary fat with severe oedema, whereas Kwashiorkor occurs only in infants under 3 months lacking vitamin C"
+      },
+      {
+        "key": "C",
+        "text": "Both disorders involve hyperproteinaemia and obesity caused by excess secretin secretion"
+      },
+      {
+        "key": "D",
+        "text": "Kwashiorkor shows complete absence of subcutaneous fat without oedema, whereas Marasmus shows normal body weight with fatty liver"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Marasmus stems from combined energy + protein starvation in infants weaned too early (marked wasting of muscle and subcutaneous fat, zero oedema). Kwashiorkor arises when a toddler is switched to a low-protein, high-carbohydrate diet; low plasma albumin drops colloid osmotic pressure, causing characteristic oedema and ascites.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Human Nutrition (Kwashiorkor vs Marasmus (PEM) Differential Diagnosis)",
+    "abilityTags": [
+      "analytical_thinking",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-089",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 15,
+    "chapter": "Excretion and Osmoregulation",
+    "topic": "Modes of Nitrogenous Excretion",
+    "difficulty": "Easy",
+    "questionText": "Arrange ammonia, urea, and uric acid in strictly decreasing order of both toxicity and water requirement for elimination:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Ammonia > Urea > Uric acid"
+      },
+      {
+        "key": "B",
+        "text": "Ammonia > Uric acid > Urea"
+      },
+      {
+        "key": "C",
+        "text": "Urea > Ammonia > Uric acid"
+      },
+      {
+        "key": "D",
+        "text": "Uric acid > Urea > Ammonia"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Ammonia is highly toxic and requires large volumes of water (aquatic teleosts, tadpoles); mammals/adult amphibians convert it via the hepatic ornithine cycle into less toxic urea; birds, reptiles, and insects excrete nearly insoluble, least toxic uric acid paste to conserve water.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 15: Excretion and Osmoregulation (Modes of Nitrogenous Excretion)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-090",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 15,
+    "chapter": "Excretion and Osmoregulation",
+    "topic": "Net Effective Filtration Pressure and GFR",
+    "difficulty": "Medium",
+    "questionText": "In a healthy human kidney, if glomerular hydrostatic blood pressure (GHP) = 55 mmHg, blood colloidal osmotic pressure (BCOP) = 30 mmHg, and capsular hydrostatic pressure (CHP) = 15 mmHg, what are the net filtration pressure (NFP) and normal glomerular filtration rate (GFR)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "NFP = 40 mmHg; GFR ≈ 1250 mL/min"
+      },
+      {
+        "key": "B",
+        "text": "NFP = 25 mmHg; GFR ≈ 1.5 L/day"
+      },
+      {
+        "key": "C",
+        "text": "NFP = 10 mmHg; GFR ≈ 125 mL/min (180 L/day)"
+      },
+      {
+        "key": "D",
+        "text": "NFP = 100 mmHg; GFR ≈ 18 L/day"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Opposing pressures BCOP (30 mmHg) and CHP (15 mmHg) resist GHP (55 mmHg): NFP = 55 - (30 + 15) = 10 mmHg. Across both kidneys this drives a normal GFR of ~125 mL/min (= 180 L/day, of which ~99% is reabsorbed).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 15: Excretion and Osmoregulation (Net Effective Filtration Pressure and GFR)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-091",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 15,
+    "chapter": "Excretion and Osmoregulation",
+    "topic": "Tubular Reabsorption in PCT vs Loop of Henle",
+    "difficulty": "Medium",
+    "questionText": "Compare the permeability properties of the descending limb and ascending limb of the loop of Henle in juxtamedullary nephrons:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Descending limb actively pumps NaCl out and is impermeable to water, whereas ascending limb reabsorbs water only"
+      },
+      {
+        "key": "B",
+        "text": "Descending limb is permeable to water and nearly impermeable to electrolytes, whereas ascending limb is impermeable to water and actively/passively transports NaCl into medullary interstitium"
+      },
+      {
+        "key": "C",
+        "text": "Descending limb secretes ADH whereas ascending limb filters red blood cells"
+      },
+      {
+        "key": "D",
+        "text": "Both limbs are freely permeable to water, glucose, and plasma proteins"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Filtrate concentrates down the water-permeable descending limb (reaching ~1200 mOsmol/L at the hairpin bend) and dilutes up the water-impermeable ascending limb as NaCl is extruded—establishing the medullary osmotic gradient.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 15: Excretion and Osmoregulation (Tubular Reabsorption in PCT vs Loop of Henle)",
+    "abilityTags": [
+      "analytical_thinking",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-092",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 15,
+    "chapter": "Excretion and Osmoregulation",
+    "topic": "Antidiuretic Hormone (ADH / Vasopressin) Action",
+    "difficulty": "Medium",
+    "questionText": "Dehydration stimulates osmoreceptors to release ADH (vasopressin) from the neurohypophysis. How does ADH prevent excessive water loss in urine?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "It converts urea directly into insoluble uric acid crystals inside Bowman's space"
+      },
+      {
+        "key": "B",
+        "text": "It dilates efferent arterioles to shut down glomerular filtration completely"
+      },
+      {
+        "key": "C",
+        "text": "It inserts aquaporin water channels into late DCT and collecting duct membranes, promoting osmotic water reabsorption into the hyperosmotic medulla (producing hypertonic urine)"
+      },
+      {
+        "key": "D",
+        "text": "It inhibits aldosterone so Na^+ and water are flushed out in hypotonic urine"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "ADH increases water permeability of late DCT and collecting ducts (and enhances inner-medullary urea recycling), allowing water to move osmotically into the concentrated medullary interstitium; ADH deficiency causes diabetes insipidus (copious dilute urine).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 15: Excretion and Osmoregulation (Antidiuretic Hormone (ADH / Vasopressin) Action)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-093",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 15,
+    "chapter": "Excretion and Osmoregulation",
+    "topic": "RAAS vs ANF Antagonistic Regulation",
+    "difficulty": "Hard",
+    "questionText": "Contrast the Renin-Angiotensin-Aldosterone System (RAAS) triggered by a drop in glomerular blood pressure with the Atrial Natriuretic Factor (ANF) pathway triggered by elevated blood volume/pressure:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Aldosterone is secreted by the posterior pituitary to excrete Na^+ while retaining K^+"
+      },
+      {
+        "key": "B",
+        "text": "Both angiotensin II and ANF act synergistically to raise blood pressure and block Na^+ excretion"
+      },
+      {
+        "key": "C",
+        "text": "JG cells release renin → angiotensin II (vasoconstrictor + stimulates adrenal cortex aldosterone for DCT Na^+/water uptake, raising BP and GFR); atrial walls release ANF (vasodilator that inhibits renin/aldosterone, promoting natriuresis and lowering BP)"
+      },
+      {
+        "key": "D",
+        "text": "JG cells release ANF to constrict arterioles, whereas cardiac atria release renin to lower blood pressure"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "RAAS defends against hypotension/hypovolaemia via vasoconstriction and aldosterone-mediated Na^+/H_2O retention; cardiac atrial stretch releases ANF as a natural physiological check on RAAS, causing vasodilation and Na^+/water excretion.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 15: Excretion and Osmoregulation (RAAS vs ANF Antagonistic Regulation)",
+    "abilityTags": [
+      "logical_reasoning",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-094",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 15,
+    "chapter": "Excretion and Osmoregulation",
+    "topic": "Counter-Current Multiplier and Vasa Recta Exchanger",
+    "difficulty": "Hard",
+    "questionText": "Why would the steep cortico-medullary interstitial osmolarity gradient (300 mOsmol/L in cortex to 1200 mOsmol/L in inner medulla) wash out rapidly if medullary blood capillaries were straight through-flow vessels instead of hairpin 'vasa recta'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Counter-current flow in hairpin vasa recta allows solutes (NaCl, urea) entering descending blood to diffuse back out of ascending blood into the interstitium while water short-circuits at the top, preserving the hyperosmotic gradient"
+      },
+      {
+        "key": "B",
+        "text": "Vasa recta filter plasma directly into collecting ducts to replace Bowman's capsules"
+      },
+      {
+        "key": "C",
+        "text": "Straight vessels would freeze at 37 °C due to high urea concentration"
+      },
+      {
+        "key": "D",
+        "text": "Vasa recta actively pump ATP-driven aquaporins to boil water in the renal pelvis"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "The loop of Henle acts as a counter-current multiplier (expending metabolic energy in the thick ascending limb to build the 300 → 1200 mOsmol/L gradient), while vasa recta act as passive counter-current exchangers supplying O_2/nutrients without dissipating medullary hyperosmolarity.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 15: Excretion and Osmoregulation (Counter-Current Multiplier and Vasa Recta Exchanger)",
+    "abilityTags": [
+      "logical_reasoning",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-095",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 16,
+    "chapter": "Skeleton and Movement",
+    "topic": "Axial vs Appendicular Skeleton Bone Counts",
+    "difficulty": "Easy",
+    "questionText": "Of the 206 bones in an adult human skeleton, how many belong to the axial skeleton and how many belong to the appendicular skeleton?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "60 axial bones and 146 appendicular bones"
+      },
+      {
+        "key": "B",
+        "text": "80 axial bones and 126 appendicular bones"
+      },
+      {
+        "key": "C",
+        "text": "106 axial bones and 100 appendicular bones"
+      },
+      {
+        "key": "D",
+        "text": "126 axial bones and 80 appendicular bones"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Axial skeleton = skull + ear ossicles + hyoid (29) + vertebral column (26) + sternum (1) + ribs (24) = 80 bones. Appendicular skeleton = 4 limbs (4 × 30 = 120) + pectoral girdle (4) + pelvic girdle (2) = 126 bones (80 + 126 = 206).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 16: Skeleton and Movement (Axial vs Appendicular Skeleton Bone Counts)",
+    "abilityTags": [
+      "scientific_understanding",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-096",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 16,
+    "chapter": "Skeleton and Movement",
+    "topic": "Synovial Joints Classification",
+    "difficulty": "Easy",
+    "questionText": "The joint between the first cervical vertebra (atlas) and the odontoid process of the second cervical vertebra (axis), permitting 'no' rotation of the head, is an example of a:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Fibrous suture joint"
+      },
+      {
+        "key": "B",
+        "text": "Saddle joint"
+      },
+      {
+        "key": "C",
+        "text": "Pivot (trochoid) synovial joint"
+      },
+      {
+        "key": "D",
+        "text": "Hinge (ginglymus) joint"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Atlanto-axial joint = pivot joint; knee/elbow = hinge joint; shoulder/hip = ball-and-socket joint; carpometacarpal of thumb = saddle joint; intercarpal = gliding joint.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 16: Skeleton and Movement (Synovial Joints Classification)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-097",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 16,
+    "chapter": "Skeleton and Movement",
+    "topic": "Rib Cage Classification (True, False, Floating)",
+    "difficulty": "Medium",
+    "questionText": "Human thoracic cage contains 12 pairs of bicephalic ribs. Why are the 8th, 9th, and 10th pairs designated 'vertebrochondral (false) ribs' whereas the 11th and 12th pairs are 'floating ribs'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Pairs 8–10 lack dorsal articulation with thoracic vertebrae, whereas pairs 11–12 fuse with lumbar vertebrae"
+      },
+      {
+        "key": "B",
+        "text": "Pairs 8–10 do not articulate directly with the sternum but join the hyaline cartilage of the 7th rib, whereas pairs 11–12 remain free ventrally"
+      },
+      {
+        "key": "C",
+        "text": "Pairs 8–10 float freely at both ends, whereas pairs 11–12 articulate with the xiphoid process"
+      },
+      {
+        "key": "D",
+        "text": "Pairs 1–7 are cartilaginous throughout, whereas pairs 8–12 are ossified directly to the clavicle"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Pairs 1–7 are true (vertebrosternal) ribs attached dorsally to thoracic vertebrae and ventrally to sternum; pairs 8–10 attach ventrally to the 7th costal cartilage (vertebrochondral); pairs 11–12 are unattached ventrally (vertebral/floating ribs, protecting kidneys).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 16: Skeleton and Movement (Rib Cage Classification (True, False, Floating))",
+    "abilityTags": [
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-098",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 16,
+    "chapter": "Skeleton and Movement",
+    "topic": "Role of Ca^2+ and Troponin-Tropomyosin in Cross-Bridge Cycling",
+    "difficulty": "Medium",
+    "questionText": "When an action potential travels down T-tubules of a skeletal muscle fibre, Ca^2+ released from the sarcoplasmic reticulum initiates contraction by binding directly to:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Acetylcholinesterase in the synaptic cleft"
+      },
+      {
+        "key": "B",
+        "text": "Z-line α-actinin to dissolve the I-band"
+      },
+      {
+        "key": "C",
+        "text": "Troponin-C (TnC) subunit on thin actin filaments, shifting tropomyosin to unmask myosin-binding sites on F-actin"
+      },
+      {
+        "key": "D",
+        "text": "Globular heads of myosin (HMM) to hydrolyse ATP into AMP"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "At rest, tropomyosin and the troponin complex sterically block myosin-binding sites on actin; Ca^2+ binding to troponin-C triggers a conformational shift pulling tropomyosin aside so energized myosin heads can form cross-bridges.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 16: Skeleton and Movement (Role of Ca^2+ and Troponin-Tropomyosin in Cross-Bridge Cycling)",
+    "abilityTags": [
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-099",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 16,
+    "chapter": "Skeleton and Movement",
+    "topic": "Sliding Filament Band Changes During Sarcomere Shortening",
+    "difficulty": "Hard",
+    "questionText": "According to Huxley's sliding filament theory, when a skeletal muscle sarcomere contracts maximally from rest, specify exactly what happens to the lengths of (i) A-band, (ii) I-band, (iii) H-zone, and (iv) distance between two successive Z-lines:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "A-band remains constant in length, while I-band shortens, H-zone narrows/disappears, and Z–Z distance (sarcomere length) decreases"
+      },
+      {
+        "key": "B",
+        "text": "Both A-band and myosin filaments shorten by 50%, while I-band and H-zone widen"
+      },
+      {
+        "key": "C",
+        "text": "I-band remains constant in length, while A-band shortens and H-zone widens"
+      },
+      {
+        "key": "D",
+        "text": "Neither A-band nor I-band changes length; only tendons shorten"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Neither thick (myosin) nor thin (actin) myofilaments shorten in actual length; thin filaments slide inward over thick filaments toward the M-line. Because A-band equals thick-filament length, A-band stays constant while I-band, H-zone, and Z-to-Z sarcomere length decrease.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 16: Skeleton and Movement (Sliding Filament Band Changes During Sarcomere Shortening)",
+    "abilityTags": [
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-bio-100",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-biology",
+    "subjectName": "Biology",
+    "chapterNumber": 16,
+    "chapter": "Skeleton and Movement",
+    "topic": "Rigor Mortis ATP Mechanics and Muscular Disorders",
+    "difficulty": "Hard",
+    "questionText": "Why do skeletal muscles stiffen irreversibly several hours after death ('rigor mortis'), and how does 'myasthenia gravis' differ mechanistically from 'tetany'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "ATP is needed only for cross-bridge attachment and not detachment; tetany is X-linked dystrophin gene mutation"
+      },
+      {
+        "key": "B",
+        "text": "Rigor mortis occurs because excess post-mortem ATP locks tropomyosin; myasthenia gravis is uric acid crystal deposition in joints (gout)"
+      },
+      {
+        "key": "C",
+        "text": "Myasthenia gravis is caused by hypercalcaemia, whereas tetany is autoimmune demyelination"
+      },
+      {
+        "key": "D",
+        "text": "Post-mortem ATP depletion prevents myosin heads from detaching from actin cross-bridges (binding of fresh unhydrolysed ATP is required to break actomyosin bridges); myasthenia gravis is autoimmune destruction/blockade of neuromuscular acetylcholine receptors (weakness/paralysis), whereas tetany is sustained involuntary spasm from low extracellular Ca^2+ (hypocalcaemia)"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "During the cross-bridge cycle, Pi/ADP release drives the power stroke, and binding of a NEW ATP molecule to the myosin head is mandatory for detachment from actin; without ATP after death, Ca^2+ leaks in and actomyosin bridges stay locked (rigor mortis). Myasthenia gravis is autoimmune anti-AChR weakness; tetany is hypocalcaemic hyperexcitability spasm.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 16: Skeleton and Movement (Rigor Mortis ATP Mechanics and Muscular Disorders)",
+    "abilityTags": [
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  }
+]

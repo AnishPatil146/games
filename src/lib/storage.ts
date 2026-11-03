@@ -27,7 +27,28 @@ interface LocalStoreData {
   deletionRequests: DeletionRequest[];
 }
 
-const LOCAL_STORE_PATH = path.join(process.cwd(), ".data", "local-store.json");
+const DEFAULT_LOCAL_STORE_PATH = path.join(process.cwd(), ".data", "local-store.json");
+let customLocalStorePath: string | null = null;
+
+export function setLocalStorePathForTests(filePath: string | null): void {
+  customLocalStorePath = filePath;
+  memoryStore = {
+    players: [],
+    sessions: [],
+    events: [],
+    preferences: [],
+    deletionRequests: [],
+  };
+}
+
+function getLocalStorePath(): string {
+  return customLocalStorePath || DEFAULT_LOCAL_STORE_PATH;
+}
+
+function shouldUseSupabase(): boolean {
+  if (customLocalStorePath) return false;
+  return getEnvConfig().isSupabaseConfigured;
+}
 
 let memoryStore: LocalStoreData = {
   players: [],
@@ -38,9 +59,10 @@ let memoryStore: LocalStoreData = {
 };
 
 function readLocalStore(): LocalStoreData {
+  const storePath = getLocalStorePath();
   try {
-    if (fs.existsSync(LOCAL_STORE_PATH)) {
-      const raw = fs.readFileSync(LOCAL_STORE_PATH, "utf8");
+    if (fs.existsSync(storePath)) {
+      const raw = fs.readFileSync(storePath, "utf8");
       const parsed = JSON.parse(raw) as Partial<LocalStoreData>;
       memoryStore = {
         players: Array.isArray(parsed.players) ? parsed.players : [],
@@ -60,12 +82,13 @@ function readLocalStore(): LocalStoreData {
 
 function writeLocalStore(data: LocalStoreData): void {
   memoryStore = data;
+  const storePath = getLocalStorePath();
   try {
-    const dir = path.dirname(LOCAL_STORE_PATH);
+    const dir = path.dirname(storePath);
     if (!fs.existsSync(dir)) {
       fs.mkdirSync(dir, { recursive: true });
     }
-    fs.writeFileSync(LOCAL_STORE_PATH, JSON.stringify(data, null, 2), "utf8");
+    fs.writeFileSync(storePath, JSON.stringify(data, null, 2), "utf8");
   } catch {
     // Read-only filesystem in serverless; memoryStore remains active
   }
@@ -119,7 +142,7 @@ export async function getOrCreateSession(
   session: Omit<GameSession, "session_token">;
   playerDisplayName: string | null;
 }> {
-  const { isSupabaseConfigured } = getEnvConfig();
+  const isSupabaseConfigured = shouldUseSupabase();
 
   if (isSupabaseConfigured) {
     const supabase = await createPrivilegedClient();
@@ -208,7 +231,7 @@ export async function updateSessionPresentationByToken(
   sessionToken: string,
   presentation: CharacterPresentation
 ): Promise<void> {
-  const { isSupabaseConfigured } = getEnvConfig();
+  const isSupabaseConfigured = shouldUseSupabase();
   if (isSupabaseConfigured) {
     const supabase = await createPrivilegedClient();
     const { error } = await supabase.rpc("rpc_upsert_session", {
@@ -250,7 +273,7 @@ export async function submitProfileByToken(
     throw new Error("Explicit consent is required to link profile details.");
   }
 
-  const { isSupabaseConfigured } = getEnvConfig();
+  const isSupabaseConfigured = shouldUseSupabase();
   if (isSupabaseConfigured) {
     const supabase = await createPrivilegedClient();
     const { data, error } = await supabase.rpc("rpc_submit_profile", {
@@ -341,7 +364,7 @@ export async function recordEventByToken(
   eventData: Record<string, unknown>,
   resultArchetype?: string
 ): Promise<{ recorded: boolean; deduplicated: boolean }> {
-  const { isSupabaseConfigured } = getEnvConfig();
+  const isSupabaseConfigured = shouldUseSupabase();
 
   if (isSupabaseConfigured) {
     const supabase = await createPrivilegedClient();
@@ -443,7 +466,7 @@ export async function recordPreferenceByToken(
   category: string,
   selectedValue: string
 ): Promise<void> {
-  const { isSupabaseConfigured } = getEnvConfig();
+  const isSupabaseConfigured = shouldUseSupabase();
 
   if (isSupabaseConfigured) {
     const supabase = await createPrivilegedClient();
@@ -498,7 +521,7 @@ export async function getPublicSessionDossier(
   events: GameplayEvent[];
   preferences: PlayerPreference[];
 } | null> {
-  const { isSupabaseConfigured } = getEnvConfig();
+  const isSupabaseConfigured = shouldUseSupabase();
 
   if (isSupabaseConfigured) {
     const supabase = await createPrivilegedClient();
@@ -583,7 +606,7 @@ export async function submitDeletionRequest(
   identifier: string,
   reason?: string
 ): Promise<{ requestId: string }> {
-  const { isSupabaseConfigured } = getEnvConfig();
+  const isSupabaseConfigured = shouldUseSupabase();
 
   if (isSupabaseConfigured) {
     const supabase = await createPrivilegedClient();
@@ -620,7 +643,7 @@ export async function submitDeletionRequest(
 // PRIVATE ADMINISTRATOR CONTROL CENTRE QUERIES (SERVER-SIDE AUTHORIZED ONLY)
 // =============================================================================
 
-async function loadRawAdminDataset(): Promise<{
+export async function loadRawAdminDataset(): Promise<{
   backend: "supabase" | "local_fallback";
   schemaReady: boolean;
   schemaNotice?: string;
@@ -630,7 +653,7 @@ async function loadRawAdminDataset(): Promise<{
   preferences: PlayerPreference[];
   deletionRequests: DeletionRequest[];
 }> {
-  const { isSupabaseConfigured } = getEnvConfig();
+  const isSupabaseConfigured = shouldUseSupabase();
 
   if (isSupabaseConfigured) {
     const supabase = await createPrivilegedClient();

@@ -1,0 +1,4498 @@
+[
+  {
+    "id": "msb-11-sci-che-001",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 1,
+    "chapter": "Some Basic Concepts of Chemistry",
+    "topic": "Avogadro's Law",
+    "difficulty": "Easy",
+    "questionText": "Which gas law states that equal volumes of all ideal gases, measured at the same temperature and pressure, contain equal numbers of molecules?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Dalton's law of partial pressures"
+      },
+      {
+        "key": "B",
+        "text": "Law of multiple proportions"
+      },
+      {
+        "key": "C",
+        "text": "Gay-Lussac's law of gaseous volumes"
+      },
+      {
+        "key": "D",
+        "text": "Avogadro's law"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Lorenzo Romano Amedeo Carlo Avogadro proposed in 1811 that at constant temperature and pressure, volume V is directly proportional to number of molecules (V ∝ n).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Some Basic Concepts of Chemistry (Avogadro's Law)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-002",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 1,
+    "chapter": "Some Basic Concepts of Chemistry",
+    "topic": "Mole Concept",
+    "difficulty": "Easy",
+    "questionText": "How many moles of carbon atoms are present in 36.0 g of pure carbon-12 (molar mass = 12.0 g/mol)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1.5 mol"
+      },
+      {
+        "key": "B",
+        "text": "0.33 mol"
+      },
+      {
+        "key": "C",
+        "text": "6.0 mol"
+      },
+      {
+        "key": "D",
+        "text": "3.0 mol"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Number of moles n = given mass / molar mass = 36.0 g / 12.0 g·mol^-1 = 3.0 mol.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Some Basic Concepts of Chemistry (Mole Concept)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-003",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 1,
+    "chapter": "Some Basic Concepts of Chemistry",
+    "topic": "Combustion Stoichiometry",
+    "difficulty": "Medium",
+    "questionText": "According to CH_4(g) + 2O_2(g) → CO_2(g) + 2H_2O(l), what mass of dioxygen (O_2, molar mass = 32 g/mol) is required for complete combustion of 8.0 g of methane (CH_4, molar mass = 16 g/mol)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "32.0 g"
+      },
+      {
+        "key": "B",
+        "text": "64.0 g"
+      },
+      {
+        "key": "C",
+        "text": "24.0 g"
+      },
+      {
+        "key": "D",
+        "text": "16.0 g"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Moles of CH_4 = 8.0 / 16 = 0.50 mol. Stoichiometry requires 2 mol O_2 per 1 mol CH_4, i.e., 2 × 0.50 = 1.0 mol O_2, corresponding to 1.0 × 32 = 32.0 g.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Some Basic Concepts of Chemistry (Combustion Stoichiometry)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-004",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 1,
+    "chapter": "Some Basic Concepts of Chemistry",
+    "topic": "Average Atomic Mass of Isotopes",
+    "difficulty": "Medium",
+    "questionText": "Naturally occurring chlorine consists of two isotopes: ^35Cl (35.0 u, natural abundance 75.0%) and ^37Cl (37.0 u, natural abundance 25.0%). What is the average atomic mass of chlorine?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "36.0 u"
+      },
+      {
+        "key": "B",
+        "text": "35.25 u"
+      },
+      {
+        "key": "C",
+        "text": "36.5 u"
+      },
+      {
+        "key": "D",
+        "text": "35.5 u"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Weighted average atomic mass = (0.75 × 35.0) + (0.25 × 37.0) = 26.25 + 9.25 = 35.5 u.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Some Basic Concepts of Chemistry (Average Atomic Mass of Isotopes)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-005",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 1,
+    "chapter": "Some Basic Concepts of Chemistry",
+    "topic": "Subatomic Particles and Ions",
+    "difficulty": "Medium",
+    "questionText": "How many valence-shell electrons (in terms of Avogadro's constant N_A) are present in 4.2 g of nitride ions (N^3-), given atomic mass of nitrogen = 14.0 u?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "3.0 N_A"
+      },
+      {
+        "key": "B",
+        "text": "2.1 N_A"
+      },
+      {
+        "key": "C",
+        "text": "1.5 N_A"
+      },
+      {
+        "key": "D",
+        "text": "2.4 N_A"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Moles of N^3- ions = 4.2 / 14.0 = 0.30 mol. Neutral N (Z = 7) has 5 valence electrons (2s^2 2p^3); gaining 3 electrons gives 8 valence-shell electrons in N^3- (2s^2 2p^6). Total valence electrons = 0.30 × 8 N_A = 2.4 N_A.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Some Basic Concepts of Chemistry (Subatomic Particles and Ions)",
+    "abilityTags": [
+      "analytical_thinking",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-006",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 1,
+    "chapter": "Some Basic Concepts of Chemistry",
+    "topic": "Limiting Reagent in Ammonia Synthesis",
+    "difficulty": "Hard",
+    "questionText": "In a closed reactor, 5.6 g of dinitrogen (N_2, M = 28 g/mol) is mixed with 1.8 g of dihydrogen (H_2, M = 2.0 g/mol) to form ammonia via N_2 + 3H_2 → 2NH_3 (M = 17 g/mol). Assuming 100% conversion of the limiting reagent, what mass of NH_3 is produced?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "7.4 g"
+      },
+      {
+        "key": "B",
+        "text": "10.2 g"
+      },
+      {
+        "key": "C",
+        "text": "6.8 g"
+      },
+      {
+        "key": "D",
+        "text": "3.4 g"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "n(N_2) = 5.6 / 28 = 0.20 mol; n(H_2) = 1.8 / 2.0 = 0.90 mol. Complete reaction of 0.20 mol N_2 requires 3 × 0.20 = 0.60 mol H_2 (< 0.90 mol available), so N_2 is the limiting reagent. Moles of NH_3 formed = 2 × 0.20 = 0.40 mol ⇒ mass = 0.40 × 17 = 6.8 g.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Some Basic Concepts of Chemistry (Limiting Reagent in Ammonia Synthesis)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-007",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 1,
+    "chapter": "Some Basic Concepts of Chemistry",
+    "topic": "Percentage Purity and Gas Volume",
+    "difficulty": "Hard",
+    "questionText": "A 25.0 g sample of 80% pure limestone (CaCO_3, molar mass = 100 g/mol; impurities inert) reacts completely with excess dilute HCl. What volume of CO_2 gas is liberated at 273.15 K and 1 atm (where molar volume = 22.4 L/mol)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "4.48 L"
+      },
+      {
+        "key": "B",
+        "text": "5.60 L"
+      },
+      {
+        "key": "C",
+        "text": "2.24 L"
+      },
+      {
+        "key": "D",
+        "text": "8.96 L"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Mass of pure CaCO_3 = 0.80 × 25.0 = 20.0 g, which equals 20.0 / 100 = 0.20 mol. From CaCO_3 + 2HCl → CaCl_2 + H_2O + CO_2, 0.20 mol CO_2 is produced, occupying 0.20 × 22.4 = 4.48 L.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Some Basic Concepts of Chemistry (Percentage Purity and Gas Volume)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-008",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 2,
+    "chapter": "Introduction to Analytical Chemistry",
+    "topic": "Accuracy and Precision",
+    "difficulty": "Easy",
+    "questionText": "In quantitative chemical analysis, the closeness of agreement among several replicate measurements of the same sample under identical conditions is termed:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Stoichiometric equivalence"
+      },
+      {
+        "key": "B",
+        "text": "Accuracy"
+      },
+      {
+        "key": "C",
+        "text": "Absolute error"
+      },
+      {
+        "key": "D",
+        "text": "Precision"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Precision measures reproducibility (small scatter among replicate readings), whereas accuracy measures how close a measured mean is to the true or accepted value.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Introduction to Analytical Chemistry (Accuracy and Precision)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-009",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 2,
+    "chapter": "Introduction to Analytical Chemistry",
+    "topic": "Temperature-Independent Concentration Units",
+    "difficulty": "Easy",
+    "questionText": "Which of the following concentration expressions remains completely unchanged when the temperature of a solution varies (assuming no evaporation)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Normality (eq/L)"
+      },
+      {
+        "key": "B",
+        "text": "Mass by volume percentage (% w/V)"
+      },
+      {
+        "key": "C",
+        "text": "Molality (mol/kg)"
+      },
+      {
+        "key": "D",
+        "text": "Molarity (mol/L)"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Molality is defined as moles of solute per kilogram of solvent. Because masses do not change with thermal expansion, molality is independent of temperature, unlike volume-based units.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Introduction to Analytical Chemistry (Temperature-Independent Concentration Units)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-010",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 2,
+    "chapter": "Introduction to Analytical Chemistry",
+    "topic": "Empirical and Molecular Formula Determination",
+    "difficulty": "Medium",
+    "questionText": "An organic compound contains 40.0% carbon, 6.67% hydrogen, and 53.33% oxygen by mass (atomic masses: C = 12, H = 1, O = 16). If its molar mass is 180 g/mol, what is its molecular formula?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "C_4H_8O_4"
+      },
+      {
+        "key": "B",
+        "text": "C_6H_12O_6"
+      },
+      {
+        "key": "C",
+        "text": "C_5H_10O_5"
+      },
+      {
+        "key": "D",
+        "text": "C_3H_6O_3"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Relative mole ratios: C = 40.0/12 = 3.33, H = 6.67/1 = 6.67, O = 53.33/16 = 3.33, simplifying to 1 : 2 : 1 (empirical formula CH_2O, empirical formula mass = 30 g/mol). Multiplier n = 180 / 30 = 6 ⇒ C_6H_12O_6.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Introduction to Analytical Chemistry (Empirical and Molecular Formula Determination)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-011",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 2,
+    "chapter": "Introduction to Analytical Chemistry",
+    "topic": "Dilution of Standard Solution",
+    "difficulty": "Medium",
+    "questionText": "What volume of a 2.50 M aqueous HNO_3 stock solution must be pipetted and diluted with distilled water to prepare 500 mL of 0.20 M HNO_3?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "40.0 mL"
+      },
+      {
+        "key": "B",
+        "text": "25.0 mL"
+      },
+      {
+        "key": "C",
+        "text": "80.0 mL"
+      },
+      {
+        "key": "D",
+        "text": "20.0 mL"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Using conservation of moles during dilution, M_1 V_1 = M_2 V_2 ⇒ V_1 = (0.20 M × 500 mL) / 2.50 M = 100 / 2.50 = 40.0 mL.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Introduction to Analytical Chemistry (Dilution of Standard Solution)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-012",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 2,
+    "chapter": "Introduction to Analytical Chemistry",
+    "topic": "Molality from Molar Mass and Density",
+    "difficulty": "Hard",
+    "questionText": "A solution is prepared by dissolving 20.0 g of NaOH (molar mass = 40.0 g/mol) in water to obtain 250 mL of solution whose density is 1.08 g/mL. What is the molality of NaOH in this solution?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "2.16 mol/kg"
+      },
+      {
+        "key": "B",
+        "text": "1.85 mol/kg"
+      },
+      {
+        "key": "C",
+        "text": "2.00 mol/kg"
+      },
+      {
+        "key": "D",
+        "text": "1.60 mol/kg"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Total mass of 250 mL solution = 250 mL × 1.08 g/mL = 270 g. Mass of water (solvent) = 270 - 20.0 = 250 g = 0.250 kg. Moles of NaOH = 20.0 / 40.0 = 0.50 mol. Molality m = 0.50 mol / 0.250 kg = 2.00 mol/kg.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Introduction to Analytical Chemistry (Molality from Molar Mass and Density)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-013",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 2,
+    "chapter": "Introduction to Analytical Chemistry",
+    "topic": "Mole Fraction in Aqueous Solution",
+    "difficulty": "Hard",
+    "questionText": "Calculate the mole fraction of urea (NH_2CONH_2, molar mass = 60.0 g/mol) in an aqueous solution prepared by dissolving 30.0 g of urea in 81.0 g of water (molar mass = 18.0 g/mol).",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "0.11"
+      },
+      {
+        "key": "B",
+        "text": "0.27"
+      },
+      {
+        "key": "C",
+        "text": "0.09"
+      },
+      {
+        "key": "D",
+        "text": "0.10"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Moles of urea = 30.0 / 60.0 = 0.50 mol; moles of water = 81.0 / 18.0 = 4.50 mol. Mole fraction of urea X_urea = 0.50 / (0.50 + 4.50) = 0.50 / 5.00 = 0.10.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Introduction to Analytical Chemistry (Mole Fraction in Aqueous Solution)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-014",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 3,
+    "chapter": "Basic Analytical Techniques",
+    "topic": "Paper Chromatography Stationary Phase",
+    "difficulty": "Easy",
+    "questionText": "Paper chromatography is an example of partition chromatography in which the stationary phase is:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Dry cellulose polymer chains acting purely by solid adsorption"
+      },
+      {
+        "key": "B",
+        "text": "Water molecules trapped within the cellulose fibres of the chromatography paper"
+      },
+      {
+        "key": "C",
+        "text": "Finely divided alumina coated onto a glass backing plate"
+      },
+      {
+        "key": "D",
+        "text": "The ascending organic eluent solvent placed in the developing chamber"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Special chromatography paper (Whatman filter paper) retains bound water in its cellulose network, which serves as the liquid stationary phase in partition chromatography.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Basic Analytical Techniques (Paper Chromatography Stationary Phase)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-015",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 3,
+    "chapter": "Basic Analytical Techniques",
+    "topic": "Purification by Sublimation",
+    "difficulty": "Easy",
+    "questionText": "Impure camphor or naphthalene contaminated with non-volatile common salt (NaCl) is most directly purified in a single step by:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Crystallization from cold water"
+      },
+      {
+        "key": "B",
+        "text": "Simple distillation"
+      },
+      {
+        "key": "C",
+        "text": "Column chromatography"
+      },
+      {
+        "key": "D",
+        "text": "Sublimation"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Camphor and naphthalene have high vapour pressures below their melting points and sublime directly from solid to vapour on gentle heating, leaving non-volatile NaCl behind.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Basic Analytical Techniques (Purification by Sublimation)",
+    "abilityTags": [
+      "scientific_understanding",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-016",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 3,
+    "chapter": "Basic Analytical Techniques",
+    "topic": "Retardation Factor (R_f)",
+    "difficulty": "Medium",
+    "questionText": "In a thin-layer chromatography (TLC) experiment, the solvent front rises 8.0 cm above the baseline while a pigment spot rises 5.2 cm above the baseline. What is the retardation factor (R_f) of the pigment?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "0.52"
+      },
+      {
+        "key": "B",
+        "text": "0.35"
+      },
+      {
+        "key": "C",
+        "text": "0.65"
+      },
+      {
+        "key": "D",
+        "text": "1.54"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "R_f = (distance travelled by solute spot from baseline) / (distance travelled by solvent front from baseline) = 5.2 cm / 8.0 cm = 0.65.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Basic Analytical Techniques (Retardation Factor (R_f))",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-017",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 3,
+    "chapter": "Basic Analytical Techniques",
+    "topic": "Fractional Distillation",
+    "difficulty": "Medium",
+    "questionText": "Why is a fractionating column fitted above the round-bottom flask when separating a liquid mixture of acetone (b.p. 329 K) and methanol (b.p. 338 K)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Their boiling points differ by only 9 K, so repeated vaporization-condensation cycles are needed to enrich the more volatile component"
+      },
+      {
+        "key": "B",
+        "text": "Acetone decomposes violently below 320 K unless distilled under high vacuum"
+      },
+      {
+        "key": "C",
+        "text": "Acetone and methanol are completely immiscible and form two separate layers"
+      },
+      {
+        "key": "D",
+        "text": "The column chemically absorbs methanol by forming an insoluble salt"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "When miscible liquids have closely spaced boiling points (difference < ~25–30 K), vapours contain appreciable amounts of both components; a fractionating column provides multiple theoretical plates of condensation and re-vaporization.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Basic Analytical Techniques (Fractional Distillation)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-018",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 3,
+    "chapter": "Basic Analytical Techniques",
+    "topic": "Differential Solvent Extraction",
+    "difficulty": "Medium",
+    "questionText": "Differential extraction of an organic compound from an aqueous solution using an organic solvent in a separating funnel requires the organic solvent to be:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Denser than mercury so it always settles rapidly without shaking"
+      },
+      {
+        "key": "B",
+        "text": "Completely miscible with water in all proportions and higher boiling than water"
+      },
+      {
+        "key": "C",
+        "text": "Chemically reactive toward the solute so that an irreversible precipitate forms"
+      },
+      {
+        "key": "D",
+        "text": "Immiscible with water and capable of dissolving the organic solute much better than water does"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Solvent extraction relies on two immiscible liquid layers and a favourable partition coefficient so the organic compound transfers preferentially into the organic phase.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Basic Analytical Techniques (Differential Solvent Extraction)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-019",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 3,
+    "chapter": "Basic Analytical Techniques",
+    "topic": "Multi-Stage Partition Extraction Efficiency",
+    "difficulty": "Hard",
+    "questionText": "A 100 mL aqueous solution contains 9.0 g of an organic compound Z. Its partition coefficient between diethyl ether and water is K_D = C_ether / C_water = 4.0. If the aqueous solution is extracted TWICE successively using 50 mL of fresh ether each time, what mass of Z remains unextracted in the aqueous layer?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1.0 g"
+      },
+      {
+        "key": "B",
+        "text": "0.5 g"
+      },
+      {
+        "key": "C",
+        "text": "1.8 g"
+      },
+      {
+        "key": "D",
+        "text": "3.0 g"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "For each extraction of V_w = 100 mL water with V_e = 50 mL ether, fraction remaining in water is V_w / (V_w + K_D V_e) = 100 / (100 + 4 × 50) = 100 / 300 = 1/3. After 2 successive extractions, mass left in water = 9.0 × (1/3)^2 = 9.0 / 9 = 1.0 g (more efficient than a single 100 mL extraction, which leaves 9.0 × 100/500 = 1.8 g).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Basic Analytical Techniques (Multi-Stage Partition Extraction Efficiency)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-020",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 4,
+    "chapter": "Structure of Atom",
+    "topic": "Isoelectronic Species",
+    "difficulty": "Easy",
+    "questionText": "Which of the following groups consists exclusively of isoelectronic species (each having 10 electrons)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "N^3-, S^2-, Cl^-, K^+, Ca^2+"
+      },
+      {
+        "key": "B",
+        "text": "Li^+, Na^+, K^+, Rb^+, Cs^+"
+      },
+      {
+        "key": "C",
+        "text": "N^3-, O^2-, F^-, Na^+, Mg^2+"
+      },
+      {
+        "key": "D",
+        "text": "O^2-, F^-, Ne, Cl^-, Ar"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Atomic numbers: N(7)+3 = 10, O(8)+2 = 10, F(9)+1 = 10, Na(11)-1 = 10, Mg(12)-2 = 10. Every ion in this set contains exactly 10 electrons.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Structure of Atom (Isoelectronic Species)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-021",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 4,
+    "chapter": "Structure of Atom",
+    "topic": "Shell Electron Capacity",
+    "difficulty": "Easy",
+    "questionText": "According to Pauli's exclusion principle and quantum number rules, what is the maximum number of electrons that can occupy the principal shell with n = 3?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "8"
+      },
+      {
+        "key": "B",
+        "text": "32"
+      },
+      {
+        "key": "C",
+        "text": "18"
+      },
+      {
+        "key": "D",
+        "text": "9"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "A shell with principal quantum number n contains n^2 orbitals and accommodates at most 2n^2 electrons; for n = 3 (3s, 3p, 3d), 2(3^2) = 18 electrons.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Structure of Atom (Shell Electron Capacity)",
+    "abilityTags": [
+      "scientific_understanding",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-022",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 4,
+    "chapter": "Structure of Atom",
+    "topic": "Anomalous Electronic Configuration",
+    "difficulty": "Medium",
+    "questionText": "What is the correct ground-state outer electronic configuration of a neutral chromium atom (Z = 24), and what stabilizes it?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "[Ar] 3d^5 4s^1, stabilized by symmetrical distribution and exchange energy of half-filled subshells"
+      },
+      {
+        "key": "B",
+        "text": "[Ar] 3d^5 4p^1, due to promotion of a 4s electron into 4p"
+      },
+      {
+        "key": "C",
+        "text": "[Ar] 3d^6 4s^0, because 4s lies higher in energy than 3d in neutral atoms"
+      },
+      {
+        "key": "D",
+        "text": "[Ar] 3d^4 4s^2, following strict Madelung (n + l) filling without exception"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chromium adopts [Ar] 3d^5 4s^1 rather than [Ar] 3d^4 4s^2 because half-filled 3d^5 and 4s^1 subshells gain extra stability from high exchange energy and symmetrical charge distribution.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Structure of Atom (Anomalous Electronic Configuration)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-023",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 4,
+    "chapter": "Structure of Atom",
+    "topic": "Radial and Angular Nodes",
+    "difficulty": "Medium",
+    "questionText": "How many radial (spherical) nodes and angular (planar/nodal surface) nodes are present in a 4p atomic orbital?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "3 radial nodes and 1 angular node"
+      },
+      {
+        "key": "B",
+        "text": "2 radial nodes and 2 angular nodes"
+      },
+      {
+        "key": "C",
+        "text": "1 radial node and 2 angular nodes"
+      },
+      {
+        "key": "D",
+        "text": "2 radial nodes and 1 angular node"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "For a 4p orbital, n = 4 and l = 1. Number of radial nodes = n - l - 1 = 4 - 1 - 1 = 2; number of angular nodes = l = 1 (total nodes = n - 1 = 3).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Structure of Atom (Radial and Angular Nodes)",
+    "abilityTags": [
+      "analytical_thinking",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-024",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 4,
+    "chapter": "Structure of Atom",
+    "topic": "Bohr Orbit Radius for Hydrogen-Like Ions",
+    "difficulty": "Medium",
+    "questionText": "The first Bohr orbit radius (n = 1) of the hydrogen atom (Z = 1) is 52.9 pm. What is the radius of the second Bohr orbit (n = 2) of a singly ionized helium ion (He^+, Z = 2)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "211.6 pm"
+      },
+      {
+        "key": "B",
+        "text": "105.8 pm"
+      },
+      {
+        "key": "C",
+        "text": "52.9 pm"
+      },
+      {
+        "key": "D",
+        "text": "26.45 pm"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "For hydrogenic species, Bohr radius r_n = 52.9 × (n^2 / Z) pm. Substituting n = 2 and Z = 2 gives r_2 = 52.9 × (4 / 2) = 105.8 pm.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Structure of Atom (Bohr Orbit Radius for Hydrogen-Like Ions)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-025",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 4,
+    "chapter": "Structure of Atom",
+    "topic": "Rydberg Wavenumber in the Balmer Series",
+    "difficulty": "Hard",
+    "questionText": "In the atomic hydrogen emission spectrum, what is the wavenumber (ν̄) of the second line (H_β line) of the Balmer series in terms of the Rydberg constant R_H?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "(3/16) R_H"
+      },
+      {
+        "key": "B",
+        "text": "(3/4) R_H"
+      },
+      {
+        "key": "C",
+        "text": "(5/36) R_H"
+      },
+      {
+        "key": "D",
+        "text": "(21/100) R_H"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "The Balmer series involves transitions ending at n_1 = 2. Its first line (H_α) is n_2 = 3 → 2, and its second line (H_β) is n_2 = 4 → 2. Thus ν̄ = R_H (1/2^2 - 1/4^2) = R_H (1/4 - 1/16) = (3/16) R_H.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Structure of Atom (Rydberg Wavenumber in the Balmer Series)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-026",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 4,
+    "chapter": "Structure of Atom",
+    "topic": "de Broglie Wavelength of Accelerated Ions",
+    "difficulty": "Hard",
+    "questionText": "A proton (mass m_p, charge +e) and an alpha particle (mass 4m_p, charge +2e) are both accelerated from rest through the same electrostatic potential difference V. What is the ratio of their de Broglie wavelengths (λ_α : λ_p)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1 : 4"
+      },
+      {
+        "key": "B",
+        "text": "1 : 2√2"
+      },
+      {
+        "key": "C",
+        "text": "1 : 2"
+      },
+      {
+        "key": "D",
+        "text": "1 : √2"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Kinetic energy K = qV, so de Broglie wavelength λ = h / √(2mK) = h / √(2mqV). Hence λ_α / λ_p = √[(m_p × e) / (4m_p × 2e)] = √(1/8) = 1 / (2√2).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Structure of Atom (de Broglie Wavelength of Accelerated Ions)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-027",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 5,
+    "chapter": "Chemical Bonding",
+    "topic": "Sigma and Pi Bonds",
+    "difficulty": "Easy",
+    "questionText": "How many sigma (σ) bonds and pi (π) bonds are present in a single molecule of ethyne (H–C≡C–H)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "2 σ bonds and 3 π bonds"
+      },
+      {
+        "key": "B",
+        "text": "3 σ bonds and 2 π bonds"
+      },
+      {
+        "key": "C",
+        "text": "5 σ bonds and 2 π bonds"
+      },
+      {
+        "key": "D",
+        "text": "3 σ bonds and 1 π bond"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Ethyne has two C–H single (σ) bonds and one C≡C triple bond consisting of 1 σ bond and 2 mutually perpendicular π bonds, totalling 3 σ and 2 π bonds.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Chemical Bonding (Sigma and Pi Bonds)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-028",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 5,
+    "chapter": "Chemical Bonding",
+    "topic": "Hybridization and Geometry of Methane",
+    "difficulty": "Easy",
+    "questionText": "What are the hybridization of carbon and the H–C–H bond angle in methane (CH_4)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "sp^3 hybridization and 109°28'"
+      },
+      {
+        "key": "B",
+        "text": "dsp^2 hybridization and 90°"
+      },
+      {
+        "key": "C",
+        "text": "sp^3 hybridization and 104.5°"
+      },
+      {
+        "key": "D",
+        "text": "sp^2 hybridization and 120°"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Carbon in CH_4 forms four equivalent sp^3 hybrid orbitals directed toward the corners of a regular tetrahedron with zero lone pairs, giving a bond angle of 109°28' (109.5°).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Chemical Bonding (Hybridization and Geometry of Methane)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-029",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 5,
+    "chapter": "Chemical Bonding",
+    "topic": "VSEPR Shape of SF_4",
+    "difficulty": "Medium",
+    "questionText": "According to VSEPR theory, what is the molecular geometry of sulfur tetrafluoride (SF_4), and where does its lone pair reside?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Square planar geometry, with 2 lone pairs in trans axial positions"
+      },
+      {
+        "key": "B",
+        "text": "Regular tetrahedral geometry, with zero lone pairs on sulfur"
+      },
+      {
+        "key": "C",
+        "text": "See-saw geometry, with 1 lone pair occupying an equatorial position of a trigonal bipyramid"
+      },
+      {
+        "key": "D",
+        "text": "Trigonal pyramidal geometry, with 1 lone pair in an axial position"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Sulfur (6 valence electrons) forms 4 S–F bonds and retains 1 lone pair (steric number 5, sp^3d). Placing the lone pair equatorially minimizes 90° lone-pair–bond-pair repulsions, producing a see-saw shape.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Chemical Bonding (VSEPR Shape of SF_4)",
+    "abilityTags": [
+      "analytical_thinking",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-030",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 5,
+    "chapter": "Chemical Bonding",
+    "topic": "Dipole Moment of NH_3 vs NF_3",
+    "difficulty": "Medium",
+    "questionText": "Although both NH_3 and NF_3 have pyramidal geometry with one lone pair on nitrogen, NH_3 has a much larger net dipole moment (1.47 D) than NF_3 (0.24 D) because:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "In NH_3 the three N–H bond dipoles point toward N in the same direction as the lone-pair dipole, whereas in NF_3 the N–F bond dipoles oppose the lone-pair dipole"
+      },
+      {
+        "key": "B",
+        "text": "Hydrogen is more electronegative than fluorine in covalent hydrides"
+      },
+      {
+        "key": "C",
+        "text": "NF_3 is planar sp^2 hybridized so its three bond dipoles cancel completely"
+      },
+      {
+        "key": "D",
+        "text": "Nitrogen carries two lone pairs in NF_3 that cancel each other symmetrically"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Electronegativity order is F > N > H. Thus N–H bond moments point toward N (reinforcing the sp^3 lone-pair orbital moment), whereas N–F bond moments point toward F (partially cancelling the lone-pair moment).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Chemical Bonding (Dipole Moment of NH_3 vs NF_3)",
+    "abilityTags": [
+      "logical_reasoning",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-031",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 5,
+    "chapter": "Chemical Bonding",
+    "topic": "MOT Bond Order of Peroxide Ion",
+    "difficulty": "Medium",
+    "questionText": "According to Molecular Orbital Theory (MOT), what are the bond order and magnetic behaviour of the peroxide ion (O_2^2-)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Bond order = 1.5 and paramagnetic"
+      },
+      {
+        "key": "B",
+        "text": "Bond order = 1.0 and paramagnetic"
+      },
+      {
+        "key": "C",
+        "text": "Bond order = 2.0 and paramagnetic"
+      },
+      {
+        "key": "D",
+        "text": "Bond order = 1.0 and diamagnetic"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "O_2^2- has 18 electrons: 10 in bonding MOs and 8 in antibonding MOs (both π*2p orbitals completely filled with paired electrons). Bond order = (10 - 8)/2 = 1.0, and with zero unpaired electrons it is diamagnetic.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Chemical Bonding (MOT Bond Order of Peroxide Ion)",
+    "abilityTags": [
+      "analytical_thinking",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-032",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 5,
+    "chapter": "Chemical Bonding",
+    "topic": "MOT Comparison of Dioxygen Species",
+    "difficulty": "Hard",
+    "questionText": "Arrange the dioxygen species O_2^+, O_2, O_2^-, and O_2^2- in strictly decreasing order of bond dissociation enthalpy:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "O_2 > O_2^+ > O_2^- > O_2^2-"
+      },
+      {
+        "key": "B",
+        "text": "O_2^+ > O_2 > O_2^- > O_2^2-"
+      },
+      {
+        "key": "C",
+        "text": "O_2^+ > O_2^- > O_2 > O_2^2-"
+      },
+      {
+        "key": "D",
+        "text": "O_2^2- > O_2^- > O_2 > O_2^+"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Each electron added to O_2^+ enters an antibonding π*2p orbital: bond orders are O_2^+ = (10-5)/2 = 2.5, O_2 = 2.0, O_2^- = 1.5, and O_2^2- = 1.0. Higher bond order corresponds directly to higher bond dissociation enthalpy.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Chemical Bonding (MOT Comparison of Dioxygen Species)",
+    "abilityTags": [
+      "analytical_thinking",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-033",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 5,
+    "chapter": "Chemical Bonding",
+    "topic": "VSEPR Geometry of Interhalogens and Xenon Fluorides",
+    "difficulty": "Hard",
+    "questionText": "Using VSEPR theory, identify the correct pair of molecular geometries (excluding lone pairs) for ClF_3 and XeF_4 respectively:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Bent T-shaped and tetrahedral"
+      },
+      {
+        "key": "B",
+        "text": "Trigonal planar and regular tetrahedral"
+      },
+      {
+        "key": "C",
+        "text": "Bent T-shaped and square planar"
+      },
+      {
+        "key": "D",
+        "text": "Trigonal pyramidal and see-saw"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "ClF_3 has 3 bond pairs + 2 equatorial lone pairs in a trigonal bipyramidal arrangement, giving a bent T-shaped molecule. XeF_4 has 4 bond pairs + 2 trans-axial lone pairs in an octahedral arrangement, giving a square planar molecule.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Chemical Bonding (VSEPR Geometry of Interhalogens and Xenon Fluorides)",
+    "abilityTags": [
+      "analytical_thinking",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-034",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 6,
+    "chapter": "Redox Reactions",
+    "topic": "Oxidizing Agent Definition",
+    "difficulty": "Easy",
+    "questionText": "In a redox reaction, an oxidizing agent (oxidant) is a chemical species that:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Loses electrons while getting reduced"
+      },
+      {
+        "key": "B",
+        "text": "Accepts electrons and undergoes a decrease in oxidation number"
+      },
+      {
+        "key": "C",
+        "text": "Accepts protons without any change in oxidation state"
+      },
+      {
+        "key": "D",
+        "text": "Donates electrons and undergoes an increase in oxidation number"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "An oxidant oxidizes another species by accepting electrons from it; consequently, the oxidant itself is reduced (its oxidation number decreases).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Redox Reactions (Oxidizing Agent Definition)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-035",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 6,
+    "chapter": "Redox Reactions",
+    "topic": "Oxidation Number Assignment",
+    "difficulty": "Easy",
+    "questionText": "What is the oxidation number of manganese (Mn) in potassium permanganate (KMnO_4)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "+4"
+      },
+      {
+        "key": "B",
+        "text": "+7"
+      },
+      {
+        "key": "C",
+        "text": "+5"
+      },
+      {
+        "key": "D",
+        "text": "+6"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Assigning +1 to K and -2 to each O in neutral KMnO_4: (+1) + x + 4(-2) = 0 ⇒ x = +7.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Redox Reactions (Oxidation Number Assignment)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-036",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 6,
+    "chapter": "Redox Reactions",
+    "topic": "Peroxide Linkage Paradox in CrO_5",
+    "difficulty": "Medium",
+    "questionText": "Chromium pentoxide (CrO_5) adopts a butterfly structure containing two peroxy (–O–O–) rings and one terminal oxo (=O) group bonded to Cr. What is the oxidation number of Cr in CrO_5?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "+4"
+      },
+      {
+        "key": "B",
+        "text": "+6"
+      },
+      {
+        "key": "C",
+        "text": "+10"
+      },
+      {
+        "key": "D",
+        "text": "+5"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Four oxygen atoms belong to two peroxide linkages (oxidation state -1 each) and one oxygen is an oxo atom (-2). Thus x + 4(-1) + 1(-2) = 0 ⇒ x = +6 (matching Cr's maximum group oxidation state).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Redox Reactions (Peroxide Linkage Paradox in CrO_5)",
+    "abilityTags": [
+      "analytical_thinking",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-037",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 6,
+    "chapter": "Redox Reactions",
+    "topic": "Disproportionation Reaction",
+    "difficulty": "Medium",
+    "questionText": "Which of the following reactions is an example of disproportionation?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "CaCO_3(s) → CaO(s) + CO_2(g)"
+      },
+      {
+        "key": "B",
+        "text": "AgNO_3(aq) + NaCl(aq) → AgCl(s) + NaNO_3(aq)"
+      },
+      {
+        "key": "C",
+        "text": "Zn(s) + CuSO_4(aq) → ZnSO_4(aq) + Cu(s)"
+      },
+      {
+        "key": "D",
+        "text": "Cl_2(g) + 2OH^-(aq) → Cl^-(aq) + ClO^-(aq) + H_2O(l)"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "In Cl_2 + 2OH^- → Cl^- + ClO^- + H_2O, elemental chlorine (oxidation state 0) is simultaneously reduced to Cl^- (-1) and oxidized to ClO^- (+1), defining disproportionation.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Redox Reactions (Disproportionation Reaction)",
+    "abilityTags": [
+      "logical_reasoning",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-038",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 6,
+    "chapter": "Redox Reactions",
+    "topic": "Ion-Electron Balancing in Acidic Medium",
+    "difficulty": "Hard",
+    "questionText": "When the redox reaction Cr_2O_7^2- + a Fe^2+ + b H^+ → 2Cr^3+ + a Fe^3+ + c H_2O is balanced in smallest whole-number coefficients, what is the ordered triple (a, b, c)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "(6, 7, 7)"
+      },
+      {
+        "key": "B",
+        "text": "(3, 14, 7)"
+      },
+      {
+        "key": "C",
+        "text": "(2, 8, 4)"
+      },
+      {
+        "key": "D",
+        "text": "(6, 14, 7)"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Each Cr in Cr_2O_7^2- changes from +6 to +3 (total gain = 2 × 3 = 6 e^-), requiring a = 6 Fe^2+ ions (+2 → +3, loss of 1 e^- each). Balancing 7 O atoms gives c = 7 H_2O, and balancing H gives b = 14 H^+.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Redox Reactions (Ion-Electron Balancing in Acidic Medium)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-039",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 6,
+    "chapter": "Redox Reactions",
+    "topic": "Standard Cell Potential of a Galvanic Cell",
+    "difficulty": "Hard",
+    "questionText": "Given standard reduction potentials E°(Cu^2+/Cu) = +0.34 V and E°(Zn^2+/Zn) = -0.76 V, what is the standard EMF (E°_cell) of the spontaneous galvanic cell combining these two couples, and which metal serves as the anode?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "+1.10 V, with Zn serving as the anode"
+      },
+      {
+        "key": "B",
+        "text": "-1.10 V, with Cu serving as the anode"
+      },
+      {
+        "key": "C",
+        "text": "+1.10 V, with Cu serving as the anode"
+      },
+      {
+        "key": "D",
+        "text": "+0.42 V, with Zn serving as the anode"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Zn has the lower (more negative) standard reduction potential (-0.76 V < +0.34 V), so Zn undergoes oxidation at the anode while Cu^2+ is reduced at the cathode. E°_cell = E°_cathode - E°_anode = 0.34 - (-0.76) = +1.10 V.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Redox Reactions (Standard Cell Potential of a Galvanic Cell)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-040",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 7,
+    "chapter": "Modern Periodic Table",
+    "topic": "Moseley's Modern Periodic Law",
+    "difficulty": "Easy",
+    "questionText": "Henry Moseley's X-ray spectroscopic experiments on characteristic frequencies (√ν vs Z) demonstrated that the physical and chemical properties of elements are periodic functions of their:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Relative atomic weight"
+      },
+      {
+        "key": "B",
+        "text": "Mass number (A)"
+      },
+      {
+        "key": "C",
+        "text": "Neutron-to-proton ratio"
+      },
+      {
+        "key": "D",
+        "text": "Atomic number (Z)"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Moseley showed that √ν varies linearly with atomic number Z rather than atomic mass, leading to the Modern Periodic Law.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Modern Periodic Table (Moseley's Modern Periodic Law)",
+    "abilityTags": [
+      "scientific_understanding",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-041",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 7,
+    "chapter": "Modern Periodic Table",
+    "topic": "Block Classification",
+    "difficulty": "Easy",
+    "questionText": "Elements having valence-shell electronic configurations from ns^2 np^1 to ns^2 np^6 belong to which block of the Modern Periodic Table?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "f-block"
+      },
+      {
+        "key": "B",
+        "text": "s-block"
+      },
+      {
+        "key": "C",
+        "text": "d-block"
+      },
+      {
+        "key": "D",
+        "text": "p-block"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Because the differentiating (last) electron enters a valence np orbital across Groups 13 to 18 (except He), these elements constitute the p-block.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Modern Periodic Table (Block Classification)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-042",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 7,
+    "chapter": "Modern Periodic Table",
+    "topic": "First Ionization Enthalpy Anomalies in Period 2",
+    "difficulty": "Medium",
+    "questionText": "Across Period 2, why is the first ionization enthalpy of nitrogen (Z = 7) higher than that of oxygen (Z = 8)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Nitrogen possesses completely filled 2p^6 orbitals in the ground state"
+      },
+      {
+        "key": "B",
+        "text": "Oxygen loses its first electron from a 3s orbital rather than a 2p orbital"
+      },
+      {
+        "key": "C",
+        "text": "Nitrogen has a symmetrical half-filled 2p^3 subshell, whereas losing one electron from oxygen's 2p^4 relieves electron-pair repulsion"
+      },
+      {
+        "key": "D",
+        "text": "Nitrogen has a larger covalent atomic radius and weaker nuclear charge than oxygen"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Nitrogen (1s^2 2s^2 2p^3) enjoys extra exchange-energy stability from a half-filled 2p^3 configuration; in oxygen (2p^4), two electrons share one 2p orbital and experience spin-pair repulsion, making removal of one electron easier.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Modern Periodic Table (First Ionization Enthalpy Anomalies in Period 2)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-043",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 7,
+    "chapter": "Modern Periodic Table",
+    "topic": "Electron Gain Enthalpy of Halogens",
+    "difficulty": "Medium",
+    "questionText": "Why does chlorine have a more negative (more exothermic) electron gain enthalpy (-349 kJ/mol) than fluorine (-328 kJ/mol)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Chlorine accepts the incoming electron into an inner 2p subshell"
+      },
+      {
+        "key": "B",
+        "text": "Chlorine has a higher Pauling electronegativity than fluorine"
+      },
+      {
+        "key": "C",
+        "text": "Fluorine's very compact n = 2 valence shell causes strong inter-electronic repulsion toward an incoming electron"
+      },
+      {
+        "key": "D",
+        "text": "Fluorine already has a completely filled 2p^6 subshell in its neutral state"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "In tiny fluorine atoms, seven valence electrons are crowded into the small 2s/2p region, repelling an incoming electron more strongly than in the larger n = 3 valence shell of chlorine.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Modern Periodic Table (Electron Gain Enthalpy of Halogens)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-044",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 7,
+    "chapter": "Modern Periodic Table",
+    "topic": "Ionic Radius Trend in Isoelectronic Series",
+    "difficulty": "Medium",
+    "questionText": "Arrange the isoelectronic ions Mg^2+, Na^+, F^-, and O^2- in strictly increasing order of their ionic radii:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Mg^2+ < Na^+ < O^2- < F^-"
+      },
+      {
+        "key": "B",
+        "text": "Na^+ < Mg^2+ < F^- < O^2-"
+      },
+      {
+        "key": "C",
+        "text": "Mg^2+ < Na^+ < F^- < O^2-"
+      },
+      {
+        "key": "D",
+        "text": "O^2- < F^- < Na^+ < Mg^2+"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "All four species have 10 electrons, while nuclear charges Z are Mg^2+(12) > Na^+(11) > F^-(9) > O^2-(8). Greater nuclear pull on the same 10-electron cloud contracts ionic radius.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Modern Periodic Table (Ionic Radius Trend in Isoelectronic Series)",
+    "abilityTags": [
+      "analytical_thinking",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-045",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 7,
+    "chapter": "Modern Periodic Table",
+    "topic": "Predicting Position from Atomic Number Z = 117",
+    "difficulty": "Hard",
+    "questionText": "Using electronic shell filling and periodic table structure, identify the period, group, and block of the element with atomic number Z = 117:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Period 7, Group 17, p-block"
+      },
+      {
+        "key": "B",
+        "text": "Period 6, Group 17, p-block"
+      },
+      {
+        "key": "C",
+        "text": "Period 7, Group 17, d-block"
+      },
+      {
+        "key": "D",
+        "text": "Period 7, Group 15, p-block"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Radon (Rn, Period 6 noble gas) has Z = 86, and Oganesson (Og, Period 7 Group 18 noble gas) has Z = 118. Element Z = 117 ([Rn] 5f^14 6d^10 7s^2 7p^5) lies one column before Group 18 in Period 7, i.e., Period 7, Group 17, p-block.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Modern Periodic Table (Predicting Position from Atomic Number Z = 117)",
+    "abilityTags": [
+      "logical_reasoning",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-046",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 8,
+    "chapter": "Elements of Group 1 and 2",
+    "topic": "Diagonal Relationship of Lithium",
+    "difficulty": "Easy",
+    "questionText": "Due to comparable charge-to-radius ratios (polarizing power), lithium in Group 1 exhibits a strong diagonal relationship in chemical behaviour with which Group 2 element?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Barium (Ba)"
+      },
+      {
+        "key": "B",
+        "text": "Magnesium (Mg)"
+      },
+      {
+        "key": "C",
+        "text": "Beryllium (Be)"
+      },
+      {
+        "key": "D",
+        "text": "Calcium (Ca)"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Moving one step right and one period down cancels opposing size trends; Li^+ (76 pm) and Mg^2+ (72 pm) have similar polarizing powers and both form nitrides (Li_3N, Mg_3N_2) and thermally unstable carbonates.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Elements of Group 1 and 2 (Diagonal Relationship of Lithium)",
+    "abilityTags": [
+      "scientific_understanding",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-047",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 8,
+    "chapter": "Elements of Group 1 and 2",
+    "topic": "Flame Test of Alkali Metals",
+    "difficulty": "Easy",
+    "questionText": "Which alkali metal imparts a characteristic crimson-red colour to an oxidizing Bunsen flame?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Sodium"
+      },
+      {
+        "key": "B",
+        "text": "Lithium"
+      },
+      {
+        "key": "C",
+        "text": "Caesium"
+      },
+      {
+        "key": "D",
+        "text": "Potassium"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Thermal excitation of valence electrons produces characteristic emission colours: lithium gives crimson-red, sodium gives golden yellow, potassium gives lilac/violet, and caesium gives blue.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Elements of Group 1 and 2 (Flame Test of Alkali Metals)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-048",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 8,
+    "chapter": "Elements of Group 1 and 2",
+    "topic": "Limitation of the Solvay Process",
+    "difficulty": "Medium",
+    "questionText": "Sodium carbonate (Na_2CO_3) is manufactured industrially by the Solvay ammonia-soda process, whereas potassium carbonate (K_2CO_3) CANNOT be prepared by this method because:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Potassium hydrogen carbonate (KHCO_3) has high solubility in water and fails to precipitate during carbonation"
+      },
+      {
+        "key": "B",
+        "text": "Potassium chloride does not dissolve in aqueous ammonia"
+      },
+      {
+        "key": "C",
+        "text": "Potassium carbonate sublimes completely along with CO_2 gas"
+      },
+      {
+        "key": "D",
+        "text": "KHCO_3 explodes violently below room temperature"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "The Solvay process relies on precipitating sparingly soluble NaHCO_3 from ammoniacal brine upon passing CO_2; KHCO_3 is much more soluble in water and stays dissolved.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Elements of Group 1 and 2 (Limitation of the Solvay Process)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-049",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 8,
+    "chapter": "Elements of Group 1 and 2",
+    "topic": "Alkali Metals in Liquid Ammonia",
+    "difficulty": "Medium",
+    "questionText": "Freshly prepared dilute solutions of sodium metal in pure liquid ammonia are deep blue, paramagnetic, and electrically conducting primarily due to:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Liberation of nitrogen dioxide gas bubbles"
+      },
+      {
+        "key": "B",
+        "text": "Formation of covalent Na_2 dimers stabilized by hydrogen bonds"
+      },
+      {
+        "key": "C",
+        "text": "Ammoniated metal cations [Na(NH_3)_x]^+ and ammoniated solvated electrons [e(NH_3)_y]^-"
+      },
+      {
+        "key": "D",
+        "text": "Immediate precipitation of colloidal sodium nitride (Na_3N)"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Alkali metals ionize reversibly in liquid NH_3 to produce solvated cations and unpaired ammoniated electrons [e(NH_3)_y]^-, which absorb red light (appearing deep blue) and impart paramagnetism and high conductivity.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Elements of Group 1 and 2 (Alkali Metals in Liquid Ammonia)",
+    "abilityTags": [
+      "scientific_understanding",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-050",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 8,
+    "chapter": "Elements of Group 1 and 2",
+    "topic": "Solubility and Thermal Stability Trends in Group 2",
+    "difficulty": "Hard",
+    "questionText": "Descending Group 2 from Be to Ba, how do (i) the aqueous solubility of alkaline earth metal sulfates (MSO_4) and (ii) the thermal decomposition temperature of carbonates (MCO_3) change?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Both solubility of MSO_4 and thermal stability of MCO_3 increase down the group"
+      },
+      {
+        "key": "B",
+        "text": "Solubility of MSO_4 increases down the group, whereas thermal stability of MCO_3 decreases"
+      },
+      {
+        "key": "C",
+        "text": "Solubility of MSO_4 decreases down the group, whereas thermal stability of MCO_3 increases down the group"
+      },
+      {
+        "key": "D",
+        "text": "Both solubility of MSO_4 and thermal stability of MCO_3 decrease down the group"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Because SO_4^2- is a large anion, lattice enthalpy of MSO_4 varies little down Group 2 while hydration enthalpy of M^2+ drops sharply, reducing solubility (BeSO_4 ≫ BaSO_4). Conversely, larger M^2+ cations down the group polarize CO_3^2- less, increasing MCO_3 thermal stability.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Elements of Group 1 and 2 (Solubility and Thermal Stability Trends in Group 2)",
+    "abilityTags": [
+      "analytical_thinking",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-051",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 8,
+    "chapter": "Elements of Group 1 and 2",
+    "topic": "Potassium Superoxide in Life-Support Systems",
+    "difficulty": "Hard",
+    "questionText": "Potassium superoxide (KO_2) is employed in emergency breathing canisters aboard submarines and spacecraft because:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "It contains the peroxide dianion O_2^2- with zero unpaired electrons"
+      },
+      {
+        "key": "B",
+        "text": "It acts purely as a drying agent without reacting with CO_2 and is diamagnetic"
+      },
+      {
+        "key": "C",
+        "text": "It catalytically splits exhaled N_2 into breathable O_2 and NH_3"
+      },
+      {
+        "key": "D",
+        "text": "It reacts with exhaled CO_2 to scrub carbon dioxide while simultaneously liberating O_2 gas, and its O_2^- ion is paramagnetic"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Via 4KO_2 + 2CO_2 → 2K_2CO_3 + 3O_2, KO_2 removes CO_2 and regenerates O_2. Moreover, the superoxide ion O_2^- (17 electrons) has one unpaired electron in a π*2p orbital and is paramagnetic.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Elements of Group 1 and 2 (Potassium Superoxide in Life-Support Systems)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-052",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 9,
+    "chapter": "Elements of Group 13, 14 and 15",
+    "topic": "Electrical Conductivity of Graphite vs Diamond",
+    "difficulty": "Easy",
+    "questionText": "Why does graphite conduct electricity readily along its basal planes whereas diamond is an electrical insulator?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Each sp^2-hybridized carbon in graphite retains one unhybridized 2p electron delocalized across hexagonal sheets"
+      },
+      {
+        "key": "B",
+        "text": "Diamond consists of discrete C_60 cages with localized ionic bonds"
+      },
+      {
+        "key": "C",
+        "text": "Graphite contains free interstitial metallic cations between layers"
+      },
+      {
+        "key": "D",
+        "text": "Carbon atoms in graphite are sp^3d-hybridized with mobile lone pairs"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "In diamond all four valence electrons of sp^3 carbon are localized in strong σ bonds; in graphite each sp^2 carbon forms three σ bonds and contributes one π electron to a delocalized conduction band.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Elements of Group 13, 14 and 15 (Electrical Conductivity of Graphite vs Diamond)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-053",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 9,
+    "chapter": "Elements of Group 13, 14 and 15",
+    "topic": "Dry Ice",
+    "difficulty": "Easy",
+    "questionText": "What is the chemical identity of 'dry ice', commonly used as a clean refrigerant?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Solid carbon dioxide (CO_2)"
+      },
+      {
+        "key": "B",
+        "text": "Solidified carbon monoxide (CO)"
+      },
+      {
+        "key": "C",
+        "text": "Anhydrous solid sulfur dioxide (SO_2)"
+      },
+      {
+        "key": "D",
+        "text": "Supercooled heavy water (D_2O)"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Solid CO_2 is called dry ice because at 1 atm pressure it sublimes directly into gaseous CO_2 at 195 K (-78.5 °C) without leaving any liquid residue.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Elements of Group 13, 14 and 15 (Dry Ice)",
+    "abilityTags": [
+      "scientific_understanding",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-054",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 9,
+    "chapter": "Elements of Group 13, 14 and 15",
+    "topic": "Inert Pair Effect in Group 13",
+    "difficulty": "Medium",
+    "questionText": "In Group 13, boron and aluminium exhibit only the +3 oxidation state in stable compounds, whereas thallium (Tl) is far more stable in the +1 state than +3 due to:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Formation of quadruple covalent bonds between Tl^+ ions"
+      },
+      {
+        "key": "B",
+        "text": "A decrease in nuclear charge on moving from indium to thallium"
+      },
+      {
+        "key": "C",
+        "text": "Complete absence of 6p orbitals in Period 6 elements"
+      },
+      {
+        "key": "D",
+        "text": "The inert pair effect arising from poor shielding of valence 6s^2 electrons by inner 4f and 5d electrons"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Poor shielding by intervening 4f^14 and 5d^10 subshells increases effective nuclear attraction on the 6s^2 electron pair (and relativistic contraction), making 6s^2 reluctant to ionize or bond.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Elements of Group 13, 14 and 15 (Inert Pair Effect in Group 13)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-055",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 9,
+    "chapter": "Elements of Group 13, 14 and 15",
+    "topic": "Bonding in Diborane (B_2H_6)",
+    "difficulty": "Medium",
+    "questionText": "In electron-deficient diborane (B_2H_6), what is the hybridization of each boron atom and how are the two bridging B–H–B bonds described?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "sp^3 hybridization of boron with two three-centre two-electron (3c–2e) banana bridge bonds"
+      },
+      {
+        "key": "B",
+        "text": "sp hybridization of boron with a direct B=B double bond"
+      },
+      {
+        "key": "C",
+        "text": "sp^3 hybridization of boron with four conventional two-centre two-electron bridge bonds"
+      },
+      {
+        "key": "D",
+        "text": "sp^2 hybridization of boron with two coordinate dative bonds from hydride lone pairs"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "B_2H_6 has only 12 valence electrons: four terminal B–H bonds are normal 2c–2e bonds (8 e^-), while the two bridging H atoms form two 3c–2e banana bonds (4 e^-) around sp^3-like boron centres.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Elements of Group 13, 14 and 15 (Bonding in Diborane (B_2H_6))",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-056",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 9,
+    "chapter": "Elements of Group 13, 14 and 15",
+    "topic": "White vs Red Phosphorus Reactivity",
+    "difficulty": "Hard",
+    "questionText": "Which statement accurately contrasts white phosphorus and red phosphorus in molecular structure and reaction with boiling aqueous NaOH under an inert atmosphere?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Both white and red phosphorus dissolve identically in CS_2 and yield H_3PO_4 without gas evolution in NaOH"
+      },
+      {
+        "key": "B",
+        "text": "White phosphorus consists of strained discrete P_4 tetrahedra (60° bond angles) and disproportionates in boiling NaOH to evolve PH_3, whereas polymeric red phosphorus does not react"
+      },
+      {
+        "key": "C",
+        "text": "White phosphorus is a planar P_6 ring that oxidizes NaOH into elemental sodium"
+      },
+      {
+        "key": "D",
+        "text": "Red phosphorus consists of discrete P_4 molecules and reacts violently with cold water to evolve PH_3, whereas white phosphorus is polymeric and inert"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Angular strain in discrete P_4 tetrahedra (60° angle) makes white phosphorus highly reactive: P_4 + 3NaOH + 3H_2O → PH_3↑ + 3NaH_2PO_2. Red phosphorus consists of linked polymeric chains and is insoluble in CS_2 and unreactive toward boiling NaOH.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Elements of Group 13, 14 and 15 (White vs Red Phosphorus Reactivity)",
+    "abilityTags": [
+      "analytical_thinking",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-057",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 9,
+    "chapter": "Elements of Group 13, 14 and 15",
+    "topic": "Hydrolysis of SiCl_4 vs CCl_4",
+    "difficulty": "Hard",
+    "questionText": "Silicon tetrachloride (SiCl_4) fumes in moist air and hydrolyses rapidly to silicic acid, whereas carbon tetrachloride (CCl_4) resists hydrolysis in water under ordinary conditions because:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "The C–Cl bond is purely ionic whereas the Si–Cl bond is non-polar covalent"
+      },
+      {
+        "key": "B",
+        "text": "Carbon has no vacant 2d orbitals to accept lone pairs from nucleophilic water molecules, whereas silicon possesses accessible vacant 3d orbitals"
+      },
+      {
+        "key": "C",
+        "text": "Silicon has higher electronegativity than chlorine, repelling Cl^- spontaneously"
+      },
+      {
+        "key": "D",
+        "text": "CCl_4 forms strong hydrogen bonds with water that block nucleophilic attack"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "As a Period 2 element, carbon's valence shell (n = 2) holds at most 8 electrons and lacks d orbitals; Period 3 silicon uses low-lying vacant 3d orbitals (and larger size) to coordinate H_2O prior to HCl elimination.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Elements of Group 13, 14 and 15 (Hydrolysis of SiCl_4 vs CCl_4)",
+    "abilityTags": [
+      "logical_reasoning",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-058",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 10,
+    "chapter": "States of Matter",
+    "topic": "Boyle's Law",
+    "difficulty": "Easy",
+    "questionText": "At constant temperature, Boyle's law for a fixed mass of an ideal gas is mathematically expressed as:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "P / T = constant at constant pressure"
+      },
+      {
+        "key": "B",
+        "text": "PV^2 = constant for isothermal expansion"
+      },
+      {
+        "key": "C",
+        "text": "V / T = constant (volume is directly proportional to Kelvin temperature)"
+      },
+      {
+        "key": "D",
+        "text": "PV = constant (pressure is inversely proportional to volume)"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Robert Boyle showed that for fixed n and T, compressing an ideal gas increases molecular collision frequency proportionally: P ∝ 1/V, or PV = constant.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: States of Matter (Boyle's Law)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-059",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 10,
+    "chapter": "States of Matter",
+    "topic": "Surface Tension of Liquids",
+    "difficulty": "Easy",
+    "questionText": "Small falling droplets of liquid mercury or rain spontaneously adopt a nearly spherical shape because:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Atmospheric pressure acts only along the vertical diameter of a drop"
+      },
+      {
+        "key": "B",
+        "text": "Surface tension tends to minimize surface area for a given liquid volume"
+      },
+      {
+        "key": "C",
+        "text": "Viscosity maximizes the surface-to-volume ratio of free liquids"
+      },
+      {
+        "key": "D",
+        "text": "Vapour pressure inside a sphere is zero at room temperature"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Molecules at a liquid surface possess excess surface free energy; a sphere encloses a given volume with the minimum possible geometric surface area.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: States of Matter (Surface Tension of Liquids)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-060",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 10,
+    "chapter": "States of Matter",
+    "topic": "Combined Gas Equation",
+    "difficulty": "Medium",
+    "questionText": "A fixed mass of an ideal gas occupies 4.0 L at 300 K and 1.5 atm. What volume will it occupy when heated to 450 K and compressed to 3.0 atm?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "6.0 L"
+      },
+      {
+        "key": "B",
+        "text": "4.5 L"
+      },
+      {
+        "key": "C",
+        "text": "2.0 L"
+      },
+      {
+        "key": "D",
+        "text": "3.0 L"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "From P_1 V_1 / T_1 = P_2 V_2 / T_2, V_2 = 4.0 × (1.5 / 3.0) × (450 / 300) = 4.0 × 0.5 × 1.5 = 3.0 L.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: States of Matter (Combined Gas Equation)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-061",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 10,
+    "chapter": "States of Matter",
+    "topic": "Compressibility Factor (Z) of Real Gases",
+    "difficulty": "Medium",
+    "questionText": "At high pressures, real gases exhibit a compressibility factor Z = PV/(nRT) > 1. What physical factor accounts for Z > 1?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Long-range London dispersion attractions pull molecules closer than ideal-gas predictions"
+      },
+      {
+        "key": "B",
+        "text": "Molecules dimerize completely into non-volatile liquid clusters"
+      },
+      {
+        "key": "C",
+        "text": "Average kinetic energy ceases to depend on temperature"
+      },
+      {
+        "key": "D",
+        "text": "Finite molecular volume and short-range repulsive forces (van der Waals constant b) dominate, making the gas less compressible than an ideal gas"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "At high pressure, excluded volume nb is no longer negligible relative to V; neglecting a/V^2 in (P + a/V^2)(V - nb) = nRT gives P(V - nb) ≈ nRT ⇒ Z = PV/(nRT) ≈ 1 + Pb/(RT) > 1.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: States of Matter (Compressibility Factor (Z) of Real Gases)",
+    "abilityTags": [
+      "analytical_thinking",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-062",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 10,
+    "chapter": "States of Matter",
+    "topic": "Critical Temperature and Liquefaction",
+    "difficulty": "Medium",
+    "questionText": "Three gases X, Y, and Z have critical temperatures of 126 K, 304 K, and 405 K respectively. Which gas exhibits the strongest intermolecular attractive forces and liquefies most readily when compressed at 300 K?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Gas X and Gas Z liquefy equally at 300 K"
+      },
+      {
+        "key": "B",
+        "text": "Gas Z (T_c = 405 K)"
+      },
+      {
+        "key": "C",
+        "text": "Gas Y (T_c = 304 K)"
+      },
+      {
+        "key": "D",
+        "text": "Gas X (T_c = 126 K)"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "A gas cannot be liquefied by pressure alone above its critical temperature (so Gas X cannot liquefy at 300 K at all). Higher T_c indicates stronger intermolecular attractions, making Gas Z (405 K) easiest to liquefy.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: States of Matter (Critical Temperature and Liquefaction)",
+    "abilityTags": [
+      "logical_reasoning",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-063",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 10,
+    "chapter": "States of Matter",
+    "topic": "Dalton's Law of Partial Pressures",
+    "difficulty": "Hard",
+    "questionText": "A sealed cylinder at 300 K contains a non-reacting mixture of 4.0 g helium (M = 4.0 g/mol) and 16.0 g dioxygen (M = 32.0 g/mol) at a total pressure of 6.0 bar. What is the partial pressure of dioxygen in the cylinder?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "2.0 bar"
+      },
+      {
+        "key": "B",
+        "text": "3.0 bar"
+      },
+      {
+        "key": "C",
+        "text": "4.0 bar"
+      },
+      {
+        "key": "D",
+        "text": "4.8 bar"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "n(He) = 4.0 / 4.0 = 1.0 mol; n(O_2) = 16.0 / 32.0 = 0.50 mol; total moles = 1.50 mol. By Dalton's law, P(O_2) = X(O_2) × P_total = (0.50 / 1.50) × 6.0 bar = (1/3) × 6.0 = 2.0 bar.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: States of Matter (Dalton's Law of Partial Pressures)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-064",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 10,
+    "chapter": "States of Matter",
+    "topic": "Root-Mean-Square Molecular Speed",
+    "difficulty": "Hard",
+    "questionText": "At what absolute temperature will O_2 molecules (molar mass = 32 g/mol) have the exact same root-mean-square speed (u_rms) as H_2 molecules (molar mass = 2.0 g/mol) at 50 K?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1600 K"
+      },
+      {
+        "key": "B",
+        "text": "400 K"
+      },
+      {
+        "key": "C",
+        "text": "800 K"
+      },
+      {
+        "key": "D",
+        "text": "200 K"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Since u_rms = √(3RT / M), equating u_rms gives T(O_2) / 32 = 50 / 2.0 = 25 ⇒ T(O_2) = 25 × 32 = 800 K.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: States of Matter (Root-Mean-Square Molecular Speed)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-065",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 11,
+    "chapter": "Adsorption and Colloids",
+    "topic": "Tyndall Effect",
+    "difficulty": "Easy",
+    "questionText": "When a narrow beam of light passes through a colloidal sol and its path becomes illuminated when viewed from the side, the optical phenomenon is known as:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Peptization"
+      },
+      {
+        "key": "B",
+        "text": "Brownian motion"
+      },
+      {
+        "key": "C",
+        "text": "Tyndall effect"
+      },
+      {
+        "key": "D",
+        "text": "Electrophoresis"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Colloidal dispersed-phase particles (1 nm to 1000 nm) scatter incident visible light in all directions, making the beam's cone visible—known as the Tyndall effect.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Adsorption and Colloids (Tyndall Effect)",
+    "abilityTags": [
+      "scientific_understanding",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-066",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 11,
+    "chapter": "Adsorption and Colloids",
+    "topic": "Thermodynamics of Gas Adsorption",
+    "difficulty": "Easy",
+    "questionText": "During spontaneous adsorption of a gas onto a clean solid adsorbent surface at constant temperature and pressure, what are the signs of ΔG, ΔH, and ΔS?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "ΔG > 0, ΔH < 0, and ΔS < 0"
+      },
+      {
+        "key": "B",
+        "text": "ΔG < 0, ΔH > 0, and ΔS > 0"
+      },
+      {
+        "key": "C",
+        "text": "ΔG < 0, ΔH < 0, and ΔS < 0"
+      },
+      {
+        "key": "D",
+        "text": "ΔG < 0, ΔH < 0, and ΔS > 0"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Spontaneity requires ΔG < 0. Confining gas molecules to a 2D surface reduces translational freedom (ΔS < 0); hence from ΔG = ΔH - TΔS < 0, adsorption must be exothermic (ΔH < 0, with |ΔH| > |TΔS|).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Adsorption and Colloids (Thermodynamics of Gas Adsorption)",
+    "abilityTags": [
+      "logical_reasoning",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-067",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 11,
+    "chapter": "Adsorption and Colloids",
+    "topic": "Chemisorption vs Physisorption",
+    "difficulty": "Medium",
+    "questionText": "Which characteristic specifically identifies chemical adsorption (chemisorption) rather than physical adsorption (physisorption)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "It is highly specific, forms a unimolecular surface layer via chemical bonds, and requires appreciable activation energy"
+      },
+      {
+        "key": "B",
+        "text": "It occurs indiscriminately for all gases on any solid below their critical temperature"
+      },
+      {
+        "key": "C",
+        "text": "It has low enthalpy of adsorption (20–40 kJ/mol) and forms multimolecular layers at high pressure"
+      },
+      {
+        "key": "D",
+        "text": "It is completely reversible upon slightly lowering gas pressure at low temperature"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chemisorption involves covalent or ionic surface bond formation (ΔH ~ 80–240 kJ/mol), requires activation energy (so adsorption isobars first rise with T), and stops at a monolayer.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Adsorption and Colloids (Chemisorption vs Physisorption)",
+    "abilityTags": [
+      "scientific_understanding",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-068",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 11,
+    "chapter": "Adsorption and Colloids",
+    "topic": "Freundlich Adsorption Isotherm Calculation",
+    "difficulty": "Medium",
+    "questionText": "For gas adsorption following the Freundlich isotherm log_10(x/m) = log_10 k + (1/n) log_10 P, a linear plot of log_10(x/m) vs log_10 P has slope 0.5 and y-intercept 0.3010 (take log_10 2 = 0.3010). What is x/m at pressure P = 9 atm?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "4.5"
+      },
+      {
+        "key": "B",
+        "text": "6"
+      },
+      {
+        "key": "C",
+        "text": "12"
+      },
+      {
+        "key": "D",
+        "text": "18"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "From y-intercept log_10 k = 0.3010, k = 2; slope 1/n = 0.5. Substituting into x/m = k P^(1/n) gives x/m = 2 × 9^(0.5) = 2 × 3 = 6.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Adsorption and Colloids (Freundlich Adsorption Isotherm Calculation)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-069",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 11,
+    "chapter": "Adsorption and Colloids",
+    "topic": "Hardy-Schulze Rule for Sol Coagulation",
+    "difficulty": "Hard",
+    "questionText": "Arsenious sulfide (As_2S_3) hydrosol consists of negatively charged colloidal particles. According to the Hardy-Schulze rule, arrange NaCl, BaCl_2, and AlCl_3 in strictly increasing order of their coagulating power (and decreasing flocculation value):",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "AlCl_3 < BaCl_2 < NaCl"
+      },
+      {
+        "key": "B",
+        "text": "BaCl_2 < NaCl < AlCl_3"
+      },
+      {
+        "key": "C",
+        "text": "NaCl < BaCl_2 < AlCl_3"
+      },
+      {
+        "key": "D",
+        "text": "NaCl = BaCl_2 = AlCl_3 (since all share Cl^-)"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "A negatively charged sol is coagulated by cations (active counter-ions). By the Hardy-Schulze rule, greater ionic charge magnitude on the counter-ion (Na^+ < Ba^2+ < Al^3+) yields dramatically higher coagulating power and lower minimum flocculation concentration.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Adsorption and Colloids (Hardy-Schulze Rule for Sol Coagulation)",
+    "abilityTags": [
+      "logical_reasoning",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-070",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 11,
+    "chapter": "Adsorption and Colloids",
+    "topic": "Lyophilic vs Lyophobic Colloids",
+    "difficulty": "Hard",
+    "questionText": "Which comparison accurately distinguishes lyophilic sols (such as starch in water) from lyophobic sols (such as gold sol in water)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Lyophilic sols have lower viscosity and higher surface tension than pure water, unlike lyophobic sols"
+      },
+      {
+        "key": "B",
+        "text": "Lyophobic sols reconstitute spontaneously upon adding water to their dried residue, whereas lyophilic sols do not"
+      },
+      {
+        "key": "C",
+        "text": "Lyophilic sols exhibit a far stronger Tyndall cone than metallic lyophobic sols of identical concentration"
+      },
+      {
+        "key": "D",
+        "text": "Lyophilic sols are reversible, extensively hydrated, and stable toward small electrolyte additions, whereas lyophobic sols are irreversible and easily coagulated by trace electrolytes"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Strong solvent affinity gives lyophilic colloids protective solvation shells, higher viscosity, lower surface tension than the dispersion medium, reversibility on evaporation/re-wetting, and resistance to electrolyte coagulation.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Adsorption and Colloids (Lyophilic vs Lyophobic Colloids)",
+    "abilityTags": [
+      "analytical_thinking",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-071",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 12,
+    "chapter": "Chemical Equilibrium",
+    "topic": "Effect of Catalyst on Equilibrium",
+    "difficulty": "Easy",
+    "questionText": "Adding a positive catalyst to a reversible reaction mixture at constant temperature:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Increases K_c by selectively lowering only the forward activation energy"
+      },
+      {
+        "key": "B",
+        "text": "Shifts equilibrium position toward the exothermic side"
+      },
+      {
+        "key": "C",
+        "text": "Lowers activation energy for both forward and reverse steps equally so equilibrium is reached faster without altering K_c"
+      },
+      {
+        "key": "D",
+        "text": "Doubles the equilibrium yield of products when Δn_g < 0"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "A catalyst provides an alternative pathway lowering E_a(forward) and E_a(reverse) by the exact same amount, leaving k_f / k_r = K_c unchanged while accelerating attainment of equilibrium.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Chemical Equilibrium (Effect of Catalyst on Equilibrium)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-072",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 12,
+    "chapter": "Chemical Equilibrium",
+    "topic": "K_p and K_c Equality Condition",
+    "difficulty": "Easy",
+    "questionText": "For the reversible gas-phase reaction H_2(g) + I_2(g) ⇌ 2HI(g) at temperature T, how are K_p and K_c related?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "K_p = K_c"
+      },
+      {
+        "key": "B",
+        "text": "K_p = K_c (RT)^2"
+      },
+      {
+        "key": "C",
+        "text": "K_p = K_c / (RT)"
+      },
+      {
+        "key": "D",
+        "text": "K_p = K_c (RT)"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "In K_p = K_c (RT)^(Δn_g), Δn_g = (moles of gaseous products) - (moles of gaseous reactants) = 2 - (1 + 1) = 0, so (RT)^0 = 1 and K_p = K_c.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Chemical Equilibrium (K_p and K_c Equality Condition)",
+    "abilityTags": [
+      "scientific_understanding",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-073",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 12,
+    "chapter": "Chemical Equilibrium",
+    "topic": "Heterogeneous Equilibrium Expression",
+    "difficulty": "Medium",
+    "questionText": "For the thermal decomposition of solid limestone in a closed kiln, CaCO_3(s) ⇌ CaO(s) + CO_2(g), what is the correct expression for K_p?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "K_p = 1 / p(CO_2)"
+      },
+      {
+        "key": "B",
+        "text": "K_p = p(CO_2)^2"
+      },
+      {
+        "key": "C",
+        "text": "K_p = [p(CaO) · p(CO_2)] / p(CaCO_3)"
+      },
+      {
+        "key": "D",
+        "text": "K_p = p(CO_2)"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "By convention, activities (active masses) of pure solids CaCO_3(s) and CaO(s) are constant and taken as unity, so K_p depends solely on the equilibrium partial pressure of CO_2(g).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Chemical Equilibrium (Heterogeneous Equilibrium Expression)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-074",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 12,
+    "chapter": "Chemical Equilibrium",
+    "topic": "Le Chatelier's Principle in the Haber Process",
+    "difficulty": "Medium",
+    "questionText": "Ammonia synthesis N_2(g) + 3H_2(g) ⇌ 2NH_3(g) has ΔH° = -92.4 kJ/mol. According to Le Chatelier's principle, which conditions maximize the equilibrium mole fraction of NH_3?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Low total pressure and very high temperature above 1200 K"
+      },
+      {
+        "key": "B",
+        "text": "High total pressure and moderately low temperature (paired with an iron catalyst for rate)"
+      },
+      {
+        "key": "C",
+        "text": "High total pressure and very high temperature without a catalyst"
+      },
+      {
+        "key": "D",
+        "text": "Addition of argon gas at constant volume and high temperature"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Forward reaction decreases gas moles from 4 to 2 (favoured by high pressure) and is exothermic (favoured thermodynamically by lower temperature; ~700 K with promoted Fe catalyst balances rate and yield).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Chemical Equilibrium (Le Chatelier's Principle in the Haber Process)",
+    "abilityTags": [
+      "logical_reasoning",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-075",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 12,
+    "chapter": "Chemical Equilibrium",
+    "topic": "Relation Between K_p and K_c",
+    "difficulty": "Hard",
+    "questionText": "At 500 K, the equilibrium constant K_c for PCl_5(g) ⇌ PCl_3(g) + Cl_2(g) is 0.040 mol/L. Taking R = 0.082 L·atm/(mol·K), what is the numerical value of K_p (in atm)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1.64 atm"
+      },
+      {
+        "key": "B",
+        "text": "0.040 atm"
+      },
+      {
+        "key": "C",
+        "text": "0.82 atm"
+      },
+      {
+        "key": "D",
+        "text": "9.76 × 10^-4 atm"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Here Δn_g = (1 + 1) - 1 = +1. Using K_p = K_c (RT)^(Δn_g) = 0.040 × (0.082 × 500)^1 = 0.040 × 41.0 = 1.64 atm.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Chemical Equilibrium (Relation Between K_p and K_c)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-076",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 12,
+    "chapter": "Chemical Equilibrium",
+    "topic": "Predicting Reaction Direction with Q_c",
+    "difficulty": "Hard",
+    "questionText": "At 700 K, K_c = 49 for H_2(g) + I_2(g) ⇌ 2HI(g). If 0.50 mol H_2, 0.50 mol I_2, and 5.0 mol HI are placed simultaneously into a 2.0 L rigid vessel at 700 K, what happens before equilibrium is reached?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Q_c = 49 = K_c, so the mixture is already at chemical equilibrium"
+      },
+      {
+        "key": "B",
+        "text": "Q_c = 10 < K_c, so net reaction proceeds in the forward direction"
+      },
+      {
+        "key": "C",
+        "text": "Q_c = 100 > K_c, so net reaction proceeds in the reverse direction to form more H_2 and I_2"
+      },
+      {
+        "key": "D",
+        "text": "Q_c = 25 < K_c, so net reaction proceeds in the forward direction to form more HI"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Concentrations: [H_2] = 0.25 M, [I_2] = 0.25 M, [HI] = 2.5 M. Reaction quotient Q_c = (2.5)^2 / (0.25 × 0.25) = 6.25 / 0.0625 = 100. Because Q_c > K_c (49), HI decomposes until Q_c drops to 49.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Chemical Equilibrium (Predicting Reaction Direction with Q_c)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-077",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 12,
+    "chapter": "Chemical Equilibrium",
+    "topic": "Calculating Equilibrium Concentrations",
+    "difficulty": "Hard",
+    "questionText": "Exactly 2.0 mol of pure HI(g) is sealed in a 1.0 L evacuated flask at 720 K, where K_c = 64 for H_2(g) + I_2(g) ⇌ 2HI(g). What is the equilibrium concentration of H_2(g)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "0.25 mol/L"
+      },
+      {
+        "key": "B",
+        "text": "0.10 mol/L"
+      },
+      {
+        "key": "C",
+        "text": "0.40 mol/L"
+      },
+      {
+        "key": "D",
+        "text": "0.20 mol/L"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Let equilibrium [H_2] = [I_2] = x mol/L; then [HI] = (2.0 - 2x) mol/L. Substituting into K_c = [HI]^2 / ([H_2][I_2]) = 64 gives [(2.0 - 2x) / x]^2 = 64 ⇒ (2.0 - 2x) / x = 8 ⇒ 2.0 = 10x ⇒ x = 0.20 mol/L.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Chemical Equilibrium (Calculating Equilibrium Concentrations)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-078",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 13,
+    "chapter": "Nuclear Chemistry and Radioactivity",
+    "topic": "Classification of Nuclides — Isotones",
+    "difficulty": "Easy",
+    "questionText": "Nuclides of different elements such as ^14_6C and ^16_8O, which have different atomic numbers (Z) and different mass numbers (A) but the exact same number of neutrons (A - Z = 8), are called:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Isotones"
+      },
+      {
+        "key": "B",
+        "text": "Isotopes"
+      },
+      {
+        "key": "C",
+        "text": "Isobars"
+      },
+      {
+        "key": "D",
+        "text": "Nuclear isomers"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Isotones possess identical neutron counts (N = A - Z): both ^14_6C (14 - 6 = 8) and ^16_8O (16 - 8 = 8) have 8 neutrons.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 13: Nuclear Chemistry and Radioactivity (Classification of Nuclides — Isotones)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-079",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 13,
+    "chapter": "Nuclear Chemistry and Radioactivity",
+    "topic": "Group Displacement Law in Decay Series",
+    "difficulty": "Medium",
+    "questionText": "A parent ^238_92U nucleus undergoes sequential radioactive decay by emitting one α-particle followed by two β^- particles. What is the resulting daughter nuclide?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Radium with Z = 88 and A = 230 (^230_88Ra)"
+      },
+      {
+        "key": "B",
+        "text": "An isotope of uranium with Z = 92 and A = 234 (^234_92U)"
+      },
+      {
+        "key": "C",
+        "text": "Plutonium with Z = 94 and A = 234 (^234_94Pu)"
+      },
+      {
+        "key": "D",
+        "text": "Thorium with Z = 90 and A = 234 (^234_90Th)"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Emission of one α (^4_2He) decreases A by 4 (to 234) and Z by 2 (to 90). Each β^- (^0_-1e) emission leaves A unchanged and increases Z by 1, so two β^- decays restore Z = 90 + 2 = 92 (^234_92U).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 13: Nuclear Chemistry and Radioactivity (Group Displacement Law in Decay Series)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-080",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 13,
+    "chapter": "Nuclear Chemistry and Radioactivity",
+    "topic": "Radioactive Half-Life Decay",
+    "difficulty": "Medium",
+    "questionText": "Medical radioisotope iodine-131 (^131I) decays by first-order kinetics with a half-life of 8.0 days. Starting with 64.0 mg of pure ^131I, what mass of ^131I remains undecayed after 32.0 days?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "4.0 mg"
+      },
+      {
+        "key": "B",
+        "text": "2.0 mg"
+      },
+      {
+        "key": "C",
+        "text": "8.0 mg"
+      },
+      {
+        "key": "D",
+        "text": "16.0 mg"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Number of elapsed half-lives n = 32.0 / 8.0 = 4. Remaining undecayed mass N = N_0 / 2^n = 64.0 / 2^4 = 64.0 / 16 = 4.0 mg.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 13: Nuclear Chemistry and Radioactivity (Radioactive Half-Life Decay)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-081",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 13,
+    "chapter": "Nuclear Chemistry and Radioactivity",
+    "topic": "Decay Constant Calculation",
+    "difficulty": "Medium",
+    "questionText": "A short-lived radionuclide has a half-life t_(1/2) = 693 s. Taking ln 2 = 0.693, what is its radioactive decay constant (λ)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "5.0 × 10^-4 s^-1"
+      },
+      {
+        "key": "B",
+        "text": "1.0 × 10^-2 s^-1"
+      },
+      {
+        "key": "C",
+        "text": "1.0 × 10^-3 s^-1"
+      },
+      {
+        "key": "D",
+        "text": "4.8 × 10^2 s^-1"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "For first-order nuclear decay, λ = ln 2 / t_(1/2) = 0.693 / 693 s = 1.0 × 10^-3 s^-1.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 13: Nuclear Chemistry and Radioactivity (Decay Constant Calculation)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-082",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 13,
+    "chapter": "Nuclear Chemistry and Radioactivity",
+    "topic": "Mass Defect and Binding Energy per Nucleon",
+    "difficulty": "Hard",
+    "questionText": "Calculate the binding energy per nucleon of ^4_2He given: proton mass = 1.0078 u, neutron mass = 1.0087 u, ^4_2He nuclear mass = 4.0026 u, and 1 u × c^2 = 931.5 MeV.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "14.16 MeV"
+      },
+      {
+        "key": "B",
+        "text": "28.32 MeV"
+      },
+      {
+        "key": "C",
+        "text": "7.08 MeV"
+      },
+      {
+        "key": "D",
+        "text": "5.65 MeV"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Mass defect Δm = [2(1.0078) + 2(1.0087)] - 4.0026 = (2.0156 + 2.0174) - 4.0026 = 0.0304 u. Total binding energy = 0.0304 × 931.5 = 28.3176 MeV. Dividing by A = 4 nucleons gives 28.3176 / 4 = 7.0794 MeV ≈ 7.08 MeV.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 13: Nuclear Chemistry and Radioactivity (Mass Defect and Binding Energy per Nucleon)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-083",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 13,
+    "chapter": "Nuclear Chemistry and Radioactivity",
+    "topic": "Radiocarbon (^14C) Archaeological Dating",
+    "difficulty": "Hard",
+    "questionText": "Fresh living wood exhibits a ^14C beta-activity of 16.0 disintegrations min^-1 per gram of carbon, whereas charcoal from an excavated archaeological hearth exhibits 4.0 disintegrations min^-1 per gram of carbon. Given t_(1/2)(^14C) = 5730 years, estimate the age of the charcoal sample:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "17,190 years"
+      },
+      {
+        "key": "B",
+        "text": "5,730 years"
+      },
+      {
+        "key": "C",
+        "text": "22,920 years"
+      },
+      {
+        "key": "D",
+        "text": "11,460 years"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Activity ratio A_0 / A = 16.0 / 4.0 = 4 = 2^2, showing that exactly 2 half-lives have elapsed since the tree died. Age t = 2 × 5730 = 11,460 years.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 13: Nuclear Chemistry and Radioactivity (Radiocarbon (^14C) Archaeological Dating)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-084",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 14,
+    "chapter": "Basic Principles of Organic Chemistry",
+    "topic": "Homologous Series",
+    "difficulty": "Easy",
+    "questionText": "Any two adjacent members of an organic homologous series differ in molecular formula and molar mass respectively by:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "A –C_2H_4– unit and 28 u"
+      },
+      {
+        "key": "B",
+        "text": "A –CH_3 unit and 15 u"
+      },
+      {
+        "key": "C",
+        "text": "A –CH_2– unit and 14 u"
+      },
+      {
+        "key": "D",
+        "text": "Different functional groups with identical molar mass"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Successive homologues (e.g., methane CH_4, ethane C_2H_6, propane C_3H_8) share the same functional group and general formula while differing by one methylene (–CH_2–) group of mass 12 + 2(1) = 14 u.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Basic Principles of Organic Chemistry (Homologous Series)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-085",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 14,
+    "chapter": "Basic Principles of Organic Chemistry",
+    "topic": "Heterolytic Bond Fission",
+    "difficulty": "Easy",
+    "questionText": "Heterolytic cleavage of a covalent C–Br bond in (CH_3)_3C–Br, in which bromine departs with the shared pair of electrons as Br^-, produces which reactive carbon intermediate?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "A neutral carbon free radical [(CH_3)_3C·]"
+      },
+      {
+        "key": "B",
+        "text": "A carbocation [(CH_3)_3C^+]"
+      },
+      {
+        "key": "C",
+        "text": "A carbanion [(CH_3)_3C^-]"
+      },
+      {
+        "key": "D",
+        "text": "A singlet carbene"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "When the more electronegative Br takes both bonding electrons during heterolysis, the sp^2-hybridized carbon is left with a sextet of electrons and a +1 charge—a tert-butyl carbocation.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Basic Principles of Organic Chemistry (Heterolytic Bond Fission)",
+    "abilityTags": [
+      "scientific_understanding",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-086",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 14,
+    "chapter": "Basic Principles of Organic Chemistry",
+    "topic": "IUPAC Nomenclature of Polyfunctional Compounds",
+    "difficulty": "Medium",
+    "questionText": "What is the systematic IUPAC name of the bifunctional compound CH_3–CO–CH_2–CH_2–COOH?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "2-Oxopentanoic acid"
+      },
+      {
+        "key": "B",
+        "text": "1-Hydroxy-1,4-pentanedione"
+      },
+      {
+        "key": "C",
+        "text": "4-Oxopentanoic acid"
+      },
+      {
+        "key": "D",
+        "text": "4-Carboxybutan-2-one"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Carboxylic acid (–COOH) outranks ketone (>C=O) in IUPAC seniority, fixing the carboxyl carbon as C-1 of a 5-carbon chain (pentanoic acid) and treating the C-4 carbonyl as the prefix '4-oxo'.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Basic Principles of Organic Chemistry (IUPAC Nomenclature of Polyfunctional Compounds)",
+    "abilityTags": [
+      "analytical_thinking",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-087",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 14,
+    "chapter": "Basic Principles of Organic Chemistry",
+    "topic": "Metamerism in Ethers",
+    "difficulty": "Medium",
+    "questionText": "1-Methoxypropane (CH_3–O–CH_2CH_2CH_3) and ethoxyethane (CH_3CH_2–O–CH_2CH_3) have the same molecular formula (C_4H_10O) and functional group, but different alkyl groups attached to the divalent oxygen atom. They are classified as:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Metamers"
+      },
+      {
+        "key": "B",
+        "text": "Functional group isomers"
+      },
+      {
+        "key": "C",
+        "text": "Tautomers"
+      },
+      {
+        "key": "D",
+        "text": "Geometrical (cis-trans) isomers"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Metamerism is a form of structural isomerism arising from unequal distribution of carbon chains on either side of a polyvalent heteroatom or functional group such as –O–, –S–, or –CO–.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Basic Principles of Organic Chemistry (Metamerism in Ethers)",
+    "abilityTags": [
+      "scientific_understanding",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-088",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 14,
+    "chapter": "Basic Principles of Organic Chemistry",
+    "topic": "Hückel's Rule and Aromaticity",
+    "difficulty": "Hard",
+    "questionText": "Applying Hückel's (4n + 2) π-electron rule and planarity/conjugation criteria to cyclopentadienyl anion (C_5H_5^-), cyclopentadienyl cation (C_5H_5^+), and tropylium (cycloheptatrienyl) cation (C_7H_7^+), which statement is correct?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Both C_5H_5^- and C_7H_7^+ are aromatic (6 π electrons, n = 1), whereas C_5H_5^+ (4 π electrons) is antiaromatic"
+      },
+      {
+        "key": "B",
+        "text": "All three cyclic ions are aromatic because every ring atom is sp^2 hybridized"
+      },
+      {
+        "key": "C",
+        "text": "C_5H_5^+ is aromatic (n = 1), whereas C_5H_5^- and C_7H_7^+ are antiaromatic"
+      },
+      {
+        "key": "D",
+        "text": "Only C_7H_7^+ is aromatic, while both C_5H_5^- and C_5H_5^+ are non-aromatic"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "C_5H_5^- (two double bonds + one sp^2 lone pair = 6 π e^-) and C_7H_7^+ (three double bonds + vacant p orbital = 6 π e^-) are cyclic, planar, fully conjugated (4n + 2, n = 1) aromatic ions; C_5H_5^+ has 4n (4 π e^-) and is antiaromatic.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Basic Principles of Organic Chemistry (Hückel's Rule and Aromaticity)",
+    "abilityTags": [
+      "logical_reasoning",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-089",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 14,
+    "chapter": "Basic Principles of Organic Chemistry",
+    "topic": "Electronic Effects on Acidity of Phenols",
+    "difficulty": "Hard",
+    "questionText": "Arrange 4-nitrophenol (p-nitrophenol), phenol, and 4-methylphenol (p-cresol) in strictly decreasing order of acidic strength (decreasing K_a):",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "4-Methylphenol > Phenol > 4-Nitrophenol"
+      },
+      {
+        "key": "B",
+        "text": "Phenol > 4-Nitrophenol > 4-Methylphenol"
+      },
+      {
+        "key": "C",
+        "text": "4-Nitrophenol > 4-Methylphenol > Phenol"
+      },
+      {
+        "key": "D",
+        "text": "4-Nitrophenol > Phenol > 4-Methylphenol"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "The electron-withdrawing –NO_2 group at the para position exerts strong –R (resonance) and –I effects that delocalize negative charge and stabilize the phenoxide conjugate base, boosting acidity; electron-donating –CH_3 (+I and hyperconjugation) destabilizes phenoxide, weakening acidity.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Basic Principles of Organic Chemistry (Electronic Effects on Acidity of Phenols)",
+    "abilityTags": [
+      "logical_reasoning",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-090",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 15,
+    "chapter": "Hydrocarbons",
+    "topic": "Markovnikov Addition to Unsymmetrical Alkenes",
+    "difficulty": "Easy",
+    "questionText": "Reaction of propene (CH_3–CH=CH_2) with hydrogen bromide (HBr) in the dark and in the absence of peroxides yields predominantly:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1,2-Dibromopropane"
+      },
+      {
+        "key": "B",
+        "text": "1-Bromopropane"
+      },
+      {
+        "key": "C",
+        "text": "2-Bromopropene"
+      },
+      {
+        "key": "D",
+        "text": "2-Bromopropane"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Electrophilic protonation of propene forms the more stable secondary carbocation CH_3–CH^+–CH_3 rather than primary CH_3–CH_2–CH_2^+, followed by Br^- capture to give 2-bromopropane (Markovnikov's rule).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 15: Hydrocarbons (Markovnikov Addition to Unsymmetrical Alkenes)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-091",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 15,
+    "chapter": "Hydrocarbons",
+    "topic": "Specificity of the Kharasch Peroxide Effect",
+    "difficulty": "Medium",
+    "questionText": "Anti-Markovnikov free-radical addition across unsymmetrical alkenes in the presence of organic peroxides is observed selectively with HBr, and NOT with HCl or HI, because:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "HCl and HI cannot dissolve in organic solvents containing benzoyl peroxide"
+      },
+      {
+        "key": "B",
+        "text": "Both chain-propagation steps are exothermic only for HBr (H–Cl cleavage is endothermic, while I· addition to C=C is endothermic)"
+      },
+      {
+        "key": "C",
+        "text": "Peroxides oxidize HBr exclusively into hypobromous acid (HOBr)"
+      },
+      {
+        "key": "D",
+        "text": "Chlorine and iodine atoms carry two unpaired electrons in the ground state"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Free-radical chain propagation requires both (1) X· addition to C=C and (2) H-abstraction from HX to be energetically favourable (exothermic); HCl fails step 2 (strong H–Cl bond, 430 kJ/mol) and HI fails step 1 (weak C–I bond).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 15: Hydrocarbons (Specificity of the Kharasch Peroxide Effect)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-092",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 15,
+    "chapter": "Hydrocarbons",
+    "topic": "Conformations of Ethane",
+    "difficulty": "Medium",
+    "questionText": "In Newman projections of ethane (CH_3–CH_3), why is the staggered conformation ~12.5 kJ/mol lower in potential energy than the eclipsed conformation?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "C–H bonding electron pairs on adjacent carbons have maximum dihedral separation (60°), minimizing torsional repulsion"
+      },
+      {
+        "key": "B",
+        "text": "Intramolecular hydrogen bonding locks the staggered rotamer permanently"
+      },
+      {
+        "key": "C",
+        "text": "The C–C sigma bond cleaves homolytically whenever dihedral angle reaches 0°"
+      },
+      {
+        "key": "D",
+        "text": "Carbon hybridization changes from sp^3 to sp^2 in the eclipsed conformation"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "At a 60° dihedral angle (staggered), electron clouds of C–H bonds on front and rear carbons are maximally separated, minimizing torsional strain (and enabling weak σ_C–H → σ*_C–H hyperconjugative stabilization).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 15: Hydrocarbons (Conformations of Ethane)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-093",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 15,
+    "chapter": "Hydrocarbons",
+    "topic": "Distinguishing Terminal and Internal Alkynes",
+    "difficulty": "Medium",
+    "questionText": "Which reagent produces a white precipitate with propyne (CH_3–C≡CH) while giving no reaction with its isomer but-2-yne (CH_3–C≡C–CH_3)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Hydrogen gas over Lindlar's catalyst"
+      },
+      {
+        "key": "B",
+        "text": "Ammoniacal silver nitrate solution [Ag(NH_3)_2]^+ OH^-"
+      },
+      {
+        "key": "C",
+        "text": "Bromine dissolved in carbon tetrachloride (Br_2 / CCl_4)"
+      },
+      {
+        "key": "D",
+        "text": "Cold dilute alkaline KMnO_4 (Baeyer's reagent)"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Propyne possesses a weakly acidic sp-hybridized terminal ≡C–H proton that reacts with ammoniacal AgNO_3 (Tollens' reagent) to precipitate white silver propynide (CH_3–C≡CAg); internal alkynes lack ≡C–H.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 15: Hydrocarbons (Distinguishing Terminal and Internal Alkynes)",
+    "abilityTags": [
+      "analytical_thinking",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-094",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 15,
+    "chapter": "Hydrocarbons",
+    "topic": "Structure Elucidation via Reductive Ozonolysis",
+    "difficulty": "Hard",
+    "questionText": "An alkene of molecular formula C_6H_12 undergoes ozonolysis followed by cleavage with Zn and H_2O to yield propanone (CH_3COCH_3) as the ONLY organic product. What is the IUPAC name of this alkene?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Hex-3-ene"
+      },
+      {
+        "key": "B",
+        "text": "2-Methylpent-2-ene"
+      },
+      {
+        "key": "C",
+        "text": "2,3-Dimethylbut-2-ene"
+      },
+      {
+        "key": "D",
+        "text": "3,3-Dimethylbut-1-ene"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Reductive ozonolysis replaces C=C by two C=O groups. Rejoining two propanone molecules (CH_3)_2C=O + O=C(CH_3)_2 by removing the two oxygens reconstructs (CH_3)_2C=C(CH_3)_2, which is 2,3-dimethylbut-2-ene.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 15: Hydrocarbons (Structure Elucidation via Reductive Ozonolysis)",
+    "abilityTags": [
+      "logical_reasoning",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-095",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 15,
+    "chapter": "Hydrocarbons",
+    "topic": "Directive Influence in Electrophilic Aromatic Substitution",
+    "difficulty": "Hard",
+    "questionText": "When nitrobenzene reacts with Br_2 in the presence of anhydrous FeBr_3, why is 1-bromo-3-nitrobenzene (m-bromonitrobenzene) formed predominantly rather than ortho/para isomers?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Ortho and para positions are completely blocked by irreversible coordination of FeBr_3"
+      },
+      {
+        "key": "B",
+        "text": "The –NO_2 group withdraws electron density (–R and –I) and places positive charge directly adjacent to –NO_2 in ortho/para σ-complexes, making the meta pathway least destabilized"
+      },
+      {
+        "key": "C",
+        "text": "The –NO_2 group donates electrons selectively to meta carbons by +R resonance"
+      },
+      {
+        "key": "D",
+        "text": "Reaction proceeds via a benzyne elimination-addition pathway at room temperature"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "–NO_2 is a strong deactivating meta-director: ortho and para electrophilic attack generates a resonance contributor with carbocationic +1 charge on the ring carbon bonded directly to the positively polarized nitrogen of –NO_2, which is severely destabilized.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 15: Hydrocarbons (Directive Influence in Electrophilic Aromatic Substitution)",
+    "abilityTags": [
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-096",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 16,
+    "chapter": "Chemistry in Everyday Life",
+    "topic": "Therapeutic Classification of Aspirin",
+    "difficulty": "Easy",
+    "questionText": "Aspirin (2-acetoxybenzoic acid / acetylsalicylic acid) is widely prescribed as a:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Narcotic opioid alkaloid derived from opium poppy"
+      },
+      {
+        "key": "B",
+        "text": "Non-narcotic analgesic and antipyretic (with anti-platelet activity)"
+      },
+      {
+        "key": "C",
+        "text": "Broad-spectrum bactericidal aminoglycoside antibiotic"
+      },
+      {
+        "key": "D",
+        "text": "Synthetic cationic detergent and fabric softener"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Aspirin inhibits prostaglandin synthesis, relieving pain without stupor or addiction (non-narcotic analgesic), reducing fever (antipyretic), and inhibiting blood-clot platelet aggregation.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 16: Chemistry in Everyday Life (Therapeutic Classification of Aspirin)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-097",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 16,
+    "chapter": "Chemistry in Everyday Life",
+    "topic": "Natural Food Antioxidants",
+    "difficulty": "Easy",
+    "questionText": "Which fat-soluble vitamin present naturally in plant seed oils acts as a potent biological antioxidant that retards oxidative rancidity of unsaturated fats?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Vitamin E (α-tocopherol)"
+      },
+      {
+        "key": "B",
+        "text": "Vitamin D (calciferol)"
+      },
+      {
+        "key": "C",
+        "text": "Vitamin B_12 (cyanocobalamin)"
+      },
+      {
+        "key": "D",
+        "text": "Vitamin K (phylloquinone)"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vitamin E (tocopherols) contains a phenolic chromanol ring that donates a hydrogen atom to lipid peroxyl radicals, terminating free-radical chain oxidation in edible oils and cell membranes.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 16: Chemistry in Everyday Life (Natural Food Antioxidants)",
+    "abilityTags": [
+      "scientific_understanding",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-098",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 16,
+    "chapter": "Chemistry in Everyday Life",
+    "topic": "Antiseptics vs Disinfectants",
+    "difficulty": "Medium",
+    "questionText": "How does changing the concentration of aqueous phenol from 0.2% to 1.0% change its antimicrobial classification and safe usage?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "A 0.2% solution acts as a harsh floor disinfectant, whereas a 1.0% solution is taken orally as an antacid"
+      },
+      {
+        "key": "B",
+        "text": "A 0.2% phenol solution acts as an antiseptic safe for living skin, whereas a 1.0% phenol solution acts as a disinfectant for inanimate objects"
+      },
+      {
+        "key": "C",
+        "text": "Diluting phenol from 1.0% to 0.2% converts it into an anionic laundry detergent"
+      },
+      {
+        "key": "D",
+        "text": "Both 0.2% and 1.0% phenol solutions are non-toxic food preservatives"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "The same substance can act as an antiseptic at low concentration (0.2% phenol) without harming living human tissue, and as a caustic disinfectant for floors/drains at higher concentration (1% phenol).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 16: Chemistry in Everyday Life (Antiseptics vs Disinfectants)",
+    "abilityTags": [
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-099",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 16,
+    "chapter": "Chemistry in Everyday Life",
+    "topic": "Classification of Synthetic Detergents",
+    "difficulty": "Medium",
+    "questionText": "Cetyltrimethylammonium bromide, [CH_3(CH_2)_15N(CH_3)_3]^+ Br^-, used in hair conditioners and germicidal rinses, belongs to which class of cleansing agents?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Anionic alkylbenzene sulfonate detergents"
+      },
+      {
+        "key": "B",
+        "text": "Non-ionic polyethylene glycol detergents"
+      },
+      {
+        "key": "C",
+        "text": "Cationic detergents"
+      },
+      {
+        "key": "D",
+        "text": "Saponified sodium fatty-acid soaps"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Cetyltrimethylammonium bromide is a quaternary ammonium salt in which the surface-active long hydrocarbon chain resides on the positively charged ammonium cation—defining a cationic detergent.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 16: Chemistry in Everyday Life (Classification of Synthetic Detergents)",
+    "abilityTags": [
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-che-100",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-chemistry",
+    "subjectName": "Chemistry",
+    "chapterNumber": 16,
+    "chapter": "Chemistry in Everyday Life",
+    "topic": "Food Preservatives vs Synthetic Phenolic Antioxidants",
+    "difficulty": "Hard",
+    "questionText": "Distinguish the chemical roles of sodium benzoate (C_6H_5COONa) and BHT (butylated hydroxytoluene) in food chemistry:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Sodium benzoate is a non-nutritive artificial sweetener, whereas BHT is a broad-spectrum β-lactam antibiotic"
+      },
+      {
+        "key": "B",
+        "text": "Sodium benzoate inhibits microbial growth as a water-soluble preservative in acidic foods, whereas BHT donates H· from its hindered phenolic –OH to terminate free-radical lipid autoxidation"
+      },
+      {
+        "key": "C",
+        "text": "BHT precipitates calcium and magnesium ions in hard water, whereas sodium benzoate bleaches flour"
+      },
+      {
+        "key": "D",
+        "text": "Both compounds act solely by raising food pH above 11 to saponify bacterial membranes"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Sodium benzoate (active as undissociated benzoic acid in fruit juices/jams) suppresses yeast, mould, and bacterial growth; BHT (2,6-di-tert-butyl-4-methylphenol) forms a resonance- and sterically stabilized phenoxyl radical that halts rancidity in fats and butter.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 16: Chemistry in Everyday Life (Food Preservatives vs Synthetic Phenolic Antioxidants)",
+    "abilityTags": [
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  }
+]

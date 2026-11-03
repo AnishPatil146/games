@@ -1,0 +1,4497 @@
+[
+  {
+    "id": "msb-11-sci-phy-001",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 1,
+    "chapter": "Units and Measurements",
+    "topic": "SI Supplementary Units",
+    "difficulty": "Easy",
+    "questionText": "Which pair of physical quantities represents the two supplementary quantities in the SI system of units?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Luminous intensity and amount of substance"
+      },
+      {
+        "key": "B",
+        "text": "Electric current and thermodynamic temperature"
+      },
+      {
+        "key": "C",
+        "text": "Angular velocity and angular acceleration"
+      },
+      {
+        "key": "D",
+        "text": "Plane angle and solid angle"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "In the SI system, alongside the seven fundamental quantities, plane angle (measured in radian, rad) and solid angle (measured in steradian, sr) are defined as the two supplementary quantities.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Units and Measurements (SI Supplementary Units)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-002",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 1,
+    "chapter": "Units and Measurements",
+    "topic": "Significant Figures",
+    "difficulty": "Easy",
+    "questionText": "How many significant figures are present in the measured value 0.004050 m?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "4"
+      },
+      {
+        "key": "B",
+        "text": "6"
+      },
+      {
+        "key": "C",
+        "text": "7"
+      },
+      {
+        "key": "D",
+        "text": "3"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Leading zeros before the first non-zero digit (0.00) are only placeholders and are not significant. In 0.004050, the digits 4, 0, 5, and the trailing zero after the decimal point are all significant, giving 4 significant figures.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Units and Measurements (Significant Figures)",
+    "abilityTags": [
+      "analytical_thinking",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-003",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 1,
+    "chapter": "Units and Measurements",
+    "topic": "Astronomical Distance Units",
+    "difficulty": "Easy",
+    "questionText": "A parsec (pc) is defined in astronomy using stellar parallax. Approximately how many light-years equal 1 parsec?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1.496 light-years"
+      },
+      {
+        "key": "B",
+        "text": "0.307 light-years"
+      },
+      {
+        "key": "C",
+        "text": "9.46 light-years"
+      },
+      {
+        "key": "D",
+        "text": "3.26 light-years"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "1 parsec = 3.0857 × 10^16 m and 1 light-year = 9.46 × 10^15 m. Dividing 3.0857 × 10^16 by 9.46 × 10^15 gives approximately 3.26 light-years.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Units and Measurements (Astronomical Distance Units)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-004",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 1,
+    "chapter": "Units and Measurements",
+    "topic": "Dimensions of Physical Quantities",
+    "difficulty": "Medium",
+    "questionText": "What is the dimensional formula of dynamic coefficient of viscosity (η), defined by viscous force F = η A (dv/dx)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "[M^1 L^2 T^-1]"
+      },
+      {
+        "key": "B",
+        "text": "[M^1 L^1 T^-2]"
+      },
+      {
+        "key": "C",
+        "text": "[M^1 L^-1 T^-1]"
+      },
+      {
+        "key": "D",
+        "text": "[M^1 L^-2 T^-1]"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "From F = η A (dv/dx), η = F / [A (dv/dx)]. Substituting dimensions: [F] = [M^1 L^1 T^-2], [A] = [L^2], and [dv/dx] = [L T^-1]/[L] = [T^-1]. Thus [η] = [M^1 L^1 T^-2] / ([L^2][T^-1]) = [M^1 L^-1 T^-1].",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Units and Measurements (Dimensions of Physical Quantities)",
+    "abilityTags": [
+      "analytical_thinking",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-005",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 1,
+    "chapter": "Units and Measurements",
+    "topic": "Propagation of Errors",
+    "difficulty": "Medium",
+    "questionText": "The kinetic energy of a body is calculated from K = (1/2)mv^2. If the percentage error in measuring mass m is 1.5% and in measuring speed v is 2.5%, what is the maximum percentage error in K?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "5.25%"
+      },
+      {
+        "key": "B",
+        "text": "6.5%"
+      },
+      {
+        "key": "C",
+        "text": "7.75%"
+      },
+      {
+        "key": "D",
+        "text": "4.0%"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "For K = (1/2)m^1 v^2, the maximum relative error is ΔK/K = (Δm/m) + 2(Δv/v). Converting to percentages: (ΔK/K) × 100% = 1.5% + 2(2.5%) = 1.5% + 5.0% = 6.5%.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Units and Measurements (Propagation of Errors)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-006",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 1,
+    "chapter": "Units and Measurements",
+    "topic": "Principle of Homogeneity",
+    "difficulty": "Medium",
+    "questionText": "In the van der Waals gas equation (P + a/V^2)(V - b) = RT for 1 mole of a gas, where P is pressure and V is volume, what are the SI units of the constant 'a'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "N/m^4"
+      },
+      {
+        "key": "B",
+        "text": "J·m^2"
+      },
+      {
+        "key": "C",
+        "text": "N·m^2"
+      },
+      {
+        "key": "D",
+        "text": "N·m^4"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "By the principle of dimensional homogeneity, a/V^2 must have the same unit as pressure P (N/m^2). Since V has unit m^3, V^2 has unit m^6. Therefore, the unit of a = (N/m^2) × m^6 = N·m^4.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Units and Measurements (Principle of Homogeneity)",
+    "abilityTags": [
+      "logical_reasoning",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-007",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 1,
+    "chapter": "Units and Measurements",
+    "topic": "Combination of Percentage Errors",
+    "difficulty": "Hard",
+    "questionText": "A physical quantity X is determined from the relation X = (A^2 B^3) / (C √D). If the percentage errors in measuring A, B, C, and D are 1%, 2%, 3%, and 4% respectively, what is the maximum percentage error in X?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "15%"
+      },
+      {
+        "key": "B",
+        "text": "13%"
+      },
+      {
+        "key": "C",
+        "text": "10%"
+      },
+      {
+        "key": "D",
+        "text": "11%"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Using error propagation rules for products and quotients, (ΔX/X)% = 2(ΔA/A)% + 3(ΔB/B)% + 1(ΔC/C)% + (1/2)(ΔD/D)% = 2(1%) + 3(2%) + 3% + 0.5(4%) = 2% + 6% + 3% + 2% = 13%.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Units and Measurements (Combination of Percentage Errors)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-008",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 1,
+    "chapter": "Units and Measurements",
+    "topic": "Dimensional Derivation in New Fundamental Units",
+    "difficulty": "Hard",
+    "questionText": "If speed of light (c), gravitational constant (G), and Planck's constant (h) are chosen as fundamental quantities, what is the dimensional formula of mass in this system?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "[c^(1/2) G^(-1/2) h^(-1/2)]"
+      },
+      {
+        "key": "B",
+        "text": "[c^(3/2) G^(-1/2) h^(1/2)]"
+      },
+      {
+        "key": "C",
+        "text": "[c^(1/2) G^(-1/2) h^(1/2)]"
+      },
+      {
+        "key": "D",
+        "text": "[c^(-1/2) G^(1/2) h^(1/2)]"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Let [M] = [c]^x [G]^y [h]^z = [L T^-1]^x [M^-1 L^3 T^-2]^y [M^1 L^2 T^-1]^z. Equating powers: for M: -y + z = 1; for L: x + 3y + 2z = 0; for T: -x - 2y - z = 0. Adding the L and T equations gives y + z = 0, so z = -y. Substituting into -y + z = 1 gives 2z = 1 ⇒ z = 1/2, y = -1/2, and x = -2(-1/2) - 1/2 = 1/2.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Units and Measurements (Dimensional Derivation in New Fundamental Units)",
+    "abilityTags": [
+      "logical_reasoning",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-009",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 2,
+    "chapter": "Mathematical Methods",
+    "topic": "Unit Vectors",
+    "difficulty": "Easy",
+    "questionText": "What is the magnitude of the vector A = 3i - 4j + 12k in three-dimensional Cartesian space?",
+    "diagramType": "vector_plane",
+    "options": [
+      {
+        "key": "A",
+        "text": "13"
+      },
+      {
+        "key": "B",
+        "text": "5"
+      },
+      {
+        "key": "C",
+        "text": "19"
+      },
+      {
+        "key": "D",
+        "text": "√153"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "The magnitude of A = A_x i + A_y j + A_z k is √(A_x^2 + A_y^2 + A_z^2) = √(3^2 + (-4)^2 + 12^2) = √(9 + 16 + 144) = √169 = 13.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Mathematical Methods (Unit Vectors)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-010",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 2,
+    "chapter": "Mathematical Methods",
+    "topic": "Scalar Product Condition for Orthogonality",
+    "difficulty": "Easy",
+    "questionText": "Two non-zero vectors P and Q are mutually perpendicular if and only if:",
+    "diagramType": "vector_plane",
+    "options": [
+      {
+        "key": "A",
+        "text": "Their scalar (dot) product P · Q equals zero"
+      },
+      {
+        "key": "B",
+        "text": "Their scalar product P · Q equals |P||Q|"
+      },
+      {
+        "key": "C",
+        "text": "Their vector (cross) product P × Q equals the null vector"
+      },
+      {
+        "key": "D",
+        "text": "The sum |P + Q| equals |P| + |Q|"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Since P · Q = |P||Q| cos θ, for two non-zero vectors to be perpendicular (θ = 90°), cos 90° = 0, so P · Q = 0.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Mathematical Methods (Scalar Product Condition for Orthogonality)",
+    "abilityTags": [
+      "scientific_understanding",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-011",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 2,
+    "chapter": "Mathematical Methods",
+    "topic": "Orthogonal Vectors Parameter",
+    "difficulty": "Medium",
+    "questionText": "For what value of the scalar p are the vectors A = 2i + pj + k and B = 4i - 2j - 2k perpendicular to each other?",
+    "diagramType": "vector_plane",
+    "options": [
+      {
+        "key": "A",
+        "text": "2"
+      },
+      {
+        "key": "B",
+        "text": "3"
+      },
+      {
+        "key": "C",
+        "text": "-3"
+      },
+      {
+        "key": "D",
+        "text": "5"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "For perpendicular vectors, A · B = 0. Computing the dot product: (2)(4) + (p)(-2) + (1)(-2) = 0 ⇒ 8 - 2p - 2 = 0 ⇒ 2p = 6 ⇒ p = 3.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Mathematical Methods (Orthogonal Vectors Parameter)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-012",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 2,
+    "chapter": "Mathematical Methods",
+    "topic": "Parallelogram Law of Vector Addition",
+    "difficulty": "Medium",
+    "questionText": "Two forces of equal magnitude F act at a point such that the magnitude of their resultant is also F. What is the angle between the two forces?",
+    "diagramType": "vector_plane",
+    "options": [
+      {
+        "key": "A",
+        "text": "120°"
+      },
+      {
+        "key": "B",
+        "text": "150°"
+      },
+      {
+        "key": "C",
+        "text": "90°"
+      },
+      {
+        "key": "D",
+        "text": "60°"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "By the parallelogram law, R^2 = F^2 + F^2 + 2F^2 cos θ. Given R = F: F^2 = 2F^2(1 + cos θ) ⇒ 1 + cos θ = 1/2 ⇒ cos θ = -1/2 ⇒ θ = 120°.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Mathematical Methods (Parallelogram Law of Vector Addition)",
+    "abilityTags": [
+      "analytical_thinking",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-013",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 2,
+    "chapter": "Mathematical Methods",
+    "topic": "Calculus in Physics",
+    "difficulty": "Medium",
+    "questionText": "The displacement x (in metres) of a particle along the x-axis varies with time t (in seconds) as x = 2t^3 - 9t^2 + 12t + 4. At what instants is the instantaneous velocity of the particle zero?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "t = 1.5 s only"
+      },
+      {
+        "key": "B",
+        "text": "t = 2 s and t = 3 s"
+      },
+      {
+        "key": "C",
+        "text": "t = 1 s and t = 2 s"
+      },
+      {
+        "key": "D",
+        "text": "t = 0 s and t = 3 s"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Instantaneous velocity v = dx/dt = 6t^2 - 18t + 12 = 6(t^2 - 3t + 2) = 6(t - 1)(t - 2). Setting v = 0 yields t = 1 s and t = 2 s.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Mathematical Methods (Calculus in Physics)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-014",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 2,
+    "chapter": "Mathematical Methods",
+    "topic": "Vector Cross Product and Area of Parallelogram",
+    "difficulty": "Hard",
+    "questionText": "Two adjacent sides of a parallelogram are represented by vectors A = i + 2j + 3k and B = 3i - 2j + k. What is the area of the parallelogram in square units?",
+    "diagramType": "vector_plane",
+    "options": [
+      {
+        "key": "A",
+        "text": "4√3"
+      },
+      {
+        "key": "B",
+        "text": "12√2"
+      },
+      {
+        "key": "C",
+        "text": "8√6"
+      },
+      {
+        "key": "D",
+        "text": "8√3"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Area = |A × B|. Computing A × B: i(2·1 - 3(-2)) - j(1·1 - 3·3) + k(1(-2) - 2·3) = 8i + 8j - 8k. Its magnitude is √(8^2 + 8^2 + (-8)^2) = √(192) = 8√3 square units.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Mathematical Methods (Vector Cross Product and Area of Parallelogram)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-015",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 2,
+    "chapter": "Mathematical Methods",
+    "topic": "Relation Between Dot and Cross Products",
+    "difficulty": "Hard",
+    "questionText": "If two non-zero vectors A and B satisfy |A × B| = √3 (A · B), what is the magnitude of their resultant |A + B|?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "√(A^2 + B^2 + AB)"
+      },
+      {
+        "key": "B",
+        "text": "A + B"
+      },
+      {
+        "key": "C",
+        "text": "√(A^2 + B^2 + √3 AB)"
+      },
+      {
+        "key": "D",
+        "text": "√(A^2 + B^2 - AB)"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "|A × B| = √3 (A · B) implies AB sin θ = √3 AB cos θ, so tan θ = √3 and θ = 60° (since A · B > 0). Then |A + B| = √(A^2 + B^2 + 2AB cos 60°) = √(A^2 + B^2 + 2AB(1/2)) = √(A^2 + B^2 + AB).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Mathematical Methods (Relation Between Dot and Cross Products)",
+    "abilityTags": [
+      "logical_reasoning",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-016",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 3,
+    "chapter": "Motion in a Plane",
+    "topic": "Projectile Trajectory Shape",
+    "difficulty": "Easy",
+    "questionText": "Neglecting air resistance and assuming constant acceleration due to gravity, what is the shape of the path followed by an oblique projectile launched near the Earth's surface?",
+    "diagramType": "vector_plane",
+    "options": [
+      {
+        "key": "A",
+        "text": "Circular arc"
+      },
+      {
+        "key": "B",
+        "text": "Parabola"
+      },
+      {
+        "key": "C",
+        "text": "Ellipse with centre at launch point"
+      },
+      {
+        "key": "D",
+        "text": "Hyperbola"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Eliminating time t between x = (u cos θ)t and y = (u sin θ)t - (1/2)gt^2 gives y = x tan θ - [g / (2u^2 cos^2 θ)] x^2, which is a quadratic equation y = ax - bx^2 representing a parabola.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Motion in a Plane (Projectile Trajectory Shape)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-017",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 3,
+    "chapter": "Motion in a Plane",
+    "topic": "Complementary Angles of Projection",
+    "difficulty": "Easy",
+    "questionText": "For a given initial speed u on level ground, a projectile achieves the exact same horizontal range R for which pair of launch angles?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "30° and 45°"
+      },
+      {
+        "key": "B",
+        "text": "35° and 55°"
+      },
+      {
+        "key": "C",
+        "text": "40° and 60°"
+      },
+      {
+        "key": "D",
+        "text": "25° and 75°"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Horizontal range R = (u^2 sin 2θ)/g is identical for complementary launch angles θ and (90° - θ) because sin(2(90° - θ)) = sin(180° - 2θ) = sin 2θ. Since 35° + 55° = 90°, they yield the same range.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Motion in a Plane (Complementary Angles of Projection)",
+    "abilityTags": [
+      "logical_reasoning",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-018",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 3,
+    "chapter": "Motion in a Plane",
+    "topic": "Projectile Maximum Height and Range",
+    "difficulty": "Medium",
+    "questionText": "A ball is projected from level ground with speed 20 m/s at an angle of 30° above the horizontal. Taking g = 10 m/s^2, what is the maximum height reached by the ball?",
+    "diagramType": "vector_plane",
+    "options": [
+      {
+        "key": "A",
+        "text": "5 m"
+      },
+      {
+        "key": "B",
+        "text": "15 m"
+      },
+      {
+        "key": "C",
+        "text": "10 m"
+      },
+      {
+        "key": "D",
+        "text": "20 m"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Maximum height H = (u^2 sin^2 θ) / (2g) = [20^2 × (sin 30°)^2] / (2 × 10) = [400 × (1/2)^2] / 20 = 100 / 20 = 5 m.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Motion in a Plane (Projectile Maximum Height and Range)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-019",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 3,
+    "chapter": "Motion in a Plane",
+    "topic": "Uniform Circular Motion",
+    "difficulty": "Medium",
+    "questionText": "A stone tied to a string of length 0.5 m is whirled in a horizontal circle at a constant speed, completing 2 revolutions per second. What is the magnitude of its centripetal acceleration?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "4 π^2 m/s^2"
+      },
+      {
+        "key": "B",
+        "text": "8 π^2 m/s^2"
+      },
+      {
+        "key": "C",
+        "text": "2 π^2 m/s^2"
+      },
+      {
+        "key": "D",
+        "text": "16 π^2 m/s^2"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Angular speed ω = 2πn = 2π(2) = 4π rad/s. Centripetal acceleration a_c = ω^2 r = (4π)^2 × 0.5 = 16π^2 × 0.5 = 8 π^2 m/s^2.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Motion in a Plane (Uniform Circular Motion)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-020",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 3,
+    "chapter": "Motion in a Plane",
+    "topic": "Relative Velocity in Two Dimensions",
+    "difficulty": "Medium",
+    "questionText": "Raindrops are falling vertically downward at 12 m/s relative to the ground. A cyclist rides due east on a level road at 5 m/s. What is the speed of the raindrops relative to the cyclist?",
+    "diagramType": "vector_plane",
+    "options": [
+      {
+        "key": "A",
+        "text": "13 m/s"
+      },
+      {
+        "key": "B",
+        "text": "8.5 m/s"
+      },
+      {
+        "key": "C",
+        "text": "7 m/s"
+      },
+      {
+        "key": "D",
+        "text": "17 m/s"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Velocity of rain relative to cyclist is v_rc = v_r - v_c. Since v_r (vertical, 12 m/s) and -v_c (west, 5 m/s) are mutually perpendicular, |v_rc| = √(12^2 + 5^2) = √(144 + 25) = √169 = 13 m/s.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Motion in a Plane (Relative Velocity in Two Dimensions)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-021",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 3,
+    "chapter": "Motion in a Plane",
+    "topic": "Range to Maximum Height Ratio",
+    "difficulty": "Hard",
+    "questionText": "For an oblique projectile launched over horizontal ground, the horizontal range R is equal to 4√3 times the maximum height H attained. What is the angle of projection with the horizontal?",
+    "diagramType": "vector_plane",
+    "options": [
+      {
+        "key": "A",
+        "text": "30°"
+      },
+      {
+        "key": "B",
+        "text": "60°"
+      },
+      {
+        "key": "C",
+        "text": "15°"
+      },
+      {
+        "key": "D",
+        "text": "45°"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Using R = (u^2 sin 2θ)/g = (2u^2 sin θ cos θ)/g and H = (u^2 sin^2 θ)/(2g), we have R/H = 4 cot θ. Given R = 4√3 H, 4 cot θ = 4√3 ⇒ cot θ = √3 ⇒ tan θ = 1/√3 ⇒ θ = 30°.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Motion in a Plane (Range to Maximum Height Ratio)",
+    "abilityTags": [
+      "logical_reasoning",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-022",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 3,
+    "chapter": "Motion in a Plane",
+    "topic": "Conical Pendulum",
+    "difficulty": "Hard",
+    "questionText": "A bob tied to a inextensible string of length 1.0 m revolves in a horizontal circle as a conical pendulum such that the string makes a constant angle of 60° with the vertical. Taking g = 10 m/s^2, what is its period of revolution?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "(2π / √5) s"
+      },
+      {
+        "key": "B",
+        "text": "(π / √5) s"
+      },
+      {
+        "key": "C",
+        "text": "(√3 π / √5) s"
+      },
+      {
+        "key": "D",
+        "text": "(π / √10) s"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "The time period of a conical pendulum is T = 2π √(L cos θ / g). Substituting L = 1.0 m, cos 60° = 0.5, and g = 10 m/s^2 gives T = 2π √(0.5 / 10) = 2π / √20 = 2π / (2√5) = (π / √5) s.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Motion in a Plane (Conical Pendulum)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-023",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 3,
+    "chapter": "Motion in a Plane",
+    "topic": "2D Kinematics with Position Vector",
+    "difficulty": "Hard",
+    "questionText": "The position vector of a particle moving in the xy-plane is given by r(t) = (3t)i + (4t - 5t^2)j metres, where t is in seconds. What is the speed of the particle at t = 1 s?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "9 m/s"
+      },
+      {
+        "key": "B",
+        "text": "√10 m/s"
+      },
+      {
+        "key": "C",
+        "text": "5 m/s"
+      },
+      {
+        "key": "D",
+        "text": "3√5 m/s"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Velocity vector v(t) = dr/dt = 3i + (4 - 10t)j m/s. At t = 1 s, v(1) = 3i - 6j m/s. Therefore speed |v(1)| = √(3^2 + (-6)^2) = √(9 + 36) = √45 = 3√5 m/s.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Motion in a Plane (2D Kinematics with Position Vector)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-024",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 4,
+    "chapter": "Laws of Motion",
+    "topic": "Inertial Frames and Newton's First Law",
+    "difficulty": "Easy",
+    "questionText": "Newton's first law of motion primarily establishes the physical concept of inertia and defines:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Inertial frames of reference in which an isolated body moves with constant velocity"
+      },
+      {
+        "key": "B",
+        "text": "The proportionality between gravitational mass and universal constant G"
+      },
+      {
+        "key": "C",
+        "text": "Action-reaction pairs acting on the exact same body"
+      },
+      {
+        "key": "D",
+        "text": "Conservation of mechanical energy in non-conservative fields"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Newton's first law defines inertia (resistance to change in velocity) and identifies inertial frames—reference frames in which zero net external force corresponds to zero acceleration.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Laws of Motion (Inertial Frames and Newton's First Law)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-025",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 4,
+    "chapter": "Laws of Motion",
+    "topic": "Coefficient of Restitution",
+    "difficulty": "Easy",
+    "questionText": "In a perfectly inelastic head-on collision between two bodies that stick together after impact, what is the value of the coefficient of restitution (e)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "0"
+      },
+      {
+        "key": "B",
+        "text": "0.5"
+      },
+      {
+        "key": "C",
+        "text": "1"
+      },
+      {
+        "key": "D",
+        "text": "Between 0 and 1"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Coefficient of restitution e = (relative speed of separation) / (relative speed of approach). Since the two bodies stick together after a perfectly inelastic collision, their relative velocity of separation is zero, so e = 0.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Laws of Motion (Coefficient of Restitution)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-026",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 4,
+    "chapter": "Laws of Motion",
+    "topic": "Impulse and Linear Momentum",
+    "difficulty": "Medium",
+    "questionText": "A 0.20 kg cricket ball travelling horizontally at 15 m/s is hit straight back along its incoming path at 25 m/s. What is the magnitude of the impulse imparted to the ball by the bat?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "3.0 N·s"
+      },
+      {
+        "key": "B",
+        "text": "5.0 N·s"
+      },
+      {
+        "key": "C",
+        "text": "2.0 N·s"
+      },
+      {
+        "key": "D",
+        "text": "8.0 N·s"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Taking the outgoing direction as positive, initial velocity u = -15 m/s and final velocity v = +25 m/s. Impulse J = Δp = m(v - u) = 0.20 × [25 - (-15)] = 0.20 × 40 = 8.0 N·s.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Laws of Motion (Impulse and Linear Momentum)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-027",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 4,
+    "chapter": "Laws of Motion",
+    "topic": "Conservation of Linear Momentum",
+    "difficulty": "Medium",
+    "questionText": "A stationary shell of mass 5 kg explodes into two fragments of masses 2 kg and 3 kg. If the 2 kg fragment flies off with a speed of 18 m/s, what is the recoil speed of the 3 kg fragment?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "12 m/s"
+      },
+      {
+        "key": "B",
+        "text": "27 m/s"
+      },
+      {
+        "key": "C",
+        "text": "15 m/s"
+      },
+      {
+        "key": "D",
+        "text": "9 m/s"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Internal explosion conserves total linear momentum. Since initial momentum is zero, m_1 v_1 = m_2 v_2 in magnitude ⇒ 2 × 18 = 3 × v_2 ⇒ v_2 = 36 / 3 = 12 m/s.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Laws of Motion (Conservation of Linear Momentum)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-028",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 4,
+    "chapter": "Laws of Motion",
+    "topic": "Torque of a Coplanar Force",
+    "difficulty": "Medium",
+    "questionText": "A force F = (2i + 3j) N acts on a rigid body at a point whose position vector relative to the origin is r = (4i + 2j) m. What is the torque τ about the origin?",
+    "diagramType": "vector_plane",
+    "options": [
+      {
+        "key": "A",
+        "text": "-8k N·m"
+      },
+      {
+        "key": "B",
+        "text": "16k N·m"
+      },
+      {
+        "key": "C",
+        "text": "14k N·m"
+      },
+      {
+        "key": "D",
+        "text": "8k N·m"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Torque τ = r × F = (4i + 2j) × (2i + 3j) = (4 × 3 - 2 × 2)k = (12 - 4)k = 8k N·m.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Laws of Motion (Torque of a Coplanar Force)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-029",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 4,
+    "chapter": "Laws of Motion",
+    "topic": "Work Done by a Variable Force",
+    "difficulty": "Hard",
+    "questionText": "A particle moves along the x-axis from x = 0 m to x = 2 m under the action of a variable force F(x) = (6x^2 - 4x + 5) N directed along +x. How much work is done by this force?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "14 J"
+      },
+      {
+        "key": "B",
+        "text": "18 J"
+      },
+      {
+        "key": "C",
+        "text": "26 J"
+      },
+      {
+        "key": "D",
+        "text": "22 J"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Work done W = ∫_0^2 (6x^2 - 4x + 5) dx = [2x^3 - 2x^2 + 5x]_0^2 = 2(8) - 2(4) + 5(2) = 16 - 8 + 10 = 18 J.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Laws of Motion (Work Done by a Variable Force)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-030",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 4,
+    "chapter": "Laws of Motion",
+    "topic": "Centre of Mass of Discrete Particles",
+    "difficulty": "Hard",
+    "questionText": "Three point masses of 1 kg, 2 kg, and 3 kg are located in the xy-plane at (0, 0), (3 m, 0), and (0, 4 m) respectively. What are the coordinates of the centre of mass of the system?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "(2 m, 1 m)"
+      },
+      {
+        "key": "B",
+        "text": "(1 m, 1.33 m)"
+      },
+      {
+        "key": "C",
+        "text": "(1.5 m, 2 m)"
+      },
+      {
+        "key": "D",
+        "text": "(1 m, 2 m)"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Total mass M = 1 + 2 + 3 = 6 kg. x_cm = (1×0 + 2×3 + 3×0)/6 = 6/6 = 1 m; y_cm = (1×0 + 2×0 + 3×4)/6 = 12/6 = 2 m. Hence R_cm = (1 m, 2 m).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Laws of Motion (Centre of Mass of Discrete Particles)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-031",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 4,
+    "chapter": "Laws of Motion",
+    "topic": "Self-Adjusting Static Friction on an Incline",
+    "difficulty": "Hard",
+    "questionText": "A 4 kg block is placed gently on a rough plane inclined at 30° to the horizontal, where the coefficient of static friction is μ_s = 0.60 (take g = 10 m/s^2). What is the actual frictional force acting on the block?",
+    "diagramType": "vector_plane",
+    "options": [
+      {
+        "key": "A",
+        "text": "20 N"
+      },
+      {
+        "key": "B",
+        "text": "20.78 N"
+      },
+      {
+        "key": "C",
+        "text": "12 N"
+      },
+      {
+        "key": "D",
+        "text": "24 N"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Down-slope gravitational component is mg sin 30° = 4 × 10 × 0.5 = 20 N. Limiting static friction is f_s,max = μ_s mg cos 30° = 0.60 × 40 × (√3/2) ≈ 20.78 N. Since mg sin 30° < f_s,max, the block remains at rest and static friction self-adjusts to match the driving force of 20 N.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Laws of Motion (Self-Adjusting Static Friction on an Incline)",
+    "abilityTags": [
+      "analytical_thinking",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-032",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 5,
+    "chapter": "Gravitation",
+    "topic": "Kepler's Law of Areas",
+    "difficulty": "Easy",
+    "questionText": "Kepler's second law (a planet's radius vector sweeps out equal areas in equal intervals of time) is a direct consequence of the conservation of:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Gravitational potential energy"
+      },
+      {
+        "key": "B",
+        "text": "Linear momentum along the orbit"
+      },
+      {
+        "key": "C",
+        "text": "Centripetal acceleration"
+      },
+      {
+        "key": "D",
+        "text": "Angular momentum about the Sun"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Gravitational force is a central force exerting zero torque about the Sun, so angular momentum L is conserved. Since areal velocity dA/dt = L/(2m), constant L guarantees constant areal velocity.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Gravitation (Kepler's Law of Areas)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-033",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 5,
+    "chapter": "Gravitation",
+    "topic": "Gravity at Earth's Centre",
+    "difficulty": "Easy",
+    "questionText": "Assuming the Earth to be a sphere of uniform mass density, what is the value of acceleration due to gravity g at the exact geometric centre of the Earth?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "9.8 m/s^2"
+      },
+      {
+        "key": "B",
+        "text": "4.9 m/s^2"
+      },
+      {
+        "key": "C",
+        "text": "Zero"
+      },
+      {
+        "key": "D",
+        "text": "Infinite"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Variation of gravity with depth d is g_d = g(1 - d/R). At the centre of the Earth, d = R, so g_d = g(1 - 1) = 0 because gravitational pulls from surrounding mass elements cancel symmetrically.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Gravitation (Gravity at Earth's Centre)",
+    "abilityTags": [
+      "scientific_understanding",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-034",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 5,
+    "chapter": "Gravitation",
+    "topic": "Variation of Gravity with Altitude",
+    "difficulty": "Medium",
+    "questionText": "At what altitude h above the Earth's surface (in terms of Earth's radius R) does the acceleration due to gravity decrease to 1/9 of its value at the surface?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "8R"
+      },
+      {
+        "key": "B",
+        "text": "R/3"
+      },
+      {
+        "key": "C",
+        "text": "3R"
+      },
+      {
+        "key": "D",
+        "text": "2R"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Using the exact formula g_h = g [R / (R + h)]^2, setting g_h = g/9 gives [R / (R + h)]^2 = 1/9 ⇒ R / (R + h) = 1/3 ⇒ R + h = 3R ⇒ h = 2R.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Gravitation (Variation of Gravity with Altitude)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-035",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 5,
+    "chapter": "Gravitation",
+    "topic": "Escape Velocity vs Critical Orbital Velocity",
+    "difficulty": "Medium",
+    "questionText": "What is the ratio of the escape speed (v_e) from the Earth's surface to the critical orbital speed (v_c) of a satellite orbiting just above the Earth's surface?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "2 : 1"
+      },
+      {
+        "key": "B",
+        "text": "√2 : 1"
+      },
+      {
+        "key": "C",
+        "text": "1 : √2"
+      },
+      {
+        "key": "D",
+        "text": "√3 : 1"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Escape speed at the surface is v_e = √(2GM/R) = √(2gR), while critical orbital speed close to the surface is v_c = √(GM/R) = √(gR). Hence v_e : v_c = √2 : 1.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Gravitation (Escape Velocity vs Critical Orbital Velocity)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-036",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 5,
+    "chapter": "Gravitation",
+    "topic": "Variation of Gravity with Depth",
+    "difficulty": "Medium",
+    "questionText": "Assuming uniform density of the Earth (radius R), if surface gravity is g_0, what is the acceleration due to gravity at a depth d = R/4 below the surface?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "0.50 g_0"
+      },
+      {
+        "key": "B",
+        "text": "0.64 g_0"
+      },
+      {
+        "key": "C",
+        "text": "0.25 g_0"
+      },
+      {
+        "key": "D",
+        "text": "0.75 g_0"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "At depth d inside a uniform spherical Earth, g_d = g_0(1 - d/R). Substituting d = R/4 gives g_d = g_0(1 - 1/4) = (3/4)g_0 = 0.75 g_0.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Gravitation (Variation of Gravity with Depth)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-037",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 5,
+    "chapter": "Gravitation",
+    "topic": "Binding Energy of an Orbiting Satellite",
+    "difficulty": "Hard",
+    "questionText": "A 400 kg satellite revolves in a circular orbit at an altitude h = R above the Earth's surface, where R is the Earth's radius. Given GM/R = 6.25 × 10^7 J/kg, what is the binding energy of the satellite?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1.25 × 10^10 J"
+      },
+      {
+        "key": "B",
+        "text": "6.25 × 10^9 J"
+      },
+      {
+        "key": "C",
+        "text": "2.50 × 10^10 J"
+      },
+      {
+        "key": "D",
+        "text": "3.125 × 10^9 J"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Orbital radius r = R + h = 2R. Binding energy of a satellite in circular orbit is BE = GMm / (2r) = GMm / (4R) = (GM/R) × (m/4) = 6.25 × 10^7 × (400 / 4) = 6.25 × 10^9 J.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Gravitation (Binding Energy of an Orbiting Satellite)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-038",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 5,
+    "chapter": "Gravitation",
+    "topic": "Orbital Speed Scaling",
+    "difficulty": "Hard",
+    "questionText": "Two satellites A and B move in circular orbits of radii 4R and 9R respectively around the same planet. If the orbital speed of satellite A is 6.0 km/s, what is the orbital speed of satellite B?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "2.67 km/s"
+      },
+      {
+        "key": "B",
+        "text": "4.0 km/s"
+      },
+      {
+        "key": "C",
+        "text": "4.5 km/s"
+      },
+      {
+        "key": "D",
+        "text": "9.0 km/s"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Critical orbital speed v = √(GM/r) is inversely proportional to √r. Therefore v_B / v_A = √(r_A / r_B) = √(4R / 9R) = 2/3, giving v_B = (2/3) × 6.0 = 4.0 km/s.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Gravitation (Orbital Speed Scaling)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-039",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 6,
+    "chapter": "Mechanical Properties of Solids",
+    "topic": "Hooke's Law",
+    "difficulty": "Easy",
+    "questionText": "Within the elastic limit of a solid material, Hooke's law states that:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Longitudinal strain is independent of applied load"
+      },
+      {
+        "key": "B",
+        "text": "Stress is directly proportional to strain"
+      },
+      {
+        "key": "C",
+        "text": "Plastic deformation is completely reversible upon unloading"
+      },
+      {
+        "key": "D",
+        "text": "Stress is inversely proportional to Young's modulus"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Robert Hooke established that for small deformations within the elastic limit, the restoring stress developed inside a body is directly proportional to the fractional deformation (strain).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Mechanical Properties of Solids (Hooke's Law)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-040",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 6,
+    "chapter": "Mechanical Properties of Solids",
+    "topic": "Compressibility",
+    "difficulty": "Easy",
+    "questionText": "The reciprocal of the bulk modulus of elasticity (1/K) of a material is defined as its:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Poisson's ratio"
+      },
+      {
+        "key": "B",
+        "text": "Modulus of rigidity"
+      },
+      {
+        "key": "C",
+        "text": "Compressibility"
+      },
+      {
+        "key": "D",
+        "text": "Ductility index"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Compressibility is defined as fractional volume change per unit change in pressure, -ΔV / (V ΔP), which equals the reciprocal of bulk modulus K.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Mechanical Properties of Solids (Compressibility)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-041",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 6,
+    "chapter": "Mechanical Properties of Solids",
+    "topic": "Young's Modulus Calculation",
+    "difficulty": "Medium",
+    "questionText": "A 2.0 m long metallic wire of cross-sectional area 2.0 × 10^-6 m^2 elongates by 1.0 mm when stretched by a tensile force of 400 N within its elastic limit. What is the Young's modulus of the wire?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "2.0 × 10^11 N/m^2"
+      },
+      {
+        "key": "B",
+        "text": "8.0 × 10^10 N/m^2"
+      },
+      {
+        "key": "C",
+        "text": "4.0 × 10^8 N/m^2"
+      },
+      {
+        "key": "D",
+        "text": "4.0 × 10^11 N/m^2"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Young's modulus Y = (F L) / (A ΔL) = (400 × 2.0) / (2.0 × 10^-6 × 1.0 × 10^-3) = 800 / (2.0 × 10^-9) = 4.0 × 10^11 N/m^2.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Mechanical Properties of Solids (Young's Modulus Calculation)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-042",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 6,
+    "chapter": "Mechanical Properties of Solids",
+    "topic": "Poisson's Ratio",
+    "difficulty": "Medium",
+    "questionText": "When a cylindrical metal rod is subjected to axial tension, its length increases by 0.20% while its diameter decreases by 0.06%. What is Poisson's ratio (σ) for the metal?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "3.33"
+      },
+      {
+        "key": "B",
+        "text": "0.30"
+      },
+      {
+        "key": "C",
+        "text": "0.12"
+      },
+      {
+        "key": "D",
+        "text": "0.33"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Poisson's ratio σ = (lateral strain) / (longitudinal strain) = |ΔD/D| / (ΔL/L) = 0.06% / 0.20% = 0.30.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Mechanical Properties of Solids (Poisson's Ratio)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-043",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 6,
+    "chapter": "Mechanical Properties of Solids",
+    "topic": "Elastic Strain Energy",
+    "difficulty": "Medium",
+    "questionText": "A wire of volume 5.0 × 10^-5 m^3 made of steel (Young's modulus Y = 2.0 × 10^11 Pa) is subjected to a uniform tensile stress of 2.0 × 10^8 Pa. How much elastic potential energy is stored in the wire?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "5.0 J"
+      },
+      {
+        "key": "B",
+        "text": "2.5 J"
+      },
+      {
+        "key": "C",
+        "text": "10.0 J"
+      },
+      {
+        "key": "D",
+        "text": "0.5 J"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Strain energy per unit volume u = (stress)^2 / (2Y) = (2.0 × 10^8)^2 / (2 × 2.0 × 10^11) = 4.0 × 10^16 / 4.0 × 10^11 = 1.0 × 10^5 J/m^3. Total stored energy U = u × V = 1.0 × 10^5 × 5.0 × 10^-5 = 5.0 J.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Mechanical Properties of Solids (Elastic Strain Energy)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-044",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 6,
+    "chapter": "Mechanical Properties of Solids",
+    "topic": "Comparison of Wire Elongations",
+    "difficulty": "Hard",
+    "questionText": "Two wires A and B made of the same alloy have lengths in the ratio 1 : 2 and radii in the ratio 2 : 1. When stretched by identical tensile loads within the elastic limit, what is the ratio of their elongations (ΔL_A : ΔL_B)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1 : 8"
+      },
+      {
+        "key": "B",
+        "text": "2 : 1"
+      },
+      {
+        "key": "C",
+        "text": "1 : 2"
+      },
+      {
+        "key": "D",
+        "text": "1 : 4"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Elongation ΔL = FL / (π r^2 Y). For equal F and Y, ΔL_A / ΔL_B = (L_A / L_B) × (r_B / r_A)^2 = (1/2) × (1/2)^2 = 1/8, i.e., 1 : 8.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Mechanical Properties of Solids (Comparison of Wire Elongations)",
+    "abilityTags": [
+      "analytical_thinking",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-045",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 6,
+    "chapter": "Mechanical Properties of Solids",
+    "topic": "Relation Between Elastic Moduli",
+    "difficulty": "Hard",
+    "questionText": "For a homogeneous isotropic solid, Young's modulus Y is found to be 2.4 times its modulus of rigidity η. What is the Poisson's ratio σ of the solid?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "0.40"
+      },
+      {
+        "key": "B",
+        "text": "0.25"
+      },
+      {
+        "key": "C",
+        "text": "0.30"
+      },
+      {
+        "key": "D",
+        "text": "0.20"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Using the standard relation Y = 2η(1 + σ), substituting Y = 2.4η gives 2.4η = 2η(1 + σ) ⇒ 1 + σ = 1.20 ⇒ σ = 0.20.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Mechanical Properties of Solids (Relation Between Elastic Moduli)",
+    "abilityTags": [
+      "logical_reasoning",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-046",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 7,
+    "chapter": "Thermal Properties of Matter",
+    "topic": "Thermodynamic Temperature Scale",
+    "difficulty": "Easy",
+    "questionText": "Absolute zero (0 K) on the Kelvin thermodynamic scale corresponds to which temperature on the Celsius scale?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "-100.00 °C"
+      },
+      {
+        "key": "B",
+        "text": "273.15 °C"
+      },
+      {
+        "key": "C",
+        "text": "-273.15 °C"
+      },
+      {
+        "key": "D",
+        "text": "-459.67 °C"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "The Celsius and Kelvin scales are related by T(K) = t(°C) + 273.15. Setting T = 0 K yields t = -273.15 °C.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Thermal Properties of Matter (Thermodynamic Temperature Scale)",
+    "abilityTags": [
+      "scientific_understanding",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-047",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 7,
+    "chapter": "Thermal Properties of Matter",
+    "topic": "Anomalous Behaviour of Water",
+    "difficulty": "Easy",
+    "questionText": "When pure liquid water is heated at standard atmospheric pressure from 0 °C to 10 °C, at approximately what temperature does its density reach a maximum?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "10 °C"
+      },
+      {
+        "key": "B",
+        "text": "0 °C"
+      },
+      {
+        "key": "C",
+        "text": "4 °C"
+      },
+      {
+        "key": "D",
+        "text": "2.5 °C"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Due to anomalous expansion, water contracts upon heating from 0 °C to 4 °C (reaching minimum volume and maximum density at 4 °C) before expanding above 4 °C.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Thermal Properties of Matter (Anomalous Behaviour of Water)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-048",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 7,
+    "chapter": "Thermal Properties of Matter",
+    "topic": "Coefficients of Thermal Expansion",
+    "difficulty": "Medium",
+    "questionText": "An isotropic brass cube has a coefficient of linear thermal expansion α = 1.9 × 10^-5 K^-1. What is its coefficient of cubical (volume) expansion γ?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "5.7 × 10^-5 K^-1"
+      },
+      {
+        "key": "B",
+        "text": "1.9 × 10^-5 K^-1"
+      },
+      {
+        "key": "C",
+        "text": "3.8 × 10^-5 K^-1"
+      },
+      {
+        "key": "D",
+        "text": "9.5 × 10^-6 K^-1"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "For small thermal expansions in an isotropic solid, γ = 3α = 3 × 1.9 × 10^-5 K^-1 = 5.7 × 10^-5 K^-1.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Thermal Properties of Matter (Coefficients of Thermal Expansion)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-049",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 7,
+    "chapter": "Thermal Properties of Matter",
+    "topic": "Latent Heat and Calorimetry",
+    "difficulty": "Medium",
+    "questionText": "How much heat energy (in kJ) is needed to convert 50 g of ice at 0 °C completely into water at 20 °C? (Latent heat of fusion of ice = 336 J/g; specific heat capacity of water = 4.2 J/(g·°C))",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "25.2 kJ"
+      },
+      {
+        "key": "B",
+        "text": "16.8 kJ"
+      },
+      {
+        "key": "C",
+        "text": "21.0 kJ"
+      },
+      {
+        "key": "D",
+        "text": "4.2 kJ"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Total heat Q = m L_f + m c ΔT = (50 × 336) + (50 × 4.2 × 20) = 16,800 J + 4,200 J = 21,000 J = 21.0 kJ.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Thermal Properties of Matter (Latent Heat and Calorimetry)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-050",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 7,
+    "chapter": "Thermal Properties of Matter",
+    "topic": "Wien's Displacement Law",
+    "difficulty": "Medium",
+    "questionText": "A star radiates approximately as a blackbody with peak spectral emission at wavelength λ_max = 500 nm. Taking Wien's constant b = 2.90 × 10^-3 m·K, what is the surface temperature of the star?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "7250 K"
+      },
+      {
+        "key": "B",
+        "text": "5800 K"
+      },
+      {
+        "key": "C",
+        "text": "1450 K"
+      },
+      {
+        "key": "D",
+        "text": "2900 K"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "By Wien's displacement law, T = b / λ_max = (2.90 × 10^-3 m·K) / (500 × 10^-9 m) = 2.90 × 10^-3 / 5.0 × 10^-7 = 5800 K.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Thermal Properties of Matter (Wien's Displacement Law)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-051",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 7,
+    "chapter": "Thermal Properties of Matter",
+    "topic": "Newton's Law of Cooling",
+    "difficulty": "Hard",
+    "questionText": "A hot liquid cools from 70 °C to 60 °C in 5 minutes in a room maintained at 25 °C. Using the mean-temperature form of Newton's law of cooling, how much time will it take to cool from 60 °C to 50 °C?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "6 min 00 s"
+      },
+      {
+        "key": "B",
+        "text": "5 min 00 s"
+      },
+      {
+        "key": "C",
+        "text": "6 min 40 s"
+      },
+      {
+        "key": "D",
+        "text": "7 min 30 s"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "First interval: (70 - 60)/5 = K[(70 + 60)/2 - 25] ⇒ 2 = 40K ⇒ K = 1/20 min^-1. Second interval: (60 - 50)/t = (1/20)[(60 + 50)/2 - 25] = 30/20 = 1.5 ⇒ t = 10/1.5 = 20/3 min = 6 min 40 s.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Thermal Properties of Matter (Newton's Law of Cooling)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-052",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 7,
+    "chapter": "Thermal Properties of Matter",
+    "topic": "Steady-State Conduction in Series Rods",
+    "difficulty": "Hard",
+    "questionText": "Two rods A and B of identical length and cross-sectional area have thermal conductivities 300 W/(m·K) and 100 W/(m·K) respectively, and are joined end-to-end in series with lagged sides. If the free end of A is held at 100 °C and the free end of B at 20 °C, what is the steady-state interface temperature?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "75 °C"
+      },
+      {
+        "key": "B",
+        "text": "40 °C"
+      },
+      {
+        "key": "C",
+        "text": "60 °C"
+      },
+      {
+        "key": "D",
+        "text": "80 °C"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "In steady state, heat current through both rods is equal: K_A A(100 - T)/L = K_B A(T - 20)/L ⇒ 300(100 - T) = 100(T - 20) ⇒ 300 - 3T = T - 20 ⇒ 4T = 320 ⇒ T = 80 °C.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Thermal Properties of Matter (Steady-State Conduction in Series Rods)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-053",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 8,
+    "chapter": "Sound",
+    "topic": "Nature of Sound Waves",
+    "difficulty": "Easy",
+    "questionText": "Why can sound waves propagating through air NOT undergo polarization?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Because their speed is much lower than the speed of light"
+      },
+      {
+        "key": "B",
+        "text": "Because air molecules have zero restoring elasticity"
+      },
+      {
+        "key": "C",
+        "text": "Because sound waves in air are longitudinal mechanical waves"
+      },
+      {
+        "key": "D",
+        "text": "Because polarization only occurs in waves with frequencies below 20 Hz"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Polarization restricts oscillations to a specific plane perpendicular to wave propagation and is therefore exclusive to transverse waves; sound in air oscillates parallel to propagation (longitudinal).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Sound (Nature of Sound Waves)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-054",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 8,
+    "chapter": "Sound",
+    "topic": "Limits of Audibility",
+    "difficulty": "Easy",
+    "questionText": "What is the standard frequency range of audible sound waves for a normal young human ear?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "200 Hz to 200,000 Hz"
+      },
+      {
+        "key": "B",
+        "text": "20 Hz to 20,000 Hz"
+      },
+      {
+        "key": "C",
+        "text": "20 kHz to 20 MHz"
+      },
+      {
+        "key": "D",
+        "text": "0.5 Hz to 200 Hz"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Human hearing spans approximately 20 Hz to 20 kHz (20,000 Hz); frequencies below 20 Hz are infrasonic and above 20 kHz are ultrasonic.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Sound (Limits of Audibility)",
+    "abilityTags": [
+      "scientific_understanding",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-055",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 8,
+    "chapter": "Sound",
+    "topic": "Echo Range Finding",
+    "difficulty": "Medium",
+    "questionText": "A hiker claps loudly in front of a steep rock face and hears the distinct echo 1.5 s later. If the speed of sound in air is 340 m/s, how far away is the rock face?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "170 m"
+      },
+      {
+        "key": "B",
+        "text": "255 m"
+      },
+      {
+        "key": "C",
+        "text": "226.7 m"
+      },
+      {
+        "key": "D",
+        "text": "510 m"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "The sound travels a round-trip distance 2d in time t = 1.5 s. Hence d = (v × t) / 2 = (340 × 1.5) / 2 = 255 m.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Sound (Echo Range Finding)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-056",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 8,
+    "chapter": "Sound",
+    "topic": "Temperature Dependence of Speed of Sound",
+    "difficulty": "Medium",
+    "questionText": "By what factor does the speed of sound in an ideal diatomic gas change if its temperature is raised from 27 °C to 927 °C (assuming no dissociation)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "It doubles (factor of 2)"
+      },
+      {
+        "key": "B",
+        "text": "It quadruples (factor of 4)"
+      },
+      {
+        "key": "C",
+        "text": "It increases by a factor of √(927/27)"
+      },
+      {
+        "key": "D",
+        "text": "It increases by a factor of √3"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Speed of sound v = √(γRT/M) ∝ √T, where T is absolute temperature in Kelvin. Here T_1 = 27 + 273 = 300 K and T_2 = 927 + 273 = 1200 K, so v_2 / v_1 = √(1200 / 300) = √4 = 2.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Sound (Temperature Dependence of Speed of Sound)",
+    "abilityTags": [
+      "analytical_thinking",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-057",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 8,
+    "chapter": "Sound",
+    "topic": "Progressive Wave Equation",
+    "difficulty": "Medium",
+    "questionText": "A progressive wave along a string is described in SI units by y(x, t) = 0.04 sin[2π(25t - x/2)]. What is the wave speed along the string?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "25 m/s"
+      },
+      {
+        "key": "B",
+        "text": "12.5 m/s"
+      },
+      {
+        "key": "C",
+        "text": "100 m/s"
+      },
+      {
+        "key": "D",
+        "text": "50 m/s"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Comparing with y = A sin[2π(nt - x/λ)], frequency n = 25 Hz and wavelength λ = 2 m. Wave speed v = nλ = 25 × 2 = 50 m/s.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Sound (Progressive Wave Equation)",
+    "abilityTags": [
+      "analytical_thinking",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-058",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 8,
+    "chapter": "Sound",
+    "topic": "Doppler Effect — Approaching Source",
+    "difficulty": "Hard",
+    "questionText": "A locomotive whistle emits sound of frequency 640 Hz while approaching a stationary commuter on a platform at 20 m/s. Taking the speed of sound in still air as 340 m/s, what apparent frequency does the commuter hear?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "677.6 Hz"
+      },
+      {
+        "key": "B",
+        "text": "604.7 Hz"
+      },
+      {
+        "key": "C",
+        "text": "720 Hz"
+      },
+      {
+        "key": "D",
+        "text": "680 Hz"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "For an approaching source and stationary observer, n' = n [v / (v - v_s)] = 640 × [340 / (340 - 20)] = 640 × (340 / 320) = 2 × 340 = 680 Hz.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Sound (Doppler Effect — Approaching Source)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-059",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 8,
+    "chapter": "Sound",
+    "topic": "Doppler Effect — Both Source and Observer Moving",
+    "difficulty": "Hard",
+    "questionText": "An ambulance siren of frequency 480 Hz moves at 20 m/s toward a car that is simultaneously approaching the ambulance at 12 m/s along the same straight road. If the speed of sound in air is 340 m/s, what frequency is heard by the driver of the car?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "528 Hz"
+      },
+      {
+        "key": "B",
+        "text": "492 Hz"
+      },
+      {
+        "key": "C",
+        "text": "436 Hz"
+      },
+      {
+        "key": "D",
+        "text": "510 Hz"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "When observer and source approach each other, n' = n [(v + v_o) / (v - v_s)] = 480 × [(340 + 12) / (340 - 20)] = 480 × (352 / 320) = 1.5 × 352 = 528 Hz.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Sound (Doppler Effect — Both Source and Observer Moving)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-060",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 9,
+    "chapter": "Optics",
+    "topic": "Optical Fibres",
+    "difficulty": "Easy",
+    "questionText": "High-speed optical communication fibres guide light pulses from core to receiver with negligible attenuation primarily via:",
+    "diagramType": "optics_refraction",
+    "options": [
+      {
+        "key": "A",
+        "text": "Diffraction through microscopic pinholes along the core"
+      },
+      {
+        "key": "B",
+        "text": "Chromatic dispersion inside the outer buffer jacket"
+      },
+      {
+        "key": "C",
+        "text": "Total internal reflection at the core-cladding interface"
+      },
+      {
+        "key": "D",
+        "text": "Specular reflection from silvered metallic walls"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "In an optical fibre, the core has a higher refractive index than the surrounding cladding; rays striking the boundary above the critical angle undergo repeated total internal reflection.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Optics (Optical Fibres)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-061",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 9,
+    "chapter": "Optics",
+    "topic": "Optical Power of a Lens",
+    "difficulty": "Easy",
+    "questionText": "What is the optical power (in dioptres) of a thin converging lens of focal length +25 cm in air?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "+0.04 D"
+      },
+      {
+        "key": "B",
+        "text": "+2.5 D"
+      },
+      {
+        "key": "C",
+        "text": "-4.0 D"
+      },
+      {
+        "key": "D",
+        "text": "+4.0 D"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Optical power P = 1 / f(in metres) = 1 / (+0.25 m) = +4.0 D.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Optics (Optical Power of a Lens)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-062",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 9,
+    "chapter": "Optics",
+    "topic": "Refraction and Wave Parameters",
+    "difficulty": "Medium",
+    "questionText": "Monochromatic light travels from vacuum (c = 3.0 × 10^8 m/s) into crown glass of absolute refractive index 1.5. How do its speed and frequency behave upon entering the glass?",
+    "diagramType": "optics_refraction",
+    "options": [
+      {
+        "key": "A",
+        "text": "Speed reduces to 2.0 × 10^8 m/s while frequency remains unchanged"
+      },
+      {
+        "key": "B",
+        "text": "Frequency increases by 1.5 while speed reduces to 2.0 × 10^8 m/s"
+      },
+      {
+        "key": "C",
+        "text": "Speed remains 3.0 × 10^8 m/s while wavelength increases by 1.5"
+      },
+      {
+        "key": "D",
+        "text": "Both speed and frequency decrease by a factor of 1.5"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Frequency depends solely on the source and stays invariant across media boundaries. Speed inside the medium becomes v = c / n = (3.0 × 10^8) / 1.5 = 2.0 × 10^8 m/s (and wavelength reduces by 1.5).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Optics (Refraction and Wave Parameters)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-063",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 9,
+    "chapter": "Optics",
+    "topic": "Critical Angle for Total Internal Reflection",
+    "difficulty": "Medium",
+    "questionText": "What is the critical angle for a ray of light travelling from a dense transparent crystal of refractive index 2.0 into air (n = 1.0)?",
+    "diagramType": "optics_refraction",
+    "options": [
+      {
+        "key": "A",
+        "text": "45°"
+      },
+      {
+        "key": "B",
+        "text": "30°"
+      },
+      {
+        "key": "C",
+        "text": "60°"
+      },
+      {
+        "key": "D",
+        "text": "24.4°"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "At the critical angle θ_c, sin θ_c = n_rarer / n_denser = 1.0 / 2.0 = 0.5, which gives θ_c = arcsin(0.5) = 30°.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Optics (Critical Angle for Total Internal Reflection)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-064",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 9,
+    "chapter": "Optics",
+    "topic": "Thin Lenses in Contact",
+    "difficulty": "Medium",
+    "questionText": "A thin convex lens of focal length +20 cm is placed in coaxial contact with a thin concave lens of focal length -30 cm. What is the equivalent focal length of the combination?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "+50 cm"
+      },
+      {
+        "key": "B",
+        "text": "-60 cm"
+      },
+      {
+        "key": "C",
+        "text": "+12 cm"
+      },
+      {
+        "key": "D",
+        "text": "+60 cm"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "For thin lenses in contact, 1/F = 1/f_1 + 1/f_2 = 1/20 + 1/(-30) = (3 - 2)/60 = +1/60 cm^-1, so F = +60 cm (converging combination).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Optics (Thin Lenses in Contact)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-065",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 9,
+    "chapter": "Optics",
+    "topic": "Minimum Deviation in an Equilateral Prism",
+    "difficulty": "Hard",
+    "questionText": "A monochromatic ray passing symmetrically through an equilateral prism (A = 60°) suffers a minimum deviation δ_m = 30°. What is the refractive index of the prism material?",
+    "diagramType": "optics_refraction",
+    "options": [
+      {
+        "key": "A",
+        "text": "√(3/2) (≈ 1.225)"
+      },
+      {
+        "key": "B",
+        "text": "1.500"
+      },
+      {
+        "key": "C",
+        "text": "√2 (≈ 1.414)"
+      },
+      {
+        "key": "D",
+        "text": "√3 (≈ 1.732)"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Using the prism formula n = sin[(A + δ_m)/2] / sin(A/2), we get n = sin[(60° + 30°)/2] / sin(30°) = sin 45° / sin 30° = (1/√2) / (1/2) = √2 ≈ 1.414.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Optics (Minimum Deviation in an Equilateral Prism)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-066",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 9,
+    "chapter": "Optics",
+    "topic": "Lens Maker's Equation in a Liquid Medium",
+    "difficulty": "Hard",
+    "questionText": "A thin glass lens of refractive index 1.50 has a focal length of +20 cm in air (n = 1.00). What will be its focal length when completely immersed in a transparent liquid of refractive index 1.25?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "+25 cm"
+      },
+      {
+        "key": "B",
+        "text": "+50 cm"
+      },
+      {
+        "key": "C",
+        "text": "-50 cm"
+      },
+      {
+        "key": "D",
+        "text": "+40 cm"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "By the lens maker's formula, 1/f_air = (1.50 - 1)(1/R_1 - 1/R_2) = 0.50 K, and 1/f_liq = (1.50/1.25 - 1) K = (1.20 - 1) K = 0.20 K. Dividing gives f_liq / f_air = 0.50 / 0.20 = 2.5 ⇒ f_liq = 2.5 × 20 = +50 cm.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Optics (Lens Maker's Equation in a Liquid Medium)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-067",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 9,
+    "chapter": "Optics",
+    "topic": "Dispersive Power of Glass",
+    "difficulty": "Hard",
+    "questionText": "For a dense flint glass prism, the refractive indices for violet, yellow, and red wavelengths are n_v = 1.62, n_y = 1.60, and n_r = 1.58 respectively. What is the dispersive power (ω) of this glass?",
+    "diagramType": "optics_refraction",
+    "options": [
+      {
+        "key": "A",
+        "text": "1/15 (≈ 0.0667)"
+      },
+      {
+        "key": "B",
+        "text": "1/12 (≈ 0.0833)"
+      },
+      {
+        "key": "C",
+        "text": "1/20 (0.0500)"
+      },
+      {
+        "key": "D",
+        "text": "1/25 (0.0400)"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Dispersive power ω = (n_v - n_r) / (n_y - 1) = (1.62 - 1.58) / (1.60 - 1) = 0.04 / 0.60 = 1/15 ≈ 0.0667.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Optics (Dispersive Power of Glass)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-068",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 10,
+    "chapter": "Electrostatics",
+    "topic": "Quantization of Charge",
+    "difficulty": "Easy",
+    "questionText": "According to the principle of quantization of electric charge, every observable net charge Q on an isolated body is an integral multiple of the elementary charge e equal to:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "6.25 × 10^-18 C"
+      },
+      {
+        "key": "B",
+        "text": "1.6 × 10^-19 C"
+      },
+      {
+        "key": "C",
+        "text": "8.85 × 10^-12 C"
+      },
+      {
+        "key": "D",
+        "text": "9.1 × 10^-31 C"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Any free electric charge satisfies Q = ±ne (n = 0, 1, 2, ...), where the elementary charge e = 1.6 × 10^-19 C.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Electrostatics (Quantization of Charge)",
+    "abilityTags": [
+      "scientific_understanding",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-069",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 10,
+    "chapter": "Electrostatics",
+    "topic": "Conductor in Electrostatic Equilibrium",
+    "difficulty": "Easy",
+    "questionText": "What is the electrostatic field intensity at any interior point inside the bulk metal of an isolated charged conductor in electrostatic equilibrium?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Proportional to distance from the surface"
+      },
+      {
+        "key": "B",
+        "text": "Equal to σ / (2ε_0)"
+      },
+      {
+        "key": "C",
+        "text": "Zero everywhere inside the conductor"
+      },
+      {
+        "key": "D",
+        "text": "Directed radially inward toward the centre of mass"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Free electrons redistribute on the outer surface until all internal electric fields cancel completely; otherwise, residual fields would drive continuous currents, violating equilibrium.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Electrostatics (Conductor in Electrostatic Equilibrium)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-070",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 10,
+    "chapter": "Electrostatics",
+    "topic": "Coulomb's Law in Vacuum",
+    "difficulty": "Medium",
+    "questionText": "Two point charges of +4.0 μC and +9.0 μC are placed 0.30 m apart in free space [take 1/(4πε_0) = 9.0 × 10^9 N·m^2/C^2]. What is the magnitude of the electrostatic force between them?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1.08 N"
+      },
+      {
+        "key": "B",
+        "text": "0.36 N"
+      },
+      {
+        "key": "C",
+        "text": "3.6 N"
+      },
+      {
+        "key": "D",
+        "text": "36 N"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "By Coulomb's law, F = [1/(4πε_0)] (q_1 q_2 / r^2) = (9.0 × 10^9 × 4.0 × 10^-6 × 9.0 × 10^-6) / (0.30)^2 = 0.324 / 0.09 = 3.6 N.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Electrostatics (Coulomb's Law in Vacuum)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-071",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 10,
+    "chapter": "Electrostatics",
+    "topic": "Gauss's Law with Dipoles and Point Charge",
+    "difficulty": "Medium",
+    "questionText": "A closed Gaussian surface encloses two electric dipoles and an isolated point charge of +8.85 μC. Taking ε_0 = 8.85 × 10^-12 C^2/(N·m^2), what is the net outward electric flux through the surface?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Zero"
+      },
+      {
+        "key": "B",
+        "text": "1.0 × 10^6 N·m^2/C"
+      },
+      {
+        "key": "C",
+        "text": "3.0 × 10^6 N·m^2/C"
+      },
+      {
+        "key": "D",
+        "text": "8.85 × 10^5 N·m^2/C"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Each electric dipole has zero net charge (+q - q = 0), so total enclosed charge Q_enc = +8.85 × 10^-6 C. By Gauss's law, Φ = Q_enc / ε_0 = (8.85 × 10^-6) / (8.85 × 10^-12) = 1.0 × 10^6 N·m^2/C.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Electrostatics (Gauss's Law with Dipoles and Point Charge)",
+    "abilityTags": [
+      "logical_reasoning",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-072",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 10,
+    "chapter": "Electrostatics",
+    "topic": "Torque on an Electric Dipole",
+    "difficulty": "Medium",
+    "questionText": "An electric dipole of dipole moment 5.0 × 10^-8 C·m is oriented at 30° to a uniform electric field of magnitude 4.0 × 10^4 N/C. What is the magnitude of the torque acting on the dipole?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "5.0 × 10^-4 N·m"
+      },
+      {
+        "key": "B",
+        "text": "2.0 × 10^-3 N·m"
+      },
+      {
+        "key": "C",
+        "text": "1.0 × 10^-3 N·m"
+      },
+      {
+        "key": "D",
+        "text": "1.73 × 10^-3 N·m"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Magnitude of torque τ = p E sin θ = (5.0 × 10^-8) × (4.0 × 10^4) × sin 30° = 2.0 × 10^-3 × 0.5 = 1.0 × 10^-3 N·m.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Electrostatics (Torque on an Electric Dipole)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-073",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 10,
+    "chapter": "Electrostatics",
+    "topic": "Electrostatic Null Point",
+    "difficulty": "Hard",
+    "questionText": "Two positive point charges +4 μC and +16 μC are fixed 60 cm apart in vacuum. At what distance from the +4 μC charge along the line segment joining them is the resultant electric field zero?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "12 cm"
+      },
+      {
+        "key": "B",
+        "text": "30 cm"
+      },
+      {
+        "key": "C",
+        "text": "20 cm"
+      },
+      {
+        "key": "D",
+        "text": "15 cm"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Let the null point lie at distance x cm from +4 μC (and 60 - x cm from +16 μC). Equating field magnitudes: 4 / x^2 = 16 / (60 - x)^2 ⇒ 2 / x = 4 / (60 - x) ⇒ 60 - x = 2x ⇒ 3x = 60 ⇒ x = 20 cm.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Electrostatics (Electrostatic Null Point)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-074",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 10,
+    "chapter": "Electrostatics",
+    "topic": "Axial and Equatorial Fields of a Short Dipole",
+    "difficulty": "Hard",
+    "questionText": "For a short electric dipole of dipole moment p, compare the electric field E_a at a distant point r on its axis with the electric field E_e at the same distance r on its equatorial plane:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "|E_a| = |E_e| and the vectors E_a and E_e are perpendicular (90° apart)"
+      },
+      {
+        "key": "B",
+        "text": "|E_a| = 4|E_e| and the vectors E_a and E_e are antiparallel (180° apart)"
+      },
+      {
+        "key": "C",
+        "text": "|E_a| = 2|E_e| and the vectors E_a and E_e are antiparallel (180° apart)"
+      },
+      {
+        "key": "D",
+        "text": "|E_a| = 2|E_e| and the vectors E_a and E_e are parallel (0° apart)"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "At large r (r ≫ 2l), E_a = [1/(4πε_0)](2p/r^3) directed along p, while E_e = -[1/(4πε_0)](p/r^3) directed opposite to p. Thus |E_a| = 2|E_e| and the angle between them is 180°.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Electrostatics (Axial and Equatorial Fields of a Short Dipole)",
+    "abilityTags": [
+      "analytical_thinking",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-075",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 11,
+    "chapter": "Electric Current Through Conductors",
+    "topic": "Unit of Electrical Resistivity",
+    "difficulty": "Easy",
+    "questionText": "What is the SI unit of electrical resistivity (specific resistance) ρ of a material?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Ohm per metre (Ω/m)"
+      },
+      {
+        "key": "B",
+        "text": "Ohm-metre (Ω·m)"
+      },
+      {
+        "key": "C",
+        "text": "Siemens per metre (S/m)"
+      },
+      {
+        "key": "D",
+        "text": "Ohm per square metre (Ω/m^2)"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "From R = ρL/A, resistivity ρ = RA/L, giving SI unit Ω × m^2 / m = Ω·m.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Electric Current Through Conductors (Unit of Electrical Resistivity)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-076",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 11,
+    "chapter": "Electric Current Through Conductors",
+    "topic": "Temperature Dependence of Resistivity",
+    "difficulty": "Easy",
+    "questionText": "How does electrical resistivity change when temperature is moderately increased in a pure metallic conductor compared with an intrinsic semiconductor?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "It increases in both the metal and the intrinsic semiconductor"
+      },
+      {
+        "key": "B",
+        "text": "It increases in the metal and decreases in the intrinsic semiconductor"
+      },
+      {
+        "key": "C",
+        "text": "It decreases in the metal and increases in the intrinsic semiconductor"
+      },
+      {
+        "key": "D",
+        "text": "It decreases in both the metal and the intrinsic semiconductor"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "In metals, increased thermal agitation shortens relaxation time and raises resistivity; in intrinsic semiconductors, thermal excitation exponentially increases carrier density, lowering resistivity.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Electric Current Through Conductors (Temperature Dependence of Resistivity)",
+    "abilityTags": [
+      "scientific_understanding",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-077",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 11,
+    "chapter": "Electric Current Through Conductors",
+    "topic": "Electron Drift Speed",
+    "difficulty": "Medium",
+    "questionText": "A copper wire of cross-sectional area 1.0 × 10^-6 m^2 carries a steady current of 3.2 A. Given free electron density n = 8.0 × 10^28 m^-3 and e = 1.6 × 10^-19 C, what is the drift speed of the electrons?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "2.5 × 10^-3 m/s"
+      },
+      {
+        "key": "B",
+        "text": "4.0 × 10^-4 m/s"
+      },
+      {
+        "key": "C",
+        "text": "1.6 × 10^-4 m/s"
+      },
+      {
+        "key": "D",
+        "text": "2.5 × 10^-4 m/s"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "From I = n A e v_d, drift speed v_d = I / (n A e) = 3.2 / (8.0 × 10^28 × 1.0 × 10^-6 × 1.6 × 10^-19) = 3.2 / 12,800 = 2.5 × 10^-4 m/s.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Electric Current Through Conductors (Electron Drift Speed)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-078",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 11,
+    "chapter": "Electric Current Through Conductors",
+    "topic": "Series-Parallel Resistor Combination",
+    "difficulty": "Medium",
+    "questionText": "Two resistors of 6 Ω and 12 Ω are connected in parallel, and this combination is connected in series with a 4 Ω resistor across an ideal 16 V DC source. What is the total current drawn from the source?",
+    "diagramType": "circuit_ohm",
+    "options": [
+      {
+        "key": "A",
+        "text": "1.0 A"
+      },
+      {
+        "key": "B",
+        "text": "0.73 A"
+      },
+      {
+        "key": "C",
+        "text": "2.0 A"
+      },
+      {
+        "key": "D",
+        "text": "4.0 A"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Parallel resistance R_p = (6 × 12) / (6 + 12) = 72 / 18 = 4 Ω. Total equivalent resistance R_eq = 4 + 4 = 8 Ω. By Ohm's law, I = V / R_eq = 16 / 8 = 2.0 A.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Electric Current Through Conductors (Series-Parallel Resistor Combination)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-079",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 11,
+    "chapter": "Electric Current Through Conductors",
+    "topic": "Temperature Coefficient of Resistance",
+    "difficulty": "Medium",
+    "questionText": "A platinum resistance thermometer coil has resistance 5.0 Ω at 0 °C and 6.0 Ω at 100 °C. What is the mean temperature coefficient of resistance (α) of platinum over this range?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "5.0 × 10^-3 °C^-1"
+      },
+      {
+        "key": "B",
+        "text": "2.0 × 10^-3 °C^-1"
+      },
+      {
+        "key": "C",
+        "text": "1.0 × 10^-2 °C^-1"
+      },
+      {
+        "key": "D",
+        "text": "1.67 × 10^-3 °C^-1"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Using R_t = R_0(1 + α t), α = (R_100 - R_0) / (R_0 × 100) = (6.0 - 5.0) / (5.0 × 100) = 1.0 / 500 = 2.0 × 10^-3 °C^-1.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Electric Current Through Conductors (Temperature Coefficient of Resistance)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-080",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 11,
+    "chapter": "Electric Current Through Conductors",
+    "topic": "EMF and Internal Resistance of a Cell",
+    "difficulty": "Hard",
+    "questionText": "A cell of EMF E and internal resistance r delivers a terminal voltage of 1.8 V across a 9.0 Ω external resistor, and 1.6 V across a 4.0 Ω external resistor. What are the values of E and r?",
+    "diagramType": "circuit_ohm",
+    "options": [
+      {
+        "key": "A",
+        "text": "E = 1.9 V, r = 0.5 Ω"
+      },
+      {
+        "key": "B",
+        "text": "E = 2.2 V, r = 2.0 Ω"
+      },
+      {
+        "key": "C",
+        "text": "E = 2.0 V, r = 0.5 Ω"
+      },
+      {
+        "key": "D",
+        "text": "E = 2.0 V, r = 1.0 Ω"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "In case 1, current I_1 = 1.8 / 9.0 = 0.2 A, so E = 1.8 + 0.2r. In case 2, I_2 = 1.6 / 4.0 = 0.4 A, so E = 1.6 + 0.4r. Equating: 1.8 + 0.2r = 1.6 + 0.4r ⇒ 0.2r = 0.2 ⇒ r = 1.0 Ω, and E = 1.8 + 0.2(1.0) = 2.0 V.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Electric Current Through Conductors (EMF and Internal Resistance of a Cell)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-081",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 11,
+    "chapter": "Electric Current Through Conductors",
+    "topic": "Resistance After Stretching and Joule Power",
+    "difficulty": "Hard",
+    "questionText": "A uniform metallic wire of initial resistance 10 Ω is drawn out uniformly so that its length doubles while its total volume remains constant. If this stretched wire is connected across a 20 V ideal battery, what power is dissipated in it?",
+    "diagramType": "circuit_ohm",
+    "options": [
+      {
+        "key": "A",
+        "text": "40 W"
+      },
+      {
+        "key": "B",
+        "text": "20 W"
+      },
+      {
+        "key": "C",
+        "text": "10 W"
+      },
+      {
+        "key": "D",
+        "text": "5 W"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "At constant volume V = A L, doubling length halves cross-sectional area (A' = A/2), so R' = ρ(2L)/(A/2) = 4R = 40 Ω. Power dissipated P = V^2 / R' = 20^2 / 40 = 400 / 40 = 10 W.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Electric Current Through Conductors (Resistance After Stretching and Joule Power)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-082",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 12,
+    "chapter": "Magnetism",
+    "topic": "Properties of Magnetic Field Lines",
+    "difficulty": "Easy",
+    "questionText": "Unlike electrostatic field lines which begin on positive charges and terminate on negative charges, magnetic field lines of a bar magnet always:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Form closed continuous loops running north-to-south outside and south-to-north inside the magnet"
+      },
+      {
+        "key": "B",
+        "text": "Exist only outside the ferromagnetic material of the magnet"
+      },
+      {
+        "key": "C",
+        "text": "Intersect at the neutral points along the equatorial axis"
+      },
+      {
+        "key": "D",
+        "text": "Originate at the north pole and terminate permanently at the south pole"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Because isolated magnetic monopoles do not exist (∇·B = 0), magnetic field lines always form closed loops continuing from the south pole to the north pole inside the magnet.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Magnetism (Properties of Magnetic Field Lines)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-083",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 12,
+    "chapter": "Magnetism",
+    "topic": "Magnetic Dipole Moment Unit",
+    "difficulty": "Easy",
+    "questionText": "Which of the following is the standard SI unit of magnetic dipole moment?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "T·m^2"
+      },
+      {
+        "key": "B",
+        "text": "A/m"
+      },
+      {
+        "key": "C",
+        "text": "A·m^2"
+      },
+      {
+        "key": "D",
+        "text": "Wb/m"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Magnetic dipole moment m = I A (current × area) has SI unit ampere-metre squared (A·m^2), which is also equivalent to joule per tesla (J/T).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Magnetism (Magnetic Dipole Moment Unit)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-084",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 12,
+    "chapter": "Magnetism",
+    "topic": "Magnetic Moment of a Bar Magnet",
+    "difficulty": "Medium",
+    "questionText": "A short bar magnet has pole strength 15 A·m and magnetic length (2l) equal to 8.0 cm. What is the magnitude of its magnetic dipole moment?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1.2 A·m^2"
+      },
+      {
+        "key": "B",
+        "text": "2.4 A·m^2"
+      },
+      {
+        "key": "C",
+        "text": "0.60 A·m^2"
+      },
+      {
+        "key": "D",
+        "text": "120 A·m^2"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Magnetic dipole moment m = q_m × (2l) = 15 A·m × 0.08 m = 1.2 A·m^2.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Magnetism (Magnetic Moment of a Bar Magnet)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-085",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 12,
+    "chapter": "Magnetism",
+    "topic": "Earth's Magnetic Inclination (Dip)",
+    "difficulty": "Medium",
+    "questionText": "At a certain geomagnetic station on Earth, the horizontal component of Earth's magnetic field (B_H) is equal in magnitude to its vertical component (B_V). What is the angle of dip (δ) at that location?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "90°"
+      },
+      {
+        "key": "B",
+        "text": "60°"
+      },
+      {
+        "key": "C",
+        "text": "45°"
+      },
+      {
+        "key": "D",
+        "text": "0°"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Since tan δ = B_V / B_H, having B_V = B_H gives tan δ = 1, and therefore the angle of dip δ = 45°.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Magnetism (Earth's Magnetic Inclination (Dip))",
+    "abilityTags": [
+      "logical_reasoning",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-086",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 12,
+    "chapter": "Magnetism",
+    "topic": "Axial Magnetic Field of a Short Dipole",
+    "difficulty": "Hard",
+    "questionText": "A short bar magnet of magnetic dipole moment 2.5 A·m^2 lies along its axis. Taking μ_0 / (4π) = 10^-7 T·m/A, what is the magnitude of its magnetic field at a distance r = 0.50 m along the axial line from its centre?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "4.0 × 10^-6 T"
+      },
+      {
+        "key": "B",
+        "text": "1.0 × 10^-6 T"
+      },
+      {
+        "key": "C",
+        "text": "8.0 × 10^-6 T"
+      },
+      {
+        "key": "D",
+        "text": "2.0 × 10^-6 T"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "For a short dipole (r ≫ l), B_axial = (μ_0 / 4π)(2m / r^3) = 10^-7 × (2 × 2.5) / (0.50)^3 = 10^-7 × (5.0 / 0.125) = 4.0 × 10^-6 T.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Magnetism (Axial Magnetic Field of a Short Dipole)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-087",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 12,
+    "chapter": "Magnetism",
+    "topic": "Potential Energy and Work in Rotating a Magnet",
+    "difficulty": "Hard",
+    "questionText": "A bar magnet of magnetic moment 0.40 A·m^2 rests in stable equilibrium (θ = 0°) in a uniform magnetic field of 0.25 T. How much external work must be done to rotate it quasi-statically through 120° from this position?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "0.20 J"
+      },
+      {
+        "key": "B",
+        "text": "0.05 J"
+      },
+      {
+        "key": "C",
+        "text": "0.10 J"
+      },
+      {
+        "key": "D",
+        "text": "0.15 J"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "External work W = ΔU = mB(cos θ_1 - cos θ_2) = 0.40 × 0.25 × (cos 0° - cos 120°) = 0.10 × [1 - (-0.5)] = 0.10 × 1.5 = 0.15 J.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Magnetism (Potential Energy and Work in Rotating a Magnet)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-088",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 13,
+    "chapter": "Electromagnetic Waves and Communication System",
+    "topic": "Electromagnetic Spectrum Ordering",
+    "difficulty": "Easy",
+    "questionText": "Which of the following regions of the electromagnetic spectrum has the shortest wavelength and highest frequency?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Microwaves"
+      },
+      {
+        "key": "B",
+        "text": "Gamma rays"
+      },
+      {
+        "key": "C",
+        "text": "X-rays"
+      },
+      {
+        "key": "D",
+        "text": "Ultraviolet radiation"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "In order of decreasing wavelength (increasing frequency): radio > microwave > infrared > visible > ultraviolet > X-rays > gamma rays.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 13: Electromagnetic Waves and Communication System (Electromagnetic Spectrum Ordering)",
+    "abilityTags": [
+      "scientific_understanding",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-089",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 13,
+    "chapter": "Electromagnetic Waves and Communication System",
+    "topic": "Transverse Nature of EM Waves",
+    "difficulty": "Easy",
+    "questionText": "In a plane electromagnetic wave travelling in free space, how are the electric field vector E, magnetic field vector B, and propagation direction oriented?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "B × E points along the direction of energy propagation"
+      },
+      {
+        "key": "B",
+        "text": "E is parallel to propagation while B is perpendicular to propagation"
+      },
+      {
+        "key": "C",
+        "text": "E, B, and propagation direction are mutually perpendicular, with E × B pointing along propagation"
+      },
+      {
+        "key": "D",
+        "text": "E and B are parallel to each other and perpendicular to propagation"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Electromagnetic waves are transverse: E ⊥ B, both are perpendicular to the wave vector k, and E × B gives the direction of wave propagation.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 13: Electromagnetic Waves and Communication System (Transverse Nature of EM Waves)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-090",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 13,
+    "chapter": "Electromagnetic Waves and Communication System",
+    "topic": "Sky-Wave Propagation",
+    "difficulty": "Easy",
+    "questionText": "Long-distance short-wave (HF, 3 MHz to 30 MHz) radio broadcasts reach receivers beyond the horizon by reflection from which region of Earth's atmosphere?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Ionosphere"
+      },
+      {
+        "key": "B",
+        "text": "Exosphere"
+      },
+      {
+        "key": "C",
+        "text": "Troposphere"
+      },
+      {
+        "key": "D",
+        "text": "Ozone layer in lower stratosphere"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Ionized layers of the ionosphere (65 km to 400 km altitude) cause total internal reflection of HF radio waves (3–30 MHz) back to Earth in sky-wave propagation.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 13: Electromagnetic Waves and Communication System (Sky-Wave Propagation)",
+    "abilityTags": [
+      "scientific_understanding",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-091",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 13,
+    "chapter": "Electromagnetic Waves and Communication System",
+    "topic": "Electric and Magnetic Field Amplitude Ratio",
+    "difficulty": "Medium",
+    "questionText": "A plane electromagnetic wave propagating in vacuum has a peak electric field amplitude E_0 = 120 V/m. Taking c = 3.0 × 10^8 m/s, what is its peak magnetic field amplitude B_0?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "4.0 × 10^-7 T"
+      },
+      {
+        "key": "B",
+        "text": "2.5 × 10^-6 T"
+      },
+      {
+        "key": "C",
+        "text": "3.6 × 10^10 T"
+      },
+      {
+        "key": "D",
+        "text": "4.0 × 10^-8 T"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "In vacuum, E_0 / B_0 = c, so B_0 = E_0 / c = 120 / (3.0 × 10^8) = 4.0 × 10^-7 T.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 13: Electromagnetic Waves and Communication System (Electric and Magnetic Field Amplitude Ratio)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-092",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 13,
+    "chapter": "Electromagnetic Waves and Communication System",
+    "topic": "TV Tower Coverage Distance",
+    "difficulty": "Medium",
+    "questionText": "A television broadcast antenna stands 80 m tall above level ground. Taking Earth's radius R = 6.4 × 10^6 m, what is the maximum line-of-sight horizon distance covered by this tower?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "32 km"
+      },
+      {
+        "key": "B",
+        "text": "16 km"
+      },
+      {
+        "key": "C",
+        "text": "22.6 km"
+      },
+      {
+        "key": "D",
+        "text": "64 km"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Line-of-sight range d = √(2Rh) = √(2 × 6.4 × 10^6 × 80) = √(1.024 × 10^9) = 32,000 m = 32 km.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 13: Electromagnetic Waves and Communication System (TV Tower Coverage Distance)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-093",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 13,
+    "chapter": "Electromagnetic Waves and Communication System",
+    "topic": "Point-to-Point Space Wave Range",
+    "difficulty": "Hard",
+    "questionText": "A transmitting antenna of height 45 m communicates in line-of-sight space-wave mode with a receiving antenna of height 80 m. Taking Earth's radius R = 6.4 × 10^6 m, what is the maximum permissible separation between the two antennas?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "40 km"
+      },
+      {
+        "key": "B",
+        "text": "64 km"
+      },
+      {
+        "key": "C",
+        "text": "48 km"
+      },
+      {
+        "key": "D",
+        "text": "56 km"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Maximum line-of-sight separation d_M = √(2Rh_T) + √(2Rh_R) = √(2 × 6.4 × 10^6 × 45) + √(2 × 6.4 × 10^6 × 80) = √(576 × 10^6) + √(1024 × 10^6) = 24 km + 32 km = 56 km.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 13: Electromagnetic Waves and Communication System (Point-to-Point Space Wave Range)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-094",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 14,
+    "chapter": "Semiconductors",
+    "topic": "Forbidden Energy Band Gap",
+    "difficulty": "Easy",
+    "questionText": "At room temperature (300 K), what is the approximate forbidden energy band gap (E_g) of pure crystalline silicon (Si)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "5.5 eV"
+      },
+      {
+        "key": "B",
+        "text": "0.72 eV"
+      },
+      {
+        "key": "C",
+        "text": "0.05 eV"
+      },
+      {
+        "key": "D",
+        "text": "1.1 eV"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "At 300 K, silicon has a band gap of ~1.1 eV (compared to ~0.72 eV for germanium and ~5.5 eV for insulating diamond).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Semiconductors (Forbidden Energy Band Gap)",
+    "abilityTags": [
+      "scientific_understanding",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-095",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 14,
+    "chapter": "Semiconductors",
+    "topic": "Extrinsic Doping",
+    "difficulty": "Easy",
+    "questionText": "When pure tetravalent germanium is doped with a trace amount of trivalent indium (In), what type of extrinsic semiconductor is formed?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "p-type semiconductor with negatively charged mobile ions as majority carriers"
+      },
+      {
+        "key": "B",
+        "text": "Intrinsic semiconductor with equal electron and hole concentrations"
+      },
+      {
+        "key": "C",
+        "text": "p-type semiconductor with holes as majority charge carriers"
+      },
+      {
+        "key": "D",
+        "text": "n-type semiconductor with electrons as majority charge carriers"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Each trivalent indium atom accepts one valence electron to complete four covalent bonds, creating a mobile positively charged hole (acceptor impurity ⇒ p-type).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Semiconductors (Extrinsic Doping)",
+    "abilityTags": [
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-096",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 14,
+    "chapter": "Semiconductors",
+    "topic": "Mass-Action Law in Doped Silicon",
+    "difficulty": "Medium",
+    "questionText": "Intrinsic silicon at 300 K has carrier concentration n_i = 1.5 × 10^16 m^-3. If it is doped with donor atoms so that electron concentration becomes n_e = 4.5 × 10^22 m^-3, what is the thermal-equilibrium hole concentration n_h?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1.5 × 10^16 m^-3"
+      },
+      {
+        "key": "B",
+        "text": "3.0 × 10^6 m^-3"
+      },
+      {
+        "key": "C",
+        "text": "5.0 × 10^10 m^-3"
+      },
+      {
+        "key": "D",
+        "text": "5.0 × 10^9 m^-3"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "By the mass-action law at thermal equilibrium, n_e n_h = n_i^2 ⇒ n_h = (1.5 × 10^16)^2 / (4.5 × 10^22) = (2.25 × 10^32) / (4.5 × 10^22) = 5.0 × 10^9 m^-3.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Semiconductors (Mass-Action Law in Doped Silicon)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-097",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 14,
+    "chapter": "Semiconductors",
+    "topic": "Reverse-Biased p-n Junction",
+    "difficulty": "Medium",
+    "questionText": "When an external reverse-bias voltage across a p-n junction diode is increased (well below breakdown), what happens to the depletion region and barrier potential?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Depletion region narrows and majority diffusion current surges"
+      },
+      {
+        "key": "B",
+        "text": "Depletion region widens while potential barrier drops to zero"
+      },
+      {
+        "key": "C",
+        "text": "Depletion region widens and the effective potential barrier increases"
+      },
+      {
+        "key": "D",
+        "text": "Both depletion width and barrier potential remain unchanged"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Reverse bias pulls majority holes in p-region and electrons in n-region away from the junction, uncovering more immobile ions, widening the depletion layer, and raising the barrier height.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Semiconductors (Reverse-Biased p-n Junction)",
+    "abilityTags": [
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-098",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 14,
+    "chapter": "Semiconductors",
+    "topic": "Thermistors",
+    "difficulty": "Medium",
+    "questionText": "How does an NTC (Negative Temperature Coefficient) thermistor respond to a rise in temperature, and what makes it suitable for sensitive thermometry?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Its electrical resistance increases linearly at a tiny rate with temperature"
+      },
+      {
+        "key": "B",
+        "text": "Its forbidden energy gap widens rapidly upon heating"
+      },
+      {
+        "key": "C",
+        "text": "Its electrical resistance decreases steeply and nonlinearly with increasing temperature"
+      },
+      {
+        "key": "D",
+        "text": "It generates a spontaneous photo-EMF proportional to light intensity"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "NTC thermistors are thermally sensitive metal-oxide semiconductors whose resistance drops sharply with small temperature rises, providing high sensitivity in temperature sensing and control.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Semiconductors (Thermistors)",
+    "abilityTags": [
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-099",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 14,
+    "chapter": "Semiconductors",
+    "topic": "Forward-Biased Diode Series Circuit",
+    "difficulty": "Hard",
+    "questionText": "A silicon diode with knee (barrier) voltage 0.7 V and negligible dynamic forward resistance is connected in series with a 215 Ω resistor across a 5.0 V DC supply in forward bias. What current flows through the resistor?",
+    "diagramType": "circuit_ohm",
+    "options": [
+      {
+        "key": "A",
+        "text": "26.5 mA"
+      },
+      {
+        "key": "B",
+        "text": "20 mA"
+      },
+      {
+        "key": "C",
+        "text": "23.3 mA"
+      },
+      {
+        "key": "D",
+        "text": "15 mA"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "With 0.7 V dropped across the forward-biased silicon junction, voltage across the series resistor is V_R = 5.0 - 0.7 = 4.3 V. Hence I = 4.3 / 215 = 0.020 A = 20 mA.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Semiconductors (Forward-Biased Diode Series Circuit)",
+    "abilityTags": [
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-phy-100",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-physics",
+    "subjectName": "Physics",
+    "chapterNumber": 14,
+    "chapter": "Semiconductors",
+    "topic": "Intrinsic Semiconductor Conductivity",
+    "difficulty": "Hard",
+    "questionText": "At 300 K, an intrinsic germanium crystal has intrinsic carrier density n_i = 2.5 × 10^19 m^-3, electron mobility μ_e = 0.38 m^2/(V·s), and hole mobility μ_h = 0.18 m^2/(V·s). Taking e = 1.6 × 10^-19 C, what is its electrical conductivity?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "4.48 S/m"
+      },
+      {
+        "key": "B",
+        "text": "1.52 S/m"
+      },
+      {
+        "key": "C",
+        "text": "0.80 S/m"
+      },
+      {
+        "key": "D",
+        "text": "2.24 S/m"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "For an intrinsic semiconductor (n_e = n_h = n_i), conductivity σ = e n_i (μ_e + μ_h) = 1.6 × 10^-19 × 2.5 × 10^19 × (0.38 + 0.18) = 4.0 × 0.56 = 2.24 S/m.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Semiconductors (Intrinsic Semiconductor Conductivity)",
+    "abilityTags": [
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  }
+]

@@ -1,0 +1,4602 @@
+[
+  {
+    "id": "msb-11-com-sp-001",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 1,
+    "chapter": "Secretary",
+    "topic": "Etymology of Secretary",
+    "difficulty": "Easy",
+    "questionText": "The English word 'Secretary' is derived from the Latin word 'Secretarius', which originally denoted:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "A military commander of provincial garrisons"
+      },
+      {
+        "key": "B",
+        "text": "A confidential officer or keeper of secrets entrusted with private matters"
+      },
+      {
+        "key": "C",
+        "text": "A maritime customs collector at Roman ports"
+      },
+      {
+        "key": "D",
+        "text": "A public auctioneer of agricultural estates"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Derived from Latin 'Secretum' / 'Secretarius', a Secretary historically signified a trusted person handling confidential correspondence and records (paralleled by Roman 'Scribae' and ancient Indian 'Amatya'/'Sachiva'/'Chitnis').",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Secretary",
+    "abilityTags": [
+      "business_decision_making",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-002",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 1,
+    "chapter": "Secretary",
+    "topic": "Mandatory Qualification of Company Secretary",
+    "difficulty": "Easy",
+    "questionText": "Under Section 2(24) of the Companies Act, 2013, an individual appointed as a Company Secretary of a Joint Stock Company MUST be a member of which statutory institute?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "The Bar Council of Maharashtra and Goa"
+      },
+      {
+        "key": "B",
+        "text": "The Indian Institute of Banking and Finance"
+      },
+      {
+        "key": "C",
+        "text": "The Institute of Company Secretaries of India (ICSI)"
+      },
+      {
+        "key": "D",
+        "text": "The Institute of Cost Accountants of India"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Only an individual holding valid membership of the Institute of Company Secretaries of India (ICSI), New Delhi—constituted under the Company Secretaries Act, 1980—can be appointed as a Company Secretary.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Secretary",
+    "abilityTags": [
+      "business_decision_making",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-003",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 1,
+    "chapter": "Secretary",
+    "topic": "Personal Secretary vs Institutional Secretary",
+    "difficulty": "Easy",
+    "questionText": "Who appoints a 'Personal (Private) Secretary' such as an assistant to a busy surgeon, senior advocate, film actor, or Member of Parliament?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "The Managing Committee of a Registered Co-operative Bank"
+      },
+      {
+        "key": "B",
+        "text": "The Registrar of Companies through form DIR-12"
+      },
+      {
+        "key": "C",
+        "text": "Shareholders voting by Poll at an Annual General Meeting"
+      },
+      {
+        "key": "D",
+        "text": "A busy individual professional or VIP to manage personal appointments, correspondence, and schedules"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "A Personal Secretary is appointed by busy executives or professionals to handle personal diary, correspondence, and visitors, requiring no statutory corporate membership.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Secretary",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-004",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 1,
+    "chapter": "Secretary",
+    "topic": "Paid-up Capital Threshold for Whole-Time Company Secretary",
+    "difficulty": "Medium",
+    "questionText": "Under the Companies Act, 2013 read with Companies (Appointment and Remuneration of Managerial Personnel) Rules, every listed company AND every other public/applicable company having paid-up share capital of how much or more must appoint a whole-time Company Secretary?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "₹10 crore or more"
+      },
+      {
+        "key": "B",
+        "text": "₹50 lakh or more"
+      },
+      {
+        "key": "C",
+        "text": "₹100 crore or more"
+      },
+      {
+        "key": "D",
+        "text": "₹1 lakh or more"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Under Rule 8A / Section 203 rules as updated and taught in MSBSHSE Class 11 SP, every listed company and other companies having paid-up share capital of ₹10 crore or more must have a whole-time Company Secretary.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Secretary",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-005",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 1,
+    "chapter": "Secretary",
+    "topic": "Secretary of Government Department",
+    "difficulty": "Medium",
+    "questionText": "How is the 'Secretary of a Government Department' (such as the Finance Secretary or Commerce Secretary) appointed and whom does he/she advise?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Appointed by Rotary Clubs to record minutes of charity dinners"
+      },
+      {
+        "key": "B",
+        "text": "Appointed from senior civil services (typically IAS) to act as the administrative head of a ministry and advise the Minister on policy and execution"
+      },
+      {
+        "key": "C",
+        "text": "Selected exclusively from freshly enrolled law graduates with zero administrative experience"
+      },
+      {
+        "key": "D",
+        "text": "Elected directly by shareholders of private companies for a two-year rotation"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "A Secretary of a Government Department is a senior career civil servant (usually IAS) functioning as the executive/administrative head of a Ministry/Department under the political leadership of a Minister.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Secretary",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-006",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 1,
+    "chapter": "Secretary",
+    "topic": "Secretary as 'Eyes, Ears, and Hands' of the Company",
+    "difficulty": "Medium",
+    "questionText": "Why did Lord Denning in Panorama Developments (Guildford) Ltd. v. Fidelis Furnishing Fabrics Ltd. recognise the modern Company Secretary as a senior administrative officer with ostensible authority—rather than a mere clerk?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Because the Board of Directors is subordinate to the Personal Secretary"
+      },
+      {
+        "key": "B",
+        "text": "Because the Company Secretary personally owns at least 51% of the company's equity"
+      },
+      {
+        "key": "C",
+        "text": "Because the Company Secretary can amend the Companies Act unilaterally"
+      },
+      {
+        "key": "D",
+        "text": "Because the Company Secretary represents the company in administrative matters, signs administrative contracts, ensures statutory compliance, and links the Board, shareholders, and regulators"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Modern jurisprudence recognises the Company Secretary as a Key Managerial Personnel (KMP) and Chief Compliance Officer who binds the company on administrative matters—far beyond mere clerical typing.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Secretary",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-007",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 1,
+    "chapter": "Secretary",
+    "topic": "Statutory vs Non-Statutory Duties of Company Secretary",
+    "difficulty": "Hard",
+    "questionText": "A newly appointed Company Secretary is reviewing her compliance calendar under Section 205 of the Companies Act, 2013. Which action falls squarely within her statutory duties—and what limitation restricts her authority?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Declaring interim dividend unilaterally and altering the Object Clause without shareholder approval"
+      },
+      {
+        "key": "B",
+        "text": "Dismissing the Managing Director and appointing statutory auditors on her own signature"
+      },
+      {
+        "key": "C",
+        "text": "Reporting to the Board about compliance with the Act/rules and facilitating Secretarial Audit, BUT she cannot borrow money in the company's name or allot shares without specific Board authorisation"
+      },
+      {
+        "key": "D",
+        "text": "Borrowing ₹50 crore via debentures without convening a Board Meeting"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Under Section 205, a CS guides the Board on statutory compliance and governance, yet policy powers like borrowing funds, issuing/allotting shares, or making calls belong strictly to the Board of Directors unless duly authorised.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Secretary",
+    "abilityTags": [
+      "business_decision_making",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-008",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 1,
+    "chapter": "Secretary",
+    "topic": "Comparing Institutional Secretaries Across Entities",
+    "difficulty": "Hard",
+    "questionText": "Compare the governing statutes applicable to Institutional Secretaries of (i) a Sports & Cultural Club registered as a trust/society, (ii) a District Urban Co-operative Society in Pune, and (iii) a Public Limited Company:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "(i) Negotiable Instruments Act, 1881; (ii) Sale of Goods Act, 1930; (iii) FEMA, 1999"
+      },
+      {
+        "key": "B",
+        "text": "(i) Societies Registration Act, 1860 / Public Trusts Act; (ii) Maharashtra Co-operative Societies Act, 1960; (iii) Companies Act, 2013"
+      },
+      {
+        "key": "C",
+        "text": "All three are governed exclusively by the Indian Contract Act, 1872 without registration"
+      },
+      {
+        "key": "D",
+        "text": "(i) Companies Act, 2013; (ii) Indian Partnership Act, 1932; (iii) Reserve Bank Act, 1934"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Non-profit associations operate under Societies Registration/Public Trusts laws, Maharashtra co-operatives follow the Maharashtra Co-operative Societies Act, 1960, and Joint Stock Companies are governed by the Companies Act, 2013.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Secretary",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-009",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 2,
+    "chapter": "Joint Stock Company",
+    "topic": "One Person Company (OPC)",
+    "difficulty": "Easy",
+    "questionText": "Introduced under Section 2(62) of the Companies Act, 2013, how many members does a 'One Person Company (OPC)' have, and what safeguard ensures continuity upon that member's death?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Only 1 corporate foreign body as sole member without any nominee"
+      },
+      {
+        "key": "B",
+        "text": "Minimum 2 members and maximum 200 members"
+      },
+      {
+        "key": "C",
+        "text": "Only 1 member, with mandatory nomination of a natural-person Nominee in the Memorandum of Association"
+      },
+      {
+        "key": "D",
+        "text": "Minimum 7 members with no nominee requirement"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "An OPC has a single member and must indicate in its MOA the name of a nominee (with prior written consent) who becomes the member in the event of the sole subscriber's death or incapacity.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Joint Stock Company",
+    "abilityTags": [
+      "business_decision_making",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-010",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 2,
+    "chapter": "Joint Stock Company",
+    "topic": "Private vs Public Company Member Limits",
+    "difficulty": "Easy",
+    "questionText": "Under Sections 2(68) and 2(71) of the Companies Act, 2013, what are the minimum and maximum member limits for a Private Company and a Public Company?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Private Company: min 2, max 200 (excluding present/past employee-members); Public Company: min 7, unlimited maximum"
+      },
+      {
+        "key": "B",
+        "text": "Private Company: min 7, max 50; Public Company: min 2, max 500"
+      },
+      {
+        "key": "C",
+        "text": "Private Company: min 1, max 100; Public Company: min 10, max 1,000"
+      },
+      {
+        "key": "D",
+        "text": "Both require min 5 and max 200 members"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "A Private Company requires at least 2 members and caps membership at 200 (excluding employees and former employees who acquired shares while employed), whereas a Public Company requires at least 7 members with no upper cap.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Joint Stock Company",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-011",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 2,
+    "chapter": "Joint Stock Company",
+    "topic": "Section 8 Charitable Company",
+    "difficulty": "Easy",
+    "questionText": "A company licensed under Section 8 of the Companies Act, 2013 to promote commerce, art, science, sports, education, or charity is strictly prohibited from doing which of the following?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Employing salaried teachers or researchers"
+      },
+      {
+        "key": "B",
+        "text": "Holding an Annual General Meeting"
+      },
+      {
+        "key": "C",
+        "text": "Opening a bank account in India"
+      },
+      {
+        "key": "D",
+        "text": "Paying any dividend to its members (all profits must be applied solely toward promoting its objects)"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Section 8 non-profit companies enjoy exemption from adding 'Limited'/'Private Limited' to their names, must apply surpluses solely to their charitable/educational objects, and cannot distribute dividends to members.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Joint Stock Company",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-012",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 2,
+    "chapter": "Joint Stock Company",
+    "topic": "Separate Legal Entity — Salomon Principle",
+    "difficulty": "Medium",
+    "questionText": "What landmark corporate-law principle was established in 'Salomon v. Salomon & Co. Ltd.'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Creditors can seize private jewellery of minority shareholders at will"
+      },
+      {
+        "key": "B",
+        "text": "Shareholders are personally liable for 100% of corporate debentures even in a company limited by shares"
+      },
+      {
+        "key": "C",
+        "text": "A company ceases to exist on the day its founder retires"
+      },
+      {
+        "key": "D",
+        "text": "Upon incorporation, a company becomes a distinct legal person entirely separate from its subscribers/shareholders, even if one shareholder holds virtually all shares"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Incorporation creates a veil of separate corporate personality: the company's assets, debts, and contracts belong to the company itself, not to its shareholders personally.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Joint Stock Company",
+    "abilityTags": [
+      "business_decision_making",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-013",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 2,
+    "chapter": "Joint Stock Company",
+    "topic": "Holding, Subsidiary, and Associate Company Thresholds",
+    "difficulty": "Medium",
+    "questionText": "Company P acquires 56% of the total voting power of Company Q and 24% of the total voting power of Company R (without controlling R's Board composition). Under the Companies Act, 2013, how are Q and R related to P?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Company Q is a Subsidiary Company of P [Sec 2(87)], and Company R is an Associate Company of P [Sec 2(6)]"
+      },
+      {
+        "key": "B",
+        "text": "Both Q and R are wholly-owned Subsidiary Companies of P"
+      },
+      {
+        "key": "C",
+        "text": "Company Q is an Associate Company and Company R is a Dormant Company"
+      },
+      {
+        "key": "D",
+        "text": "Neither Q nor R has any statutory relationship with P unless holding reaches 75%"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Holding >50% of total voting power (or controlling Board composition) creates a Holding–Subsidiary relationship [Sec 2(87)], whereas 'significant influence' (≥20% up to 50% voting power) creates an Associate Company [Sec 2(6)].",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Joint Stock Company",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-014",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 2,
+    "chapter": "Joint Stock Company",
+    "topic": "Dormant Company under Section 455",
+    "difficulty": "Medium",
+    "questionText": "When can a registered company apply to the Registrar for 'Dormant Company' status under Section 455 of the Companies Act, 2013?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Only after being wound up and struck off by NCLT"
+      },
+      {
+        "key": "B",
+        "text": "When formed for a future project or to hold an asset/intellectual property and having no 'significant accounting transactions', or remaining inactive for the last two financial years"
+      },
+      {
+        "key": "C",
+        "text": "When it employs more than 5,000 factory workers"
+      },
+      {
+        "key": "D",
+        "text": "Whenever it earns record export profits for three consecutive years"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Section 455 allows an inactive company (no significant accounting transactions / not filing financial statements & annual returns for 2 years, or incorporated to hold IP/land for a future project) to obtain Dormant status with lower compliance costs.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Joint Stock Company",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-015",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 2,
+    "chapter": "Joint Stock Company",
+    "topic": "Counting the 200-Member Ceiling in a Private Company",
+    "difficulty": "Hard",
+    "questionText": "Deccan Precision Pvt. Ltd. currently has: 175 individual outside shareholders, 18 joint-holdings (36 individuals holding shares in 18 pairs), 22 current employees holding ESOP shares, and 12 retired employees who were allotted shares while in employment. Under Section 2(68), what is the statutory member count against the 200-member limit?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "175 members — because joint-holders are excluded completely"
+      },
+      {
+        "key": "B",
+        "text": "245 members — violating the 200-member limit and triggering forced conversion"
+      },
+      {
+        "key": "C",
+        "text": "193 members — well within the 200-member statutory ceiling"
+      },
+      {
+        "key": "D",
+        "text": "227 members — because retired employees are counted"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Under Section 2(68): (a) joint holders of shares are counted as ONE single member (18 pairs = 18); (b) current employee-members (22) and former employees who became members during employment (12) are EXCLUDED. Statutory count = 175 + 18 = 193 ≤ 200.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Joint Stock Company",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-016",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 2,
+    "chapter": "Joint Stock Company",
+    "topic": "Company Limited by Guarantee vs Limited by Shares",
+    "difficulty": "Hard",
+    "questionText": "In a Company Limited by Guarantee having no share capital, when can members actually be called upon to pay the guaranteed amount stated in the Memorandum?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Only in the event of winding up of the company, toward payment of the company's debts/liabilities and costs of winding up"
+      },
+      {
+        "key": "B",
+        "text": "At every quarterly Board Meeting to fund routine working capital"
+      },
+      {
+        "key": "C",
+        "text": "Within 30 days of incorporation under Section 10A"
+      },
+      {
+        "key": "D",
+        "text": "Whenever the company declares an interim dividend"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "In a company limited by guarantee, the guaranteed sum acts as 'reserve liability' enforceable solely upon liquidation/winding up if corporate assets prove inadequate—not as working capital during active life.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Joint Stock Company",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-017",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 3,
+    "chapter": "Formation of a Company",
+    "topic": "Three Stages in Formation of a Company",
+    "difficulty": "Easy",
+    "questionText": "Under the Companies Act, 2013 as presented in the MSBSHSE syllabus, what are the three sequential stages in the formation of a company having share capital?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "(1) Prospectus Audit, (2) Annual General Meeting, and (3) Promotion"
+      },
+      {
+        "key": "B",
+        "text": "(1) Promotion, (2) Incorporation of a Company, and (3) Commencement of Business"
+      },
+      {
+        "key": "C",
+        "text": "(1) Listing on NSE, (2) Promotion, and (3) Declaration of Dividend"
+      },
+      {
+        "key": "D",
+        "text": "(1) Winding Up, (2) Amalgamation, and (3) Incorporation"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Company formation proceeds sequentially through Promotion (conceiving the business idea & assembling resources), Incorporation (registration with ROC/CRC), and Commencement of Business (Section 10A filing).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Formation of a Company",
+    "abilityTags": [
+      "business_decision_making",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-018",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 3,
+    "chapter": "Formation of a Company",
+    "topic": "Corporate Identity Number (CIN)",
+    "difficulty": "Easy",
+    "questionText": "Upon issuing the Certificate of Incorporation, the Registrar / Central Registration Centre allots a unique Corporate Identity Number (CIN) consisting of how many alphanumeric characters?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "12-digit Aadhaar code"
+      },
+      {
+        "key": "B",
+        "text": "10-digit PAN code"
+      },
+      {
+        "key": "C",
+        "text": "8-digit DIN code"
+      },
+      {
+        "key": "D",
+        "text": "21-digit alphanumeric code"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Every incorporated company in India receives a 21-character alphanumeric Corporate Identity Number (CIN) encoding listing status, industry code, state code, year of incorporation, ownership type, and registration number.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Formation of a Company",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-019",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 3,
+    "chapter": "Formation of a Company",
+    "topic": "Integrated Electronic Incorporation Form",
+    "difficulty": "Easy",
+    "questionText": "Which integrated web-based electronic form on the MCA portal enables name reservation, company incorporation, DIN allotment, PAN, TAN, and EPFO/ESIC/GSTIN registration in a single workflow?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Form MGT-14"
+      },
+      {
+        "key": "B",
+        "text": "SPICe+ (Simplified Proforma for Incorporating Company Electronically Plus — INC-32)"
+      },
+      {
+        "key": "C",
+        "text": "Form MBP-1"
+      },
+      {
+        "key": "D",
+        "text": "Form SH-4"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "SPICe+ (INC-32) streamlines incorporation and allied statutory registrations through a single integrated MCA21 electronic interface.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Formation of a Company",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-020",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 3,
+    "chapter": "Formation of a Company",
+    "topic": "Fiduciary Position of Promoters",
+    "difficulty": "Medium",
+    "questionText": "What is the exact legal relationship of a 'Promoter' [Section 2(69)] toward the company he is promoting?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "A fully authorised agent whose pre-incorporation contracts automatically bind the unborn company"
+      },
+      {
+        "key": "B",
+        "text": "An independent speculator free to sell his personal land to the company at hidden mark-ups"
+      },
+      {
+        "key": "C",
+        "text": "A fiduciary relationship of utmost trust and good faith — neither strictly an agent nor a trustee (since the company is not yet in existence), forbidding secret profits"
+      },
+      {
+        "key": "D",
+        "text": "A statutory employee entitled to fix his own lifelong salary without disclosure"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Because an unincorporated company does not legally exist yet, a promoter cannot be its strict agent or trustee, but stands in a fiduciary position requiring full disclosure of any personal interest or profit to an independent Board/prospectus.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Formation of a Company",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-021",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 3,
+    "chapter": "Formation of a Company",
+    "topic": "Commencement of Business Declaration (Section 10A)",
+    "difficulty": "Medium",
+    "questionText": "Under Section 10A of the Companies Act, 2013, within how many days of incorporation must a company having share capital file a declaration by a director that every subscriber to the MOA has paid the value of shares agreed to be taken?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Within 180 days from the date of incorporation"
+      },
+      {
+        "key": "B",
+        "text": "Only after holding the fifth AGM"
+      },
+      {
+        "key": "C",
+        "text": "Within 15 days from incorporation"
+      },
+      {
+        "key": "D",
+        "text": "Within 3 years from incorporation"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Under Section 10A, a company having share capital cannot commence business or exercise borrowing powers unless a director files a verified declaration within 180 days of incorporation confirming subscriber payment (plus registered office verification).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Formation of a Company",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-022",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 3,
+    "chapter": "Formation of a Company",
+    "topic": "Preliminary (Pre-Incorporation) Contracts",
+    "difficulty": "Medium",
+    "questionText": "Before 'Konkan Agro Ltd.' is incorporated, its promoters sign a contract with a machinery vendor in the proposed company's name. After incorporation, how can Konkan Agro Ltd. legally make that contract enforceable between itself and the vendor?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "By passing a simple Board resolution retrospectively ratifying the pre-incorporation signature"
+      },
+      {
+        "key": "B",
+        "text": "It binds the company automatically on the day CIN is generated without any action"
+      },
+      {
+        "key": "C",
+        "text": "By entering into a fresh contract ('Novation') with the vendor after incorporation, provided such contract is warranted by the terms of incorporation"
+      },
+      {
+        "key": "D",
+        "text": "Pre-incorporation contracts can never be adopted even by signing a fresh contract"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Because the company was non-existent when signed, it cannot retrospectively 'ratify' a pre-incorporation contract under agency law; instead, novation (entering a new post-incorporation contract under Specific Relief Act Sections 15/19) binds the company and discharges promoters.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Formation of a Company",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-023",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 3,
+    "chapter": "Formation of a Company",
+    "topic": "Consequences of Failing Section 10A Compliance",
+    "difficulty": "Hard",
+    "questionText": "Sahyadri BioTech Pvt. Ltd. was incorporated with share capital on 1st April 2025, but 200 days have elapsed without filing the Section 10A Commencement of Business declaration, and the Registrar has reasonable cause to believe it is not carrying on operations. What statutory consequence may follow?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Exemption from filing annual returns for the next five years"
+      },
+      {
+        "key": "B",
+        "text": "Forfeiture of the Registrar's own office"
+      },
+      {
+        "key": "C",
+        "text": "Automatic conversion of the company into a Statutory Corporation"
+      },
+      {
+        "key": "D",
+        "text": "Monetary penalties on the company and officers-in-default, AND the Registrar may initiate action to remove (strike off) the company's name from the Register of Companies"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Under Section 10A(2) & (3), default attracts civil penalties AND if no declaration is filed within 180 days with no active operations, the ROC may initiate striking off under Section 248.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Formation of a Company",
+    "abilityTags": [
+      "business_decision_making",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-024",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 3,
+    "chapter": "Formation of a Company",
+    "topic": "Remedy for Promoter's Undisclosed Secret Profit",
+    "difficulty": "Hard",
+    "questionText": "Promoter Kulkarni bought an industrial plot in his personal name for ₹80 lakh AFTER initiating promotion of a company, and then sold it to the newly formed company for ₹1.15 crore while concealing his personal ownership from the Board and Prospectus. Upon discovery, what remedies are available to the company?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "All public shareholders must pay Kulkarni an additional 10% bonus"
+      },
+      {
+        "key": "B",
+        "text": "The company may rescind the contract (recovering ₹1.15 crore on returning the plot) OR retain the plot and compel Kulkarni to surrender the ₹35 lakh secret profit (or claim damages)"
+      },
+      {
+        "key": "C",
+        "text": "The company has no remedy once the Sale Deed is registered"
+      },
+      {
+        "key": "D",
+        "text": "Kulkarni is entitled to keep ₹35 lakh as automatic promoter brokerage"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Breach of fiduciary duty through undisclosed profit entitles the company either to rescind the contract or affirm the asset purchase while recovering the ₹35 lakh secret profit.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Formation of a Company",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-025",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 3,
+    "chapter": "Formation of a Company",
+    "topic": "Decoding Information Embedded in a 21-Digit CIN",
+    "difficulty": "Hard",
+    "questionText": "Inspect the sample CIN `L28920MH2018PLC305412`. What three facts can a Company Secretary immediately deduce from `L`, `MH`, and `PLC`?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "`L` = Listed on a recognised stock exchange; `MH` = Registered in Maharashtra; `PLC` = Public Limited Company"
+      },
+      {
+        "key": "B",
+        "text": "`L` = Liquidated company; `MH` = Manufacturing Heavy; `PLC` = Private Liability Concern"
+      },
+      {
+        "key": "C",
+        "text": "`L` = Limited by Guarantee; `MH` = Ministry Holding; `PLC` = Partnership Limited Co."
+      },
+      {
+        "key": "D",
+        "text": "`L` = Unlisted company; `MH` = Micro Holding; `PLC` = One Person Company"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "In a 21-digit CIN: position 1 (`L` = Listed, `U` = Unlisted), positions 2–6 = NIC industry code, positions 7–8 (`MH` = Maharashtra), positions 9–12 = year of incorporation, positions 13–15 (`PLC` = Public Limited, `PTC` = Private Limited, `OPC` = One Person Co., `GOI`/`SGC` = Govt Co.), positions 16–21 = ROC registration number.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Formation of a Company",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-026",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 4,
+    "chapter": "Documents Related to Formation of a Company",
+    "topic": "Charter Document of a Company",
+    "difficulty": "Easy",
+    "questionText": "Which foundational document is described as the 'Charter' or 'Constitution' of a company because it defines the external scope and limits of the company's powers?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Red Herring Prospectus"
+      },
+      {
+        "key": "B",
+        "text": "Certificate of Commencement"
+      },
+      {
+        "key": "C",
+        "text": "Memorandum of Association (MOA)"
+      },
+      {
+        "key": "D",
+        "text": "Articles of Association (AOA)"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "The Memorandum of Association (MOA) is the primary charter defining the company's constitution, objects, and external boundaries beyond which it cannot legally act.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Documents Related to Formation of a Company",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-027",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 4,
+    "chapter": "Documents Related to Formation of a Company",
+    "topic": "Internal Management Bye-Laws",
+    "difficulty": "Easy",
+    "questionText": "Which document contains the internal rules, regulations, and bye-laws governing the day-to-day management of a company's affairs (such as share calls, forfeiture, and Board proceedings)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Shipping Bill"
+      },
+      {
+        "key": "B",
+        "text": "Statement in Lieu of Prospectus"
+      },
+      {
+        "key": "C",
+        "text": "Letter of Credit"
+      },
+      {
+        "key": "D",
+        "text": "Articles of Association (AOA)"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Articles of Association are subordinate to the MOA and the Companies Act, prescribing internal governance procedures between the company, its Board, and its members.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Documents Related to Formation of a Company",
+    "abilityTags": [
+      "business_decision_making",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-028",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 4,
+    "chapter": "Documents Related to Formation of a Company",
+    "topic": "Doctrine of Ultra Vires",
+    "difficulty": "Medium",
+    "questionText": "Under the 'Doctrine of Ultra Vires' (established in Ashbury Railway Carriage and Iron Co. Ltd. v. Riche), if directors apply corporate funds to an activity completely outside the Object Clause of the Memorandum of Association, what is the legal status of that act?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Wholly void ab initio and inoperative — it cannot be ratified even by a 100% unanimous vote of all shareholders"
+      },
+      {
+        "key": "B",
+        "text": "Valid if ratified later by an Ordinary Resolution of 51% shareholders"
+      },
+      {
+        "key": "C",
+        "text": "Valid as long as the venture earns a net profit above 15%"
+      },
+      {
+        "key": "D",
+        "text": "Binding on the company upon paying a ₹500 late fee to the bank"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "An act ultra vires (beyond the powers of) the MOA is null and void from the outset; not even unanimous shareholder consent can validate what the company lacked legal capacity to do, and directors become personally liable.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Documents Related to Formation of a Company",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-029",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 4,
+    "chapter": "Documents Related to Formation of a Company",
+    "topic": "Doctrine of Constructive Notice vs Indoor Management",
+    "difficulty": "Medium",
+    "questionText": "How does the 'Doctrine of Indoor Management' (Turquand's Rule) protect honest outsiders dealing with a company against harshness of the 'Doctrine of Constructive Notice'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "It protects insiders/directors who forge signatures on share certificates"
+      },
+      {
+        "key": "B",
+        "text": "It abolishes public inspection of MOA and AOA at the ROC office"
+      },
+      {
+        "key": "C",
+        "text": "While outsiders are presumed to know the public MOA & AOA (Constructive Notice), they are entitled to assume in good faith that internal procedural resolutions required by the AOA have been properly complied with"
+      },
+      {
+        "key": "D",
+        "text": "It allows outsiders to enforce contracts that openly violate the MOA Object Clause"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "In Royal British Bank v. Turquand, courts held that once a transaction is consistent with registered MOA/AOA on its face, bona fide outsiders need not investigate internal boardroom regularities (subject to exceptions like forgery or actual knowledge of irregularity).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Documents Related to Formation of a Company",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-030",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 4,
+    "chapter": "Documents Related to Formation of a Company",
+    "topic": "Red Herring Prospectus vs Shelf Prospectus",
+    "difficulty": "Medium",
+    "questionText": "Distinguish accurately between a 'Shelf Prospectus' (Section 31) and a 'Red Herring Prospectus' (Section 32):",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "A Shelf Prospectus omits the company's name and registered office"
+      },
+      {
+        "key": "B",
+        "text": "A Shelf Prospectus allows multiple securities issues over up to 1 year without filing a fresh prospectus each time (filing an Information Memorandum for updates), whereas a Red Herring Prospectus lacks complete particulars of exact price or quantum of securities during book-building"
+      },
+      {
+        "key": "C",
+        "text": "A Red Herring Prospectus is valid for 10 years, whereas a Shelf Prospectus is used only by Private Companies"
+      },
+      {
+        "key": "D",
+        "text": "Both prohibit listing on stock exchanges"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Specified financial/public entities use a Shelf Prospectus (valid max 1 year) for repeated bond/security tranches; book-built IPOs file a Red Herring Prospectus at least 3 days before opening subscription to discover price.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Documents Related to Formation of a Company",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-031",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 4,
+    "chapter": "Documents Related to Formation of a Company",
+    "topic": "Six Clauses of Memorandum of Association",
+    "difficulty": "Medium",
+    "questionText": "In a Public Limited Company having share capital, how many subscribers must sign the 'Association (Subscription) Clause' of the MOA, and what minimum share commitment applies?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "At least 50 subscribers each taking 100 shares"
+      },
+      {
+        "key": "B",
+        "text": "Only the Company Secretary signs without taking any share"
+      },
+      {
+        "key": "C",
+        "text": "At least 15 subscribers witnessed by a High Court Judge"
+      },
+      {
+        "key": "D",
+        "text": "At least 7 subscribers (2 for Private, 1 for OPC), each subscribing to at least 1 share in the presence of a witness"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "The Association Clause requires at least 7 subscribers for a Public Company (2 for Private, 1 for OPC), each writing opposite his/her name the number of shares taken (not less than one share), duly witnessed.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Documents Related to Formation of a Company",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-032",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 4,
+    "chapter": "Documents Related to Formation of a Company",
+    "topic": "Shifting Registered Office Between Two ROC Jurisdictions in Maharashtra",
+    "difficulty": "Hard",
+    "questionText": "Maharashtra uniquely has TWO Registrars of Companies (ROC Mumbai and ROC Pune). If a company shifts its Registered Office from Nashik (under ROC Mumbai) to Kolhapur (under ROC Pune) WITHIN the same state of Maharashtra, whose approval is statutorily required besides a Special Resolution?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Prior Constitutional Amendment passed by Parliament"
+      },
+      {
+        "key": "B",
+        "text": "Approval of the Regional Director (RD) under Section 12(5)"
+      },
+      {
+        "key": "C",
+        "text": "Approval of the World Trade Organization"
+      },
+      {
+        "key": "D",
+        "text": "Only a Board Resolution — no shareholder vote or regulatory approval is needed"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Changing the Registered Office from the jurisdiction of one ROC to another ROC within the SAME State (uniquely applicable in Maharashtra: Mumbai ↔ Pune, and Tamil Nadu: Chennai ↔ Coimbatore) requires a Special Resolution PLUS confirmation by the Regional Director!",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Documents Related to Formation of a Company",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-033",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 4,
+    "chapter": "Documents Related to Formation of a Company",
+    "topic": "Ultra Vires the Directors/Articles vs Ultra Vires the Memorandum",
+    "difficulty": "Hard",
+    "questionText": "The MOA of Sahyadri Power Ltd. empowers the company to borrow up to ₹100 crore, while its AOA restricts the Board of Directors to borrowing up to ₹25 crore without prior shareholder approval in General Meeting. If the Board borrows ₹40 crore without consulting shareholders, what is the legal position?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "The borrowing is ultra vires the Directors/AOA (not ultra vires the MOA) — therefore shareholders CAN ratify it by altering/approving via resolution in General Meeting"
+      },
+      {
+        "key": "B",
+        "text": "The lender must forfeit the entire ₹40 crore to the state treasury"
+      },
+      {
+        "key": "C",
+        "text": "The borrowing is ultra vires the MOA and can never be ratified even unanimously"
+      },
+      {
+        "key": "D",
+        "text": "The borrowing is valid without any shareholder ratification because MOA overrides AOA automatically for directors"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Crucial distinction: acts ultra vires the MOA are incurable, whereas acts within the MOA's ₹100 cr scope that merely exceed powers delegated to Directors/AOA can be ratified by shareholders!",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Documents Related to Formation of a Company",
+    "abilityTags": [
+      "financial_understanding",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-034",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 4,
+    "chapter": "Documents Related to Formation of a Company",
+    "topic": "Civil and Criminal Liability for Misstatement in Prospectus",
+    "difficulty": "Hard",
+    "questionText": "An IPO Prospectus falsely claims that the company owns patented lithium mines, inducing investors to subscribe; the claim turns out to be fabricated, causing subscriber losses. Under Sections 34 and 35 of the Companies Act, 2013, what liability arises?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Caveat Emptor ('buyer beware') shields directors completely from prospectus misstatements"
+      },
+      {
+        "key": "B",
+        "text": "Only the printing press owner is fined ₹1,000 while promoters keep all subscription money"
+      },
+      {
+        "key": "C",
+        "text": "Investors can claim compensation only after the company completes 25 years"
+      },
+      {
+        "key": "D",
+        "text": "Both criminal liability for fraud (under Section 34/447) AND personal civil liability (under Section 35) on directors, promoters, and experts who authorised the prospectus to compensate every aggrieved investor"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Prospectus contracts are contracts uberrimae fidei (utmost good faith); untrue or misleading inclusions/omissions trigger severe criminal fraud punishment (Sec 34/447) and civil compensation liability (Sec 35) to harmed subscribers.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Documents Related to Formation of a Company",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-035",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 5,
+    "chapter": "Members of a Company",
+    "topic": "Transfer vs Transmission of Shares",
+    "difficulty": "Easy",
+    "questionText": "When title to shares passes automatically by 'operation of law' upon the death, insolvency, or lunacy of a member (without execution of a bilateral sale instrument or stamp duty), what is the process called?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Forfeiture of Shares"
+      },
+      {
+        "key": "B",
+        "text": "Buy-back of Shares"
+      },
+      {
+        "key": "C",
+        "text": "Transmission of Shares"
+      },
+      {
+        "key": "D",
+        "text": "Voluntary Transfer of Shares"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Transfer of shares is a voluntary bilateral act between living parties for consideration, whereas Transmission occurs involuntarily by operation of law upon death (to legal heir/nominee), insolvency (to Official Receiver), or lunacy.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Members of a Company",
+    "abilityTags": [
+      "business_decision_making",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-036",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 5,
+    "chapter": "Members of a Company",
+    "topic": "Subscribers to Memorandum Becoming Members",
+    "difficulty": "Easy",
+    "questionText": "How do the Subscribers to the Memorandum of Association acquire membership in a newly incorporated company?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "They never become members of the company"
+      },
+      {
+        "key": "B",
+        "text": "Only after purchasing shares from the secondary stock market two years later"
+      },
+      {
+        "key": "C",
+        "text": "Only if they are appointed Independent Directors"
+      },
+      {
+        "key": "D",
+        "text": "They are deemed to have agreed to become members automatically upon incorporation, and their names are entered in the Register of Members even without separate share application"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Under Section 2(55)(i), subscribers to the MOA are statutory first members from the moment of company registration—neither formal application nor allotment letter is needed.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Members of a Company",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-037",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 5,
+    "chapter": "Members of a Company",
+    "topic": "Register of Members",
+    "difficulty": "Easy",
+    "questionText": "Aside from subscribers to the MOA and beneficial owners in depository (Demat) records, what two conditions are essential under Section 2(55) to become a 'Member' of a company?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Agreement in writing to become a member AND entry of the person's name in the company's Register of Members"
+      },
+      {
+        "key": "B",
+        "text": "Verbal promise to a broker AND holding a savings bank passbook"
+      },
+      {
+        "key": "C",
+        "text": "Attending a factory tour AND buying the company's retail products"
+      },
+      {
+        "key": "D",
+        "text": "Passing the ICSI exam AND residing at the registered office"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Under Section 2(55)(ii), membership requires both a written agreement to become a member and actual registration of the person's name in the statutory Register of Members (MGT-1) (or beneficial-owner entry with a Depository for demat shares).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Members of a Company",
+    "abilityTags": [
+      "business_decision_making",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-038",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 5,
+    "chapter": "Members of a Company",
+    "topic": "Partnership Firm Eligibility for Company Membership",
+    "difficulty": "Medium",
+    "questionText": "Can a general Partnership Firm be registered in its own firm name as a Member in the Register of Members of a Joint Stock Company?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "No — even individual partners are barred for life from buying shares"
+      },
+      {
+        "key": "B",
+        "text": "Yes — provided the firm has at least three sleeping partners"
+      },
+      {
+        "key": "C",
+        "text": "No — because a partnership firm is not a separate legal person (except if registering in a Section 8 charitable company); partners may, however, hold shares jointly in their individual names"
+      },
+      {
+        "key": "D",
+        "text": "Yes — every unregistered partnership firm is a corporate juristic person"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Only legal persons competent to contract can be registered as members. Since a partnership firm lacks separate legal entity, it cannot hold shares in the firm's name (barring the special exception as member of a Section 8 company), though partners may register jointly.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Members of a Company",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-039",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 5,
+    "chapter": "Members of a Company",
+    "topic": "Minor's Eligibility to Hold Shares",
+    "difficulty": "Medium",
+    "questionText": "Under Indian Contract Act principles applied in Secretarial Practice, why do companies refuse allotment of PARTLY-PAID shares to a minor, yet permit registration of FULLY-PAID shares in the name of the minor's natural guardian?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Guardians are personally exempt from income tax on dividends"
+      },
+      {
+        "key": "B",
+        "text": "A minor's contract is void ab initio (Mohori Bibee rule) so future call money could never be legally enforced against a minor, whereas fully-paid shares carry zero future call liability"
+      },
+      {
+        "key": "C",
+        "text": "Fully-paid shares carry no dividend or capital value"
+      },
+      {
+        "key": "D",
+        "text": "Minors automatically hold 100% voting veto in General Meetings"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Because a minor is incompetent to contract, a company cannot recover unpaid share calls from a minor; hence only fully-paid shares (no uncalled liability) may be held through a natural/legal guardian.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Members of a Company",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-040",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 5,
+    "chapter": "Members of a Company",
+    "topic": "Cessation of Membership — Forfeiture vs Surrender",
+    "difficulty": "Medium",
+    "questionText": "How does 'Forfeiture of Shares' differ from 'Surrender of Shares' as modes of cessation of membership?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Forfeiture is a compulsory penal cancellation initiated by the Board for non-payment of calls, whereas Surrender is a voluntary return of partly-paid shares by an unable member to avoid the formality of forfeiture (permitted only where forfeiture is justified and authorised by AOA)"
+      },
+      {
+        "key": "B",
+        "text": "Forfeiture gives the defaulting member double market price in cash, whereas Surrender doubles voting rights"
+      },
+      {
+        "key": "C",
+        "text": "Both apply exclusively to fully-paid equity shares"
+      },
+      {
+        "key": "D",
+        "text": "Surrender is ordered by customs authorities during export"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Both extinguish membership on partly-paid shares (when authorised by AOA): Forfeiture is unilateral compulsory action by the Board after notice for call default; Surrender is voluntary hand-back as a shortcut to valid forfeiture.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Members of a Company",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-041",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 5,
+    "chapter": "Members of a Company",
+    "topic": "Member Without Being a Shareholder vs Shareholder Without Being a Member",
+    "difficulty": "Hard",
+    "questionText": "Give one legally valid example each of: (Case X) a person who is a 'Member' WITHOUT holding any shares, and (Case Y) a person who owns 'Shares' WITHOUT yet being a registered 'Member':",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Case X: A bank manager granting overdraft; Case Y: An auditor signing the Balance Sheet"
+      },
+      {
+        "key": "B",
+        "text": "Case X and Case Y are legally impossible because Member and Shareholder are 100% identical in every case"
+      },
+      {
+        "key": "C",
+        "text": "Case X: A debenture-holder; Case Y: A trade creditor supplying raw materials"
+      },
+      {
+        "key": "D",
+        "text": "Case X: A member of a Company Limited by Guarantee having no share capital; Case Y: A transferee who has bought physical shares and holds a signed SH-4 transfer deed before the company registers the transfer"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "In Guarantee/Unlimited companies without share capital, members exist without shares (also a transferor remains a 'member' on the Register until the buyer's name replaces his); conversely, an unregistered transferee (or legal heir before transmission) owns beneficial share title before becoming a registered Member.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Members of a Company",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-042",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 5,
+    "chapter": "Members of a Company",
+    "topic": "Membership by Estoppel / Acquiescence",
+    "difficulty": "Hard",
+    "questionText": "Rohan never applied for shares in Zenith Ltd., yet his name was erroneously entered in the Register of Members; knowing this, Rohan attended an AGM and accepted a dividend warrant without protest. Six months later, Zenith Ltd. enters liquidation with ₹40 per share unpaid. Can Rohan now repudiate liability?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "No — but his liability is capped at returning half the dividend only"
+      },
+      {
+        "key": "B",
+        "text": "No — under Membership by Acquiescence (Estoppel), having knowingly held himself out and enjoyed member privileges without getting the register rectified, he is liable as a contributory"
+      },
+      {
+        "key": "C",
+        "text": "Yes — absence of a written application form shields him even after cashing dividends"
+      },
+      {
+        "key": "D",
+        "text": "Yes — the Company Secretary personally pays Rohan's ₹40 call money"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Under Section 2(55) / doctrine of holding out (Membership by Estoppel/Acquiescence), a person who knowingly permits his name to remain on the Register of Members and exercises membership rights cannot escape contributory liability when winding up supervenes.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Members of a Company",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-043",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 5,
+    "chapter": "Members of a Company",
+    "topic": "Liability of Past Members (List B Contributories) vs Present Members",
+    "difficulty": "Hard",
+    "questionText": "Meera transferred her partly-paid ₹100 shares (₹70 paid-up) to Kunal on 10th August 2025. If the company goes into winding up on 1st December 2025 (within 1 year of her ceasing to be a member) and Kunal defaults on the ₹30 uncalled balance, what are the statutory limits on Meera's liability?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Meera has unlimited personal liability for all post-August debts even if Kunal pays in full"
+      },
+      {
+        "key": "B",
+        "text": "Meera's liability vanished completely on 10th August 2025 the instant transfer was registered"
+      },
+      {
+        "key": "C",
+        "text": "Meera is liable up to ₹30 per share ONLY if Kunal fails to pay AND NOT for any corporate debts contracted AFTER 10th August 2025"
+      },
+      {
+        "key": "D",
+        "text": "Meera must pay ₹100 per share again regardless of ₹70 already paid"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "A past member (within 1 year prior to winding up) faces secondary liability capped strictly at unpaid face value (₹30), triggered only if present members cannot satisfy debts contracted BEFORE she ceased to be a member.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Members of a Company",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-044",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 6,
+    "chapter": "Directors and Key Managerial Personnel of a Company",
+    "topic": "Minimum and Maximum Number of Directors",
+    "difficulty": "Easy",
+    "questionText": "Under Section 149(1) of the Companies Act, 2013, what is the statutory minimum number of Directors for an OPC, a Private Company, and a Public Company, and what is the normal maximum limit (without passing a Special Resolution)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Minimum: 1 (OPC), 2 (Private), 3 (Public); Maximum: 15 Directors"
+      },
+      {
+        "key": "B",
+        "text": "Minimum: 1 (OPC), 3 (Private), 7 (Public); Maximum: 12 Directors"
+      },
+      {
+        "key": "C",
+        "text": "Minimum: 1 (OPC), 2 (Private), 5 (Public); Maximum: 50 Directors"
+      },
+      {
+        "key": "D",
+        "text": "Minimum: 2 (OPC), 5 (Private), 7 (Public); Maximum: 20 Directors"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Section 149(1) mandates at least 1 director in an OPC, 2 in a Private Company, and 3 in a Public Company, with a cap of 15 directors—which a company may exceed by passing a Special Resolution.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Directors and Key Managerial Personnel of a Company",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-045",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 6,
+    "chapter": "Directors and Key Managerial Personnel of a Company",
+    "topic": "Director Identification Number (DIN)",
+    "difficulty": "Easy",
+    "questionText": "Before any individual can be appointed as a Director of a company under Section 152(3), what unique lifetime 8-digit number allotted by the Central Government must he/she hold?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Legal Entity Identifier (LEI)"
+      },
+      {
+        "key": "B",
+        "text": "Director Identification Number (DIN)"
+      },
+      {
+        "key": "C",
+        "text": "Importer Exporter Code (IEC)"
+      },
+      {
+        "key": "D",
+        "text": "Goods and Services Tax Network ID"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Allotted under Sections 153–154, DIN is a unique person-specific identification number mandatory for anyone appointed as a company director; holding more than one DIN is prohibited under Section 155.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Directors and Key Managerial Personnel of a Company",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-046",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 6,
+    "chapter": "Directors and Key Managerial Personnel of a Company",
+    "topic": "Maximum Ceiling on Directorships (Section 165)",
+    "difficulty": "Medium",
+    "questionText": "Under Section 165 of the Companies Act, 2013, what is the maximum number of companies in which an individual can simultaneously hold office as Director (and what sub-limit applies to Public Companies)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Maximum 50 companies in total, of which 25 can be Public Companies"
+      },
+      {
+        "key": "B",
+        "text": "Maximum 15 companies in total, all of which can be Public Companies"
+      },
+      {
+        "key": "C",
+        "text": "Maximum 20 companies in total, of which not more than 10 can be Public Companies (including private companies that are holding or subsidiary of a public company)"
+      },
+      {
+        "key": "D",
+        "text": "Maximum 5 companies in total, of which only 1 can be a Public Company"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Section 165 caps simultaneous directorships at 20 companies (excluding Dormant and Section 8 companies), with a strict sub-ceiling of 10 Public Companies.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Directors and Key Managerial Personnel of a Company",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-047",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 6,
+    "chapter": "Directors and Key Managerial Personnel of a Company",
+    "topic": "Additional Director vs Alternate Director",
+    "difficulty": "Medium",
+    "questionText": "Compare the appointment trigger and tenure of an 'Additional Director' [Sec 161(1)] versus an 'Alternate Director' [Sec 161(2)]:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Both can be appointed only by the Registrar of Companies without AOA authority"
+      },
+      {
+        "key": "B",
+        "text": "An Alternate Director permanently replaces a deceased Managing Director"
+      },
+      {
+        "key": "C",
+        "text": "An Additional Director holds office for 10 years, whereas an Alternate Director is appointed when a director goes on a 2-day domestic trip"
+      },
+      {
+        "key": "D",
+        "text": "An Additional Director is appointed by the Board (if authorised by AOA) and holds office up to the date of the next AGM; an Alternate Director is appointed during an original director's absence from India for not less than 3 months and vacates office when the original director returns"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Under Section 161(1), Additional Directors hold office till the next AGM (or the last date AGM should have been held); under Section 161(2), Alternate Directors act temporarily when an existing director stays outside India for ≥3 months.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Directors and Key Managerial Personnel of a Company",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-048",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 6,
+    "chapter": "Directors and Key Managerial Personnel of a Company",
+    "topic": "Resident Director Requirement",
+    "difficulty": "Medium",
+    "questionText": "Under Section 149(3) of the Companies Act, 2013, every company must have at least ONE Resident Director who has stayed in India for a total period of not less than how many days during the financial year?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Not less than 90 days"
+      },
+      {
+        "key": "B",
+        "text": "Not less than 182 days"
+      },
+      {
+        "key": "C",
+        "text": "Not less than 365 days"
+      },
+      {
+        "key": "D",
+        "text": "Not less than 60 days"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Every company (including OPC, Private, and Public) must have at least one director who has stayed in India for at least 182 days during the financial year (proportionately for newly incorporated companies).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Directors and Key Managerial Personnel of a Company",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-049",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 6,
+    "chapter": "Directors and Key Managerial Personnel of a Company",
+    "topic": "Key Managerial Personnel (KMP) Composition",
+    "difficulty": "Medium",
+    "questionText": "Under Section 2(51) / Section 203 of the Companies Act, 2013, which officers are statutorily designated as Key Managerial Personnel (KMP)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Statutory Auditor, Share Transfer Agent, Debenture Trustee, and Banker"
+      },
+      {
+        "key": "B",
+        "text": "Promoters, Underwriters, Merchant Bankers, and Factory Foremen"
+      },
+      {
+        "key": "C",
+        "text": "All equity shareholders holding more than 100 shares"
+      },
+      {
+        "key": "D",
+        "text": "CEO or Managing Director (or Manager), Company Secretary, Whole-Time Director, Chief Financial Officer (CFO), and prescribed senior officers one level below the Board"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Section 2(51) defines KMP to include CEO/MD/Manager, Company Secretary, Whole-Time Director, CFO, and designated officers not more than one level below directors in whole-time employment.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Directors and Key Managerial Personnel of a Company",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-050",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 6,
+    "chapter": "Directors and Key Managerial Personnel of a Company",
+    "topic": "Rotational Directors Numerical Calculation [Section 152(6)]",
+    "difficulty": "Hard",
+    "questionText": "A Public Limited Company's Board consists of 12 Directors in total, including 3 Statutory Independent Directors (who are excluded from rotational calculation under Section 149(13)). Under Section 152(6), what is the minimum number of rotational directors, and how many of them must retire by rotation at the upcoming AGM?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Minimum 6 rotational directors (two-thirds of 9); 2 directors retire at the upcoming AGM (one-third of 6)"
+      },
+      {
+        "key": "B",
+        "text": "Minimum 9 rotational directors; 3 directors retire at the AGM"
+      },
+      {
+        "key": "C",
+        "text": "Minimum 4 rotational directors; 1 director retires at the AGM"
+      },
+      {
+        "key": "D",
+        "text": "Minimum 8 rotational directors (two-thirds of 12); 4 directors retire at the AGM"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Independent Directors (3) are excluded from 'total number of directors' under Sec 152(6) Explanation, leaving 12 − 3 = 9 directors. At least 2/3rd of 9 = 6 must be liable to retire by rotation, and at each AGM 1/3rd of those 6 = 2 longest-in-office directors retire.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Directors and Key Managerial Personnel of a Company",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-051",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 6,
+    "chapter": "Directors and Key Managerial Personnel of a Company",
+    "topic": "Independent Director Tenure & Cooling-Off Rule",
+    "difficulty": "Hard",
+    "questionText": "Under Section 149(10)–(11) of the Companies Act, 2013, what is the maximum tenure per term and maximum consecutive terms an Independent Director may serve—followed by what mandatory cooling-off period?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Lifelong appointment up to age 85 without shareholder approval"
+      },
+      {
+        "key": "B",
+        "text": "Up to 10 years per term for 3 consecutive terms with zero cooling-off"
+      },
+      {
+        "key": "C",
+        "text": "Up to 5 consecutive years per term, for a maximum of 2 consecutive terms (second term requiring Special Resolution), followed by a 3-year cooling-off period"
+      },
+      {
+        "key": "D",
+        "text": "1-year annual rotation indefinitely by Ordinary Resolution"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "An Independent Director holds office up to 5 consecutive years (not liable to retire by rotation), is eligible for re-appointment for one more 5-year term ONLY via Special Resolution, and thereafter cannot be re-appointed until 3 years have elapsed.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Directors and Key Managerial Personnel of a Company",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-052",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 6,
+    "chapter": "Directors and Key Managerial Personnel of a Company",
+    "topic": "Legal Position of Directors — Agents & Trustees",
+    "difficulty": "Hard",
+    "questionText": "Directors are described in corporate law as 'Trustees of the company's money and property, and Agents in the transactions they enter into on its behalf.' Which consequence flows directly from this dual legal position?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "On bona fide contracts signed within scope for the company, the company alone is bound (as principal, not directors personally); yet if directors misapply corporate funds, they must personally restore the loss (as trustees)"
+      },
+      {
+        "key": "B",
+        "text": "Directors hold legal title to all company land in their personal names like trust property"
+      },
+      {
+        "key": "C",
+        "text": "Every individual director is personally liable for all routine trade creditors even when acting honestly within power"
+      },
+      {
+        "key": "D",
+        "text": "Directors are salaried shop-floor workmen under the Industrial Disputes Act"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Unlike strict trustees, legal ownership vests in the company itself, yet directors stand in a fiduciary trustee-like duty over corporate assets/powers while binding the company (not themselves personally) as agents within authority.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Directors and Key Managerial Personnel of a Company",
+    "abilityTags": [
+      "business_decision_making",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-053",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 7,
+    "chapter": "Company Meetings - I",
+    "topic": "Notice Period for General Meetings",
+    "difficulty": "Easy",
+    "questionText": "Under Section 101 of the Companies Act, 2013, a General Meeting of a company normally requires a minimum notice of how many 'clear days'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Not less than 48 hours"
+      },
+      {
+        "key": "B",
+        "text": "Not less than 60 clear days"
+      },
+      {
+        "key": "C",
+        "text": "Not less than 7 clear days"
+      },
+      {
+        "key": "D",
+        "text": "Not less than 21 clear days"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "A valid General Meeting requires at least 21 clear days' notice (excluding both the day of serving/sending notice and the day of the meeting, plus 48 hours postal transit if posted), unless shorter notice is duly consented to.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Company Meetings - I",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-054",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 7,
+    "chapter": "Company Meetings - I",
+    "topic": "Proxy Deposit Timeline and Speaking Right",
+    "difficulty": "Easy",
+    "questionText": "Under Section 105 of the Companies Act, 2013, at least how many hours before a General Meeting must a completed Proxy form (MGT-11) be deposited at the Registered Office, and what are a Proxy's rights at the meeting?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "At least 72 hours before; a Proxy votes twice on every resolution"
+      },
+      {
+        "key": "B",
+        "text": "At least 48 hours before the meeting; a Proxy has no right to speak and can vote ONLY on a Poll (not on Show of Hands)"
+      },
+      {
+        "key": "C",
+        "text": "At least 10 days before the meeting; a Proxy chairs the meeting and votes by Show of Hands"
+      },
+      {
+        "key": "D",
+        "text": "At the doorstep 5 minutes after commencement; a Proxy proposes amendments orally"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Proxy instruments must be lodged ≥48 hours prior to the meeting (AOA cannot demand >48 hours); a proxy attends as silent representative without speaking rights and votes only when a Poll is taken.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Company Meetings - I",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-055",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 7,
+    "chapter": "Company Meetings - I",
+    "topic": "Quorum for Public Company General Meeting (Section 103)",
+    "difficulty": "Medium",
+    "questionText": "Konkan Chemicals Ltd., a Public Company, has 3,400 members on the date of its Annual General Meeting. Unless its Articles prescribe a larger number, what is the statutory Quorum of members 'personally present' required under Section 103?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "5 members personally present"
+      },
+      {
+        "key": "B",
+        "text": "30 members personally present"
+      },
+      {
+        "key": "C",
+        "text": "15 members personally present"
+      },
+      {
+        "key": "D",
+        "text": "2 members personally present"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Under Section 103(1)(a), Quorum for a Public Company is: 5 members personally present if total members ≤ 1,000; 15 members if > 1,000 and ≤ 5,000; and 30 members if > 5,000 (for a Private Company, 2 members personally present).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Company Meetings - I",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-056",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 7,
+    "chapter": "Company Meetings - I",
+    "topic": "Voting by Show of Hands vs Poll",
+    "difficulty": "Medium",
+    "questionText": "How does a member's voting power change when a General Meeting shifts from 'Voting by Show of Hands' (Section 107) to 'Voting by Poll' (Section 109)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Both methods ignore shareholding size and exclude proxies"
+      },
+      {
+        "key": "B",
+        "text": "Voting by Poll is prohibited in Public Limited Companies"
+      },
+      {
+        "key": "C",
+        "text": "On Show of Hands, proxies cast 10 votes each; on a Poll, every shareholder gets only 1 vote"
+      },
+      {
+        "key": "D",
+        "text": "On Show of Hands, every member personally present has 1 vote regardless of shares held (proxies excluded); on a Poll, voting power is strictly proportional to paid-up equity share capital held (and proxies can vote)"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Show of Hands follows 'one person, one vote' among members personally present; demanding a Poll activates 'one share, one vote' proportional to paid-up equity capital and allows duly lodged proxies to vote.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Company Meetings - I",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-057",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 7,
+    "chapter": "Company Meetings - I",
+    "topic": "Minutes Book Statutory Rules (Section 118)",
+    "difficulty": "Medium",
+    "questionText": "Within how many days of the conclusion of a General or Board Meeting must its 'Minutes' be entered in the consecutively numbered Minutes Book under Section 118, and how must corrections/pasting be handled?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Within 30 days of conclusion; loose sheets must never be pasted into the bound Minutes Book"
+      },
+      {
+        "key": "B",
+        "text": "Within 90 days; filed only with the local police station"
+      },
+      {
+        "key": "C",
+        "text": "Within 180 days of conclusion; typed pages may be glued over old pages"
+      },
+      {
+        "key": "D",
+        "text": "Before the meeting starts; signed only by the statutory auditor"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Minutes are prima facie evidence of valid proceedings and must be recorded within 30 days of conclusion in consecutively numbered pages, initialled on each page and signed/dated on the last page without pasting.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Company Meetings - I",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-058",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 7,
+    "chapter": "Company Meetings - I",
+    "topic": "Special Resolution 75% Vote Calculation [Section 114(2)]",
+    "difficulty": "Hard",
+    "questionText": "At an EGM of a company to alter its Articles of Association (requiring a Special Resolution), 500 equity votes are held by members present: 330 valid votes are cast in favour, 100 valid votes are cast against, 50 members abstain from voting, and 20 ballot papers are rejected as invalid. Is the Special Resolution legally passed?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "No — 330 is less than 75% of 500 total votes present (375 required)"
+      },
+      {
+        "key": "B",
+        "text": "No — unanimity of 100% is required to alter Articles"
+      },
+      {
+        "key": "C",
+        "text": "Yes — votes in favour (330) are at least 3 times votes against (3 × 100 = 300), i.e., 76.74% of valid votes cast (430)"
+      },
+      {
+        "key": "D",
+        "text": "Yes — only because abstentions (50) are automatically added to votes in favour"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Under Section 114(2), a Special Resolution requires votes cast in favour to be NOT LESS THAN 3 TIMES the votes cast against by members entitled and voting—abstentions and invalid ballots are excluded! Here 330 ≥ 3 × 100 (300), so it passes validly (and must be filed with ROC in Form MGT-14 within 30 days).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Company Meetings - I",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-059",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 7,
+    "chapter": "Company Meetings - I",
+    "topic": "Board Meeting Quorum with Interested Directors [Section 174]",
+    "difficulty": "Hard",
+    "questionText": "A company has 9 Directors on its Board. Under Section 174, normal Board Quorum is 1/3rd of total strength or 2 directors, whichever is higher (= 3). At a Board Meeting considering a supply contract in which 7 of the 9 directors are personally interested under Section 184, what is the valid Quorum for that agenda item?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "The remaining 2 uninterested directors present (since interested directors ≥ 2/3rd of total strength, Quorum drops to ≥ 2 uninterested directors)"
+      },
+      {
+        "key": "B",
+        "text": "Zero — the company must immediately go into liquidation"
+      },
+      {
+        "key": "C",
+        "text": "5 interested directors and 1 proxy appointed by a director"
+      },
+      {
+        "key": "D",
+        "text": "All 9 directors including the 7 interested directors voting on their own contract"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Interested directors cannot count toward Quorum for that contract; under Section 174(3), when interested directors equal or exceed 2/3rd of total strength (here 7 ≥ 6), the number of uninterested directors present—being NOT LESS THAN TWO (here 2)—constitutes valid Quorum!",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Company Meetings - I",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-060",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 7,
+    "chapter": "Company Meetings - I",
+    "topic": "Motion vs Point of Order",
+    "difficulty": "Hard",
+    "questionText": "During heated debate on a motion at an AGM, a member stands up and raises a 'Point of Order' pointing out that quorum has fallen below the statutory minimum after several members walked out. How must the Chairman act?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Ask proxies in the gallery to raise hands to make up the missing quorum"
+      },
+      {
+        "key": "B",
+        "text": "Immediately suspend debate on the main motion, verify the procedural irregularity (lack of quorum), and give a binding ruling before any further business can proceed"
+      },
+      {
+        "key": "C",
+        "text": "Put the Point of Order to a Poll after finishing all remaining agenda items"
+      },
+      {
+        "key": "D",
+        "text": "Ignore the member because quorum is checked only during the first 30 seconds"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "A Point of Order flags a breach of statutory meeting rules, AOA, or absence of quorum; it takes immediate precedence over debate, is decided solely by the Chairman's ruling (without vote), and continuing without valid quorum renders resolutions invalid.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Company Meetings - I",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-061",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 8,
+    "chapter": "Company Meetings - II",
+    "topic": "Frequency and Maximum Gap of Board Meetings",
+    "difficulty": "Easy",
+    "questionText": "Under Section 173(1) of the Companies Act, 2013, every regular Public or Private Company (other than OPC, Small, or Dormant company) must hold its First Board Meeting within 30 days of incorporation and thereafter a minimum of how many Board Meetings every year, with what maximum gap?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Minimum 12 Board Meetings every year, with a max 30-day gap"
+      },
+      {
+        "key": "B",
+        "text": "Minimum 1 Board Meeting every year, with a max 15-month gap"
+      },
+      {
+        "key": "C",
+        "text": "Minimum 2 Board Meetings every year, held only on Sundays"
+      },
+      {
+        "key": "D",
+        "text": "Minimum 4 Board Meetings every year, with not more than 120 days' gap between two consecutive meetings"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Section 173(1) mandates at least 4 Board Meetings annually such that the interval between any two consecutive Board Meetings never exceeds 120 days.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Company Meetings - II",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-062",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 8,
+    "chapter": "Company Meetings - II",
+    "topic": "Day, Time, and Venue of Annual General Meeting (AGM)",
+    "difficulty": "Easy",
+    "questionText": "Under Section 96(2) of the Companies Act, 2013, during what hours and on what days must an Annual General Meeting be called, and where must it be held?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Any hour 24×7 exclusively at the Bombay Stock Exchange floor"
+      },
+      {
+        "key": "B",
+        "text": "Only on Sundays between 6:00 a.m. and 8:00 a.m. outside India"
+      },
+      {
+        "key": "C",
+        "text": "During business hours (9:00 a.m. to 6:00 p.m.) on any day that is NOT a National Holiday, at the Registered Office or another place within the same city/town/village"
+      },
+      {
+        "key": "D",
+        "text": "Strictly after midnight on 15th August or 26th January at any foreign resort"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "AGMs must be convened during business hours (9 a.m.–6 p.m.) on any day other than a National Holiday (26 Jan, 15 Aug, 2 Oct), at the Registered Office or within the same city, town, or village.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Company Meetings - II",
+    "abilityTags": [
+      "business_decision_making",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-063",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 8,
+    "chapter": "Company Meetings - II",
+    "topic": "First AGM vs Subsequent AGM Statutory Timelines",
+    "difficulty": "Medium",
+    "questionText": "Contrast the statutory time limits under Section 96(1) for holding a company's 'First AGM' versus 'Subsequent AGMs', including the Registrar's extension power:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Both First and Subsequent AGMs must be held within 30 days of financial year-end"
+      },
+      {
+        "key": "B",
+        "text": "First AGM: within 9 months from closing of first financial year (NO extension allowed by ROC); Subsequent AGMs: within 6 months from closing of financial year and max 15-month gap (ROC may extend up to 3 months for special reasons)"
+      },
+      {
+        "key": "C",
+        "text": "First AGM: within 6 months (ROC can extend by 6 months); Subsequent AGMs: within 12 months"
+      },
+      {
+        "key": "D",
+        "text": "First AGM: within 18 months from incorporation; Subsequent AGMs: once every three years"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "First AGM gets 9 months from first FY close because accounts take longer to set up—hence ROC CANNOT grant any further extension; subsequent AGMs get 6 months from FY close (≤15-month inter-AGM gap), extendable by ROC up to 3 months.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Company Meetings - II",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-064",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 8,
+    "chapter": "Company Meetings - II",
+    "topic": "Ordinary Business vs Special Business at AGM",
+    "difficulty": "Medium",
+    "questionText": "Under Section 102(2) of the Companies Act, 2013, which of the following agenda items transacted at an Annual General Meeting is 'Special Business' requiring an Explanatory Statement—rather than one of the four statutory items of 'Ordinary Business'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Issue of Bonus Shares or Alteration of the Articles of Association"
+      },
+      {
+        "key": "B",
+        "text": "Consideration of Financial Statements and Reports of the Board and Auditors"
+      },
+      {
+        "key": "C",
+        "text": "Declaration of any Dividend"
+      },
+      {
+        "key": "D",
+        "text": "Appointment of Directors in place of those retiring and appointment/remuneration of Auditors"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Only four routine items at an AGM constitute Ordinary Business (Financial Statements/Reports, Dividend declaration, Re-appointing/replacing retiring Directors, Appointing/fixing remuneration of Auditors). Every other item at an AGM—and ALL business at an EGM—is Special Business requiring a Section 102 Explanatory Statement.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Company Meetings - II",
+    "abilityTags": [
+      "business_decision_making",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-065",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 8,
+    "chapter": "Company Meetings - II",
+    "topic": "Requisitioning an Extra-Ordinary General Meeting (EGM)",
+    "difficulty": "Medium",
+    "questionText": "Under Section 100 of the Companies Act, 2013, members of a company having share capital can validly requisition the Board to call an EGM if they hold at least what fraction of paid-up voting share capital—and within what timelines must the Board act?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Any single shareholder holding 1 share; Board must hold EGM within 24 hours"
+      },
+      {
+        "key": "B",
+        "text": "At least 75% of debentures; EGM is held after 1 year"
+      },
+      {
+        "key": "C",
+        "text": "At least 51% of share capital; Board gets 180 days to call the EGM"
+      },
+      {
+        "key": "D",
+        "text": "Not less than 1/10th (10%) of paid-up voting share capital; Board must proceed within 21 days to call the EGM on a date not later than 45 days from receipt of requisition"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Members holding ≥1/10th of paid-up equity voting power (or ≥1/10th total voting power in non-share company) can requisition an EGM; if the Board fails to proceed within 21 days / hold within 45 days, requisitionists themselves may hold the EGM within 3 months of requisition.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Company Meetings - II",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-066",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 8,
+    "chapter": "Company Meetings - II",
+    "topic": "Class Meetings (Section 48)",
+    "difficulty": "Medium",
+    "questionText": "Why does a company convene a separate 'Class Meeting' exclusively of its 9% Preference Shareholders?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "To approve routine factory petty-cash vouchers"
+      },
+      {
+        "key": "B",
+        "text": "To obtain consent (by ≥3/4th Special Resolution of that class under Section 48) before varying the specific rights/dividend terms attached to that class of shares"
+      },
+      {
+        "key": "C",
+        "text": "To adopt the company's annual Balance Sheet instead of holding an AGM"
+      },
+      {
+        "key": "D",
+        "text": "To appoint the Managing Director's Personal Secretary"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Under Section 48, rights attached to a specific class of shares cannot be varied adversely unless approved by holders of ≥3/4th of issued shares of that class (or at a separate Class Meeting by Special Resolution).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Company Meetings - II",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-067",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 8,
+    "chapter": "Company Meetings - II",
+    "topic": "Lack of Quorum Consequence: Requisitioned EGM vs Board-Convened AGM",
+    "difficulty": "Hard",
+    "questionText": "Under Section 103(2)–(3), if the statutory Quorum is NOT present within half an hour of the scheduled start time, contrast the legal fate of (Case A) an AGM convened by the Board versus (Case B) an EGM called on the Requisition of members:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Case A stands cancelled permanently, while Case B stands adjourned for one month"
+      },
+      {
+        "key": "B",
+        "text": "Both Case A and Case B proceed immediately with 1 shareholder as quorum"
+      },
+      {
+        "key": "C",
+        "text": "Case A (Board-convened AGM) stands adjourned to the same day, time, and place in the next week; Case B (Requisitionists' EGM) stands CANCELLED permanently (not adjourned)"
+      },
+      {
+        "key": "D",
+        "text": "Both Case A and Case B stand cancelled and trigger company winding up"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Crucial Section 103 rule: if quorum fails within 30 minutes at a requisitioned EGM under Section 100, the meeting stands CANCELLED (since the requisitionists themselves failed to muster attendance), whereas any other General Meeting adjourns to the next week.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Company Meetings - II",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-068",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 8,
+    "chapter": "Company Meetings - II",
+    "topic": "Board Resolution by Circulation vs Mandatory Physical/VC Meeting",
+    "difficulty": "Hard",
+    "questionText": "Under Sections 175 and 179(3) of the Companies Act, 2013, the Chairman wants to approve two urgent items via written 'Resolution by Circulation' emailed to all directors in India: (Item 1) Taking note of routine quarterly share-transfer statistics; (Item 2) Borrowing ₹40 crore from a consortium of banks and investing corporate funds. How should the Company Secretary advise him?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Item 1 can pass by Circulation if approved by a majority of directors entitled to vote (unless ≥1/3rd of total directors demand a formal meeting), whereas Item 2 CANNOT pass by Circulation because Section 179(3) mandates approval ONLY at a duly convened Board Meeting"
+      },
+      {
+        "key": "B",
+        "text": "Neither item can ever pass by Circulation because Section 175 was repealed"
+      },
+      {
+        "key": "C",
+        "text": "Item 2 passes by Circulation while Item 1 requires an EGM"
+      },
+      {
+        "key": "D",
+        "text": "Both Item 1 and Item 2 can pass by oral telephone poll without any written record"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Core Board powers under Section 179(3)—making calls, buy-back, issuing securities, borrowing monies, investing funds, granting loans, approving financial statements—must be exercised strictly at a Board Meeting (physical/VC), never by circulation; moreover, ≥1/3rd directors can block any circular resolution and require a meeting.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Company Meetings - II",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-069",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 9,
+    "chapter": "Business Communication Skills of Secretary",
+    "topic": "Feedback in Communication Loop",
+    "difficulty": "Easy",
+    "questionText": "In the two-way process of Business Communication (Sender → Encoding → Message → Channel → Receiver → Decoding → ?), which final element confirms that the receiver understood the message as intended?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Letterhead"
+      },
+      {
+        "key": "B",
+        "text": "Channel Noise"
+      },
+      {
+        "key": "C",
+        "text": "Feedback"
+      },
+      {
+        "key": "D",
+        "text": "Postscript"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Communication remains incomplete without 'Feedback'—the receiver's response transmitted back to the sender verifying comprehension.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Business Communication Skills of Secretary",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-070",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 9,
+    "chapter": "Business Communication Skills of Secretary",
+    "topic": "Inside Address vs Heading in Business Letter Layout",
+    "difficulty": "Easy",
+    "questionText": "In the standard layout of a formal corporate business letter, whose name and postal address appear in the 'Inside Address'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "The Sender (whose details already appear in the Letterhead)"
+      },
+      {
+        "key": "B",
+        "text": "The printing press that printed the company stationery"
+      },
+      {
+        "key": "C",
+        "text": "The Statutory Auditor of the company"
+      },
+      {
+        "key": "D",
+        "text": "The Receiver (Addressee) to whom the letter is being sent"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "The Heading/Letterhead at the top gives the sender company's name, CIN, and registered office, while the Inside Address on the left margin specifies the recipient's name, designation, and address.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Business Communication Skills of Secretary",
+    "abilityTags": [
+      "business_decision_making",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-071",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 9,
+    "chapter": "Business Communication Skills of Secretary",
+    "topic": "Merit of Written Corporate Communication",
+    "difficulty": "Easy",
+    "questionText": "Why is formal 'Written Communication' preferred over oral conversation in Secretarial Practice?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "It requires no literacy or drafting precision"
+      },
+      {
+        "key": "B",
+        "text": "It provides an accurate, verifiable, permanent record admissible as legal evidence in corporate and statutory matters"
+      },
+      {
+        "key": "C",
+        "text": "It conveys facial expressions and vocal pitch directly"
+      },
+      {
+        "key": "D",
+        "text": "It leaves zero documentary trail in case of litigation"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Corporate notices, resolutions, contracts, and filings require precision, accountability, and permanent archival value as legal evidence—key strengths of written communication.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Business Communication Skills of Secretary",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-072",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 9,
+    "chapter": "Business Communication Skills of Secretary",
+    "topic": "The 'You-Attitude' (Consideration) Principle",
+    "difficulty": "Medium",
+    "questionText": "Among the '7 Cs' of effective business letter writing, what does 'Consideration (You-Attitude)' require a Company Secretary to do?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Omit reference numbers and dates to save ink"
+      },
+      {
+        "key": "B",
+        "text": "Begin every sentence with 'We demand' and threaten legal penalties"
+      },
+      {
+        "key": "C",
+        "text": "Stretch a two-paragraph reply into ten pages of technical jargon"
+      },
+      {
+        "key": "D",
+        "text": "Draft the message from the reader's perspective—showing empathy, emphasising benefits/solutions relevant to the recipient, and protecting the reader's self-respect even when declining a request"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Consideration ('You-Attitude') shifts focus from self-centred 'I/We' phrasing to reader-centric empathy, winning goodwill even in delicate situations like refusing credit or regret letters.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Business Communication Skills of Secretary",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-073",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 9,
+    "chapter": "Business Communication Skills of Secretary",
+    "topic": "Reference Number and Enclosures Notation",
+    "difficulty": "Medium",
+    "questionText": "Why does a Company Secretary systematically include an outward 'Reference Number' at the top and an 'Encl.' line at the bottom-left of official letters?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "The Reference Number enables rapid departmental/chronological file retrieval in future correspondence, while 'Encl.' alerts the dispatch clerk and recipient to verify attached documents"
+      },
+      {
+        "key": "B",
+        "text": "Both are decorative ornaments with no administrative utility"
+      },
+      {
+        "key": "C",
+        "text": "Reference Number replaces the company's CIN with ROC"
+      },
+      {
+        "key": "D",
+        "text": "'Encl.' authorises the postman to open and read confidential cheques"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Outward Reference Numbers link replies to exact files/subjects/years, while 'Encl.' specifies the count and nature of attached papers (e.g., certified Board Resolution, cheque, notice) to prevent dispatch omissions.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Business Communication Skills of Secretary",
+    "abilityTags": [
+      "business_decision_making",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-074",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 9,
+    "chapter": "Business Communication Skills of Secretary",
+    "topic": "Statutory vs Non-Statutory Corporate Reports",
+    "difficulty": "Medium",
+    "questionText": "Distinguish between a 'Statutory Report' (such as the Directors' Report under Sec 134 or Secretarial Audit Report) and a 'Non-Statutory Report':",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Both are prohibited from containing recommendations or financial figures"
+      },
+      {
+        "key": "B",
+        "text": "Statutory Reports are drafted by competitors"
+      },
+      {
+        "key": "C",
+        "text": "A Statutory Report is prepared and filed in compliance with mandatory provisions of law in prescribed form, whereas a Non-Statutory Report is commissioned voluntarily by management/Board to investigate a specific business problem (e.g., declining regional sales or plant expansion)"
+      },
+      {
+        "key": "D",
+        "text": "A Non-Statutory Report must be filed with SEBI within 7 days, whereas a Statutory Report is oral"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Statutory reports fulfil compulsory legal disclosures under the Companies Act/SEBI rules; Non-Statutory (informal/analytical) reports aid internal managerial decision-making on specific assignments.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Business Communication Skills of Secretary",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-075",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 9,
+    "chapter": "Business Communication Skills of Secretary",
+    "topic": "Diagnosing Flaws Against the Cs of Business Correspondence",
+    "difficulty": "Hard",
+    "questionText": "A junior assistant drafts a letter to a shareholder: 'Your transfer request received last month cannot be processed till compliance is done as per rules; kindly do the needful soon.' Which three essentials of a good business letter are violated here?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Absence of a Postscript (P.S.) at the bottom"
+      },
+      {
+        "key": "B",
+        "text": "Completeness, Clarity, and Conciseness/Specificity — it omits exact folio/deed details, fails to specify WHICH compliance defect exists (e.g., missing PAN or under-stamped SH-4), and uses vague clichés ('do the needful soon')"
+      },
+      {
+        "key": "C",
+        "text": "Paper weight, watermark colour, and envelope gum quality"
+      },
+      {
+        "key": "D",
+        "text": "Use of English instead of Latin legal maxims"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Effective secretarial correspondence must be Complete (all actionable specifics: folio, certificate numbers, exact deficiency), Clear (unambiguous steps required), and free of archaic vague phrases like 'do the needful'.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Business Communication Skills of Secretary",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-076",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 9,
+    "chapter": "Business Communication Skills of Secretary",
+    "topic": "Matching Salutation, Subject Line, and Complimentary Close",
+    "difficulty": "Hard",
+    "questionText": "When drafting a formal corporate letter addressed by name to 'Dr. Kavita Deshmukh, Independent Director', which pairing of Salutation and Complimentary Close conforms to standard British/Indian secretarial etiquette taught in MSBSHSE SP?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Salutation: 'Dear Madam,' (or 'Dear Dr. Deshmukh,') paired with Complimentary Close: 'Yours faithfully,' (for 'Dear Madam,') / 'Yours sincerely,' (for 'Dear Dr. Deshmukh,')"
+      },
+      {
+        "key": "B",
+        "text": "Salutation: 'Hey Kavita!' paired with 'Yours obediently,'"
+      },
+      {
+        "key": "C",
+        "text": "Salutation: 'Respected Boss,' paired with 'Lovingly yours,'"
+      },
+      {
+        "key": "D",
+        "text": "Omitting both Salutation and Complimentary Close in formal director letters"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Formal secretarial etiquette pairs impersonal salutations ('Dear Sir,' / 'Dear Madam,') with 'Yours faithfully,' and named salutations ('Dear Dr. Deshmukh,') with 'Yours sincerely,' maintaining respectful professionalism.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Business Communication Skills of Secretary",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-077",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 10,
+    "chapter": "Correspondence with Directors",
+    "topic": "Tone in Correspondence with Directors",
+    "difficulty": "Easy",
+    "questionText": "Why must a Company Secretary adopt an extra-courteous, tactful, and non-bossy tone when corresponding with Directors?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Directors can imprison the Secretary without trial"
+      },
+      {
+        "key": "B",
+        "text": "Letters to Directors are published as front-page newspaper advertisements"
+      },
+      {
+        "key": "C",
+        "text": "Directors are junior trainees reporting directly to the Personal Secretary"
+      },
+      {
+        "key": "D",
+        "text": "Directors are the elected 'brains' and policy-makers of the company under whose collective superintendence the Secretary works as chief administrative executive"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "While the Secretary advises the Board on statutory compliance, Directors constitute Top Level Management; correspondence with them demands utmost courtesy, factual accuracy, and confidentiality.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Correspondence with Directors",
+    "abilityTags": [
+      "business_decision_making",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-078",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 10,
+    "chapter": "Correspondence with Directors",
+    "topic": "Notice Period for Routine Board Meeting",
+    "difficulty": "Easy",
+    "questionText": "Under Section 173(3) of the Companies Act, 2013, when the Company Secretary sends a Notice and Agenda of a routine Board Meeting to every Director at his registered address in India (by hand, post, or electronic means), at least how many days' notice is required?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "2 hours' oral notice"
+      },
+      {
+        "key": "B",
+        "text": "Not less than 21 clear days' notice"
+      },
+      {
+        "key": "C",
+        "text": "Not less than 45 days' notice"
+      },
+      {
+        "key": "D",
+        "text": "Not less than 7 days' notice in writing"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Section 173(3) mandates at least 7 days' written notice of every Board Meeting to every director (shorter notice is permissible only to transact urgent business if at least one Independent Director—if any—is present or ratifies).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Correspondence with Directors",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-079",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 10,
+    "chapter": "Correspondence with Directors",
+    "topic": "Disclosure of Personal Interest by Director (Section 184 / MBP-1)",
+    "difficulty": "Medium",
+    "questionText": "When a Company Secretary writes to a newly appointed or existing Director reminding him to submit statutory disclosure of his shareholding/concern in other firms and companies under Section 184(1), when must this disclosure (Form MBP-1) be given?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Only once in a lifetime at the time of retirement"
+      },
+      {
+        "key": "B",
+        "text": "At the first Board Meeting in which he participates as a director, and thereafter at the first Board Meeting in every financial year (plus whenever any change occurs)"
+      },
+      {
+        "key": "C",
+        "text": "Only after the company declares a 50% dividend"
+      },
+      {
+        "key": "D",
+        "text": "Directly to trade creditors every Monday"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Section 184(1) mandates general disclosure of interest in Form MBP-1 at the director's first Board Meeting, at the first Board Meeting of each financial year, and at the first Board Meeting held after any change in disclosures.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Correspondence with Directors",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-080",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 10,
+    "chapter": "Correspondence with Directors",
+    "topic": "Report to an Absentee Director",
+    "difficulty": "Medium",
+    "questionText": "Director Shri Kulkarni could not attend the quarterly Board Meeting due to overseas medical treatment and had obtained leave of absence. When the Secretary sends him a 'Report of Proceedings of Board Meeting', what key information is conveyed?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "A public press release criticising his absence"
+      },
+      {
+        "key": "B",
+        "text": "Only the catering bill of the boardroom lunch"
+      },
+      {
+        "key": "C",
+        "text": "A concise, confidential summary of resolutions passed and major deliberations on each agenda item—alongside circulating draft minutes within 15 days under Secretarial Standards"
+      },
+      {
+        "key": "D",
+        "text": "A show-cause notice forfeiting all his equity shares"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Keeping an absentee director informed of key policy decisions taken in his absence maintains collective Board cohesion, alongside statutory/SS-1 circulation of draft Board minutes within 15 days for comments.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Correspondence with Directors",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-081",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 10,
+    "chapter": "Correspondence with Directors",
+    "topic": "Contents of Agenda Enclosed with Board Meeting Notice",
+    "difficulty": "Medium",
+    "questionText": "Why does the Company Secretary enclose a structured 'Agenda' with notes alongside the Notice of a Board Meeting?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "So directors can study financial proposals and background facts in advance and deliberate productively in chronological order at the meeting"
+      },
+      {
+        "key": "B",
+        "text": "Because an Agenda is a negotiable instrument payable at the bank"
+      },
+      {
+        "key": "C",
+        "text": "To bar directors from asking any questions during the meeting"
+      },
+      {
+        "key": "D",
+        "text": "To replace the signed Minutes Book after the meeting"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "An Agenda lists items of business sequentially (confirming last minutes, noting share transfers, reviewing quarterly accounts, capex proposals, any other business with Chair's permission), enabling informed preparation.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Correspondence with Directors",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-082",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 10,
+    "chapter": "Correspondence with Directors",
+    "topic": "Vacation of Office for Continuous Absence [Section 167(1)(b)]",
+    "difficulty": "Medium",
+    "questionText": "A Director has already missed three consecutive Board Meetings over the past 10 months, and the fourth Board Meeting of the 12-month window is scheduled next month. Why does a diligent Company Secretary send a polite reminder alerting the Director to Section 167(1)(b)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Because missing four meetings converts him into a Managing Director automatically"
+      },
+      {
+        "key": "B",
+        "text": "Because under Section 167(1)(b), if a director absents himself from ALL meetings of the Board held during a period of 12 months—with or without seeking leave of absence—his office of Director automatically falls vacant!"
+      },
+      {
+        "key": "C",
+        "text": "Because seeking leave of absence allows a director to skip Board meetings for 5 consecutive years without vacating office"
+      },
+      {
+        "key": "D",
+        "text": "Because Section 167 applies only to clerical typists"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Crucial Companies Act, 2013 rule: Section 167(1)(b) triggers automatic vacation of office if a director misses ALL Board Meetings held over a 12-month period—EVEN IF leave of absence was granted! (Seeking leave only shields him from monetary penalty, not from vacation of office if absent for full 12 months).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Correspondence with Directors",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-083",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 10,
+    "chapter": "Correspondence with Directors",
+    "topic": "Drafting Tact when Pointing Out Section 184 Conflict of Interest",
+    "difficulty": "Hard",
+    "questionText": "The Purchase Committee places an equipment purchase proposal from M/s Precision Gears Pvt. Ltd. on the upcoming Board Agenda; the Company Secretary notices from Form MBP-1 records that Director Smt. Joshi holds 22% equity in M/s Precision Gears Pvt. Ltd. What dual action must the Secretary take in correspondence and meeting management?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Cancel the company's Certificate of Incorporation immediately"
+      },
+      {
+        "key": "B",
+        "text": "Publicly accuse Smt. Joshi of embezzlement before any meeting is held"
+      },
+      {
+        "key": "C",
+        "text": "Politely write to Smt. Joshi drawing attention to her Section 184(2) interest (where shareholding exceeds 2%) and ensure at the Board Meeting that she discloses her interest, abstains from discussion/voting on that item, and is excluded from quorum for it"
+      },
+      {
+        "key": "D",
+        "text": "Conceal the MBP-1 record from the Chairman and let Smt. Joshi propose and second the contract"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Under Section 184(2), a director holding >2% shareholding in a contracting body corporate is an 'interested director' who must disclose the nature of interest and neither participate in discussion nor vote on that contract; secretarial tact ensures compliance smoothly.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Correspondence with Directors",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-084",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 10,
+    "chapter": "Correspondence with Directors",
+    "topic": "Shorter-Notice Urgent Board Meeting Safeguard [Section 173(3)]",
+    "difficulty": "Hard",
+    "questionText": "An urgent foreign acquisition bid requires calling a Board Meeting at 48 hours' shorter notice (less than 7 days). If the Public Company has 2 Independent Directors, neither of whom is able to attend the emergency meeting, what statutory safeguard must the Secretary follow so decisions taken at that meeting become legally valid?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Have the Company Secretary vote as an Independent Director"
+      },
+      {
+        "key": "B",
+        "text": "Decisions become completely void with no ratification mechanism allowed under the Act"
+      },
+      {
+        "key": "C",
+        "text": "Obtain oral approval from the company's statutory bank manager instead"
+      },
+      {
+        "key": "D",
+        "text": "Circulate the decisions taken at the shorter-notice meeting to ALL directors, and they become final ONLY upon ratification thereof by at least ONE Independent Director"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Under the proviso to Section 173(3), a shorter-notice Board Meeting for urgent business requires presence of at least one Independent Director (if the company has IDs), and in their absence, decisions must be circulated to all directors and ratified by at least one Independent Director!",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Correspondence with Directors",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-085",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 11,
+    "chapter": "Correspondence with Banks",
+    "topic": "Type of Bank Account Opened by Companies",
+    "difficulty": "Easy",
+    "questionText": "Which type of deposit account does a Joint Stock Company open with a commercial bank to handle high-volume daily receipts, cheque payments, and overdraft facilities without transaction-count restrictions?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Current Account"
+      },
+      {
+        "key": "B",
+        "text": "Recurring Deposit Account"
+      },
+      {
+        "key": "C",
+        "text": "Minor's Piggy Savings Account"
+      },
+      {
+        "key": "D",
+        "text": "Senior Citizen Pension Account"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Business enterprises and companies open a Current Account—offering unlimited daily deposits/withdrawals, cheque-book clearing, standing instructions, and overdraft facilities (normally carrying zero interest on credit balances).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Correspondence with Banks",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-086",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 11,
+    "chapter": "Correspondence with Banks",
+    "topic": "Stop Payment of Cheque Instruction",
+    "difficulty": "Easy",
+    "questionText": "When a crossed cheque issued to a supplier is reported lost in postal transit, what urgent letter does the Company Secretary send to the company's bank?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Application for Statutory Extension of AGM"
+      },
+      {
+        "key": "B",
+        "text": "Notice of Forfeiture of Shares"
+      },
+      {
+        "key": "C",
+        "text": "Letter requesting 'Stop Payment of Cheque' quoting exact cheque number, date, amount, and payee's name"
+      },
+      {
+        "key": "D",
+        "text": "Letter requesting Opening of a Letter of Credit"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "To prevent fraudulent encashment or double payment before issuing a duplicate cheque, the Secretary promptly instructs the bank (often by phone/email confirmed immediately in writing) to stop payment, citing cheque number, date, amount, and payee.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Correspondence with Banks",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-087",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 11,
+    "chapter": "Correspondence with Banks",
+    "topic": "Bank Overdraft Facility Nature",
+    "difficulty": "Easy",
+    "questionText": "A 'Bank Overdraft' facility requested by a Company Secretary against hypothecation of stock or fixed deposit receipts is primarily meant to meet what kind of corporate financial need?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Permanent replacement of promoters' equity contribution"
+      },
+      {
+        "key": "B",
+        "text": "Short-term / temporary working-capital liquidity mismatches"
+      },
+      {
+        "key": "C",
+        "text": "25-year greenfield nuclear power plant construction"
+      },
+      {
+        "key": "D",
+        "text": "Redemption of irredeemable equity capital upon winding up"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Bank Overdraft allows a Current Account holder to overdraw up to a sanctioned limit for short-term working capital needs, with interest charged ONLY on the actual amount overdrawn for the exact number of days utilised.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Correspondence with Banks",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-088",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 11,
+    "chapter": "Correspondence with Banks",
+    "topic": "Mandatory Enclosures for Opening a Corporate Current Account",
+    "difficulty": "Medium",
+    "questionText": "When a Company Secretary writes to a commercial bank requesting opening of a Current Account in the company's name, which set of certified documents must accompany the account-opening form?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Certified true copy of Board Resolution (naming authorised signatories), copies of MOA, AOA, Certificate of Incorporation (and Sec 10A declaration/PAN), and specimen signature cards of authorised directors/officers"
+      },
+      {
+        "key": "B",
+        "text": "Only the Personal Secretary's driving licence and college mark-sheet"
+      },
+      {
+        "key": "C",
+        "text": "Original Share Certificates of all retail shareholders"
+      },
+      {
+        "key": "D",
+        "text": "Minutes Book of the rival company"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Because a company acts through authorised agents, banks verify corporate existence (COI, MOA, AOA, PAN) and exact signing mandate (Board Resolution + specimen signatures) before opening a Current Account.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Correspondence with Banks",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-089",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 11,
+    "chapter": "Correspondence with Banks",
+    "topic": "Opening a Letter of Credit for Imports",
+    "difficulty": "Medium",
+    "questionText": "Sahyadri Textiles Ltd. is importing automated air-jet looms worth €2,00,000 from a German manufacturer who insists on an 'Irrevocable Letter of Credit'. What specific details must the Secretary include in the L/C request letter to the company's bank?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "List of domestic retail saree shops in Pune"
+      },
+      {
+        "key": "B",
+        "text": "Request to cancel the company's Importer Exporter Code"
+      },
+      {
+        "key": "C",
+        "text": "Names of all 3,000 factory loom weavers and their home addresses"
+      },
+      {
+        "key": "D",
+        "text": "Beneficiary's (German exporter's) name & bank, exact L/C amount & currency, description of machinery, shipment port & expiry date, required shipping documents (Bill of Lading, invoice, insurance), and margin/security offered"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "An Irrevocable Letter of Credit cannot be cancelled or modified without all parties' consent; the bank needs exact beneficiary details, amount/currency, validity, required shipping documents, and importer's Board authorisation/margin.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Correspondence with Banks",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-090",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 11,
+    "chapter": "Correspondence with Banks",
+    "topic": "Precautions in Secretarial Correspondence with Banks",
+    "difficulty": "Medium",
+    "questionText": "Why are 'Secrecy', 'Promptness', and 'Brevity with Precision' singled out as critical precautions in a Company Secretary's correspondence with Banks?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Banks destroy all corporate letters within 24 hours"
+      },
+      {
+        "key": "B",
+        "text": "Confidential financial/credit data must not leak to rivals, urgent instructions like Stop Payment are time-critical, and exact account/cheque/resolution figures prevent costly banking errors"
+      },
+      {
+        "key": "C",
+        "text": "Banks charge ₹100 per extra word in every letter"
+      },
+      {
+        "key": "D",
+        "text": "RBI prohibits letters longer than five lines"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Banking letters handle sensitive credit limits, signatories, cheques, and guarantees where a single digit error or a two-hour delay on a stop-payment notice can cause immediate financial loss.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Correspondence with Banks",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-091",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 11,
+    "chapter": "Correspondence with Banks",
+    "topic": "Joint Signatory Mandate Governance",
+    "difficulty": "Hard",
+    "questionText": "A company's Board Resolution filed with its bank stipulates: 'Cheques up to ₹5,00,000 may be signed by Managing Director OR CFO; cheques exceeding ₹5,00,000 MUST bear joint signatures of Managing Director AND Company Secretary.' If Director X retires and Director Y is inducted as authorised signatory, what must the Secretary send the bank immediately?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "An informal WhatsApp message from the office peon without any Board Resolution"
+      },
+      {
+        "key": "B",
+        "text": "Nothing until the next Annual General Meeting nine months later"
+      },
+      {
+        "key": "C",
+        "text": "A formal letter enclosing a certified extract of the fresh Board Resolution updating the signing mandate, revoking Director X's authority, and furnishing attested specimen signatures of Director Y"
+      },
+      {
+        "key": "D",
+        "text": "A request to transfer the corporate Current Account into Director Y's personal savings account"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Banks strictly honour the active Board mandate on record; any change in authorised signatories requires prompt written notification backed by a certified Board Resolution and attested specimen signatures to prevent unauthorised debits or wrongful dishonour.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Correspondence with Banks",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-092",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 11,
+    "chapter": "Correspondence with Banks",
+    "topic": "Overdraft Interest vs Term Loan Cost Comparison",
+    "difficulty": "Hard",
+    "questionText": "A company needs peak seasonal working capital of ₹40,00,000 for ONLY 90 days during the festive quarter (zero borrowing needed for the remaining 275 days). Option A is a 1-year fixed Term Loan of ₹40,00,000 @ 10% p.a. throughout the year; Option B is a sanctioned Bank Overdraft limit of ₹40,00,000 @ 12% p.a. fully drawn for 90 days only (365-day year, zero commitment fee). Roughly how much interest does Option B save?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "₹2,81,644 saved (Option B costs ₹1,18,356 vs Option A ₹4,00,000)"
+      },
+      {
+        "key": "B",
+        "text": "Both cost exactly ₹4,00,000"
+      },
+      {
+        "key": "C",
+        "text": "Option B saves ₹3,60,000"
+      },
+      {
+        "key": "D",
+        "text": "Option A is cheaper by ₹80,000 because 10% < 12%"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Option A full-year interest = ₹40,00,000 × 10% = ₹4,00,000. Option B Overdraft interest is charged ONLY on actual daily utilisation: ₹40,00,000 × 12% × (90/365) = ₹1,18,356. Saving = ₹4,00,000 − ₹1,18,356 = ₹2,81,644—explaining why Overdraft is ideal for seasonal working capital!",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Correspondence with Banks",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-093",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 12,
+    "chapter": "Correspondence with Statutory Authorities",
+    "topic": "Ministry Administering the Companies Act",
+    "difficulty": "Easy",
+    "questionText": "Which Union Ministry administers the Companies Act, 2013, the LLP Act, 2008, and operates the MCA21 electronic filing portal?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Ministry of Rural Development"
+      },
+      {
+        "key": "B",
+        "text": "Ministry of Corporate Affairs (MCA)"
+      },
+      {
+        "key": "C",
+        "text": "Ministry of External Affairs"
+      },
+      {
+        "key": "D",
+        "text": "Ministry of Heavy Industries"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "The Ministry of Corporate Affairs (MCA) oversees corporate regulation in India through Regional Directors, Registrars of Companies (ROCs), Official Liquidators, and the MCA21 e-governance portal.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Correspondence with Statutory Authorities",
+    "abilityTags": [
+      "business_decision_making",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-094",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 12,
+    "chapter": "Correspondence with Statutory Authorities",
+    "topic": "Constitution of NCLT",
+    "difficulty": "Easy",
+    "questionText": "Constituted with effect from 1st June 2016 under Section 408 of the Companies Act, 2013 (based on Justice V. Balakrishna Eradi Committee recommendations), what is 'NCLT'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "National Co-operative Lending Trust — refinancing village societies"
+      },
+      {
+        "key": "B",
+        "text": "New Currency Licensing Treasury — printing ₹200 banknotes"
+      },
+      {
+        "key": "C",
+        "text": "National Company Law Tribunal — a specialised quasi-judicial body adjudicating corporate disputes, compromises/mergers, oppression/mismanagement, and insolvency"
+      },
+      {
+        "key": "D",
+        "text": "National Commercial Logistics Terminal — managing sea freight"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "NCLT consolidated corporate jurisdiction previously scattered across the Company Law Board (CLB), BIFR, and High Courts (company mergers/winding up), with appeals lying to NCLAT and then the Supreme Court.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Correspondence with Statutory Authorities",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-095",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 12,
+    "chapter": "Correspondence with Statutory Authorities",
+    "topic": "Application to ROC for Extension of AGM Time",
+    "difficulty": "Medium",
+    "questionText": "Due to a devastating flood damaging accounting servers in August, a company (on its 5th AGM) cannot finalise audited accounts by 30th September and seeks a 2-month extension. To which authority does the Company Secretary apply, and what is critical?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Reserve Bank of India via oral phone call"
+      },
+      {
+        "key": "B",
+        "text": "Local Municipal Commissioner"
+      },
+      {
+        "key": "C",
+        "text": "Securities and Exchange Board of India (SEBI) six months after defaulting"
+      },
+      {
+        "key": "D",
+        "text": "Registrar of Companies (ROC) (in Form GNL-1 well BEFORE the statutory due date of 30th September, backed by Board Resolution stating genuine special reasons)"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Under Section 96(1) third proviso, the ROC alone has power to extend time for holding any AGM (other than the First AGM) by up to 3 months for 'any special reason', upon timely application before due date.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Correspondence with Statutory Authorities",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-096",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 12,
+    "chapter": "Correspondence with Statutory Authorities",
+    "topic": "Filing Special Resolutions with ROC (Form MGT-14)",
+    "difficulty": "Medium",
+    "questionText": "Whenever a company passes a Special Resolution (e.g., to alter its Articles or change its name), within how many days must the Company Secretary file a certified copy of the resolution and explanatory statement with the ROC?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Only when the company is wound up"
+      },
+      {
+        "key": "B",
+        "text": "Within 30 days of passing the Special Resolution (in Form MGT-14)"
+      },
+      {
+        "key": "C",
+        "text": "Within 365 days of passing"
+      },
+      {
+        "key": "D",
+        "text": "Within 24 hours at the police station"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Under Section 117 of the Companies Act, 2013, every Special Resolution (together with the Section 102 Explanatory Statement) must be filed with the ROC in e-Form MGT-14 within 30 days of passing.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Correspondence with Statutory Authorities",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-097",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 12,
+    "chapter": "Correspondence with Statutory Authorities",
+    "topic": "Role of SEBI in Listed Company Correspondence",
+    "difficulty": "Medium",
+    "questionText": "For a Public Company whose shares are listed on BSE/NSE, on what matters does the Company Secretary correspond with SEBI (and Stock Exchanges under SEBI LODR Regulations)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Price-sensitive Board outcomes (dividends, buy-backs, financial results), shareholding patterns, investor grievance redressal (SCORES), insider-trading disclosures, and public/rights issue offer documents"
+      },
+      {
+        "key": "B",
+        "text": "Sanctioning factory boiler licences and electricity meters"
+      },
+      {
+        "key": "C",
+        "text": "Approving petty cash vouchers for office tea"
+      },
+      {
+        "key": "D",
+        "text": "Registering rural agricultural land titles"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "SEBI (established statutorily under the SEBI Act, 1992, headquartered in Mumbai) protects investor interests and regulates securities markets, requiring prompt corporate-governance and material-event disclosures from listed companies.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Correspondence with Statutory Authorities",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-098",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 12,
+    "chapter": "Correspondence with Statutory Authorities",
+    "topic": "Routing Statutory Applications Across ROC, RD, NCLT, and SEBI",
+    "difficulty": "Hard",
+    "questionText": "Match four corporate actions to the exact statutory authority the Company Secretary must correspond with / petition: (1) Scheme of Amalgamation/Merger between two large public companies; (2) Vetting a Draft Red Herring Prospectus for a ₹600 crore IPO; (3) Filing Annual Financial Statements (AOC-4) & Annual Return (MGT-7); (4) Appellate challenge against an order passed by an NCLT Bench:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "(1) SEBI; (2) ROC; (3) NCLAT; (4) NCLT"
+      },
+      {
+        "key": "B",
+        "text": "(1) NITI Aayog; (2) SIDBI; (3) KVIC; (4) NABARD"
+      },
+      {
+        "key": "C",
+        "text": "(1) NCLT; (2) SEBI; (3) ROC; (4) NCLAT (National Company Law Appellate Tribunal)"
+      },
+      {
+        "key": "D",
+        "text": "(1) ROC; (2) NCLT; (3) SEBI; (4) RBI"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Corporate mergers/compromises (Sec 230–232) go before NCLT (1); public issue draft offer documents are filed with SEBI (2); annual statutory filings AOC-4/MGT-7 go to ROC via MCA21 (3); appeals from NCLT orders lie within 45 days to NCLAT under Section 421 (4).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Correspondence with Statutory Authorities",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-099",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 12,
+    "chapter": "Correspondence with Statutory Authorities",
+    "topic": "Invalidity of First-AGM Extension Request to ROC",
+    "difficulty": "Hard",
+    "questionText": "Incorporating on 10th July 2024, 'Pune Robotics Ltd.' closed its first financial year on 31st March 2025 (making 31st December 2025 the last date for its First AGM). In November 2025, a director asks the Company Secretary to draft a letter to ROC Pune seeking a 3-month extension to March 2026. What is the legally accurate advice the Secretary must give?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "ROC has NO statutory power under Section 96(1) to grant any extension of time for holding the FIRST Annual General Meeting — the company must convene the First AGM on or before 31st December 2025 (or face compounding/adjudication penalties under Sec 99)"
+      },
+      {
+        "key": "B",
+        "text": "The Board itself can pass an Ordinary Resolution extending the First AGM by one year"
+      },
+      {
+        "key": "C",
+        "text": "ROC automatically grants a 6-month extension for First AGMs upon paying ₹500"
+      },
+      {
+        "key": "D",
+        "text": "SEBI can waive the First AGM altogether"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "The third proviso to Section 96(1) explicitly states: 'Provided also that the Registrar may, for any special reason, extend the time within which any annual general meeting, OTHER THAN THE FIRST ANNUAL GENERAL MEETING, shall be held, by a period not exceeding three months.'",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Correspondence with Statutory Authorities",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-sp-100",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-sp",
+    "subjectName": "Secretarial Practice",
+    "chapterNumber": 12,
+    "chapter": "Correspondence with Statutory Authorities",
+    "topic": "Mandatory Identifiers & Precautions in Statutory Correspondence",
+    "difficulty": "Hard",
+    "questionText": "When drafting formal correspondence or uploading e-forms to ROC/MCA/NCLT/SEBI, which set of statutory particulars and authentication safeguards MUST be verified by the Company Secretary?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Sending anonymous unsigned postcards without CIN to protect business privacy"
+      },
+      {
+        "key": "B",
+        "text": "Attaching original physical Plant & Machinery invoices to every letter"
+      },
+      {
+        "key": "C",
+        "text": "Using informal conversational slang to speed up scrutiny"
+      },
+      {
+        "key": "D",
+        "text": "Quoting exact 21-digit CIN, Registered Office address, relevant Section/Rule reference, enclosing certified Board/Special Resolution extracts, attaching valid Digital Signature Certificate (DSC) of authorised KMP/Director, and filing strictly within statutory limitation timelines to avoid additional per-day fees"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Statutory correspondence is a legal compliance record: accurate CIN, statutory section citation, certified resolutions, valid DSC authentication on MCA21, and strict adherence to statutory deadlines prevent rejection and escalating daily penalties.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Correspondence with Statutory Authorities",
+    "abilityTags": [
+      "business_decision_making",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  }
+]

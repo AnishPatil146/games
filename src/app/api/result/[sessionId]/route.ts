@@ -7,6 +7,75 @@ interface RouteProps {
   params: Promise<{ sessionId: string }>;
 }
 
+const CHAPTER_BRANCH_META: Record<
+  number,
+  { title: string; labels: Record<string, string>; allLabels: string[] }
+> = {
+  1: {
+    title: "The Last Train",
+    labels: {
+      return_wallet: "Return the Wallet",
+      call_out: "Call Out to Stranger",
+      investigate_first: "Inspect Wallet First",
+      catch_train: "Board the Train",
+    },
+    allLabels: [
+      "Return the Wallet",
+      "Call Out to Stranger",
+      "Inspect Wallet First",
+      "Board the Train",
+    ],
+  },
+  2: {
+    title: "The Locked Room",
+    labels: {
+      cipher_solved: "Solved Brass Tumbler",
+      cipher_attempted: "Tested Archive Lock",
+    },
+    allLabels: ["Solved Brass Tumbler", "Inspected Ledger Clues"],
+  },
+  3: {
+    title: "The Unknown Message",
+    labels: {
+      investigate_sender: "Trace Sender Metadata",
+      look_for_evidence: "Sweep Study Perimeter",
+      ignore_message: "Withhold Engagement",
+      confront_sender: "Demand Identity",
+      reply_immediately: "Send Direct Reply",
+    },
+    allLabels: [
+      "Trace Sender Metadata",
+      "Sweep Study Perimeter",
+      "Withhold Engagement",
+      "Demand Identity",
+      "Send Direct Reply",
+    ],
+  },
+  4: {
+    title: "The Empty Canvas",
+    labels: {},
+    allLabels: ["Balanced Minimalism", "Asymmetric Tension", "Layered Warmth"],
+  },
+  5: {
+    title: "The Final Ten Seconds",
+    labels: {
+      vault_solved: "Stabilized Vault Relay",
+      vault_timeout: "Observed Final Countdown",
+    },
+    allLabels: ["Stabilized Vault Relay", "Observed Final Countdown"],
+  },
+  6: {
+    title: "The Unknown World",
+    labels: {},
+    allLabels: [
+      "Coastal Observatory",
+      "Highland Archive",
+      "Sunlit Courtyard",
+      "Nocturnal Library",
+    ],
+  },
+};
+
 export async function GET(req: NextRequest, props: RouteProps) {
   try {
     const { sessionId } = await props.params;
@@ -23,7 +92,6 @@ export async function GET(req: NextRequest, props: RouteProps) {
     let lookupKeyUsed = cookieToken || sessionId;
 
     if (!matchesRequestedSession) {
-      // Allow the sole authenticated administrator to preview any session's public report
       const adminAuth = await verifyAdminAccess();
       if (!adminAuth.authorized) {
         return NextResponse.json(
@@ -46,11 +114,14 @@ export async function GET(req: NextRequest, props: RouteProps) {
       );
     }
 
+    const events = authorizedDossier.events;
+    const prefs = authorizedDossier.preferences;
+
     const report = evaluateReport(
       authorizedDossier.session.id,
       authorizedDossier.playerDisplayName || "Anonymous Traveler",
-      authorizedDossier.events,
-      authorizedDossier.preferences,
+      events,
+      prefs,
       authorizedDossier.session.completed_at ||
         authorizedDossier.session.started_at,
       authorizedDossier.session.character_presentation
@@ -63,9 +134,108 @@ export async function GET(req: NextRequest, props: RouteProps) {
       await getPublicSessionDossier(lookupKeyUsed, report.archetype);
     }
 
+    const uniqueClues = new Set(
+      events
+        .filter((e) => e.event_type === "clue_inspected")
+        .map((e) => String(e.event_data?.clueId || ""))
+        .filter(Boolean)
+    );
+
+    const seventhDoorCompletedEv = events.find(
+      (e) => e.event_type === "seventh_door_completed"
+    );
+    const seventhDoorUnlocked =
+      uniqueClues.size >= 2 ||
+      Boolean(seventhDoorCompletedEv) ||
+      events.some((e) => e.event_type === "seventh_door_unlocked");
+
+    const hiddenLetterRead = events.some(
+      (e) => e.event_type === "hidden_letter_read"
+    );
+    const hiddenLetterUnlocked =
+      uniqueClues.size >= 1 ||
+      Boolean(seventhDoorCompletedEv) ||
+      hiddenLetterRead ||
+      events.some((e) => e.event_type === "hidden_letter_unlocked");
+
+    const doorChoiceLabels: Record<string, string> = {
+      leave_lantern_lit: "Left the Brass Lantern Lit",
+      inscribe_margin_note: "Inscribed Unsigned Margin Note",
+      seal_the_ledger: "Sealed the Archive Ledger",
+    };
+    const rawDoorChoice = seventhDoorCompletedEv?.event_data?.doorChoice
+      ? String(seventhDoorCompletedEv.event_data.doorChoice)
+      : null;
+
+    // Build Choice Map steps across Chapters 1..6
+    const choiceMapSteps = [1, 2, 3, 4, 5, 6].map((ch) => {
+      const meta = CHAPTER_BRANCH_META[ch];
+      const chEvents = events.filter((e) => e.chapter === ch);
+      const completed =
+        authorizedDossier!.session.status === "completed" ||
+        authorizedDossier!.session.current_chapter > ch ||
+        chEvents.some((e) => e.event_type === "chapter_completed");
+
+      let selectedLabel: string | null = null;
+      if (ch === 1 || ch === 3) {
+        const cEv = chEvents.find((e) => e.event_type === "choice_selected");
+        const key = String(cEv?.event_data?.choiceId || "");
+        selectedLabel = meta.labels[key] || (key ? key : null);
+      } else if (ch === 2 || ch === 5) {
+        const solved = chEvents.some(
+          (e) =>
+            e.event_type === "puzzle_attempted" &&
+            e.event_data?.isCorrect === true
+        );
+        const attempted = chEvents.some(
+          (e) => e.event_type === "puzzle_attempted"
+        );
+        if (solved) {
+          selectedLabel =
+            ch === 2 ? "Solved Brass Tumbler" : "Stabilized Vault Relay";
+        } else if (attempted || completed) {
+          selectedLabel =
+            ch === 2 ? "Tested Archive Lock" : "Observed Final Countdown";
+        }
+      } else if (ch === 4) {
+        selectedLabel =
+          report.explicitPreferences.canvasArrangement ||
+          report.explicitPreferences.canvasPalette ||
+          (completed ? "Composed Canvas" : null);
+      } else if (ch === 6) {
+        selectedLabel =
+          report.explicitPreferences.worldEnvironment ||
+          (completed ? "Crossed Final Horizon" : null);
+      }
+
+      const alternatives = meta.allLabels
+        .filter((lbl) => lbl !== selectedLabel)
+        .slice(0, 2);
+
+      return {
+        chapter: ch,
+        title: meta.title,
+        selectedLabel,
+        alternatives,
+        completed,
+      };
+    });
+
     return NextResponse.json({
       success: true,
       report,
+      choiceMapSteps,
+      seventhDoorStatus: {
+        unlocked: seventhDoorUnlocked,
+        completed: Boolean(seventhDoorCompletedEv),
+        choiceLabel: rawDoorChoice
+          ? doorChoiceLabels[rawDoorChoice] || rawDoorChoice
+          : null,
+      },
+      hiddenLetterStatus: {
+        unlocked: hiddenLetterUnlocked,
+        read: hiddenLetterRead,
+      },
     });
   } catch (err: unknown) {
     const message =

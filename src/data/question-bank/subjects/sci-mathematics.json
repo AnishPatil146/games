@@ -1,0 +1,4496 @@
+[
+  {
+    "id": "msb-11-sci-mat-001",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 1,
+    "chapter": "Angle and Its Measurement",
+    "topic": "Degree to Radian Conversion",
+    "difficulty": "Easy",
+    "questionText": "Express an angle of 135° in radian measure:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "3π / 4 rad"
+      },
+      {
+        "key": "B",
+        "text": "5π / 6 rad"
+      },
+      {
+        "key": "C",
+        "text": "2π / 3 rad"
+      },
+      {
+        "key": "D",
+        "text": "5π / 4 rad"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Multiplying by π / 180°: 135° × (π / 180°) = (3 × 45° / 4 × 45°) π = 3π / 4 rad.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Angle and Its Measurement (Degree to Radian Conversion)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-002",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 1,
+    "chapter": "Angle and Its Measurement",
+    "topic": "Arc Length Formula",
+    "difficulty": "Easy",
+    "questionText": "In a circle of radius 14 cm, what is the length of an arc that subtends a central angle of π/7 radians at the centre?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "4π cm"
+      },
+      {
+        "key": "B",
+        "text": "14π cm"
+      },
+      {
+        "key": "C",
+        "text": "π cm"
+      },
+      {
+        "key": "D",
+        "text": "2π cm"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Arc length s = rθ (with θ in radians) = 14 × (π / 7) = 2π cm.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Angle and Its Measurement (Arc Length Formula)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-003",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 1,
+    "chapter": "Angle and Its Measurement",
+    "topic": "Area of a Circular Sector",
+    "difficulty": "Medium",
+    "questionText": "The perimeter of a sector of a circle of radius 8 cm is 26 cm. What is the area of this sector?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "80 cm^2"
+      },
+      {
+        "key": "B",
+        "text": "40 cm^2"
+      },
+      {
+        "key": "C",
+        "text": "32 cm^2"
+      },
+      {
+        "key": "D",
+        "text": "52 cm^2"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Perimeter of sector = 2r + s ⇒ 2(8) + s = 26 ⇒ arc length s = 10 cm. Area of sector A = (1/2) r s = (1/2) × 8 × 10 = 40 cm^2.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Angle and Its Measurement (Area of a Circular Sector)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-004",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 1,
+    "chapter": "Angle and Its Measurement",
+    "topic": "Angle Between Clock Hands",
+    "difficulty": "Medium",
+    "questionText": "What is the acute angle (in degrees) between the hour hand and the minute hand of an analogue clock at exactly 4:20?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "15°"
+      },
+      {
+        "key": "B",
+        "text": "10°"
+      },
+      {
+        "key": "C",
+        "text": "0°"
+      },
+      {
+        "key": "D",
+        "text": "20°"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "At 4:20, the minute hand is at 20 × 6° = 120° from 12 o'clock, while the hour hand has advanced to 4 × 30° + 20 × 0.5° = 120° + 10° = 130°. Angle between them = |130° - 120°| = 10°.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Angle and Its Measurement (Angle Between Clock Hands)",
+    "abilityTags": [
+      "logical_reasoning",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-005",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 1,
+    "chapter": "Angle and Its Measurement",
+    "topic": "Interior Angles of Polygon in Arithmetic Progression",
+    "difficulty": "Hard",
+    "questionText": "The interior angles of a convex polygon are in arithmetic progression with smallest angle 120° and common difference 5°. How many sides does this convex polygon have?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "16"
+      },
+      {
+        "key": "B",
+        "text": "12"
+      },
+      {
+        "key": "C",
+        "text": "8"
+      },
+      {
+        "key": "D",
+        "text": "9"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Sum of n interior angles: (n/2)[2(120) + (n - 1)5] = (n - 2)180 ⇒ n(240 + 5n - 5) = 360n - 720 ⇒ 5n^2 - 125n + 720 = 0 ⇒ n^2 - 25n + 144 = 0 ⇒ (n - 9)(n - 16) = 0. For n = 16, the 16th angle would be 120° + 15(5°) = 195° > 180° (violating convexity; indeed the 13th angle is already 180°). For n = 9, largest angle = 120° + 8(5°) = 160° < 180°, so n = 9 uniquely.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Angle and Its Measurement (Interior Angles of Polygon in Arithmetic Progression)",
+    "abilityTags": [
+      "logical_reasoning",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-006",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 2,
+    "chapter": "Trigonometry - I",
+    "topic": "Fundamental Pythagorean Identity",
+    "difficulty": "Easy",
+    "questionText": "If sec θ + tan θ = 4, what is the value of sec θ - tan θ?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1/4"
+      },
+      {
+        "key": "B",
+        "text": "1/16"
+      },
+      {
+        "key": "C",
+        "text": "3/4"
+      },
+      {
+        "key": "D",
+        "text": "-4"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Using the identity sec^2 θ - tan^2 θ = 1, we factor (sec θ + tan θ)(sec θ - tan θ) = 1 ⇒ 4(sec θ - tan θ) = 1 ⇒ sec θ - tan θ = 1/4.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Trigonometry - I (Fundamental Pythagorean Identity)",
+    "abilityTags": [
+      "logical_reasoning",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-007",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 2,
+    "chapter": "Trigonometry - I",
+    "topic": "Signs of Trigonometric Functions in Quadrants",
+    "difficulty": "Easy",
+    "questionText": "If sin θ = -3/5 and θ lies in the third quadrant (π < θ < 3π/2), what is the value of tan θ?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "3/4"
+      },
+      {
+        "key": "B",
+        "text": "4/3"
+      },
+      {
+        "key": "C",
+        "text": "-4/3"
+      },
+      {
+        "key": "D",
+        "text": "-3/4"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "In Quadrant III both sin θ and cos θ are negative, so cos θ = -√(1 - 9/25) = -4/5. Hence tan θ = sin θ / cos θ = (-3/5) / (-4/5) = +3/4.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Trigonometry - I (Signs of Trigonometric Functions in Quadrants)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-008",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 2,
+    "chapter": "Trigonometry - I",
+    "topic": "Higher-Power Trigonometric Identity",
+    "difficulty": "Medium",
+    "questionText": "For every real angle θ, what is the simplified numerical value of 3(sin^4 θ + cos^4 θ) - 2(sin^6 θ + cos^6 θ)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1"
+      },
+      {
+        "key": "B",
+        "text": "5"
+      },
+      {
+        "key": "C",
+        "text": "2"
+      },
+      {
+        "key": "D",
+        "text": "0"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Recall sin^4 θ + cos^4 θ = 1 - 2 sin^2 θ cos^2 θ and sin^6 θ + cos^6 θ = 1 - 3 sin^2 θ cos^2 θ. Substituting gives 3(1 - 2 sin^2 θ cos^2 θ) - 2(1 - 3 sin^2 θ cos^2 θ) = 3 - 2 = 1.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Trigonometry - I (Higher-Power Trigonometric Identity)",
+    "abilityTags": [
+      "analytical_thinking",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-009",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 2,
+    "chapter": "Trigonometry - I",
+    "topic": "Elimination of Parameter θ",
+    "difficulty": "Medium",
+    "questionText": "If x = 3 sec θ and y = 4 tan θ, eliminating θ yields which Cartesian relation between x and y?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "x^2 / 16 - y^2 / 9 = 1"
+      },
+      {
+        "key": "B",
+        "text": "x^2 / 9 + y^2 / 16 = 1"
+      },
+      {
+        "key": "C",
+        "text": "x^2 / 9 - y^2 / 16 = 1"
+      },
+      {
+        "key": "D",
+        "text": "16x^2 + 9y^2 = 144"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "From x/3 = sec θ and y/4 = tan θ, using sec^2 θ - tan^2 θ = 1 directly gives (x/3)^2 - (y/4)^2 = 1, i.e., x^2 / 9 - y^2 / 16 = 1.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Trigonometry - I (Elimination of Parameter θ)",
+    "abilityTags": [
+      "logical_reasoning",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-010",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 2,
+    "chapter": "Trigonometry - I",
+    "topic": "Evaluating sin θ · cos θ from sin θ + cos θ",
+    "difficulty": "Hard",
+    "questionText": "If sin θ + cos θ = 7/5 for an acute angle θ, what is the value of sin^3 θ + cos^3 θ?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "119 / 125"
+      },
+      {
+        "key": "B",
+        "text": "91 / 125"
+      },
+      {
+        "key": "C",
+        "text": "37 / 125"
+      },
+      {
+        "key": "D",
+        "text": "49 / 125"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Squaring sin θ + cos θ = 7/5 gives 1 + 2 sin θ cos θ = 49/25 ⇒ sin θ cos θ = 12/25. Using a^3 + b^3 = (a + b)(a^2 - ab + b^2) = (sin θ + cos θ)(1 - sin θ cos θ) = (7/5)(1 - 12/25) = (7/5)(13/25) = 91 / 125.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Trigonometry - I (Evaluating sin θ · cos θ from sin θ + cos θ)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-011",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 2,
+    "chapter": "Trigonometry - I",
+    "topic": "Range of Linear Trigonometric Combination",
+    "difficulty": "Hard",
+    "questionText": "What are the minimum and maximum values of the expression f(θ) = 5 sin θ - 12 cos θ + 7 as θ varies over all real numbers?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Minimum = -6 and Maximum = 20"
+      },
+      {
+        "key": "B",
+        "text": "Minimum = -13 and Maximum = 13"
+      },
+      {
+        "key": "C",
+        "text": "Minimum = -5 and Maximum = 19"
+      },
+      {
+        "key": "D",
+        "text": "Minimum = 0 and Maximum = 20"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "For a sin θ + b cos θ, extreme values are ±√(a^2 + b^2) = ±√(5^2 + (-12)^2) = ±13. Adding 7 gives minimum = -13 + 7 = -6 and maximum = +13 + 7 = 20.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Trigonometry - I (Range of Linear Trigonometric Combination)",
+    "abilityTags": [
+      "analytical_thinking",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-012",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 3,
+    "chapter": "Trigonometry - II",
+    "topic": "Compound Angle Value of sin 15°",
+    "difficulty": "Easy",
+    "questionText": "Using sin(45° - 30°), what is the exact value of sin 15°?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "(√6 + √2) / 4"
+      },
+      {
+        "key": "B",
+        "text": "(√3 + 1) / (2√2)"
+      },
+      {
+        "key": "C",
+        "text": "(√3 - 1) / 2"
+      },
+      {
+        "key": "D",
+        "text": "(√3 - 1) / (2√2)"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "sin 15° = sin 45° cos 30° - cos 45° sin 30° = (1/√2)(√3/2) - (1/√2)(1/2) = (√3 - 1) / (2√2).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Trigonometry - II (Compound Angle Value of sin 15°)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-013",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 3,
+    "chapter": "Trigonometry - II",
+    "topic": "Tangent Addition Identity",
+    "difficulty": "Medium",
+    "questionText": "If A and B are acute angles satisfying tan A = 1/2 and tan B = 1/3, what is the measure of angle (A + B)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "π / 6"
+      },
+      {
+        "key": "B",
+        "text": "π / 2"
+      },
+      {
+        "key": "C",
+        "text": "π / 4"
+      },
+      {
+        "key": "D",
+        "text": "π / 3"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "tan(A + B) = (tan A + tan B) / (1 - tan A tan B) = (1/2 + 1/3) / (1 - 1/6) = (5/6) / (5/6) = 1. Since 0 < A, B < π/4, 0 < A + B < π/2, giving A + B = π/4.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Trigonometry - II (Tangent Addition Identity)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-014",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 3,
+    "chapter": "Trigonometry - II",
+    "topic": "Double-Angle Formula via tan θ",
+    "difficulty": "Medium",
+    "questionText": "If tan(θ/2) = 2/3, what is the exact value of cos θ?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "12 / 13"
+      },
+      {
+        "key": "B",
+        "text": "4 / 9"
+      },
+      {
+        "key": "C",
+        "text": "5 / 13"
+      },
+      {
+        "key": "D",
+        "text": "-5 / 13"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Using the half-angle rational identity cos θ = [1 - tan^2(θ/2)] / [1 + tan^2(θ/2)] = (1 - 4/9) / (1 + 4/9) = (5/9) / (13/9) = 5 / 13.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Trigonometry - II (Double-Angle Formula via tan θ)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-015",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 3,
+    "chapter": "Trigonometry - II",
+    "topic": "Sum-to-Product Factorization Formula",
+    "difficulty": "Medium",
+    "questionText": "Simplify the trigonometric ratio (sin 5θ + sin 3θ) / (cos 5θ + cos 3θ) where cos 4θ cos θ ≠ 0:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "tan 8θ"
+      },
+      {
+        "key": "B",
+        "text": "cot 4θ"
+      },
+      {
+        "key": "C",
+        "text": "tan 4θ"
+      },
+      {
+        "key": "D",
+        "text": "tan θ"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Applying factorization identities: sin 5θ + sin 3θ = 2 sin 4θ cos θ and cos 5θ + cos 3θ = 2 cos 4θ cos θ. Dividing cancels 2 cos θ, leaving sin 4θ / cos 4θ = tan 4θ.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Trigonometry - II (Sum-to-Product Factorization Formula)",
+    "abilityTags": [
+      "analytical_thinking",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-016",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 3,
+    "chapter": "Trigonometry - II",
+    "topic": "Product of Cosines in Geometric Angles",
+    "difficulty": "Hard",
+    "questionText": "What is the exact value of the product cos 20° · cos 40° · cos 80°?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1 / 8"
+      },
+      {
+        "key": "B",
+        "text": "√3 / 8"
+      },
+      {
+        "key": "C",
+        "text": "1 / 4"
+      },
+      {
+        "key": "D",
+        "text": "1 / 16"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Multiply and divide by 2 sin 20°: [2 sin 20° cos 20° cos 40° cos 80°] / (2 sin 20°) = [sin 40° cos 40° cos 80°] / (2 sin 20°) = [sin 80° cos 80°] / (4 sin 20°) = sin 160° / (8 sin 20°). Since sin 160° = sin(180° - 20°) = sin 20°, the ratio equals 1/8.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Trigonometry - II (Product of Cosines in Geometric Angles)",
+    "abilityTags": [
+      "logical_reasoning",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-017",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 3,
+    "chapter": "Trigonometry - II",
+    "topic": "Conditional Identity in a Triangle",
+    "difficulty": "Hard",
+    "questionText": "In any plane triangle ABC (where A + B + C = π and none of A, B, C is π/2), what is the relation between tan A + tan B + tan C and tan A · tan B · tan C?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "tan A + tan B + tan C = 0"
+      },
+      {
+        "key": "B",
+        "text": "tan A · tan B + tan B · tan C + tan C · tan A = 1"
+      },
+      {
+        "key": "C",
+        "text": "tan A + tan B + tan C = 1 - tan A · tan B · tan C"
+      },
+      {
+        "key": "D",
+        "text": "tan A + tan B + tan C = tan A · tan B · tan C"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Since A + B = π - C, tan(A + B) = tan(π - C) = -tan C ⇒ (tan A + tan B) / (1 - tan A tan B) = -tan C ⇒ tan A + tan B = -tan C + tan A tan B tan C ⇒ tan A + tan B + tan C = tan A · tan B · tan C.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Trigonometry - II (Conditional Identity in a Triangle)",
+    "abilityTags": [
+      "logical_reasoning",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-018",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 4,
+    "chapter": "Determinants and Matrices",
+    "topic": "Singular Matrix Determinant Condition",
+    "difficulty": "Easy",
+    "questionText": "For what value of k is the 2 × 2 matrix A = [[3, k], [6, 8]] singular (non-invertible)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "-4"
+      },
+      {
+        "key": "B",
+        "text": "16"
+      },
+      {
+        "key": "C",
+        "text": "4"
+      },
+      {
+        "key": "D",
+        "text": "2"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "A square matrix is singular when det(A) = 0: (3)(8) - 6k = 0 ⇒ 24 - 6k = 0 ⇒ k = 4.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Determinants and Matrices (Singular Matrix Determinant Condition)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-019",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 4,
+    "chapter": "Determinants and Matrices",
+    "topic": "Skew-Symmetric Matrix Diagonal Elements",
+    "difficulty": "Easy",
+    "questionText": "If A = [a_ij] is a real skew-symmetric square matrix (so A^T = -A), what must be true of every principal diagonal element a_ii?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Every diagonal element is strictly positive"
+      },
+      {
+        "key": "B",
+        "text": "Every diagonal element a_ii equals 1"
+      },
+      {
+        "key": "C",
+        "text": "The sum of diagonal elements equals det(A)"
+      },
+      {
+        "key": "D",
+        "text": "Every diagonal element a_ii equals 0"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "By skew-symmetry, a_ji = -a_ij for all i, j. Setting j = i gives a_ii = -a_ii ⇒ 2a_ii = 0 ⇒ a_ii = 0.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Determinants and Matrices (Skew-Symmetric Matrix Diagonal Elements)",
+    "abilityTags": [
+      "logical_reasoning",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-020",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 4,
+    "chapter": "Determinants and Matrices",
+    "topic": "Area of a Triangle via Determinants",
+    "difficulty": "Medium",
+    "questionText": "Using determinants, find the area of the triangle in the xy-plane whose vertices are (1, 2), (4, 6), and (7, 2):",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "12 sq. units"
+      },
+      {
+        "key": "B",
+        "text": "24 sq. units"
+      },
+      {
+        "key": "C",
+        "text": "6 sq. units"
+      },
+      {
+        "key": "D",
+        "text": "15 sq. units"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Area = (1/2) |det [[1, 2, 1], [4, 6, 1], [7, 2, 1]]| = (1/2) |1(6 - 2) - 2(4 - 7) + 1(8 - 42)| = (1/2) |4 + 6 - 34| = (1/2) |-24| = 12 sq. units.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Determinants and Matrices (Area of a Triangle via Determinants)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-021",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 4,
+    "chapter": "Determinants and Matrices",
+    "topic": "Matrix Polynomial Equation",
+    "difficulty": "Medium",
+    "questionText": "Let A = [[1, 2], [3, 4]] and I = [[1, 0], [0, 1]]. If A^2 - 5A + λI = O (the 2 × 2 zero matrix), what is the value of the scalar λ?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "10"
+      },
+      {
+        "key": "B",
+        "text": "-10"
+      },
+      {
+        "key": "C",
+        "text": "-2"
+      },
+      {
+        "key": "D",
+        "text": "2"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Compute A^2 = [[1+6, 2+8], [3+12, 6+16]] = [[7, 10], [15, 22]]. Then A^2 - 5A = [[7-5, 10-10], [15-15, 22-20]] = [[2, 0], [0, 2]] = 2I. Thus 2I + λI = O ⇒ λ = -2 (matching Cayley-Hamilton det(A) = 4 - 6 = -2).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Determinants and Matrices (Matrix Polynomial Equation)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-022",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 4,
+    "chapter": "Determinants and Matrices",
+    "topic": "Determinant of Adjoint and Scalar Multiples",
+    "difficulty": "Hard",
+    "questionText": "If A is a non-singular 3 × 3 matrix with det(A) = 5, what is the value of det(2A) + det(adj A), where adj A denotes the adjoint of A (from A · adj A = det(A) I)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "50"
+      },
+      {
+        "key": "B",
+        "text": "35"
+      },
+      {
+        "key": "C",
+        "text": "135"
+      },
+      {
+        "key": "D",
+        "text": "65"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "For an n × n matrix (here n = 3), det(kA) = k^n det(A) = 2^3 × 5 = 40, and from A · adj(A) = det(A) I_3, det(adj A) = [det(A)]^(n - 1) = 5^2 = 25. Their sum is 40 + 25 = 65.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Determinants and Matrices (Determinant of Adjoint and Scalar Multiples)",
+    "abilityTags": [
+      "logical_reasoning",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-023",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 4,
+    "chapter": "Determinants and Matrices",
+    "topic": "Cramer's Rule Condition for Infinitely Many Solutions",
+    "difficulty": "Hard",
+    "questionText": "For what value of λ does the homogeneous linear system x + 2y + 3z = 0, 2x + 3y + z = 0, 4x + 5y + λz = 0 admit non-trivial (infinitely many) solutions?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "-1"
+      },
+      {
+        "key": "B",
+        "text": "5"
+      },
+      {
+        "key": "C",
+        "text": "-3"
+      },
+      {
+        "key": "D",
+        "text": "3"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "A homogeneous 3 × 3 system has non-trivial solutions iff its coefficient determinant Δ = 0: 1(3λ - 5) - 2(2λ - 4) + 3(10 - 12) = (3λ - 5) - (4λ - 8) - 6 = -λ - 3 = 0 ⇒ λ = -3.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Determinants and Matrices (Cramer's Rule Condition for Infinitely Many Solutions)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-024",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 5,
+    "chapter": "Straight Line",
+    "topic": "Slope and Intercepts of a Line",
+    "difficulty": "Easy",
+    "questionText": "What are the slope and y-intercept of the straight line 3x - 4y + 12 = 0?",
+    "diagramType": "vector_plane",
+    "options": [
+      {
+        "key": "A",
+        "text": "Slope = -3/4, y-intercept = -3"
+      },
+      {
+        "key": "B",
+        "text": "Slope = 4/3, y-intercept = 4"
+      },
+      {
+        "key": "C",
+        "text": "Slope = 3/4, y-intercept = -3"
+      },
+      {
+        "key": "D",
+        "text": "Slope = 3/4, y-intercept = 3"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Rewriting 3x - 4y + 12 = 0 in slope-intercept form y = mx + c gives 4y = 3x + 12 ⇒ y = (3/4)x + 3, so m = 3/4 and c = 3.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Straight Line (Slope and Intercepts of a Line)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-025",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 5,
+    "chapter": "Straight Line",
+    "topic": "Distance Between Parallel Lines",
+    "difficulty": "Easy",
+    "questionText": "Find the perpendicular distance between the parallel straight lines 3x + 4y - 7 = 0 and 3x + 4y + 8 = 0:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1/5 unit"
+      },
+      {
+        "key": "B",
+        "text": "3 units"
+      },
+      {
+        "key": "C",
+        "text": "15 units"
+      },
+      {
+        "key": "D",
+        "text": "5 units"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Distance d = |c_1 - c_2| / √(a^2 + b^2) = |-7 - 8| / √(3^2 + 4^2) = 15 / 5 = 3 units.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Straight Line (Distance Between Parallel Lines)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-026",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 5,
+    "chapter": "Straight Line",
+    "topic": "Acute Angle Between Intersecting Lines",
+    "difficulty": "Medium",
+    "questionText": "What is the measure of the acute angle between the straight lines 2x - y + 3 = 0 and x - 3y + 5 = 0?",
+    "diagramType": "vector_plane",
+    "options": [
+      {
+        "key": "A",
+        "text": "60°"
+      },
+      {
+        "key": "B",
+        "text": "75°"
+      },
+      {
+        "key": "C",
+        "text": "30°"
+      },
+      {
+        "key": "D",
+        "text": "45°"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Slopes are m_1 = 2 and m_2 = 1/3. Using tan θ = |(m_1 - m_2) / (1 + m_1 m_2)| = |(2 - 1/3) / (1 + 2/3)| = |(5/3) / (5/3)| = 1, giving θ = 45°.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Straight Line (Acute Angle Between Intersecting Lines)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-027",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 5,
+    "chapter": "Straight Line",
+    "topic": "Equation of Perpendicular Line",
+    "difficulty": "Medium",
+    "questionText": "Find the equation of the straight line passing through the point (2, -3) and perpendicular to the line 4x - 3y + 5 = 0:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "4x - 3y - 17 = 0"
+      },
+      {
+        "key": "B",
+        "text": "3x + 4y + 6 = 0"
+      },
+      {
+        "key": "C",
+        "text": "3x - 4y - 18 = 0"
+      },
+      {
+        "key": "D",
+        "text": "3x + 4y - 6 = 0"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Slope of 4x - 3y + 5 = 0 is 4/3, so the perpendicular slope is -3/4. Using point-slope form through (2, -3): y + 3 = (-3/4)(x - 2) ⇒ 4y + 12 = -3x + 6 ⇒ 3x + 4y + 6 = 0.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Straight Line (Equation of Perpendicular Line)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-028",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 5,
+    "chapter": "Straight Line",
+    "topic": "Foot of Perpendicular from a Point to a Line",
+    "difficulty": "Hard",
+    "questionText": "What are the coordinates of the foot of the perpendicular drawn from the point P(2, 3) onto the straight line x + y - 1 = 0?",
+    "diagramType": "vector_plane",
+    "options": [
+      {
+        "key": "A",
+        "text": "(-1, 2)"
+      },
+      {
+        "key": "B",
+        "text": "(1, 0)"
+      },
+      {
+        "key": "C",
+        "text": "(1, 2)"
+      },
+      {
+        "key": "D",
+        "text": "(0, 1)"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Using (x - x_1)/a = (y - y_1)/b = -(ax_1 + by_1 + c)/(a^2 + b^2): (x - 2)/1 = (y - 3)/1 = -(2 + 3 - 1)/(1^2 + 1^2) = -4/2 = -2. Hence x = 2 - 2 = 0 and y = 3 - 2 = 1, giving (0, 1).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Straight Line (Foot of Perpendicular from a Point to a Line)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-029",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 5,
+    "chapter": "Straight Line",
+    "topic": "Concurrency of Three Straight Lines",
+    "difficulty": "Hard",
+    "questionText": "For what value of k are the three straight lines 2x + y - 3 = 0, 3x - y - 2 = 0, and kx + 2y - 4 = 0 concurrent?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "-2"
+      },
+      {
+        "key": "B",
+        "text": "1"
+      },
+      {
+        "key": "C",
+        "text": "4"
+      },
+      {
+        "key": "D",
+        "text": "2"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Adding the first two equations gives 5x - 5 = 0 ⇒ x = 1, and y = 3 - 2(1) = 1. Since the third line must pass through the intersection point (1, 1), k(1) + 2(1) - 4 = 0 ⇒ k = 2.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Straight Line (Concurrency of Three Straight Lines)",
+    "abilityTags": [
+      "logical_reasoning",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-030",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 6,
+    "chapter": "Circle",
+    "topic": "Centre and Radius from General Equation",
+    "difficulty": "Easy",
+    "questionText": "Find the centre and radius of the circle x^2 + y^2 - 6x + 8y - 11 = 0:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Centre (3, -4) and radius 6"
+      },
+      {
+        "key": "B",
+        "text": "Centre (6, -8) and radius 11"
+      },
+      {
+        "key": "C",
+        "text": "Centre (3, -4) and radius √14"
+      },
+      {
+        "key": "D",
+        "text": "Centre (-3, 4) and radius 6"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Comparing with x^2 + y^2 + 2gx + 2fy + c = 0: g = -3, f = 4, c = -11. Centre = (-g, -f) = (3, -4) and radius r = √(g^2 + f^2 - c) = √(9 + 16 + 11) = √36 = 6.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Circle (Centre and Radius from General Equation)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-031",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 6,
+    "chapter": "Circle",
+    "topic": "Diameter Form of a Circle",
+    "difficulty": "Easy",
+    "questionText": "What is the equation of the circle having A(1, 2) and B(5, 6) as the endpoints of one of its diameters?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "x^2 + y^2 - 6x - 8y + 17 = 0"
+      },
+      {
+        "key": "B",
+        "text": "x^2 + y^2 - 3x - 4y + 17 = 0"
+      },
+      {
+        "key": "C",
+        "text": "x^2 + y^2 - 6x - 8y + 7 = 0"
+      },
+      {
+        "key": "D",
+        "text": "x^2 + y^2 + 6x + 8y + 17 = 0"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "By diameter form (x - x_1)(x - x_2) + (y - y_1)(y - y_2) = 0: (x - 1)(x - 5) + (y - 2)(y - 6) = 0 ⇒ (x^2 - 6x + 5) + (y^2 - 8y + 12) = 0 ⇒ x^2 + y^2 - 6x - 8y + 17 = 0.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Circle (Diameter Form of a Circle)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-032",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 6,
+    "chapter": "Circle",
+    "topic": "Length of Tangent from an External Point",
+    "difficulty": "Medium",
+    "questionText": "What is the length of the tangent segment drawn from the external point P(5, 1) to the circle x^2 + y^2 + 6x - 4y - 3 = 0?",
+    "diagramType": "vector_plane",
+    "options": [
+      {
+        "key": "A",
+        "text": "5 units"
+      },
+      {
+        "key": "B",
+        "text": "7 units"
+      },
+      {
+        "key": "C",
+        "text": "49 units"
+      },
+      {
+        "key": "D",
+        "text": "√43 units"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Length of tangent = √S_1 = √(5^2 + 1^2 + 6(5) - 4(1) - 3) = √(25 + 1 + 30 - 4 - 3) = √49 = 7 units.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Circle (Length of Tangent from an External Point)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-033",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 6,
+    "chapter": "Circle",
+    "topic": "Equation of Tangent at a Point on a Circle",
+    "difficulty": "Medium",
+    "questionText": "Find the equation of the tangent to the standard circle x^2 + y^2 = 25 at the point (3, -4) lying on it:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "3x - 4y = 25"
+      },
+      {
+        "key": "B",
+        "text": "4x - 3y = 25"
+      },
+      {
+        "key": "C",
+        "text": "3x + 4y = 25"
+      },
+      {
+        "key": "D",
+        "text": "4x + 3y = 0"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "The tangent to x^2 + y^2 = r^2 at (x_1, y_1) is xx_1 + yy_1 = r^2, giving 3x + (-4)y = 25 ⇒ 3x - 4y = 25.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Circle (Equation of Tangent at a Point on a Circle)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-034",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 6,
+    "chapter": "Circle",
+    "topic": "Condition of Tangency to a Circle",
+    "difficulty": "Hard",
+    "questionText": "For what values of c is the straight line 3x - 4y + c = 0 tangent to the circle x^2 + y^2 = 16?",
+    "diagramType": "vector_plane",
+    "options": [
+      {
+        "key": "A",
+        "text": "c = ±12"
+      },
+      {
+        "key": "B",
+        "text": "c = ±16"
+      },
+      {
+        "key": "C",
+        "text": "c = ±25"
+      },
+      {
+        "key": "D",
+        "text": "c = ±20"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "A line touches a circle iff perpendicular distance from the centre (0, 0) equals the radius r = 4: |3(0) - 4(0) + c| / √(3^2 + (-4)^2) = 4 ⇒ |c| / 5 = 4 ⇒ c = ±20.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Circle (Condition of Tangency to a Circle)",
+    "abilityTags": [
+      "logical_reasoning",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-035",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 7,
+    "chapter": "Conic Sections",
+    "topic": "Focus and Latus Rectum of a Parabola",
+    "difficulty": "Easy",
+    "questionText": "For the standard parabola y^2 = 16x, what are the coordinates of the focus and the length of the latus rectum?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Focus (8, 0) and latus rectum = 4 units"
+      },
+      {
+        "key": "B",
+        "text": "Focus (4, 0) and latus rectum = 8 units"
+      },
+      {
+        "key": "C",
+        "text": "Focus (0, 4) and latus rectum = 16 units"
+      },
+      {
+        "key": "D",
+        "text": "Focus (4, 0) and latus rectum = 16 units"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Comparing y^2 = 16x with y^2 = 4ax gives 4a = 16 ⇒ a = 4. Thus the focus is (a, 0) = (4, 0) and the length of the latus rectum is 4a = 16 units.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Conic Sections (Focus and Latus Rectum of a Parabola)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-036",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 7,
+    "chapter": "Conic Sections",
+    "topic": "Eccentricity of an Ellipse",
+    "difficulty": "Medium",
+    "questionText": "What is the eccentricity (e) of the ellipse x^2 / 25 + y^2 / 9 = 1?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "16 / 25"
+      },
+      {
+        "key": "B",
+        "text": "4 / 5"
+      },
+      {
+        "key": "C",
+        "text": "√34 / 5"
+      },
+      {
+        "key": "D",
+        "text": "3 / 5"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Here a^2 = 25 and b^2 = 9 (a > b). Using b^2 = a^2(1 - e^2), we get 9 = 25(1 - e^2) ⇒ e^2 = 1 - 9/25 = 16/25 ⇒ e = 4/5.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Conic Sections (Eccentricity of an Ellipse)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-037",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 7,
+    "chapter": "Conic Sections",
+    "topic": "Latus Rectum of a Hyperbola",
+    "difficulty": "Medium",
+    "questionText": "Find the length of the latus rectum of the hyperbola x^2 / 16 - y^2 / 9 = 1:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "32 / 3 units"
+      },
+      {
+        "key": "B",
+        "text": "5 units"
+      },
+      {
+        "key": "C",
+        "text": "9 / 2 units"
+      },
+      {
+        "key": "D",
+        "text": "9 / 4 units"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Here a^2 = 16 ⇒ a = 4, and b^2 = 9. Length of latus rectum = 2b^2 / a = 2(9) / 4 = 9/2 units.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Conic Sections (Latus Rectum of a Hyperbola)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-038",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 7,
+    "chapter": "Conic Sections",
+    "topic": "Focal Distance on a Parabola",
+    "difficulty": "Medium",
+    "questionText": "What is the focal distance of the point P(8, 8) lying on the parabola y^2 = 8x?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "6 units"
+      },
+      {
+        "key": "B",
+        "text": "10 units"
+      },
+      {
+        "key": "C",
+        "text": "8 units"
+      },
+      {
+        "key": "D",
+        "text": "12 units"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "For y^2 = 8x, 4a = 8 ⇒ a = 2 (focus at (2, 0), directrix x = -2). Focal distance of (x_1, y_1) is x_1 + a = 8 + 2 = 10 units.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Conic Sections (Focal Distance on a Parabola)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-039",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 7,
+    "chapter": "Conic Sections",
+    "topic": "Tangency Condition for a Parabola",
+    "difficulty": "Hard",
+    "questionText": "For what value of k is the straight line y = 2x + k tangent to the parabola y^2 = 12x?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "3 / 2"
+      },
+      {
+        "key": "B",
+        "text": "2 / 3"
+      },
+      {
+        "key": "C",
+        "text": "6"
+      },
+      {
+        "key": "D",
+        "text": "3"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "For y^2 = 4ax = 12x, a = 3. The line y = mx + c touches y^2 = 4ax iff c = a / m; with m = 2, k = 3 / 2.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Conic Sections (Tangency Condition for a Parabola)",
+    "abilityTags": [
+      "logical_reasoning",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-040",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 7,
+    "chapter": "Conic Sections",
+    "topic": "Eccentricity Relation Between Associated Ellipse and Hyperbola",
+    "difficulty": "Hard",
+    "questionText": "Let e_1 be the eccentricity of the ellipse x^2 / 16 + y^2 / 9 = 1 and e_2 be the eccentricity of the hyperbola x^2 / 16 - y^2 / 9 = 1. What is the exact value of e_1^2 + e_2^2?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "32 / 9"
+      },
+      {
+        "key": "B",
+        "text": "1"
+      },
+      {
+        "key": "C",
+        "text": "25 / 16"
+      },
+      {
+        "key": "D",
+        "text": "2"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "For the ellipse, e_1^2 = 1 - b^2/a^2 = 1 - 9/16 = 7/16. For the hyperbola, e_2^2 = 1 + b^2/a^2 = 1 + 9/16 = 25/16. Adding gives e_1^2 + e_2^2 = (7 + 25)/16 = 32/16 = 2.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Conic Sections (Eccentricity Relation Between Associated Ellipse and Hyperbola)",
+    "abilityTags": [
+      "analytical_thinking",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-041",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 8,
+    "chapter": "Measures of Dispersion",
+    "topic": "Range of Ungrouped Data",
+    "difficulty": "Easy",
+    "questionText": "What is the range of the dataset {14, 27, 9, 35, 19, 41, 12}?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "50"
+      },
+      {
+        "key": "B",
+        "text": "32"
+      },
+      {
+        "key": "C",
+        "text": "27"
+      },
+      {
+        "key": "D",
+        "text": "29"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Range = Largest observation (L) - Smallest observation (S) = 41 - 9 = 32.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Measures of Dispersion (Range of Ungrouped Data)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-042",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 8,
+    "chapter": "Measures of Dispersion",
+    "topic": "Coefficient of Variation (CV)",
+    "difficulty": "Easy",
+    "questionText": "If the variance of a distribution is 36 and its arithmetic mean is 24, what is its coefficient of variation (CV)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "66.67%"
+      },
+      {
+        "key": "B",
+        "text": "150%"
+      },
+      {
+        "key": "C",
+        "text": "15%"
+      },
+      {
+        "key": "D",
+        "text": "25%"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Standard deviation σ = √36 = 6. Coefficient of variation CV = (σ / x̄) × 100% = (6 / 24) × 100% = 25%.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Measures of Dispersion (Coefficient of Variation (CV))",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-043",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 8,
+    "chapter": "Measures of Dispersion",
+    "topic": "Variance of First n Natural Numbers",
+    "difficulty": "Medium",
+    "questionText": "What is the population variance (σ^2) of the first 7 natural numbers {1, 2, 3, 4, 5, 6, 7}?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "2"
+      },
+      {
+        "key": "B",
+        "text": "14 / 3"
+      },
+      {
+        "key": "C",
+        "text": "4"
+      },
+      {
+        "key": "D",
+        "text": "4.67"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Variance of the first n natural numbers is (n^2 - 1) / 12. For n = 7, σ^2 = (49 - 1) / 12 = 48 / 12 = 4.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Measures of Dispersion (Variance of First n Natural Numbers)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-044",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 8,
+    "chapter": "Measures of Dispersion",
+    "topic": "Effect of Change of Origin and Scale on Standard Deviation",
+    "difficulty": "Medium",
+    "questionText": "The standard deviation of n observations x_1, x_2, ..., x_n is 5. If each observation is transformed linearly via y_i = -3x_i + 11, what is the standard deviation of y_1, y_2, ..., y_n?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "26"
+      },
+      {
+        "key": "B",
+        "text": "4"
+      },
+      {
+        "key": "C",
+        "text": "15"
+      },
+      {
+        "key": "D",
+        "text": "-15"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Standard deviation is invariant under a shift of origin (+11) and scales by the absolute value of the multiplier: σ_y = |-3| σ_x = 3 × 5 = 15.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Measures of Dispersion (Effect of Change of Origin and Scale on Standard Deviation)",
+    "abilityTags": [
+      "logical_reasoning",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-045",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 8,
+    "chapter": "Measures of Dispersion",
+    "topic": "Combined Variance of Two Groups",
+    "difficulty": "Hard",
+    "questionText": "Group A consists of 40 observations with mean 10 and variance 4; Group B consists of 60 observations with mean 15 and variance 9. What is the combined variance of all 100 observations pooled together?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "6.5"
+      },
+      {
+        "key": "B",
+        "text": "7"
+      },
+      {
+        "key": "C",
+        "text": "19"
+      },
+      {
+        "key": "D",
+        "text": "13"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Combined mean x̄_c = (40×10 + 60×15)/100 = 1300/100 = 13. Deviations from combined mean: d_1 = 10 - 13 = -3, d_2 = 15 - 13 = 2. Combined variance σ_c^2 = [n_1(σ_1^2 + d_1^2) + n_2(σ_2^2 + d_2^2)] / (n_1 + n_2) = [40(4 + 9) + 60(9 + 4)] / 100 = (520 + 780) / 100 = 13.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Measures of Dispersion (Combined Variance of Two Groups)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-046",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 9,
+    "chapter": "Probability",
+    "topic": "Sample Space of Two Dice",
+    "difficulty": "Easy",
+    "questionText": "Two fair six-sided dice are rolled simultaneously. What is the probability that the sum of the numbers on their upper faces equals 9?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1 / 9"
+      },
+      {
+        "key": "B",
+        "text": "5 / 36"
+      },
+      {
+        "key": "C",
+        "text": "1 / 12"
+      },
+      {
+        "key": "D",
+        "text": "1 / 6"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Out of 6 × 6 = 36 equally likely outcomes, sums of 9 occur for {(3, 6), (4, 5), (5, 4), (6, 3)}—4 outcomes. Probability = 4 / 36 = 1 / 9.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Probability (Sample Space of Two Dice)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-047",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 9,
+    "chapter": "Probability",
+    "topic": "Mutually Exclusive Events Addition Theorem",
+    "difficulty": "Easy",
+    "questionText": "If A and B are mutually exclusive events in a sample space with P(A) = 0.35 and P(B) = 0.45, what is P(A ∪ B)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "0.1575"
+      },
+      {
+        "key": "B",
+        "text": "0.80"
+      },
+      {
+        "key": "C",
+        "text": "0.10"
+      },
+      {
+        "key": "D",
+        "text": "0.6425"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "For mutually exclusive events, A ∩ B = ∅ so P(A ∩ B) = 0, giving P(A ∪ B) = P(A) + P(B) = 0.35 + 0.45 = 0.80.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Probability (Mutually Exclusive Events Addition Theorem)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-048",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 9,
+    "chapter": "Probability",
+    "topic": "Independent Problem-Solving Probability",
+    "difficulty": "Medium",
+    "questionText": "Two students A and B attempt a mathematics Olympiad problem independently. Their probabilities of solving it correctly are 1/2 and 1/3 respectively. What is the probability that the problem is solved by at least one of them?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "2 / 3"
+      },
+      {
+        "key": "B",
+        "text": "1 / 6"
+      },
+      {
+        "key": "C",
+        "text": "5 / 6"
+      },
+      {
+        "key": "D",
+        "text": "1 / 2"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "P(at least one solves) = 1 - P(neither solves) = 1 - P(A')P(B') = 1 - (1 - 1/2)(1 - 1/3) = 1 - (1/2)(2/3) = 1 - 1/3 = 2/3.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Probability (Independent Problem-Solving Probability)",
+    "abilityTags": [
+      "logical_reasoning",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-049",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 9,
+    "chapter": "Probability",
+    "topic": "Conditional Probability with De Morgan's Law",
+    "difficulty": "Medium",
+    "questionText": "For two events A and B, P(A) = 3/8, P(B) = 1/2, and P(A ∩ B) = 1/4. What is the conditional probability P(A' | B')?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "3 / 4"
+      },
+      {
+        "key": "B",
+        "text": "1 / 2"
+      },
+      {
+        "key": "C",
+        "text": "5 / 8"
+      },
+      {
+        "key": "D",
+        "text": "3 / 8"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "First, P(A ∪ B) = 3/8 + 1/2 - 1/4 = 5/8. By De Morgan's law, P(A' ∩ B') = 1 - P(A ∪ B) = 3/8, and P(B') = 1 - 1/2 = 1/2. Thus P(A' | B') = P(A' ∩ B') / P(B') = (3/8) / (1/2) = 3/4.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Probability (Conditional Probability with De Morgan's Law)",
+    "abilityTags": [
+      "analytical_thinking",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-050",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 9,
+    "chapter": "Probability",
+    "topic": "Leap-Year Calendar Probability",
+    "difficulty": "Hard",
+    "questionText": "A leap year (366 days) is selected at random. What is the probability that it contains 53 Sundays OR 53 Mondays?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "3 / 7"
+      },
+      {
+        "key": "B",
+        "text": "4 / 7"
+      },
+      {
+        "key": "C",
+        "text": "2 / 7"
+      },
+      {
+        "key": "D",
+        "text": "1 / 7"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "366 days = 52 complete weeks (364 days) + 2 consecutive extra days. Possible ordered pairs of extra days are {(Sun,Mon), (Mon,Tue), (Tue,Wed), (Wed,Thu), (Thu,Fri), (Fri,Sat), (Sat,Sun)} (7 equally likely pairs). Pairs containing Sun or Mon are (Sat,Sun), (Sun,Mon), and (Mon,Tue)—3 pairs, giving probability 3/7.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Probability (Leap-Year Calendar Probability)",
+    "abilityTags": [
+      "logical_reasoning",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-051",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 9,
+    "chapter": "Probability",
+    "topic": "Bayes' Theorem on Urn Selection",
+    "difficulty": "Hard",
+    "questionText": "Urn I contains 4 red and 2 black balls; Urn II contains 2 red and 4 black balls. One urn is chosen at random with equal probability and a single ball drawn from it turns out to be red. What is the posterior probability that Urn I was chosen?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "3 / 5"
+      },
+      {
+        "key": "B",
+        "text": "1 / 2"
+      },
+      {
+        "key": "C",
+        "text": "1 / 3"
+      },
+      {
+        "key": "D",
+        "text": "2 / 3"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "P(Urn I) = P(Urn II) = 1/2; P(R | Urn I) = 4/6 = 2/3, P(R | Urn II) = 2/6 = 1/3. By Bayes' theorem, P(Urn I | R) = [(1/2)(2/3)] / [(1/2)(2/3) + (1/2)(1/3)] = (2/3) / 1 = 2/3.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 9: Probability (Bayes' Theorem on Urn Selection)",
+    "abilityTags": [
+      "logical_reasoning",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-052",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 10,
+    "chapter": "Complex Numbers",
+    "topic": "Integral Powers of Imaginary Unit i",
+    "difficulty": "Easy",
+    "questionText": "Where i = √(-1), what is the sum of four consecutive powers i^49 + i^50 + i^51 + i^52?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "-1"
+      },
+      {
+        "key": "B",
+        "text": "0"
+      },
+      {
+        "key": "C",
+        "text": "4"
+      },
+      {
+        "key": "D",
+        "text": "2i"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Since i^4 = 1, i^49 = i, i^50 = i^2 = -1, i^51 = i^3 = -i, and i^52 = i^4 = 1. Their sum is i - 1 - i + 1 = 0 (true for any four consecutive integer powers of i).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Complex Numbers (Integral Powers of Imaginary Unit i)",
+    "abilityTags": [
+      "logical_reasoning",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-053",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 10,
+    "chapter": "Complex Numbers",
+    "topic": "Modulus and Principal Argument in Argand Plane",
+    "difficulty": "Easy",
+    "questionText": "Find the modulus r and principal argument θ (-π < θ ≤ π) of the complex number z = -1 + √3 i:",
+    "diagramType": "vector_plane",
+    "options": [
+      {
+        "key": "A",
+        "text": "r = 4, θ = 2π / 3"
+      },
+      {
+        "key": "B",
+        "text": "r = 2, θ = π / 3"
+      },
+      {
+        "key": "C",
+        "text": "r = 2, θ = 2π / 3"
+      },
+      {
+        "key": "D",
+        "text": "r = 2, θ = -2π / 3"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Modulus r = √((-1)^2 + (√3)^2) = √4 = 2. Since (-1, √3) lies in Quadrant II with tan α = √3 (α = π/3), principal argument θ = π - π/3 = 2π/3.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Complex Numbers (Modulus and Principal Argument in Argand Plane)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-054",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 10,
+    "chapter": "Complex Numbers",
+    "topic": "Division of Complex Numbers",
+    "difficulty": "Medium",
+    "questionText": "Express the quotient (1 + 2i) / (1 - 3i) in standard Cartesian form a + bi:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "7/10 + (5/10)i"
+      },
+      {
+        "key": "B",
+        "text": "-1/2 - (1/2)i"
+      },
+      {
+        "key": "C",
+        "text": "1/2 + (1/2)i"
+      },
+      {
+        "key": "D",
+        "text": "-1/2 + (1/2)i"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Multiply numerator and denominator by the conjugate (1 + 3i): [(1 + 2i)(1 + 3i)] / (1^2 + 3^2) = (1 + 5i + 6i^2) / 10 = (-5 + 5i) / 10 = -1/2 + (1/2)i.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Complex Numbers (Division of Complex Numbers)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-055",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 10,
+    "chapter": "Complex Numbers",
+    "topic": "Square Roots of a Complex Number",
+    "difficulty": "Medium",
+    "questionText": "What are the two complex square roots of z = -7 + 24i?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "±(3 + 4i)"
+      },
+      {
+        "key": "B",
+        "text": "±(5 + 2i)"
+      },
+      {
+        "key": "C",
+        "text": "±(3 - 4i)"
+      },
+      {
+        "key": "D",
+        "text": "±(4 + 3i)"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Let (a + bi)^2 = -7 + 24i ⇒ a^2 - b^2 = -7 and 2ab = 24; also a^2 + b^2 = √((-7)^2 + 24^2) = 25. Solving gives a^2 = 9, b^2 = 16 with ab > 0 ⇒ ±(3 + 4i).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Complex Numbers (Square Roots of a Complex Number)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-056",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 10,
+    "chapter": "Complex Numbers",
+    "topic": "Complex Cube Roots of Unity",
+    "difficulty": "Hard",
+    "questionText": "If ω is a non-real complex cube root of unity (satisfying ω^3 = 1 and 1 + ω + ω^2 = 0), evaluate (1 - ω + ω^2)^5 + (1 + ω - ω^2)^5:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "0"
+      },
+      {
+        "key": "B",
+        "text": "32"
+      },
+      {
+        "key": "C",
+        "text": "64"
+      },
+      {
+        "key": "D",
+        "text": "-32"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Using 1 + ω^2 = -ω and 1 + ω = -ω^2, the expression becomes (-2ω)^5 + (-2ω^2)^5 = -32(ω^5 + ω^10) = -32(ω^2 + ω) = -32(-1) = 32.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Complex Numbers (Complex Cube Roots of Unity)",
+    "abilityTags": [
+      "logical_reasoning",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-057",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 10,
+    "chapter": "Complex Numbers",
+    "topic": "Argand Plane Locus",
+    "difficulty": "Hard",
+    "questionText": "In the complex Argand plane, what geometric locus is represented by all z = x + iy (z ≠ -i) satisfying |(z - i) / (z + i)| = 1?",
+    "diagramType": "vector_plane",
+    "options": [
+      {
+        "key": "A",
+        "text": "The horizontal line y = 1"
+      },
+      {
+        "key": "B",
+        "text": "The real axis (y = 0)"
+      },
+      {
+        "key": "C",
+        "text": "The unit circle x^2 + y^2 = 1"
+      },
+      {
+        "key": "D",
+        "text": "The imaginary axis (x = 0)"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "|(z - i)/(z + i)| = 1 ⇔ |z - i| = |z + i| (equidistant from (0, 1) and (0, -1)) ⇔ x^2 + (y - 1)^2 = x^2 + (y + 1)^2 ⇔ -2y = 2y ⇔ y = 0 (the real axis).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 10: Complex Numbers (Argand Plane Locus)",
+    "abilityTags": [
+      "analytical_thinking",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-058",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 11,
+    "chapter": "Sequences and Series",
+    "topic": "nth Term of a Geometric Progression",
+    "difficulty": "Easy",
+    "questionText": "What is the 6th term of the geometric progression 2, 6, 18, 54, ...?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1458"
+      },
+      {
+        "key": "B",
+        "text": "486"
+      },
+      {
+        "key": "C",
+        "text": "324"
+      },
+      {
+        "key": "D",
+        "text": "162"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "First term a = 2 and common ratio r = 6 / 2 = 3. Hence T_6 = a r^5 = 2 × 3^5 = 2 × 243 = 486.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Sequences and Series (nth Term of a Geometric Progression)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-059",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 11,
+    "chapter": "Sequences and Series",
+    "topic": "Sum to Infinity of a Geometric Series",
+    "difficulty": "Medium",
+    "questionText": "Find the sum to infinity of the convergent alternating geometric series 9 - 3 + 1 - 1/3 + ... :",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "27 / 2"
+      },
+      {
+        "key": "B",
+        "text": "18 / 5"
+      },
+      {
+        "key": "C",
+        "text": "27 / 4"
+      },
+      {
+        "key": "D",
+        "text": "9 / 2"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Here a = 9 and r = -1/3 (|r| = 1/3 < 1). Sum to infinity S_∞ = a / (1 - r) = 9 / [1 - (-1/3)] = 9 / (4/3) = 27 / 4.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Sequences and Series (Sum to Infinity of a Geometric Series)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-060",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 11,
+    "chapter": "Sequences and Series",
+    "topic": "Relation Among AM, GM, and HM",
+    "difficulty": "Medium",
+    "questionText": "For two positive real numbers, the arithmetic mean (AM) is 9 and the geometric mean (GM) is 6. What is their harmonic mean (HM)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "3"
+      },
+      {
+        "key": "B",
+        "text": "4"
+      },
+      {
+        "key": "C",
+        "text": "4.5"
+      },
+      {
+        "key": "D",
+        "text": "7.5"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "For any two positive numbers, GM^2 = AM × HM ⇒ 6^2 = 9 × HM ⇒ HM = 36 / 9 = 4.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Sequences and Series (Relation Among AM, GM, and HM)",
+    "abilityTags": [
+      "logical_reasoning",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-061",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 11,
+    "chapter": "Sequences and Series",
+    "topic": "Sigma Summation of Polynomial Terms",
+    "difficulty": "Medium",
+    "questionText": "Evaluate the finite sum ∑_(r=1)^10 (r^2 + 2r):",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "385"
+      },
+      {
+        "key": "B",
+        "text": "440"
+      },
+      {
+        "key": "C",
+        "text": "505"
+      },
+      {
+        "key": "D",
+        "text": "495"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Splitting the sum: ∑_(r=1)^10 r^2 + 2 ∑_(r=1)^10 r = [10 × 11 × 21]/6 + 2 × [10 × 11]/2 = 385 + 110 = 495.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Sequences and Series (Sigma Summation of Polynomial Terms)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-062",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 11,
+    "chapter": "Sequences and Series",
+    "topic": "Method of Differences (Telescoping Sum)",
+    "difficulty": "Hard",
+    "questionText": "Find the exact sum of the 20-term series 1/(1·2) + 1/(2·3) + 1/(3·4) + ... + 1/(20·21):",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "21 / 22"
+      },
+      {
+        "key": "B",
+        "text": "19 / 20"
+      },
+      {
+        "key": "C",
+        "text": "20 / 21"
+      },
+      {
+        "key": "D",
+        "text": "1"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Decomposing each term by partial fractions: 1 / [r(r + 1)] = 1/r - 1/(r + 1). Telescoping from r = 1 to 20 cancels all intermediate fractions, leaving 1 - 1/21 = 20/21.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Sequences and Series (Method of Differences (Telescoping Sum))",
+    "abilityTags": [
+      "logical_reasoning",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-063",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 11,
+    "chapter": "Sequences and Series",
+    "topic": "Infinite Arithmetico-Geometric Progression (AGP)",
+    "difficulty": "Hard",
+    "questionText": "Evaluate the sum to infinity of the arithmetico-geometric series S = 1 + 2/3 + 3/9 + 4/27 + 5/81 + ... :",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "9 / 4"
+      },
+      {
+        "key": "B",
+        "text": "3 / 2"
+      },
+      {
+        "key": "C",
+        "text": "2"
+      },
+      {
+        "key": "D",
+        "text": "16 / 9"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Multiply S by common ratio 1/3 and subtract: S - (1/3)S = 1 + 1/3 + 1/9 + 1/27 + ... ⇒ (2/3)S = 1 / (1 - 1/3) = 3/2 ⇒ S = (3/2) × (3/2) = 9/4.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 11: Sequences and Series (Infinite Arithmetico-Geometric Progression (AGP))",
+    "abilityTags": [
+      "analytical_thinking",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-064",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 12,
+    "chapter": "Permutations and Combination",
+    "topic": "Symmetry Property of Combinations",
+    "difficulty": "Easy",
+    "questionText": "If ^nC_8 = ^nC_6, what is the numerical value of ^nC_2?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "78"
+      },
+      {
+        "key": "B",
+        "text": "48"
+      },
+      {
+        "key": "C",
+        "text": "91"
+      },
+      {
+        "key": "D",
+        "text": "105"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Since ^nC_x = ^nC_y (with x ≠ y) implies n = x + y, we have n = 8 + 6 = 14. Then ^14C_2 = (14 × 13) / 2 = 91.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Permutations and Combination (Symmetry Property of Combinations)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-065",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 12,
+    "chapter": "Permutations and Combination",
+    "topic": "Permutations with Identical Objects",
+    "difficulty": "Easy",
+    "questionText": "How many distinct 5-letter arrangements (with or without meaning) can be formed using all letters of the word 'INDIA'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "120"
+      },
+      {
+        "key": "B",
+        "text": "30"
+      },
+      {
+        "key": "C",
+        "text": "60"
+      },
+      {
+        "key": "D",
+        "text": "24"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "The 5-letter word INDIA contains the letter 'I' twice and N, D, A once each. Number of distinct permutations = 5! / 2! = 120 / 2 = 60.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Permutations and Combination (Permutations with Identical Objects)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-066",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 12,
+    "chapter": "Permutations and Combination",
+    "topic": "Diagonals of a Convex Polygon",
+    "difficulty": "Medium",
+    "questionText": "How many diagonals does a convex decagon (10-sided polygon) possess?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "35"
+      },
+      {
+        "key": "B",
+        "text": "25"
+      },
+      {
+        "key": "C",
+        "text": "45"
+      },
+      {
+        "key": "D",
+        "text": "40"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Joining 10 vertices two at a time gives ^10C_2 = 45 segments, of which 10 are polygon sides. Number of diagonals = 45 - 10 = 35.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Permutations and Combination (Diagonals of a Convex Polygon)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-067",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 12,
+    "chapter": "Permutations and Combination",
+    "topic": "Circular Permutations with Non-Adjacency Constraint",
+    "difficulty": "Medium",
+    "questionText": "In how many ways can 7 distinct people be seated around a circular table if two particular people A and B must NOT sit next to each other?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "240"
+      },
+      {
+        "key": "B",
+        "text": "720"
+      },
+      {
+        "key": "C",
+        "text": "480"
+      },
+      {
+        "key": "D",
+        "text": "600"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Total circular seatings of 7 people = (7 - 1)! = 6! = 720. Seatings with A and B adjacent (treating {A,B} as 1 block alongside 5 others ⇒ 6 units) = (6 - 1)! × 2! = 120 × 2 = 240. Valid seatings = 720 - 240 = 480.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Permutations and Combination (Circular Permutations with Non-Adjacency Constraint)",
+    "abilityTags": [
+      "logical_reasoning",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-068",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 12,
+    "chapter": "Permutations and Combination",
+    "topic": "Committee Selection with Minimum Threshold",
+    "difficulty": "Hard",
+    "questionText": "From a pool of 6 men and 4 women, in how many ways can a 5-member committee be formed so that it includes AT LEAST 3 women?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "126"
+      },
+      {
+        "key": "B",
+        "text": "66"
+      },
+      {
+        "key": "C",
+        "text": "60"
+      },
+      {
+        "key": "D",
+        "text": "81"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Disjoint cases: (1) 3 women and 2 men = ^4C_3 × ^6C_2 = 4 × 15 = 60; (2) 4 women and 1 man = ^4C_4 × ^6C_1 = 1 × 6 = 6. Total committees = 60 + 6 = 66.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Permutations and Combination (Committee Selection with Minimum Threshold)",
+    "abilityTags": [
+      "analytical_thinking",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-069",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 12,
+    "chapter": "Permutations and Combination",
+    "topic": "Lexicographical Dictionary Rank",
+    "difficulty": "Hard",
+    "questionText": "All 24 permutations of the letters of the word 'LATE' are listed in alphabetical dictionary order. What is the rank (position) of the word 'LATE'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "13"
+      },
+      {
+        "key": "B",
+        "text": "15"
+      },
+      {
+        "key": "C",
+        "text": "16"
+      },
+      {
+        "key": "D",
+        "text": "14"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Alphabetical letter order is A, E, L, T. Words starting with A: 3! = 6; starting with E: 3! = 6 (12 words so far). Words starting with LA: next is LAET (13th), followed immediately by LATE (14th).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 12: Permutations and Combination (Lexicographical Dictionary Rank)",
+    "abilityTags": [
+      "logical_reasoning",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-070",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 13,
+    "chapter": "Methods of Induction and Binomial Theorem",
+    "topic": "Sum of Binomial Coefficients",
+    "difficulty": "Easy",
+    "questionText": "What is the exact value of ^8C_0 + ^8C_1 + ^8C_2 + ... + ^8C_8?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "128"
+      },
+      {
+        "key": "B",
+        "text": "512"
+      },
+      {
+        "key": "C",
+        "text": "64"
+      },
+      {
+        "key": "D",
+        "text": "256"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Setting x = 1 in (1 + x)^8 = ∑_(r=0)^8 ^8C_r x^r gives ^8C_0 + ^8C_1 + ... + ^8C_8 = 2^8 = 256.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 13: Methods of Induction and Binomial Theorem (Sum of Binomial Coefficients)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-071",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 13,
+    "chapter": "Methods of Induction and Binomial Theorem",
+    "topic": "Middle Term in Binomial Expansion",
+    "difficulty": "Medium",
+    "questionText": "Find the middle term in the binomial expansion of (2x - 1/x)^6:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "-160"
+      },
+      {
+        "key": "B",
+        "text": "-240 x^2"
+      },
+      {
+        "key": "C",
+        "text": "160"
+      },
+      {
+        "key": "D",
+        "text": "-80"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "For even index n = 6, there are 7 terms and the single middle term is T_(6/2 + 1) = T_4 = ^6C_3 (2x)^3 (-1/x)^3 = 20 × 8x^3 × (-1/x^3) = -160.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 13: Methods of Induction and Binomial Theorem (Middle Term in Binomial Expansion)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-072",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 13,
+    "chapter": "Methods of Induction and Binomial Theorem",
+    "topic": "Divisibility via Principle of Mathematical Induction",
+    "difficulty": "Medium",
+    "questionText": "By the Principle of Mathematical Induction, for every positive integer n ∈ N, the expression 7^n - 3^n is always divisible by:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "4"
+      },
+      {
+        "key": "B",
+        "text": "5"
+      },
+      {
+        "key": "C",
+        "text": "6"
+      },
+      {
+        "key": "D",
+        "text": "10"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "For n = 1, 7^1 - 3^1 = 4; for n = 2, 49 - 9 = 40. Inductively, 7^(k+1) - 3^(k+1) = 7(7^k - 3^k) + 4·3^k, which is a sum of two multiples of 4 for all k ≥ 1.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 13: Methods of Induction and Binomial Theorem (Divisibility via Principle of Mathematical Induction)",
+    "abilityTags": [
+      "logical_reasoning",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-073",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 13,
+    "chapter": "Methods of Induction and Binomial Theorem",
+    "topic": "Constant Term Independent of x",
+    "difficulty": "Hard",
+    "questionText": "Find the term independent of x (constant term) in the binomial expansion of (x^2 - 2/x)^9:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "2688"
+      },
+      {
+        "key": "B",
+        "text": "672"
+      },
+      {
+        "key": "C",
+        "text": "-5376"
+      },
+      {
+        "key": "D",
+        "text": "5376"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "General term T_(r+1) = ^9C_r (x^2)^(9-r) (-2/x)^r = ^9C_r (-2)^r x^(18 - 3r). Setting 18 - 3r = 0 gives r = 6. Constant term = ^9C_6 (-2)^6 = 84 × 64 = 5376.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 13: Methods of Induction and Binomial Theorem (Constant Term Independent of x)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-074",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 13,
+    "chapter": "Methods of Induction and Binomial Theorem",
+    "topic": "Coefficient in Product of Binomials",
+    "difficulty": "Hard",
+    "questionText": "What is the coefficient of x^5 in the polynomial expansion of (1 - x)(1 + 2x)^6?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "-240"
+      },
+      {
+        "key": "B",
+        "text": "192"
+      },
+      {
+        "key": "C",
+        "text": "48"
+      },
+      {
+        "key": "D",
+        "text": "-48"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "(1 - x)(1 + 2x)^6 = (1 + 2x)^6 - x(1 + 2x)^6. Coefficient of x^5 = [coeff of x^5 in (1 + 2x)^6] - [coeff of x^4 in (1 + 2x)^6] = ^6C_5(2^5) - ^6C_4(2^4) = 6(32) - 15(16) = 192 - 240 = -48.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 13: Methods of Induction and Binomial Theorem (Coefficient in Product of Binomials)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-075",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 14,
+    "chapter": "Sets and Relations",
+    "topic": "Proper Subsets of a Finite Set",
+    "difficulty": "Easy",
+    "questionText": "If a finite set A contains 5 distinct elements, how many proper subsets does A have (excluding A itself)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "32"
+      },
+      {
+        "key": "B",
+        "text": "31"
+      },
+      {
+        "key": "C",
+        "text": "25"
+      },
+      {
+        "key": "D",
+        "text": "30"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "A set of cardinality n = 5 has 2^5 = 32 total subsets; excluding the improper subset A itself leaves 2^5 - 1 = 31 proper subsets.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Sets and Relations (Proper Subsets of a Finite Set)",
+    "abilityTags": [
+      "scientific_understanding",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-076",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 14,
+    "chapter": "Sets and Relations",
+    "topic": "Two-Set Cardinality Formula",
+    "difficulty": "Easy",
+    "questionText": "For two finite sets A and B, if n(A) = 28, n(B) = 32, and n(A ∪ B) = 45, what is n(A ∩ B)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "17"
+      },
+      {
+        "key": "B",
+        "text": "60"
+      },
+      {
+        "key": "C",
+        "text": "15"
+      },
+      {
+        "key": "D",
+        "text": "13"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Using n(A ∪ B) = n(A) + n(B) - n(A ∩ B), we get n(A ∩ B) = 28 + 32 - 45 = 15.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Sets and Relations (Two-Set Cardinality Formula)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-077",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 14,
+    "chapter": "Sets and Relations",
+    "topic": "Congruence Modulo Relation",
+    "difficulty": "Medium",
+    "questionText": "On the set Z of all integers, define a binary relation R by (a, b) ∈ R if and only if (a - b) is divisible by 5. Which classification holds for R?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "R is reflexive and symmetric, but not transitive"
+      },
+      {
+        "key": "B",
+        "text": "R is reflexive, symmetric, and transitive (an equivalence relation)"
+      },
+      {
+        "key": "C",
+        "text": "R is reflexive and transitive, but not symmetric"
+      },
+      {
+        "key": "D",
+        "text": "R is symmetric and transitive, but not reflexive"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "a - a = 0 is divisible by 5 (reflexive); if 5 | (a - b) then 5 | (b - a) (symmetric); if 5 | (a - b) and 5 | (b - c) then 5 | [(a - b) + (b - c)] = (a - c) (transitive). Hence R is an equivalence relation.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Sets and Relations (Congruence Modulo Relation)",
+    "abilityTags": [
+      "logical_reasoning",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-078",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 14,
+    "chapter": "Sets and Relations",
+    "topic": "Total Number of Binary Relations",
+    "difficulty": "Medium",
+    "questionText": "If n(A) = 3 and n(B) = 2, how many distinct binary relations can be defined from set A to set B?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "36"
+      },
+      {
+        "key": "B",
+        "text": "64"
+      },
+      {
+        "key": "C",
+        "text": "12"
+      },
+      {
+        "key": "D",
+        "text": "8"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Since n(A × B) = 3 × 2 = 6, and every relation from A to B is a subset of A × B, the total number of relations is 2^6 = 64.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Sets and Relations (Total Number of Binary Relations)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-079",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 14,
+    "chapter": "Sets and Relations",
+    "topic": "Three-Set Inclusion-Exclusion Principle",
+    "difficulty": "Hard",
+    "questionText": "In a survey of 100 FYJC Science students, 55 study Physics, 48 study Chemistry, 45 study Biology, 25 study both Physics and Chemistry, 22 study both Chemistry and Biology, 20 study both Physics and Biology, and 8 study none of these three. How many students study ALL THREE subjects?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "7"
+      },
+      {
+        "key": "B",
+        "text": "19"
+      },
+      {
+        "key": "C",
+        "text": "11"
+      },
+      {
+        "key": "D",
+        "text": "15"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Here n(P ∪ C ∪ B) = 100 - 8 = 92. By inclusion-exclusion: 92 = (55 + 48 + 45) - (25 + 22 + 20) + n(P ∩ C ∩ B) = 148 - 67 + x = 81 + x ⇒ x = 92 - 81 = 11.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 14: Sets and Relations (Three-Set Inclusion-Exclusion Principle)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-080",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 15,
+    "chapter": "Functions",
+    "topic": "Real Domain of Square-Root Function",
+    "difficulty": "Easy",
+    "questionText": "What is the largest real domain of the function f(x) = √(9 - x^2)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "(-∞, -3] ∪ [3, ∞)"
+      },
+      {
+        "key": "B",
+        "text": "[-3, 3]"
+      },
+      {
+        "key": "C",
+        "text": "[0, 3]"
+      },
+      {
+        "key": "D",
+        "text": "(-3, 3)"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "For √(9 - x^2) to be real, 9 - x^2 ≥ 0 ⇔ x^2 ≤ 9 ⇔ -3 ≤ x ≤ 3, i.e., the closed interval [-3, 3].",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 15: Functions (Real Domain of Square-Root Function)",
+    "abilityTags": [
+      "analytical_thinking",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-081",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 15,
+    "chapter": "Functions",
+    "topic": "Composition of Functions",
+    "difficulty": "Easy",
+    "questionText": "Given f(x) = 2x + 3 and g(x) = x^2 - 1 on R, what is the value of the composite function (f ∘ g)(2)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "7"
+      },
+      {
+        "key": "B",
+        "text": "11"
+      },
+      {
+        "key": "C",
+        "text": "9"
+      },
+      {
+        "key": "D",
+        "text": "48"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "First compute g(2) = 2^2 - 1 = 3; then (f ∘ g)(2) = f(g(2)) = f(3) = 2(3) + 3 = 9.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 15: Functions (Composition of Functions)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-082",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 15,
+    "chapter": "Functions",
+    "topic": "Inverse of a Rational Bijection",
+    "difficulty": "Medium",
+    "questionText": "Let f : R \\ {2} → R \\ {3} be the bijective function defined by f(x) = (3x + 1) / (x - 2). What is its inverse function f^-1(x)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "(x - 2) / (3x + 1)"
+      },
+      {
+        "key": "B",
+        "text": "(2x - 1) / (x + 3)"
+      },
+      {
+        "key": "C",
+        "text": "(3x - 1) / (x - 2)"
+      },
+      {
+        "key": "D",
+        "text": "(2x + 1) / (x - 3)"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Set y = (3x + 1) / (x - 2) ⇒ xy - 2y = 3x + 1 ⇒ x(y - 3) = 2y + 1 ⇒ x = (2y + 1) / (y - 3). Replacing y with x gives f^-1(x) = (2x + 1) / (x - 3).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 15: Functions (Inverse of a Rational Bijection)",
+    "abilityTags": [
+      "analytical_thinking",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-083",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 15,
+    "chapter": "Functions",
+    "topic": "Greatest Integer (Floor) Function",
+    "difficulty": "Medium",
+    "questionText": "Denoting by [x] the greatest integer less than or equal to x, evaluate [3.7] + [-2.3]:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1"
+      },
+      {
+        "key": "B",
+        "text": "-1"
+      },
+      {
+        "key": "C",
+        "text": "0"
+      },
+      {
+        "key": "D",
+        "text": "2"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "[3.7] = 3 (largest integer ≤ 3.7), while [-2.3] = -3 (largest integer ≤ -2.3, NOT -2). Therefore [3.7] + [-2.3] = 3 + (-3) = 0.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 15: Functions (Greatest Integer (Floor) Function)",
+    "abilityTags": [
+      "logical_reasoning",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-084",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 15,
+    "chapter": "Functions",
+    "topic": "Solving a Functional Equation",
+    "difficulty": "Hard",
+    "questionText": "Suppose a function f : R \\ {0} → R satisfies 2 f(x) + f(1/x) = 3x for every non-zero real x. What is the exact value of f(2)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "9 / 4"
+      },
+      {
+        "key": "B",
+        "text": "3"
+      },
+      {
+        "key": "C",
+        "text": "7 / 2"
+      },
+      {
+        "key": "D",
+        "text": "5 / 2"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "At x = 2: 2 f(2) + f(1/2) = 6 ... (1). At x = 1/2: 2 f(1/2) + f(2) = 3/2 ... (2). Multiplying (1) by 2 and subtracting (2) eliminates f(1/2): 3 f(2) = 12 - 3/2 = 21/2 ⇒ f(2) = 7/2.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 15: Functions (Solving a Functional Equation)",
+    "abilityTags": [
+      "logical_reasoning",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-085",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 16,
+    "chapter": "Limits",
+    "topic": "Standard Algebraic Limit",
+    "difficulty": "Easy",
+    "questionText": "Evaluate lim_(x → 3) (x^3 - 27) / (x - 3):",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "9"
+      },
+      {
+        "key": "B",
+        "text": "18"
+      },
+      {
+        "key": "C",
+        "text": "27"
+      },
+      {
+        "key": "D",
+        "text": "0"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Using lim_(x → a) (x^n - a^n)/(x - a) = n a^(n - 1) with n = 3 and a = 3 gives 3 × 3^2 = 27.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 16: Limits (Standard Algebraic Limit)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-086",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 16,
+    "chapter": "Limits",
+    "topic": "Trigonometric Limit with Half-Angle Identity",
+    "difficulty": "Medium",
+    "questionText": "Evaluate lim_(x → 0) (1 - cos 4x) / x^2:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "8"
+      },
+      {
+        "key": "B",
+        "text": "4"
+      },
+      {
+        "key": "C",
+        "text": "2"
+      },
+      {
+        "key": "D",
+        "text": "16"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Using 1 - cos 4x = 2 sin^2(2x): (1 - cos 4x)/x^2 = 2 [sin(2x) / x]^2 = 2 × 4 × [sin(2x) / (2x)]^2 → 8 × 1^2 = 8 as x → 0.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 16: Limits (Trigonometric Limit with Half-Angle Identity)",
+    "abilityTags": [
+      "problem_solving",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-087",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 16,
+    "chapter": "Limits",
+    "topic": "Exponential Limit",
+    "difficulty": "Medium",
+    "questionText": "Evaluate lim_(x → 0) (5^x - 3^x) / x:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "5 / 3"
+      },
+      {
+        "key": "B",
+        "text": "ln(5 / 3)"
+      },
+      {
+        "key": "C",
+        "text": "2"
+      },
+      {
+        "key": "D",
+        "text": "ln 5 · ln 3"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Writing (5^x - 3^x)/x = (5^x - 1)/x - (3^x - 1)/x and applying lim_(x → 0) (a^x - 1)/x = ln a yields ln 5 - ln 3 = ln(5/3).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 16: Limits (Exponential Limit)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-088",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 16,
+    "chapter": "Limits",
+    "topic": "Limit by Rationalization",
+    "difficulty": "Medium",
+    "questionText": "Evaluate lim_(x → 0) [√(4 + x) - 2] / x:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1 / 4"
+      },
+      {
+        "key": "B",
+        "text": "1"
+      },
+      {
+        "key": "C",
+        "text": "1 / 2"
+      },
+      {
+        "key": "D",
+        "text": "0"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Multiplying numerator and denominator by √(4 + x) + 2 gives [(4 + x) - 4] / [x(√(4 + x) + 2)] = 1 / [√(4 + x) + 2] → 1 / (2 + 2) = 1/4.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 16: Limits (Limit by Rationalization)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-089",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 16,
+    "chapter": "Limits",
+    "topic": "Limit at Infinity of Irrational Difference",
+    "difficulty": "Hard",
+    "questionText": "Evaluate lim_(x → ∞) [√(x^2 + 6x + 1) - x]:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "0"
+      },
+      {
+        "key": "B",
+        "text": "1"
+      },
+      {
+        "key": "C",
+        "text": "3"
+      },
+      {
+        "key": "D",
+        "text": "6"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Rationalizing the numerator: [(x^2 + 6x + 1) - x^2] / [√(x^2 + 6x + 1) + x] = (6x + 1) / [x √(1 + 6/x + 1/x^2) + x] = (6 + 1/x) / [√(1 + 6/x + 1/x^2) + 1] → 6 / (1 + 1) = 3.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 16: Limits (Limit at Infinity of Irrational Difference)",
+    "abilityTags": [
+      "analytical_thinking",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-090",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 16,
+    "chapter": "Limits",
+    "topic": "Indeterminate Form 1^∞ Limit",
+    "difficulty": "Hard",
+    "questionText": "Evaluate lim_(x → 0) (1 + 3x)^(2 / x):",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "e^5"
+      },
+      {
+        "key": "B",
+        "text": "e^3"
+      },
+      {
+        "key": "C",
+        "text": "e^(3/2)"
+      },
+      {
+        "key": "D",
+        "text": "e^6"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Rewriting (1 + 3x)^(2/x) = [(1 + 3x)^(1 / (3x))]^6 and using lim_(u → 0) (1 + u)^(1/u) = e gives e^6.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 16: Limits (Indeterminate Form 1^∞ Limit)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-091",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 17,
+    "chapter": "Continuity",
+    "topic": "Removing a Point Discontinuity",
+    "difficulty": "Easy",
+    "questionText": "If f(x) = (x^2 - 16) / (x - 4) for x ≠ 4 is continuous at x = 4, what value must be assigned to f(4)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "16"
+      },
+      {
+        "key": "B",
+        "text": "8"
+      },
+      {
+        "key": "C",
+        "text": "4"
+      },
+      {
+        "key": "D",
+        "text": "0"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Continuity at x = 4 requires f(4) = lim_(x → 4) (x^2 - 16)/(x - 4) = lim_(x → 4) (x + 4) = 8.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 17: Continuity (Removing a Point Discontinuity)",
+    "abilityTags": [
+      "problem_solving",
+      "scientific_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-092",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 17,
+    "chapter": "Continuity",
+    "topic": "Continuity of Trigonometric Function at Origin",
+    "difficulty": "Medium",
+    "questionText": "Let f(x) = (sin 5x) / (2x) for x ≠ 0 and f(0) = k. If f is continuous at x = 0, find k:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "2 / 5"
+      },
+      {
+        "key": "B",
+        "text": "1"
+      },
+      {
+        "key": "C",
+        "text": "5 / 2"
+      },
+      {
+        "key": "D",
+        "text": "5"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "k = f(0) = lim_(x → 0) (sin 5x)/(2x) = (5/2) lim_(x → 0) (sin 5x)/(5x) = (5/2) × 1 = 5/2.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 17: Continuity (Continuity of Trigonometric Function at Origin)",
+    "abilityTags": [
+      "problem_solving",
+      "logical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-093",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 17,
+    "chapter": "Continuity",
+    "topic": "Jump (Irremovable) Discontinuity Analysis",
+    "difficulty": "Medium",
+    "questionText": "Examine the behaviour of f(x) = |x - 2| / (x - 2) for x ≠ 2, with f(2) = 0, at the point x = 2:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "f has a removable discontinuity at x = 2 that can be fixed by setting f(2) = 1"
+      },
+      {
+        "key": "B",
+        "text": "f is continuous at x = 2 because LHL + RHL = 0 = 2 f(2)"
+      },
+      {
+        "key": "C",
+        "text": "f has an irremovable (jump) discontinuity at x = 2 because LHL = -1 and RHL = +1"
+      },
+      {
+        "key": "D",
+        "text": "Both LHL and RHL equal +1 while f(2) = 0"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "For x < 2, |x - 2| = -(x - 2) so LHL = -1; for x > 2, |x - 2| = x - 2 so RHL = +1. Since LHL ≠ RHL, lim_(x → 2) f(x) does not exist, producing an irremovable jump discontinuity.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 17: Continuity (Jump (Irremovable) Discontinuity Analysis)",
+    "abilityTags": [
+      "logical_reasoning",
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-094",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 17,
+    "chapter": "Continuity",
+    "topic": "Piecewise Continuity Over R with Two Parameters",
+    "difficulty": "Hard",
+    "questionText": "Suppose f(x) = ax + 1 for x ≤ 1, f(x) = x^2 + b for 1 < x < 2, and f(x) = 3x + 1 for x ≥ 2 is continuous at every real number x. Find the ordered pair (a, b):",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "(3, 3)"
+      },
+      {
+        "key": "B",
+        "text": "(4, 3)"
+      },
+      {
+        "key": "C",
+        "text": "(3, 2)"
+      },
+      {
+        "key": "D",
+        "text": "(2, 3)"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Continuity at x = 2 requires lim_(x → 2^-) (x^2 + b) = f(2) ⇒ 4 + b = 3(2) + 1 = 7 ⇒ b = 3. Continuity at x = 1 then requires f(1) = lim_(x → 1^+) (x^2 + 3) ⇒ a(1) + 1 = 1 + 3 = 4 ⇒ a = 3.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 17: Continuity (Piecewise Continuity Over R with Two Parameters)",
+    "abilityTags": [
+      "logical_reasoning",
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-095",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 17,
+    "chapter": "Continuity",
+    "topic": "Exponential-Logarithmic Continuity at x = 0",
+    "difficulty": "Hard",
+    "questionText": "For x ≠ 0, let f(x) = [e^(3x) - e^(-2x)] / ln(1 + 5x). What value of f(0) makes f continuous at x = 0?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1"
+      },
+      {
+        "key": "B",
+        "text": "5"
+      },
+      {
+        "key": "C",
+        "text": "1 / 5"
+      },
+      {
+        "key": "D",
+        "text": "3 / 5"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Divide numerator and denominator by x: [(e^(3x) - 1)/x + (1 - e^(-2x))/x] / [ln(1 + 5x)/x]. As x → 0, the numerator approaches 3 + 2 = 5 and the denominator approaches 5, so lim_(x → 0) f(x) = 5 / 5 = 1.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 17: Continuity (Exponential-Logarithmic Continuity at x = 0)",
+    "abilityTags": [
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-096",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 18,
+    "chapter": "Differentiation",
+    "topic": "Sum Rule of Differentiation",
+    "difficulty": "Easy",
+    "questionText": "If y = x^4 - 3 sin x + e^x, what is the value of dy/dx at x = 0?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "1"
+      },
+      {
+        "key": "B",
+        "text": "-2"
+      },
+      {
+        "key": "C",
+        "text": "-3"
+      },
+      {
+        "key": "D",
+        "text": "0"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Differentiating term-by-term gives dy/dx = 4x^3 - 3 cos x + e^x. Substituting x = 0 yields 0 - 3(1) + e^0 = -3 + 1 = -2.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 18: Differentiation (Sum Rule of Differentiation)",
+    "abilityTags": [
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-097",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 18,
+    "chapter": "Differentiation",
+    "topic": "Quotient Rule Evaluation",
+    "difficulty": "Easy",
+    "questionText": "If f(x) = (x + 1) / (x - 1) for x ≠ 1, what is the value of the derivative f'(3)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "2"
+      },
+      {
+        "key": "B",
+        "text": "-1 / 2"
+      },
+      {
+        "key": "C",
+        "text": "-1 / 4"
+      },
+      {
+        "key": "D",
+        "text": "1 / 2"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "By the quotient rule, f'(x) = [(x - 1)(1) - (x + 1)(1)] / (x - 1)^2 = -2 / (x - 1)^2. At x = 3, f'(3) = -2 / (3 - 1)^2 = -2 / 4 = -1/2.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 18: Differentiation (Quotient Rule Evaluation)",
+    "abilityTags": [
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-098",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 18,
+    "chapter": "Differentiation",
+    "topic": "Chain Rule with Logarithmic and Trigonometric Functions",
+    "difficulty": "Medium",
+    "questionText": "For x ∈ (-π/2, π/2), simplify the derivative d/dx [ln(sec x + tan x)]:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "tan x"
+      },
+      {
+        "key": "B",
+        "text": "sec^2 x"
+      },
+      {
+        "key": "C",
+        "text": "1 / cos^2 x"
+      },
+      {
+        "key": "D",
+        "text": "sec x"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "By the chain rule, d/dx [ln(sec x + tan x)] = [1 / (sec x + tan x)] · (sec x tan x + sec^2 x) = [sec x (tan x + sec x)] / (sec x + tan x) = sec x.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 18: Differentiation (Chain Rule with Logarithmic and Trigonometric Functions)",
+    "abilityTags": [
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-099",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 18,
+    "chapter": "Differentiation",
+    "topic": "Leibniz Product Rule from Tabulated Values",
+    "difficulty": "Medium",
+    "questionText": "Let u(x) and v(x) be differentiable functions with u(2) = 3, u'(2) = -1, v(2) = 4, and v'(2) = 5. What is the derivative of h(x) = u(x) · v(x) evaluated at x = 2?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "11"
+      },
+      {
+        "key": "B",
+        "text": "19"
+      },
+      {
+        "key": "C",
+        "text": "7"
+      },
+      {
+        "key": "D",
+        "text": "-5"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "By the product rule, h'(2) = u(2)v'(2) + v(2)u'(2) = (3)(5) + (4)(-1) = 15 - 4 = 11.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 18: Differentiation (Leibniz Product Rule from Tabulated Values)",
+    "abilityTags": [
+      "problem_solving"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-sci-mat-100",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "science",
+    "subjectSlug": "sci-mathematics",
+    "subjectName": "Mathematics and Statistics",
+    "chapterNumber": 18,
+    "chapter": "Differentiation",
+    "topic": "Logarithmic Differentiation of x^x",
+    "difficulty": "Hard",
+    "questionText": "For the function y = x^x defined on x > 0, what is the exact value of dy/dx at x = e?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "e^(e - 1)"
+      },
+      {
+        "key": "B",
+        "text": "2 e^e"
+      },
+      {
+        "key": "C",
+        "text": "e^e"
+      },
+      {
+        "key": "D",
+        "text": "e · e^e"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Taking natural logarithms: ln y = x ln x. Differentiating gives (1/y)(dy/dx) = x(1/x) + ln x = 1 + ln x ⇒ dy/dx = x^x (1 + ln x). At x = e, ln e = 1, so dy/dx = e^e (1 + 1) = 2 e^e.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 18: Differentiation (Logarithmic Differentiation of x^x)",
+    "abilityTags": [
+      "analytical_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  }
+]

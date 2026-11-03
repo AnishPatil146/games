@@ -1,0 +1,4595 @@
+[
+  {
+    "id": "msb-11-com-ocm-001",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 1,
+    "chapter": "Introduction of Commerce and Business",
+    "topic": "Economic vs Non-Economic Activities",
+    "difficulty": "Easy",
+    "questionText": "Which of the following represents a Non-Economic activity?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "A chef preparing meals at a commercial hotel for a monthly salary"
+      },
+      {
+        "key": "B",
+        "text": "A home-baker selling custom birthday cakes to neighbourhood customers"
+      },
+      {
+        "key": "C",
+        "text": "A dietitian charging consultation fees at a wellness clinic"
+      },
+      {
+        "key": "D",
+        "text": "A mother cooking nutritious meals at home for her children"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Non-economic activities are performed out of love, affection, sympathy, or patriotism without expecting monetary reward, whereas business, employment, and profession seek livelihood.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Introduction of Commerce and Business",
+    "abilityTags": [
+      "business_decision_making",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-002",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 1,
+    "chapter": "Introduction of Commerce and Business",
+    "topic": "Auxiliaries to Trade — Warehousing",
+    "difficulty": "Easy",
+    "questionText": "Which auxiliary to trade removes the hindrance of 'time' by preserving seasonal agricultural goods for year-round consumption?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Insurance"
+      },
+      {
+        "key": "B",
+        "text": "Warehousing"
+      },
+      {
+        "key": "C",
+        "text": "Advertising"
+      },
+      {
+        "key": "D",
+        "text": "Transport"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Warehousing creates time utility by storing goods safely from the period of production until the time of consumer demand, stabilising supply and prices.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Introduction of Commerce and Business",
+    "abilityTags": [
+      "strategic_thinking",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-003",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 1,
+    "chapter": "Introduction of Commerce and Business",
+    "topic": "Primary Industry — Genetic Industry",
+    "difficulty": "Easy",
+    "questionText": "Poultry farming, sericulture, and plant nurseries belong to which branch of Primary Industry?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Synthetical Manufacturing Industry"
+      },
+      {
+        "key": "B",
+        "text": "Extractive Industry"
+      },
+      {
+        "key": "C",
+        "text": "Genetic Industry"
+      },
+      {
+        "key": "D",
+        "text": "Construction Industry"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Genetic industries engage in the reproduction, breeding, and multiplication of plants and animals—such as cattle breeding, poultry, sericulture, and horticulture nurseries.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Introduction of Commerce and Business",
+    "abilityTags": [
+      "business_decision_making",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-004",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 1,
+    "chapter": "Introduction of Commerce and Business",
+    "topic": "Characteristics of Profession",
+    "difficulty": "Easy",
+    "questionText": "A Chartered Accountant practicing under the code of conduct of ICAI earns monetary return primarily in what form?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Professional Fees"
+      },
+      {
+        "key": "B",
+        "text": "Wages"
+      },
+      {
+        "key": "C",
+        "text": "Speculative Profit"
+      },
+      {
+        "key": "D",
+        "text": "Royalty"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Professionals render specialised personal services backed by formal qualifications and statutory membership, receiving 'Professional Fees' in return.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Introduction of Commerce and Business",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-005",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 1,
+    "chapter": "Introduction of Commerce and Business",
+    "topic": "Transferability of Interest",
+    "difficulty": "Medium",
+    "questionText": "Why can a practising surgeon NOT transfer his medical practice registration directly to his son in the way a shopkeeper transfers a grocery store?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Because professional chambers are owned exclusively by the central government"
+      },
+      {
+        "key": "B",
+        "text": "Because professions do not follow any code of ethics"
+      },
+      {
+        "key": "C",
+        "text": "Because a profession requires personal specialised qualification, formal training, and individual statutory registration"
+      },
+      {
+        "key": "D",
+        "text": "Because medical clinics are barred from earning monetary income"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Unlike business ownership (which is transferable subject to legal formalities), professional practice depends on personal skill, examination credentials, and non-transferable membership of a regulatory body.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Introduction of Commerce and Business",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-006",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 1,
+    "chapter": "Introduction of Commerce and Business",
+    "topic": "Entrepot Trade",
+    "difficulty": "Medium",
+    "questionText": "An Indian trading house imports electronic components from South Korea, processes/repacks them at a port warehouse, and re-exports them to Kenya. What is this branch of foreign trade called?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Bilateral Barter Trade"
+      },
+      {
+        "key": "B",
+        "text": "Internal Wholesale Trade"
+      },
+      {
+        "key": "C",
+        "text": "Retail Itinerant Trade"
+      },
+      {
+        "key": "D",
+        "text": "Entrepot (Re-export) Trade"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Entrepot trade involves importing goods from one foreign country with the purpose of re-exporting them (with or without minor processing) to another country.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Introduction of Commerce and Business",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-007",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 1,
+    "chapter": "Introduction of Commerce and Business",
+    "topic": "Economic vs Social Objectives of Business",
+    "difficulty": "Medium",
+    "questionText": "Which of the following is classified as an Economic Objective—rather than a Social Objective—of a business enterprise?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Avoiding unfair trade practices such as hoarding and black-marketing"
+      },
+      {
+        "key": "B",
+        "text": "Searching for new customers and introducing innovative cost-saving production methods"
+      },
+      {
+        "key": "C",
+        "text": "Contributing toward community health camps and educational scholarships"
+      },
+      {
+        "key": "D",
+        "text": "Providing safe working conditions and fair welfare amenities to workers"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Earning profit, creating new customers, innovating, and optimising resource utilisation are Economic Objectives, whereas fair trade, employee welfare, and community upliftment are Social Objectives.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Introduction of Commerce and Business",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-008",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 1,
+    "chapter": "Introduction of Commerce and Business",
+    "topic": "Hindrances in Commerce and Aids to Trade",
+    "difficulty": "Medium",
+    "questionText": "Match the hindrance in trade accurately with the commercial auxiliary that resolves it:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Hindrance of Finance — Insurance; Hindrance of Time — Transport; Hindrance of Persons — Banking"
+      },
+      {
+        "key": "B",
+        "text": "Hindrance of Knowledge — Warehousing; Hindrance of Risk — Mercantile Agents; Hindrance of Place — Insurance"
+      },
+      {
+        "key": "C",
+        "text": "Hindrance of Risk — Banking; Hindrance of Place — Warehousing; Hindrance of Time — Advertising"
+      },
+      {
+        "key": "D",
+        "text": "Hindrance of Risk — Insurance; Hindrance of Place — Transport; Hindrance of Knowledge — Advertising"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Insurance mitigates risk of loss/damage, Transport overcomes geographical distance (place utility), and Advertising bridges the information gap (knowledge utility).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Introduction of Commerce and Business",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-009",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 1,
+    "chapter": "Introduction of Commerce and Business",
+    "topic": "Role of Profit in Business Survival and Growth",
+    "difficulty": "Medium",
+    "questionText": "Why do commerce scholars describe profit as 'a necessary condition for survival and internal financing, though not the sole objective of business'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Retained profits cushion cyclical business risks and fund modernisation without excessive debt, while ignoring social duties erodes long-term legitimacy"
+      },
+      {
+        "key": "B",
+        "text": "Businesses with zero social responsibility enjoy lower raw-material prices"
+      },
+      {
+        "key": "C",
+        "text": "Statutory law requires every private firm to donate 100% of profit to government treasuries"
+      },
+      {
+        "key": "D",
+        "text": "Profit eliminates all market competition permanently within three years"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Adequate profit rewards risk-bearing, sustains operations, and finances R&D/expansion internally (ploughing back of profits), yet long-term survival equally requires consumer and societal trust.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Introduction of Commerce and Business",
+    "abilityTags": [
+      "financial_understanding",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-010",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 1,
+    "chapter": "Introduction of Commerce and Business",
+    "topic": "Secondary Industry Classification",
+    "difficulty": "Hard",
+    "questionText": "A cement corporation mines limestone from leased quarries, converts it into clinker and Portland cement in rotary kilns, and uses part of the output to build a flyover contract. Which sequence of industries do these three stages represent?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Genetic Primary Industry → Construction Secondary Industry → Tertiary Service Industry"
+      },
+      {
+        "key": "B",
+        "text": "Manufacturing Secondary Industry → Extractive Primary Industry → Entrepot Trade"
+      },
+      {
+        "key": "C",
+        "text": "Extractive Primary Industry → Manufacturing Secondary Industry → Construction Secondary Industry"
+      },
+      {
+        "key": "D",
+        "text": "Tertiary Industry → Genetic Primary Industry → Wholesale Trade"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Quarrying minerals from earth is Extractive (Primary); converting raw limestone into finished cement is Manufacturing (Secondary); building immovable infrastructure like a flyover is Construction (Secondary).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Introduction of Commerce and Business",
+    "abilityTags": [
+      "strategic_thinking",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-011",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 1,
+    "chapter": "Introduction of Commerce and Business",
+    "topic": "Mercantile Agents as Auxiliary to Trade",
+    "difficulty": "Hard",
+    "questionText": "In large-scale domestic and foreign commerce, how do Mercantile Agents (such as factors, brokers, and commission agents) specifically remove the 'hindrance of persons'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "They issue statutory currency notes to finance working capital"
+      },
+      {
+        "key": "B",
+        "text": "They bridge the gap between geographically dispersed producers and buyers by negotiating transactions without requiring direct principal-to-principal contact"
+      },
+      {
+        "key": "C",
+        "text": "They store perishable horticulture produce in cold-chain silos"
+      },
+      {
+        "key": "D",
+        "text": "They underwrite marine cargo hull policies on behalf of shipping lines"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Producers and consumers are separated in number and location; Mercantile Agents connect buyers and sellers, eliminating the hindrance of persons in exchange.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Introduction of Commerce and Business",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-012",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 1,
+    "chapter": "Introduction of Commerce and Business",
+    "topic": "Comparing Risk, Capital and Return Across Economic Pursuits",
+    "difficulty": "Hard",
+    "questionText": "Rohan invests ₹25 lakh to launch an agro-processing unit with uncertain returns; Meenal joins a bank on a fixed pay scale of ₹65,000/month with zero capital investment; Kabir opens a legal chamber after enrolling with the Bar Council. Which comparison is completely accurate?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Rohan bears high market risk for uncertain profit; Meenal bears negligible financial risk for fixed salary; Kabir requires minimal capital and earns professional fees"
+      },
+      {
+        "key": "B",
+        "text": "All three face identical financial risk and identical statutory codes of conduct"
+      },
+      {
+        "key": "C",
+        "text": "Meenal can freely transfer her bank post to her brother, whereas Rohan cannot transfer his factory"
+      },
+      {
+        "key": "D",
+        "text": "Kabir needs no formal qualification, whereas Rohan must pass a statutory Bar exam"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Business entails substantial capital and high risk for uncertain profit; Employment involves no capital, low risk, and non-transferable service for salary; Profession requires certified expertise, ethical code compliance, and earns fees.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Introduction of Commerce and Business",
+    "abilityTags": [
+      "business_decision_making",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-013",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 1,
+    "chapter": "Introduction of Commerce and Business",
+    "topic": "Tertiary Sector Interdependence",
+    "difficulty": "Hard",
+    "questionText": "A surge in Maharashtra's pomegranate harvest fails to raise farmers' incomes because rural roads are washed out and cold-storage units lack power. Which commercial principle does this illustrate?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Primary industries can prosper independently without any secondary or tertiary linkages"
+      },
+      {
+        "key": "B",
+        "text": "Advertising alone can substitute for physical transport and warehousing"
+      },
+      {
+        "key": "C",
+        "text": "Foreign trade restrictions are the sole determinant of domestic farm gate prices"
+      },
+      {
+        "key": "D",
+        "text": "Primary production remains economically incomplete until Commerce and Tertiary auxiliaries deliver place and time utility to reach final consumers"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Production in economic terms means creation of utilities; until transport (place utility) and cold warehousing (time utility) connect farm output to markets, physical harvest cannot realise exchange value.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 1: Introduction of Commerce and Business",
+    "abilityTags": [
+      "strategic_thinking",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-014",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 2,
+    "chapter": "Trade",
+    "topic": "Itinerant Retailers",
+    "difficulty": "Easy",
+    "questionText": "Retailers who do not operate from a fixed shop premise and move from street to street carrying merchandise on handcarts or bicycles are called:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Chain Store Managers"
+      },
+      {
+        "key": "B",
+        "text": "Supermarket Franchisees"
+      },
+      {
+        "key": "C",
+        "text": "Departmental Storekeepers"
+      },
+      {
+        "key": "D",
+        "text": "Hawkers"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Hawkers are itinerant (mobile) retailers who move across residential streets using handcarts or wheeled carriers to sell low-priced everyday goods.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Trade",
+    "abilityTags": [
+      "business_decision_making",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-015",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 2,
+    "chapter": "Trade",
+    "topic": "Supermarket Shopping System",
+    "difficulty": "Easy",
+    "questionText": "Which large-scale fixed retail store operates primarily on the 'Self-Service' principle, displaying pre-packed, price-tagged food and grocery items across open aisles?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Second-hand Goods Shop"
+      },
+      {
+        "key": "B",
+        "text": "Supermarket Store"
+      },
+      {
+        "key": "C",
+        "text": "Cheap Jack Shop"
+      },
+      {
+        "key": "D",
+        "text": "Peddler Stall"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Supermarkets are large self-service retail outlets specialising in food, groceries, and fast-moving household necessities where shoppers pick items into trolleys and pay at billing counters.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Trade",
+    "abilityTags": [
+      "business_decision_making",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-016",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 2,
+    "chapter": "Trade",
+    "topic": "First Step in Export Registration",
+    "difficulty": "Easy",
+    "questionText": "Before an Indian firm can legally export or import goods, which mandatory 10-digit code must it obtain from the Directorate General of Foreign Trade (DGFT)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Director Identification Number (DIN)"
+      },
+      {
+        "key": "B",
+        "text": "Permanent Folio Number"
+      },
+      {
+        "key": "C",
+        "text": "Importer Exporter Code (IEC)"
+      },
+      {
+        "key": "D",
+        "text": "Mate's Receipt Number"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Obtaining an Importer Exporter Code (IEC) from the DGFT is a statutory prerequisite at the preliminary stage of both export and import procedures in India.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Trade",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-017",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 2,
+    "chapter": "Trade",
+    "topic": "One Price Shops",
+    "difficulty": "Easy",
+    "questionText": "Fixed retail stores that sell a wide variety of everyday giftware, stationery, and household utility articles at a single uniform price across the entire shop are known as:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "One Price Shops"
+      },
+      {
+        "key": "B",
+        "text": "Authorised Dealerships"
+      },
+      {
+        "key": "C",
+        "text": "Entrepot Houses"
+      },
+      {
+        "key": "D",
+        "text": "Speciality Shops"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "One Price Shops offer diverse low-unit-value domestic articles at a uniform fixed price (e.g., ₹49 or ₹99 stores), eliminating bargaining.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Trade",
+    "abilityTags": [
+      "business_decision_making",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-018",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 2,
+    "chapter": "Trade",
+    "topic": "Wholesaler's Services to Manufacturers",
+    "difficulty": "Medium",
+    "questionText": "How does a Wholesaler provide crucial financial and operational relief to a Manufacturer?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "By auditing the manufacturer's annual Balance Sheet under the Companies Act"
+      },
+      {
+        "key": "B",
+        "text": "By placing bulk advance orders, bearing storage and price-fluctuation risks, and often making prompt cash or advance payments"
+      },
+      {
+        "key": "C",
+        "text": "By selling single units on monthly credit directly to household consumers"
+      },
+      {
+        "key": "D",
+        "text": "By issuing statutory export licences on behalf of the Ministry of Commerce"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Wholesalers bridge manufacturers and retailers: they buy in large lots, hold buffer inventory, transmit market feedback, and free manufacturers' working capital through prompt/advance settlement.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Trade",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-019",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 2,
+    "chapter": "Trade",
+    "topic": "Chain Stores vs Departmental Stores",
+    "difficulty": "Medium",
+    "questionText": "What is the key structural difference between 'Chain Stores (Multiple Shops)' and a 'Departmental Store'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Chain Stores sell exclusively on long-term credit, whereas Departmental Stores are mobile street stalls"
+      },
+      {
+        "key": "B",
+        "text": "Chain Stores have independent owners with different brand names, whereas Departmental Stores sell only one item"
+      },
+      {
+        "key": "C",
+        "text": "Chain Stores offer a narrow, standardised product line across decentralised branches under central ownership, whereas a Departmental Store offers 'pin to plane' variety under one central roof"
+      },
+      {
+        "key": "D",
+        "text": "Chain Stores exist only in rural weekly bazaars, whereas Departmental Stores are run only by government ministries"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Chain Stores (e.g., Bata, Raymond outlets) replicate uniform store design, centralised procurement, and cash sales across many locations for a specialised line, whereas Departmental Stores house multiple product departments in one large building.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Trade",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-020",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 2,
+    "chapter": "Trade",
+    "topic": "Mate's Receipt vs Bill of Lading",
+    "difficulty": "Medium",
+    "questionText": "During the shipment stage of an export transaction, who issues the 'Mate's Receipt' and when is it classified as a 'Foul Receipt'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Issued by the importer's customs broker when import duty is underpaid"
+      },
+      {
+        "key": "B",
+        "text": "Issued by ECGC when political risk insurance is declined"
+      },
+      {
+        "key": "C",
+        "text": "Issued by the Reserve Bank of India when export proceeds are delayed"
+      },
+      {
+        "key": "D",
+        "text": "Issued by the Captain (or Chief Officer) of the ship upon loading cargo; marked 'Foul' if packages are damaged or improperly packed"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Once goods are loaded aboard the vessel, the ship's Captain/Mate issues a Mate's Receipt—'Clean' if packing is satisfactory, or 'Foul/Claused' if packing is defective—which is later exchanged for the Bill of Lading.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Trade",
+    "abilityTags": [
+      "business_decision_making",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-021",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 2,
+    "chapter": "Trade",
+    "topic": "Cheap Jacks vs Market Traders",
+    "difficulty": "Medium",
+    "questionText": "How do 'Cheap Jacks' differ from 'Market Traders' among itinerant retailers?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Cheap Jacks hire temporary independent shops in a locality and shift areas when demand saturates, whereas Market Traders open stalls on fixed weekly bazaar days in different towns/villages"
+      },
+      {
+        "key": "B",
+        "text": "Cheap Jacks are authorised single-brand car dealers, whereas Market Traders sell only antiques"
+      },
+      {
+        "key": "C",
+        "text": "Cheap Jacks own multi-storey shopping malls, whereas Market Traders export bulk commodities"
+      },
+      {
+        "key": "D",
+        "text": "Cheap Jacks carry goods on their heads door-to-door, whereas Market Traders operate only inside railway coaches"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Cheap Jacks rent temporary shacks/shops for a brief period before relocating to busier localities, whereas Market Traders attend scheduled weekly/periodic markets (shandies/bazaars) across neighbouring places.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Trade",
+    "abilityTags": [
+      "business_decision_making",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-022",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 2,
+    "chapter": "Trade",
+    "topic": "Letter of Credit in Foreign Trade",
+    "difficulty": "Medium",
+    "questionText": "Why does an Indian exporter routinely insist on an irrevocable 'Letter of Credit (L/C)' from the foreign importer before shipping cargo?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Because a Letter of Credit exempts the exporter from customs inspection and GST"
+      },
+      {
+        "key": "B",
+        "text": "Because it replaces the physical Bill of Lading as title to the ship"
+      },
+      {
+        "key": "C",
+        "text": "Because the importer's bank guarantees payment upon submission of compliant shipping documents, eliminating credit-default risk across borders"
+      },
+      {
+        "key": "D",
+        "text": "Because it allows the exporter to ship goods without obtaining an IEC number"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "In cross-border trade where creditworthiness is hard to verify, a Letter of Credit substitutes the credit standing of a reputed bank for that of the foreign buyer, assuring payment.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Trade",
+    "abilityTags": [
+      "financial_understanding",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-023",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 2,
+    "chapter": "Trade",
+    "topic": "Chronological Sequence of Export Shipment Stage",
+    "difficulty": "Hard",
+    "questionText": "Arrange the following export documents/steps in their exact chronological sequence during the Shipment Stage: (1) Issuing Bill of Lading by shipping company; (2) Obtaining Carting Order from Port Trust; (3) Issuing Mate's Receipt by ship's captain; (4) Filing Shipping Bill for customs appraisal and Let Export Order.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "(2) → (4) → (1) → (3)"
+      },
+      {
+        "key": "B",
+        "text": "(4) → (2) → (3) → (1)"
+      },
+      {
+        "key": "C",
+        "text": "(4) → (1) → (3) → (2)"
+      },
+      {
+        "key": "D",
+        "text": "(1) → (3) → (2) → (4)"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "First, the C&F agent submits the Shipping Bill for customs clearance (4); next obtains the Carting Order to bring cargo inside dockgates (2); after loading on board, the ship's Mate issues the Mate's Receipt (3); finally, surrendering the Mate's Receipt to the shipping company yields the Bill of Lading (1).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Trade",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-024",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 2,
+    "chapter": "Trade",
+    "topic": "Bill of Entry vs Bill of Sight in Import Procedure",
+    "difficulty": "Hard",
+    "questionText": "At the Import Stage, when does a Clearing & Forwarding agent submit a 'Bill of Sight' to Customs Authorities instead of a full 'Bill of Entry'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "When the importer lacks complete details of the landed goods due to missing/delayed supplier documents, seeking permission to inspect cargo before duty assessment"
+      },
+      {
+        "key": "B",
+        "text": "When cargo arrives by air freight rather than ocean vessel"
+      },
+      {
+        "key": "C",
+        "text": "When imported goods are intended solely for domestic barter in rural fairs"
+      },
+      {
+        "key": "D",
+        "text": "When the foreign exporter ships goods completely free of charge as gifts"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "A Bill of Entry declares exact description, quantity, and value for customs duty calculation; if complete supplier particulars haven't arrived, a Bill of Sight enables physical inspection in customs presence to complete assessment.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Trade",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-025",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 2,
+    "chapter": "Trade",
+    "topic": "Role of ECGC in Export Risk Management",
+    "difficulty": "Hard",
+    "questionText": "An apparel exporter in Tirupur holds a Letter of Credit from an overseas buyer's bank, yet still takes a policy from ECGC (Export Credit Guarantee Corporation). Which residual risks does ECGC specifically cover that commercial packing credit does not?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Physical saltwater damage to containers during a cyclone at sea"
+      },
+      {
+        "key": "B",
+        "text": "Domestic factory machinery breakdown and Boiler explosion"
+      },
+      {
+        "key": "C",
+        "text": "Fluctuations in domestic municipal property tax rates"
+      },
+      {
+        "key": "D",
+        "text": "Political risks—such as war, sudden import bans, or foreign exchange remittance moratoria in the buyer's country—alongside commercial insolvency risks"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Marine insurance covers physical transit peril, whereas ECGC protects exporters and financing banks against commercial default/insolvency and sovereign political risks (exchange blockages, war, sudden import restrictions).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Trade",
+    "abilityTags": [
+      "financial_understanding",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-026",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 2,
+    "chapter": "Trade",
+    "topic": "Retail Channel Margin Computation",
+    "difficulty": "Hard",
+    "questionText": "A manufacturer sells an appliance to a wholesaler at ₹8,000. The wholesaler adds a 12.5% margin on his cost when selling to a fixed-shop retailer, and the retailer adds a 20% mark-up on his purchase cost for the final consumer. If eliminating the wholesaler lets a Chain Store buy directly at ₹8,000 and apply a 25% mark-up, how much does the consumer save per unit?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "₹600"
+      },
+      {
+        "key": "B",
+        "text": "₹800"
+      },
+      {
+        "key": "C",
+        "text": "₹400"
+      },
+      {
+        "key": "D",
+        "text": "₹1,000"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Traditional route: Wholesaler sells at ₹8,000 × 1.125 = ₹9,000; Retailer sells at ₹9,000 × 1.20 = ₹10,800. Direct Chain Store route: ₹8,000 × 1.25 = ₹10,000. Consumer saving per unit = ₹10,800 − ₹10,000 = ₹800.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 2: Trade",
+    "abilityTags": [
+      "numerical_reasoning",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-027",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 3,
+    "chapter": "Small Scale Industry and Business",
+    "topic": "Labour-Intensive Nature of SSI",
+    "difficulty": "Easy",
+    "questionText": "Why are Small Scale Industries (SSIs) considered vital for employment generation in a capital-scarce, labour-abundant economy like India?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "They require a minimum gestation period of ten to fifteen years"
+      },
+      {
+        "key": "B",
+        "text": "They rely exclusively on fully automated robotic assembly lines"
+      },
+      {
+        "key": "C",
+        "text": "They use labour-intensive techniques that generate more jobs per unit of capital invested than heavy industries"
+      },
+      {
+        "key": "D",
+        "text": "They employ only expatriate foreign engineers"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "SSIs require relatively low capital per worker and employ labour-intensive methods, making them second only to agriculture in generating livelihood across India.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Small Scale Industry and Business",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-028",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 3,
+    "chapter": "Small Scale Industry and Business",
+    "topic": "Gestation Period of Small Scale Business",
+    "difficulty": "Easy",
+    "questionText": "What does 'low gestation period' mean as an advantage of Small Scale Industries?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "The time gap between initial investment of capital and actual commencement of commercial production/returns is short"
+      },
+      {
+        "key": "B",
+        "text": "Raw materials can be stored indefinitely without spoilage"
+      },
+      {
+        "key": "C",
+        "text": "Bank loans never have to be repaid with interest"
+      },
+      {
+        "key": "D",
+        "text": "Products require no marketing or quality control"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Unlike mega steel or power projects that take many years to commission, small-scale units can be set up and begin output within months, curbing inflationary pressures by expanding supply quickly.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Small Scale Industry and Business",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-029",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 3,
+    "chapter": "Small Scale Industry and Business",
+    "topic": "Traditional Cottage vs Modern Small Scale Units",
+    "difficulty": "Easy",
+    "questionText": "Handloom weaving, pottery, bamboo craft, and wood carving carried out mainly by family members at home using local heritage skills are classified as:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Public Sector Statutory Corporations"
+      },
+      {
+        "key": "B",
+        "text": "Traditional Cottage and Village Industries"
+      },
+      {
+        "key": "C",
+        "text": "Large-Scale Synthetical Plants"
+      },
+      {
+        "key": "D",
+        "text": "Multinational Ancillary Corporations"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Traditional small/cottage industries rely on inherited artisan craft, household labour, and local raw materials with minimal mechanisation.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Small Scale Industry and Business",
+    "abilityTags": [
+      "business_decision_making",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-030",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 3,
+    "chapter": "Small Scale Industry and Business",
+    "topic": "Regional Balanced Development",
+    "difficulty": "Easy",
+    "questionText": "How do Small Scale Industries help reduce congestion in metropolitan cities and curb rural-to-urban migration?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "By restricting employment to metropolitan university graduates"
+      },
+      {
+        "key": "B",
+        "text": "By relocating all village artisans into Mumbai and Pune industrial zones"
+      },
+      {
+        "key": "C",
+        "text": "By establishing dispersed production units in semi-urban and backward rural regions using local resources"
+      },
+      {
+        "key": "D",
+        "text": "By importing all finished consumer goods from abroad"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Because SSIs need modest infrastructure and tap local agro/mineral inputs, they decentralise industrial growth across tier-3 towns and villages, promoting balanced regional development.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Small Scale Industry and Business",
+    "abilityTags": [
+      "strategic_thinking",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-031",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 3,
+    "chapter": "Small Scale Industry and Business",
+    "topic": "MSME Revised Composite Classification",
+    "difficulty": "Medium",
+    "questionText": "Under India's revised composite MSME classification criteria (investment in plant & machinery/equipment AND annual turnover), an enterprise with ₹6 crore investment and ₹35 crore annual turnover is classified as a:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Micro Enterprise"
+      },
+      {
+        "key": "B",
+        "text": "Medium Enterprise"
+      },
+      {
+        "key": "C",
+        "text": "Large-Scale Public Enterprise"
+      },
+      {
+        "key": "D",
+        "text": "Small Enterprise"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Under revised MSME norms: Micro (investment ≤ ₹1 cr AND turnover ≤ ₹5 cr); Small (investment ≤ ₹10 cr AND turnover ≤ ₹50 cr); Medium (investment ≤ ₹50 cr AND turnover ≤ ₹250 cr). ₹6 cr investment and ₹35 cr turnover squarely fit a Small Enterprise.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Small Scale Industry and Business",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-032",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 3,
+    "chapter": "Small Scale Industry and Business",
+    "topic": "Industrial Sickness in SSI Sector",
+    "difficulty": "Medium",
+    "questionText": "Which combination of internal and external causes most frequently leads to 'industrial sickness' among Small Scale Industries?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Compulsory listing on international stock exchanges"
+      },
+      {
+        "key": "B",
+        "text": "Delayed payments from large buyers, inadequate working capital, obsolete technology, and poor managerial planning"
+      },
+      {
+        "key": "C",
+        "text": "Zero taxation and unlimited interest-free bank credit"
+      },
+      {
+        "key": "D",
+        "text": "Excessive equity capital reserves and monopoly pricing power"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Industrial sickness in SSIs stems internally from unskilled management, faulty project appraisal, and outdated machinery, and externally from delayed receivables, power cuts, and working-capital crunch.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Small Scale Industry and Business",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-033",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 3,
+    "chapter": "Small Scale Industry and Business",
+    "topic": "Marketing Challenges of Small Units",
+    "difficulty": "Medium",
+    "questionText": "Why do independent Small Scale Manufacturers often struggle when competing directly with branded large-scale corporations in retail markets?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Lack of advertising budgets, absence of standardised branding/grading, and dependence on middlemen who squeeze margins"
+      },
+      {
+        "key": "B",
+        "text": "Excessive spending on global television sponsorships"
+      },
+      {
+        "key": "C",
+        "text": "Legal prohibition on selling SSI products outside their home taluka"
+      },
+      {
+        "key": "D",
+        "text": "Inability to customise designs for niche local tastes"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Without strong brand equity, market research, or own distribution networks, SSIs often rely on intermediaries or sell unbranded output at lower realisations.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Small Scale Industry and Business",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-034",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 3,
+    "chapter": "Small Scale Industry and Business",
+    "topic": "Sequential Steps in Setting Up an SSI",
+    "difficulty": "Medium",
+    "questionText": "When an entrepreneur plans to establish a new Small Scale Manufacturing Unit, which logical sequence of initial steps should be followed?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Hiring full factory workforce → Selecting product → Applying for power connection → Scanning environment"
+      },
+      {
+        "key": "B",
+        "text": "Commencing commercial production → Preparing Project Report → Choosing business idea → Arranging finance"
+      },
+      {
+        "key": "C",
+        "text": "Scanning business environment → Selection of product → Selection of place/location → Selection of technology & preparation of Project Report"
+      },
+      {
+        "key": "D",
+        "text": "Exporting sample consignments → Selecting factory site → Deciding product line → Arranging raw materials"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Setting up an SSI starts with environmental scanning and opportunity identification, choosing the specific product, selecting a viable location, choosing appropriate technology, and compiling a detailed Project Report for clearances and finance.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Small Scale Industry and Business",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-035",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 3,
+    "chapter": "Small Scale Industry and Business",
+    "topic": "Ancillary Small Scale Units",
+    "difficulty": "Medium",
+    "questionText": "A precision-forging unit in Pimpri-Chinchwad supplies clutch assemblies and brake brackets to major automobile manufacturers. What role of Small Scale Industry does this exemplify?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Complementary / Ancillary unit supporting large-scale OEM industries"
+      },
+      {
+        "key": "B",
+        "text": "Departmental store retailing imported apparel"
+      },
+      {
+        "key": "C",
+        "text": "Primary extractive mining enterprise"
+      },
+      {
+        "key": "D",
+        "text": "Cottage handicraft guild operating without power"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Ancillary small-scale units manufacture components, sub-assemblies, spares, and tooling for large parent industries, building an efficient industrial ecosystem.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Small Scale Industry and Business",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-036",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 3,
+    "chapter": "Small Scale Industry and Business",
+    "topic": "MSME Threshold Boundary Rule",
+    "difficulty": "Hard",
+    "questionText": "Under the composite MSME classification rules, suppose an auto-component firm has Plant & Machinery investment of ₹80 lakh (within the ₹1 crore Micro limit), but its annual turnover reaches ₹8.5 crore (exceeding the ₹5 crore Micro limit while staying below ₹50 crore). How is the unit classified?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Disqualified from MSME status altogether because the two ratios do not match"
+      },
+      {
+        "key": "B",
+        "text": "Micro Enterprise — classification depends solely on Plant & Machinery investment"
+      },
+      {
+        "key": "C",
+        "text": "Medium Enterprise — exceeding ₹5 crore turnover skips the Small category"
+      },
+      {
+        "key": "D",
+        "text": "Small Enterprise — crossing EITHER the investment ceiling OR the turnover ceiling shifts the unit to the next higher category"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Under the composite MSME notification, an enterprise must satisfy BOTH limits to remain in a lower tier; crossing either investment OR turnover threshold graduates it into the next higher tier (here, Small Enterprise).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Small Scale Industry and Business",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-037",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 3,
+    "chapter": "Small Scale Industry and Business",
+    "topic": "Capacity Utilisation & Unit Fixed Cost in SSI",
+    "difficulty": "Hard",
+    "questionText": "A small food-dehydration plant incurs monthly fixed overheads of ₹1,20,000 and variable cost of ₹60 per kg. Due to erratic rural electricity supply, it operates at only 4,000 kg/month instead of its rated 8,000 kg/month capacity. By how much per kg does under-utilisation inflate its total cost of production?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "₹30 per kg"
+      },
+      {
+        "key": "B",
+        "text": "₹15 per kg"
+      },
+      {
+        "key": "C",
+        "text": "₹20 per kg"
+      },
+      {
+        "key": "D",
+        "text": "₹10 per kg"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "At full capacity (8,000 kg), fixed cost per kg = ₹1,20,000 ÷ 8,000 = ₹15 (total cost ₹75/kg). At 50% capacity (4,000 kg), fixed cost per kg = ₹1,20,000 ÷ 4,000 = ₹30 (total cost ₹90/kg)—an inflation of ₹15 per kg.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Small Scale Industry and Business",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-038",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 3,
+    "chapter": "Small Scale Industry and Business",
+    "topic": "Export Contribution of SSI Sector",
+    "difficulty": "Hard",
+    "questionText": "Why do Indian Small Scale and Artisan Industries—such as gems & jewellery, leather goods, readymade garments, and handicrafts—contribute over 40% of India's merchandise exports with minimal import leakage?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "They import 95% of finished parts and merely paste domestic labels"
+      },
+      {
+        "key": "B",
+        "text": "They are subsidised to sell below raw-material cost permanently"
+      },
+      {
+        "key": "C",
+        "text": "They combine high domestic value-addition, skilled artisan craftsmanship, and indigenous raw materials without needing heavy imported capital machinery"
+      },
+      {
+        "key": "D",
+        "text": "They enjoy automatic exemption from quality standards in European and US markets"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "SSI export champions rely on domestic raw materials and skilled labour rather than capital-heavy imported equipment, generating high net foreign exchange earnings for the country.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 3: Small Scale Industry and Business",
+    "abilityTags": [
+      "strategic_thinking",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-039",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 4,
+    "chapter": "Forms of Business Organisation - I",
+    "topic": "Liability of Sole Proprietor",
+    "difficulty": "Easy",
+    "questionText": "What does 'unlimited liability' of a Sole Trader mean in law?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "The business continues forever even after the proprietor's insolvency"
+      },
+      {
+        "key": "B",
+        "text": "The proprietor can borrow unlimited interest-free funds from nationalised banks"
+      },
+      {
+        "key": "C",
+        "text": "Creditors can claim repayment only up to the shop's closing stock value"
+      },
+      {
+        "key": "D",
+        "text": "If business assets are insufficient to pay business debts, the proprietor's personal private property can be attached to settle creditors"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "A sole proprietorship has no separate legal entity distinct from its owner; hence business creditors can recover unpaid dues from the proprietor's personal assets if business assets fall short.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Forms of Business Organisation - I",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-040",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 4,
+    "chapter": "Forms of Business Organisation - I",
+    "topic": "Registration of Partnership Firm in Maharashtra",
+    "difficulty": "Easy",
+    "questionText": "While registration of a Partnership Firm under the Indian Partnership Act, 1932 is optional across most of India, what is its legal status in Maharashtra?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Compulsory in Maharashtra (effective since April 1985)"
+      },
+      {
+        "key": "B",
+        "text": "Prohibited for trading firms with fewer than ten partners"
+      },
+      {
+        "key": "C",
+        "text": "Optional for firms located outside Mumbai"
+      },
+      {
+        "key": "D",
+        "text": "Required only after twenty years of continuous operation"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Through a state amendment to the Indian Partnership Act, 1932 effective 1st April 1985, registration of partnership firms with the Registrar of Firms is compulsory in Maharashtra.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Forms of Business Organisation - I",
+    "abilityTags": [
+      "business_decision_making",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-041",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 4,
+    "chapter": "Forms of Business Organisation - I",
+    "topic": "Voting Principle in Co-operative Societies",
+    "difficulty": "Easy",
+    "questionText": "Regardless of the number of shares held by an individual member, what democratic voting rule governs a Co-operative Society?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Voting rights restricted exclusively to the highest-capital contributor"
+      },
+      {
+        "key": "B",
+        "text": "One Member, One Vote"
+      },
+      {
+        "key": "C",
+        "text": "Voting exclusively by external debenture holders"
+      },
+      {
+        "key": "D",
+        "text": "One Share, One Vote"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Co-operative societies place human association above capital concentration, enforcing the democratic principle of 'One Member, One Vote' irrespective of shareholding size.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Forms of Business Organisation - I",
+    "abilityTags": [
+      "business_decision_making",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-042",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 4,
+    "chapter": "Forms of Business Organisation - I",
+    "topic": "Head of Joint Hindu Family Business",
+    "difficulty": "Easy",
+    "questionText": "In a Joint Hindu Family Business (HUF), what are the senior-most managing head and the other family members with birthright ownership respectively called?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Trustee and Beneficiaries"
+      },
+      {
+        "key": "B",
+        "text": "Managing Director and Shareholders"
+      },
+      {
+        "key": "C",
+        "text": "Promoter and Underwriters"
+      },
+      {
+        "key": "D",
+        "text": "Karta and Coparceners"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "The senior-most member managing HUF affairs is the 'Karta', while other family members acquiring an interest by birth in ancestral property are 'Coparceners'.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Forms of Business Organisation - I",
+    "abilityTags": [
+      "business_decision_making",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-043",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 4,
+    "chapter": "Forms of Business Organisation - I",
+    "topic": "Liability Contrast in HUF Business",
+    "difficulty": "Medium",
+    "questionText": "How does financial liability differ between the 'Karta' and the 'Coparceners' in a Joint Hindu Family Business?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Both Karta and Coparceners have unlimited personal liability"
+      },
+      {
+        "key": "B",
+        "text": "Both Karta and Coparceners enjoy strictly limited liability"
+      },
+      {
+        "key": "C",
+        "text": "The Karta's liability is unlimited, whereas every Coparcener's liability is limited strictly to his/her share in the joint family property"
+      },
+      {
+        "key": "D",
+        "text": "Coparceners have unlimited liability while the Karta has zero liability"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Because the Karta exercises sole decision-making control and enters contracts for the HUF, his personal property is liable (unlimited liability), whereas coparceners are liable only up to their undivided share in ancestral HUF property.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Forms of Business Organisation - I",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-044",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 4,
+    "chapter": "Forms of Business Organisation - I",
+    "topic": "Types of Partners — Nominal vs Dormant Partner",
+    "difficulty": "Medium",
+    "questionText": "Distinguish between a 'Dormant (Sleeping) Partner' and a 'Nominal Partner' in a partnership firm:",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Neither Dormant nor Nominal Partners have any liability toward outside creditors"
+      },
+      {
+        "key": "B",
+        "text": "A Dormant Partner contributes capital and shares profits/losses without active management, whereas a Nominal Partner lends only his reputed name without contributing capital or sharing profits, yet remains liable to third parties"
+      },
+      {
+        "key": "C",
+        "text": "A Nominal Partner is always a minor below 18 years of age"
+      },
+      {
+        "key": "D",
+        "text": "A Dormant Partner lends only his name, whereas a Nominal Partner works full-time for a fixed salary"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "A Dormant partner invests capital, shares profits/losses, and has unlimited liability while staying inactive; a Nominal partner neither invests nor shares profits, merely lending prestige, yet is liable to outsiders who extend credit relying on his name.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Forms of Business Organisation - I",
+    "abilityTags": [
+      "business_decision_making",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-045",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 4,
+    "chapter": "Forms of Business Organisation - I",
+    "topic": "Minimum and Maximum Membership Thresholds",
+    "difficulty": "Medium",
+    "questionText": "Under Indian law as taught in FYJC OCM, what are the statutory minimum and maximum member limits for (i) a general Partnership Firm and (ii) a Co-operative Society?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Partnership Firm: minimum 2, maximum 10; Co-operative Society: minimum 20, maximum 500"
+      },
+      {
+        "key": "B",
+        "text": "Partnership Firm: minimum 2, maximum 200; Co-operative Society: minimum 7, maximum 100"
+      },
+      {
+        "key": "C",
+        "text": "Partnership Firm: minimum 2, maximum 50; Co-operative Society: minimum 10 adults from different families, no statutory maximum"
+      },
+      {
+        "key": "D",
+        "text": "Partnership Firm: minimum 7, maximum 50; Co-operative Society: minimum 2, maximum 50"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Under the Partnership Act read with Rule 10 of Companies (Miscellaneous) Rules, 2014, max partners in a general partnership is 50 (min 2). Forming a Co-operative Society requires at least 10 adult members from independent families with open (unlimited) maximum membership.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Forms of Business Organisation - I",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-046",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 4,
+    "chapter": "Forms of Business Organisation - I",
+    "topic": "Perpetual Succession of Joint Stock Company",
+    "difficulty": "Medium",
+    "questionText": "Why does the sudden death, insolvency, or insanity of all major shareholders of a Joint Stock Company NOT dissolve the company?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Because an incorporated company is an artificial legal person with perpetual succession independent of its members"
+      },
+      {
+        "key": "B",
+        "text": "Because shareholders are salaried government employees"
+      },
+      {
+        "key": "C",
+        "text": "Because shares cannot be inherited by legal heirs"
+      },
+      {
+        "key": "D",
+        "text": "Because creditors automatically become the new Board of Directors"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Created by law, a Joint Stock Company enjoys an independent corporate existence and perpetual succession—members may come and go, but the company continues until wound up by law.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Forms of Business Organisation - I",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-047",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 4,
+    "chapter": "Forms of Business Organisation - I",
+    "topic": "Types of Co-operative Societies",
+    "difficulty": "Medium",
+    "questionText": "Small sugarcane and cotton farmers in Western Maharashtra pool their harvests so a society grades, stores, and sells the collective output in wholesale mandis at remunerative prices. Which type of co-operative is this?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Co-operative Housing Society"
+      },
+      {
+        "key": "B",
+        "text": "Urban Salary-Earners' Thrift Society"
+      },
+      {
+        "key": "C",
+        "text": "Consumers' Co-operative Society"
+      },
+      {
+        "key": "D",
+        "text": "Marketing Co-operative Society"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "A Marketing Co-operative Society pools members' output, eliminates exploitative middlemen, provides grading/warehousing, and bargains collectively for better market prices.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Forms of Business Organisation - I",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-048",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 4,
+    "chapter": "Forms of Business Organisation - I",
+    "topic": "Selecting Optimal Business Form — Case Scenario",
+    "difficulty": "Hard",
+    "questionText": "Three software architects wish to start a cloud-security consultancy with ₹15 lakh pooled capital. They want internal flexibility like a partnership deed, direct participation in management, BUT insist that one partner's negligent contract error must NOT expose the personal homes of the other two innocent partners. Which legal form best fits?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Joint Hindu Family Business"
+      },
+      {
+        "key": "B",
+        "text": "General Partnership under the Indian Partnership Act, 1932"
+      },
+      {
+        "key": "C",
+        "text": "Sole Proprietorship"
+      },
+      {
+        "key": "D",
+        "text": "Limited Liability Partnership (LLP) under the LLP Act, 2008"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Unlike a traditional 1932 partnership where partners have joint and several unlimited liability for co-partners' acts, an LLP combines partnership operational flexibility with separate legal status and limited liability shielding innocent partners' personal assets.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Forms of Business Organisation - I",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-049",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 4,
+    "chapter": "Forms of Business Organisation - I",
+    "topic": "Position of a Minor Admitted to Benefits of Partnership",
+    "difficulty": "Hard",
+    "questionText": "A 16-year-old minor, Tanmay, is admitted with the unanimous consent of all existing partners to the benefits of a firm. If the firm incurs heavy losses and creditor claims exceed firm assets, what is Tanmay's legal liability?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Liable only up to his agreed share in the property and profits of the firm; he is NOT personally liable"
+      },
+      {
+        "key": "B",
+        "text": "Jointly and severally liable out of his separate personal inheritance on par with adult partners"
+      },
+      {
+        "key": "C",
+        "text": "Completely exempt—even his invested share inside the firm cannot be touched by creditors"
+      },
+      {
+        "key": "D",
+        "text": "Automatically jailed until his guardian settles the firm's bank overdraft"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Under Section 30 of the Indian Partnership Act, 1932, a minor cannot become a full partner, may be admitted to the benefits of partnership with all partners' consent, and his share in firm property is liable for firm acts—never his personal estate.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Forms of Business Organisation - I",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-050",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 4,
+    "chapter": "Forms of Business Organisation - I",
+    "topic": "Partner by Estoppel / Holding Out",
+    "difficulty": "Hard",
+    "questionText": "Vikram is retired and holds no share in M/s Apex Traders. During a loan negotiation with a bank manager, managing partner Sameer introduces Vikram as a senior partner, and Vikram remains silent, nodding along. Relying on Vikram's financial standing, the bank grants ₹30 lakh credit. Under partnership law, what is Vikram's status?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Sub-Partner — accountable only to Sameer and immune from bank recovery"
+      },
+      {
+        "key": "B",
+        "text": "Partner by Estoppel (Holding Out) — liable to the bank for repayment despite having no share in firm profits"
+      },
+      {
+        "key": "C",
+        "text": "Zero liability because his name is absent from the written Partnership Deed"
+      },
+      {
+        "key": "D",
+        "text": "Secret Partner — entitled to claim 50% of the firm's annual profits"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "When a person by words, conduct, or knowing silence allows himself to be represented as a partner and a third party advances credit on the faith of that representation, he is estopped from denying liability (Partner by Estoppel/Holding Out).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Forms of Business Organisation - I",
+    "abilityTags": [
+      "business_decision_making",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-051",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 4,
+    "chapter": "Forms of Business Organisation - I",
+    "topic": "Default Provisions in Absence of Partnership Deed",
+    "difficulty": "Hard",
+    "questionText": "Partners A (capital ₹6,00,000) and B (capital ₹2,00,000) operate without a written Partnership Deed; B also advanced a separate loan of ₹1,00,000 to the firm. If net profit before interest is ₹86,000 for the full year, how are interest and profit legally distributed under the Indian Partnership Act, 1932?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "B gets 12% interest on loan (₹12,000) and ₹74,000 is split 3:1"
+      },
+      {
+        "key": "B",
+        "text": "No interest on loan, and ₹86,000 is split 3:1 in proportion to capital (₹64,500 and ₹21,500)"
+      },
+      {
+        "key": "C",
+        "text": "B gets ₹6,000 interest on loan (@ 6% p.a.), zero interest on capital is allowed, and remaining ₹80,000 profit is shared equally (₹40,000 each)"
+      },
+      {
+        "key": "D",
+        "text": "Both get 10% p.a. interest on capital and ₹6,000 remaining profit equally"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "In the absence of a Partnership Deed under the 1932 Act: no interest on capital or salary is payable, partner's loan carries statutory interest @ 6% p.a. (₹6,000), and residual profit (₹86,000 − ₹6,000 = ₹80,000) is shared equally (₹40,000 each) regardless of capital ratio.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 4: Forms of Business Organisation - I",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-052",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 5,
+    "chapter": "Forms of Business Organisation - II",
+    "topic": "Departmental Organisation Examples",
+    "difficulty": "Easy",
+    "questionText": "Indian Railways, India Post, and Defence Ordnance administration are classic examples of which form of Public Sector Enterprise?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Departmental Organisation"
+      },
+      {
+        "key": "B",
+        "text": "Multinational Corporation"
+      },
+      {
+        "key": "C",
+        "text": "Statutory Co-operative"
+      },
+      {
+        "key": "D",
+        "text": "Private Limited Company"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Departmental Organisations are the oldest public-sector form, operated directly as wings of a government ministry, financed through annual budget appropriations, and staffed by civil servants.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Forms of Business Organisation - II",
+    "abilityTags": [
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-053",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 5,
+    "chapter": "Forms of Business Organisation - II",
+    "topic": "Minimum Shareholding in a Government Company",
+    "difficulty": "Easy",
+    "questionText": "Under Section 2(45) of the Companies Act, 2013, what minimum percentage of paid-up share capital must be held by the Central Government and/or State Government(s) for an enterprise to be a 'Government Company'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Not less than 26%"
+      },
+      {
+        "key": "B",
+        "text": "Not less than 51%"
+      },
+      {
+        "key": "C",
+        "text": "Not less than 75%"
+      },
+      {
+        "key": "D",
+        "text": "Exactly 100%"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "A Government Company is any company in which at least 51% of the paid-up share capital is held by the Central Government, or by any State Government(s), or partly by both (including subsidiaries of a Government Company).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Forms of Business Organisation - II",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-054",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 5,
+    "chapter": "Forms of Business Organisation - II",
+    "topic": "Statutory Corporation Formation",
+    "difficulty": "Easy",
+    "questionText": "How is a Statutory (Public) Corporation—such as the Reserve Bank of India (RBI) or Life Insurance Corporation of India (LIC)—brought into existence?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "By executive circular of a municipal ward officer"
+      },
+      {
+        "key": "B",
+        "text": "By filing an oral partnership agreement before a notary"
+      },
+      {
+        "key": "C",
+        "text": "By registering under the Co-operative Societies Act, 1912"
+      },
+      {
+        "key": "D",
+        "text": "By passing a Special Act of Parliament or State Legislature defining its powers, objects, and privileges"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Statutory Corporations are autonomous corporate bodies established under a dedicated Special Act of Parliament or State Legislature (e.g., LIC Act, 1956; RBI Act, 1934).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Forms of Business Organisation - II",
+    "abilityTags": [
+      "business_decision_making",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-055",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 5,
+    "chapter": "Forms of Business Organisation - II",
+    "topic": "Home Country vs Host Country in MNCs",
+    "difficulty": "Easy",
+    "questionText": "For a Multinational Corporation (MNC) headquartered in Tokyo that operates manufacturing plants in Chakan (Pune) and Chennai, what are Japan and India respectively called?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "India is the Home Country and Japan is a Subsidiary Territory"
+      },
+      {
+        "key": "B",
+        "text": "Japan is the Home Country and India is a Host Country"
+      },
+      {
+        "key": "C",
+        "text": "Both Japan and India are Entrepot Zones"
+      },
+      {
+        "key": "D",
+        "text": "Japan is the Host Country and India is the Charter Country"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "An MNC's country of incorporation and global headquarters is its Home Country, whereas foreign nations where it runs branches, subsidiaries, or affiliates are Host Countries.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Forms of Business Organisation - II",
+    "abilityTags": [
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-056",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 5,
+    "chapter": "Forms of Business Organisation - II",
+    "topic": "Financial Autonomy: Departmental vs Statutory Corporation",
+    "difficulty": "Medium",
+    "questionText": "How does revenue and expenditure management in a 'Statutory Corporation' differ fundamentally from that in a 'Departmental Organisation'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Both deposit 100% of daily collections into the government treasury and await annual railway budget votes"
+      },
+      {
+        "key": "B",
+        "text": "A Statutory Corporation cannot sue or be sued in its own corporate name"
+      },
+      {
+        "key": "C",
+        "text": "A Statutory Corporation retains its revenues and borrows independently without routing daily receipts into the Consolidated Fund/Treasury, unlike a Departmental Organisation"
+      },
+      {
+        "key": "D",
+        "text": "A Departmental Organisation issues public equity shares on BSE, whereas a Statutory Corporation cannot hold a bank account"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Departmental undertakings depend wholly on annual parliamentary budget grants and pay revenues into the government treasury; Statutory Corporations enjoy separate legal identity and independent financial budgets.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Forms of Business Organisation - II",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-057",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 5,
+    "chapter": "Forms of Business Organisation - II",
+    "topic": "Audit of Government Companies",
+    "difficulty": "Medium",
+    "questionText": "Who appoints or advises on the appointment of the statutory auditor of a Government Company such as BHEL or SAIL, and where is its annual report laid?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Comptroller and Auditor General of India (C&AG); annual report is laid before Parliament and/or the concerned State Legislature"
+      },
+      {
+        "key": "B",
+        "text": "World Bank Resident Mission; report is submitted only to foreign lenders"
+      },
+      {
+        "key": "C",
+        "text": "Managing Director of the company; report is kept strictly confidential from Parliament"
+      },
+      {
+        "key": "D",
+        "text": "Registrar of Co-operative Societies; report is filed only with Gram Panchayats"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Under the Companies Act, 2013, the C&AG appoints the auditor of a Government Company, conducts supplementary audit, and the annual report with audit comments is placed before Parliament/State Legislature.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Forms of Business Organisation - II",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-058",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 5,
+    "chapter": "Forms of Business Organisation - II",
+    "topic": "Demerits of Departmental Organisation",
+    "difficulty": "Medium",
+    "questionText": "Why do Departmental Organisations frequently suffer from delayed commercial decisions and low operational flexibility?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Complete absence of government supervision or parliamentary accountability"
+      },
+      {
+        "key": "B",
+        "text": "Speculative day-trading by private venture-capitalists on their Boards"
+      },
+      {
+        "key": "C",
+        "text": "Excessive bureaucratic red-tapism, rigid treasury rules, frequent transfers of IAS officers, and fear of parliamentary questioning over bona fide commercial risks"
+      },
+      {
+        "key": "D",
+        "text": "Lack of sovereign backing when raising sovereign funds"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Strict adherence to rigid civil-service procedures, multi-tier ministry clearances (red-tapism), and political interference hinder swift commercial responsiveness in Departmental Undertakings.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Forms of Business Organisation - II",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-059",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 5,
+    "chapter": "Forms of Business Organisation - II",
+    "topic": "Strengths and Host-Economy Concerns of MNCs",
+    "difficulty": "Medium",
+    "questionText": "While Multinational Corporations bring advanced technology, FDI inflows, and global managerial practices to developing host countries, which valid domestic concern is highlighted in the OCM curriculum?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Inability of MNCs to raise large-scale capital in international markets"
+      },
+      {
+        "key": "B",
+        "text": "Compulsory conversion of all MNCs into village panchayats after five years"
+      },
+      {
+        "key": "C",
+        "text": "Refusal of MNCs to use modern machinery or R&D laboratories"
+      },
+      {
+        "key": "D",
+        "text": "Threat of squeezing out domestic small-scale enterprises, repatriation of profits in foreign currency, and creation of oligopolistic market power"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "MNCs wield immense financial muscle and brand advertising that can displace small local producers, repatriate substantial dividends/royalties, and focus on high-margin urban consumer goods.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Forms of Business Organisation - II",
+    "abilityTags": [
+      "strategic_thinking",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-060",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 5,
+    "chapter": "Forms of Business Organisation - II",
+    "topic": "Separate Legal Entity Across Public Sector Forms",
+    "difficulty": "Medium",
+    "questionText": "Which of the three Public Sector forms lacks a separate legal entity distinct from the Government itself?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Both Statutory Corporation and Government Company"
+      },
+      {
+        "key": "B",
+        "text": "Departmental Organisation"
+      },
+      {
+        "key": "C",
+        "text": "Statutory Corporation"
+      },
+      {
+        "key": "D",
+        "text": "Government Company"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Statutory Corporations (by Special Act) and Government Companies (under Companies Act) are independent juristic persons that can own property and contract in their own names; a Departmental Undertaking is legally part of the sovereign ministry.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Forms of Business Organisation - II",
+    "abilityTags": [
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-061",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 5,
+    "chapter": "Forms of Business Organisation - II",
+    "topic": "Joint Shareholding Calculation for Government Company Status",
+    "difficulty": "Hard",
+    "questionText": "Sahyadri Infra Ltd. has a total paid-up equity share capital of ₹200 crore: Central Government holds ₹64 crore, Government of Maharashtra holds ₹40 crore, LIC (a statutory corporation) holds ₹20 crore, and retail public investors hold ₹76 crore. Does Sahyadri Infra Ltd. qualify as a Government Company under Section 2(45)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Yes — combined Central and State Government shareholding is ₹104 crore, which is 52% (≥ 51%) of paid-up share capital"
+      },
+      {
+        "key": "B",
+        "text": "No — neither the Central Government (32%) nor the State Government (20%) individually holds 51%"
+      },
+      {
+        "key": "C",
+        "text": "Yes — only because LIC's ₹20 crore is counted as direct sovereign ministry holding"
+      },
+      {
+        "key": "D",
+        "text": "No — public sector companies cannot have any retail public shareholders"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Section 2(45) explicitly aggregates shares held partly by Central Government and partly by one or more State Governments: ₹64 cr + ₹40 cr = ₹104 cr out of ₹200 cr = 52% ≥ 51% (even before considering institutional holdings).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Forms of Business Organisation - II",
+    "abilityTags": [
+      "numerical_reasoning",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-062",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 5,
+    "chapter": "Forms of Business Organisation - II",
+    "topic": "Matching Strategic Objectives to Public Enterprise Structure",
+    "difficulty": "Hard",
+    "questionText": "The Union Government plans two new ventures: (Project X) an atomic defence cryptographic bureau requiring absolute state secrecy and zero private equity; (Project Y) a commercial green-hydrogen equipment firm that must form rapid equity joint ventures with private tech partners while retaining majority state ownership. Which organisational pairing is optimal?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Project X: Multinational Corporation; Project Y: Sole Proprietorship"
+      },
+      {
+        "key": "B",
+        "text": "Project X: Co-operative Society; Project Y: Departmental Organisation"
+      },
+      {
+        "key": "C",
+        "text": "Project X: Departmental Organisation; Project Y: Government Company"
+      },
+      {
+        "key": "D",
+        "text": "Project X: Government Company; Project Y: Departmental Organisation"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Strategic sovereign security requiring direct ministerial control and secrecy calls for a Departmental Organisation, whereas commercial flexibility to onboard minority private equity partners suits a Government Company.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Forms of Business Organisation - II",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-063",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 5,
+    "chapter": "Forms of Business Organisation - II",
+    "topic": "Staffing Rules in Statutory Corporations vs Departmental Undertakings",
+    "difficulty": "Hard",
+    "questionText": "An engineer recruited by ONGC or LIC and a clerk recruited into the Postal Department face different service frameworks. Which distinction is legally accurate?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Neither category has formal recruitment rules or pension frameworks"
+      },
+      {
+        "key": "B",
+        "text": "Statutory Corporation employees are UPSC civil servants paid directly from the Defence Budget"
+      },
+      {
+        "key": "C",
+        "text": "Departmental employees receive employee stock options (ESOPs) in the ministry"
+      },
+      {
+        "key": "D",
+        "text": "Departmental employees are government civil servants governed by civil service rules, whereas Statutory Corporation employees are governed by service terms framed by the corporation under its Special Act"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Employees of Statutory Corporations are not civil servants of the government; their remuneration, recruitment, and service conditions are determined by the corporation's own regulations under its enabling statute.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Forms of Business Organisation - II",
+    "abilityTags": [
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-064",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 5,
+    "chapter": "Forms of Business Organisation - II",
+    "topic": "True vs Cosmetic Autonomy in Government Companies",
+    "difficulty": "Hard",
+    "questionText": "Why do scholars sometimes describe the 'autonomy' of a Government Company as 'more in legal form than in practical reality'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Because the controlling ministry appoints the majority of directors and can issue policy directives, making corporate independence vulnerable to ministerial and political influence"
+      },
+      {
+        "key": "B",
+        "text": "Because a Government Company is prohibited from owning factory buildings in its own name"
+      },
+      {
+        "key": "C",
+        "text": "Because minority private shareholders hold veto power over every day-to-day purchase order"
+      },
+      {
+        "key": "D",
+        "text": "Because Government Companies cannot open current accounts with commercial banks"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Although incorporated under the Companies Act for operational flexibility, the Government as ≥51% shareholder appoints the Board and top executives, often re-introducing administrative controls from behind the corporate veil.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 5: Forms of Business Organisation - II",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-065",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 6,
+    "chapter": "Institutes Supporting Business",
+    "topic": "SIDBI Headquarters and Mandate",
+    "difficulty": "Easy",
+    "questionText": "Which apex financial institution was established on 2nd April 1990 with its headquarters in Lucknow to serve as the principal institution for promoting, financing, and developing the MSME sector?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Khadi and Village Industries Commission (KVIC)"
+      },
+      {
+        "key": "B",
+        "text": "Export-Import Bank of India (EXIM Bank)"
+      },
+      {
+        "key": "C",
+        "text": "Small Industries Development Bank of India (SIDBI)"
+      },
+      {
+        "key": "D",
+        "text": "National Bank for Agriculture and Rural Development (NABARD)"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "SIDBI was set up on 2nd April 1990 under an Act of Parliament (headquartered in Lucknow) as the apex institution dedicated to financing, promoting, and developing Micro, Small and Medium Enterprises.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Institutes Supporting Business",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-066",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 6,
+    "chapter": "Institutes Supporting Business",
+    "topic": "Establishment of NABARD",
+    "difficulty": "Easy",
+    "questionText": "NABARD came into existence on 12th July 1982 as the apex institution for agricultural and rural credit based on the recommendations of which committee?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Sachar Committee"
+      },
+      {
+        "key": "B",
+        "text": "B. Sivaraman Committee (CRAFICARD)"
+      },
+      {
+        "key": "C",
+        "text": "Narasimham Committee on Banking"
+      },
+      {
+        "key": "D",
+        "text": "Kelkar Task Force on GST"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "NABARD was established on 12th July 1982 under the NABARD Act, 1981 following the recommendations of CRAFICARD chaired by Shri B. Sivaraman.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Institutes Supporting Business",
+    "abilityTags": [
+      "financial_understanding",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-067",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 6,
+    "chapter": "Institutes Supporting Business",
+    "topic": "Khadi and Village Industries Commission (KVIC)",
+    "difficulty": "Easy",
+    "questionText": "Where is the headquarters of the Khadi and Village Industries Commission (KVIC), a statutory organisation established under the KVIC Act, 1956 to promote rural non-farm artisan employment?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Kolkata"
+      },
+      {
+        "key": "B",
+        "text": "Hyderabad"
+      },
+      {
+        "key": "C",
+        "text": "Jaipur"
+      },
+      {
+        "key": "D",
+        "text": "Mumbai"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "KVIC is a statutory body under the Ministry of MSME established by the KVIC Act, 1956 with its head office in Mumbai, promoting khadi and rural village industries across India.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Institutes Supporting Business",
+    "abilityTags": [
+      "business_decision_making",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-068",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 6,
+    "chapter": "Institutes Supporting Business",
+    "topic": "Women's Self-Help Groups (Mahila Bachat Gat)",
+    "difficulty": "Medium",
+    "questionText": "How does a Women's Self-Help Group (Mahila Bachat Gat) enable collateral-free micro-credit for rural and semi-urban women entrepreneurs?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "The group issues corporate debentures listed on the National Stock Exchange"
+      },
+      {
+        "key": "B",
+        "text": "A homogeneous group of 10–20 local women pools regular small savings to lend internally at reasonable rates and leverages collective peer accountability to obtain bank linkage loans without physical collateral"
+      },
+      {
+        "key": "C",
+        "text": "Loans are granted only to large public limited companies employing over 500 workers"
+      },
+      {
+        "key": "D",
+        "text": "Each member must mortgage at least five acres of irrigated land to join the group"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Self-Help Groups cultivate regular thrift among 10–20 socio-economically peers; once credit discipline is demonstrated, banks extend collateral-free loans under the SHG-Bank Linkage Programme pioneered with NABARD support.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Institutes Supporting Business",
+    "abilityTags": [
+      "financial_understanding",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-069",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 6,
+    "chapter": "Institutes Supporting Business",
+    "topic": "World Bank Group Composition",
+    "difficulty": "Medium",
+    "questionText": "When development economists refer to the 'World Bank' (headquartered in Washington, D.C., originating at the 1944 Bretton Woods Conference), which two core institutions together constitute the 'World Bank' proper within the wider World Bank Group?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "IBRD (International Bank for Reconstruction and Development) and IDA (International Development Association)"
+      },
+      {
+        "key": "B",
+        "text": "SEBI and Federal Reserve Board"
+      },
+      {
+        "key": "C",
+        "text": "WTO and UNCTAD"
+      },
+      {
+        "key": "D",
+        "text": "ADB and SIDBI"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Within the five-institution World Bank Group (IBRD, IDA, IFC, MIGA, ICSID), IBRD (lending to middle-income/creditworthy sovereigns) and IDA (concessional aid to poorest nations) together form the World Bank.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Institutes Supporting Business",
+    "abilityTags": [
+      "financial_understanding",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-070",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 6,
+    "chapter": "Institutes Supporting Business",
+    "topic": "SIDBI's Indirect Refinance vs Direct Finance",
+    "difficulty": "Medium",
+    "questionText": "How does SIDBI multiply its credit reach across lakhs of micro and small units located in remote districts where SIDBI itself does not have retail branches?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "By prohibiting commercial banks from lending to small enterprises"
+      },
+      {
+        "key": "B",
+        "text": "By collecting direct agricultural land revenue through Talathis"
+      },
+      {
+        "key": "C",
+        "text": "By financing exclusively sovereign defence imports"
+      },
+      {
+        "key": "D",
+        "text": "By providing refinance, resource support, and lines of credit to State Financial Corporations, Scheduled Commercial Banks, RRBs, and NBFCs/MFIs that lend onward to MSMEs"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Alongside selective direct finance (e.g., greenfield/technology upgrades, receivable discounting), SIDBI acts as an apex refinancier to primary lending institutions (banks, SFCs, MFIs) to scale MSME credit nationwide.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Institutes Supporting Business",
+    "abilityTags": [
+      "financial_understanding",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-071",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 6,
+    "chapter": "Institutes Supporting Business",
+    "topic": "NABARD's Rural Infrastructure Development Fund (RIDF)",
+    "difficulty": "Medium",
+    "questionText": "Apart from refinancing co-operative banks and RRBs for crop loans, how does NABARD directly strengthen physical rural economic foundations?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "By issuing Importer Exporter Codes to software exporters"
+      },
+      {
+        "key": "B",
+        "text": "By regulating stockbrokers on the Bombay Stock Exchange"
+      },
+      {
+        "key": "C",
+        "text": "By financing state rural infrastructure projects—such as minor irrigation, rural roads, bridges, and warehousing—through the Rural Infrastructure Development Fund (RIDF)"
+      },
+      {
+        "key": "D",
+        "text": "By operating urban metro rail networks in metropolitan capitals"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "NABARD administers the RIDF (instituted in 1995-96) to fund state governments and rural bodies in completing irrigation, soil conservation, rural connectivity, and market-yard projects.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Institutes Supporting Business",
+    "abilityTags": [
+      "financial_understanding",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-072",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 6,
+    "chapter": "Institutes Supporting Business",
+    "topic": "KVIC Objectives Trio",
+    "difficulty": "Medium",
+    "questionText": "The Khadi and Village Industries Commission (KVIC) frames its developmental mandate around three integrated objectives—what are they?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Corporate mergers, hostile takeovers, and venture-capital exits"
+      },
+      {
+        "key": "B",
+        "text": "Fiscal deficit reduction, repo-rate targeting, and foreign exchange intervention"
+      },
+      {
+        "key": "C",
+        "text": "Heavy steel production, deep-sea oil drilling, and nuclear power generation"
+      },
+      {
+        "key": "D",
+        "text": "Social objective (rural employment), Economic objective (producing saleable articles), and Wider objective (creating self-reliance and strong rural community spirit)"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "As highlighted in the Balbharati OCM text, KVIC pursues three interlinked goals: Social (providing employment), Economic (producing marketable goods), and Wider (fostering rural self-reliance and community spirit).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Institutes Supporting Business",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-073",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 6,
+    "chapter": "Institutes Supporting Business",
+    "topic": "Matching Enterprise Need to Support Institution",
+    "difficulty": "Hard",
+    "questionText": "Match the four borrowers to the most appropriate supporting institution: (1) A cluster of 15 rural women tailors needing ₹2 lakh collateral-free micro-working capital; (2) A District Central Co-operative Bank seeking seasonal agricultural refinance; (3) An MSME CNC-machining unit seeking technology-upgradation equipment finance; (4) A rural beekeeping & handmade paper unit seeking PMEGP margin-money subsidy.",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "(1) Mahila Bachat Gat / SHG-Bank Linkage; (2) NABARD; (3) SIDBI; (4) KVIC"
+      },
+      {
+        "key": "B",
+        "text": "(1) World Bank; (2) SIDBI; (3) KVIC; (4) NABARD"
+      },
+      {
+        "key": "C",
+        "text": "(1) KVIC; (2) SIDBI; (3) NABARD; (4) World Bank"
+      },
+      {
+        "key": "D",
+        "text": "(1) SIDBI; (2) KVIC; (3) Mahila Bachat Gat; (4) NABARD"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Women's micro-enterprises tap SHG/Bachat Gat linkage (1); DCCB agricultural refinance comes from NABARD (2); MSME machinery modernisation is supported by SIDBI (3); village honey/handmade paper under PMEGP falls under KVIC as nodal agency (4).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Institutes Supporting Business",
+    "abilityTags": [
+      "business_decision_making",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-074",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 6,
+    "chapter": "Institutes Supporting Business",
+    "topic": "TReDS and MSME Receivables Liquidity",
+    "difficulty": "Hard",
+    "questionText": "A persistent bottleneck for Small Scale Suppliers is 90–120 day payment delays from large corporate buyers. Which institutional mechanism co-promoted by SIDBI addresses this working-capital trap?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Statutory ban on credit sales between any two registered businesses"
+      },
+      {
+        "key": "B",
+        "text": "Conversion of overdue trade bills into agricultural land mortgages"
+      },
+      {
+        "key": "C",
+        "text": "Trade Receivables Discounting System (TReDS) / bill-discounting platforms enabling MSMEs to auction accepted corporate invoices for prompt cash"
+      },
+      {
+        "key": "D",
+        "text": "Long-term sovereign gold bonds locking MSME funds for eight years"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "SIDBI promotes digital invoice discounting (such as RXIL/TReDS) and receivables finance so MSMEs can convert accepted corporate bills into immediate liquidity without waiting months.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Institutes Supporting Business",
+    "abilityTags": [
+      "financial_understanding",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-075",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 6,
+    "chapter": "Institutes Supporting Business",
+    "topic": "IFC and MIGA Roles in Private Sector Development",
+    "difficulty": "Hard",
+    "questionText": "Within the World Bank Group, if a renewable-energy enterprise in Maharashtra seeks direct private-sector equity/loan investment without a sovereign government guarantee, and its foreign co-investor seeks protection against non-commercial expropriation risk, which two World Bank Group arms address these needs?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "NABARD for sovereign guarantees and KVIC for currency hedging"
+      },
+      {
+        "key": "B",
+        "text": "IFC (International Finance Corporation) for private-sector investment and MIGA (Multilateral Investment Guarantee Agency) for political-risk insurance"
+      },
+      {
+        "key": "C",
+        "text": "IBRD for private equity and IDA for commercial fire insurance"
+      },
+      {
+        "key": "D",
+        "text": "ICSID for equity funding and IMF for machinery leasing"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "IFC invests exclusively in private-sector projects in developing countries without sovereign guarantees, while MIGA provides political-risk guarantees to cross-border investors and lenders.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Institutes Supporting Business",
+    "abilityTags": [
+      "financial_understanding",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-076",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 6,
+    "chapter": "Institutes Supporting Business",
+    "topic": "SHG Revolving Corpus Computation",
+    "difficulty": "Hard",
+    "questionText": "Savitri Mahila Bachat Gat has 15 members, each saving ₹400 every month. After 12 months of uninterrupted thrift (ignoring interest earned on bank deposit), the linked rural bank sanctions a collateral-free cash-credit limit equal to 4 times the group's accumulated savings corpus. What total lending pool (own corpus + bank linkage) becomes available to the SHG?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "₹3,60,000"
+      },
+      {
+        "key": "B",
+        "text": "₹2,88,000"
+      },
+      {
+        "key": "C",
+        "text": "₹72,000"
+      },
+      {
+        "key": "D",
+        "text": "₹3,00,000"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Accumulated 12-month savings corpus = 15 members × ₹400 × 12 = ₹72,000. Bank linkage credit at 4× corpus = 4 × ₹72,000 = ₹2,88,000. Total revolving lending pool = ₹72,000 + ₹2,88,000 = ₹3,60,000.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 6: Institutes Supporting Business",
+    "abilityTags": [
+      "numerical_reasoning",
+      "financial_understanding"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-077",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 7,
+    "chapter": "Business Environment",
+    "topic": "Three Pillars of New Economic Policy 1991",
+    "difficulty": "Easy",
+    "questionText": "What are the three core pillars of India's New Economic Policy introduced in July 1991?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Demonetisation, Barterisation, and Tariff Escalation"
+      },
+      {
+        "key": "B",
+        "text": "Centralisation, Import-Prohibition, and Price-Rationing"
+      },
+      {
+        "key": "C",
+        "text": "Nationalisation, Collectivisation, and Quota-Licensing"
+      },
+      {
+        "key": "D",
+        "text": "Liberalisation, Privatisation, and Globalisation (LPG)"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "India's 1991 structural reforms dismantled the Licence-Permit-Quota Raj through Liberalisation, Privatisation, and Globalisation (LPG).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Business Environment",
+    "abilityTags": [
+      "strategic_thinking",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-078",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 7,
+    "chapter": "Business Environment",
+    "topic": "Technological Dimension of Business Environment",
+    "difficulty": "Easy",
+    "questionText": "The rapid shift of Indian consumers and merchants from physical cash and paper cheques to UPI QR-code instant payments and cloud billing belongs primarily to which dimension of the Business Environment?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Judicial Precedent Environment"
+      },
+      {
+        "key": "B",
+        "text": "Technological Environment"
+      },
+      {
+        "key": "C",
+        "text": "Natural/Geographical Environment"
+      },
+      {
+        "key": "D",
+        "text": "Demographic Environment"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Technological environment encompasses scientific innovations, digital payment architectures, automation, R&D breakthroughs, and upgraded methods of doing business.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Business Environment",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-079",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 7,
+    "chapter": "Business Environment",
+    "topic": "Meaning of Privatisation",
+    "difficulty": "Easy",
+    "questionText": "In the context of economic policy, what does 'Disinvestment' mean?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Compulsory takeover of private family businesses by state ministries"
+      },
+      {
+        "key": "B",
+        "text": "Imposing 200% customs duty on imported raw materials"
+      },
+      {
+        "key": "C",
+        "text": "Selling part or whole of the Government's equity shareholding in Public Sector Undertakings (PSUs) to private investors or the public"
+      },
+      {
+        "key": "D",
+        "text": "Closing down commercial banks during public holidays"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Disinvestment transfers ownership/equity stakes in public sector enterprises to private/public hands to improve fiscal resources, market discipline, and operational efficiency.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Business Environment",
+    "abilityTags": [
+      "financial_understanding",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-080",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 7,
+    "chapter": "Business Environment",
+    "topic": "Distinguishing Legal vs Political Environment",
+    "difficulty": "Medium",
+    "questionText": "Mandatory printing of vegetarian/non-vegetarian symbols, FSSAI licence numbers, and statutory health warnings on packaged snacks arises directly from which dimension of the Business Environment?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Legal (Regulatory) Environment"
+      },
+      {
+        "key": "B",
+        "text": "Internal Human Resource Environment"
+      },
+      {
+        "key": "C",
+        "text": "Social Custom Environment"
+      },
+      {
+        "key": "D",
+        "text": "Natural Environment"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Statutes passed by Parliament/Legislatures, statutory rules (Food Safety and Standards Act, Consumer Protection Act), and court judgments constitute the Legal Environment requiring strict compliance.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Business Environment",
+    "abilityTags": [
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-081",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 7,
+    "chapter": "Business Environment",
+    "topic": "Internal (Controllable) vs External (Uncontrollable) Factors",
+    "difficulty": "Medium",
+    "questionText": "Which of the following sets consists EXCLUSIVELY of Internal (controllable) environmental factors of a company?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Supreme Court environmental bans, import tariffs, and demographic ageing"
+      },
+      {
+        "key": "B",
+        "text": "Corporate value system, mission & objectives, human resource policies, and internal production layout"
+      },
+      {
+        "key": "C",
+        "text": "RBI repo rate changes, GST council rate revisions, and monsoon rainfall"
+      },
+      {
+        "key": "D",
+        "text": "Competitors' pricing strategies, foreign exchange volatility, and consumer lifestyle shifts"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Internal environment comprises factors largely within management's control—vision, organisational structure, HR policies, physical/financial resources—unlike external micro and macro forces.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Business Environment",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-082",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 7,
+    "chapter": "Business Environment",
+    "topic": "Social Environment Impact on Demand",
+    "difficulty": "Medium",
+    "questionText": "Rising health consciousness among urban Indian families has spurred demand for millet snacks, sugar-free beverages, and organic produce while slowing sugary soda growth. Which environmental dimension is driving this shift?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Legal Environment"
+      },
+      {
+        "key": "B",
+        "text": "Political Ideology Environment"
+      },
+      {
+        "key": "C",
+        "text": "Social and Cultural Environment"
+      },
+      {
+        "key": "D",
+        "text": "Monetary Policy Environment"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Social environment includes customs, traditions, literacy, health awareness, family structures, festivals, and changing consumer values/lifestyles.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Business Environment",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-083",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 7,
+    "chapter": "Business Environment",
+    "topic": "First-Mover Advantage through Environmental Scanning",
+    "difficulty": "Medium",
+    "questionText": "How does systematic 'Environmental Scanning' confer an 'Early-Mover Advantage' on an alert enterprise?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "By freezing competitors' bank accounts through trade associations"
+      },
+      {
+        "key": "B",
+        "text": "By eliminating the need for product quality improvements"
+      },
+      {
+        "key": "C",
+        "text": "By guaranteeing legal immunity from taxation for ten years"
+      },
+      {
+        "key": "D",
+        "text": "By spotting emerging consumer needs or regulatory openings ahead of rivals, allowing the firm to launch suitable products first and capture market share"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Continuous monitoring of environmental trends reveals early opportunities (and warning signals of threats), enabling proactive pioneers to build brand leadership before competitors react.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Business Environment",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-084",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 7,
+    "chapter": "Business Environment",
+    "topic": "Impact of LPG Reforms on Market Orientation",
+    "difficulty": "Medium",
+    "questionText": "How did the post-1991 LPG reforms transform Indian markets from a 'Seller's Market' into a 'Buyer's Market'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Consumers lost the legal right to approach Consumer Redressal Commissions"
+      },
+      {
+        "key": "B",
+        "text": "Abolition of industrial licensing and entry of domestic & global competitors ended chronic shortages, compelling firms to compete on quality, price, and customer choice"
+      },
+      {
+        "key": "C",
+        "text": "Government fixed uniform ration quotas restricting every household to one brand"
+      },
+      {
+        "key": "D",
+        "text": "All private manufacturers were merged into a single state monopoly"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Pre-1991 licensing caps created protected shortages (seller's market); delicensing and import liberalisation expanded supply and competition, placing consumer satisfaction at the centre (buyer's market).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Business Environment",
+    "abilityTags": [
+      "strategic_thinking",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-085",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 7,
+    "chapter": "Business Environment",
+    "topic": "Multi-dimensional Environmental Case Analysis",
+    "difficulty": "Hard",
+    "questionText": "A Maharashtra electric two-wheeler startup benefits simultaneously from: (i) FAME/EV state purchase subsidies; (ii) lithium-ion battery chemistry breakthroughs cutting pack weight by 25%; and (iii) rising petrol prices + RBI cut in auto-loan interest rates. Which three environmental dimensions correspond to (i), (ii), and (iii)?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "(i) Natural Environment; (ii) Social Environment; (iii) Legal Environment"
+      },
+      {
+        "key": "B",
+        "text": "(i) Legal Environment; (ii) Political Environment; (iii) Natural Environment"
+      },
+      {
+        "key": "C",
+        "text": "(i) Social Environment; (ii) Economic Environment; (iii) Technological Environment"
+      },
+      {
+        "key": "D",
+        "text": "(i) Political/Government Policy Environment; (ii) Technological Environment; (iii) Economic Environment"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "State green-mobility policy support reflects Political/Government stance (i); battery R&D advances reflect Technological change (ii); fuel inflation and interest-rate movements belong to the Economic Environment (iii).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Business Environment",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-086",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 7,
+    "chapter": "Business Environment",
+    "topic": "Natural Environment Constraint in Industrial Strategy",
+    "difficulty": "Hard",
+    "questionText": "A beverage bottler plans a water-intensive plant in a drought-prone Marathwada taluka without rainwater harvesting or effluent recycling, and faces local protests and NGT scrutiny. Which strategic mistake did management commit?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Ignoring the Natural (Ecological) and Legal Environment during project feasibility and site selection"
+      },
+      {
+        "key": "B",
+        "text": "Over-investing in employee provident fund contributions"
+      },
+      {
+        "key": "C",
+        "text": "Adopting double-entry accounting instead of single-entry books"
+      },
+      {
+        "key": "D",
+        "text": "Excessive focus on export documentation under DGFT"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Natural environment encompasses climate, water availability, topography, and ecological sustainability; ignoring resource scarcity and environmental statutes triggers operational and legal failure.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Business Environment",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-087",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 7,
+    "chapter": "Business Environment",
+    "topic": "FERA to FEMA Transition in Liberalisation",
+    "difficulty": "Hard",
+    "questionText": "As part of India's post-1991 external liberalisation, replacing FERA (1973) with FEMA (1999) signalled what fundamental shift in regulatory philosophy toward business?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Transferring monetary policy powers from RBI to municipal corporations"
+      },
+      {
+        "key": "B",
+        "text": "Banning all current-account foreign exchange transactions for Indian importers"
+      },
+      {
+        "key": "C",
+        "text": "Shifting from draconian 'conservation and criminal policing' of scarce foreign exchange to 'facilitating external trade and orderly forex management'"
+      },
+      {
+        "key": "D",
+        "text": "Pegging the Indian rupee permanently to gold bullion coins"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "FERA treated forex violations as criminal offences to ration scarce reserves, whereas FEMA decriminalised civil forex contraventions to facilitate external trade and payments in a globalising economy.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Business Environment",
+    "abilityTags": [
+      "financial_understanding",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-088",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 7,
+    "chapter": "Business Environment",
+    "topic": "Interrelatedness of Business Environment Dimensions",
+    "difficulty": "Hard",
+    "questionText": "A new judicial ruling mandates biodegradable packaging (Legal), prompting R&D labs to invent corn-starch films (Technological), which raises packaging cost by 4% at low inflation (Economic) while winning praise from eco-conscious Gen-Z shoppers (Social). Which characteristic of Business Environment does this chain best demonstrate?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Interrelatedness and Dynamic nature — a shift in one external dimension triggers cascading adjustments across other dimensions"
+      },
+      {
+        "key": "B",
+        "text": "Static rigidity — external business conditions remain frozen for decades"
+      },
+      {
+        "key": "C",
+        "text": "Complete controllability — individual shopkeepers dictate national laws"
+      },
+      {
+        "key": "D",
+        "text": "Uniformity — identical environmental impacts apply across all countries and industries"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Different elements of the business environment are closely interrelated and dynamic; legal mandates spur technological innovation, cost shifts, and evolving social preferences simultaneously.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 7: Business Environment",
+    "abilityTags": [
+      "strategic_thinking",
+      "numerical_reasoning"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-089",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 8,
+    "chapter": "Introduction to Management",
+    "topic": "Intangible Nature of Management",
+    "difficulty": "Easy",
+    "questionText": "Why is Management described as an 'intangible force'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Management deals only with intangible assets like patents and trademarks"
+      },
+      {
+        "key": "B",
+        "text": "Management produces no measurable impact on output or profit"
+      },
+      {
+        "key": "C",
+        "text": "Managers never attend physical offices or factories"
+      },
+      {
+        "key": "D",
+        "text": "Management cannot be physically seen or touched, yet its presence is clearly felt through orderliness, high morale, and target achievement"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Management is not a tangible object; its quality is experienced through smooth coordination, disciplined workflows, satisfied employees, and absence of chaos.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Introduction to Management",
+    "abilityTags": [
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-090",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 8,
+    "chapter": "Introduction to Management",
+    "topic": "Three Levels of Management",
+    "difficulty": "Easy",
+    "questionText": "In a corporate hierarchy, Chief Executive Officer (CEO), Managing Director, and Board of Directors belong to which level of management?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Shop-floor Non-Managerial Cadre"
+      },
+      {
+        "key": "B",
+        "text": "Top Level Management"
+      },
+      {
+        "key": "C",
+        "text": "Middle Level Management"
+      },
+      {
+        "key": "D",
+        "text": "Lower (Supervisory) Level Management"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Top Level Management comprises the Board of Directors, Chairman, President, MD, and CEO, responsible for framing overall vision, mission, and long-term corporate strategy.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Introduction to Management",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-091",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 8,
+    "chapter": "Introduction to Management",
+    "topic": "Lower / Operational Level Designations",
+    "difficulty": "Easy",
+    "questionText": "Foremen, Supervisors, Section Officers, and Superintendents operate at which level of management?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Top Level Management"
+      },
+      {
+        "key": "B",
+        "text": "Middle Level Management"
+      },
+      {
+        "key": "C",
+        "text": "Lower (Supervisory / Operational) Level Management"
+      },
+      {
+        "key": "D",
+        "text": "Statutory Audit Committee Level"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Lower or Supervisory Level managers stand directly above rank-and-file workers, overseeing day-to-day shop-floor execution, machine upkeep, safety, and output quality.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Introduction to Management",
+    "abilityTags": [
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-092",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 8,
+    "chapter": "Introduction to Management",
+    "topic": "Goal-Oriented Nature of Management",
+    "difficulty": "Easy",
+    "questionText": "Every managerial activity—planning, organising, staffing, directing, and controlling—is united by what foundational characteristic?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Management applies exclusively to profit-making manufacturing factories and never to hospitals or schools"
+      },
+      {
+        "key": "B",
+        "text": "Management is a one-time exercise completed on the day of incorporation"
+      },
+      {
+        "key": "C",
+        "text": "Management is an end in itself independent of any organisational target"
+      },
+      {
+        "key": "D",
+        "text": "Management is a goal-oriented process aimed at achieving predetermined organisational objectives efficiently and effectively"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Management exists to unite human and material resources toward accomplishing specific organisational goals (whether profit in a firm, healing in a hospital, or learning in a college).",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Introduction to Management",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-093",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 8,
+    "chapter": "Introduction to Management",
+    "topic": "Management as an Inexact (Social) Science",
+    "difficulty": "Medium",
+    "questionText": "Why is Management classified as a 'Social (Inexact) Science' rather than an exact physical science like Physics or Chemistry?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Because management deals with complex, unpredictable human behaviour, so its principles cannot yield identical laboratory results under all situations"
+      },
+      {
+        "key": "B",
+        "text": "Because managers are legally barred from using statistical data"
+      },
+      {
+        "key": "C",
+        "text": "Because management has zero theoretical literature or systematic body of knowledge"
+      },
+      {
+        "key": "D",
+        "text": "Because cause-and-effect observation is completely impossible in organisations"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Management possesses a systematic body of knowledge based on observation, but since it applies to dynamic human beings and changing environments, its principles are flexible guidelines rather than rigid physical laws.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Introduction to Management",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-094",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 8,
+    "chapter": "Introduction to Management",
+    "topic": "Functions of Middle Level Management",
+    "difficulty": "Medium",
+    "questionText": "A Production Manager and a Finance Manager meet to translate the Board's annual 18% growth target into departmental schedules, recruit shift engineers, and coordinate raw-material budgets. Which level's core role are they performing?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Top Level Management — amending the Memorandum of Association"
+      },
+      {
+        "key": "B",
+        "text": "Lower Level Management — operating lathes on the assembly line"
+      },
+      {
+        "key": "C",
+        "text": "Middle Level Management — acting as the vital link interpreting Top-Level policies for Lower-Level execution"
+      },
+      {
+        "key": "D",
+        "text": "External Consultancy — conducting statutory C&AG audits"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Departmental heads (Production, Finance, Marketing, HR Managers) constitute Middle Level Management, translating broad top-level policies into actionable departmental plans and inter-departmental coordination.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Introduction to Management",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-095",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 8,
+    "chapter": "Introduction to Management",
+    "topic": "Management as an Art",
+    "difficulty": "Medium",
+    "questionText": "Two MBA batchmates study the exact same textbooks, yet one resolves a factory strike creatively in two days while the other escalates conflict. Which aspect of Management does this highlight?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Management as an Art — requiring personalised skill, situational judgment, creativity, and continuous practice in applying theoretical knowledge"
+      },
+      {
+        "key": "B",
+        "text": "Management as a pure Mechanical Science independent of human tact"
+      },
+      {
+        "key": "C",
+        "text": "Failure of Double Entry Book-Keeping"
+      },
+      {
+        "key": "D",
+        "text": "Management as a Statutory Profession with compulsory licensing"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Art involves skilful, personalised, creative application of theoretical principles to real-world situations; managerial effectiveness varies with individual ingenuity and experience.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Introduction to Management",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-096",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 8,
+    "chapter": "Introduction to Management",
+    "topic": "Management as an Emerging Profession",
+    "difficulty": "Medium",
+    "questionText": "Why is Management in India described as an 'emerging profession' rather than a full-fledged statutory profession on par with Medicine or Law?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Because AIMA prohibits managers from serving corporate clients"
+      },
+      {
+        "key": "B",
+        "text": "Although specialised MBA institutes (like IIMs) and associations (like AIMA) exist, there is no legally compulsory degree or statutory licence required to become a manager"
+      },
+      {
+        "key": "C",
+        "text": "Because no university in India offers formal courses in business management"
+      },
+      {
+        "key": "D",
+        "text": "Because managers work without receiving any monetary compensation"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Unlike doctors (NMC) or advocates (Bar Council) where statutory registration is mandatory to practise, anyone can legally manage an enterprise regardless of formal diploma, though professionalisation is steadily growing.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Introduction to Management",
+    "abilityTags": [
+      "business_decision_making",
+      "strategic_thinking"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-097",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 8,
+    "chapter": "Introduction to Management",
+    "topic": "Situational and Universal Nature of Management",
+    "difficulty": "Medium",
+    "questionText": "What does it mean to say that Management is simultaneously 'Universal' and 'Situational'?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Every country uses the exact same wage rate regardless of productivity"
+      },
+      {
+        "key": "B",
+        "text": "Management is needed only during financial crises and dissolved during boom years"
+      },
+      {
+        "key": "C",
+        "text": "Only multinational companies require management, whereas co-operatives run automatically"
+      },
+      {
+        "key": "D",
+        "text": "Core managerial functions apply across all organisations globally (universal), yet specific decisions must be adapted to local timing, culture, and constraints (situational)"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Schools, hospitals, charities, armies, and corporations everywhere need planning and coordination (universality), yet no single rigid formula fits all contexts—managers tailor actions to the situation.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Introduction to Management",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-098",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 8,
+    "chapter": "Introduction to Management",
+    "topic": "Diagnosing Breakdown Across Management Levels",
+    "difficulty": "Hard",
+    "questionText": "At Sahyadri Textiles, the Board set a bold export vision, and shop-floor supervisors kept looms running smoothly, yet export orders failed because the Purchase Department bought coarse yarn while the Sales Department promised fine-count fabric to overseas buyers. Where did the managerial breakdown occur?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Top Level Management — failure to incorporate the company with ROC"
+      },
+      {
+        "key": "B",
+        "text": "Statutory Auditors — failure to prepare a Bank Reconciliation Statement"
+      },
+      {
+        "key": "C",
+        "text": "Middle Level Management — failure of inter-departmental coordination between Purchase and Sales departmental heads"
+      },
+      {
+        "key": "D",
+        "text": "Lower Level Management — failure of workers to oil the looms"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Horizontal coordination across functional departments (Purchase, Production, Sales, Finance) to align inputs with promised output specifications is a primary responsibility of Middle Level Management.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Introduction to Management",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-099",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 8,
+    "chapter": "Introduction to Management",
+    "topic": "Multi-dimensional Character of Management",
+    "difficulty": "Hard",
+    "questionText": "Modern management theorists describe Management as 'three-dimensional'—managing Work, People, and Operations. Which scenario illustrates all three dimensions working in harmony?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Filing annual tax returns without operating any commercial or service activity"
+      },
+      {
+        "key": "B",
+        "text": "Defining clear hospital treatment goals (Work), motivating doctors and nurses as teams (People), and streamlining patient-admission-to-pharmacy workflows (Operations)"
+      },
+      {
+        "key": "C",
+        "text": "Purchasing land, locking the gates, and waiting five years for capital appreciation"
+      },
+      {
+        "key": "D",
+        "text": "Replacing all employees with machines while abandoning product targets"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Management of Work translates goals into tasks; Management of People handles individual needs and team dynamics; Management of Operations integrates inputs and technology to deliver goods/services.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Introduction to Management",
+    "abilityTags": [
+      "strategic_thinking",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "msb-11-com-ocm-100",
+    "board": "MSBSHSE",
+    "academicYear": "2025-26",
+    "standard": "Class 11 (FYJC)",
+    "stream": "commerce",
+    "subjectSlug": "com-ocm",
+    "subjectName": "Organisation of Commerce and Management",
+    "chapterNumber": 8,
+    "chapter": "Introduction to Management",
+    "topic": "Effectiveness vs Efficiency in Managerial Decisions",
+    "difficulty": "Hard",
+    "questionText": "A factory manager meets an urgent Diwali order of 10,000 gift hampers right on deadline by running diesel generators round-the-clock and paying double overtime, pushing unit cost 28% above budget. How would management theory evaluate this manager?",
+    "diagramType": null,
+    "options": [
+      {
+        "key": "A",
+        "text": "Effective (achieved the target on time) but Inefficient (incurred excessive resource cost per unit)"
+      },
+      {
+        "key": "B",
+        "text": "Efficient (minimised cost) but Ineffective (missed the deadline)"
+      },
+      {
+        "key": "C",
+        "text": "Both highly Effective and highly Efficient"
+      },
+      {
+        "key": "D",
+        "text": "Neither Effective nor goal-oriented because the order was completed"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Effectiveness means completing the right task/achieving the end goal on time; Efficiency means achieving that output with minimum resource wastage and optimal cost. High-performing management balances both.",
+    "syllabusReference": "MSBSHSE Class 11 Balbharati Syllabus — Ch. 8: Introduction to Management",
+    "abilityTags": [
+      "financial_understanding",
+      "business_decision_making"
+    ],
+    "publicationStatus": "published",
+    "reviewed": true,
+    "version": 1,
+    "usageCount": 0,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "reviewedAt": "2026-11-03T00:00:00.000Z"
+  }
+]

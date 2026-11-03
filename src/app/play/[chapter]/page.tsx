@@ -12,6 +12,7 @@ import { Chapter3UnknownMessage } from "@/components/chapters/Chapter3UnknownMes
 import { Chapter4EmptyCanvas } from "@/components/chapters/Chapter4EmptyCanvas";
 import { Chapter5FinalTenSeconds } from "@/components/chapters/Chapter5FinalTenSeconds";
 import { Chapter6UnknownWorld } from "@/components/chapters/Chapter6UnknownWorld";
+import { Chapter7SeventhDoor } from "@/components/chapters/Chapter7SeventhDoor";
 import { EventType } from "@/lib/types";
 
 interface PageProps {
@@ -29,7 +30,7 @@ export default function ChapterPage({ params }: PageProps) {
   const loggedChapterStart = useRef<number | null>(null);
 
   useEffect(() => {
-    if (isNaN(chapterNum) || chapterNum < 1 || chapterNum > 6) {
+    if (isNaN(chapterNum) || chapterNum < 1 || chapterNum > 7) {
       router.replace("/play");
       return;
     }
@@ -62,22 +63,28 @@ export default function ChapterPage({ params }: PageProps) {
         },
         prefersReducedMotion ? 50 : 280
       );
-    } else {
+    } else if (chapterNum === 6) {
       const res = await trackEvent(6, "game_completed", {
         finishedAllChapters: true,
       });
       const targetId = res.sessionId || sessionId || "current";
       router.push(`/result/${targetId}`);
+    } else {
+      const targetId = sessionId || "current";
+      router.push(`/result/${targetId}`);
     }
   };
 
-  if (isNaN(chapterNum) || chapterNum < 1 || chapterNum > 6) {
+  if (isNaN(chapterNum) || chapterNum < 1 || chapterNum > 7) {
     return null;
   }
 
   return (
     <div className="min-h-screen flex flex-col bg-[#FAF7F2] text-[#1C1917] paper-grain">
-      <Header currentChapter={chapterNum} totalChapters={6} />
+      <Header
+        currentChapter={Math.min(chapterNum, 6)}
+        totalChapters={6}
+      />
 
       <main className="flex-1 max-w-3xl w-full mx-auto px-5 sm:px-8 py-10 sm:py-14">
         {isLoading ? (
@@ -135,6 +142,12 @@ export default function ChapterPage({ params }: PageProps) {
                   <Chapter6UnknownWorld
                     onTrackEvent={handleTrackEvent}
                     onSavePreference={handleSavePreference}
+                    onComplete={() => void handleChapterComplete()}
+                  />
+                )}
+                {chapterNum === 7 && (
+                  <Chapter7SeventhDoor
+                    onTrackEvent={handleTrackEvent}
                     onComplete={() => void handleChapterComplete()}
                   />
                 )}

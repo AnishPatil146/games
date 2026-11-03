@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { verifyAdminAccess } from "@/lib/admin-auth";
 import { getAdminSettingsData } from "@/lib/storage";
+import { listAdminAuditLogs } from "@/lib/services/platform-store";
 
 export async function GET() {
   const auth = await verifyAdminAccess();
@@ -13,11 +14,13 @@ export async function GET() {
 
   try {
     const settings = await getAdminSettingsData();
+    const auditLogs = listAdminAuditLogs(40);
     return NextResponse.json({
       success: true,
       adminEmail: auth.email,
       adminUserId: auth.userId,
       settings,
+      auditLogs,
     });
   } catch (err: unknown) {
     const message =

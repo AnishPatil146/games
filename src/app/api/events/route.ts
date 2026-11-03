@@ -7,9 +7,10 @@ import { checkRateLimit } from "@/lib/rate-limit";
 const TOKEN_COOKIE = "the_unwritten_token";
 
 const EventSchema = z.object({
-  chapter: z.number().int().min(0).max(6),
+  chapter: z.number().int().min(0).max(7),
   eventType: z.enum([
     "landing_view",
+    "mode_selected",
     "game_started",
     "profile_submitted",
     "chapter_started",
@@ -18,6 +19,12 @@ const EventSchema = z.object({
     "puzzle_attempted",
     "hint_used",
     "chapter_completed",
+    "seventh_door_unlocked",
+    "seventh_door_completed",
+    "hidden_letter_unlocked",
+    "hidden_letter_read",
+    "junior_attempt_started",
+    "junior_attempt_completed",
     "game_completed",
   ]),
   eventData: z.record(z.string(), z.unknown()).default({}),

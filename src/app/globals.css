@@ -50,6 +50,7 @@ body {
 
 /* Respect user reduced-motion preferences */
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {

@@ -1,0 +1,627 @@
+import {
+  AcademicBoardConfig,
+  AcademicStreamConfig,
+  AcademicSubjectConfig,
+  AcademicYearConfig,
+  StreamSlug,
+} from "./platform-types";
+
+export const DEFAULT_ACADEMIC_BOARDS: AcademicBoardConfig[] = [
+  {
+    id: "board-msbshse",
+    code: "MSBSHSE",
+    name: "Maharashtra State Board (FYJC)",
+    active: true,
+  },
+];
+
+export const DEFAULT_ACADEMIC_YEARS: AcademicYearConfig[] = [
+  {
+    id: "year-2025-26",
+    boardCode: "MSBSHSE",
+    label: "2025-26",
+    standard: "Class 11 (FYJC)",
+    active: true,
+  },
+];
+
+export const ACADEMIC_STREAMS: Record<StreamSlug, AcademicStreamConfig> = {
+  science: {
+    slug: "science",
+    name: "Science",
+    subtitle: "Physical Laws, Molecular Structure, Living Systems & Calculus",
+    description:
+      "Investigate quantitative principles, experimental setups, biological architecture, and mathematical deduction aligned to FYJC Science.",
+    accentHex: "#545E4E",
+    abilityIndicators: [
+      {
+        key: "logical_reasoning",
+        label: "Logical reasoning",
+        description:
+          "Deductive step-chaining across mathematical and physical conditions.",
+      },
+      {
+        key: "analytical_thinking",
+        label: "Analytical thinking",
+        description:
+          "Decomposing multi-variable relationships, graphs, and structural data.",
+      },
+      {
+        key: "scientific_understanding",
+        label: "Scientific understanding",
+        description:
+          "Conceptual command of physical laws, chemical bonding, and biological mechanisms.",
+      },
+      {
+        key: "problem_solving",
+        label: "Problem-solving",
+        description:
+          "Applying formulas, dimensional checks, and quantitative equations accurately.",
+      },
+    ],
+    gameProfiles: [
+      {
+        title: "The Analytical Thinker",
+        subtitle: "Structured decomposition and quantitative clarity.",
+        narrative:
+          "Across this challenge, your strongest responses emerged where multi-variable relationships needed to be separated into clear governing principles before computing an outcome.",
+        primaryAbilities: ["analytical_thinking", "logical_reasoning"],
+      },
+      {
+        title: "The Curious Investigator",
+        subtitle: "Conceptual command of natural mechanisms and systems.",
+        narrative:
+          "Your responses showed consistent command of underlying scientific mechanisms—connecting observable phenomena to molecular, cellular, or physical principles.",
+        primaryAbilities: ["scientific_understanding", "analytical_thinking"],
+      },
+      {
+        title: "The Logical Explorer",
+        subtitle: "Deductive precision across formal rules and proofs.",
+        narrative:
+          "You navigated symbolic conditions and deductive sequences methodically, tracking constraints carefully from premise to conclusion.",
+        primaryAbilities: ["logical_reasoning", "problem_solving"],
+      },
+      {
+        title: "The Experimental Mind",
+        subtitle: "Applied quantitative problem-solving in real scenarios.",
+        narrative:
+          "Your work excelled in applied setups—translating physical or chemical measurements into reliable numerical solutions.",
+        primaryAbilities: ["problem_solving", "scientific_understanding"],
+      },
+    ],
+  },
+  commerce: {
+    slug: "commerce",
+    name: "Commerce",
+    subtitle: "Financial Ledgers, Enterprise Strategy, Markets & Quantitative Risk",
+    description:
+      "Explore double-entry accounting, corporate governance, macroeconomic policy, and commercial statistics aligned to FYJC Commerce.",
+    accentHex: "#7E6747",
+    abilityIndicators: [
+      {
+        key: "numerical_reasoning",
+        label: "Numerical reasoning",
+        description:
+          "Precision with ledgers, partition values, ratios, and commercial calculations.",
+      },
+      {
+        key: "financial_understanding",
+        label: "Financial understanding",
+        description:
+          "Grasp of double-entry rules, reconciliation, depreciation, and monetary concepts.",
+      },
+      {
+        key: "strategic_thinking",
+        label: "Strategic thinking",
+        description:
+          "Evaluating market structures, economic policy shifts, and long-horizon planning.",
+      },
+      {
+        key: "business_decision_making",
+        label: "Business decision-making",
+        description:
+          "Selecting appropriate organizational forms, statutory procedures, and management actions.",
+      },
+    ],
+    gameProfiles: [
+      {
+        title: "The Strategist",
+        subtitle: "Macro-structural awareness and enterprise foresight.",
+        narrative:
+          "Your strongest responses connected firm-level choices to broader market environments, economic reforms, and institutional frameworks.",
+        primaryAbilities: ["strategic_thinking", "business_decision_making"],
+      },
+      {
+        title: "The Risk Evaluator",
+        subtitle: "Statutory rigor, verification, and error detection.",
+        narrative:
+          "You demonstrated sharp attention to compliance boundaries, reconciliation discrepancies, and governance safeguards.",
+        primaryAbilities: ["business_decision_making", "financial_understanding"],
+      },
+      {
+        title: "The Financial Thinker",
+        subtitle: "Ledger discipline and quantitative balance.",
+        narrative:
+          "Double-entry logic, valuation adjustments, and quantitative commercial relationships formed the anchor of your performance.",
+        primaryAbilities: ["financial_understanding", "numerical_reasoning"],
+      },
+      {
+        title: "The Opportunity Seeker",
+        subtitle: "Quantitative fluency applied to trade and enterprise.",
+        narrative:
+          "You paired statistical and numerical reasoning with practical commercial judgment across enterprise scenarios.",
+        primaryAbilities: ["numerical_reasoning", "strategic_thinking"],
+      },
+    ],
+  },
+  arts: {
+    slug: "arts",
+    name: "Arts & Humanities",
+    subtitle: "Civilizations, Geopolitics, Human Cognition & Social Architecture",
+    description:
+      "Engage with historical inquiry, physical geography, constitutional theory, cognitive psychology, and sociological analysis aligned to FYJC Arts.",
+    accentHex: "#9E6B68",
+    abilityIndicators: [
+      {
+        key: "critical_thinking",
+        label: "Critical thinking",
+        description:
+          "Evaluating causal evidence, constitutional principles, and competing explanations.",
+      },
+      {
+        key: "interpretation",
+        label: "Interpretation",
+        description:
+          "Reading historical sources, spatial patterns, and social phenomena in context.",
+      },
+      {
+        key: "communication",
+        label: "Communication",
+        description:
+          "Precision with conceptual vocabulary across civic, psychological, and social discourse.",
+      },
+      {
+        key: "creative_thinking",
+        label: "Creative thinking",
+        description:
+          "Synthesizing cross-disciplinary perspectives across culture, environment, and human behavior.",
+      },
+    ],
+    gameProfiles: [
+      {
+        title: "The Deep Observer",
+        subtitle: "Contextual reading of historical, spatial, and human evidence.",
+        narrative:
+          "Your responses excelled at situating events and behaviors within their deeper historical, geographical, or institutional context.",
+        primaryAbilities: ["interpretation", "critical_thinking"],
+      },
+      {
+        title: "The Creative Mind",
+        subtitle: "Cross-disciplinary synthesis across culture and society.",
+        narrative:
+          "You navigated conceptual links between human adaptation, cultural expression, and environmental change with fluency.",
+        primaryAbilities: ["creative_thinking", "interpretation"],
+      },
+      {
+        title: "The Social Thinker",
+        subtitle: "Structural analysis of institutions, rights, and collective life.",
+        narrative:
+          "Questions involving civic frameworks, social stratification, and institutional change brought out your clearest analytical reasoning.",
+        primaryAbilities: ["critical_thinking", "communication"],
+      },
+      {
+        title: "The Story Interpreter",
+        subtitle: "Conceptual precision across human narratives and discourse.",
+        narrative:
+          "You demonstrated strong command of humanities terminology and how ideas, memories, and traditions are articulated.",
+        primaryAbilities: ["communication", "creative_thinking"],
+      },
+    ],
+  },
+};
+
+export const INITIAL_ACADEMIC_SUBJECTS: AcademicSubjectConfig[] = [
+  // ========================= SCIENCE =========================
+  {
+    id: "subj-sci-physics",
+    slug: "sci-physics",
+    stream: "science",
+    name: "Physics",
+    code: "54",
+    boardCode: "MSBSHSE",
+    academicYear: "2025-26",
+    standard: "Class 11 (FYJC)",
+    isElective: false,
+    active: true,
+    description:
+      "Mechanics, gravitation, elasticity, thermodynamics, wave acoustics, geometrical optics, electrostatics, circuits, magnetism, and semiconductors.",
+    chapters: [
+      { number: 1, title: "Units and Measurements" },
+      { number: 2, title: "Mathematical Methods" },
+      { number: 3, title: "Motion in a Plane" },
+      { number: 4, title: "Laws of Motion" },
+      { number: 5, title: "Gravitation" },
+      { number: 6, title: "Mechanical Properties of Solids" },
+      { number: 7, title: "Thermal Properties of Matter" },
+      { number: 8, title: "Sound" },
+      { number: 9, title: "Optics" },
+      { number: 10, title: "Electrostatics" },
+      { number: 11, title: "Electric Current Through Conductors" },
+      { number: 12, title: "Magnetism" },
+      { number: 13, title: "Electromagnetic Waves and Communication System" },
+      { number: 14, title: "Semiconductors" },
+    ],
+  },
+  {
+    id: "subj-sci-chemistry",
+    slug: "sci-chemistry",
+    stream: "science",
+    name: "Chemistry",
+    code: "55",
+    boardCode: "MSBSHSE",
+    academicYear: "2025-26",
+    standard: "Class 11 (FYJC)",
+    isElective: false,
+    active: true,
+    description:
+      "Stoichiometry, atomic structure, chemical bonding, redox reactions, periodicity, s- and p-block chemistry, equilibrium, nuclear chemistry, and organic foundations.",
+    chapters: [
+      { number: 1, title: "Some Basic Concepts of Chemistry" },
+      { number: 2, title: "Introduction to Analytical Chemistry" },
+      { number: 3, title: "Basic Analytical Techniques" },
+      { number: 4, title: "Structure of Atom" },
+      { number: 5, title: "Chemical Bonding" },
+      { number: 6, title: "Redox Reactions" },
+      { number: 7, title: "Modern Periodic Table" },
+      { number: 8, title: "Elements of Group 1 and 2" },
+      { number: 9, title: "Elements of Group 13, 14 and 15" },
+      { number: 10, title: "States of Matter" },
+      { number: 11, title: "Adsorption and Colloids" },
+      { number: 12, title: "Chemical Equilibrium" },
+      { number: 13, title: "Nuclear Chemistry and Radioactivity" },
+      { number: 14, title: "Basic Principles of Organic Chemistry" },
+      { number: 15, title: "Hydrocarbons" },
+      { number: 16, title: "Chemistry in Everyday Life" },
+    ],
+  },
+  {
+    id: "subj-sci-biology",
+    slug: "sci-biology",
+    stream: "science",
+    name: "Biology",
+    code: "56",
+    boardCode: "MSBSHSE",
+    academicYear: "2025-26",
+    standard: "Class 11 (FYJC)",
+    isElective: true,
+    active: true,
+    description:
+      "Biological systematics, plant and animal kingdoms, cytology, biomolecules, cell division, plant anatomy, bioenergetics, and human physiology.",
+    chapters: [
+      { number: 1, title: "Living World" },
+      { number: 2, title: "Systematics of Living Organisms" },
+      { number: 3, title: "Kingdom Plantae" },
+      { number: 4, title: "Kingdom Animalia" },
+      { number: 5, title: "Cell Structure and Organization" },
+      { number: 6, title: "Biomolecules" },
+      { number: 7, title: "Cell Division" },
+      { number: 8, title: "Plant Tissues and Anatomy" },
+      { number: 9, title: "Morphology of Flowering Plants" },
+      { number: 10, title: "Animal Tissue" },
+      { number: 11, title: "Study of Animal Type: Cockroach" },
+      { number: 12, title: "Photosynthesis" },
+      { number: 13, title: "Respiration and Energy Transfer" },
+      { number: 14, title: "Human Nutrition" },
+      { number: 15, title: "Excretion and Osmoregulation" },
+      { number: 16, title: "Skeleton and Movement" },
+    ],
+  },
+  {
+    id: "subj-sci-mathematics",
+    slug: "sci-mathematics",
+    stream: "science",
+    name: "Mathematics and Statistics",
+    code: "40",
+    boardCode: "MSBSHSE",
+    academicYear: "2025-26",
+    standard: "Class 11 (FYJC)",
+    isElective: true,
+    active: true,
+    description:
+      "Trigonometry, matrices, coordinate geometry, conic sections, complex numbers, combinatorics, sequences, limits, continuity, differentiation, and probability.",
+    chapters: [
+      { number: 1, title: "Angle and Its Measurement" },
+      { number: 2, title: "Trigonometry - I" },
+      { number: 3, title: "Trigonometry - II" },
+      { number: 4, title: "Determinants and Matrices" },
+      { number: 5, title: "Straight Line" },
+      { number: 6, title: "Circle" },
+      { number: 7, title: "Conic Sections" },
+      { number: 8, title: "Measures of Dispersion" },
+      { number: 9, title: "Probability" },
+      { number: 10, title: "Complex Numbers" },
+      { number: 11, title: "Sequences and Series" },
+      { number: 12, title: "Permutations and Combination" },
+      { number: 13, title: "Methods of Induction and Binomial Theorem" },
+      { number: 14, title: "Sets and Relations" },
+      { number: 15, title: "Functions" },
+      { number: 16, title: "Limits" },
+      { number: 17, title: "Continuity" },
+      { number: 18, title: "Differentiation" },
+    ],
+  },
+
+  // ========================= COMMERCE =========================
+  {
+    id: "subj-com-accountancy",
+    slug: "com-accountancy",
+    stream: "commerce",
+    name: "Book-Keeping and Accountancy",
+    code: "50",
+    boardCode: "MSBSHSE",
+    academicYear: "2025-26",
+    standard: "Class 11 (FYJC)",
+    isElective: false,
+    active: true,
+    description:
+      "Accounting concepts, double-entry principles, journalizing, ledger posting, subsidiary books, bank reconciliation, depreciation, error rectification, and final accounts.",
+    chapters: [
+      { number: 1, title: "Introduction to Book-Keeping and Accountancy" },
+      { number: 2, title: "Meaning and Fundamentals of Double Entry Book-Keeping" },
+      { number: 3, title: "Journal" },
+      { number: 4, title: "Ledger" },
+      { number: 5, title: "Subsidiary Books" },
+      { number: 6, title: "Bank Reconciliation Statement" },
+      { number: 7, title: "Depreciation" },
+      { number: 8, title: "Rectification of Errors" },
+      { number: 9, title: "Final Accounts of a Proprietary Concern" },
+      { number: 10, title: "Single Entry System" },
+    ],
+  },
+  {
+    id: "subj-com-ocm",
+    slug: "com-ocm",
+    stream: "commerce",
+    name: "Organisation of Commerce and Management",
+    code: "51",
+    boardCode: "MSBSHSE",
+    academicYear: "2025-26",
+    standard: "Class 11 (FYJC)",
+    isElective: false,
+    active: true,
+    description:
+      "Nature of commerce, internal and international trade, small-scale enterprises, private and public sector organizations, support institutions, and management principles.",
+    chapters: [
+      { number: 1, title: "Introduction of Commerce and Business" },
+      { number: 2, title: "Trade" },
+      { number: 3, title: "Small Scale Industry and Business" },
+      { number: 4, title: "Forms of Business Organisation - I" },
+      { number: 5, title: "Forms of Business Organisation - II" },
+      { number: 6, title: "Institutes Supporting Business" },
+      { number: 7, title: "Business Environment" },
+      { number: 8, title: "Introduction to Management" },
+    ],
+  },
+  {
+    id: "subj-com-economics",
+    slug: "com-economics",
+    stream: "commerce",
+    name: "Economics",
+    code: "49",
+    boardCode: "MSBSHSE",
+    academicYear: "2025-26",
+    standard: "Class 11 (FYJC)",
+    isElective: false,
+    active: true,
+    description:
+      "Micro- and macroeconomic foundations, evolution of money, statistical partition values, Maharashtra's economy, rural development, demographics, and post-1991 economic policy.",
+    chapters: [
+      { number: 1, title: "Basic Concepts in Economics" },
+      { number: 2, title: "Money" },
+      { number: 3, title: "Partition Values" },
+      { number: 4, title: "The Economy of Maharashtra" },
+      { number: 5, title: "Rural Development in India" },
+      { number: 6, title: "Population in India" },
+      { number: 7, title: "Unemployment in India" },
+      { number: 8, title: "Poverty in India" },
+      { number: 9, title: "Economic Policy of India Since 1991" },
+      { number: 10, title: "Economic Planning in India" },
+    ],
+  },
+  {
+    id: "subj-com-sp",
+    slug: "com-sp",
+    stream: "commerce",
+    name: "Secretarial Practice",
+    code: "52",
+    boardCode: "MSBSHSE",
+    academicYear: "2025-26",
+    standard: "Class 11 (FYJC)",
+    isElective: true,
+    active: true,
+    description:
+      "Role of company secretary, joint stock company incorporation, MOA & AOA, membership, directors and KMP, company meetings, and statutory corporate correspondence.",
+    chapters: [
+      { number: 1, title: "Secretary" },
+      { number: 2, title: "Joint Stock Company" },
+      { number: 3, title: "Formation of a Company" },
+      { number: 4, title: "Documents Related to Formation of a Company" },
+      { number: 5, title: "Members of a Company" },
+      { number: 6, title: "Directors and Key Managerial Personnel of a Company" },
+      { number: 7, title: "Company Meetings - I" },
+      { number: 8, title: "Company Meetings - II" },
+      { number: 9, title: "Business Communication Skills of Secretary" },
+      { number: 10, title: "Correspondence with Directors" },
+      { number: 11, title: "Correspondence with Banks" },
+      { number: 12, title: "Correspondence with Statutory Authorities" },
+    ],
+  },
+  {
+    id: "subj-com-mathematics",
+    slug: "com-mathematics",
+    stream: "commerce",
+    name: "Mathematics and Statistics",
+    code: "88",
+    boardCode: "MSBSHSE",
+    academicYear: "2025-26",
+    standard: "Class 11 (FYJC)",
+    isElective: true,
+    active: true,
+    description:
+      "Sets, functions, matrices, locus, calculus derivatives for commerce, partition values, dispersion, skewness, bivariate correlation, probability, and linear inequations.",
+    chapters: [
+      { number: 1, title: "Sets and Relations" },
+      { number: 2, title: "Functions" },
+      { number: 3, title: "Complex Numbers" },
+      { number: 4, title: "Sequences and Series" },
+      { number: 5, title: "Locus and Straight Line" },
+      { number: 6, title: "Determinants and Matrices" },
+      { number: 7, title: "Limits" },
+      { number: 8, title: "Continuity" },
+      { number: 9, title: "Differentiation" },
+      { number: 10, title: "Partition Values" },
+      { number: 11, title: "Measures of Dispersion" },
+      { number: 12, title: "Skewness" },
+      { number: 13, title: "Bivariate Frequency Distribution and Chi-Square" },
+      { number: 14, title: "Correlation" },
+      { number: 15, title: "Permutations and Combinations" },
+      { number: 16, title: "Probability" },
+      { number: 17, title: "Linear Inequations" },
+      { number: 18, title: "Commercial Arithmetic: Percentage, Profit & Brokerage" },
+    ],
+  },
+
+  // ========================= ARTS =========================
+  {
+    id: "subj-arts-history",
+    slug: "arts-history",
+    stream: "arts",
+    name: "History",
+    code: "38",
+    boardCode: "MSBSHSE",
+    academicYear: "2025-26",
+    standard: "Class 11 (FYJC)",
+    isElective: false,
+    active: true,
+    description:
+      "Neolithic agriculture, Harappan urbanism, Vedic & Mahajanapada polities, Mauryan & post-Mauryan empires, peninsular kingdoms, medieval sultanates, Mughals, and Maratha Swarajya.",
+    chapters: [
+      { number: 1, title: "First Farmers" },
+      { number: 2, title: "First Cities of India" },
+      { number: 3, title: "Chalcolithic Villages in India" },
+      { number: 4, title: "Vedic Period" },
+      { number: 5, title: "Janapadas and Republics" },
+      { number: 6, title: "Second Urbanisation in India" },
+      { number: 7, title: "India and Iran (Persia)" },
+      { number: 8, title: "India during Mauryan Period" },
+      { number: 9, title: "Post Mauryan India" },
+      { number: 10, title: "Changing Times" },
+      { number: 11, title: "Kingdoms in South India" },
+      { number: 12, title: "India, Nations in the Northwest and China" },
+      { number: 13, title: "India, Sri Lanka and Southeast Asia" },
+      { number: 14, title: "Delhi Sultanate, Vijayanagar and Bahamani Kingdom" },
+      { number: 15, title: "India during Mughal Period" },
+      { number: 16, title: "Swarajya to Empire (Maratha Period)" },
+    ],
+  },
+  {
+    id: "subj-arts-geography",
+    slug: "arts-geography",
+    stream: "arts",
+    name: "Geography",
+    code: "39",
+    boardCode: "MSBSHSE",
+    academicYear: "2025-26",
+    standard: "Class 11 (FYJC)",
+    isElective: false,
+    active: true,
+    description:
+      "Endogenic earth movements, weathering and mass wasting, geomorphic erosion, world climatic regions, climate change, oceanography, Indian Ocean geopolitics, biomes, and hazards.",
+    chapters: [
+      { number: 1, title: "Earth Movements" },
+      { number: 2, title: "Weathering and Mass Wasting" },
+      { number: 3, title: "Agents of Erosion" },
+      { number: 4, title: "Climatic Regions" },
+      { number: 5, title: "Global Climate Change" },
+      { number: 6, title: "Ocean Resources" },
+      { number: 7, title: "Indian Ocean - Relief and Strategic Importance" },
+      { number: 8, title: "Biomes" },
+      { number: 9, title: "Disaster Management" },
+    ],
+  },
+  {
+    id: "subj-arts-political-science",
+    slug: "arts-political-science",
+    stream: "arts",
+    name: "Political Science",
+    code: "42",
+    boardCode: "MSBSHSE",
+    academicYear: "2025-26",
+    standard: "Class 11 (FYJC)",
+    isElective: false,
+    active: true,
+    description:
+      "Sovereignty and the state, liberty, rights, equality, justice, constitutionalism, electoral representation, judiciary, public administration, and post-1945 world order.",
+    chapters: [
+      { number: 1, title: "The State" },
+      { number: 2, title: "Liberty and Rights" },
+      { number: 3, title: "Equality and Justice" },
+      { number: 4, title: "Constitutional Government" },
+      { number: 5, title: "Concept of Representation" },
+      { number: 6, title: "Role of the Judiciary" },
+      { number: 7, title: "Public Administration" },
+      { number: 8, title: "Development Administration" },
+      { number: 9, title: "The World Since 1945 - I" },
+      { number: 10, title: "The World Since 1945 - II" },
+    ],
+  },
+  {
+    id: "subj-arts-psychology",
+    slug: "arts-psychology",
+    stream: "arts",
+    name: "Psychology",
+    code: "48",
+    boardCode: "MSBSHSE",
+    academicYear: "2025-26",
+    standard: "Class 11 (FYJC)",
+    isElective: true,
+    active: true,
+    description:
+      "Evolution and branches of scientific psychology, concept of self, lifespan human development, mental well-being, stress dynamics, biological nervous system, and human memory.",
+    chapters: [
+      { number: 1, title: "Story of Psychology" },
+      { number: 2, title: "Branches of Psychology" },
+      { number: 3, title: "Self" },
+      { number: 4, title: "Human Development" },
+      { number: 5, title: "Healthy Me - Normal Me" },
+      { number: 6, title: "Stress" },
+      { number: 7, title: "Nervous System" },
+      { number: 8, title: "Memory" },
+    ],
+  },
+  {
+    id: "subj-arts-sociology",
+    slug: "arts-sociology",
+    stream: "arts",
+    name: "Sociology",
+    code: "45",
+    boardCode: "MSBSHSE",
+    academicYear: "2025-26",
+    standard: "Class 11 (FYJC)",
+    isElective: true,
+    active: true,
+    description:
+      "Emergence of sociology, classical Western and Indian sociologists, community and association, social institutions, culture, socialization, stratification, and social change.",
+    chapters: [
+      { number: 1, title: "Introduction to Sociology" },
+      { number: 2, title: "Contribution of Western and Indian Sociologists" },
+      { number: 3, title: "Basic Concepts in Sociology" },
+      { number: 4, title: "Social Institutions" },
+      { number: 5, title: "Culture" },
+      { number: 6, title: "Socialization" },
+      { number: 7, title: "Social Stratification" },
+      { number: 8, title: "Social Change" },
+    ],
+  },
+];
+

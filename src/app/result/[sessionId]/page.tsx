@@ -4,10 +4,21 @@ import { use, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
-import { Check, RotateCcw, Share2 } from "lucide-react";
+import {
+  ArrowRight,
+  Check,
+  KeyRound,
+  MailOpen,
+  RotateCcw,
+  Share2,
+} from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/Button";
+import {
+  ChoiceMapStep,
+  SeniorChoiceMap,
+} from "@/components/senior/SeniorChoiceMap";
 import { GameplayReport } from "@/lib/types";
 import { useGameSession } from "@/lib/useGameSession";
 
@@ -19,9 +30,21 @@ export default function ResultReportPage({ params }: PageProps) {
   const resolvedParams = use(params);
   const router = useRouter();
   const prefersReducedMotion = useReducedMotion();
-  const { startFreshSession } = useGameSession();
+  const { startFreshSession, trackEvent } = useGameSession();
 
   const [report, setReport] = useState<GameplayReport | null>(null);
+  const [choiceMapSteps, setChoiceMapSteps] = useState<ChoiceMapStep[]>([]);
+  const [seventhDoor, setSeventhDoor] = useState<{
+    unlocked: boolean;
+    completed: boolean;
+    choiceLabel: string | null;
+  }>({ unlocked: false, completed: false, choiceLabel: null });
+  const [hiddenLetter, setHiddenLetter] = useState<{
+    unlocked: boolean;
+    read: boolean;
+  }>({ unlocked: false, read: false });
+  const [letterOpen, setLetterOpen] = useState(false);
+
   const [isLoading, setIsLoading] = useState(true);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
@@ -34,6 +57,16 @@ export default function ResultReportPage({ params }: PageProps) {
         const res = await fetch(`/api/result/${resolvedParams.sessionId}`);
         const data = (await res.json()) as {
           report?: GameplayReport;
+          choiceMapSteps?: ChoiceMapStep[];
+          seventhDoorStatus?: {
+            unlocked: boolean;
+            completed: boolean;
+            choiceLabel: string | null;
+          };
+          hiddenLetterStatus?: {
+            unlocked: boolean;
+            read: boolean;
+          };
           error?: string;
         };
         if (!res.ok || !data.report) {
@@ -44,6 +77,16 @@ export default function ResultReportPage({ params }: PageProps) {
         }
         if (active) {
           setReport(data.report);
+          setChoiceMapSteps(data.choiceMapSteps || []);
+          if (data.seventhDoorStatus) {
+            setSeventhDoor(data.seventhDoorStatus);
+          }
+          if (data.hiddenLetterStatus) {
+            setHiddenLetter(data.hiddenLetterStatus);
+            if (data.hiddenLetterStatus.read) {
+              setLetterOpen(true);
+            }
+          }
         }
       } catch (err: unknown) {
         if (active) {
@@ -60,6 +103,16 @@ export default function ResultReportPage({ params }: PageProps) {
       active = false;
     };
   }, [resolvedParams.sessionId]);
+
+  const handleOpenHiddenLetter = async () => {
+    setLetterOpen(true);
+    if (!hiddenLetter.read) {
+      setHiddenLetter((prev) => ({ ...prev, read: true }));
+      await trackEvent(6, "hidden_letter_read", {
+        discoveredVia: "dossier_correspondence",
+      });
+    }
+  };
 
   const handleShare = async () => {
     if (!report) return;
@@ -144,7 +197,7 @@ export default function ResultReportPage({ params }: PageProps) {
 
               <div className="relative z-10 space-y-8">
                 <div className="flex flex-wrap items-center justify-between gap-3 text-[10px] uppercase tracking-[0.26em] text-[#A89F93] border-b border-[#FAF7F2]/12 pb-4">
-                  <span>THE UNWRITTEN · PERSONAL DOSSIER</span>
+                  <span>THE UNWRITTEN · SENIOR NARRATIVE DOSSIER</span>
                   <span>
                     Prepared for{" "}
                     <strong className="text-[#FAF7F2] font-medium">
@@ -225,6 +278,96 @@ export default function ResultReportPage({ params }: PageProps) {
                 </Button>
               </div>
             </div>
+
+            {/* OPTIONAL SEVENTH DOOR THRESHOLD & DISCOVERABLE HIDDEN LETTER */}
+            {(seventhDoor.unlocked || hiddenLetter.unlocked) && (
+              <section className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                {seventhDoor.unlocked && (
+                  <div className="p-6 bg-[#141210] text-[#FAF7F2] border border-[#3E3730] rounded-sm flex flex-col justify-between space-y-4">
+                    <div className="space-y-2">
+                      <span className="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.24em] text-[#C8B28E]">
+                        <KeyRound className="w-3.5 h-3.5" />
+                        {seventhDoor.completed
+                          ? "Threshold VII Inscribed"
+                          : "Threshold VII Unlocked"}
+                      </span>
+                      <h2 className="font-serif text-2xl text-[#FAF7F2]">
+                        The Seventh Door
+                      </h2>
+                      <p className="text-xs text-[#D6CEC0] leading-relaxed">
+                        {seventhDoor.completed
+                          ? `You entered the unindexed chamber and recorded your closing gesture: "${seventhDoor.choiceLabel}".`
+                          : "Because you examined subtle archival clues during your journey, an unindexed seventh chamber stands unlocked behind the sixth horizon."}
+                      </p>
+                    </div>
+                    {!seventhDoor.completed && (
+                      <div>
+                        <Link href="/play/7">
+                          <Button variant="ivory" size="sm" className="group">
+                            <span>Enter The Seventh Door</span>
+                            <ArrowRight className="w-3.5 h-3.5 ml-2 transition-transform group-hover:translate-x-1" />
+                          </Button>
+                        </Link>
+                      </div>
+                    )}
+                  </div>
+                )}
+
+                {hiddenLetter.unlocked && (
+                  <div className="p-6 bg-[#F3EDE2] text-[#1C1917] border border-[#CFC5B4] rounded-sm flex flex-col justify-between space-y-4">
+                    <div className="space-y-2">
+                      <span className="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.24em] text-[#545E4E] font-semibold">
+                        <MailOpen className="w-3.5 h-3.5" />
+                        Discoverable Correspondence
+                      </span>
+                      <h2 className="font-serif text-2xl text-[#1C1917]">
+                        The Archivist&apos;s Hidden Letter
+                      </h2>
+                      {!letterOpen ? (
+                        <p className="text-xs text-[#57524C] leading-relaxed">
+                          Tucked inside the lining of the dossier is a folded
+                          sheet of cotton vellum unlocked by the clues you
+                          inspected.
+                        </p>
+                      ) : (
+                        <blockquote className="text-xs sm:text-sm font-serif italic text-[#1C1917] leading-relaxed border-l-2 border-[#545E4E] pl-3.5 py-1">
+                          &ldquo;To the traveler who paused to look closer: we
+                          built these six rooms not to measure speed, nor to
+                          grade obedience, but to see who still notices quiet
+                          things when nobody instructs them to. Keep that
+                          habit—it is rarer than certainty.&rdquo;
+                          <footer className="not-italic font-sans text-[10px] uppercase tracking-[0.2em] text-[#8A8178] mt-2">
+                            — Unsigned Folio Margin, Room II
+                          </footer>
+                        </blockquote>
+                      )}
+                    </div>
+                    {!letterOpen && (
+                      <div>
+                        <Button
+                          type="button"
+                          variant="secondary"
+                          size="sm"
+                          onClick={() => void handleOpenHiddenLetter()}
+                        >
+                          Unseal Hidden Letter
+                        </Button>
+                      </div>
+                    )}
+                  </div>
+                )}
+              </section>
+            )}
+
+            {/* VISUAL CHOICE MAP */}
+            {choiceMapSteps.length > 0 && (
+              <section className="space-y-4">
+                <SeniorChoiceMap
+                  steps={choiceMapSteps}
+                  seventhDoor={seventhDoor}
+                />
+              </section>
+            )}
 
             {/* SECTION I: Strictly Factual Gameplay Results */}
             <section className="space-y-4">
@@ -441,7 +584,7 @@ export default function ResultReportPage({ params }: PageProps) {
               <p className="text-xs text-[#57524C] max-w-xl mx-auto leading-relaxed pt-2 border-t border-[#DDD4C5]">
                 <strong>Methodological Disclaimer:</strong> THE UNWRITTEN is a
                 work of interactive narrative fiction. Archetypes and inferred
-                tendencies reflect patterns within six fictional game chapters
+                tendencies reflect patterns within fictional game chapters
                 only—they do not measure IQ, mental health, clinical traits, or
                 real-world psychological diagnoses.
               </p>
