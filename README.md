@@ -1,135 +1,98 @@
-# THE UNWRITTEN — Premium Interactive Narrative Game
+# THE UNWRITTEN
 
-> *"Every choice leaves a trace. Every story reveals something."*
+> *"Every choice leaves a trace."*
 
-An elegant, mobile-first interactive narrative fiction experience designed for visitors arriving from Instagram Story links. Players journey through six distinct narrative chapters, make decisions, investigate mysteries, solve puzzles, explore fictional environments, and receive a deterministic, shareable personal gameplay dossier.
+**THE UNWRITTEN** (`https://thegameunwritten.vercel.app/`) is an editorial interactive narrative experience and behavioral exploration game built with Next.js App Router, TypeScript, Tailwind CSS v4, Framer Motion, Zod, and Supabase PostgreSQL + Auth.
 
----
+The application consists of two strictly separated interfaces sharing a single hardened backend:
 
-## Architecture & Technology Stack
-
-- **Framework:** Next.js 16 (App Router) with React 19 and TypeScript
-- **Styling:** Tailwind CSS v4 with bespoke Apple/editorial design tokens
-- **Database:** Supabase PostgreSQL with Row Level Security (RLS)
-- **Authentication:** Supabase Auth + Server-side Allowlist for Admin access
-- **State & Motion:** Framer Motion for subtle transitions, native Canvas Confetti
-- **Validation:** Zod schemas for all client and server payloads
-- **Icons:** Lucide React
+1. **Public Narrative Experience** — Full-bleed architectural hero composition, optional silhouette & consented signature, six interactive chapters with bespoke scene artwork and puzzle mechanics, deterministic personal monograph report, and transparent data-deletion governance.
+2. **Private Administrator Control Centre (`THE UNWRITTEN / CONTROL`)** — Separate authentication gate, layout, and analytical workspace restricted exclusively to the authorized curator via Supabase Auth + server-side allowlist + PostgreSQL Row-Level Security.
 
 ---
 
-## Key Routes
+## Route Architecture
 
-| Route | Purpose |
+### Public Experience
+| Route | Description |
 |---|---|
-| `/` | Landing page with editorial tagline, core pillars, and entrance CTA |
-| `/play` | Character presentation preference & voluntary player profile |
-| `/play/1` | **Chapter 01: The Last Train** (Social responsibility & urgency) |
-| `/play/2` | **Chapter 02: The Locked Room** (Environmental clue deduction & cipher) |
-| `/play/3` | **Chapter 03: The Unknown Message** (Curiosity & uncertainty response) |
-| `/play/4` | **Chapter 04: The Empty Canvas** (Creative composition & aesthetic preference) |
-| `/play/5` | **Chapter 05: The Final Ten Seconds** (Timed logic challenge & composure) |
-| `/play/6` | **Chapter 06: The Unknown World** (Immersive sanctuary exploration) |
-| `/result/[sessionId]` | Deterministic Personal Dossier & Screenshot-ready share card |
-| `/privacy` | Methodological and ethical disclosure (zero covert tracking) |
-| `/curator/login` | Secure administrator / curator access portal |
-| `/curator` | Live database telemetry, KPIs, chapter drop-off funnel, puzzle stats |
-| `/curator/players` | Complete player directory (registered & anonymous sessions) |
-| `/curator/players/[id]` | Deep chronological event timeline, choices, & puzzle precision |
+| `/` | Full-screen cinematic threshold, subtle parallax monograph plate, and chapter folio index |
+| `/play` | Silhouette preference (`HIM`, `HER`, or `Unspecified`), optional consented player signature, anonymous mode, and resume-run banner |
+| `/play/1` | **Chapter 01: The Last Train** — Urgency, observation, and social regard on Platform 4 |
+| `/play/2` | **Chapter 02: The Locked Room** — Interactive rotunda clues & four-wheel brass cipher (`0745`) |
+| `/play/3` | **Chapter 03: The Unknown Message** — Signal trace, perimeter sweep, and carrier response |
+| `/play/4` | **Chapter 04: The Empty Canvas** — Sculptural vector composition, ground tone, and spatial balance |
+| `/play/5` | **Chapter 05: The Final Ten Seconds** — Live ten-second chronometer & relational pressure relay |
+| `/play/6` | **Chapter 06: The Unknown World** — Four fictional horizons, relic selection, and first-hour act |
+| `/result/[sessionId]` | Token-protected personal monograph separating factual telemetry, explicit preferences, and tentative in-story tendencies |
+| `/privacy` | Data governance disclosure & interactive Personal-Data Deletion Request form |
+
+### Private Control Centre (`THE UNWRITTEN / CONTROL`)
+| Route | Description |
+|---|---|
+| `/admin/login` | Supabase Auth email + password gate (no public signup) |
+| `/admin/dashboard` | Real persisted KPIs, chapter progression/drop-off summary, and storage diagnostics (`/admin` redirects here) |
+| `/admin/players` | Searchable, filterable, sortable, paginated directory of consented players |
+| `/admin/players/[id]` | Complete player profile, multi-session switcher, chapter progress, clues, puzzles, preferences, and report |
+| `/admin/sessions` | Searchable, filterable, paginated table of all registered and anonymous game sessions |
+| `/admin/sessions/[id]` | Chronological `gameplay_events` timeline & JSON payload inspector |
+| `/admin/analytics` | Empirical chapter engagement/drop-off charts, chapter durations, choice shares, puzzle accuracy, and UTM attribution |
+| `/admin/settings` | Curator session controls, RLS/environment health diagnostics, and deletion requests queue |
+
+*(Legacy `/curator/*` URLs automatically redirect to `/admin/*` via `src/proxy.ts`.)*
 
 ---
 
-## Environment Variables Setup
+## Database & Security Setup (Supabase)
 
-Copy `.env.example` to `.env.local`:
+### 1. Apply the SQL Schema & Row-Level Security
+1. Open your [Supabase Dashboard](https://supabase.com/dashboard) -> **SQL Editor** -> **New query**.
+2. Paste the contents of [`supabase/schema.sql`](./supabase/schema.sql) (also mirrored in `supabase/migrations/20261103000001_master_schema_and_rls.sql`) and click **Run**.
+3. This idempotently provisions:
+   - Tables: `players`, `game_sessions`, `gameplay_events`, `player_preferences`, and `deletion_requests`
+   - Indexes on foreign keys, timestamps, statuses, event types, and campaign sources
+   - Strict RLS blocking anonymous direct `SELECT` enumeration while granting full analytical access to `service_role` or the authenticated curator JWT (`anishpatil146@gmail.com`)
+   - Token-verified `SECURITY DEFINER` RPCs (`rpc_upsert_session`, `rpc_submit_profile`, `rpc_record_event`, `rpc_record_preference`, `rpc_get_session_dossier`, `rpc_submit_deletion_request`)
 
-```bash
-cp .env.example .env.local
-```
+### 2. Provision the Single Administrator Account in Supabase Auth
+Passwords are never hardcoded in source code or environment files. Create or manage the curator password directly in Supabase Auth:
+1. In your Supabase Dashboard, open **Authentication** -> **Users**.
+2. Click **Add user** -> **Create new user**.
+3. Enter Email: `anishpatil146@gmail.com`, choose a strong password, enable **Auto Confirm User**, and click **Create user**.
+4. In **Authentication** -> **Providers** -> **Email**, ensure **Enable Email provider** is enabled (you may disable public signups if desired; the app exposes no signup UI and rejects all non-allowlisted emails with `403`).
 
-Configure your credentials:
+---
+
+## Environment Variables
+
+Copy `.env.example` to `.env.local` for local development (never commit `.env.local`):
 
 ```ini
-# Supabase Configuration
-NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-or-publishable-key
-NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=your-anon-or-publishable-key
+NEXT_PUBLIC_SUPABASE_URL=https://your-project-id.supabase.co
+NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=your-supabase-publishable-or-anon-key
 
-# Server-Only Supabase Service Role Key (Keep secret)
+# Optional recommended server-only key for privileged admin queries (never expose to client)
 SUPABASE_SERVICE_ROLE_KEY=your-supabase-service-role-key
 
-# Administrator Email Allowlist (comma-separated)
-ADMIN_EMAILS=admin@theunwritten.game,owner@theunwritten.game
+# Comma-separated list of authorized administrator emails
+ADMIN_EMAILS=anishpatil146@gmail.com
 ```
 
----
-
-## Supabase Database Installation
-
-1. Open your [Supabase Dashboard](https://supabase.com/dashboard).
-2. Navigate to **SQL Editor** -> **New query**.
-3. Open `supabase/schema.sql` from this repository.
-4. Paste and execute the SQL query.
-5. The script creates:
-   - `players` (Voluntary profile records)
-   - `game_sessions` (Session tokens, UTM tracking, chapter tracking)
-   - `gameplay_events` (Chronological event stream)
-   - `player_preferences` (Aesthetic and environment choices)
-   - Performance indexes and Row Level Security policies
+Configure the same variables in **Vercel -> Project Settings -> Environment Variables** before deploying to production.
 
 ---
 
-## Local Development
-
-Install dependencies:
+## Local Development & Verification
 
 ```bash
 npm install
-```
-
-Start the local development server:
-
-```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Quality checks:
 
-To test Instagram attribution parameters:
+```bash
+npm run lint
+npx tsc --noEmit
+npm run build
 ```
-http://localhost:3000/?utm_source=instagram&utm_medium=story&utm_campaign=the_unwritten
-```
-
----
-
-## Administrator / Curator Access
-
-1. Ensure your email is listed in `ADMIN_EMAILS` inside `.env.local`.
-2. Visit `/curator/login` (discreet private address, not linked publicly in the footer).
-3. Enter your authorized email address.
-4. You will be authenticated and redirected to `/curator`.
-5. Review live telemetry, session completion funnels, and player dossiers.
-
----
-
-## Vercel Deployment
-
-Deploy with the Vercel CLI or Git integration:
-
-1. Push your repository to GitHub or GitLab.
-2. Import the project into Vercel.
-3. In **Settings -> Environment Variables**, add:
-   - `NEXT_PUBLIC_SUPABASE_URL`
-   - `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`
-   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
-   - `SUPABASE_SERVICE_ROLE_KEY`
-   - `ADMIN_EMAILS`
-4. Deploy.
-
----
-
-## Privacy & Ethical Standards
-
-- **No Covert Fingerprinting:** No canvas hashing, battery tracking, or third-party marketing tags.
-- **Voluntary Profiles:** Players can play 100% anonymously.
-- **Non-Clinical Disclaimer:** Archetypes are transparent, deterministic game signals, not psychological diagnoses.

@@ -5,6 +5,7 @@ import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { ArrowRight, Radio, Search, Send } from "lucide-react";
 import { Button } from "@/components/Button";
 import { UnknownMessageArtwork } from "@/components/artwork/SceneArtwork";
+import { createStopwatch } from "@/lib/timing";
 import { EventType } from "@/lib/types";
 
 interface ChapterProps {
@@ -26,7 +27,7 @@ export function Chapter3UnknownMessage({
   onComplete,
 }: ChapterProps) {
   const prefersReducedMotion = useReducedMotion();
-  const mountTimeRef = useRef<number>(0);
+  const stopwatchRef = useRef(createStopwatch());
 
   const [tracedSender, setTracedSender] = useState(false);
   const [sweptPerimeter, setSweptPerimeter] = useState(false);
@@ -38,11 +39,10 @@ export function Chapter3UnknownMessage({
   const [sentMessageCopy, setSentMessageCopy] = useState<string | null>(null);
 
   useEffect(() => {
-    mountTimeRef.current = performance.now();
+    stopwatchRef.current.reset();
   }, []);
 
-  const getElapsedMs = () =>
-    Math.max(100, Math.round(performance.now() - mountTimeRef.current));
+  const getElapsedMs = () => stopwatchRef.current.elapsedMs(100);
 
   const handleTraceSender = async () => {
     if (tracedSender || finalOutcome) return;

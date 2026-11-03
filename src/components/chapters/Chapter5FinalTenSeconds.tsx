@@ -5,6 +5,7 @@ import { motion, useReducedMotion } from "framer-motion";
 import { ArrowRight, HelpCircle, Play, RotateCcw } from "lucide-react";
 import { Button } from "@/components/Button";
 import { VaultChronometerArtwork } from "@/components/artwork/SceneArtwork";
+import { createStopwatch } from "@/lib/timing";
 import { EventType } from "@/lib/types";
 
 interface Chapter5Props {
@@ -24,7 +25,7 @@ export function Chapter5FinalTenSeconds({
   onComplete,
 }: Chapter5Props) {
   const prefersReducedMotion = useReducedMotion();
-  const sequenceStartRef = useRef<number>(0);
+  const stopwatchRef = useRef(createStopwatch());
 
   const [phase, setPhase] = useState<"briefing" | "active" | "resolved">(
     "briefing"
@@ -73,7 +74,7 @@ export function Chapter5FinalTenSeconds({
   }, [phase, timeLeft, attempts, hintUsed, handleTimeout]);
 
   const startCountdown = () => {
-    sequenceStartRef.current = performance.now();
+    stopwatchRef.current.reset();
     setTimedOut(false);
     setSelectedValue(null);
     setTimeLeft(TOTAL_SECONDS);
@@ -94,10 +95,7 @@ export function Chapter5FinalTenSeconds({
   const handleSelectCandidate = async (val: number) => {
     if (phase !== "active") return;
 
-    const elapsedMs = Math.max(
-      120,
-      Math.round(performance.now() - sequenceStartRef.current)
-    );
+    const elapsedMs = stopwatchRef.current.elapsedMs(120);
     const nextAttempt = attempts + 1;
     const solved = val === CORRECT_ANSWER;
 
@@ -119,10 +117,7 @@ export function Chapter5FinalTenSeconds({
   };
 
   const handleProceed = async () => {
-    const elapsedMs =
-      sequenceStartRef.current > 0
-        ? Math.max(120, Math.round(performance.now() - sequenceStartRef.current))
-        : 0;
+    const elapsedMs = stopwatchRef.current.elapsedMs(120);
 
     await onTrackEvent("chapter_completed", {
       attempts,

@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getPublicSessionDossier } from "@/lib/storage";
+import { verifyAdminAccess } from "@/lib/admin-auth";
 import { evaluateReport } from "@/lib/scoring";
 
 interface RouteProps {
@@ -11,18 +12,34 @@ export async function GET(req: NextRequest, props: RouteProps) {
     const { sessionId } = await props.params;
     const cookieToken = req.cookies.get("the_unwritten_token")?.value;
 
-    const lookupTarget =
-      sessionId === "current" && cookieToken ? cookieToken : sessionId;
+    let authorizedDossier = cookieToken
+      ? await getPublicSessionDossier(cookieToken)
+      : null;
 
-    if (!lookupTarget) {
-      return NextResponse.json(
-        { error: "Session identifier is required." },
-        { status: 400 }
-      );
+    const matchesRequestedSession =
+      Boolean(authorizedDossier) &&
+      (sessionId === "current" || authorizedDossier?.session.id === sessionId);
+
+    let lookupKeyUsed = cookieToken || sessionId;
+
+    if (!matchesRequestedSession) {
+      // Allow the sole authenticated administrator to preview any session's public report
+      const adminAuth = await verifyAdminAccess();
+      if (!adminAuth.authorized) {
+        return NextResponse.json(
+          {
+            error:
+              "Forbidden: This personal dossier belongs to another browser session.",
+          },
+          { status: 403 }
+        );
+      }
+
+      authorizedDossier = await getPublicSessionDossier(sessionId);
+      lookupKeyUsed = sessionId;
     }
 
-    const dossier = await getPublicSessionDossier(lookupTarget);
-    if (!dossier) {
+    if (!authorizedDossier) {
       return NextResponse.json(
         { error: "No recorded gameplay session was found for this identifier." },
         { status: 404 }
@@ -30,16 +47,20 @@ export async function GET(req: NextRequest, props: RouteProps) {
     }
 
     const report = evaluateReport(
-      dossier.session.id,
-      dossier.playerDisplayName || "Anonymous Traveler",
-      dossier.events,
-      dossier.preferences,
-      dossier.session.completed_at || dossier.session.started_at,
-      dossier.session.character_presentation
+      authorizedDossier.session.id,
+      authorizedDossier.playerDisplayName || "Anonymous Traveler",
+      authorizedDossier.events,
+      authorizedDossier.preferences,
+      authorizedDossier.session.completed_at ||
+        authorizedDossier.session.started_at,
+      authorizedDossier.session.character_presentation
     );
 
-    if (!dossier.session.result_archetype && dossier.session.current_chapter >= 6) {
-      await getPublicSessionDossier(lookupTarget, report.archetype);
+    if (
+      !authorizedDossier.session.result_archetype &&
+      authorizedDossier.session.current_chapter >= 6
+    ) {
+      await getPublicSessionDossier(lookupKeyUsed, report.archetype);
     }
 
     return NextResponse.json({
