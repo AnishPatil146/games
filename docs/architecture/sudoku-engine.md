@@ -38,3 +38,4 @@ The Sudoku Engine (`src/lib/gameplay/sudoku-engine.ts`) guarantees that every ge
   - Physical keyboard: `1-9` for numbers/notes, `Backspace`/`Delete` to clear, arrow keys for navigation.
   - On-screen keypad: Touch-friendly 1-9 buttons, Erase, Notes toggle, Reset, Clue Hint.
 - **Authoritative Verification:** "Disengage Lock (Verify)" button runs full board validation against the reference solution and rules before emitting the `onComplete` callback.
+

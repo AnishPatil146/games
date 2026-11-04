@@ -5,47 +5,61 @@ import { motion } from "framer-motion";
 import {
   Clock,
   Key,
-  RotateCcw,
   CheckCircle2,
   Flame,
   DoorClosed,
   HelpCircle,
-  ShieldAlert,
+  Lightbulb,
+  LogOut,
 } from "lucide-react";
 import { ContextualPuzzleConfig } from "@/lib/storyboard/types";
 import { SudokuBoard } from "@/components/gameplay/SudokuBoard";
 import { ChessBoard } from "@/components/gameplay/ChessBoard";
 import { InteractiveMaze } from "@/components/gameplay/InteractiveMaze";
+import { FailureDebriefModal, FailureDebriefData } from "@/components/gameplay/FailureDebriefModal";
+import { ProgressiveHintsModal } from "@/components/gameplay/ProgressiveHintsModal";
+import { ExitConfirmationModal } from "@/components/gameplay/ExitConfirmationModal";
 
 interface PuzzleOverlayProps {
   config: ContextualPuzzleConfig;
   onSolve: (success: boolean, resultData: Record<string, unknown>) => void;
   onCancel?: () => void;
+  onFailAndRestart?: () => void;
+  roundId?: string;
 }
 
 export function ContextualPuzzleOverlay({
   config,
   onSolve,
   onCancel,
+  onFailAndRestart,
+  roundId = "solo_l1",
 }: PuzzleOverlayProps) {
   const [solved, setSolved] = useState<boolean | null>(null);
   const [feedback, setFeedback] = useState<string | null>(null);
   const [timeLeft, setTimeLeft] = useState<number | null>(
     config.timeLimitSeconds ?? null
   );
-  const [hasFailed, setHasFailed] = useState<boolean>(false);
   const [keypadInput, setKeypadInput] = useState<string>("");
+  const [failureDebrief, setFailureDebrief] = useState<FailureDebriefData | null>(null);
+  const [isExitModalOpen, setIsExitModalOpen] = useState<boolean>(false);
+  const [isHintsModalOpen, setIsHintsModalOpen] = useState<boolean>(false);
+  const [unlockedHintsCount, setUnlockedHintsCount] = useState<number>(0);
 
-  // Time expiration handler - strictly prevents auto-advancing to victory
+  // Time expiration handler - triggers formal failure debrief
   const handleTimeExpire = useCallback(() => {
-    setSolved(false);
-    setHasFailed(true);
-    setFeedback("TIME EXPIRED: Containment protocols activated. You must reset and retry.");
-  }, []);
+    setFailureDebrief({
+      roundTitle: config.title,
+      submittedAnswer: "Time Elapsed (0s remaining)",
+      correctAnswer: "Timely Submission within Protocol Window",
+      failureExplanation: "The chamber countdown expired before an authorized sequence could be confirmed.",
+      correctSolutionExplanation: "Swift deduction and decisive execution are required under high-pressure station protocols.",
+    });
+  }, [config.title]);
 
   // Timer countdown
   useEffect(() => {
-    if (timeLeft === null || timeLeft <= 0 || solved !== null || hasFailed) return;
+    if (timeLeft === null || timeLeft <= 0 || solved !== null || failureDebrief) return;
     const timer = setInterval(() => {
       setTimeLeft((prev) => {
         if (prev !== null && prev <= 1) {
@@ -57,17 +71,7 @@ export function ContextualPuzzleOverlay({
       });
     }, 1000);
     return () => clearInterval(timer);
-  }, [timeLeft, solved, hasFailed, handleTimeExpire]);
-
-  // Retry after failure
-  const handleRetry = () => {
-    setSolved(null);
-    setHasFailed(false);
-    setFeedback(null);
-    if (config.timeLimitSeconds) {
-      setTimeLeft(config.timeLimitSeconds);
-    }
-  };
+  }, [timeLeft, solved, failureDebrief, handleTimeExpire]);
 
   // ---------------------------------------------------------------------------
   // 1. FULL SUDOKU ENGINE
@@ -124,10 +128,10 @@ export function ContextualPuzzleOverlay({
   }
 
   // ---------------------------------------------------------------------------
-  // 4. KEYPAD COMBINATION
+  // 4. KEYPAD COMBINATION (One Final Submission Policy)
   // ---------------------------------------------------------------------------
   const handleKeypadPress = (val: string) => {
-    if (hasFailed || solved) return;
+    if (failureDebrief || solved) return;
     if (keypadInput.length < 4) {
       const next = keypadInput + val;
       setKeypadInput(next);
@@ -138,69 +142,89 @@ export function ContextualPuzzleOverlay({
           setFeedback("ACCESS GRANTED: Magnetic deadbolt disengages with a heavy hydraulic hiss.");
           setTimeout(() => onSolve(true, { code: next }), 1200);
         } else {
-          setFeedback("ACCESS DENIED: Sequence rejected. Tumblers reset.");
-          setTimeout(() => {
-            setKeypadInput("");
-            setFeedback(null);
-          }, 900);
+          // Failure on final 4th digit submission
+          setFailureDebrief({
+            roundTitle: config.title,
+            submittedAnswer: `Code: ${next}`,
+            correctAnswer: "0745 (Time Index)",
+            failureExplanation: "The magnetic deadbolt tumblers jammed. This sequence did not correspond to station records.",
+            correctSolutionExplanation: "The observation room records and the frozen wall chronometer confirm calibration locked at zero-seven-four-five (07:45).",
+          });
         }
       }
     }
   };
 
   // ---------------------------------------------------------------------------
-  // 5. THREE DOORS LOGICAL DEDUCTION
+  // 5. THREE DOORS LOGICAL DEDUCTION (One Final Submission Policy)
   // ---------------------------------------------------------------------------
   const handleDoorSelect = (doorKey: string) => {
-    if (hasFailed || solved) return;
+    if (failureDebrief || solved) return;
     const isCorrect = doorKey === config.solution.correctDoor;
     if (isCorrect) {
       setSolved(true);
       setFeedback("CORRECT: The Door of Chalk swings inward silently. The truth was concealed in the contradiction.");
       setTimeout(() => onSolve(true, { selectedDoor: doorKey }), 1300);
     } else {
-      setFeedback("WRONG DOOR: A piercing siren echoes through the stone archway! Electric charges seal the threshold.");
-      setHasFailed(true);
+      setFailureDebrief({
+        roundTitle: config.title,
+        submittedAnswer: `Selected: ${doorKey === "OAK" ? "Door of Oak" : "Door of Iron"}`,
+        correctAnswer: "Door of Chalk (White Door)",
+        failureExplanation: doorKey === "OAK"
+          ? "The Door of Oak claims the Iron Door is truthful, but Iron claims Chalk is truthful, creating a circular liar paradox."
+          : "The Door of Iron creates an unverified loop with the other portals.",
+        correctSolutionExplanation: "Only the Door of Chalk resolves the mutual paradox without contradiction by identifying Oak's assertion as false.",
+      });
     }
   };
 
   // ---------------------------------------------------------------------------
-  // 6. MEMORY RECALL (Artifact missing)
+  // 6. MEMORY RECALL (One Final Submission Policy)
   // ---------------------------------------------------------------------------
   const handlePropSelect = (propId: string) => {
-    if (hasFailed || solved) return;
+    if (failureDebrief || solved) return;
     const isCorrect = propId === config.solution.missingPropId;
     if (isCorrect) {
       setSolved(true);
       setFeedback("CORRECT: The brass mantel clock measured time that never transpired. Memory integrity validated.");
       setTimeout(() => onSolve(true, { identifiedProp: propId }), 1300);
     } else {
-      setFeedback("INCORRECT: That object was never removed from the display setting. Try again.");
-      setHasFailed(true);
+      setFailureDebrief({
+        roundTitle: config.title,
+        submittedAnswer: `Selected: ${propId}`,
+        correctAnswer: "Brass Mantel Clock",
+        failureExplanation: "This object remained on the study tables throughout the observation phase.",
+        correctSolutionExplanation: "The dual-escapement brass mantel clock was the only artifact removed from above the fireplace hearth.",
+      });
     }
   };
 
   // ---------------------------------------------------------------------------
-  // 7. INTERROGATION CONTRADICTION
+  // 7. INTERROGATION DEDUCTION (One Final Submission Policy)
   // ---------------------------------------------------------------------------
   const handleDeductionSelect = (optionId: string) => {
-    if (hasFailed || solved) return;
+    if (failureDebrief || solved) return;
     const isCorrect = optionId === config.solution.contradictionId;
     if (isCorrect) {
       setSolved(true);
-      setFeedback("CONTRADICTION EXPOSED: Halden claimed he locked the ledger at midnight, but the station log confirms the midnight train was delayed until 01:15!");
+      setFeedback("CONTRADICTION EXPOSED: Halden claimed he locked the ledger at midnight, but station logs confirm the midnight train was delayed until 01:15!");
       setTimeout(() => onSolve(true, { contradictionId: optionId }), 1500);
     } else {
-      setFeedback("That statement is logically consistent with earlier testimony. Look closer at the timeline.");
-      setHasFailed(true);
+      setFailureDebrief({
+        roundTitle: config.title,
+        submittedAnswer: `Flagged Statement: ${optionId}`,
+        correctAnswer: "Midnight Freight Train Arrival Claim",
+        failureExplanation: "This statement was logically consistent with auxiliary logs and contained no timeline contradiction.",
+        correctSolutionExplanation: "Halden claims he oversaw the midnight freight at 00:00, but official dispatcher records prove the freight was delayed until 01:15.",
+      });
     }
   };
 
   // ---------------------------------------------------------------------------
-  // 8. EMERGENCY DISPATCH / RESOURCE MATRIX
+  // 8. EMERGENCY DISPATCH (One Final Submission Policy)
   // ---------------------------------------------------------------------------
   const handleDispatchSelect = (sector: string) => {
-    if (hasFailed || solved) return;
+    if (failureDebrief || solved) return;
     const isCorrect =
       !config.solution.correctSector || sector === config.solution.correctSector;
     if (isCorrect) {
@@ -208,8 +232,13 @@ export function ContextualPuzzleOverlay({
       setFeedback(`CRITICAL DISPATCH CONFIRMED: Power redirected to ${sector}. Systems stabilizing.`);
       setTimeout(() => onSolve(true, { prioritizedSector: sector }), 1300);
     } else {
-      setFeedback(`POWER SURGE: Rerouting to ${sector} caused an auxiliary grid overload!`);
-      setHasFailed(true);
+      setFailureDebrief({
+        roundTitle: config.title,
+        submittedAnswer: `Prioritized: ${sector}`,
+        correctAnswer: "Sector C Reactor Coolant / Sector A ICU",
+        failureExplanation: "Rerouting power to non-critical auxiliary systems allowed core turbine thermal runaway.",
+        correctSolutionExplanation: "Core turbines redline at 94% heat. Immediate coolant routing was mandatory to prevent station decompression.",
+      });
     }
   };
 
@@ -220,8 +249,8 @@ export function ContextualPuzzleOverlay({
     setSolved(true);
     const msg =
       choiceId === "MEDICINE"
-        ? "You surrendered the antibiotics. Your personal reserves are depleted, but Mira's pulse strengthens."
-        : "You withheld the medicine. Survival requires ruthless calculation, but the moral weight lingers.";
+        ? "You surrendered the antibiotics. Personal supplies are depleted, but Mira's pulse strengthens."
+        : "You withheld the medicine. Survival requires cold calculation, but the moral weight lingers.";
     setFeedback(msg);
     setTimeout(() => onSolve(true, { moralDecision: choiceId }), 1500);
   };
@@ -231,14 +260,14 @@ export function ContextualPuzzleOverlay({
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 z-50 bg-black/90 backdrop-blur-xl flex items-center justify-center p-4 overflow-y-auto"
+      className="fixed inset-0 z-50 bg-black/90 backdrop-blur-xl flex items-center justify-center p-4 overflow-y-auto select-none"
     >
       <motion.div
         initial={{ scale: 0.95, y: 12 }}
         animate={{ scale: 1, y: 0 }}
         className="relative w-full max-w-xl bg-zinc-950 border-2 border-zinc-800 rounded-3xl p-6 md:p-8 shadow-2xl text-zinc-100 flex flex-col"
       >
-        {/* Header */}
+        {/* Header Bar */}
         <div className="flex items-center justify-between border-b border-zinc-800/80 pb-4 mb-5">
           <div className="flex items-center gap-2.5">
             <Key className="w-5 h-5 text-amber-500" />
@@ -247,43 +276,47 @@ export function ContextualPuzzleOverlay({
             </h3>
           </div>
 
-          {timeLeft !== null && (
-            <div
-              className={`flex items-center gap-1.5 px-3 py-1 rounded-full font-mono text-xs font-bold ${
-                timeLeft < 6
-                  ? "bg-red-950/80 border border-red-700 text-red-400 animate-pulse"
-                  : "bg-zinc-900 border border-zinc-800 text-amber-400"
-              }`}
+          <div className="flex items-center gap-2">
+            {/* 5-Hints Button */}
+            <button
+              type="button"
+              onClick={() => setIsHintsModalOpen(true)}
+              className="flex items-center gap-1.5 px-3 py-1 bg-amber-950/60 border border-amber-600/70 text-amber-300 rounded-lg hover:bg-amber-900/80 transition-colors cursor-pointer text-xs font-mono"
             >
-              <Clock className="w-3.5 h-3.5" />
-              <span>{timeLeft}s</span>
-            </div>
-          )}
+              <Lightbulb className="w-3.5 h-3.5 text-amber-400" />
+              <span>HINTS: {5 - unlockedHintsCount} / 5</span>
+            </button>
+
+            {timeLeft !== null && (
+              <div
+                className={`flex items-center gap-1.5 px-3 py-1 rounded-full font-mono text-xs font-bold ${
+                  timeLeft < 6
+                    ? "bg-red-950/80 border border-red-700 text-red-400 animate-pulse"
+                    : "bg-zinc-900 border border-zinc-800 text-amber-400"
+                }`}
+              >
+                <Clock className="w-3.5 h-3.5" />
+                <span>{timeLeft}s</span>
+              </div>
+            )}
+
+            {/* Exit Button */}
+            <button
+              type="button"
+              onClick={() => setIsExitModalOpen(true)}
+              className="flex items-center gap-1 px-2.5 py-1 bg-red-950/60 border border-red-800/70 text-red-300 rounded-lg hover:bg-red-900/80 transition-colors cursor-pointer text-xs font-mono"
+              title="Exit Investigation"
+            >
+              <LogOut className="w-3.5 h-3.5" />
+              <span>Exit</span>
+            </button>
+          </div>
         </div>
 
         {/* Instructions */}
         <p className="text-xs sm:text-sm font-sans text-zinc-300 mb-6 leading-relaxed bg-zinc-900/60 p-3.5 rounded-xl border border-zinc-800/60">
           {config.instructions}
         </p>
-
-        {/* Failure Retry Banner */}
-        {hasFailed && (
-          <div className="flex flex-col items-center justify-center p-4 mb-4 bg-red-950/80 border-2 border-red-700 rounded-xl text-center animate-shake">
-            <div className="flex items-center gap-2 text-red-400 font-bold font-mono text-sm mb-1">
-              <ShieldAlert className="w-5 h-5" />
-              <span>CHALLENGE FAILED</span>
-            </div>
-            <p className="text-xs text-red-200 mb-3">{feedback}</p>
-            <button
-              type="button"
-              onClick={handleRetry}
-              className="flex items-center gap-2 px-4 py-2 bg-red-800 hover:bg-red-700 text-white font-mono font-bold text-xs rounded-lg transition-colors cursor-pointer shadow-md"
-            >
-              <RotateCcw className="w-4 h-4" />
-              <span>RESET AND RETRY</span>
-            </button>
-          </div>
-        )}
 
         {/* Success Banner */}
         {solved && feedback && (
@@ -298,7 +331,7 @@ export function ContextualPuzzleOverlay({
         {/* ------------------------------------------------------------------- */}
 
         {/* 1. KEYPAD CODE */}
-        {config.type === "keypad_code" && !hasFailed && (
+        {config.type === "keypad_code" && !failureDebrief && (
           <div className="flex flex-col items-center gap-4">
             <div className="w-48 h-12 bg-black text-amber-400 rounded-xl flex items-center justify-center font-mono text-2xl tracking-[0.5em] font-bold shadow-inner border border-amber-900/60">
               {keypadInput.padEnd(4, "-")}
@@ -317,9 +350,8 @@ export function ContextualPuzzleOverlay({
               <button
                 type="button"
                 onClick={() => setKeypadInput("")}
-                className="h-11 col-span-2 rounded-lg bg-zinc-900 hover:bg-red-950/60 text-zinc-400 hover:text-red-400 font-mono text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-1 border border-zinc-700 transition-colors cursor-pointer"
+                className="h-11 col-span-2 rounded-lg bg-zinc-900 hover:bg-zinc-800 text-zinc-400 font-mono text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-1 border border-zinc-700 transition-colors cursor-pointer"
               >
-                <RotateCcw className="w-3.5 h-3.5" />
                 <span>Clear</span>
               </button>
             </div>
@@ -327,7 +359,7 @@ export function ContextualPuzzleOverlay({
         )}
 
         {/* 2. THREE DOORS */}
-        {config.type === "three_doors" && !hasFailed && (
+        {config.type === "three_doors" && !failureDebrief && (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
             {[
               { id: "OAK", label: "Door of Oak", plaque: '"The iron door speaks absolute truth."' },
@@ -348,7 +380,7 @@ export function ContextualPuzzleOverlay({
                   {door.plaque}
                 </div>
                 <div className="text-[11px] font-mono uppercase tracking-wider text-amber-400 font-bold">
-                  Open Door →
+                  Final Select →
                 </div>
               </button>
             ))}
@@ -356,7 +388,7 @@ export function ContextualPuzzleOverlay({
         )}
 
         {/* 3. MEMORY RECALL */}
-        {config.type === "memory_recall" && !hasFailed && (
+        {config.type === "memory_recall" && !failureDebrief && (
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
               { id: "prop_portrait", title: "Founder's Oil Portrait", desc: "Heavy mahogany frame with cracked varnish." },
@@ -375,7 +407,7 @@ export function ContextualPuzzleOverlay({
                 </div>
                 <div className="text-xs text-zinc-400 mt-1">{item.desc}</div>
                 <div className="text-[10px] font-mono text-amber-400/80 mt-2 uppercase font-bold">
-                  Select as Missing →
+                  Submit Missing Item →
                 </div>
               </button>
             ))}
@@ -383,7 +415,7 @@ export function ContextualPuzzleOverlay({
         )}
 
         {/* 4. INTERROGATION DEDUCTION */}
-        {config.type === "interrogation_deduction" && !hasFailed && (
+        {config.type === "interrogation_deduction" && !failureDebrief && (
           <div className="space-y-2.5">
             {[
               {
@@ -412,7 +444,7 @@ export function ContextualPuzzleOverlay({
                   {opt.text}
                 </span>
                 <span className="text-[10px] text-zinc-500 group-hover:text-amber-400/70 font-mono uppercase">
-                  Flag as Contradiction →
+                  Flag as Contradiction (Final) →
                 </span>
               </button>
             ))}
@@ -420,7 +452,7 @@ export function ContextualPuzzleOverlay({
         )}
 
         {/* 5. EMERGENCY DISPATCH */}
-        {config.type === "emergency_dispatch" && !hasFailed && (
+        {config.type === "emergency_dispatch" && !failureDebrief && (
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
               { id: "SECTOR_A_ICU", label: "Sector A: Life-Support ICU", load: "78% Vital", critical: true },
@@ -442,7 +474,7 @@ export function ContextualPuzzleOverlay({
                 </div>
                 <div className="text-xs font-mono text-zinc-400 mt-1">Status: {sec.load}</div>
                 <div className="text-[10px] font-mono text-amber-400 mt-2 font-bold uppercase">
-                  Reroute Priority Power →
+                  Commit Power Routing →
                 </div>
               </button>
             ))}
@@ -450,7 +482,7 @@ export function ContextualPuzzleOverlay({
         )}
 
         {/* 6. MORAL CHOICE */}
-        {config.type === "moral_dilemma" && !hasFailed && (
+        {config.type === "moral_dilemma" && !failureDebrief && (
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <button
               type="button"
@@ -461,7 +493,7 @@ export function ContextualPuzzleOverlay({
                 Surrender the Antibiotics
               </div>
               <p className="text-xs text-zinc-300 mb-3">
-                Save Mira from septic shock. Aarav continues with empty reserves.
+                Save Mira from septic shock. Personal reserves are depleted.
               </p>
               <span className="text-[11px] font-mono text-amber-400 font-bold uppercase">
                 Choose Altruism →
@@ -477,7 +509,7 @@ export function ContextualPuzzleOverlay({
                 Preserve Survival Kit
               </div>
               <p className="text-xs text-zinc-400 mb-3">
-                Prioritize the expedition objective. The mission cannot afford vulnerability.
+                Prioritize personal survival. The mission cannot afford vulnerability.
               </p>
               <span className="text-[11px] font-mono text-zinc-400 font-bold uppercase">
                 Choose Survival →
@@ -487,13 +519,48 @@ export function ContextualPuzzleOverlay({
         )}
 
         {/* Footer Hint */}
-        {config.hint && !hasFailed && (
+        {config.hint && !failureDebrief && (
           <div className="mt-5 pt-3 border-t border-zinc-800/80 flex items-center gap-2 text-xs text-zinc-500 font-mono">
             <HelpCircle className="w-3.5 h-3.5 text-zinc-400 shrink-0" />
             <span>Hint: {config.hint}</span>
           </div>
         )}
       </motion.div>
+
+      {/* Failure Debrief Modal (One Final Submission Policy) */}
+      {failureDebrief && (
+        <FailureDebriefModal
+          data={failureDebrief}
+          onReturnToStart={() => {
+            setFailureDebrief(null);
+            if (onFailAndRestart) onFailAndRestart();
+            else if (onCancel) onCancel();
+          }}
+          startingScreenName="Starting Screen"
+        />
+      )}
+
+      {/* Exit Confirmation Modal */}
+      <ExitConfirmationModal
+        isOpen={isExitModalOpen}
+        onCancel={() => setIsExitModalOpen(false)}
+        onConfirmExit={() => {
+          setIsExitModalOpen(false);
+          if (onCancel) onCancel();
+        }}
+        startingScreenName="Starting Screen"
+      />
+
+      {/* Progressive 5-Hints Modal */}
+      <ProgressiveHintsModal
+        isOpen={isHintsModalOpen}
+        onClose={() => setIsHintsModalOpen(false)}
+        roundId={roundId}
+        unlockedHintsCount={unlockedHintsCount}
+        onUnlockNextHint={() =>
+          setUnlockedHintsCount((prev) => Math.min(5, prev + 1))
+        }
+      />
     </motion.div>
   );
 }

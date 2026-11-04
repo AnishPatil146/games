@@ -86,6 +86,7 @@ export default function SoloCampaignPage() {
       scene={currentScene}
       onSceneComplete={handleSceneComplete}
       onReturnToHub={() => router.push("/")}
+      onFailAndRestart={() => setCurrentSceneId("solo_l1")}
       modeTitle="THE MIND EXPERIMENT (SOLO)"
     />
   );

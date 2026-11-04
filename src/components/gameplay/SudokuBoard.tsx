@@ -19,7 +19,11 @@ import {
   Play,
   Flame,
   ShieldAlert,
+  LogOut,
 } from "lucide-react";
+import { ExitConfirmationModal } from "./ExitConfirmationModal";
+import { ProgressiveHintsModal } from "./ProgressiveHintsModal";
+import { FailureDebriefModal, FailureDebriefData } from "./FailureDebriefModal";
 
 interface SudokuBoardProps {
   difficulty?: SudokuDifficulty;
@@ -55,22 +59,21 @@ export function SudokuBoard({
     col: 0,
   });
 
-  const [hintsUsed, setHintsUsed] = useState<number>(0);
   const [timerSeconds, setTimerSeconds] = useState<number>(0);
   const [isCompleted, setIsCompleted] = useState<boolean>(false);
-  const [verificationFeedback, setVerificationFeedback] = useState<{
-    status: "idle" | "error" | "incomplete" | "success";
-    message: string;
-  }>({ status: "idle", message: "" });
+  const [isExitModalOpen, setIsExitModalOpen] = useState<boolean>(false);
+  const [isHintsModalOpen, setIsHintsModalOpen] = useState<boolean>(false);
+  const [unlockedHintsCount, setUnlockedHintsCount] = useState<number>(0);
+  const [failureDebrief, setFailureDebrief] = useState<FailureDebriefData | null>(null);
 
   // Timer tick
   useEffect(() => {
-    if (isCompleted) return;
+    if (isCompleted || failureDebrief) return;
     const interval = setInterval(() => {
       setTimerSeconds((prev) => prev + 1);
     }, 1000);
     return () => clearInterval(interval);
-  }, [isCompleted]);
+  }, [isCompleted, failureDebrief]);
 
   // Compute conflicts
   const conflicts = useMemo(() => findGridConflicts(currentGrid), [currentGrid]);
@@ -78,7 +81,7 @@ export function SudokuBoard({
   // Handle cell number input
   const handleInputNumber = useCallback(
     (num: number) => {
-      if (!selectedCell || isCompleted) return;
+      if (!selectedCell || isCompleted || failureDebrief) return;
       const { row, col } = selectedCell;
 
       // Don't allow modifying initial puzzle clues
@@ -110,16 +113,14 @@ export function SudokuBoard({
           delete copy[cellKey];
           return copy;
         });
-
-        setVerificationFeedback({ status: "idle", message: "" });
       }
     },
-    [selectedCell, isCompleted, puzzle.initialGrid, noteMode]
+    [selectedCell, isCompleted, failureDebrief, puzzle.initialGrid, noteMode]
   );
 
   // Clear current cell
   const handleClearCell = useCallback(() => {
-    if (!selectedCell || isCompleted) return;
+    if (!selectedCell || isCompleted || failureDebrief) return;
     const { row, col } = selectedCell;
     if (puzzle.initialGrid[row][col] !== 0) return;
 
@@ -135,86 +136,56 @@ export function SudokuBoard({
       delete copy[cellKey];
       return copy;
     });
-  }, [selectedCell, isCompleted, puzzle.initialGrid]);
+  }, [selectedCell, isCompleted, failureDebrief, puzzle.initialGrid]);
 
   // Reset board
   const handleReset = useCallback(() => {
+    if (failureDebrief) return;
     setCurrentGrid(cloneGrid(puzzle.initialGrid));
     setNotes({});
-    setVerificationFeedback({ status: "idle", message: "" });
-  }, [puzzle.initialGrid]);
+  }, [puzzle.initialGrid, failureDebrief]);
 
-  // Hint: reveals one empty or incorrect cell
-  const handleHint = useCallback(() => {
-    if (isCompleted) return;
+  // Final submission validation
+  const handleFinalSubmission = useCallback(() => {
+    if (isCompleted || failureDebrief) return;
+
+    // Check empty cells
+    let emptyCount = 0;
     for (let r = 0; r < 9; r++) {
       for (let c = 0; c < 9; c++) {
-        if (puzzle.initialGrid[r][c] === 0 && currentGrid[r][c] !== puzzle.solution[r][c]) {
-          setCurrentGrid((prev) => {
-            const next = cloneGrid(prev);
-            next[r][c] = puzzle.solution[r][c];
-            return next;
-          });
-          setSelectedCell({ row: r, col: c });
-          setHintsUsed((h) => h + 1);
-          return;
-        }
+        if (currentGrid[r][c] === 0) emptyCount++;
       }
     }
-  }, [isCompleted, puzzle, currentGrid]);
 
-  // Verify solution
-  const handleVerify = useCallback(() => {
-    // Check if any empty cells
-    let hasEmpty = false;
-    for (let r = 0; r < 9; r++) {
-      for (let c = 0; c < 9; c++) {
-        if (currentGrid[r][c] === 0) {
-          hasEmpty = true;
-          break;
-        }
-      }
-      if (hasEmpty) break;
-    }
+    const hasConflicts = conflicts.size > 0;
+    const isSolved = isSudokuComplete(currentGrid, puzzle.solution);
 
-    if (hasEmpty) {
-      setVerificationFeedback({
-        status: "incomplete",
-        message: "The matrix has empty cells. Every cell must be deciphered.",
-      });
-      return;
-    }
-
-    if (conflicts.size > 0) {
-      setVerificationFeedback({
-        status: "error",
-        message: "Duplicate symbols detected! Check the highlighted crimson conflicts.",
-      });
-      return;
-    }
-
-    const valid = isSudokuComplete(currentGrid, puzzle.solution);
-    if (valid) {
+    if (isSolved && emptyCount === 0 && !hasConflicts) {
       setIsCompleted(true);
-      setVerificationFeedback({
-        status: "success",
-        message: "Matrix deciphered successfully! Vault lock disengaged.",
-      });
       if (onComplete) {
-        onComplete({ timeSeconds: timerSeconds, hintsUsed });
+        onComplete({ timeSeconds: timerSeconds, hintsUsed: unlockedHintsCount });
       }
     } else {
-      setVerificationFeedback({
-        status: "error",
-        message: "Incorrect configuration. Review your row, column, and box constraints.",
+      // Record failure with full explanation and return to start
+      setFailureDebrief({
+        roundTitle: title,
+        submittedAnswer: emptyCount > 0
+          ? `Incomplete Board (${81 - emptyCount}/81 cells deciphered)`
+          : `Conflicted Configuration (${conflicts.size} duplicate violations)`,
+        correctAnswer: "Fully Completed 9x9 Latin Square Matrix",
+        failureExplanation: emptyCount > 0
+          ? "The matrix was submitted with unassigned empty cells. Every coordinate in the chamber requires a verified numerical frequency."
+          : "Conflicting duplicate digits were detected in either a row, column, or 3x3 block, violating the vault's Latin square alignment.",
+        correctSolutionExplanation:
+          "To satisfy the master vault lock, every horizontal row, vertical column, and 3x3 quadrant must strictly hold numbers 1 through 9 with zero duplicate entries.",
       });
     }
-  }, [currentGrid, puzzle.solution, conflicts, onComplete, timerSeconds, hintsUsed]);
+  }, [currentGrid, puzzle.solution, conflicts, isCompleted, failureDebrief, onComplete, timerSeconds, unlockedHintsCount, title]);
 
   // Keyboard navigation & entry
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (isCompleted) return;
+      if (isCompleted || failureDebrief) return;
 
       if (e.key >= "1" && e.key <= "9") {
         handleInputNumber(parseInt(e.key, 10));
@@ -243,7 +214,7 @@ export function SudokuBoard({
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [selectedCell, handleInputNumber, handleClearCell, isCompleted]);
+  }, [selectedCell, handleInputNumber, handleClearCell, isCompleted, failureDebrief]);
 
   const selectedValue =
     selectedCell ? currentGrid[selectedCell.row][selectedCell.col] : 0;
@@ -255,7 +226,7 @@ export function SudokuBoard({
   };
 
   return (
-    <div className="relative flex flex-col items-center justify-center w-full max-w-4xl mx-auto p-4 md:p-6 bg-zinc-950/95 border border-zinc-800 rounded-2xl shadow-2xl backdrop-blur-xl text-zinc-100 font-sans">
+    <div className="relative flex flex-col items-center justify-center w-full max-w-4xl mx-auto p-4 md:p-6 bg-zinc-950/95 border border-zinc-800 rounded-3xl shadow-2xl backdrop-blur-xl text-zinc-100 font-sans select-none">
       {/* Header bar */}
       <div className="w-full flex flex-col md:flex-row items-center justify-between pb-4 mb-4 border-b border-zinc-800 gap-3">
         <div>
@@ -271,16 +242,35 @@ export function SudokuBoard({
           <p className="text-xs md:text-sm text-zinc-400 mt-0.5">{subtitle}</p>
         </div>
 
-        <div className="flex items-center gap-4 text-sm font-mono">
-          <div className="flex items-center gap-1.5 px-3 py-1 bg-zinc-900 border border-zinc-800 rounded-lg">
+        <div className="flex items-center gap-3 text-sm font-mono">
+          {/* 5-Hints Counter Button */}
+          <button
+            type="button"
+            onClick={() => setIsHintsModalOpen(true)}
+            className="flex items-center gap-1.5 px-3 py-1.5 bg-amber-950/60 border border-amber-600/70 text-amber-300 rounded-lg hover:bg-amber-900/80 transition-colors cursor-pointer text-xs"
+            title="Open 5 Progressive Hints"
+          >
+            <Lightbulb className="w-3.5 h-3.5 text-amber-400" />
+            <span>HINTS: {5 - unlockedHintsCount} / 5</span>
+          </button>
+
+          {/* Timer Display */}
+          <div className="flex items-center gap-1.5 px-3 py-1 bg-zinc-900 border border-zinc-800 rounded-lg text-xs">
             <span className="text-zinc-500">TIME:</span>
             <span className="text-amber-400 font-bold">{formatTime(timerSeconds)}</span>
           </div>
-          {hintsUsed > 0 && (
-            <div className="flex items-center gap-1 text-xs text-zinc-400">
-              <Lightbulb className="w-3.5 h-3.5 text-amber-500" />
-              <span>Hints: {hintsUsed}</span>
-            </div>
+
+          {/* Exit Button */}
+          {onExit && (
+            <button
+              type="button"
+              onClick={() => setIsExitModalOpen(true)}
+              className="flex items-center gap-1 px-3 py-1 bg-red-950/60 border border-red-800/70 text-red-300 rounded-lg hover:bg-red-900/80 transition-colors cursor-pointer text-xs"
+              title="Exit Investigation"
+            >
+              <LogOut className="w-3.5 h-3.5" />
+              <span>Exit</span>
+            </button>
           )}
         </div>
       </div>
@@ -334,13 +324,9 @@ export function SudokuBoard({
                         {val}
                       </span>
                     ) : (
-                      // Render 3x3 notes mini-grid
                       <div className="grid grid-cols-3 grid-rows-3 w-full h-full p-0.5 text-[8px] sm:text-[9px] text-zinc-400 font-mono leading-none">
                         {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((n) => (
-                          <div
-                            key={n}
-                            className="flex items-center justify-center"
-                          >
+                          <div key={n} className="flex items-center justify-center">
                             {cellNotes.includes(n) ? n : ""}
                           </div>
                         ))}
@@ -355,23 +341,11 @@ export function SudokuBoard({
 
         {/* Action Panel & Keypad */}
         <div className="flex flex-col items-center gap-4 w-full max-w-xs">
-          {/* Feedback banner */}
-          {verificationFeedback.status !== "idle" && (
-            <div
-              className={`w-full p-3 rounded-lg text-xs md:text-sm font-medium flex items-center gap-2 ${
-                verificationFeedback.status === "success"
-                  ? "bg-emerald-950/80 border border-emerald-700 text-emerald-300"
-                  : verificationFeedback.status === "error"
-                  ? "bg-red-950/80 border border-red-700 text-red-300"
-                  : "bg-amber-950/80 border border-amber-700 text-amber-300"
-              }`}
-            >
-              {verificationFeedback.status === "success" ? (
-                <CheckCircle2 className="w-4 h-4 shrink-0 text-emerald-400" />
-              ) : (
-                <ShieldAlert className="w-4 h-4 shrink-0" />
-              )}
-              <span>{verificationFeedback.message}</span>
+          {/* Conflict warnings */}
+          {conflicts.size > 0 && (
+            <div className="w-full p-3 rounded-lg text-xs font-mono font-medium flex items-center gap-2 bg-red-950/80 border border-red-700 text-red-300">
+              <ShieldAlert className="w-4 h-4 shrink-0" />
+              <span>Duplicate detected in crimson row/col/box.</span>
             </div>
           )}
 
@@ -380,20 +354,20 @@ export function SudokuBoard({
             <button
               type="button"
               onClick={() => setNoteMode((prev) => !prev)}
-              className={`flex-1 py-2 px-3 rounded-lg border text-xs font-mono font-medium flex items-center justify-center gap-1.5 transition-all ${
+              className={`flex-1 py-2 px-3 rounded-lg border text-xs font-mono font-medium flex items-center justify-center gap-1.5 transition-all cursor-pointer ${
                 noteMode
                   ? "bg-amber-600 text-black border-amber-400 shadow-md shadow-amber-600/30 font-bold"
                   : "bg-zinc-900 text-zinc-300 border-zinc-700 hover:bg-zinc-800"
               }`}
             >
               <Edit3 className="w-3.5 h-3.5" />
-              <span>PENCIL NOTES {noteMode ? "(ON)" : "(OFF)"}</span>
+              <span>NOTES {noteMode ? "(ON)" : "(OFF)"}</span>
             </button>
 
             <button
               type="button"
               onClick={handleClearCell}
-              className="py-2 px-3 rounded-lg border bg-zinc-900 border-zinc-700 hover:bg-zinc-800 text-zinc-300 text-xs font-mono flex items-center gap-1"
+              className="py-2 px-3 rounded-lg border bg-zinc-900 border-zinc-700 hover:bg-zinc-800 text-zinc-300 text-xs font-mono flex items-center gap-1 cursor-pointer"
               title="Erase cell"
             >
               <Trash2 className="w-3.5 h-3.5" />
@@ -408,69 +382,64 @@ export function SudokuBoard({
                 key={num}
                 type="button"
                 onClick={() => handleInputNumber(num)}
-                className="h-11 bg-zinc-900/90 border border-zinc-700 hover:border-amber-500 hover:bg-zinc-800 active:scale-95 text-lg font-mono font-bold text-amber-300 rounded-lg shadow-sm transition-all flex items-center justify-center"
+                className="h-11 bg-zinc-900/90 border border-zinc-700 hover:border-amber-500 hover:bg-zinc-800 active:scale-95 text-lg font-mono font-bold text-amber-300 rounded-lg shadow-sm transition-all flex items-center justify-center cursor-pointer"
               >
                 {num}
               </button>
             ))}
           </div>
 
-          {/* Utility buttons */}
+          {/* Reset button */}
           <div className="flex items-center justify-between w-full gap-2 pt-2 border-t border-zinc-800">
             <button
               type="button"
               onClick={handleReset}
-              className="flex items-center gap-1.5 px-3 py-1.5 text-xs text-zinc-400 hover:text-zinc-200 transition-colors"
+              className="flex items-center gap-1.5 px-3 py-1.5 text-xs text-zinc-400 hover:text-zinc-200 transition-colors cursor-pointer"
             >
               <RotateCcw className="w-3.5 h-3.5" />
-              <span>Reset</span>
+              <span>Reset Board</span>
             </button>
 
-            <button
-              type="button"
-              onClick={handleHint}
-              className="flex items-center gap-1.5 px-3 py-1.5 text-xs text-amber-400 hover:text-amber-300 transition-colors"
-            >
-              <Lightbulb className="w-3.5 h-3.5" />
-              <span>Clue Hint</span>
-            </button>
+            <span className="text-[11px] font-mono text-zinc-500">
+              1 Final Submission
+            </span>
           </div>
 
-          {/* Verification CTA */}
+          {/* Final Verification Button */}
           <button
             type="button"
-            onClick={handleVerify}
-            className="w-full mt-2 py-3 px-4 bg-gradient-to-r from-amber-600 via-amber-500 to-yellow-600 hover:from-amber-500 hover:to-yellow-500 text-zinc-950 font-bold font-mono tracking-wider text-sm rounded-xl shadow-lg shadow-amber-600/30 active:scale-[0.98] transition-all flex items-center justify-center gap-2 cursor-pointer"
+            onClick={handleFinalSubmission}
+            className="w-full mt-2 py-3.5 px-4 bg-gradient-to-r from-amber-600 via-amber-500 to-yellow-600 hover:from-amber-500 hover:to-yellow-500 text-zinc-950 font-bold font-mono tracking-wider text-xs uppercase rounded-xl shadow-lg shadow-amber-600/30 active:scale-[0.98] transition-all flex items-center justify-center gap-2 cursor-pointer"
           >
             <CheckCircle2 className="w-4 h-4 text-zinc-950 stroke-[2.5]" />
-            <span>DISENGAGE LOCK (VERIFY)</span>
+            <span>DISENGAGE LOCK (SUBMIT FINAL ANSWER)</span>
           </button>
         </div>
       </div>
 
-      {/* Completion Overlay Banner */}
+      {/* Victory Modal */}
       {isCompleted && (
-        <div className="absolute inset-0 bg-black/80 backdrop-blur-md rounded-2xl flex flex-col items-center justify-center p-6 text-center z-30 animate-in fade-in duration-300">
+        <div className="absolute inset-0 bg-black/85 backdrop-blur-md rounded-3xl flex flex-col items-center justify-center p-6 text-center z-30 animate-in fade-in duration-300">
           <Trophy className="w-16 h-16 text-yellow-400 mb-3 animate-bounce" />
           <h3 className="text-2xl md:text-3xl font-serif font-bold text-amber-200 mb-2">
-            CHIPHER CRACKED
+            CIPHER CRACKED
           </h3>
-          <p className="text-zinc-300 text-sm max-w-md mb-6">
-            The mechanical pins align with a resounding click. The heavy iron door swings inward into the abyss.
+          <p className="text-zinc-300 text-sm max-w-md mb-6 leading-relaxed">
+            The mechanical Latin square pins align with a resounding hydraulic click. All 9 rows, columns, and 3x3 blocks conform to the ancient cipher without contradiction.
           </p>
-          <div className="flex items-center gap-6 text-sm font-mono text-zinc-400 mb-6 bg-zinc-900/90 px-6 py-2 rounded-xl border border-zinc-800">
+          <div className="flex items-center gap-6 text-sm font-mono text-zinc-400 mb-6 bg-zinc-900/90 px-6 py-2.5 rounded-xl border border-zinc-800">
             <div>
               TIME: <span className="text-amber-400 font-bold">{formatTime(timerSeconds)}</span>
             </div>
             <div>
-              HINTS: <span className="text-amber-400 font-bold">{hintsUsed}</span>
+              HINTS USED: <span className="text-amber-400 font-bold">{unlockedHintsCount} / 5</span>
             </div>
           </div>
           {onExit && (
             <button
               type="button"
               onClick={onExit}
-              className="px-6 py-2.5 bg-amber-500 hover:bg-amber-400 text-black font-bold font-mono rounded-lg transition-colors flex items-center gap-2"
+              className="px-6 py-2.5 bg-amber-500 hover:bg-amber-400 text-black font-bold font-mono rounded-lg transition-colors flex items-center gap-2 cursor-pointer shadow-lg"
             >
               <Play className="w-4 h-4 fill-black" />
               <span>PROCEED TO NEXT CHAMBER</span>
@@ -478,6 +447,40 @@ export function SudokuBoard({
           )}
         </div>
       )}
+
+      {/* Failure Debrief Modal (One Final Submission Policy) */}
+      {failureDebrief && (
+        <FailureDebriefModal
+          data={failureDebrief}
+          onReturnToStart={() => {
+            setFailureDebrief(null);
+            if (onExit) onExit();
+          }}
+          startingScreenName="Starting Screen"
+        />
+      )}
+
+      {/* Exit Confirmation Modal */}
+      <ExitConfirmationModal
+        isOpen={isExitModalOpen}
+        onCancel={() => setIsExitModalOpen(false)}
+        onConfirmExit={() => {
+          setIsExitModalOpen(false);
+          if (onExit) onExit();
+        }}
+        startingScreenName="Starting Screen"
+      />
+
+      {/* Progressive 5-Hints Modal */}
+      <ProgressiveHintsModal
+        isOpen={isHintsModalOpen}
+        onClose={() => setIsHintsModalOpen(false)}
+        roundId="alliance_l1"
+        unlockedHintsCount={unlockedHintsCount}
+        onUnlockNextHint={() =>
+          setUnlockedHintsCount((prev) => Math.min(5, prev + 1))
+        }
+      />
     </div>
   );
 }

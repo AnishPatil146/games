@@ -46,3 +46,4 @@
 | Character | `/art/characters/aanya_*.png` | 512x768 | Aanya sprites across neutral, speaking, thinking |
 | Character | `/art/characters/warden_*.png` | 512x768 | Warden sprites across neutral, speaking, amused |
 | Character | `/art/characters/vesper_*.png` | 512x768 | Count Vesper sprites across neutral, smiling, defeat |
+

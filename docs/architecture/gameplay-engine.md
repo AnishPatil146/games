@@ -78,3 +78,4 @@ export interface GameplayComponentProps<TStats> {
 ```
 
 Components never manipulate external global state directly; they communicate through strongly typed callbacks that feed into the session telemetry and server room state.
+

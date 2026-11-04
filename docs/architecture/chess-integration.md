@@ -39,3 +39,4 @@ In Alliance Level 2 (**The Vampire's Offer**), Count Vesper challenges operative
   - In puzzle mode, playing `Nf6+` automatically triggers Vesper's forced response (`gxf6`) after 700ms.
   - Delivering `Bxf7#` brings up the victory modal and unlocks the next chamber.
   - Any blunder triggers Vesper's mocking feedback and resets the puzzle position.
+

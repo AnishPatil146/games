@@ -12,11 +12,14 @@ import {
   Trophy,
   RotateCcw,
   Swords,
-  ShieldAlert,
   Flame,
-  CheckCircle2,
   ChevronRight,
+  Lightbulb,
+  LogOut,
 } from "lucide-react";
+import { ExitConfirmationModal } from "./ExitConfirmationModal";
+import { ProgressiveHintsModal } from "./ProgressiveHintsModal";
+import { FailureDebriefModal, FailureDebriefData } from "./FailureDebriefModal";
 
 interface ChessBoardProps {
   puzzle?: TacticalPuzzle;
@@ -70,22 +73,26 @@ export function ChessBoard({
     message: puzzle.description,
   });
   const [timerSeconds, setTimerSeconds] = useState<number>(0);
+  const [isExitModalOpen, setIsExitModalOpen] = useState<boolean>(false);
+  const [isHintsModalOpen, setIsHintsModalOpen] = useState<boolean>(false);
+  const [unlockedHintsCount, setUnlockedHintsCount] = useState<number>(0);
+  const [failureDebrief, setFailureDebrief] = useState<FailureDebriefData | null>(null);
 
   // Timer
   useEffect(() => {
-    if (isCheckmate) return;
+    if (isCheckmate || failureDebrief) return;
     const interval = setInterval(() => setTimerSeconds((t) => t + 1), 1000);
     return () => clearInterval(interval);
-  }, [isCheckmate]);
+  }, [isCheckmate, failureDebrief]);
 
   const boardMatrix = useMemo(() => {
-    // fen dependency triggers board refresh on move
     if (!fen) return [];
     return chessService.getBoard();
   }, [chessService, fen]);
 
   // Reset to initial puzzle position
   const handleReset = useCallback(() => {
+    if (failureDebrief) return;
     chessService.reset(puzzle.initialFen);
     setFen(chessService.getFen());
     setSelectedSquare(null);
@@ -97,12 +104,12 @@ export function ChessBoard({
       status: "idle",
       message: puzzle.description,
     });
-  }, [chessService, puzzle]);
+  }, [chessService, puzzle, failureDebrief]);
 
   // Select square and compute legal moves
   const handleSquareClick = useCallback(
     (sq: Square) => {
-      if (isCheckmate || feedback.status === "thinking") return;
+      if (isCheckmate || feedback.status === "thinking" || failureDebrief) return;
 
       const currentTurn = chessService.getTurn();
       if (currentTurn !== puzzle.playerColor) return;
@@ -134,7 +141,7 @@ export function ChessBoard({
             const nextStep = puzzleStepIndex + 1;
             setPuzzleStepIndex(nextStep);
 
-            // Did this move finish the puzzle with checkmate?
+            // Did this move deliver checkmate?
             if (nextStep >= puzzle.solutionMoves.length || chessService.isCheckmate()) {
               setIsCheckmate(true);
               setFeedback({
@@ -150,7 +157,7 @@ export function ChessBoard({
               return;
             }
 
-            // Otherwise, opponent response in puzzle sequence
+            // Otherwise, opponent forced response in puzzle sequence
             const opponentExpectedMove = puzzle.solutionMoves[nextStep];
             if (opponentExpectedMove) {
               setFeedback({
@@ -169,14 +176,14 @@ export function ChessBoard({
               }, 700);
             }
           } else {
-            // Blunder / incorrect move in puzzle mode
-            setFeedback({
-              status: "error",
-              message: `${puzzle.opponent} scoffs: 'A fatal blunder! That is not the winning sequence.'`,
+            // Player played an incorrect move (blunder on final submission)
+            setFailureDebrief({
+              roundTitle: title || puzzle.title,
+              submittedAnswer: `Move: ${playedSan || from + "-" + to}`,
+              correctAnswer: "1. Nf6+! (forcing 1... gxf6) then 2. Bxf7#",
+              failureExplanation: `Playing ${playedSan} allowed Count Vesper's King to escape or gave him tempo to mobilize his Queen on d1. Tactical advantage lost.`,
+              correctSolutionExplanation: puzzle.explanation,
             });
-            setTimeout(() => {
-              handleReset();
-            }, 1800);
           }
         }
         return;
@@ -200,9 +207,10 @@ export function ChessBoard({
       puzzleStepIndex,
       isCheckmate,
       feedback.status,
+      failureDebrief,
       timerSeconds,
       onComplete,
-      handleReset,
+      title,
     ]
   );
 
@@ -215,7 +223,7 @@ export function ChessBoard({
   };
 
   return (
-    <div className="relative flex flex-col items-center justify-center w-full max-w-4xl mx-auto p-4 md:p-6 bg-zinc-950/95 border border-zinc-800 rounded-2xl shadow-2xl backdrop-blur-xl text-zinc-100 font-sans">
+    <div className="relative flex flex-col items-center justify-center w-full max-w-4xl mx-auto p-4 md:p-6 bg-zinc-950/95 border border-zinc-800 rounded-3xl shadow-2xl backdrop-blur-xl text-zinc-100 font-sans select-none">
       {/* Header */}
       <div className="w-full flex flex-col md:flex-row items-center justify-between pb-4 mb-4 border-b border-zinc-800 gap-3">
         <div>
@@ -231,16 +239,43 @@ export function ChessBoard({
           <p className="text-xs md:text-sm text-zinc-400 mt-0.5">{puzzle.description}</p>
         </div>
 
-        <div className="flex items-center gap-4 text-sm font-mono">
-          <div className="flex items-center gap-1.5 px-3 py-1 bg-zinc-900 border border-zinc-800 rounded-lg">
+        <div className="flex items-center gap-3 text-sm font-mono">
+          {/* 5-Hints Button */}
+          <button
+            type="button"
+            onClick={() => setIsHintsModalOpen(true)}
+            className="flex items-center gap-1.5 px-3 py-1.5 bg-amber-950/60 border border-amber-600/70 text-amber-300 rounded-lg hover:bg-amber-900/80 transition-colors cursor-pointer text-xs"
+            title="Open 5 Progressive Hints"
+          >
+            <Lightbulb className="w-3.5 h-3.5 text-amber-400" />
+            <span>HINTS: {5 - unlockedHintsCount} / 5</span>
+          </button>
+
+          {/* Time Display */}
+          <div className="flex items-center gap-1.5 px-3 py-1 bg-zinc-900 border border-zinc-800 rounded-lg text-xs">
             <span className="text-zinc-500">TIME:</span>
             <span className="text-amber-400 font-bold">{formatTime(timerSeconds)}</span>
           </div>
+
+          {/* Check indicator */}
           {isCheck && !isCheckmate && (
             <div className="flex items-center gap-1 px-2.5 py-1 bg-red-950/80 border border-red-700 text-red-400 text-xs font-bold rounded-lg animate-pulse">
               <Flame className="w-3.5 h-3.5" />
               <span>CHECK!</span>
             </div>
+          )}
+
+          {/* Exit Button */}
+          {onExit && (
+            <button
+              type="button"
+              onClick={() => setIsExitModalOpen(true)}
+              className="flex items-center gap-1 px-3 py-1 bg-red-950/60 border border-red-800/70 text-red-300 rounded-lg hover:bg-red-900/80 transition-colors cursor-pointer text-xs"
+              title="Exit Investigation"
+            >
+              <LogOut className="w-3.5 h-3.5" />
+              <span>Exit</span>
+            </button>
           )}
         </div>
       </div>
@@ -261,7 +296,6 @@ export function ChessBoard({
                 const pieceKey = piece ? `${piece.color}_${piece.type}` : null;
                 const pieceGlyph = pieceKey ? PIECE_SYMBOLS[pieceKey] : null;
 
-                // Color classes
                 let squareBg = isLight ? "bg-[#d1b894]" : "bg-[#6c4e31]";
                 if (isSelected) {
                   squareBg = "bg-amber-400 ring-4 ring-amber-300 ring-inset";
@@ -326,18 +360,14 @@ export function ChessBoard({
               feedback.status === "success"
                 ? "bg-emerald-950/80 border-emerald-700 text-emerald-200"
                 : feedback.status === "error"
-                ? "bg-red-950/90 border-red-700 text-red-300 animate-shake"
+                ? "bg-red-950/90 border-red-700 text-red-300"
                 : feedback.status === "thinking"
                 ? "bg-amber-950/80 border-amber-700 text-amber-200 animate-pulse"
                 : "bg-zinc-900 border-zinc-800 text-zinc-300"
             }`}
           >
             <div className="flex items-center gap-2 mb-1.5 font-bold uppercase tracking-wider text-xs">
-              {feedback.status === "error" ? (
-                <ShieldAlert className="w-4 h-4 text-red-400" />
-              ) : (
-                <Swords className="w-4 h-4 text-amber-400" />
-              )}
+              <Swords className="w-4 h-4 text-amber-400" />
               <span>{puzzle.opponent}&apos;s Domain</span>
             </div>
             <p>{feedback.message}</p>
@@ -351,7 +381,7 @@ export function ChessBoard({
             <div className="space-y-1.5 text-xs text-zinc-300 font-mono">
               <div className="flex items-center justify-between">
                 <span>Player Role:</span>
-                <span className="text-amber-400 font-bold">White (Sacrificial Attack)</span>
+                <span className="text-amber-400 font-bold">White (Sacrifice Attack)</span>
               </div>
               <div className="flex items-center justify-between">
                 <span>Required Condition:</span>
@@ -379,7 +409,7 @@ export function ChessBoard({
             </button>
 
             <span className="text-[11px] text-zinc-500 font-mono">
-              Click piece, then target
+              1 Final Attempt
             </span>
           </div>
         </div>
@@ -387,29 +417,28 @@ export function ChessBoard({
 
       {/* Checkmate Victory Overlay */}
       {isCheckmate && (
-        <div className="absolute inset-0 bg-black/85 backdrop-blur-md rounded-2xl flex flex-col items-center justify-center p-6 text-center z-30 animate-in fade-in duration-300">
+        <div className="absolute inset-0 bg-black/85 backdrop-blur-md rounded-3xl flex flex-col items-center justify-center p-6 text-center z-30 animate-in fade-in duration-300">
           <Trophy className="w-16 h-16 text-yellow-400 mb-3 animate-bounce" />
           <h3 className="text-2xl md:text-3xl font-serif font-bold text-amber-200 mb-2">
             COUNT VESPER DEFEATED
           </h3>
-          <p className="text-zinc-300 text-sm max-w-md mb-6">
+          <p className="text-zinc-300 text-sm max-w-md mb-6 leading-relaxed">
             Count Vesper clutches his chest as the light-squared bishop strikes with lethal precision.
-            &quot;Impossible... you saw through my vanity.&quot;
+            &quot;Impossible... you saw through my vanity. The sacrificial knight blinded me.&quot;
           </p>
-          <div className="flex items-center gap-6 text-sm font-mono text-zinc-400 mb-6 bg-zinc-900/90 px-6 py-2 rounded-xl border border-zinc-800">
-            <div className="flex items-center gap-1.5">
-              <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-              <span>CHECKMATE DELIVERED</span>
-            </div>
+          <div className="flex items-center gap-6 text-sm font-mono text-zinc-400 mb-6 bg-zinc-900/90 px-6 py-2.5 rounded-xl border border-zinc-800">
             <div>
               TIME: <span className="text-amber-400 font-bold">{formatTime(timerSeconds)}</span>
+            </div>
+            <div>
+              HINTS USED: <span className="text-amber-400 font-bold">{unlockedHintsCount} / 5</span>
             </div>
           </div>
           {onExit && (
             <button
               type="button"
               onClick={onExit}
-              className="px-6 py-2.5 bg-amber-500 hover:bg-amber-400 text-black font-bold font-mono rounded-lg transition-colors flex items-center gap-2 cursor-pointer"
+              className="px-6 py-2.5 bg-amber-500 hover:bg-amber-400 text-black font-bold font-mono rounded-lg transition-colors flex items-center gap-2 cursor-pointer shadow-lg"
             >
               <span>ADVANCE INTO THE SANCTUM</span>
               <ChevronRight className="w-4 h-4 stroke-[3]" />
@@ -417,7 +446,40 @@ export function ChessBoard({
           )}
         </div>
       )}
+
+      {/* Failure Debrief Modal (One Final Submission Policy) */}
+      {failureDebrief && (
+        <FailureDebriefModal
+          data={failureDebrief}
+          onReturnToStart={() => {
+            setFailureDebrief(null);
+            if (onExit) onExit();
+          }}
+          startingScreenName="War Room Lobby"
+        />
+      )}
+
+      {/* Exit Confirmation Modal */}
+      <ExitConfirmationModal
+        isOpen={isExitModalOpen}
+        onCancel={() => setIsExitModalOpen(false)}
+        onConfirmExit={() => {
+          setIsExitModalOpen(false);
+          if (onExit) onExit();
+        }}
+        startingScreenName="War Room Lobby"
+      />
+
+      {/* Progressive 5-Hints Modal */}
+      <ProgressiveHintsModal
+        isOpen={isHintsModalOpen}
+        onClose={() => setIsHintsModalOpen(false)}
+        roundId="alliance_l2"
+        unlockedHintsCount={unlockedHintsCount}
+        onUnlockNextHint={() =>
+          setUnlockedHintsCount((prev) => Math.min(5, prev + 1))
+        }
+      />
     </div>
   );
 }
-

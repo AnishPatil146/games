@@ -62,3 +62,4 @@ In Level 8, all operatives face the simultaneous Cooperate/Betray matrix:
 | Betray | Betray | Lose-Lose (0 / 0) | **The Void of Greed** — Case triggers self-destruct; drops into the abyss. |
 
 Decisions are submitted to private server vaults and remain encrypted until all room members have locked in their votes.
+

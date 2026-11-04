@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { Volume2, VolumeX, Home } from "lucide-react";
+import { Volume2, VolumeX, Home, LogOut, Lightbulb } from "lucide-react";
 import Link from "next/link";
 import {
   StoryboardScene,
@@ -14,11 +14,14 @@ import {
 import { StageCharacter } from "./StageCharacter";
 import { SpeechBubble } from "./SpeechBubble";
 import { ContextualPuzzleOverlay } from "./ContextualPuzzleOverlay";
+import { ExitConfirmationModal } from "@/components/gameplay/ExitConfirmationModal";
+import { ProgressiveHintsModal } from "@/components/gameplay/ProgressiveHintsModal";
 
 interface StoryboardStageProps {
   scene: StoryboardScene;
   onSceneComplete?: (results?: Record<string, unknown>) => void;
   onReturnToHub?: () => void;
+  onFailAndRestart?: () => void;
   modeTitle?: string;
 }
 
@@ -26,6 +29,7 @@ export function StoryboardStage({
   scene,
   onSceneComplete,
   onReturnToHub,
+  onFailAndRestart,
   modeTitle = "THE MIND EXPERIMENT",
 }: StoryboardStageProps) {
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
@@ -35,12 +39,16 @@ export function StoryboardStage({
     Record<string, unknown>
   >({});
   const [prevSceneId, setPrevSceneId] = useState(scene.id);
+  const [isExitModalOpen, setIsExitModalOpen] = useState(false);
+  const [isHintsModalOpen, setIsHintsModalOpen] = useState(false);
+  const [unlockedHintsCount, setUnlockedHintsCount] = useState(0);
 
   // Synchronously reset step index when scene changes
   if (scene.id !== prevSceneId) {
     setPrevSceneId(scene.id);
     setCurrentStepIndex(0);
     setDismissedPuzzles({});
+    setUnlockedHintsCount(0);
   }
 
   const safeStepIndex = Math.min(
@@ -200,6 +208,28 @@ export function StoryboardStage({
             ))}
           </div>
 
+          {/* 5-Hints HUD Trigger */}
+          <button
+            type="button"
+            onClick={() => setIsHintsModalOpen(true)}
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-amber-950/60 hover:bg-amber-900/80 border border-amber-600/60 text-amber-300 font-mono text-xs uppercase tracking-wider backdrop-blur-md transition-all shadow-md cursor-pointer"
+            title="Inspect 5 Progressive Hints for this Chamber"
+          >
+            <Lightbulb className="w-3.5 h-3.5 text-amber-400 animate-pulse" />
+            <span>HINTS: {5 - unlockedHintsCount} / 5</span>
+          </button>
+
+          {/* Explicit Exit Button */}
+          <button
+            type="button"
+            onClick={() => setIsExitModalOpen(true)}
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-red-950/60 hover:bg-red-900/80 border border-red-700/60 text-red-300 font-mono text-xs uppercase tracking-wider backdrop-blur-md transition-all shadow-md cursor-pointer"
+            title="Exit Investigation"
+          >
+            <LogOut className="w-3.5 h-3.5 text-red-400" />
+            <span className="hidden sm:inline">Exit</span>
+          </button>
+
           <button
             onClick={() => setIsMuted(!isMuted)}
             className="p-2 rounded-full bg-black/50 hover:bg-black/70 text-[#FAF7F2] backdrop-blur-md border border-white/15 transition-all shadow-md"
@@ -276,10 +306,34 @@ export function StoryboardStage({
                   [safeStepIndex]: true,
                 }))
               }
+              onFailAndRestart={onFailAndRestart || onReturnToHub}
+              roundId={scene.id}
             />
           </div>
         )}
       </AnimatePresence>
+
+      {/* Exit Confirmation Modal */}
+      <ExitConfirmationModal
+        isOpen={isExitModalOpen}
+        onCancel={() => setIsExitModalOpen(false)}
+        onConfirmExit={() => {
+          setIsExitModalOpen(false);
+          if (onReturnToHub) onReturnToHub();
+        }}
+        startingScreenName={modeTitle.includes("ALLIANCE") ? "War Room Lobby" : "Starting Screen"}
+      />
+
+      {/* Progressive 5-Hints Modal */}
+      <ProgressiveHintsModal
+        isOpen={isHintsModalOpen}
+        onClose={() => setIsHintsModalOpen(false)}
+        roundId={scene.id}
+        unlockedHintsCount={unlockedHintsCount}
+        onUnlockNextHint={() =>
+          setUnlockedHintsCount((prev) => Math.min(5, prev + 1))
+        }
+      />
     </div>
   );
 }

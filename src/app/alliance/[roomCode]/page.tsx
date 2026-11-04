@@ -387,6 +387,7 @@ export default function AllianceRoomPage({ params }: PageProps) {
         scene={currentScene}
         onSceneComplete={handleLevelSolveSubmit}
         onReturnToHub={() => router.push("/alliance")}
+        onFailAndRestart={() => router.push("/alliance")}
         modeTitle={`THE LAST ALLIANCE • [${roomCode}]`}
       />
     </div>
