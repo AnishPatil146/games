@@ -70,3 +70,4 @@ export function getCharacterSprite(
   // Exact file lookup
   return `/art/characters/${id}_${expression}.png`;
 }
+

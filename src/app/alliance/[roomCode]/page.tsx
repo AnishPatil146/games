@@ -130,8 +130,8 @@ export default function AllianceRoomPage({ params }: PageProps) {
               decisions?.alliance_l8 === "DECISION_BETRAY"
                 ? "BETRAY"
                 : decisions?.alliance_l8 === "DECISION_COOPERATE"
-                ? "COOPERATE"
-                : undefined,
+                  ? "COOPERATE"
+                  : undefined,
             ...decisions,
           },
         }),
@@ -263,11 +263,10 @@ export default function AllianceRoomPage({ params }: PageProps) {
             <button
               onClick={handleToggleReady}
               disabled={isActionLoading}
-              className={`flex-1 py-3 rounded-xl font-mono text-xs uppercase tracking-widest font-bold border transition-all ${
-                currentPlayer?.isReady
+              className={`flex-1 py-3 rounded-xl font-mono text-xs uppercase tracking-widest font-bold border transition-all ${currentPlayer?.isReady
                   ? "bg-emerald-900/60 border-emerald-600 text-emerald-200 hover:bg-emerald-800/60"
                   : "bg-[#2A2420] border-white/10 text-white hover:bg-[#3B322C]"
-              }`}
+                }`}
             >
               {currentPlayer?.isReady ? "Ready ✓" : "Mark as Ready"}
             </button>
@@ -330,11 +329,10 @@ export default function AllianceRoomPage({ params }: PageProps) {
                   {p.name}
                 </div>
                 <div
-                  className={`text-[11px] font-mono mt-1 ${
-                    p.betrayalDecision === "BETRAY"
+                  className={`text-[11px] font-mono mt-1 ${p.betrayalDecision === "BETRAY"
                       ? "text-red-400"
                       : "text-emerald-400"
-                  }`}
+                    }`}
                 >
                   Decision: {p.betrayalDecision || "COOPERATE"}
                 </div>
@@ -373,9 +371,8 @@ export default function AllianceRoomPage({ params }: PageProps) {
           {room.players.map((p) => (
             <div key={p.id} className="flex items-center gap-2 text-xs font-sans">
               <span
-                className={`w-2 h-2 rounded-full ${
-                  p.currentLevelSolved ? "bg-emerald-400" : "bg-amber-400"
-                }`}
+                className={`w-2 h-2 rounded-full ${p.currentLevelSolved ? "bg-emerald-400" : "bg-amber-400"
+                  }`}
               />
               <span className="text-[#DDD4C5] font-medium">{p.name}</span>
               <span className="text-[10px] font-mono text-[#8A8178] ml-auto">

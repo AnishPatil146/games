@@ -574,3 +574,4 @@ if __name__ == "__main__":
     make_props()
     make_npcs()
     print("ALL STORYBOARD ART GENERATED SUCCESSFULLY!")
+
