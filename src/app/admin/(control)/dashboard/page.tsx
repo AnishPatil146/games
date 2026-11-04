@@ -91,14 +91,30 @@ export default function AdminExecutiveDashboardPage() {
           </h1>
         </div>
 
-        <Link
-          href="/admin/participants"
-          className="inline-flex items-center gap-2 px-4 py-2.5 bg-[#141210] text-[#FAF7F2] rounded-sm text-xs uppercase tracking-[0.18em] hover:bg-[#2A2521]"
-        >
-          <Users className="w-3.5 h-3.5" />
-          <span>Open Participant Directory</span>
-          <ArrowRight className="w-3.5 h-3.5" />
-        </Link>
+        <div className="flex items-center gap-2">
+          <Link
+            href="/solo"
+            className="inline-flex items-center gap-1.5 px-3 py-2 bg-[#2E2822] text-[#FAF7F2] rounded-sm text-xs uppercase tracking-[0.16em] hover:bg-[#3D352E]"
+          >
+            <span>Solo Campaign</span>
+            <ArrowRight className="w-3 h-3 text-[#C8B28E]" />
+          </Link>
+          <Link
+            href="/alliance"
+            className="inline-flex items-center gap-1.5 px-3 py-2 bg-[#1C2F24] text-[#FAF7F2] rounded-sm text-xs uppercase tracking-[0.16em] hover:bg-[#253D30]"
+          >
+            <span>Alliance War Room</span>
+            <ArrowRight className="w-3 h-3 text-[#52B788]" />
+          </Link>
+          <Link
+            href="/admin/participants"
+            className="inline-flex items-center gap-2 px-4 py-2 bg-[#141210] text-[#FAF7F2] rounded-sm text-xs uppercase tracking-[0.18em] hover:bg-[#2A2521]"
+          >
+            <Users className="w-3.5 h-3.5" />
+            <span>Participants</span>
+            <ArrowRight className="w-3.5 h-3.5" />
+          </Link>
+        </div>
       </header>
 
       {/* Primary KPI Grid */}

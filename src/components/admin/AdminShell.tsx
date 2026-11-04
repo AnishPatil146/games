@@ -16,6 +16,8 @@ import {
   Menu,
   Settings,
   Shield,
+  ShieldCheck,
+  Sparkles,
   Users,
   X,
 } from "lucide-react";
@@ -35,6 +37,16 @@ const NAV_ITEMS = [
     href: "/admin/participants",
     label: "Participants",
     icon: Users,
+  },
+  {
+    href: "/solo",
+    label: "Solo Storyboard",
+    icon: Sparkles,
+  },
+  {
+    href: "/alliance",
+    label: "Alliance Live",
+    icon: ShieldCheck,
   },
   {
     href: "/admin/senior",

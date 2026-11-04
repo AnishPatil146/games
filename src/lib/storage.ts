@@ -89,7 +89,7 @@ function writeLocalStore(data: LocalStoreData): void {
   const storePath = getLocalStorePath();
   try {
     const dir = path.dirname(storePath);
-    if (!fs.existsSync(dir)) {
+    if (!fs.existsSync(/*turbopackIgnore: true*/ dir)) {
       fs.mkdirSync(dir, { recursive: true });
     }
     fs.writeFileSync(storePath, JSON.stringify(data, null, 2), "utf8");

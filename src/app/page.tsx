@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowRight, BookOpen, Compass, ShieldCheck } from "lucide-react";
+import { ArrowRight, BookOpen, Compass, ShieldCheck, Sparkles, Users } from "lucide-react";
 import { HeroMonographArtwork } from "@/components/artwork/SceneArtwork";
 import { Button } from "@/components/Button";
 import { Footer } from "@/components/Footer";
@@ -130,29 +130,37 @@ export default function LandingPage() {
             aria-label="Primary sections"
             className="flex items-center space-x-6 text-[11px] uppercase tracking-[0.2em] text-[#D6CEC0]"
           >
-            <a
-              href="#modes"
-              className="hover:text-[#FAF7F2] transition-colors hidden sm:inline"
-            >
-              Experiences
-            </a>
             <Link
-              href="/play"
-              className="hover:text-[#FAF7F2] transition-colors"
+              href="/solo"
+              className="text-[#FAF7F2] font-semibold flex items-center gap-1.5 hover:text-[#C8B28E] transition-colors"
             >
-              Senior
+              <Sparkles className="w-3 h-3 text-[#C8B28E]" />
+              <span>Solo Campaign</span>
+            </Link>
+            <Link
+              href="/alliance"
+              className="text-[#FAF7F2] font-semibold flex items-center gap-1.5 hover:text-[#52B788] transition-colors"
+            >
+              <Users className="w-3 h-3 text-[#52B788]" />
+              <span>Alliance</span>
             </Link>
             <Link
               href="/junior"
               className="hover:text-[#FAF7F2] transition-colors"
             >
-              Junior
+              Junior 11
             </Link>
             <Link
-              href="/privacy"
-              className="hover:text-[#FAF7F2] transition-colors"
+              href="/play"
+              className="hover:text-[#FAF7F2] transition-colors hidden sm:inline"
             >
-              Privacy
+              Classic
+            </Link>
+            <Link
+              href="/admin/dashboard"
+              className="hover:text-[#FAF7F2] transition-colors opacity-80"
+            >
+              Admin
             </Link>
           </nav>
         </header>
@@ -165,18 +173,19 @@ export default function LandingPage() {
             transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
             className="space-y-5"
           >
-            <p className="text-[11px] sm:text-xs uppercase tracking-[0.36em] text-[#C8B28E]">
-              An experiment in human curiosity.
-            </p>
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#FAF7F2]/10 border border-[#FAF7F2]/20 rounded-full text-[10px] uppercase tracking-[0.3em] text-[#C8B28E]">
+              <Sparkles className="w-3 h-3 text-[#C8B28E]" />
+              <span>The Illustrated Storyboard Campaign Live</span>
+            </div>
 
             <h1 className="font-serif text-4xl sm:text-6xl md:text-[4.35rem] leading-[1.05] tracking-[-0.02em] text-[#FAF7F2]">
               Every choice leaves a trace.
             </h1>
 
             <p className="text-base sm:text-lg text-[#D6CEC0] max-w-2xl mx-auto leading-relaxed font-light">
-              Two distinct interactive editions built on a single premise: how we
-              investigate uncertainty, reason under constraint, and make sense of
-              unfamiliar worlds.
+              Experience the fully illustrated visual novel storyboards. Play the 8-level
+              Solo Campaign, team up in the synchronous Multiplayer Alliance, or explore
+              curriculum reasoning in Class 11 Junior Mode.
             </p>
           </motion.div>
 
@@ -190,32 +199,48 @@ export default function LandingPage() {
             }}
             className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <Button
-              variant="ivory"
-              size="lg"
-              onClick={() => void handleSelectMode("senior")}
-              className="group min-w-[248px]"
-            >
-              <span>ENTER SENIOR MODE</span>
-              <ArrowRight className="w-4 h-4 ml-3 transition-transform duration-300 group-hover:translate-x-1" />
-            </Button>
+            <Link href="/solo" className="w-full sm:w-auto">
+              <Button
+                variant="ivory"
+                size="lg"
+                className="group w-full sm:min-w-[240px] shadow-lg shadow-[#000]/40"
+              >
+                <Sparkles className="w-4 h-4 mr-2 text-[#8A5A36]" />
+                <span>SOLO CAMPAIGN</span>
+                <ArrowRight className="w-4 h-4 ml-3 transition-transform duration-300 group-hover:translate-x-1" />
+              </Button>
+            </Link>
 
-            <Button
-              variant="secondary"
-              size="lg"
-              onClick={() => void handleSelectMode("junior")}
-              className="group min-w-[248px] bg-transparent text-[#FAF7F2] border-[#FAF7F2]/35 hover:bg-[#FAF7F2]/10"
-            >
-              <span>JUNIOR MODE · CLASS 11</span>
-              <ArrowRight className="w-4 h-4 ml-3 transition-transform duration-300 group-hover:translate-x-1" />
-            </Button>
+            <Link href="/alliance" className="w-full sm:w-auto">
+              <Button
+                variant="secondary"
+                size="lg"
+                className="group w-full sm:min-w-[240px] bg-[#1E2922] text-[#FAF7F2] border-[#52B788]/40 hover:bg-[#25362C]"
+              >
+                <Users className="w-4 h-4 mr-2 text-[#52B788]" />
+                <span>MULTIPLAYER ALLIANCE</span>
+                <ArrowRight className="w-4 h-4 ml-3 transition-transform duration-300 group-hover:translate-x-1" />
+              </Button>
+            </Link>
+
+            <Link href="/junior" className="w-full sm:w-auto">
+              <Button
+                variant="secondary"
+                size="lg"
+                className="group w-full sm:min-w-[210px] bg-transparent text-[#FAF7F2] border-[#FAF7F2]/30 hover:bg-[#FAF7F2]/10"
+              >
+                <BookOpen className="w-4 h-4 mr-2 text-[#C8B28E]" />
+                <span>JUNIOR 11</span>
+                <ArrowRight className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
+              </Button>
+            </Link>
           </motion.div>
         </div>
 
         {/* Bottom Monograph Colophon */}
         <div className="relative z-10 max-w-6xl w-full mx-auto px-6 sm:px-10 pb-7 flex flex-col sm:flex-row items-center justify-between gap-2 text-[10px] uppercase tracking-[0.24em] text-[#8A8178]">
-          <span>Dual-Edition Interactive Platform</span>
-          <span>Senior Narrative Monograph · Junior Class 11 Studio</span>
+          <span>Illustrated Graphic-Novel Storyboard Platform</span>
+          <span>Solo Mind Experiment · Multiplayer Alliance · Junior FYJC Studio</span>
         </div>
       </section>
 
@@ -275,153 +300,126 @@ export default function LandingPage() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* PANEL A: SENIOR MODE */}
-            <article className="bg-[#141210] text-[#FAF7F2] border border-[#2E2924] rounded-sm p-8 sm:p-10 flex flex-col justify-between space-y-8">
-              <div className="space-y-6">
+            {/* PANEL 1: SOLO STORYBOARD CAMPAIGN */}
+            <article className="bg-[#141210] text-[#FAF7F2] border border-[#3D352E] rounded-sm p-8 sm:p-10 flex flex-col justify-between space-y-8 relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-48 h-48 bg-[#C8B28E]/5 rounded-full blur-3xl pointer-events-none" />
+              <div className="space-y-6 relative z-10">
                 <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.26em] text-[#C8B28E] border-b border-[#FAF7F2]/12 pb-4">
-                  <span>Edition A · Interactive Fiction</span>
-                  <span>6 Chapters + 7th Door</span>
-                </div>
-
-                <div className="h-32 w-full rounded-sm bg-[#1B1815] border border-[#FAF7F2]/10 flex items-center justify-center overflow-hidden">
-                  <svg
-                    viewBox="0 0 420 120"
-                    className="w-full h-full"
-                    aria-hidden="true"
-                  >
-                    <line
-                      x1="40"
-                      y1="96"
-                      x2="380"
-                      y2="96"
-                      stroke="#3E3730"
-                      strokeWidth="1"
-                    />
-                    {[0, 1, 2, 3, 4, 5].map((i) => (
-                      <path
-                        key={i}
-                        d={`M ${68 + i * 48} 96 L ${68 + i * 48} 48 A 16 16 0 0 1 ${
-                          100 + i * 48
-                        } 48 L ${100 + i * 48} 96`}
-                        fill={i === 5 ? "#545E4E" : "none"}
-                        fillOpacity={i === 5 ? "0.28" : "0"}
-                        stroke={i === 5 ? "#C8B28E" : "#8A8178"}
-                        strokeWidth="1.2"
-                      />
-                    ))}
-                    <circle
-                      cx="352"
-                      cy="62"
-                      r="5"
-                      fill="none"
-                      stroke="#9E6B68"
-                      strokeWidth="1.3"
-                    />
-                  </svg>
+                  <span className="flex items-center gap-1.5 font-semibold">
+                    <Sparkles className="w-3.5 h-3.5 text-[#C8B28E]" />
+                    <span>Illustrated Storyboard Engine</span>
+                  </span>
+                  <span>8 Levels · 4 Endings</span>
                 </div>
 
                 <div className="space-y-3">
                   <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.22em] text-[#D6CEC0]">
-                    <Compass className="w-3.5 h-3.5 text-[#C8B28E]" />
-                    <span>SENIOR MODE</span>
+                    <span>SOLO CAMPAIGN</span>
                   </div>
                   <h3 className="font-serif text-3xl sm:text-4xl text-[#FAF7F2]">
-                    The Narrative Monograph
+                    The Mind Experiment
                   </h3>
                   <p className="text-sm text-[#D6CEC0] leading-relaxed font-light">
-                    Step into six fictional chapters—from a departing midnight
-                    express to a locked curator&apos;s study. Examine hidden
-                    correspondence, solve tactile ciphers, unlock the optional
-                    Seventh Door, and receive a personal gameplay dossier with a
-                    visual Choice Map.
+                    Enter the high-security observation panopticon as Aarav and Aanya.
+                    Every scene is framed like a cinematic graphic novel with dynamic
+                    character poses, comic-book dialogue bubbles, and contextual in-stage
+                    puzzles—from laser security terminals to the final moral threshold.
                   </p>
                 </div>
 
-                <ol className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 pt-2 border-t border-[#FAF7F2]/10 text-xs text-[#D6CEC0]">
-                  {SENIOR_CHAPTER_PLATES.map((ch) => (
-                    <li
-                      key={ch.numeral}
-                      className="flex items-baseline justify-between py-1 border-b border-[#FAF7F2]/5"
-                    >
-                      <span className="font-serif">
-                        <span className="font-mono text-[10px] text-[#8A8178] mr-2">
-                          {ch.numeral}
-                        </span>
-                        {ch.title}
-                      </span>
-                      <span className="text-[10px] text-[#8A8178]">
-                        {ch.motif}
-                      </span>
-                    </li>
-                  ))}
-                </ol>
+                <div className="p-4 bg-[#1C1814] border border-[#FAF7F2]/10 rounded-sm space-y-2 text-xs text-[#D6CEC0]">
+                  <div className="text-[10px] uppercase tracking-[0.2em] text-[#C8B28E] font-medium">
+                    Features
+                  </div>
+                  <ul className="space-y-1 text-[#A89F93]">
+                    <li>• Chiaroscuro painted stages with ambient cinematic motion</li>
+                    <li>• Speech balloons with dynamic pointer tails pointing to speakers</li>
+                    <li>• Interactive in-scene keypad ciphers, door logic, & memory puzzles</li>
+                    <li>• 4 distinct branching narrative conclusions</li>
+                  </ul>
+                </div>
               </div>
 
-              <div className="pt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-t border-[#FAF7F2]/12">
+              <div className="pt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-t border-[#FAF7F2]/12 relative z-10">
                 <span className="text-[11px] uppercase tracking-[0.2em] text-[#A89F93]">
-                  Duration · 4–6 Minutes
+                  Single-Player · ~15–20 Mins
                 </span>
-                <Button
-                  variant="ivory"
-                  size="md"
-                  onClick={() => void handleSelectMode("senior")}
-                  className="group"
-                >
-                  <span>Begin Senior Mode</span>
-                  <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
-                </Button>
+                <Link href="/solo">
+                  <Button
+                    variant="ivory"
+                    size="md"
+                    className="group w-full sm:w-auto"
+                  >
+                    <span>Enter Solo Campaign</span>
+                    <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+                  </Button>
+                </Link>
               </div>
             </article>
 
-            {/* PANEL B: JUNIOR MODE — CLASS 11 */}
+            {/* PANEL 2: MULTIPLAYER ALLIANCE */}
+            <article className="bg-[#121A16] text-[#FAF7F2] border border-[#233B2E] rounded-sm p-8 sm:p-10 flex flex-col justify-between space-y-8 relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-48 h-48 bg-[#52B788]/5 rounded-full blur-3xl pointer-events-none" />
+              <div className="space-y-6 relative z-10">
+                <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.26em] text-[#52B788] border-b border-[#52B788]/20 pb-4">
+                  <span className="flex items-center gap-1.5 font-semibold">
+                    <Users className="w-3.5 h-3.5 text-[#52B788]" />
+                    <span>Synchronous Co-Op & Mind Games</span>
+                  </span>
+                  <span>2–4 Players · 8 Chambers</span>
+                </div>
+
+                <div className="space-y-3">
+                  <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.22em] text-[#52B788]">
+                    <span>MULTIPLAYER ALLIANCE</span>
+                  </div>
+                  <h3 className="font-serif text-3xl sm:text-4xl text-[#FAF7F2]">
+                    The Last Alliance
+                  </h3>
+                  <p className="text-sm text-[#D6CEC0] leading-relaxed font-light">
+                    Gather your squad in a live War Room. Solve asymmetric ciphers,
+                    counter Count Vesper&apos;s gambit, identify the imposter under 90-second
+                    deadlines, and survive until the final chamber: a live Prisoner&apos;s
+                    Dilemma betrayal matrix.
+                  </p>
+                </div>
+
+                <div className="p-4 bg-[#0F1713] border border-[#52B788]/20 rounded-sm space-y-2 text-xs text-[#D6CEC0]">
+                  <div className="text-[10px] uppercase tracking-[0.2em] text-[#52B788] font-medium">
+                    Features
+                  </div>
+                  <ul className="space-y-1 text-[#A89F93]">
+                    <li>• Instant 6-character room codes with real-time player presence</li>
+                    <li>• Server-authoritative 90s countdown clock with team retries</li>
+                    <li>• Interactive Sudoku lock, chess puzzles, & social deduction</li>
+                    <li>• Final Betrayal Matrix with live prisoner payoff evaluation</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="pt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-t border-[#52B788]/20 relative z-10">
+                <span className="text-[11px] uppercase tracking-[0.2em] text-[#52B788]">
+                  Live Multiplayer · 2–4 Players
+                </span>
+                <Link href="/alliance">
+                  <Button
+                    variant="secondary"
+                    size="md"
+                    className="group w-full sm:w-auto bg-[#1C2F24] text-[#FAF7F2] border-[#52B788]/50 hover:bg-[#253D30]"
+                  >
+                    <span>Deploy War Room</span>
+                    <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+                  </Button>
+                </Link>
+              </div>
+            </article>
+
+            {/* PANEL 3: JUNIOR MODE — CLASS 11 */}
             <article className="bg-[#FAF7F2] text-[#1C1917] border border-[#CFC5B4] rounded-sm p-8 sm:p-10 flex flex-col justify-between space-y-8">
               <div className="space-y-6">
                 <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.26em] text-[#545E4E] border-b border-[#DDD4C5] pb-4 font-semibold">
                   <span>Edition B · Class 11 Academic Challenges</span>
                   <span>MSBSHSE · 14 Subjects</span>
-                </div>
-
-                <div className="h-32 w-full rounded-sm bg-[#F3EDE2] border border-[#DDD4C5] flex items-center justify-center overflow-hidden">
-                  <svg
-                    viewBox="0 0 420 120"
-                    className="w-full h-full"
-                    aria-hidden="true"
-                  >
-                    <line
-                      x1="30"
-                      y1="60"
-                      x2="390"
-                      y2="60"
-                      stroke="#DDD4C5"
-                      strokeWidth="1"
-                    />
-                    <circle
-                      cx="210"
-                      cy="60"
-                      r="40"
-                      fill="none"
-                      stroke="#545E4E"
-                      strokeWidth="1.2"
-                    />
-                    <circle
-                      cx="210"
-                      cy="60"
-                      r="24"
-                      fill="none"
-                      stroke="#8A8178"
-                      strokeDasharray="3 3"
-                      strokeWidth="1"
-                    />
-                    <polygon
-                      points="210,22 244,78 176,78"
-                      fill="none"
-                      stroke="#1C1917"
-                      strokeWidth="1.1"
-                    />
-                    <circle cx="210" cy="22" r="3" fill="#545E4E" />
-                    <circle cx="244" cy="78" r="3" fill="#9E6B68" />
-                    <circle cx="176" cy="78" r="3" fill="#1C1917" />
-                  </svg>
                 </div>
 
                 <div className="space-y-3">
@@ -467,15 +465,78 @@ export default function LandingPage() {
                 <span className="text-[11px] uppercase tracking-[0.2em] text-[#8A8178]">
                   1,400 Curated Syllabus Items
                 </span>
-                <Button
-                  variant="primary"
-                  size="md"
-                  onClick={() => void handleSelectMode("junior")}
-                  className="group"
-                >
-                  <span>Enter Junior Mode</span>
-                  <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
-                </Button>
+                <Link href="/junior">
+                  <Button
+                    variant="primary"
+                    size="md"
+                    className="group w-full sm:w-auto"
+                  >
+                    <span>Enter Junior Mode</span>
+                    <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+                  </Button>
+                </Link>
+              </div>
+            </article>
+
+            {/* PANEL 4: SENIOR CLASSIC MONOGRAPH */}
+            <article className="bg-[#141210] text-[#FAF7F2] border border-[#2E2924] rounded-sm p-8 sm:p-10 flex flex-col justify-between space-y-8">
+              <div className="space-y-6">
+                <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.26em] text-[#C8B28E] border-b border-[#FAF7F2]/12 pb-4">
+                  <span>Edition A · Interactive Fiction</span>
+                  <span>6 Chapters + 7th Door</span>
+                </div>
+
+                <div className="space-y-3">
+                  <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.22em] text-[#D6CEC0]">
+                    <Compass className="w-3.5 h-3.5 text-[#C8B28E]" />
+                    <span>SENIOR MODE</span>
+                  </div>
+                  <h3 className="font-serif text-3xl sm:text-4xl text-[#FAF7F2]">
+                    The Narrative Monograph
+                  </h3>
+                  <p className="text-sm text-[#D6CEC0] leading-relaxed font-light">
+                    Step into six fictional chapters—from a departing midnight
+                    express to a locked curator&apos;s study. Examine hidden
+                    correspondence, solve tactile ciphers, unlock the optional
+                    Seventh Door, and receive a personal gameplay dossier with a
+                    visual Choice Map.
+                  </p>
+                </div>
+
+                <ol className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 pt-2 border-t border-[#FAF7F2]/10 text-xs text-[#D6CEC0]">
+                  {SENIOR_CHAPTER_PLATES.map((ch) => (
+                    <li
+                      key={ch.numeral}
+                      className="flex items-baseline justify-between py-1 border-b border-[#FAF7F2]/5"
+                    >
+                      <span className="font-serif">
+                        <span className="font-mono text-[10px] text-[#8A8178] mr-2">
+                          {ch.numeral}
+                        </span>
+                        {ch.title}
+                      </span>
+                      <span className="text-[10px] text-[#8A8178]">
+                        {ch.motif}
+                      </span>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+
+              <div className="pt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-t border-[#FAF7F2]/12">
+                <span className="text-[11px] uppercase tracking-[0.2em] text-[#A89F93]">
+                  Duration · 4–6 Minutes
+                </span>
+                <Link href="/play">
+                  <Button
+                    variant="ivory"
+                    size="md"
+                    className="group w-full sm:w-auto"
+                  >
+                    <span>Begin Senior Mode</span>
+                    <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+                  </Button>
+                </Link>
               </div>
             </article>
           </div>

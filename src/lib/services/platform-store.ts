@@ -167,7 +167,7 @@ function writePlatformStore(store: PlatformPersistenceData): void {
   const storePath = getActiveStorePath();
   try {
     const dir = path.dirname(storePath);
-    if (!fs.existsSync(dir)) {
+    if (!fs.existsSync(/*turbopackIgnore: true*/ dir)) {
       fs.mkdirSync(dir, { recursive: true });
     }
     const tmpPath = `${storePath}.tmp`;
