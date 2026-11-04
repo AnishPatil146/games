@@ -118,115 +118,114 @@ export function StoryboardStage({
   const currentSpeakerId: CharacterId = currentStep?.speakerId || "narrator";
 
   return (
-    <div className="relative w-full h-screen overflow-hidden bg-[#12100E] flex flex-col items-center justify-center">
-      {/* 16:9 Cinematic Storyboard Stage Container */}
-      <div className="relative w-full h-full max-w-[1920px] aspect-[16/9] max-h-screen overflow-hidden shadow-2xl">
-        {/* Large Custom Illustrated Background with Ambient Drift */}
-        <motion.div
-          key={scene.backgroundUrl}
-          initial={{ scale: 1.05, opacity: 0.8 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
-          className="absolute inset-0 w-full h-full"
-        >
-          <Image
-            src={scene.backgroundUrl}
-            alt={scene.sceneTitle}
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover object-center select-none"
-          />
-          {/* Subtle Graphic Novel Tone Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-black/40 pointer-events-none" />
-        </motion.div>
+    <div className="relative w-full h-[100dvh] overflow-hidden bg-[#0E0C0A] flex flex-col justify-between">
+      {/* Large Custom Illustrated Background with Ambient Drift */}
+      <motion.div
+        key={scene.backgroundUrl}
+        initial={{ scale: 1.04, opacity: 0.9 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="absolute inset-0 w-full h-full z-0 pointer-events-none"
+      >
+        <Image
+          src={scene.backgroundUrl}
+          alt={scene.sceneTitle}
+          fill
+          unoptimized
+          priority
+          sizes="100vw"
+          className="object-cover object-center select-none"
+        />
+        {/* Subtle Graphic Novel Tone Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-black/50 pointer-events-none" />
+      </motion.div>
 
-        {/* Top HUD Bar */}
-        <header className="absolute top-0 left-0 right-0 z-30 flex items-center justify-between p-4 md:p-6 bg-gradient-to-b from-black/80 to-transparent">
-          <div className="flex items-center gap-3">
-            {onReturnToHub ? (
-              <button
-                onClick={onReturnToHub}
-                className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 text-[#FAF7F2] font-mono text-xs uppercase tracking-wider backdrop-blur-md border border-white/10 transition-all"
-              >
-                <Home className="w-3.5 h-3.5" />
-                <span className="hidden sm:inline">Hub</span>
-              </button>
-            ) : (
-              <Link
-                href="/"
-                className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 text-[#FAF7F2] font-mono text-xs uppercase tracking-wider backdrop-blur-md border border-white/10 transition-all"
-              >
-                <Home className="w-3.5 h-3.5" />
-                <span className="hidden sm:inline">Hub</span>
-              </Link>
-            )}
-
-            <div className="flex flex-col">
-              <span className="text-[10px] md:text-xs font-mono font-bold tracking-[0.25em] text-[#A8A199] uppercase">
-                {modeTitle} • LEVEL {scene.levelNumber}
-              </span>
-              <h2 className="text-sm md:text-base font-serif font-bold tracking-wide text-[#FAF7F2]">
-                {scene.levelTitle}
-              </h2>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-2">
-            {/* Step Progression Bar */}
-            <div className="hidden md:flex items-center gap-1 bg-black/40 px-3 py-1.5 rounded-full border border-white/10">
-              {scene.steps.map((_, idx) => (
-                <div
-                  key={idx}
-                  className={`h-1.5 rounded-full transition-all duration-300 ${
-                    idx === currentStepIndex
-                      ? "w-6 bg-[#FAF7F2]"
-                      : idx < currentStepIndex
-                      ? "w-2 bg-[#545E4E]"
-                      : "w-2 bg-white/20"
-                  }`}
-                />
-              ))}
-            </div>
-
+      {/* Top HUD Bar */}
+      <header className="relative z-30 w-full flex items-center justify-between p-4 md:p-6 bg-gradient-to-b from-black/80 to-transparent">
+        <div className="flex items-center gap-3">
+          {onReturnToHub ? (
             <button
-              onClick={() => setIsMuted(!isMuted)}
-              className="p-2 rounded-full bg-white/10 hover:bg-white/20 text-[#FAF7F2] backdrop-blur-md border border-white/10 transition-all"
-              title={isMuted ? "Unmute audio" : "Mute audio"}
+              onClick={onReturnToHub}
+              className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 text-[#FAF7F2] font-mono text-xs uppercase tracking-wider backdrop-blur-md border border-white/10 transition-all"
             >
-              {isMuted ? (
-                <VolumeX className="w-4 h-4" />
-              ) : (
-                <Volume2 className="w-4 h-4 text-[#52B788]" />
-              )}
+              <Home className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">Hub</span>
             </button>
+          ) : (
+            <Link
+              href="/"
+              className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 text-[#FAF7F2] font-mono text-xs uppercase tracking-wider backdrop-blur-md border border-white/10 transition-all"
+            >
+              <Home className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">Hub</span>
+            </Link>
+          )}
+
+          <div className="flex flex-col">
+            <span className="text-[10px] md:text-xs font-mono font-bold tracking-[0.25em] text-[#C8B28E] uppercase">
+              {modeTitle} • LEVEL {scene.levelNumber}
+            </span>
+            <h2 className="text-sm md:text-base font-serif font-bold tracking-wide text-[#FAF7F2]">
+              {scene.levelTitle}
+            </h2>
           </div>
-        </header>
-
-        {/* Stage Characters (Layered Over Background, Under Speech Bubble) */}
-        <div className="absolute inset-0 pointer-events-none">
-          {scene.characters.map((char) => {
-            const isSpeaker = char.id === currentSpeakerId;
-            // Dynamic expression override from the current dialogue step
-            const activeExpression =
-              isSpeaker && currentStep?.expression
-                ? currentStep.expression
-                : char.expression;
-
-            return (
-              <StageCharacter
-                key={char.id}
-                character={{
-                  ...char,
-                  expression: activeExpression,
-                }}
-                isSpeaker={isSpeaker}
-              />
-            );
-          })}
         </div>
 
-        {/* Dynamic Character-Anchored Speech Bubble */}
+        <div className="flex items-center gap-2">
+          {/* Step Progression Bar */}
+          <div className="hidden md:flex items-center gap-1 bg-black/40 px-3 py-1.5 rounded-full border border-white/10 backdrop-blur-md">
+            {scene.steps.map((_, idx) => (
+              <div
+                key={idx}
+                className={`h-1.5 rounded-full transition-all duration-300 ${
+                  idx === currentStepIndex
+                    ? "w-6 bg-[#FAF7F2]"
+                    : idx < currentStepIndex
+                    ? "w-2 bg-[#52B788]"
+                    : "w-2 bg-white/20"
+                }`}
+              />
+            ))}
+          </div>
+
+          <button
+            onClick={() => setIsMuted(!isMuted)}
+            className="p-2 rounded-full bg-white/10 hover:bg-white/20 text-[#FAF7F2] backdrop-blur-md border border-white/10 transition-all"
+            title={isMuted ? "Unmute audio" : "Mute audio"}
+          >
+            {isMuted ? (
+              <VolumeX className="w-4 h-4" />
+            ) : (
+              <Volume2 className="w-4 h-4 text-[#52B788]" />
+            )}
+          </button>
+        </div>
+      </header>
+
+      {/* Stage Characters Layer */}
+      <div className="absolute inset-x-0 bottom-0 top-16 pointer-events-none z-10 overflow-hidden flex items-end justify-center">
+        {scene.characters.map((char) => {
+          const isSpeaker = char.id === currentSpeakerId;
+          const activeExpression =
+            isSpeaker && currentStep?.expression
+              ? currentStep.expression
+              : char.expression;
+
+          return (
+            <StageCharacter
+              key={char.id}
+              character={{
+                ...char,
+                expression: activeExpression,
+              }}
+              isSpeaker={isSpeaker}
+            />
+          );
+        })}
+      </div>
+
+      {/* Dynamic Character-Anchored Speech Bubble */}
+      <div className="relative z-30 w-full max-w-4xl mx-auto px-4 pb-4 sm:pb-6 md:pb-8 mt-auto pointer-events-auto">
         {currentStep && (
           <SpeechBubble
             key={`${scene.id}-${currentStepIndex}`}
@@ -247,24 +246,24 @@ export function StoryboardStage({
             canAdvance={!activePuzzle}
           />
         )}
-
-        {/* In-Scene Contextual Interactive Puzzle Overlay */}
-        <AnimatePresence>
-          {activePuzzle && (
-            <ContextualPuzzleOverlay
-              key={activePuzzle.id}
-              config={activePuzzle}
-              onSolve={handlePuzzleSolve}
-              onCancel={() =>
-                setDismissedPuzzles((prev) => ({
-                  ...prev,
-                  [currentStepIndex]: true,
-                }))
-              }
-            />
-          )}
-        </AnimatePresence>
       </div>
+
+      {/* In-Scene Contextual Interactive Puzzle Overlay */}
+      <AnimatePresence>
+        {activePuzzle && (
+          <ContextualPuzzleOverlay
+            key={activePuzzle.id}
+            config={activePuzzle}
+            onSolve={handlePuzzleSolve}
+            onCancel={() =>
+              setDismissedPuzzles((prev) => ({
+                ...prev,
+                [currentStepIndex]: true,
+              }))
+            }
+          />
+        )}
+      </AnimatePresence>
     </div>
   );
 }

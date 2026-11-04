@@ -2,6 +2,9 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
+  images: {
+    unoptimized: true,
+  },
   // Question bank JSON files are read at runtime via fs (path marked turbopackIgnore),
   // so include them explicitly in the serverless output trace for Vercel.
   outputFileTracingIncludes: {

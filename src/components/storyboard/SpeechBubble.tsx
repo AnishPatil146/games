@@ -27,7 +27,7 @@ export function SpeechBubble({
   onAdvance,
   canAdvance = true,
 }: SpeechBubbleProps) {
-  const [displayedText, setDisplayedText] = useState("");
+  const [displayedText, setDisplayedText] = useState(text.slice(0, 2));
   const isNarrator = speakerId === "narrator" || speakerId === "system";
   const meta = CHARACTER_META[speakerId] || CHARACTER_META.narrator;
 
@@ -44,7 +44,7 @@ export function SpeechBubble({
       } else {
         clearInterval(interval);
       }
-    }, 18);
+    }, 16);
 
     return () => {
       clearTimeout(startTimer);
@@ -63,17 +63,10 @@ export function SpeechBubble({
     }
   };
 
-  // Position alignment styling
-  const posClasses = {
-    left: "left-6 md:left-14 md:max-w-xl",
-    center: "left-1/2 -translate-x-1/2 max-w-2xl w-[92%]",
-    right: "right-6 md:right-14 md:max-w-xl",
-  }[position];
-
   return (
     <div
       onClick={handleContainerClick}
-      className={`absolute bottom-4 md:bottom-8 z-30 select-none cursor-pointer transition-all duration-300 ${posClasses}`}
+      className="w-full select-none cursor-pointer transition-all duration-300"
     >
       <motion.div
         initial={{ opacity: 0, y: 15, scale: 0.98 }}
@@ -87,9 +80,9 @@ export function SpeechBubble({
           <div
             className={`absolute -top-3 w-0 h-0 border-l-[14px] border-l-transparent border-r-[14px] border-r-transparent border-b-[14px] border-b-[#FAF7F2] filter drop-shadow-[0_-2px_4px_rgba(0,0,0,0.15)] ${
               position === "left"
-                ? "left-16"
+                ? "left-20"
                 : position === "right"
-                ? "right-16"
+                ? "right-20"
                 : "left-1/2 -translate-x-1/2"
             }`}
           />
@@ -97,10 +90,10 @@ export function SpeechBubble({
 
         {/* Speech Balloon Body */}
         <div
-          className={`relative rounded-2xl md:rounded-3xl p-5 md:p-7 shadow-[0_12px_40px_rgba(0,0,0,0.45)] border ${
+          className={`relative rounded-2xl md:rounded-3xl p-5 md:p-6 shadow-[0_16px_50px_rgba(0,0,0,0.55)] border-2 ${
             isNarrator
-              ? "bg-[#181614]/95 text-[#FAF7F2] border-[#453D35] backdrop-blur-md"
-              : "bg-[#FAF7F2]/95 text-[#1C1917] border-[#DDD4C5] backdrop-blur-md"
+              ? "bg-[#181614]/95 text-[#FAF7F2] border-[#574E45] backdrop-blur-md"
+              : "bg-[#FAF7F2]/98 text-[#1C1917] border-[#C8B8A6] backdrop-blur-md"
           }`}
         >
           {/* Speaker Name Tag / Comic Badge */}
