@@ -89,13 +89,12 @@ export const ALLIANCE_CAMPAIGN_SCENES: Record<string, StoryboardScene> = {
         bubblePosition: "right",
         puzzleTrigger: {
           id: "puzzle_alliance_sudoku",
-          type: "keypad_code",
-          title: "Synchronized Sudoku Quadrant Override",
+          type: "sudoku_matrix",
+          title: "The Synchronized Glyph Sudoku",
           instructions:
-            "Enter the 4 missing digits that balance the Latin square quadrant: 2, 4, 1, 3.",
-          timeLimitSeconds: 60,
-          payload: {},
-          solution: { code: "2413" },
+            "Decode the 9x9 mechanical matrix. Align every row, column, and 3x3 quadrant to disengage the chamber's containment locks.",
+          payload: { difficulty: "medium" },
+          solution: {},
         },
       },
       {
@@ -140,24 +139,20 @@ export const ALLIANCE_CAMPAIGN_SCENES: Record<string, StoryboardScene> = {
         text: "Each of you faces a tactical endgame on the floor tiles. Find the decisive mating move, or remain my eternal guests.",
         expression: "neutral",
         bubblePosition: "center",
-        choices: [
-          {
-            id: "MOVE_QUEEN",
-            label: "Play Queen to h7 (Checkmate)",
-            description: "Sacrifice tempo for immediate decisive mate",
-            statImpact: { tacticalAccuracy: 1 },
-          },
-          {
-            id: "MOVE_KNIGHT",
-            label: "Play Knight to f7 (Smothered check)",
-            description: "Force defensive king displacement",
-          },
-        ],
+        puzzleTrigger: {
+          id: "puzzle_alliance_chess",
+          type: "chess_tactics",
+          title: "Count Vesper's Gambit: Mate in 2",
+          instructions:
+            "Vesper takes your Queen on d1 and sneers. White to move: Find the forced tactical sacrifice that seals his fate.",
+          payload: { opponent: "Count Vesper" },
+          solution: { sequence: ["Nf6+", "gxf6", "Bxf7#"] },
+        },
       },
       {
         speakerId: "vesper",
         speakerName: "COUNT VESPER",
-        text: "Magnificent. Queen takes h7. A sharp mind is such a rare vintage. Pass into the laboratory.",
+        text: "Magnificent. A knight sacrifice into a bishop checkmate. A sharp mind is such a rare vintage. Pass into the laboratory.",
         expression: "smiling",
         bubblePosition: "center",
       },

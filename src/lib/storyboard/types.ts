@@ -56,6 +56,8 @@ export type PuzzleType =
   | "moral_dilemma"
   | "emergency_dispatch"
   | "memory_vault_cipher"
+  | "sudoku_matrix"
+  | "chess_tactics"
   | "multiplayer_sudoku"
   | "multiplayer_chess"
   | "multiplayer_clone_snap"
