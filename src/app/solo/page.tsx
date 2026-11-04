@@ -82,6 +82,7 @@ export default function SoloCampaignPage() {
 
   return (
     <StoryboardStage
+      key={currentScene.id}
       scene={currentScene}
       onSceneComplete={handleSceneComplete}
       onReturnToHub={() => router.push("/")}
