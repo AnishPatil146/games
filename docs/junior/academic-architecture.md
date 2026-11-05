@@ -21,3 +21,4 @@ Junior Mode transforms secondary & higher-secondary board examination preparatio
      - Science (Bio): **NEET UG**
      - Commerce: **CUET UG & CA Foundation**
      - Arts & Humanities: **CUET UG & CLAT (Common Law Admission Test)**
+

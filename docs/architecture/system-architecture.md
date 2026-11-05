@@ -32,3 +32,4 @@ graph TD
 - **Multiplayer Synchronous Engine**: In-memory and session-backed room coordinator with real-time state polling, server countdown timer (90s threshold), team solve synchronization, and 4-quadrant payoff resolution.
 - **Academic Engine**: Class 11 & Class 12 curriculum partitioning, non-repeating cycle selector ensuring zero repetition across 100 questions per subject, and evidence-mapped qualitative ability bands.
 - **Admin Command Centre**: Unified telemetry monitoring, participant dossier review, question catalogue audits, and live subsystem health checks.
+

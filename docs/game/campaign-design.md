@@ -25,3 +25,4 @@
   6. *Chamber 06: The Human Choice* — Team triage dilemma under cascading resource drain.
   7. *Chamber 07: The Breaking Point* — High-pressure multi-terminal synchronization.
   8. *Chamber 08: The Final Betrayal* — Secret simultaneous Prisoner's Dilemma choice: Cooperate vs Betray.
+

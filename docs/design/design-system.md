@@ -32,3 +32,4 @@ THE UNWRITTEN's visual identity unites vintage literary mystery with precise aca
   - `primary`: Forest green academic action button.
 - **Modals**: Backdrop blur (`backdrop-blur-md`), dark charcoal container, rounded-2xl border with 1px stroke.
 - **HUD Bars**: Fixed top/bottom positioning with gradient falloffs to ensure dialogue and stage artwork are never clipped or obstructed.
+

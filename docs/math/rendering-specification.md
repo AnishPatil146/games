@@ -22,3 +22,4 @@ Verified by automated test suite `tests/math-renderer.test.ts`:
 - Complex nested fractions and square roots.
 - Proper fallback for plain prose.
 - Superscript and Greek character substitution.
+

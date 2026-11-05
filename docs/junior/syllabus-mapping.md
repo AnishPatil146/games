@@ -21,3 +21,4 @@
 12. **Political Science** (Code 37): The State, Liberty and Rights, Equality and Justice, Role of the Judiciary, Nationalism and Democracy, Administrative System in India, Public Administration, Constitutional Government in India.
 13. **Psychology** (Code 48): Story of Psychology, Branches of Psychology, Self, Human Development, Healthy Mind, Stress and Coping, Mental Health and Well-being, Psychological Disorders.
 14. **Sociology** (Code 47): Introduction to Sociology, Social Institutions, Social Stratification, Culture and Socialisation, Social Change, Social Problems in India.
+

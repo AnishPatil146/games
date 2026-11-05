@@ -15,3 +15,4 @@ Each question is tagged with primary and secondary cognitive dimensions:
 - *Arts*: Historical Contextualization, Spatial & Ecological Reasoning, Institutional Analysis, Analytical Empathy, Sociological Scrutiny.
 
 To prevent erratic profiling, a qualitative ability band ("Strong", "Consistent", "Developing") is computed only when at least 2 questions mapped to that dimension have been answered in the attempt. Otherwise, it gracefully displays "Insufficient Sample".
+

@@ -23,3 +23,4 @@ The repository maintains automated test suites in `tests/`:
 | **Junior Mode** | Class 11 vs 12 | Independent toggling; zero curriculum crosstalk | PASS |
 | **Junior Mode** | Math Notation | All formulas render with fraction bars and elevated indices | PASS |
 | **Junior Mode** | Non-Repeating Qs | 10 unique questions per attempt across 100-question cycle | PASS |
+

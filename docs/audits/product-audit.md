@@ -27,3 +27,4 @@
 ### Pillar 4: Admin Portal & Command Centre
 - **Route**: `/admin` with allowlist protection (`anishpatil146@gmail.com`).
 - **Telemetry**: Real-time KPI cards, subject breakdowns, participant dossier inspection, and live MathRenderer typesetting health check.
+

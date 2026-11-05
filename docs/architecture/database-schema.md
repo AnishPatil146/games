@@ -69,3 +69,4 @@ erDiagram
 - Strict participant consent enforcement before storing names or usernames.
 - IP addresses are salted and hashed (SHA-256) for audit trails and abuse mitigation without storing PII.
 - Comprehensive GDPR/CCPA participant deletion endpoints supported in `/api/v1/admin/participants/[id]`.
+

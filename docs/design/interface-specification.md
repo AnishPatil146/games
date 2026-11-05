@@ -27,3 +27,4 @@
    - Difficulty calibration: Easy (Learn & Understand), Medium (Board Prep), Hard (Competitive Entrance: JEE, NEET, CUET, CLAT), Mixed (Diagnostic).
    - Attempt execution with `<MathRenderer />` and instant feedback toggle.
    - Result monograph with ability indicators, chapter accuracy, verified answers, and syllabus citations.
+
