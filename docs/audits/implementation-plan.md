@@ -65,3 +65,4 @@ A prominent **EXIT** button on the top HUD of every screen:
 5. Create `docs/implementation-progress.md` tracking all verified features.
 6. Run `npm test`, `npm run lint`, and `npm run build`.
 7. Push to GitHub `origin/master` and verify production deployment on Vercel.
+

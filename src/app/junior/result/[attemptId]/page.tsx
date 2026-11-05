@@ -13,6 +13,7 @@ import {
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/Button";
+import { MathRenderer } from "@/components/math/MathRenderer";
 import { JuniorAttemptResult } from "@/lib/platform-types";
 
 interface PageProps {
@@ -356,9 +357,9 @@ export default function JuniorResultPage({ params }: PageProps) {
                       )}
                     </div>
 
-                    <p className="font-serif text-lg text-[#1C1917] leading-snug">
-                      {item.questionText}
-                    </p>
+                    <div className="font-serif text-lg text-[#1C1917] leading-snug">
+                      <MathRenderer text={item.questionText} />
+                    </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
                       <div
@@ -370,27 +371,36 @@ export default function JuniorResultPage({ params }: PageProps) {
                         <span className="block text-[10px] uppercase tracking-[0.18em] text-[#57524C]">
                           Your Selection
                         </span>
-                        <span className="font-medium text-[#1C1917] mt-0.5 block">
-                          {item.selectedOptionKey
-                            ? `${item.selectedOptionKey}. ${item.selectedOptionText}`
-                            : "No option selected"}
-                        </span>
+                        <div className="font-medium text-[#1C1917] mt-0.5 block">
+                          {item.selectedOptionKey ? (
+                            <span>
+                              {item.selectedOptionKey}.{" "}
+                              <MathRenderer text={item.selectedOptionText || ""} />
+                            </span>
+                          ) : (
+                            "No option selected"
+                          )}
+                        </div>
                       </div>
 
                       <div className="p-3 rounded-sm border bg-[#545E4E]/10 border-[#545E4E]">
                         <span className="block text-[10px] uppercase tracking-[0.18em] text-[#545E4E]">
                           Verified Answer Key
                         </span>
-                        <span className="font-medium text-[#1C1917] mt-0.5 block">
-                          {item.correctOptionKey}. {item.correctOptionText}
-                        </span>
+                        <div className="font-medium text-[#1C1917] mt-0.5 block">
+                          <span>
+                            {item.correctOptionKey}.{" "}
+                            <MathRenderer text={item.correctOptionText} />
+                          </span>
+                        </div>
                       </div>
                     </div>
 
                     <div className="p-3.5 bg-[#F3EDE2]/75 border border-[#E5DEC9] rounded-sm space-y-1 text-xs">
-                      <p className="text-[#1C1917] leading-relaxed">
-                        <strong>Explanation:</strong> {item.explanation}
-                      </p>
+                      <div className="text-[#1C1917] leading-relaxed">
+                        <strong className="mr-1">Explanation:</strong>
+                        <MathRenderer text={item.explanation} />
+                      </div>
                       <p className="text-[11px] text-[#8A8178]">
                         Reference: {item.syllabusReference}
                       </p>

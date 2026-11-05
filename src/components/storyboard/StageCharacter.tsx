@@ -23,10 +23,24 @@ export function StageCharacter({
   character,
   isSpeaker = false,
 }: StageCharacterProps) {
-  const [imgError, setImgError] = useState(false);
-  const spriteSrc =
+  const [failedSrcs, setFailedSrcs] = useState<Record<string, boolean>>({});
+
+  const primarySrc =
     getCharacterSprite(character.id, character.expression) ||
     `/art/characters/${character.id}_neutral.png`;
+  const fallbackNeutralSrc = `/art/characters/${character.id}_neutral.png`;
+
+  const activeSrc = !failedSrcs[primarySrc]
+    ? primarySrc
+    : !failedSrcs[fallbackNeutralSrc]
+    ? fallbackNeutralSrc
+    : null;
+
+  const handleImageError = () => {
+    if (activeSrc) {
+      setFailedSrcs((prev) => ({ ...prev, [activeSrc]: true }));
+    }
+  };
 
   const meta = CHARACTER_META[character.id] || CHARACTER_META.narrator;
   const basePosStyle = POSITION_STYLES[character.position] || POSITION_STYLES.center;
@@ -73,16 +87,17 @@ export function StageCharacter({
           maxWidth: "420px",
         }}
       >
-        {!imgError ? (
+        {activeSrc ? (
           <Image
-            src={spriteSrc}
+            key={activeSrc}
+            src={activeSrc}
             alt={character.name}
             fill
             unoptimized
             priority
             sizes="(max-width: 768px) 320px, 440px"
             className="object-contain object-bottom"
-            onError={() => setImgError(true)}
+            onError={handleImageError}
           />
         ) : (
           /* Graceful Character Card Fallback */

@@ -1,45 +1,16 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowRight, BookOpen, Compass, ShieldCheck, Sparkles, Users } from "lucide-react";
+import { ArrowRight, BookOpen, ShieldCheck, Sparkles, Users } from "lucide-react";
 import { HeroMonographArtwork } from "@/components/artwork/SceneArtwork";
 import { Button } from "@/components/Button";
 import { Footer } from "@/components/Footer";
 import { useGameSession } from "@/lib/useGameSession";
 
-const SENIOR_CHAPTER_PLATES = [
-  { numeral: "I", title: "The Last Train", motif: "Urgency & Regard" },
-  { numeral: "II", title: "The Locked Room", motif: "Scrutiny & Cipher" },
-  { numeral: "III", title: "The Unknown Message", motif: "Signal & Restraint" },
-  { numeral: "IV", title: "The Empty Canvas", motif: "Form & Atmosphere" },
-  { numeral: "V", title: "The Final Ten Seconds", motif: "Composure & Logic" },
-  { numeral: "VI", title: "The Unknown World", motif: "Horizon & Relic" },
-];
-
-const JUNIOR_STREAMS_PREVIEW = [
-  {
-    name: "Science",
-    subjects: "Physics · Chemistry · Biology · Mathematics & Statistics",
-  },
-  {
-    name: "Commerce",
-    subjects: "Accountancy · OCM · Economics · Secretarial Practice · Maths",
-  },
-  {
-    name: "Arts & Humanities",
-    subjects: "History · Geography · Political Science · Psychology · Sociology",
-  },
-];
-
 export default function LandingPage() {
-  const router = useRouter();
   const prefersReducedMotion = useReducedMotion();
-  const [transitionMode, setTransitionMode] = useState<
-    "senior" | "junior" | null
-  >(null);
   const [parallax, setParallax] = useState({ x: 0, y: 0 });
 
   useGameSession({ recordLandingOnInit: true });
@@ -52,46 +23,8 @@ export default function LandingPage() {
     setParallax({ x: normX * 14, y: normY * 10 });
   };
 
-  const handleSelectMode = async (mode: "senior" | "junior") => {
-    if (transitionMode) return;
-    setTransitionMode(mode);
-
-    try {
-      await fetch("/api/v1/sessions", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ mode }),
-      });
-    } catch {
-      // Non-blocking fallback
-    }
-
-    const delayMs = prefersReducedMotion ? 60 : 480;
-    setTimeout(() => {
-      router.push(mode === "senior" ? "/play" : "/junior");
-    }, delayMs);
-  };
-
   return (
     <div className="min-h-screen flex flex-col bg-[#12100E] text-[#FAF7F2] selection:bg-[#FAF7F2] selection:text-[#12100E]">
-      {transitionMode && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{
-            duration: prefersReducedMotion ? 0.05 : 0.45,
-            ease: [0.22, 1, 0.36, 1],
-          }}
-          className="fixed inset-0 z-50 bg-[#FAF7F2] flex flex-col items-center justify-center pointer-events-none"
-          aria-live="polite"
-        >
-          <span className="text-[11px] uppercase tracking-[0.34em] text-[#57524C]">
-            {transitionMode === "senior"
-              ? "Opening Senior Narrative Folio"
-              : "Entering Junior Reasoning Studio"}
-          </span>
-        </motion.div>
-      )}
 
       {/* 1. CINEMATIC HERO */}
       <section
@@ -142,19 +75,14 @@ export default function LandingPage() {
               className="text-[#FAF7F2] font-semibold flex items-center gap-1.5 hover:text-[#52B788] transition-colors"
             >
               <Users className="w-3 h-3 text-[#52B788]" />
-              <span>Alliance</span>
+              <span>War Room</span>
             </Link>
             <Link
               href="/junior"
-              className="hover:text-[#FAF7F2] transition-colors"
+              className="text-[#FAF7F2] font-semibold flex items-center gap-1.5 hover:text-[#C8B28E] transition-colors"
             >
-              Junior 11
-            </Link>
-            <Link
-              href="/play"
-              className="hover:text-[#FAF7F2] transition-colors hidden sm:inline"
-            >
-              Classic
+              <BookOpen className="w-3 h-3 text-[#C8B28E]" />
+              <span>Learning Arena</span>
             </Link>
             <Link
               href="/admin/dashboard"
@@ -277,7 +205,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* 3. MODE SELECTION — TWO DISTINCT EXPERIENCE PANELS */}
+      {/* 3. MODE SELECTION — THREE CANONICAL EXPERIENCES */}
       <section
         id="modes"
         aria-label="Choose Your Experience Mode"
@@ -287,68 +215,68 @@ export default function LandingPage() {
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
             <div className="space-y-2">
               <p className="text-[11px] uppercase tracking-[0.28em] text-[#8A8178]">
-                02 · Select Edition
+                02 · The Three Pillars
               </p>
               <h2 className="font-serif text-3xl sm:text-4xl text-[#1C1917]">
-                Two independent thresholds.
+                Three distinct gaming universes.
               </h2>
             </div>
             <p className="text-xs text-[#57524C] max-w-sm leading-relaxed">
-              Separate engines, content banks, and synthesis models—united by
-              privacy-first session architecture.
+              Dedicated gameplay engines, strict completion criteria, and zero-compromise
+              puzzle validation—engineered for solo depth, squad tactical play, and academic mastery.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* PANEL 1: SOLO STORYBOARD CAMPAIGN */}
-            <article className="bg-[#141210] text-[#FAF7F2] border border-[#3D352E] rounded-sm p-8 sm:p-10 flex flex-col justify-between space-y-8 relative overflow-hidden group">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            {/* PILLAR 1: SOLO CAMPAIGN */}
+            <article className="bg-[#141210] text-[#FAF7F2] border border-[#3D352E] rounded-sm p-7 sm:p-8 flex flex-col justify-between space-y-6 relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-48 h-48 bg-[#C8B28E]/5 rounded-full blur-3xl pointer-events-none" />
-              <div className="space-y-6 relative z-10">
-                <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.26em] text-[#C8B28E] border-b border-[#FAF7F2]/12 pb-4">
+              <div className="space-y-5 relative z-10">
+                <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.24em] text-[#C8B28E] border-b border-[#FAF7F2]/12 pb-3.5">
                   <span className="flex items-center gap-1.5 font-semibold">
                     <Sparkles className="w-3.5 h-3.5 text-[#C8B28E]" />
-                    <span>Illustrated Storyboard Engine</span>
+                    <span>Solo Mind Experiment</span>
                   </span>
-                  <span>8 Levels · 4 Endings</span>
+                  <span>8 Chambers</span>
                 </div>
 
-                <div className="space-y-3">
+                <div className="space-y-2.5">
                   <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.22em] text-[#D6CEC0]">
                     <span>SOLO CAMPAIGN</span>
                   </div>
-                  <h3 className="font-serif text-3xl sm:text-4xl text-[#FAF7F2]">
+                  <h3 className="font-serif text-2xl sm:text-3xl text-[#FAF7F2]">
                     The Mind Experiment
                   </h3>
-                  <p className="text-sm text-[#D6CEC0] leading-relaxed font-light">
-                    Enter the high-security observation panopticon as Aarav and Aanya.
-                    Every scene is framed like a cinematic graphic novel with dynamic
-                    character poses, comic-book dialogue bubbles, and contextual in-stage
-                    puzzles—from laser security terminals to the final moral threshold.
+                  <p className="text-xs sm:text-sm text-[#D6CEC0] leading-relaxed font-light">
+                    Enter the high-security observation panopticon as Aarav alone.
+                    Every chamber demands genuine gameplay—interactive keypad ciphers,
+                    three-door logic deductions, memory matrix trials, and a navigable
+                    spatial mirror maze. No auto-completion.
                   </p>
                 </div>
 
-                <div className="p-4 bg-[#1C1814] border border-[#FAF7F2]/10 rounded-sm space-y-2 text-xs text-[#D6CEC0]">
+                <div className="p-3.5 bg-[#1C1814] border border-[#FAF7F2]/10 rounded-sm space-y-1.5 text-xs text-[#D6CEC0]">
                   <div className="text-[10px] uppercase tracking-[0.2em] text-[#C8B28E] font-medium">
-                    Features
+                    Tactical Mechanics
                   </div>
-                  <ul className="space-y-1 text-[#A89F93]">
-                    <li>• Chiaroscuro painted stages with ambient cinematic motion</li>
-                    <li>• Speech balloons with dynamic pointer tails pointing to speakers</li>
-                    <li>• Interactive in-scene keypad ciphers, door logic, & memory puzzles</li>
-                    <li>• 4 distinct branching narrative conclusions</li>
+                  <ul className="space-y-1 text-[#A89F93] text-[11px]">
+                    <li>• 1 final submission per chamber with failure debrief</li>
+                    <li>• 5 progressive hints modal per level</li>
+                    <li>• Navigable spatial 2D Mirror Maze</li>
+                    <li>• 4 distinct philosophical branching endings</li>
                   </ul>
                 </div>
               </div>
 
-              <div className="pt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-t border-[#FAF7F2]/12 relative z-10">
-                <span className="text-[11px] uppercase tracking-[0.2em] text-[#A89F93]">
-                  Single-Player · ~15–20 Mins
+              <div className="pt-4 flex flex-col gap-3 border-t border-[#FAF7F2]/12 relative z-10">
+                <span className="text-[10px] uppercase tracking-[0.2em] text-[#A89F93]">
+                  Single-Player · Aarav Alone
                 </span>
                 <Link href="/solo">
                   <Button
                     variant="ivory"
                     size="md"
-                    className="group w-full sm:w-auto"
+                    className="group w-full"
                   >
                     <span>Enter Solo Campaign</span>
                     <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
@@ -357,55 +285,54 @@ export default function LandingPage() {
               </div>
             </article>
 
-            {/* PANEL 2: MULTIPLAYER ALLIANCE */}
-            <article className="bg-[#121A16] text-[#FAF7F2] border border-[#233B2E] rounded-sm p-8 sm:p-10 flex flex-col justify-between space-y-8 relative overflow-hidden group">
+            {/* PILLAR 2: MULTIPLAYER ALLIANCE */}
+            <article className="bg-[#121A16] text-[#FAF7F2] border border-[#233B2E] rounded-sm p-7 sm:p-8 flex flex-col justify-between space-y-6 relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-48 h-48 bg-[#52B788]/5 rounded-full blur-3xl pointer-events-none" />
-              <div className="space-y-6 relative z-10">
-                <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.26em] text-[#52B788] border-b border-[#52B788]/20 pb-4">
+              <div className="space-y-5 relative z-10">
+                <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.24em] text-[#52B788] border-b border-[#52B788]/20 pb-3.5">
                   <span className="flex items-center gap-1.5 font-semibold">
                     <Users className="w-3.5 h-3.5 text-[#52B788]" />
-                    <span>Synchronous Co-Op & Mind Games</span>
+                    <span>Live War Room</span>
                   </span>
-                  <span>2–4 Players · 8 Chambers</span>
+                  <span>2–4 Players</span>
                 </div>
 
-                <div className="space-y-3">
+                <div className="space-y-2.5">
                   <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.22em] text-[#52B788]">
                     <span>MULTIPLAYER ALLIANCE</span>
                   </div>
-                  <h3 className="font-serif text-3xl sm:text-4xl text-[#FAF7F2]">
+                  <h3 className="font-serif text-2xl sm:text-3xl text-[#FAF7F2]">
                     The Last Alliance
                   </h3>
-                  <p className="text-sm text-[#D6CEC0] leading-relaxed font-light">
-                    Gather your squad in a live War Room. Solve asymmetric ciphers,
-                    counter Count Vesper&apos;s gambit, identify the imposter under 90-second
-                    deadlines, and survive until the final chamber: a live Prisoner&apos;s
-                    Dilemma betrayal matrix.
+                  <p className="text-xs sm:text-sm text-[#D6CEC0] leading-relaxed font-light">
+                    Assemble your squad in a live War Room. Solve asymmetric 9x9 Sudoku
+                    vaults, counter Count Vesper&apos;s live 8x8 Chess mate-in-2, identify the
+                    imposter, and survive until Chamber 8: a live Prisoner&apos;s Dilemma betrayal matrix.
                   </p>
                 </div>
 
-                <div className="p-4 bg-[#0F1713] border border-[#52B788]/20 rounded-sm space-y-2 text-xs text-[#D6CEC0]">
+                <div className="p-3.5 bg-[#0F1713] border border-[#52B788]/20 rounded-sm space-y-1.5 text-xs text-[#D6CEC0]">
                   <div className="text-[10px] uppercase tracking-[0.2em] text-[#52B788] font-medium">
-                    Features
+                    Squad Mechanics
                   </div>
-                  <ul className="space-y-1 text-[#A89F93]">
-                    <li>• Instant 6-character room codes with real-time player presence</li>
-                    <li>• Server-authoritative 90s countdown clock with team retries</li>
-                    <li>• Interactive Sudoku lock, chess puzzles, & social deduction</li>
-                    <li>• Final Betrayal Matrix with live prisoner payoff evaluation</li>
+                  <ul className="space-y-1 text-[#A89F93] text-[11px]">
+                    <li>• Real 9x9 Sudoku engine with conflict detection</li>
+                    <li>• Real 8x8 Chessboard against Count Vesper</li>
+                    <li>• Synchronous presence &amp; room codes</li>
+                    <li>• Live Prisoner&apos;s Dilemma 4-quadrant resolution</li>
                   </ul>
                 </div>
               </div>
 
-              <div className="pt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-t border-[#52B788]/20 relative z-10">
-                <span className="text-[11px] uppercase tracking-[0.2em] text-[#52B788]">
-                  Live Multiplayer · 2–4 Players
+              <div className="pt-4 flex flex-col gap-3 border-t border-[#52B788]/20 relative z-10">
+                <span className="text-[10px] uppercase tracking-[0.2em] text-[#52B788]">
+                  Synchronous Co-Op · 2–4 Operatives
                 </span>
                 <Link href="/alliance">
                   <Button
                     variant="secondary"
                     size="md"
-                    className="group w-full sm:w-auto bg-[#1C2F24] text-[#FAF7F2] border-[#52B788]/50 hover:bg-[#253D30]"
+                    className="group w-full bg-[#1C2F24] text-[#FAF7F2] border-[#52B788]/50 hover:bg-[#253D30]"
                   >
                     <span>Deploy War Room</span>
                     <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
@@ -414,126 +341,53 @@ export default function LandingPage() {
               </div>
             </article>
 
-            {/* PANEL 3: JUNIOR MODE — CLASS 11 */}
-            <article className="bg-[#FAF7F2] text-[#1C1917] border border-[#CFC5B4] rounded-sm p-8 sm:p-10 flex flex-col justify-between space-y-8">
-              <div className="space-y-6">
-                <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.26em] text-[#545E4E] border-b border-[#DDD4C5] pb-4 font-semibold">
-                  <span>Edition B · Class 11 Academic Challenges</span>
-                  <span>MSBSHSE · 14 Subjects</span>
+            {/* PILLAR 3: JUNIOR MODE — THE LEARNING ARENA */}
+            <article className="bg-[#FAF7F2] text-[#1C1917] border border-[#CFC5B4] rounded-sm p-7 sm:p-8 flex flex-col justify-between space-y-6">
+              <div className="space-y-5">
+                <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.24em] text-[#545E4E] border-b border-[#DDD4C5] pb-3.5 font-semibold">
+                  <span>Class 11 &amp; 12 Arenas</span>
+                  <span>14 Subjects · 1,400 Qs</span>
                 </div>
 
-                <div className="space-y-3">
+                <div className="space-y-2.5">
                   <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.22em] text-[#545E4E] font-medium">
                     <BookOpen className="w-3.5 h-3.5" />
-                    <span>JUNIOR MODE — CLASS 11</span>
+                    <span>JUNIOR MODE</span>
                   </div>
-                  <h3 className="font-serif text-3xl sm:text-4xl text-[#1C1917]">
-                    The FYJC Reasoning Studio
+                  <h3 className="font-serif text-2xl sm:text-3xl text-[#1C1917]">
+                    The Learning Arena
                   </h3>
-                  <p className="text-sm text-[#57524C] leading-relaxed">
-                    Structured 10-question academic challenges aligned to the
-                    Class 11 Maharashtra State Board syllabus across Science,
-                    Commerce, and Arts. Every subject holds a curated
-                    100-question bank that never repeats a completed question
-                    until all 100 have been explored.
+                  <p className="text-xs sm:text-sm text-[#57524C] leading-relaxed">
+                    Class 11 &amp; Class 12 Maharashtra State Board academic reasoning studio.
+                    Science, Commerce, and Arts with 1,400 curated non-repeating questions,
+                    built-in LaTeX mathematical typesetting, and competitive exam tracks.
                   </p>
                 </div>
 
-                <div className="space-y-2.5 pt-2 border-t border-[#DDD4C5]">
-                  {JUNIOR_STREAMS_PREVIEW.map((st) => (
-                    <div
-                      key={st.name}
-                      className="p-3 bg-[#F3EDE2]/75 border border-[#E5DEC9] rounded-sm"
-                    >
-                      <div className="flex items-baseline justify-between gap-2">
-                        <span className="font-serif text-base text-[#1C1917] font-medium">
-                          {st.name}
-                        </span>
-                        <span className="text-[10px] uppercase tracking-[0.16em] text-[#545E4E]">
-                          10 Qs / Attempt
-                        </span>
-                      </div>
-                      <p className="text-xs text-[#57524C] mt-0.5">
-                        {st.subjects}
-                      </p>
-                    </div>
-                  ))}
+                <div className="p-3.5 bg-[#F3EDE2] border border-[#DDD4C5] rounded-sm space-y-1.5 text-xs">
+                  <div className="text-[10px] uppercase tracking-[0.2em] text-[#545E4E] font-medium">
+                    Curriculum &amp; Exam Tracks
+                  </div>
+                  <ul className="space-y-1 text-[#57524C] text-[11px]">
+                    <li>• Science: JEE Main/Advanced &amp; NEET UG</li>
+                    <li>• Commerce: CUET UG &amp; CA Foundation</li>
+                    <li>• Arts: CUET UG &amp; CLAT preparation</li>
+                    <li>• LaTeX typesetting for formulas &amp; matrices</li>
+                  </ul>
                 </div>
               </div>
 
-              <div className="pt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-t border-[#DDD4C5]">
-                <span className="text-[11px] uppercase tracking-[0.2em] text-[#8A8178]">
-                  1,400 Curated Syllabus Items
+              <div className="pt-4 flex flex-col gap-3 border-t border-[#DDD4C5]">
+                <span className="text-[10px] uppercase tracking-[0.2em] text-[#8A8178]">
+                  Learn · Board Prep · Competitive
                 </span>
                 <Link href="/junior">
                   <Button
                     variant="primary"
                     size="md"
-                    className="group w-full sm:w-auto"
+                    className="group w-full"
                   >
-                    <span>Enter Junior Mode</span>
-                    <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
-                  </Button>
-                </Link>
-              </div>
-            </article>
-
-            {/* PANEL 4: SENIOR CLASSIC MONOGRAPH */}
-            <article className="bg-[#141210] text-[#FAF7F2] border border-[#2E2924] rounded-sm p-8 sm:p-10 flex flex-col justify-between space-y-8">
-              <div className="space-y-6">
-                <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.26em] text-[#C8B28E] border-b border-[#FAF7F2]/12 pb-4">
-                  <span>Edition A · Interactive Fiction</span>
-                  <span>6 Chapters + 7th Door</span>
-                </div>
-
-                <div className="space-y-3">
-                  <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.22em] text-[#D6CEC0]">
-                    <Compass className="w-3.5 h-3.5 text-[#C8B28E]" />
-                    <span>SENIOR MODE</span>
-                  </div>
-                  <h3 className="font-serif text-3xl sm:text-4xl text-[#FAF7F2]">
-                    The Narrative Monograph
-                  </h3>
-                  <p className="text-sm text-[#D6CEC0] leading-relaxed font-light">
-                    Step into six fictional chapters—from a departing midnight
-                    express to a locked curator&apos;s study. Examine hidden
-                    correspondence, solve tactile ciphers, unlock the optional
-                    Seventh Door, and receive a personal gameplay dossier with a
-                    visual Choice Map.
-                  </p>
-                </div>
-
-                <ol className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 pt-2 border-t border-[#FAF7F2]/10 text-xs text-[#D6CEC0]">
-                  {SENIOR_CHAPTER_PLATES.map((ch) => (
-                    <li
-                      key={ch.numeral}
-                      className="flex items-baseline justify-between py-1 border-b border-[#FAF7F2]/5"
-                    >
-                      <span className="font-serif">
-                        <span className="font-mono text-[10px] text-[#8A8178] mr-2">
-                          {ch.numeral}
-                        </span>
-                        {ch.title}
-                      </span>
-                      <span className="text-[10px] text-[#8A8178]">
-                        {ch.motif}
-                      </span>
-                    </li>
-                  ))}
-                </ol>
-              </div>
-
-              <div className="pt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-t border-[#FAF7F2]/12">
-                <span className="text-[11px] uppercase tracking-[0.2em] text-[#A89F93]">
-                  Duration · 4–6 Minutes
-                </span>
-                <Link href="/play">
-                  <Button
-                    variant="ivory"
-                    size="md"
-                    className="group w-full sm:w-auto"
-                  >
-                    <span>Begin Senior Mode</span>
+                    <span>Enter Learning Arena</span>
                     <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
                   </Button>
                 </Link>
@@ -605,27 +459,42 @@ export default function LandingPage() {
             Begin When Ready
           </p>
           <h2 className="font-serif text-3xl sm:text-5xl text-[#FAF7F2] leading-tight">
-            Step into a narrative mystery or test your academic reasoning.
+            Step into the mystery or test your academic reasoning.
           </h2>
           <p className="text-sm text-[#D6CEC0] max-w-xl mx-auto leading-relaxed">
-            Progress is preserved automatically in your private browser session.
+            Every choice leaves a signature. Select your mode to begin.
           </p>
           <div className="pt-3 flex flex-wrap items-center justify-center gap-4">
-            <Button
-              variant="ivory"
-              size="lg"
-              onClick={() => void handleSelectMode("senior")}
-            >
-              Start Senior Narrative
-            </Button>
-            <Button
-              variant="secondary"
-              size="lg"
-              onClick={() => void handleSelectMode("junior")}
-              className="bg-transparent text-[#FAF7F2] border-[#FAF7F2]/35 hover:bg-[#FAF7F2]/10"
-            >
-              Start Class 11 Challenge
-            </Button>
+            <Link href="/solo">
+              <Button
+                variant="ivory"
+                size="lg"
+                className="group"
+              >
+                <Sparkles className="w-4 h-4 mr-2 text-[#8A5A36]" />
+                <span>Enter Solo Campaign</span>
+              </Button>
+            </Link>
+            <Link href="/alliance">
+              <Button
+                variant="secondary"
+                size="lg"
+                className="group bg-[#1E2922] text-[#FAF7F2] border-[#52B788]/40 hover:bg-[#25362C]"
+              >
+                <Users className="w-4 h-4 mr-2 text-[#52B788]" />
+                <span>Deploy War Room</span>
+              </Button>
+            </Link>
+            <Link href="/junior">
+              <Button
+                variant="secondary"
+                size="lg"
+                className="group bg-transparent text-[#FAF7F2] border-[#FAF7F2]/35 hover:bg-[#FAF7F2]/10"
+              >
+                <BookOpen className="w-4 h-4 mr-2 text-[#C8B28E]" />
+                <span>Learning Arena</span>
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

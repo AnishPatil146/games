@@ -16,6 +16,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/Button";
 import { JuniorInteractiveDiagram } from "@/components/junior/JuniorInteractiveDiagram";
+import { MathRenderer } from "@/components/math/MathRenderer";
 import {
   DifficultyPreference,
   OptionKey,
@@ -343,7 +344,7 @@ export default function JuniorAttemptPage({ params }: PageProps) {
               </div>
 
               <h1 className="font-serif text-xl sm:text-2xl md:text-[1.65rem] text-[#1C1917] leading-snug">
-                {currentQuestion.questionText}
+                <MathRenderer content={currentQuestion.questionText} />
               </h1>
 
               {currentQuestion.diagramType && (
@@ -392,7 +393,7 @@ export default function JuniorAttemptPage({ params }: PageProps) {
                         {opt.key}
                       </span>
                       <span className="text-sm sm:text-base leading-relaxed flex-1">
-                        {opt.text}
+                        <MathRenderer content={opt.text} />
                       </span>
                     </button>
                   );
@@ -419,9 +420,9 @@ export default function JuniorAttemptPage({ params }: PageProps) {
                       </>
                     )}
                   </div>
-                  <p className="text-xs sm:text-sm text-[#1C1917] leading-relaxed">
-                    {currentFeedback.explanation}
-                  </p>
+                  <div className="text-xs sm:text-sm text-[#1C1917] leading-relaxed">
+                    <MathRenderer content={currentFeedback.explanation} />
+                  </div>
                 </div>
               )}
             </motion.section>

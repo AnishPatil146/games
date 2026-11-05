@@ -46,3 +46,4 @@ This audit assesses the state of **THE UNWRITTEN** against the Master Directive 
 | **Alliance L1: First Lock** | Playable 9x9 Sudoku Board with conflict detection | Required (5 personal hints) | Required (evaluates board completeness + Latin square breakdown) | Pinned top HUD | VERIFIED |
 | **Alliance L2: Vampire's Offer**| Playable 8x8 Chessboard (`chess.js`) with Count Vesper | Required (5 personal hints) | Required (evaluates move sequence vs 1. Nf6+ / 2. Bxf7#) | Pinned top HUD | VERIFIED |
 | **Alliance L3-L8** | Synchronized team challenges & Prisoner's Dilemma matrix | Required (5 personal hints) | Required (evaluates individual & collective outcomes) | Pinned top HUD | VERIFIED |
+

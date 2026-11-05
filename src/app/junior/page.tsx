@@ -43,6 +43,7 @@ function JuniorStudioContent() {
   const initialStreamParam = searchParams.get("stream");
   const initialSubjectParam = searchParams.get("subject");
 
+  const [selectedClass, setSelectedClass] = useState<11 | 12>(11);
   const [streams, setStreams] = useState<AcademicStreamConfig[]>([]);
   const [selectedStream, setSelectedStream] = useState<StreamSlug>(
     initialStreamParam === "commerce" || initialStreamParam === "arts"
@@ -268,23 +269,50 @@ function JuniorStudioContent() {
       <Header />
 
       <main className="flex-1 max-w-6xl w-full mx-auto px-5 sm:px-8 py-10 sm:py-14 space-y-12">
-        {/* 1. STUDIO MASTHEAD */}
-        <section className="border-b border-[#DDD4C5] pb-8 space-y-4">
+        {/* 1. STUDIO MASTHEAD & CLASS SELECTION */}
+        <section className="border-b border-[#DDD4C5] pb-8 space-y-6">
           <div className="flex flex-wrap items-center justify-between gap-3 text-[11px] uppercase tracking-[0.26em] text-[#545E4E] font-medium">
-            <span>JUNIOR MODE — CLASS 11 (FYJC)</span>
-            <span>Maharashtra State Board · 2025-26 Catalogue</span>
+            <span>THE LEARNING ARENA — JUNIOR MODE</span>
+            <span>Maharashtra State Board &amp; Competitive Entrance Tracks</span>
+          </div>
+
+          {/* Class 11 vs Class 12 Independent Toggle */}
+          <div className="flex items-center gap-3 p-1.5 bg-[#F3EDE2] border border-[#DDD4C5] rounded-sm max-w-md">
+            <button
+              type="button"
+              onClick={() => setSelectedClass(11)}
+              className={`flex-1 py-2 px-4 text-xs font-mono uppercase tracking-wider rounded-sm transition-all cursor-pointer ${
+                selectedClass === 11
+                  ? "bg-[#1C1917] text-[#FAF7F2] font-bold shadow-sm"
+                  : "text-[#57524C] hover:text-[#1C1917]"
+              }`}
+            >
+              Class 11 (FYJC) · Active
+            </button>
+            <button
+              type="button"
+              onClick={() => setSelectedClass(12)}
+              className={`flex-1 py-2 px-4 text-xs font-mono uppercase tracking-wider rounded-sm transition-all cursor-pointer ${
+                selectedClass === 12
+                  ? "bg-[#1C1917] text-[#FAF7F2] font-bold shadow-sm"
+                  : "text-[#57524C] hover:text-[#1C1917]"
+              }`}
+            >
+              Class 12 (HSC) · Preview
+            </button>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-end">
             <div className="lg:col-span-8 space-y-3">
               <h1 className="font-serif text-4xl sm:text-5xl text-[#1C1917] tracking-tight leading-[1.08]">
-                Academic Reasoning Studio
+                {selectedClass === 11
+                  ? "Class 11 Academic Reasoning Studio"
+                  : "Class 12 Pre-Board & Entrance Arena"}
               </h1>
               <p className="text-sm sm:text-base text-[#57524C] leading-relaxed max-w-2xl">
-                Select your stream and subject to enter a curated 10-question
-                exploration. Completed questions never repeat within your
-                100-question cycle, and each run synthesizes subject marks
-                alongside evidence-mapped reasoning indicators.
+                {selectedClass === 11
+                  ? "Select your stream, subject, and challenge difficulty to enter a curated 10-question exploration. Completed questions never repeat within your 100-question cycle, with high-performance math typesetting and evidence-mapped skill synthesis."
+                  : "Class 12 HSC Board curriculum and National Entrance mappings (JEE Main/Advanced, NEET UG, CUET, CLAT). Explore the complete Class 11 prerequisite question bank below while Class 12 syllabus modules are being indexed."}
               </p>
             </div>
 
@@ -613,22 +641,26 @@ function JuniorStudioContent() {
             {/* Difficulty Preference */}
             <div className="space-y-2">
               <span className="block text-[10px] uppercase tracking-[0.22em] text-[#A89F93]">
-                Difficulty Calibration
+                Difficulty &amp; Target Calibration
               </span>
-              <div className="inline-flex flex-wrap gap-1.5">
-                {(
-                  ["Mixed", "Easy", "Medium", "Hard"] as DifficultyPreference[]
-                ).map((lvl) => (
+              <div className="inline-flex flex-wrap gap-2">
+                {[
+                  { key: "Mixed" as DifficultyPreference, label: "Mixed Diagnostic", desc: "Balanced" },
+                  { key: "Easy" as DifficultyPreference, label: "EASY · Learn & Understand", desc: "Foundations & Formulas" },
+                  { key: "Medium" as DifficultyPreference, label: "MEDIUM · Board Prep", desc: "State & CBSE Standard" },
+                  { key: "Hard" as DifficultyPreference, label: "HARD · Competitive", desc: selectedStream === "science" ? "JEE / NEET" : selectedStream === "commerce" ? "CUET / CA" : "CUET / CLAT" },
+                ].map((item) => (
                   <button
-                    key={lvl}
+                    key={item.key}
                     type="button"
-                    onClick={() => setDifficulty(lvl)}
-                    className={`px-3.5 py-1.5 text-xs uppercase tracking-[0.16em] rounded-sm border transition-colors cursor-pointer ${difficulty === lvl
-                        ? "bg-[#FAF7F2] text-[#141210] border-[#FAF7F2] font-medium"
+                    onClick={() => setDifficulty(item.key)}
+                    className={`px-3 py-2 text-xs uppercase tracking-[0.14em] rounded-sm border text-left transition-all cursor-pointer ${difficulty === item.key
+                        ? "bg-[#FAF7F2] text-[#141210] border-[#FAF7F2] font-bold shadow-md"
                         : "bg-transparent text-[#D6CEC0] border-[#FAF7F2]/25 hover:border-[#FAF7F2]/60"
                       }`}
                   >
-                    {lvl}
+                    <div>{item.label}</div>
+                    <div className="text-[10px] opacity-70 tracking-normal normal-case font-normal mt-0.5">{item.desc}</div>
                   </button>
                 ))}
               </div>

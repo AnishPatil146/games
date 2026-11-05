@@ -59,6 +59,16 @@ export const CHARACTER_META: Record<
   },
 };
 
+// Exact verified sprite files present on disk in public/art/characters/
+const VERIFIED_SPRITES: Record<string, string[]> = {
+  aarav: ["angry", "neutral", "sad", "shocked", "speaking", "thinking", "victory"],
+  aanya: ["neutral", "scared", "shocked", "speaking", "thinking", "victory"],
+  warden: ["amused", "neutral", "speaking"],
+  vesper: ["angry", "neutral", "smiling"],
+  halden: ["defensive", "nervous", "neutral"],
+  mira: ["grateful", "neutral", "pleading"],
+};
+
 export function getCharacterSprite(
   id: CharacterId,
   expression: CharacterExpression = "neutral"
@@ -67,7 +77,31 @@ export function getCharacterSprite(
     return null;
   }
 
-  // Exact file lookup
-  return `/art/characters/${id}_${expression}.png`;
+  const validExpressions = VERIFIED_SPRITES[id];
+  if (!validExpressions) {
+    return `/art/characters/${id}_neutral.png`;
+  }
+
+  let resolved = expression;
+  if (!validExpressions.includes(resolved)) {
+    // Graceful emotion fallbacks
+    if (id === "warden") {
+      resolved = resolved === "thinking" || resolved === "victory" ? "speaking" : "neutral";
+    } else if (id === "vesper") {
+      resolved = resolved === "speaking" || resolved === "thinking" || resolved === "victory" ? "smiling" : "neutral";
+    } else if (id === "halden") {
+      resolved = resolved === "speaking" || resolved === "shocked" ? "nervous" : "defensive";
+    } else if (id === "mira") {
+      resolved = resolved === "speaking" || resolved === "thinking" ? "pleading" : "grateful";
+    } else if (id === "aanya") {
+      resolved = resolved === "angry" || resolved === "sad" ? "scared" : "neutral";
+    } else if (id === "aarav") {
+      resolved = resolved === "scared" ? "shocked" : "neutral";
+    } else {
+      resolved = "neutral";
+    }
+  }
+
+  return `/art/characters/${id}_${resolved}.png`;
 }
 
