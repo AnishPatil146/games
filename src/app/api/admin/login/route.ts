@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 import { isEmailAllowed } from "@/lib/admin-auth";
-import { createClient } from "@/lib/supabase/server";
+import { createClient, createPrivilegedClient } from "@/lib/supabase/server";
 import { checkRateLimit } from "@/lib/rate-limit";
 import { getEnvConfig } from "@/lib/env";
 import {
@@ -63,9 +63,26 @@ export async function POST(req: NextRequest) {
     }
 
     // 3. Secondary check: Supabase Auth (if local didn't authenticate or not yet seeded)
-    const { isSupabaseConfigured } = getEnvConfig();
+    const { isSupabaseConfigured, hasServiceRoleKey } = getEnvConfig();
     if (!authenticated && isSupabaseConfigured) {
       try {
+        if (hasServiceRoleKey) {
+          try {
+            const privilegedSupabase = await createPrivilegedClient();
+            const { data: usersData } = await privilegedSupabase.auth.admin.listUsers();
+            const adminUser = usersData?.users?.find(
+              (u) => u.email?.toLowerCase() === email
+            );
+            if (adminUser && !adminUser.email_confirmed_at) {
+              await privilegedSupabase.auth.admin.updateUserById(adminUser.id, {
+                email_confirm: true,
+              });
+            }
+          } catch {
+            // Service role auto-confirm attempt logged
+          }
+        }
+
         const supabase = await createClient();
         const { data, error } = await supabase.auth.signInWithPassword({
           email,

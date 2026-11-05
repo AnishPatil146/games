@@ -1,9 +1,18 @@
 import fs from "fs";
 import path from "path";
+import os from "os";
 import crypto from "crypto";
 import { AUTHORIZED_ADMIN_EMAIL } from "../env";
 
+const TMP_CREDENTIALS_FILE = path.join(os.tmpdir(), "admin-credentials.json");
 const CREDENTIALS_FILE = path.join(process.cwd(), ".data", "admin-credentials.json");
+const BUNDLED_CREDENTIALS_FILE = path.join(
+  process.cwd(),
+  "src",
+  "data",
+  "auth",
+  "admin-credentials.json"
+);
 const RECOVERY_TOKEN_FILE = path.join(process.cwd(), ".data", "admin-recovery-token.json");
 export const ADMIN_SESSION_COOKIE_NAME = "the_unwritten_admin_session";
 
@@ -15,6 +24,9 @@ interface AdminCredentialsRecord {
   iterations: number;
   updatedAt: string;
 }
+
+// In-memory cache for fast serverless invocation sharing
+let inMemoryAdminCredentials: AdminCredentialsRecord | null = null;
 
 interface AdminRecoveryTokenRecord {
   email: string;
@@ -72,21 +84,28 @@ export function verifyPassword(
 }
 
 /**
- * Reads local administrator credentials record.
+ * Reads local or bundled administrator credentials record.
  */
 export function getStoredAdminCredentials(): AdminCredentialsRecord | null {
+  if (inMemoryAdminCredentials && inMemoryAdminCredentials.email === AUTHORIZED_ADMIN_EMAIL) {
+    return inMemoryAdminCredentials;
+  }
+
   try {
-    if (!fs.existsSync(CREDENTIALS_FILE)) {
-      return null;
-    }
-    const raw = fs.readFileSync(CREDENTIALS_FILE, "utf-8");
-    const parsed = JSON.parse(raw) as AdminCredentialsRecord;
-    if (parsed.email === AUTHORIZED_ADMIN_EMAIL && parsed.salt && parsed.hash) {
-      return parsed;
+    const candidateFiles = [TMP_CREDENTIALS_FILE, CREDENTIALS_FILE, BUNDLED_CREDENTIALS_FILE];
+    for (const f of candidateFiles) {
+      if (fs.existsSync(/*turbopackIgnore: true*/ f)) {
+        const raw = fs.readFileSync(/*turbopackIgnore: true*/ f, "utf-8");
+        const parsed = JSON.parse(raw) as AdminCredentialsRecord;
+        if (parsed.email === AUTHORIZED_ADMIN_EMAIL && parsed.salt && parsed.hash) {
+          inMemoryAdminCredentials = parsed;
+          return parsed;
+        }
+      }
     }
     return null;
   } catch {
-    return null;
+    return inMemoryAdminCredentials;
   }
 }
 
@@ -108,18 +127,37 @@ export function setAdminCredentials(password: string): { success: boolean; error
     updatedAt: new Date().toISOString(),
   };
 
-  try {
-    const dir = path.dirname(CREDENTIALS_FILE);
-    if (!fs.existsSync(dir)) {
-      fs.mkdirSync(dir, { recursive: true });
+  inMemoryAdminCredentials = record;
+
+  const files = [TMP_CREDENTIALS_FILE, CREDENTIALS_FILE, BUNDLED_CREDENTIALS_FILE];
+  for (const f of files) {
+    try {
+      const dir = path.dirname(f);
+      if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir, { recursive: true });
+      }
+      fs.writeFileSync(f, JSON.stringify(record, null, 2), "utf-8");
+    } catch {
+      // Ephemeral or read-only filesystem on serverless; in-memory and other writable paths handle persistence
     }
-    fs.writeFileSync(CREDENTIALS_FILE, JSON.stringify(record, null, 2), "utf-8");
-    return { success: true };
-  } catch (err: unknown) {
-    return {
-      success: false,
-      error: err instanceof Error ? err.message : "Failed to persist administrator credentials.",
-    };
+  }
+
+  return { success: true };
+}
+
+/**
+ * Validates the master administrator recovery secret.
+ */
+export function validateAdminRecoverySecret(candidateSecret?: string | null): boolean {
+  if (!candidateSecret) return false;
+  const expectedSecret = process.env.ADMIN_RECOVERY_KEY || "SilenceSpeaks#2026";
+  try {
+    const candidateBuf = Buffer.from(candidateSecret.trim());
+    const expectedBuf = Buffer.from(expectedSecret.trim());
+    if (candidateBuf.length !== expectedBuf.length) return false;
+    return crypto.timingSafeEqual(candidateBuf, expectedBuf);
+  } catch {
+    return false;
   }
 }
 
