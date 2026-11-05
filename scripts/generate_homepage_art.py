@@ -506,3 +506,4 @@ if __name__ == "__main__":
     make_junior_character()
     make_alliance_squad()
     print("All homepage environments and characters generated successfully!")
+

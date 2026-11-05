@@ -307,10 +307,10 @@ export default function AdminExecutiveDashboardPage() {
 
           <div className="p-3 bg-[#F3EDE2]/60 rounded-sm space-y-1">
             <span className="text-[10px] uppercase font-mono tracking-wider text-emerald-700 font-bold block">
-              ✓ 3 Character Identities
+              ✓ Character Identity Registry
             </span>
-            <span className="font-bold text-[#1C1917] block">The Scholar, Investigator, Squad</span>
-            <span className="text-[11px] text-[#57524C]">Idle breathing, elevation, distinct badges, and interactive dossier panels.</span>
+            <span className="font-bold text-[#1C1917] block">Zero Face Cloning · 3 Unique Personas</span>
+            <span className="text-[11px] text-[#57524C]">Dedicated Scholar student sprite, canonical Aarav face, and tri-operative Squad.</span>
           </div>
 
           <div className="p-3 bg-[#F3EDE2]/60 rounded-sm space-y-1">

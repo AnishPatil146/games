@@ -45,3 +45,4 @@ The old geometric background is declared in:
    - Real session state detection (displaying "Continue Chamber X" for returning players).
 5. Document all generated assets in `docs/design/homepage-asset-registry.md`.
 6. Update Command Centre dashboard with homepage redesign tracking.
+

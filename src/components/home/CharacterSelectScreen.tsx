@@ -343,7 +343,8 @@ export function CharacterSelectScreen() {
                         duration: 4,
                         ease: "easeInOut",
                       }}
-                      className="relative w-full h-full flex items-end justify-center"
+                      style={{ transform: `scale(${config.characterScale || 1})` }}
+                      className="relative w-full h-full flex items-end justify-center origin-bottom"
                     >
                       <Image
                         src={config.characterSpriteUrl}
