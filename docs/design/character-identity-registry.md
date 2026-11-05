@@ -112,3 +112,4 @@ THE UNWRITTEN utilizes a European graphic novel (*bande-dessinée*) illustration
 - [x] **Character 02 (Aarav Kulkarni):** Preserved canonical face and charcoal wardrobe across all Solo visual novel scenes.
 - [x] **Character 03 (Alliance Squad):** Distinct multi-character tactical ensemble featuring Aanya, Aarav, and Warden.
 - [x] **UI Verification:** Responsive character cards, live environment backdrops, and seamless keyboard navigation implemented on `/`.
+
