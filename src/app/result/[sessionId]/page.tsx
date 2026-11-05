@@ -49,33 +49,31 @@ export default function ResultReportPage({ params }: PageProps) {
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
   const [isResetting, setIsResetting] = useState(false);
+  const [claimKey, setClaimKey] = useState<string | null>(null);
+  const [claimInput, setClaimInput] = useState("");
+  const [isClaiming, setIsClaiming] = useState(false);
 
   useEffect(() => {
     let active = true;
-    const load = async () => {
-      try {
-        const res = await fetch(`/api/result/${resolvedParams.sessionId}`);
-        const data = (await res.json()) as {
-          report?: GameplayReport;
-          choiceMapSteps?: ChoiceMapStep[];
-          seventhDoorStatus?: {
-            unlocked: boolean;
-            completed: boolean;
-            choiceLabel: string | null;
-          };
-          hiddenLetterStatus?: {
-            unlocked: boolean;
-            read: boolean;
-          };
-          error?: string;
+    fetch(`/api/result/${resolvedParams.sessionId}`)
+      .then((res) => res.json() as Promise<{
+        report?: GameplayReport;
+        choiceMapSteps?: ChoiceMapStep[];
+        claimKey?: string;
+        seventhDoorStatus?: {
+          unlocked: boolean;
+          completed: boolean;
+          choiceLabel: string | null;
         };
-        if (!res.ok || !data.report) {
-          throw new Error(
-            data.error ||
-              "This session report is unavailable or requires active session authorization."
-          );
-        }
-        if (active) {
+        hiddenLetterStatus?: {
+          unlocked: boolean;
+          read: boolean;
+        };
+        error?: string;
+      }>)
+      .then((data) => {
+        if (!active) return;
+        if (data.report) {
           setReport(data.report);
           setChoiceMapSteps(data.choiceMapSteps || []);
           if (data.seventhDoorStatus) {
@@ -87,22 +85,71 @@ export default function ResultReportPage({ params }: PageProps) {
               setLetterOpen(true);
             }
           }
+          if (data.claimKey) {
+            setClaimKey(data.claimKey);
+          }
+          setErrorMsg(null);
+        } else {
+          setErrorMsg(data.error || "Unable to load report.");
         }
-      } catch (err: unknown) {
+      })
+      .catch((err: unknown) => {
+        if (!active) return;
+        setErrorMsg(err instanceof Error ? err.message : "Unable to load report.");
+      })
+      .finally(() => {
         if (active) {
-          setErrorMsg(
-            err instanceof Error ? err.message : "Unable to load report."
-          );
+          setIsLoading(false);
         }
-      } finally {
-        if (active) setIsLoading(false);
-      }
-    };
-    void load();
+      });
+
     return () => {
       active = false;
     };
   }, [resolvedParams.sessionId]);
+
+  const handleClaimSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!claimInput.trim()) return;
+    setIsClaiming(true);
+    setIsLoading(true);
+    try {
+      const url = `/api/result/${resolvedParams.sessionId}?claim=${encodeURIComponent(claimInput.trim())}`;
+      const res = await fetch(url);
+      const data = (await res.json()) as {
+        report?: GameplayReport;
+        choiceMapSteps?: ChoiceMapStep[];
+        claimKey?: string;
+        seventhDoorStatus?: {
+          unlocked: boolean;
+          completed: boolean;
+          choiceLabel: string | null;
+        };
+        hiddenLetterStatus?: {
+          unlocked: boolean;
+          read: boolean;
+        };
+        error?: string;
+      };
+      if (!res.ok || !data.report) {
+        throw new Error(data.error || "Failed to verify session claim key.");
+      }
+      setReport(data.report);
+      setChoiceMapSteps(data.choiceMapSteps || []);
+      if (data.seventhDoorStatus) setSeventhDoor(data.seventhDoorStatus);
+      if (data.hiddenLetterStatus) {
+        setHiddenLetter(data.hiddenLetterStatus);
+        if (data.hiddenLetterStatus.read) setLetterOpen(true);
+      }
+      if (data.claimKey) setClaimKey(data.claimKey);
+      setErrorMsg(null);
+    } catch (err: unknown) {
+      setErrorMsg(err instanceof Error ? err.message : "Claim verification failed.");
+    } finally {
+      setIsClaiming(false);
+      setIsLoading(false);
+    }
+  };
 
   const handleOpenHiddenLetter = async () => {
     setLetterOpen(true);
@@ -164,20 +211,51 @@ export default function ResultReportPage({ params }: PageProps) {
             </p>
           </div>
         ) : errorMsg || !report ? (
-          <div className="max-w-lg mx-auto py-20 text-center space-y-5">
+          <div className="max-w-lg mx-auto py-16 text-center space-y-6">
             <p className="text-[11px] uppercase tracking-[0.26em] text-[#9E6B68]">
-              Restricted or Missing Folio
+              Restricted or Unclaimed Dossier
             </p>
             <h1 className="font-serif text-3xl text-[#1C1917]">
-              Session dossier could not be opened.
+              Session dossier authorization required
             </h1>
             <p className="text-sm text-[#57524C] leading-relaxed">
               {errorMsg ||
-                "Each personal report is bound to the browser session that authored it."}
+                "This personal dossier is protected and bound to its authoring session. If this is your journey, enter your 8-character Session Claim Key or session token below."}
             </p>
-            <div className="pt-3">
+
+            {/* In-Browser Dossier Claim & Device Linking Form */}
+            <form
+              onSubmit={(e) => void handleClaimSubmit(e)}
+              className="p-5 bg-white border border-[#DDD4C5] rounded-sm text-left space-y-3 shadow-sm"
+            >
+              <label
+                htmlFor="claim-key-input"
+                className="block text-[10px] uppercase tracking-wider font-mono text-[#8A8178] font-bold"
+              >
+                Enter Session Claim Key or Original Token:
+              </label>
+              <div className="flex gap-2">
+                <input
+                  id="claim-key-input"
+                  type="text"
+                  required
+                  placeholder="e.g. 7A8B9C0D or session_token"
+                  value={claimInput}
+                  onChange={(e) => setClaimInput(e.target.value)}
+                  className="flex-1 px-3 py-2 bg-[#FAF7F2] border border-[#DDD4C5] rounded text-sm font-mono text-[#1C1917] focus:outline-none focus:border-[#8A5A36]"
+                />
+                <Button size="sm" type="submit" disabled={isClaiming}>
+                  {isClaiming ? "Verifying..." : "Claim Dossier"}
+                </Button>
+              </div>
+              <p className="text-[11px] text-[#8A8178]">
+                Claiming binds this dossier to your current browser session and establishes authenticated ownership.
+              </p>
+            </form>
+
+            <div className="pt-2 flex justify-center gap-3">
               <Link href="/play">
-                <Button size="md">Begin Your Own Journey</Button>
+                <Button size="md" variant="secondary">Begin Fresh Journey</Button>
               </Link>
             </div>
           </div>
@@ -198,12 +276,19 @@ export default function ResultReportPage({ params }: PageProps) {
               <div className="relative z-10 space-y-8">
                 <div className="flex flex-wrap items-center justify-between gap-3 text-[10px] uppercase tracking-[0.26em] text-[#A89F93] border-b border-[#FAF7F2]/12 pb-4">
                   <span>THE UNWRITTEN · SENIOR NARRATIVE DOSSIER</span>
-                  <span>
-                    Prepared for{" "}
-                    <strong className="text-[#FAF7F2] font-medium">
-                      {report.playerName}
-                    </strong>
-                  </span>
+                  <div className="flex items-center gap-3">
+                    {claimKey && (
+                      <span className="font-mono text-emerald-400 bg-emerald-950/60 border border-emerald-800/80 px-2 py-0.5 rounded text-[10px]">
+                        CLAIM KEY: {claimKey}
+                      </span>
+                    )}
+                    <span>
+                      Prepared for{" "}
+                      <strong className="text-[#FAF7F2] font-medium">
+                        {report.playerName}
+                      </strong>
+                    </span>
+                  </div>
                 </div>
 
                 <div className="space-y-4 py-2">

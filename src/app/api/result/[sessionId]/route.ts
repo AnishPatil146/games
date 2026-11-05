@@ -1,10 +1,15 @@
 import { NextRequest, NextResponse } from "next/server";
+import crypto from "crypto";
 import { getPublicSessionDossier } from "@/lib/storage";
 import { verifyAdminAccess } from "@/lib/admin-auth";
 import { evaluateReport } from "@/lib/scoring";
 
 interface RouteProps {
   params: Promise<{ sessionId: string }>;
+}
+
+function deriveClaimKey(token: string): string {
+  return crypto.createHash("sha256").update(token).digest("hex").slice(0, 8).toUpperCase();
 }
 
 const CHAPTER_BRANCH_META: Record<
@@ -80,58 +85,91 @@ export async function GET(req: NextRequest, props: RouteProps) {
   try {
     const { sessionId } = await props.params;
     const cookieToken = req.cookies.get("the_unwritten_token")?.value;
+    const claimParam = req.nextUrl.searchParams.get("claim") || req.nextUrl.searchParams.get("key");
+    const claimHeader = req.headers.get("x-dossier-claim-token") || req.headers.get("x-session-claim-key");
+    const candidateClaim = (claimParam || claimHeader || "").trim();
 
-    let authorizedDossier = cookieToken
+    const authorizedDossier = cookieToken
       ? await getPublicSessionDossier(cookieToken)
       : null;
 
-    const matchesRequestedSession =
+    let isOwner =
       Boolean(authorizedDossier) &&
       (sessionId === "current" || authorizedDossier?.session.id === sessionId);
 
-    let lookupKeyUsed = cookieToken || sessionId;
+    let tokenToBind: string | null = null;
+    let targetDossier = isOwner ? authorizedDossier : null;
 
-    if (!matchesRequestedSession) {
-      const adminAuth = await verifyAdminAccess();
-      if (!adminAuth.authorized) {
+    if (!isOwner) {
+      // 1. Resolve target session by sessionId
+      targetDossier = await getPublicSessionDossier(sessionId);
+      if (!targetDossier) {
+        return NextResponse.json(
+          { error: "No recorded gameplay session was found for this identifier." },
+          { status: 404 }
+        );
+      }
+
+      // 2. Check if caller provided valid claim token or key
+      if (candidateClaim) {
+        const claimDossier = await getPublicSessionDossier(candidateClaim);
+        if (claimDossier && claimDossier.session.id === targetDossier.session.id) {
+          isOwner = true;
+          tokenToBind = candidateClaim;
+        } else if (candidateClaim.toUpperCase() === deriveClaimKey(targetDossier.session.id)) {
+          isOwner = true;
+        }
+      }
+
+      // 3. Check if caller is verified administrator
+      if (!isOwner) {
+        const adminAuth = await verifyAdminAccess();
+        if (adminAuth.authorized) {
+          isOwner = true;
+        }
+      }
+
+      // 4. If session is completed, allow viewing read-only monograph report
+      const isCompleted =
+        targetDossier.session.status === "completed" ||
+        targetDossier.session.current_chapter >= 6;
+
+      if (!isOwner && !isCompleted) {
         return NextResponse.json(
           {
             error:
-              "Forbidden: This personal dossier belongs to another browser session.",
+              "Forbidden: This personal dossier belongs to another browser session. To claim or link this session, provide your recovery claim key.",
           },
           { status: 403 }
         );
       }
-
-      authorizedDossier = await getPublicSessionDossier(sessionId);
-      lookupKeyUsed = sessionId;
     }
 
-    if (!authorizedDossier) {
+    if (!targetDossier) {
       return NextResponse.json(
         { error: "No recorded gameplay session was found for this identifier." },
         { status: 404 }
       );
     }
 
-    const events = authorizedDossier.events;
-    const prefs = authorizedDossier.preferences;
+    const events = targetDossier.events;
+    const prefs = targetDossier.preferences;
 
     const report = evaluateReport(
-      authorizedDossier.session.id,
-      authorizedDossier.playerDisplayName || "Anonymous Traveler",
+      targetDossier.session.id,
+      targetDossier.playerDisplayName || "Anonymous Traveler",
       events,
       prefs,
-      authorizedDossier.session.completed_at ||
-        authorizedDossier.session.started_at,
-      authorizedDossier.session.character_presentation
+      targetDossier.session.completed_at ||
+        targetDossier.session.started_at,
+      targetDossier.session.character_presentation
     );
 
     if (
-      !authorizedDossier.session.result_archetype &&
-      authorizedDossier.session.current_chapter >= 6
+      !targetDossier.session.result_archetype &&
+      targetDossier.session.current_chapter >= 6
     ) {
-      await getPublicSessionDossier(lookupKeyUsed, report.archetype);
+      await getPublicSessionDossier(sessionId, report.archetype);
     }
 
     const uniqueClues = new Set(
@@ -221,10 +259,12 @@ export async function GET(req: NextRequest, props: RouteProps) {
       };
     });
 
-    return NextResponse.json({
+    const response = NextResponse.json({
       success: true,
       report,
       choiceMapSteps,
+      isOwner,
+      claimKey: deriveClaimKey(targetDossier.session.id),
       seventhDoorStatus: {
         unlocked: seventhDoorUnlocked,
         completed: Boolean(seventhDoorCompletedEv),
@@ -237,6 +277,20 @@ export async function GET(req: NextRequest, props: RouteProps) {
         read: hiddenLetterRead,
       },
     });
+
+    if (tokenToBind) {
+      response.cookies.set({
+        name: "the_unwritten_token",
+        value: tokenToBind,
+        httpOnly: true,
+        secure: process.env.NODE_ENV === "production",
+        sameSite: "lax",
+        path: "/",
+        maxAge: 86400 * 30, // 30 days
+      });
+    }
+
+    return response;
   } catch (err: unknown) {
     const message =
       err instanceof Error ? err.message : "Failed to generate gameplay report.";

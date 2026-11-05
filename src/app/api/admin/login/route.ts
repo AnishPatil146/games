@@ -4,6 +4,12 @@ import { isEmailAllowed } from "@/lib/admin-auth";
 import { createClient } from "@/lib/supabase/server";
 import { checkRateLimit } from "@/lib/rate-limit";
 import { getEnvConfig } from "@/lib/env";
+import {
+  ADMIN_SESSION_COOKIE_NAME,
+  createAdminSessionToken,
+  getStoredAdminCredentials,
+  verifyPassword,
+} from "@/lib/services/admin-auth-service";
 
 const LoginSchema = z.object({
   email: z.string().trim().email("Enter a valid administrator email address."),
@@ -19,14 +25,6 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  const { isSupabaseConfigured } = getEnvConfig();
-  if (!isSupabaseConfigured) {
-    return NextResponse.json(
-      { error: "Supabase Auth is not configured in environment variables." },
-      { status: 503 }
-    );
-  }
-
   try {
     const body: unknown = await req.json();
     const parsed = LoginSchema.safeParse(body);
@@ -39,7 +37,7 @@ export async function POST(req: NextRequest) {
 
     const email = parsed.data.email.toLowerCase();
 
-    // Server-side single-administrator allowlist enforcement
+    // 1. Server-side single-administrator allowlist enforcement
     if (!isEmailAllowed(email)) {
       return NextResponse.json(
         { error: "Access denied. This identity is not authorized for Control access." },
@@ -47,34 +45,70 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const supabase = await createClient();
-    const { data, error } = await supabase.auth.signInWithPassword({
-      email,
-      password: parsed.data.password,
-    });
+    let authenticated = false;
 
-    if (error || !data.user) {
+    // 2. Primary check: Local established credentials with PBKDF2-SHA512
+    const storedCreds = getStoredAdminCredentials();
+    if (storedCreds && storedCreds.email === email) {
+      if (
+        verifyPassword(
+          parsed.data.password,
+          storedCreds.salt,
+          storedCreds.hash,
+          storedCreds.iterations
+        )
+      ) {
+        authenticated = true;
+      }
+    }
+
+    // 3. Secondary check: Supabase Auth (if local didn't authenticate or not yet seeded)
+    const { isSupabaseConfigured } = getEnvConfig();
+    if (!authenticated && isSupabaseConfigured) {
+      try {
+        const supabase = await createClient();
+        const { data, error } = await supabase.auth.signInWithPassword({
+          email,
+          password: parsed.data.password,
+        });
+
+        if (!error && data?.user && isEmailAllowed(data.user.email)) {
+          authenticated = true;
+        }
+      } catch {
+        // Supabase sign in failed
+      }
+    }
+
+    if (!authenticated) {
       return NextResponse.json(
         {
           error:
-            "Invalid administrator credentials. Ensure the authorized account is created in Supabase Auth.",
+            "Invalid administrator credentials. If you need to establish or reset your password, use the secure administrator recovery protocol.",
         },
         { status: 401 }
       );
     }
 
-    if (!isEmailAllowed(data.user.email)) {
-      await supabase.auth.signOut().catch(() => {});
-      return NextResponse.json(
-        { error: "Access denied. Account is not in ADMIN_EMAILS allowlist." },
-        { status: 403 }
-      );
-    }
-
-    return NextResponse.json({
+    // 4. Issue cryptographically signed admin session cookie
+    const token = createAdminSessionToken(email, "SUPER_ADMIN", 86400);
+    const response = NextResponse.json({
       success: true,
-      email: data.user.email,
+      email,
+      role: "SUPER_ADMIN",
     });
+
+    response.cookies.set({
+      name: ADMIN_SESSION_COOKIE_NAME,
+      value: token,
+      httpOnly: true,
+      secure: process.env.NODE_ENV === "production",
+      sameSite: "lax",
+      path: "/",
+      maxAge: 86400,
+    });
+
+    return response;
   } catch (err: unknown) {
     const message =
       err instanceof Error ? err.message : "Authentication request failed.";

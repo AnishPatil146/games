@@ -1,6 +1,10 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { createServerClient } from "@supabase/ssr";
 import { AUTHORIZED_ADMIN_EMAIL, getEnvConfig } from "@/lib/env";
+import {
+  ADMIN_SESSION_COOKIE_NAME,
+  verifyAdminSessionToken,
+} from "@/lib/services/admin-auth-service";
 
 export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
@@ -19,13 +23,26 @@ export async function proxy(request: NextRequest) {
     return NextResponse.redirect(new URL("/admin/dashboard", request.url));
   }
 
-  // Enforce server-side Supabase Auth + allowlist on /admin/* routes
+  // Enforce server-side Admin Auth + allowlist on /admin/* routes
   if (pathname.startsWith("/admin/")) {
     let supabaseResponse = NextResponse.next({ request });
+    const isLoginRoute = pathname === "/admin/login";
+
+    // 1. Check primary cryptographically signed admin session cookie
+    const adminSessionCookie = request.cookies.get(ADMIN_SESSION_COOKIE_NAME)?.value;
+    if (adminSessionCookie) {
+      const verified = verifyAdminSessionToken(adminSessionCookie);
+      if (verified.valid && verified.email === AUTHORIZED_ADMIN_EMAIL) {
+        if (isLoginRoute) {
+          return NextResponse.redirect(new URL("/admin/dashboard", request.url));
+        }
+        return supabaseResponse;
+      }
+    }
+
+    // 2. Check secondary Supabase Auth session
     const { supabaseUrl, supabasePublicKey, isSupabaseConfigured, allowedAdminEmails } =
       getEnvConfig();
-
-    const isLoginRoute = pathname === "/admin/login";
 
     if (!isSupabaseConfigured) {
       if (!isLoginRoute) {
