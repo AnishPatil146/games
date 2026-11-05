@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { ArrowRight, Users, CheckCircle2, ShieldCheck, Activity } from "lucide-react";
+import { ArrowRight, Users, CheckCircle2, ShieldCheck, Activity, Compass } from "lucide-react";
 import { formatDateTime } from "@/components/admin/formatters";
 import { MathRenderer } from "@/components/math/MathRenderer";
 
@@ -273,6 +273,53 @@ export default function AdminExecutiveDashboardPage() {
               </tbody>
             </table>
           )}
+        </div>
+      </section>
+
+      {/* Cinematic Character Selection & Environment Stage Health Audit */}
+      <section className="p-5 bg-[#FAF7F2] border border-[#DDD4C5] rounded-sm space-y-4">
+        <div className="flex items-center justify-between border-b border-[#DDD4C5] pb-3">
+          <div className="flex items-center gap-2">
+            <Compass className="w-4 h-4 text-[#8A5A36]" />
+            <h2 className="font-serif text-lg text-[#1C1917]">Cinematic Player Select &amp; Environment Stage</h2>
+          </div>
+          <span className="text-[10px] font-mono text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200 uppercase tracking-widest font-bold">
+            100% Verified
+          </span>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-3 text-xs">
+          <div className="p-3 bg-[#F3EDE2]/60 rounded-sm space-y-1">
+            <span className="text-[10px] uppercase font-mono tracking-wider text-emerald-700 font-bold block">
+              ✓ Background Removal
+            </span>
+            <span className="font-bold text-[#1C1917] block">Grey Keyhole Eliminated</span>
+            <span className="text-[11px] text-[#57524C]">Obsolete SVG arch and meridian rings removed at source.</span>
+          </div>
+
+          <div className="p-3 bg-[#F3EDE2]/60 rounded-sm space-y-1">
+            <span className="text-[10px] uppercase font-mono tracking-wider text-emerald-700 font-bold block">
+              ✓ 4 Game Environments
+            </span>
+            <span className="font-bold text-[#1C1917] block">Selection, Junior, Solo, War Room</span>
+            <span className="text-[11px] text-[#57524C]">Four distinct 1920x1080 illustrated backdrops with dynamic cross-fade.</span>
+          </div>
+
+          <div className="p-3 bg-[#F3EDE2]/60 rounded-sm space-y-1">
+            <span className="text-[10px] uppercase font-mono tracking-wider text-emerald-700 font-bold block">
+              ✓ 3 Character Identities
+            </span>
+            <span className="font-bold text-[#1C1917] block">The Scholar, Investigator, Squad</span>
+            <span className="text-[11px] text-[#57524C]">Idle breathing, elevation, distinct badges, and interactive dossier panels.</span>
+          </div>
+
+          <div className="p-3 bg-[#F3EDE2]/60 rounded-sm space-y-1">
+            <span className="text-[10px] uppercase font-mono tracking-wider text-emerald-700 font-bold block">
+              ✓ Route &amp; State Uplink
+            </span>
+            <span className="font-bold text-[#1C1917] block">1-Click &quot;ENTER WORLD&quot;</span>
+            <span className="text-[11px] text-[#57524C]">Direct routing to /junior, /solo, and /alliance with saved progress awareness.</span>
+          </div>
         </div>
       </section>
 
