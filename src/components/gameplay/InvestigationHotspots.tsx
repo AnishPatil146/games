@@ -24,35 +24,35 @@ interface InvestigationHotspotsProps {
 const DEFAULT_L1_HOTSPOTS: Hotspot[] = [
   {
     id: "desk",
-    name: "Rusty Metal Desk",
+    name: "Steam Conduit Hatch",
     icon: "desk",
-    x: 24,
-    y: 62,
-    title: "TORN OBSERVATION LOG",
+    x: 14,
+    y: 54,
+    title: "CONDUIT OBSERVATION LOG",
     description:
-      "You pull open the rusted drawer. Inside, amidst dried neuro-sedative ampoules, you find a charred clipboard. A single handwritten line survives:\n\n'Subject 09 calibration index locked at 07:45. Do not deviate.'",
+      "Tucked into the damp junction behind the high-pressure steam valve, you discover a charred maintenance clipboard. A single handwritten line survives:\n\n'Subject 09 calibration index locked at 07:45. Do not deviate.'",
     evidenceFound: "Torn Record: 'Index locked at 07:45'",
   },
   {
     id: "clock",
-    name: "Frozen Wall Clock",
+    name: "Frozen Brass Chronometer",
     icon: "clock",
-    x: 72,
+    x: 35,
     y: 35,
-    title: "SHATTERED BRASS CHRONOMETER",
+    title: "VINTAGE STATION CLOCK",
     description:
-      "A heavy industrial timepiece welded into the concrete wall. The brass minute and hour hands are fused in place, frozen immutably at 7:45.",
+      "A heavy brass-bezeled chronometer bolted to the reinforced masonry. The Roman numerals are sharp, and the hands are frozen immutably at VII and IX: precisely 07:45. A folded yellowed document is tucked behind the left rim.",
     evidenceFound: "Timepiece confirmed stopped at 07:45",
   },
   {
     id: "door",
-    name: "Heavy Blast Door Lock",
+    name: "Heavy Blast Door & Keypad",
     icon: "door",
-    x: 50,
-    y: 48,
+    x: 82,
+    y: 52,
     title: "ELECTRONIC COMBINATION BOLT",
     description:
-      "Four mechanical brass tumblers control the reinforced magnetic latch. Align the correct 4-digit sequence to disengage.",
+      "A massive reinforced vault door secured by an illuminated 4-digit amber keypad and heavy steel locking wheel. Align the correct 4-digit sequence to disengage.",
   },
 ];
 

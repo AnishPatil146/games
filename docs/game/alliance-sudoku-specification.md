@@ -48,3 +48,4 @@ Alliance Multiplayer rejects isolated competitive play. Operatives solve **one u
 1. **Optimistic Placement:** When a player clicks/types a number, their local UI reflects the change immediately.
 2. **Server Acknowledgment:** The client dispatches `POST /api/v1/multiplayer/rooms/{code}` with action `sudoku_move`.
 3. **Rejection Rollback:** If the cell is an immutable clue or conflicting concurrent write, the server responds with `{ success: false, error }`, and the client automatically rolls back to the authoritative state with a clear feedback banner.
+

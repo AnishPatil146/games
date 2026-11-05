@@ -321,6 +321,41 @@ export default function AdminExecutiveDashboardPage() {
             <span className="text-[11px] text-[#57524C]">Direct routing to /junior, /solo, and /alliance with saved progress awareness.</span>
           </div>
         </div>
+
+        {/* Visual Quality & Master Artwork Roster Audit */}
+        <div className="border-t border-[#DDD4C5] pt-3">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
+            <div className="p-3 bg-[#F3EDE2]/80 rounded-sm space-y-1 border border-[#DDD4C5]/50">
+              <span className="text-[10px] uppercase font-mono tracking-wider text-emerald-700 font-bold block">
+                ✓ Solo L1 Scene Replacement
+              </span>
+              <span className="font-bold text-[#1C1917] block">07:45 Brass Station Clock</span>
+              <span className="text-[11px] text-[#57524C]">
+                Full 828 KB illustration with physically mounted clock, tucked note clue, heavy vault door, and amber 4-digit keypad.
+              </span>
+            </div>
+
+            <div className="p-3 bg-[#F3EDE2]/80 rounded-sm space-y-1 border border-[#DDD4C5]/50">
+              <span className="text-[10px] uppercase font-mono tracking-wider text-emerald-700 font-bold block">
+                ✓ Full Cast High-Res Sprites
+              </span>
+              <span className="font-bold text-[#1C1917] block">848×1264 Bande-Dessinée Cast</span>
+              <span className="text-[11px] text-[#57524C]">
+                All NPCs (Vesper, Halden, Mira) upgraded from 9 KB silhouettes to &gt;1.0 MB textured illustrated portraits.
+              </span>
+            </div>
+
+            <div className="p-3 bg-[#F3EDE2]/80 rounded-sm space-y-1 border border-[#DDD4C5]/50">
+              <span className="text-[10px] uppercase font-mono tracking-wider text-emerald-700 font-bold block">
+                ✓ Official Circular Brand Logo
+              </span>
+              <span className="font-bold text-[#1C1917] block">Silence Keyhole Emblem</span>
+              <span className="text-[11px] text-[#57524C]">
+                Approved silver &amp; crimson &quot;WHERE SILENCE SPEAKS&quot; emblem integrated across header, loading, admin, and favicons.
+              </span>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Mathematical Notation & Gameplay Engines Health Audit */}

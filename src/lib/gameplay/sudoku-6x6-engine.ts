@@ -429,3 +429,4 @@ export function getSudoku6x6Hint(
 
   return null;
 }
+

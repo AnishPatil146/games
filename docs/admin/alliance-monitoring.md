@@ -36,3 +36,4 @@ The Command Centre monitors live and historical Alliance rooms across the follow
 - Never expose player authentication tokens, IP addresses, or private session cookies in telemetry tables.
 - Server-authoritative solution grids are redacted until round completion.
 - Telemetry events pipeline into `src/lib/services/event-store.ts` with structured payloads.
+

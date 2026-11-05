@@ -54,3 +54,4 @@ Emerald Validation:      #52B788 (Tactical solve verification)
    - Never stretch, skew, or non-uniformly scale the circular emblem.
    - Never tint the silver metallic rim into yellow/gold.
    - Never remove or recolor the crimson accent slash in "UNWRITTEN" and "SILENCE".
+

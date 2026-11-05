@@ -395,13 +395,12 @@ export function SharedSudoku6x6Board({
           </button>
 
           <span
-            className={`text-[10px] font-mono uppercase px-2.5 py-0.5 rounded-full border font-bold ${
-              sudokuState.difficulty === "easy"
+            className={`text-[10px] font-mono uppercase px-2.5 py-0.5 rounded-full border font-bold ${sudokuState.difficulty === "easy"
                 ? "bg-emerald-950/60 text-emerald-300 border-emerald-800/50"
                 : sudokuState.difficulty === "medium"
-                ? "bg-amber-950/60 text-amber-300 border-amber-800/50"
-                : "bg-rose-950/60 text-rose-300 border-rose-800/50"
-            }`}
+                  ? "bg-amber-950/60 text-amber-300 border-amber-800/50"
+                  : "bg-rose-950/60 text-rose-300 border-rose-800/50"
+              }`}
           >
             {sudokuState.difficulty}
           </span>
@@ -434,11 +433,10 @@ export function SharedSudoku6x6Board({
           return (
             <div
               key={p.id}
-              className={`p-2.5 rounded-xl border flex items-center justify-between transition-all ${
-                isCurrent
+              className={`p-2.5 rounded-xl border flex items-center justify-between transition-all ${isCurrent
                   ? "bg-[#181513] border-zinc-700 shadow-sm"
                   : "bg-[#12100E]/70 border-zinc-800/60"
-              }`}
+                }`}
             >
               <div className="flex items-center gap-2 overflow-hidden">
                 <div
@@ -512,15 +510,14 @@ export function SharedSudoku6x6Board({
                     <button
                       key={key}
                       onClick={() => handleSelectCell(r, c)}
-                      className={`relative w-11 h-11 sm:w-16 sm:h-16 rounded-xl flex items-center justify-center font-serif text-lg sm:text-2xl font-bold transition-all cursor-pointer ${borderBottom} ${borderRight} ${
-                        isSelected
+                      className={`relative w-11 h-11 sm:w-16 sm:h-16 rounded-xl flex items-center justify-center font-serif text-lg sm:text-2xl font-bold transition-all cursor-pointer ${borderBottom} ${borderRight} ${isSelected
                           ? "bg-zinc-800 text-white ring-2 ring-[#9E2A2B] shadow-[0_0_15px_rgba(158,42,43,0.5)] z-20 scale-102"
                           : isConflict
-                          ? "bg-rose-950/70 text-rose-300 border border-rose-500/80"
-                          : isPeer
-                          ? "bg-zinc-900/90 text-zinc-200 border border-white/10"
-                          : "bg-black/60 text-zinc-300 border border-white/5 hover:bg-zinc-900/70"
-                      } ${isClue ? "font-black text-zinc-100" : "text-emerald-400 font-medium"}`}
+                            ? "bg-rose-950/70 text-rose-300 border border-rose-500/80"
+                            : isPeer
+                              ? "bg-zinc-900/90 text-zinc-200 border border-white/10"
+                              : "bg-black/60 text-zinc-300 border border-white/5 hover:bg-zinc-900/70"
+                        } ${isClue ? "font-black text-zinc-100" : "text-emerald-400 font-medium"}`}
                     >
                       {currentVal > 0 ? currentVal : ""}
 
@@ -611,11 +608,10 @@ export function SharedSudoku6x6Board({
                 {Array.from({ length: 5 }).map((_, i) => (
                   <span
                     key={i}
-                    className={`w-2.5 h-2.5 rounded-full ${
-                      i < sudokuState.hintsRemaining
+                    className={`w-2.5 h-2.5 rounded-full ${i < sudokuState.hintsRemaining
                         ? "bg-amber-400 shadow-[0_0_8px_rgba(251,191,36,0.6)]"
                         : "bg-zinc-800 border border-zinc-700"
-                    }`}
+                      }`}
                   />
                 ))}
               </div>

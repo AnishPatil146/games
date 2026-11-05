@@ -39,3 +39,4 @@ The 6×6 Sudoku generator (`src/lib/gameplay/sudoku-6x6-engine.ts`) guarantees:
 1. The host selects the difficulty in the War Room lobby before initiating deployment.
 2. The selection is synchronized to all connected peers via real-time polling.
 3. Once the campaign is initiated (`status = "in_progress"`), the difficulty locks and cannot be modified until the chamber concludes.
+
