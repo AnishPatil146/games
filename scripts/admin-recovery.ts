@@ -32,3 +32,4 @@ if (result.success) {
   console.error("Failed to establish credentials:", result.error);
   process.exit(1);
 }
+

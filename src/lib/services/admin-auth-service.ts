@@ -247,3 +247,4 @@ export function consumeAdminRecoveryToken(candidateSecret: string): boolean {
     return false;
   }
 }
+

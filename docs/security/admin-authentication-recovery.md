@@ -104,3 +104,4 @@ If remote recovery is needed:
 | **SEC-T04** | Route Protection (`/admin/dashboard`) | Unauthenticated browser request | Redirected to `/admin/login?next=/admin/dashboard` | **PASS** |
 | **SEC-T05** | API Protection (`/api/v1/admin/dashboard`) | Unauthenticated API request | `401 Unauthorized`: "Administrator authentication required." | **PASS** |
 | **SEC-T06** | Browser Session Logout | `POST /api/admin/logout` | Both session cookies deleted; redirected to `/admin/login` | **PASS** |
+

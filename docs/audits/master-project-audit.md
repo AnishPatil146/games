@@ -171,3 +171,4 @@ flowchart TD
 2. **Resolve Dossier Ownership Cross-Session Issue** (`src/app/api/result/[sessionId]/route.ts` & `docs/bugs/dossier-session-ownership.md`).
 3. **Expand Junior Mode to Independent Class 11 & 12 Curricula**.
 4. **Deploy Role-Based Access Control and Global Activity Timeline to Command Centre**.
+

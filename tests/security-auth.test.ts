@@ -75,3 +75,4 @@ test("THE UNWRITTEN — Security & Admin Authentication Recovery Suite", async (
     assert.equal(invalidUse, false, "Invalid secret must be rejected");
   });
 });
+
