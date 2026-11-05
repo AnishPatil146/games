@@ -27,3 +27,16 @@
 - Redesigned `/` into the 3 canonical pillars: Solo Mind Experiment, Multiplayer Alliance, Junior Learning Arena.
 - Removed deprecated legacy Chapter I–VI placeholders and duplicate routing.
 
+### 6. Official Brand Identity & Logo Variant Architecture
+- Integrated approved circular emblem (`media_1793848599273_c6012299.jpg`) as the official visual identity of THE UNWRITTEN.
+- Produced full asset system: `public/brand/logo-main.png`, `logo-circular.png`, `logo-transparent.png`, `logo-header.png`, `logo-loading.png`, `logo-admin.png`, `logo-results.png`, `emblem-silence.png`, `public/favicon.ico`.
+- Replaced outdated branding across Homepage, Storyboard HUDs, Solo conclusions, Alliance War Room, Junior Learning Arena, and Admin Command Centre.
+- Created `docs/design/brand-guidelines.md`.
+
+### 7. Alliance Cooperative 6×6 Sudoku Shared Board Upgrade
+- Built 6x6 Sudoku mathematical engine (`src/lib/gameplay/sudoku-6x6-engine.ts`) with 2x3 subgrid geometry, guaranteed unique solution generator, and pedagogical hint analyzer.
+- Added 3 Alliance difficulty tiers: EASY (18-20 clues), MEDIUM (14-16 clues), and HARD (10-12 clues).
+- Implemented real-time shared multiplayer board state with cursor presence, remote player indicators, conflict detection, 5 shared team hints, and individual contribution tracking (`src/lib/services/multiplayer-store.ts`, `src/components/alliance/SharedSudoku6x6Board.tsx`).
+- Added lobby difficulty selection selector for room hosts with real-time room synchronization.
+- Created comprehensive documentation: `docs/game/alliance-sudoku-specification.md`, `docs/game/alliance-difficulty-design.md`, and `docs/admin/alliance-monitoring.md`.
+

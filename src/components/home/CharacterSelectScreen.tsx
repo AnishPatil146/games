@@ -201,16 +201,27 @@ export function CharacterSelectScreen() {
       {/* 2. TOP MASTHEAD & STATUS HUD */}
       <header className="relative z-30 w-full max-w-7xl mx-auto px-6 pt-6 sm:pt-8 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <Link href="/" className="group flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-full bg-[#1C1917] border border-[#C8B28E]/40 flex items-center justify-center text-[#C8B28E] font-serif font-bold text-sm shadow-md transition-transform group-hover:scale-105">
-              U
+          <Link href="/" className="group flex items-center gap-3">
+            <div className="relative w-9 h-9 rounded-full border border-zinc-500/80 shadow-md transition-transform group-hover:scale-105 overflow-hidden flex-shrink-0">
+              <Image
+                src="/brand/logo-header.png"
+                alt="THE UNWRITTEN"
+                fill
+                priority
+                className="object-contain"
+              />
             </div>
             <div>
-              <span className="text-xs uppercase tracking-[0.35em] font-bold text-[#FAF7F2] block">
-                THE UNWRITTEN
-              </span>
-              <span className="text-[10px] font-serif italic text-[#C8B28E] block -mt-0.5">
-                Cinematic Mystery &amp; Academic Reasoning
+              <div className="flex items-center gap-1.5">
+                <span className="text-xs uppercase tracking-[0.35em] font-bold text-[#FAF7F2] block">
+                  THE UNWRITTEN
+                </span>
+                <span className="text-[9px] font-mono uppercase tracking-[0.2em] text-[#9E2A2B] font-bold">
+                  SILENCE
+                </span>
+              </div>
+              <span className="text-[10px] font-serif italic text-zinc-400 block -mt-0.5">
+                Where Silence Speaks
               </span>
             </div>
           </Link>

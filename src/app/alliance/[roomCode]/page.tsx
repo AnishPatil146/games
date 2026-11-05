@@ -13,6 +13,7 @@ import {
 import { MultiplayerRoom } from "@/lib/services/multiplayer-store";
 import { ALLIANCE_CAMPAIGN_SCENES } from "@/lib/campaign/alliance-campaign-data";
 import { StoryboardStage } from "@/components/storyboard/StoryboardStage";
+import { SharedSudoku6x6Board } from "@/components/alliance/SharedSudoku6x6Board";
 
 interface PageProps {
   params: Promise<{ roomCode: string }>;
@@ -76,6 +77,27 @@ export default function AllianceRoomPage({ params }: PageProps) {
     navigator.clipboard.writeText(roomCode);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
+  };
+
+  const handleSetDifficulty = async (diff: "easy" | "medium" | "hard") => {
+    if (!playerId) return;
+    try {
+      const res = await fetch(`/api/v1/multiplayer/rooms/${roomCode}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          action: "set_difficulty",
+          hostId: playerId,
+          difficulty: diff,
+        }),
+      });
+      const data = await res.json();
+      if (data.success && data.room) {
+        setRoom(data.room);
+      }
+    } catch {
+      // Handled via polling
+    }
   };
 
   const handleToggleReady = async () => {
@@ -175,12 +197,21 @@ export default function AllianceRoomPage({ params }: PageProps) {
         <div className="relative z-10 w-full max-w-2xl bg-[#1C1917]/95 border border-[#453D35] rounded-3xl p-6 md:p-10 shadow-2xl">
           <div className="flex items-center justify-between pb-4 border-b border-white/10 mb-6">
             <div className="flex items-center gap-3">
+              <div className="relative w-8 h-8 rounded-full border border-zinc-600 overflow-hidden shadow-md flex-shrink-0">
+                <Image
+                  src="/brand/logo-header.png"
+                  alt="THE UNWRITTEN"
+                  fill
+                  priority
+                  className="object-contain"
+                />
+              </div>
               <span className="text-xs font-mono uppercase tracking-[0.2em] text-[#9E6B68]">
                 Alliance Briefing
               </span>
               <button
                 onClick={handleCopyCode}
-                className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 hover:bg-white/20 text-[#FAF7F2] font-mono text-xs uppercase tracking-widest border border-white/10"
+                className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 hover:bg-white/20 text-[#FAF7F2] font-mono text-xs uppercase tracking-widest border border-white/10 cursor-pointer"
               >
                 <span>Code: {roomCode}</span>
                 {copied ? (
@@ -204,6 +235,73 @@ export default function AllianceRoomPage({ params }: PageProps) {
           <p className="font-serif text-xs md:text-sm text-[#A8A199] mb-6">
             Share room code <strong className="text-white">{roomCode}</strong> with your squad. All operatives must mark Ready before deployment.
           </p>
+
+          {/* SELECT CHALLENGE DIFFICULTY */}
+          <div className="mb-6 p-4 rounded-2xl bg-black/40 border border-white/10">
+            <div className="flex items-center justify-between mb-3">
+              <span className="text-xs font-mono uppercase tracking-widest text-[#9E2A2B] font-bold">
+                Select Challenge Difficulty
+              </span>
+              <span className="text-[10px] font-mono text-zinc-400">
+                {isHost ? "Host Selected" : "Controlled by Host"}
+              </span>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+              {[
+                {
+                  id: "easy",
+                  title: "EASY",
+                  clues: "18–20 Clues",
+                  desc: "Direct singles & basic deductions. Solvable without complex guessing.",
+                  glow: "rgba(16, 185, 129, 0.4)",
+                  color: "text-emerald-400",
+                },
+                {
+                  id: "medium",
+                  title: "MEDIUM",
+                  clues: "14–16 Clues",
+                  desc: "Moderate complexity. Requires combining row, col & 2x3 box deductions.",
+                  glow: "rgba(245, 158, 11, 0.4)",
+                  color: "text-amber-400",
+                },
+                {
+                  id: "hard",
+                  title: "HARD",
+                  clues: "10–12 Clues",
+                  desc: "Strictly unique solution. Requires careful planning and advanced logic.",
+                  glow: "rgba(244, 63, 94, 0.4)",
+                  color: "text-rose-400",
+                },
+              ].map((d) => {
+                const isSelected = (room.difficulty || "medium") === d.id;
+                return (
+                  <button
+                    key={d.id}
+                    type="button"
+                    disabled={!isHost || isActionLoading}
+                    onClick={() => handleSetDifficulty(d.id as "easy" | "medium" | "hard")}
+                    className={`p-3 rounded-xl border text-left transition-all ${
+                      isSelected
+                        ? `bg-zinc-900 border-[#9E2A2B] ring-2 ring-[#9E2A2B] shadow-md`
+                        : "bg-black/30 border-white/10 hover:border-white/20"
+                    } ${!isHost ? "cursor-default" : "cursor-pointer active:scale-98"}`}
+                  >
+                    <div className="flex items-center justify-between mb-1">
+                      <span className={`font-serif font-bold text-sm ${isSelected ? d.color : "text-zinc-200"}`}>
+                        {d.title}
+                      </span>
+                      <span className="text-[10px] font-mono text-zinc-400">
+                        {d.clues}
+                      </span>
+                    </div>
+                    <p className="text-[10px] sm:text-[11px] text-zinc-400 font-serif leading-snug">
+                      {d.desc}
+                    </p>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
 
           {errorMsg && (
             <div className="mb-4 p-3 bg-red-950/70 border border-red-800 rounded-xl text-red-200 text-xs font-serif">
@@ -352,8 +450,37 @@ export default function AllianceRoomPage({ params }: PageProps) {
   }
 
   // ---------------------------------------------------------------------------
-  // 3. IN-PROGRESS STORYBOARD CHAMBER
+  // 3. IN-PROGRESS STAGES
   // ---------------------------------------------------------------------------
+  // Chamber 01: Full Cooperative 6x6 Sudoku Challenge
+  if (room.currentLevel === 1 && playerId) {
+    return (
+      <div className="relative min-h-screen bg-[#12100E] text-[#FAF7F2] flex flex-col justify-center items-center p-3 sm:p-6 overflow-y-auto">
+        <div className="fixed inset-0 pointer-events-none">
+          <Image
+            src="/art/backgrounds/alliance_l1_first_lock.jpg"
+            alt="Alliance Chamber 01"
+            fill
+            priority
+            className="object-cover object-center brightness-25"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#12100E] via-[#12100E]/80 to-[#12100E]/50" />
+        </div>
+
+        <div className="relative z-10 w-full flex justify-center">
+          <SharedSudoku6x6Board
+            room={room}
+            playerId={playerId}
+            onRoomUpdate={setRoom}
+            onExit={() => router.push("/alliance")}
+            onAdvanceToNextLevel={handleLevelSolveSubmit}
+          />
+        </div>
+      </div>
+    );
+  }
+
+  // Subsequent Chambers: Visual Novel Storyboard
   const currentSceneId = `alliance_l${room.currentLevel}`;
   const currentScene =
     ALLIANCE_CAMPAIGN_SCENES[currentSceneId] ||

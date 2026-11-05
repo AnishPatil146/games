@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { Volume2, VolumeX } from "lucide-react";
 
@@ -118,15 +119,29 @@ export function Header({
       <div className="max-w-5xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between gap-4">
         <Link
           href="/"
-          className="group inline-flex items-center space-x-2.5 transition-opacity hover:opacity-80"
+          className="group inline-flex items-center gap-2.5 transition-opacity hover:opacity-80"
         >
-          <span
-            className={`text-[11px] uppercase tracking-[0.28em] font-medium ${
-              isDark ? "text-[#FAF7F2]" : "text-[#1C1917]"
-            }`}
-          >
-            THE UNWRITTEN
-          </span>
+          <div className="relative w-7 h-7 rounded-full border border-zinc-500/60 overflow-hidden shadow-sm flex-shrink-0">
+            <Image
+              src="/brand/logo-header.png"
+              alt="THE UNWRITTEN"
+              fill
+              priority
+              className="object-contain"
+            />
+          </div>
+          <div className="flex items-center gap-1.5">
+            <span
+              className={`text-[11px] uppercase tracking-[0.28em] font-medium ${
+                isDark ? "text-[#FAF7F2]" : "text-[#1C1917]"
+              }`}
+            >
+              THE UNWRITTEN
+            </span>
+            <span className="text-[9px] font-mono uppercase tracking-[0.18em] text-[#9E2A2B] font-bold">
+              SILENCE
+            </span>
+          </div>
         </Link>
 
         {currentChapter !== undefined && currentChapter > 0 && (

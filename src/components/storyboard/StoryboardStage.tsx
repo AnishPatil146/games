@@ -163,10 +163,19 @@ export function StoryboardStage({
       {/* Top HUD Bar (Pinned) */}
       <header className="fixed top-0 left-0 right-0 z-40 w-full flex items-center justify-between p-4 md:p-6 bg-gradient-to-b from-black/85 to-transparent pointer-events-auto">
         <div className="flex items-center gap-3">
+          <Link href="/" className="relative w-8 h-8 rounded-full border border-zinc-600 overflow-hidden shadow-md flex-shrink-0" title="THE UNWRITTEN">
+            <Image
+              src="/brand/logo-header.png"
+              alt="THE UNWRITTEN"
+              fill
+              priority
+              className="object-contain"
+            />
+          </Link>
           {onReturnToHub ? (
             <button
               onClick={onReturnToHub}
-              className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-black/50 hover:bg-black/70 text-[#FAF7F2] font-mono text-xs uppercase tracking-wider backdrop-blur-md border border-white/15 transition-all shadow-md"
+              className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/50 hover:bg-black/70 text-[#FAF7F2] font-mono text-xs uppercase tracking-wider backdrop-blur-md border border-white/15 transition-all shadow-md"
             >
               <Home className="w-3.5 h-3.5" />
               <span className="hidden sm:inline">Hub</span>
@@ -174,7 +183,7 @@ export function StoryboardStage({
           ) : (
             <Link
               href="/"
-              className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-black/50 hover:bg-black/70 text-[#FAF7F2] font-mono text-xs uppercase tracking-wider backdrop-blur-md border border-white/15 transition-all shadow-md"
+              className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/50 hover:bg-black/70 text-[#FAF7F2] font-mono text-xs uppercase tracking-wider backdrop-blur-md border border-white/15 transition-all shadow-md"
             >
               <Home className="w-3.5 h-3.5" />
               <span className="hidden sm:inline">Hub</span>

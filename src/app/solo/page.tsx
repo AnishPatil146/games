@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 import { StoryboardStage } from "@/components/storyboard/StoryboardStage";
 import { SOLO_CAMPAIGN_SCENES } from "@/lib/campaign/solo-campaign-data";
 import { useGameSession } from "@/lib/useGameSession";
@@ -46,6 +47,15 @@ export default function SoloCampaignPage() {
     return (
       <div className="min-h-screen bg-[#12100E] text-[#FAF7F2] flex flex-col items-center justify-center p-6 text-center select-none">
         <div className="max-w-xl bg-[#1C1917] p-8 md:p-12 rounded-3xl border border-[#453D35] shadow-2xl">
+          <div className="relative w-20 h-20 mx-auto mb-4 rounded-full border border-zinc-600 overflow-hidden shadow-lg">
+            <Image
+              src="/brand/logo-results.png"
+              alt="THE UNWRITTEN"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
           <span className="text-xs font-mono uppercase tracking-[0.3em] text-[#9E6B68]">
             The Mind Experiment • Concluded
           </span>

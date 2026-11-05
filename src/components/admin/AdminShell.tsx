@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import {
@@ -112,16 +113,27 @@ export function AdminShell({ adminEmail, children }: AdminShellProps) {
     <div className="min-h-screen flex flex-col lg:flex-row bg-[#F6F3EC] text-[#1C1917]">
       {/* Desktop Sidebar */}
       <aside className="hidden lg:flex lg:w-64 lg:flex-col lg:fixed lg:inset-y-0 bg-[#141210] text-[#FAF7F2] border-r border-[#2B2723]">
-        <div className="px-6 h-16 flex items-center justify-between border-b border-[#2B2723]">
-          <div>
-            <span className="block text-[10px] uppercase tracking-[0.28em] text-[#FAF7F2] font-semibold">
-              THE UNWRITTEN
-            </span>
-            <span className="block text-[9px] uppercase tracking-[0.24em] text-[#8FA184] mt-0.5 font-mono">
-              / CONTROL
-            </span>
+        <div className="px-5 h-16 flex items-center justify-between border-b border-[#2B2723]">
+          <div className="flex items-center gap-3">
+            <div className="relative w-8 h-8 rounded-full border border-zinc-600 overflow-hidden shadow-sm flex-shrink-0">
+              <Image
+                src="/brand/logo-header.png"
+                alt="THE UNWRITTEN"
+                fill
+                priority
+                className="object-contain"
+              />
+            </div>
+            <div>
+              <span className="block text-[10px] uppercase tracking-[0.28em] text-[#FAF7F2] font-semibold">
+                THE UNWRITTEN
+              </span>
+              <span className="block text-[9px] uppercase tracking-[0.2em] text-[#9E2A2B] mt-0.5 font-mono font-bold">
+                COMMAND CENTRE
+              </span>
+            </div>
           </div>
-          <Shield className="w-4 h-4 text-[#8FA184]" aria-hidden="true" />
+          <Shield className="w-4 h-4 text-zinc-500" aria-hidden="true" />
         </div>
 
         <nav
@@ -183,9 +195,17 @@ export function AdminShell({ adminEmail, children }: AdminShellProps) {
       {/* Mobile Top Header */}
       <header className="lg:hidden sticky top-0 z-40 bg-[#141210] text-[#FAF7F2] border-b border-[#2B2723] px-4 h-14 flex items-center justify-between">
         <div className="flex items-center gap-2.5">
-          <Shield className="w-4 h-4 text-[#8FA184]" />
+          <div className="relative w-7 h-7 rounded-full border border-zinc-600 overflow-hidden shadow-sm flex-shrink-0">
+            <Image
+              src="/brand/logo-header.png"
+              alt="THE UNWRITTEN"
+              fill
+              priority
+              className="object-contain"
+            />
+          </div>
           <span className="text-[11px] uppercase tracking-[0.24em] font-semibold">
-            THE UNWRITTEN <span className="text-[#8FA184]">/ CONTROL</span>
+            THE UNWRITTEN <span className="text-[#9E2A2B]">/ CONTROL</span>
           </span>
         </div>
         <button

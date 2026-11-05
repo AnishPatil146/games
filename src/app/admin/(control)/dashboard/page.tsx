@@ -351,10 +351,10 @@ export default function AdminExecutiveDashboardPage() {
             <div className="p-3 bg-[#F3EDE2]/60 rounded-sm flex items-center justify-between">
               <div>
                 <span className="font-bold text-[#1C1917]">Multiplayer Alliance — The Last Alliance</span>
-                <span className="block text-[11px] text-[#57524C]">9x9 Sudoku Generator · 8x8 Chess vs Count Vesper · Prisoner&apos;s Matrix</span>
+                <span className="block text-[11px] text-[#57524C]">Shared 6×6 Sudoku Lock · 3 Difficulties (Easy, Medium, Hard) · 5 Shared Hints · Real-time Sync</span>
               </div>
               <span className="flex items-center gap-1 text-[11px] font-mono text-emerald-700 font-bold">
-                <CheckCircle2 className="w-3.5 h-3.5" /> Online &amp; Synced
+                <CheckCircle2 className="w-3.5 h-3.5" /> 6×6 Co-op Online
               </span>
             </div>
 

@@ -86,3 +86,37 @@
 - **Deployment:** Commits pushed to `origin/master` and verified **`READY`** on Vercel at `https://thegameunwritten.vercel.app/`.
 - **Result:** 100% PRODUCTION READY.
 
+---
+
+### Task 8: Character Identity Registry & High-Res Sprites (Zero Face Cloning)
+- **Inspected:** Player select characters, facial anatomy, wardrobe specifications.
+- **Created / Changed:**
+  - `docs/design/character-identity-registry.md`: Comprehensive reference specifications for Junior (The Scholar), Aarav (The Investigator), and The Squad (Aanya, Aarav, Warden).
+  - `public/art/characters/junior_student.png`: 848x1264 RGBA high-resolution illustrated student character.
+  - `public/art/characters/alliance_squad.png`: 1020x698 RGBA multi-operative tactical ensemble.
+  - Corrected station wall clock in `solo_l1_wakeup.jpg` to 07:45.
+- **Result:** PASS.
+
+---
+
+### Task 9: Official Game Logo Integration (Circular Silver & Crimson Emblem)
+- **Inspected:** Approved circular emblem (`media_1793848599273_c6012299.jpg`), brand typography, transparent borders.
+- **Created / Changed:**
+  - `public/brand/logo-main.png`, `logo-circular.png`, `logo-transparent.png`, `logo-header.png`, `logo-loading.png`, `logo-admin.png`, `logo-results.png`, `emblem-silence.png`, `public/favicon.ico`.
+  - Replaced legacy gold 'U' graphics with the approved circular brand emblem across Homepage, Storyboard, Solo, Alliance, Junior, and Admin Command Centre.
+  - `docs/design/brand-guidelines.md`: Full typography, color palette, and usage rules.
+- **Result:** PASS.
+
+---
+
+### Task 10: Alliance Cooperative 6×6 Sudoku Engine & Shared Board Upgrade
+- **Inspected:** Alliance multiplayer gameplay, real-time board sync, 6x6 Sudoku rules, 2x3 box geometry, difficulty modes.
+- **Created / Changed:**
+  - `src/lib/gameplay/sudoku-6x6-engine.ts`: Generates validated 6x6 Sudoku puzzles with guaranteed unique solutions for Easy (18-20 clues), Medium (14-16 clues), and Hard (10-12 clues); backtracking solver; conflict detector; hint generator.
+  - `src/lib/services/multiplayer-store.ts`: Server-authoritative shared 6x6 Sudoku board, real-time cursor presence, 5 shared team hints, conflict prevention, contribution tracking, solution redaction prior to completion.
+  - `src/components/alliance/SharedSudoku6x6Board.tsx`: Large interactive 6x6 grid with 2x3 subgrid borders, remote teammate cursor indicators, touch/keyboard input, shared hint modal, live activity feed, and after-game contribution roster.
+  - `src/app/alliance/page.tsx` & `src/app/alliance/[roomCode]/page.tsx`: Lobby difficulty selection (Easy / Medium / Hard) with live room broadcast and seamless chamber 1 shared Sudoku gameplay.
+  - `docs/game/alliance-sudoku-specification.md`, `docs/game/alliance-difficulty-design.md`, `docs/admin/alliance-monitoring.md`.
+- **Tested:** 22/22 unit tests passing in `npm test`.
+- **Result:** 100% VERIFIED & PRODUCTION READY.
+

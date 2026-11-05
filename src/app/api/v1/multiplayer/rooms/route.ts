@@ -5,7 +5,8 @@ export async function POST(req: NextRequest) {
   try {
     const body = await req.json().catch(() => ({}));
     const hostName = typeof body.hostName === "string" ? body.hostName.trim() : "Host";
-    const { room, hostId } = createRoom(hostName);
+    const difficulty = body.difficulty === "easy" || body.difficulty === "hard" ? body.difficulty : "medium";
+    const { room, hostId } = createRoom(hostName, difficulty);
     return NextResponse.json({ success: true, room, hostId });
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : "Failed to create room";

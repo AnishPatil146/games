@@ -7,6 +7,14 @@ import {
   findGridConflicts,
 } from "../src/lib/gameplay/sudoku-engine";
 import {
+  generateSudoku6x6,
+  solveSudoku6x6,
+  countSolutions6x6,
+  findGridConflicts6x6,
+  isSudoku6x6Complete,
+  getSudoku6x6Hint,
+} from "../src/lib/gameplay/sudoku-6x6-engine";
+import {
   ChessService,
   COUNT_VESPER_PUZZLES,
 } from "../src/lib/gameplay/chess-service";
@@ -93,6 +101,60 @@ describe("THE UNWRITTEN — Gameplay Engines Test Suite", () => {
     const m3 = chess.makeSanMove("Bxf7#");
     assert.ok(m3, "Winning move (Bxf7#) must be legal");
     assert.ok(chess.isCheckmate(), "Must be checkmate after 2. Bxf7#!");
+  });
+
+  test("6. 6x6 Sudoku Engine: Generates Easy, Medium, and Hard puzzles with strictly 1 unique solution", () => {
+    for (const diff of ["easy", "medium", "hard"] as const) {
+      const puzzle = generateSudoku6x6(diff);
+      assert.ok(puzzle.id, "6x6 Puzzle must have unique ID");
+      assert.equal(puzzle.difficulty, diff);
+      assert.equal(puzzle.initialGrid.length, 6);
+      assert.equal(puzzle.initialGrid[0].length, 6);
+      assert.equal(puzzle.solution.length, 6);
+      assert.equal(puzzle.solution[0].length, 6);
+
+      // Verify clue ranges
+      if (diff === "easy") assert.ok(puzzle.clueCount >= 18 && puzzle.clueCount <= 20);
+      if (diff === "medium") assert.ok(puzzle.clueCount >= 14 && puzzle.clueCount <= 16);
+      if (diff === "hard") assert.ok(puzzle.clueCount >= 10 && puzzle.clueCount <= 13);
+
+      // Verify uniqueness
+      const solutionsCount = countSolutions6x6(puzzle.initialGrid, 2);
+      assert.equal(solutionsCount, 1, `Puzzle for ${diff} must have exactly 1 unique solution`);
+
+      // Verify solution validity
+      assert.ok(isSudoku6x6Complete(puzzle.solution), "Generated solution must be a valid complete 6x6 grid");
+    }
+  });
+
+  test("7. 6x6 Sudoku Engine: Detects 2x3 box, row, and column conflicts", () => {
+    const puzzle = generateSudoku6x6("easy");
+    const testGrid = puzzle.solution.map((row) => [...row]);
+
+    // Introduce conflict in row 0
+    testGrid[0][1] = testGrid[0][0];
+    let conflicts = findGridConflicts6x6(testGrid);
+    assert.ok(conflicts.has("0,0"));
+    assert.ok(conflicts.has("0,1"));
+
+    // Introduce conflict within 2x3 box 0 (e.g. row 0 col 0 and row 1 col 2)
+    const boxTest = puzzle.solution.map((row) => [...row]);
+    boxTest[1][2] = boxTest[0][0];
+    conflicts = findGridConflicts6x6(boxTest);
+    assert.ok(conflicts.has("0,0"));
+    assert.ok(conflicts.has("1,2"));
+  });
+
+  test("8. 6x6 Sudoku Engine: Backtracking solver & pedagogical hint generation", () => {
+    const puzzle = generateSudoku6x6("medium");
+    const solved = solveSudoku6x6(puzzle.initialGrid);
+    assert.ok(solved !== null, "Solver must solve valid 6x6 puzzle");
+    assert.ok(isSudoku6x6Complete(solved), "Solved grid must be completely valid");
+
+    const hint = getSudoku6x6Hint(puzzle.initialGrid, puzzle.solution, puzzle.initialGrid);
+    assert.ok(hint !== null, "Hint generator must provide a next move");
+    assert.ok(hint.value >= 1 && hint.value <= 6, "Hint value must be 1..6");
+    assert.ok(hint.explanation.length > 10, "Hint must provide a clear logical explanation");
   });
 });
 
