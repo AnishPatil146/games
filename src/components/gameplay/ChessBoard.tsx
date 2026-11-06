@@ -474,7 +474,7 @@ export function ChessBoard({
       <ProgressiveHintsModal
         isOpen={isHintsModalOpen}
         onClose={() => setIsHintsModalOpen(false)}
-        roundId="alliance_l2"
+        roundId="solo_l2"
         unlockedHintsCount={unlockedHintsCount}
         onUnlockNextHint={() =>
           setUnlockedHintsCount((prev) => Math.min(5, prev + 1))

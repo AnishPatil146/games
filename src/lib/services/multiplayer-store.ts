@@ -209,7 +209,7 @@ export function setRoomDifficulty(
   difficulty: Sudoku6x6Difficulty
 ): { success: boolean; room?: MultiplayerRoom; error?: string } {
   const room = getRoom(code);
-  if (!room) return { success: false, error: "Alliance room not found." };
+  if (!room) return { success: false, error: "Session room not found." };
   if (room.hostId !== hostId) {
     return { success: false, error: "Only the host can modify the challenge difficulty." };
   }
@@ -227,10 +227,10 @@ export function joinRoom(
 ): { success: boolean; playerId?: string; room?: MultiplayerRoom; reconnectToken?: string; error?: string } {
   const room = getRoom(code);
   if (!room) {
-    return { success: false, error: "Alliance room not found." };
+    return { success: false, error: "Session room not found." };
   }
   if (room.players.length >= 4) {
-    return { success: false, error: "Alliance is full (maximum 4 operatives)." };
+    return { success: false, error: "Session room is full (maximum 4 participants)." };
   }
   if (room.status !== "lobby") {
     return { success: false, error: "Campaign is already in progress." };
@@ -621,7 +621,7 @@ export async function reconnectPlayer(
 ): Promise<{ success: boolean; room?: MultiplayerRoom; error?: string }> {
   const room = getRoom(code);
   if (!room) {
-    return { success: false, error: "Alliance room not found or session expired." };
+    return { success: false, error: "Session room not found or expired." };
   }
   const player = room.players.find((p) => p.id === playerId);
   if (!player) {

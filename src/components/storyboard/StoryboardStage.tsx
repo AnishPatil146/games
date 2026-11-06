@@ -330,7 +330,7 @@ export function StoryboardStage({
           setIsExitModalOpen(false);
           if (onReturnToHub) onReturnToHub();
         }}
-        startingScreenName={modeTitle.includes("ALLIANCE") ? "War Room Lobby" : "Starting Screen"}
+        startingScreenName="Starting Screen"
       />
 
       {/* Progressive 5-Hints Modal */}

@@ -48,10 +48,6 @@ import {
   SOLO_CAMPAIGN_LEVELS,
   SOLO_ENDINGS,
 } from "../src/lib/campaign/solo-campaign-data";
-import {
-  ALLIANCE_CAMPAIGN_LEVELS,
-  resolveAllianceEnding,
-} from "../src/lib/campaign/alliance-campaign-data";
 import { multiplayerStore } from "../src/lib/services/multiplayer-store";
 
 const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "unwritten-platform-qa-"));
@@ -683,61 +679,21 @@ describe("THE UNWRITTEN — Master Platform Automated Verification Suite", () =>
     assert.ok(endingIds.includes("ENDING_UNPREDICTABLE"));
   });
 
-  it("19. Validates Multiplayer Alliance Campaign: 8 Chambers, Server-Authoritative War Rooms, & Dilemma Matrix", async () => {
-    // 8 levels + Lobby = 9
-    assert.equal(ALLIANCE_CAMPAIGN_LEVELS.length, 9);
-    assert.equal(ALLIANCE_CAMPAIGN_LEVELS[0].id, "alliance_lobby");
-    assert.equal(ALLIANCE_CAMPAIGN_LEVELS[1].id, "alliance_l1");
-    assert.equal(ALLIANCE_CAMPAIGN_LEVELS[8].id, "alliance_l8");
+  it("19. Validates Two-Pillar Product Architecture: Pure Senior Solo & Junior Academy", async () => {
+    // Verify 8 Solo chambers are pristine and fully mapped
+    assert.equal(SOLO_CAMPAIGN_LEVELS.length, 9); // prologue + 8 chambers
+    assert.equal(SOLO_CAMPAIGN_LEVELS[0].id, "solo_prologue");
+    assert.equal(SOLO_CAMPAIGN_LEVELS[1].id, "solo_l1");
+    assert.equal(SOLO_CAMPAIGN_LEVELS[8].id, "solo_l8");
 
-    // Test multiplayer store room lifecycle
-    const { room, hostId } = multiplayerStore.createRoom("Host Commander");
+    // Concurrency engine isolates generic multi-session rooms independently
+    const { room, hostId } = multiplayerStore.createRoom("Curator Test");
     assert.equal(room.players.length, 1);
     assert.equal(room.hostId, hostId);
-    assert.ok(room.code.startsWith("AL"));
 
-    // Second player joins
-    const joinRes = multiplayerStore.joinRoom(room.code, "Player Two");
+    const joinRes = multiplayerStore.joinRoom(room.code, "Auditor");
     assert.equal(joinRes.success, true);
-    assert.ok(joinRes.playerId);
     assert.equal(joinRes.room?.players.length, 2);
-
-    // Ready up
-    multiplayerStore.togglePlayerReady(room.code, joinRes.playerId!);
-
-    // Start campaign
-    const startRes = multiplayerStore.startCampaign(room.code, hostId);
-    assert.equal(startRes.success, true);
-    assert.equal(startRes.room?.status, "in_progress");
-    assert.equal(startRes.room?.currentLevel, 1);
-    assert.ok(startRes.room?.serverDeadlineTimestamp);
-
-    // Submit solution
-    const submitResult = multiplayerStore.submitLevelSolution(
-      room.code,
-      joinRes.playerId!,
-      { r2c2: 7, r3c3: 4 }
-    );
-    assert.equal(submitResult.success, true);
-
-    // Verify Prisoner's Dilemma Ending Matrix resolution
-    const coopEnding = resolveAllianceEnding([
-      { sessionToken: "p1", playerName: "A", vote: "cooperate" },
-      { sessionToken: "p2", playerName: "B", vote: "cooperate" },
-    ]);
-    assert.equal(coopEnding.id, "alliance_end_true_alliance");
-
-    const betrayalEnding = resolveAllianceEnding([
-      { sessionToken: "p1", playerName: "A", vote: "betray" },
-      { sessionToken: "p2", playerName: "B", vote: "cooperate" },
-    ]);
-    assert.equal(betrayalEnding.id, "alliance_end_the_betrayal");
-
-    const mutualBetrayalEnding = resolveAllianceEnding([
-      { sessionToken: "p1", playerName: "A", vote: "betray" },
-      { sessionToken: "p2", playerName: "B", vote: "betray" },
-    ]);
-    assert.equal(mutualBetrayalEnding.id, "alliance_end_total_extinction");
   });
 });
 

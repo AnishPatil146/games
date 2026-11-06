@@ -1,5 +1,5 @@
 /**
- * 6x6 Sudoku Engine for THE UNWRITTEN — Cooperative Multiplayer Alliance
+ * 6x6 Sudoku Engine for THE UNWRITTEN — Level 1 Deductive Grid Logic
  *
  * Rules:
  * - Grid: 6 rows x 6 columns (36 cells).

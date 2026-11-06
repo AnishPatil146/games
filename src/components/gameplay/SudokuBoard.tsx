@@ -475,7 +475,7 @@ export function SudokuBoard({
       <ProgressiveHintsModal
         isOpen={isHintsModalOpen}
         onClose={() => setIsHintsModalOpen(false)}
-        roundId="alliance_l1"
+        roundId="solo_l1"
         unlockedHintsCount={unlockedHintsCount}
         onUnlockNextHint={() =>
           setUnlockedHintsCount((prev) => Math.min(5, prev + 1))

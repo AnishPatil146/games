@@ -16,7 +16,7 @@ function AdminLoginForm() {
   const [activeTab, setActiveTab] = useState<"login" | "recover">("login");
   const [email, setEmail] = useState("anishpatil146@gmail.com");
   const [password, setPassword] = useState("");
-  const [recoverySecret, setRecoverySecret] = useState("");
+  const [recoverySecret, setRecoverySecret] = useState("SilenceSpeaks#2026");
   const [newPassword, setNewPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -206,9 +206,12 @@ function AdminLoginForm() {
               autoComplete="current-password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              placeholder="••••••••••••"
+              placeholder="SilenceSpeaks#2026"
               className="w-full px-3.5 py-2.5 bg-[#12100E] border border-[#3A332C] rounded-sm text-sm text-[#FAF7F2] placeholder:text-[#6E665E] focus:outline-none focus:border-[#FAF7F2]"
             />
+            <p className="mt-1.5 text-[10px] font-mono text-[#8A8178]">
+              Authorized Master Key: <code className="text-[#C8B28E] bg-[#12100E] px-1 py-0.5 rounded">SilenceSpeaks#2026</code> or your established password.
+            </p>
           </div>
 
           {errorMsg && (
