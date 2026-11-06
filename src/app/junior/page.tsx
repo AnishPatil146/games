@@ -34,6 +34,7 @@ import { DiagramVisualisationLab } from "@/components/junior/DiagramVisualisatio
 import { PracticeArenaHub } from "@/components/junior/PracticeArenaHub";
 import { TestCentreHub } from "@/components/junior/TestCentreHub";
 import { LearningProgressionHub } from "@/components/junior/LearningProgressionHub";
+import { ProgressBar } from "@/components/junior/ProgressBar";
 import { AcademicBoardId, AcademicClassLevel } from "@/lib/junior/curriculum-data";
 
 interface EnrichedSubject extends AcademicSubjectConfig {
@@ -697,6 +698,17 @@ function AcademyContent() {
                           <p className="text-xs text-[#A89F93] line-clamp-2 leading-relaxed">
                             {subj.description}
                           </p>
+
+                          <div className="pt-2">
+                            <ProgressBar
+                              value={completed}
+                              max={100}
+                              showPercentage={true}
+                              size="sm"
+                              variant={completed >= 100 ? "emerald" : completed > 0 ? "amber" : "gold"}
+                              emptyLabel="0 / 100 Qs"
+                            />
+                          </div>
                         </div>
 
                         <div className="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-[11px] font-mono">

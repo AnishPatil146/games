@@ -1,20 +1,48 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Compass,
   RotateCcw,
   Info,
   Layers,
+  ZoomIn,
+  ZoomOut,
+  Maximize2,
+  Play,
+  Pause,
+  ChevronLeft,
+  ChevronRight,
+  CheckCircle2,
+  XCircle,
+  HelpCircle,
+  Sliders,
+  TrendingUp,
+  Cpu,
+  BarChart2,
 } from "lucide-react";
 import {
   DIAGRAM_SIMULATION_CATALOGUE,
   SimulationDomain,
+  VisualisationType,
 } from "@/lib/junior/diagram-lab-data";
+import { FormulaRenderer } from "@/components/math/FormulaRenderer";
 
 export function DiagramVisualisationLab() {
   const [selectedSimId, setSelectedSimId] = useState<string>("sim-math-unit-circle");
   const [selectedDomain, setSelectedDomain] = useState<SimulationDomain | "all">("all");
+  const [selectedVisualType, setSelectedVisualType] = useState<VisualisationType | "all">("all");
+
+  // Canvas Viewport Controls (Zoom & Pan)
+  const [zoomLevel, setZoomLevel] = useState<number>(1);
+
+  // Animation Playback State
+  const [isPlaying, setIsPlaying] = useState<boolean>(false);
+  const [playbackSpeed, setPlaybackSpeed] = useState<number>(1);
+
+  // Knowledge Check State per simulation
+  const [selectedOptionIndex, setSelectedOptionIndex] = useState<number | null>(null);
+  const [hasSubmittedQuiz, setHasSubmittedQuiz] = useState<boolean>(false);
 
   const activeSim =
     DIAGRAM_SIMULATION_CATALOGUE.find((s) => s.id === selectedSimId) ||
@@ -23,6 +51,9 @@ export function DiagramVisualisationLab() {
   // Parameter state dictionary
   const [paramValues, setParamValues] = useState<Record<string, number>>({
     angleDeg: 45,
+    coeffA: 1,
+    coeffB: -2,
+    coeffC: -3,
     objectDistance: 35,
     focalLength: 20,
     objectHeight: 20,
@@ -32,7 +63,10 @@ export function DiagramVisualisationLab() {
     circuitResistance: 10,
     geometryType: 3,
     cellType: 1,
-    yearIndex: 2,
+    demandShift: 100,
+    supplyShift: 20,
+    arraySize: 7,
+    stepIndex: 3,
   });
 
   const handleParamChange = (id: string, val: number) => {
@@ -45,12 +79,45 @@ export function DiagramVisualisationLab() {
       defaults[p.id] = p.defaultValue;
     });
     setParamValues((prev) => ({ ...prev, ...defaults }));
+    setZoomLevel(1);
+    setIsPlaying(false);
+    setSelectedOptionIndex(null);
+    setHasSubmittedQuiz(false);
   };
 
-  const filteredSims =
-    selectedDomain === "all"
-      ? DIAGRAM_SIMULATION_CATALOGUE
-      : DIAGRAM_SIMULATION_CATALOGUE.filter((s) => s.domain === selectedDomain);
+  // Reset quiz state when switching simulations
+  const handleSelectSim = (simId: string) => {
+    setSelectedSimId(simId);
+    setSelectedOptionIndex(null);
+    setHasSubmittedQuiz(false);
+    setIsPlaying(false);
+  };
+
+  // Animation tick effect
+  useEffect(() => {
+    if (!isPlaying) return;
+    const interval = setInterval(() => {
+      if (activeSim.id === "sim-math-unit-circle") {
+        setParamValues((prev) => ({
+          ...prev,
+          angleDeg: (prev.angleDeg + 5) % 360,
+        }));
+      } else if (activeSim.id === "sim-cs-sorting") {
+        setParamValues((prev) => ({
+          ...prev,
+          stepIndex: (prev.stepIndex + 1) % 11,
+        }));
+      }
+    }, 300 / playbackSpeed);
+
+    return () => clearInterval(interval);
+  }, [isPlaying, playbackSpeed, activeSim.id]);
+
+  const filteredSims = DIAGRAM_SIMULATION_CATALOGUE.filter((s) => {
+    const matchesDomain = selectedDomain === "all" || s.domain === selectedDomain;
+    const matchesType = selectedVisualType === "all" || s.visualType === selectedVisualType;
+    return matchesDomain && matchesType;
+  });
 
   return (
     <div className="space-y-6">
@@ -60,37 +127,64 @@ export function DiagramVisualisationLab() {
           <div className="flex items-center gap-2 mb-2">
             <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-mono uppercase tracking-widest bg-emerald-950/60 text-emerald-400 border border-emerald-500/30">
               <Compass className="w-3 h-3" />
-              Interactive Lab
+              VISUAL LEARNING LAB
             </span>
             <span className="text-zinc-500 text-xs">·</span>
-            <span className="text-[11px] font-mono text-zinc-400">Class 10 · 11 · 12 Visualisations</span>
+            <span className="text-[11px] font-mono text-zinc-400">Class 10 · 11 · 12 Verified Systems</span>
           </div>
           <h2 className="text-xl sm:text-2xl font-serif font-bold text-[#FAF7F2] tracking-wide">
-            Diagram & Visualisation Laboratory
+            Visual Learning &amp; Interactive Simulation Studio
           </h2>
           <p className="text-xs sm:text-sm text-zinc-400 mt-1 leading-relaxed">
-            Real-time interactive mathematical graphs, optical ray tracing, kinematics trajectories, circuit dynamics, and molecular architectures. Adjust physical variables to verify theoretical laws.
+            Real-time interactive mathematical graphs, optical ray tracing, kinematics trajectories, circuit dynamics, molecular architectures, and algorithmic flows. Manipulate actual physical parameters to see validated theoretical behavior.
           </p>
         </div>
 
-        {/* Domain Filter Pills */}
-        <div className="flex flex-wrap gap-2 mt-5 relative z-10">
-          {(["all", "mathematics", "physics", "chemistry", "biology", "humanities"] as const).map(
-            (domain) => (
+        {/* Filter Controls Bar */}
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mt-5 pt-4 border-t border-white/10 relative z-10">
+          {/* Domain Filter Pills */}
+          <div className="flex flex-wrap gap-1.5">
+            {(
+              [
+                { id: "all", label: "All Subjects" },
+                { id: "mathematics", label: "Math" },
+                { id: "physics", label: "Physics" },
+                { id: "chemistry", label: "Chemistry" },
+                { id: "biology", label: "Biology" },
+                { id: "commerce", label: "Commerce" },
+                { id: "computerscience", label: "CompSci" },
+              ] as const
+            ).map((d) => (
               <button
-                key={domain}
+                key={d.id}
                 type="button"
-                onClick={() => setSelectedDomain(domain)}
-                className={`px-3 py-1 rounded text-xs font-mono uppercase tracking-wider transition-colors ${
-                  selectedDomain === domain
+                onClick={() => setSelectedDomain(d.id)}
+                className={`px-2.5 py-1 rounded text-xs font-mono uppercase tracking-wider transition-colors ${
+                  selectedDomain === d.id
                     ? "bg-[#FAF7F2] text-[#12100E] font-bold shadow-sm"
                     : "bg-[#221D1A] text-zinc-400 hover:text-zinc-200 border border-[#382F2A]"
                 }`}
               >
-                {domain}
+                {d.label}
               </button>
-            )
-          )}
+            ))}
+          </div>
+
+          {/* Visualisation Type Filter */}
+          <div className="flex items-center gap-1.5 text-xs font-mono">
+            <Layers className="w-3.5 h-3.5 text-zinc-400" />
+            <select
+              value={selectedVisualType}
+              onChange={(e) => setSelectedVisualType(e.target.value as VisualisationType | "all")}
+              className="bg-[#221D1A] text-zinc-300 border border-[#382F2A] rounded px-2 py-1 text-xs font-mono focus:outline-none"
+            >
+              <option value="all">All Experiences ({DIAGRAM_SIMULATION_CATALOGUE.length})</option>
+              <option value="INTERACTIVE_SIMULATION">Interactive Simulations</option>
+              <option value="INTERACTIVE_DIAGRAM">Interactive Diagrams</option>
+              <option value="GRAPH_EXPLORER">Graph Explorers</option>
+              <option value="PROCESS_FLOW">Process Visualizations</option>
+            </select>
+          </div>
         </div>
       </div>
 
@@ -98,127 +192,234 @@ export function DiagramVisualisationLab() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         {/* Left: Simulation Selector List */}
         <div className="lg:col-span-4 space-y-3">
-          <div className="text-xs font-mono uppercase tracking-widest text-zinc-400 px-1 flex items-center justify-between">
-            <span>Available Modules ({filteredSims.length})</span>
-            <Layers className="w-3.5 h-3.5 text-zinc-500" />
+          <div className="flex items-center justify-between text-xs font-mono text-zinc-400 px-1">
+            <span>Visual Modules ({filteredSims.length})</span>
+            <span>Class 10–12</span>
           </div>
 
-          <div className="space-y-2 max-h-[640px] overflow-y-auto pr-1">
+          <div className="space-y-2 max-h-[640px] overflow-y-auto pr-1 scrollbar-thin scrollbar-thumb-zinc-700">
             {filteredSims.map((sim) => {
-              const isActive = sim.id === activeSim.id;
+              const isSelected = sim.id === activeSim.id;
               return (
-                <button
+                <div
                   key={sim.id}
-                  type="button"
-                  onClick={() => setSelectedSimId(sim.id)}
-                  className={`w-full text-left p-3.5 rounded border transition-all ${
-                    isActive
-                      ? "bg-[#251E1A] border-amber-500/60 shadow-md ring-1 ring-amber-500/30"
-                      : "bg-[#181412] border-[#2A221D] hover:border-zinc-600 text-zinc-300"
+                  onClick={() => handleSelectSim(sim.id)}
+                  className={`p-3.5 rounded-sm border cursor-pointer transition-all ${
+                    isSelected
+                      ? "bg-[#2A221C] border-[#8FA184] shadow-md ring-1 ring-[#8FA184]/40"
+                      : "bg-[#161210] border-[#2B231D] hover:bg-[#1E1815] hover:border-zinc-700"
                   }`}
                 >
-                  <div className="flex items-center justify-between gap-2 mb-1">
-                    <span className="text-[10px] font-mono uppercase tracking-wider px-1.5 py-0.5 rounded bg-[#100D0B] text-amber-400 border border-amber-500/20">
-                      Class {sim.classLevel} · {sim.domain}
+                  <div className="flex items-center justify-between text-[10px] font-mono mb-1">
+                    <span className="uppercase tracking-widest text-[#C8B28E] font-bold">
+                      Class {sim.classLevel} · {sim.subjectName}
                     </span>
-                    <span className="text-[10px] font-mono text-zinc-500">{sim.subjectName}</span>
+                    <span className="px-1.5 py-0.5 rounded bg-black/40 text-zinc-400 border border-white/10 uppercase">
+                      {sim.visualType.replace(/_/g, " ")}
+                    </span>
                   </div>
-                  <h3 className="font-serif font-bold text-sm text-[#FAF7F2] line-clamp-1">
+                  <h4 className="text-sm font-serif font-bold text-[#FAF7F2] line-clamp-1">
                     {sim.title}
-                  </h3>
-                  <p className="text-[11px] text-zinc-400 line-clamp-2 mt-1">
+                  </h4>
+                  <p className="text-[11px] text-zinc-400 line-clamp-2 mt-1 leading-snug">
                     {sim.description}
                   </p>
-                </button>
+                </div>
               );
             })}
           </div>
         </div>
 
-        {/* Right: Active Simulation Stage & Parameter Controls */}
+        {/* Right: Active Simulation Stage & Parameter Panel */}
         <div className="lg:col-span-8 space-y-4">
-          <div className="bg-[#14100E] border border-[#2F2722] rounded-md p-5 shadow-xl">
-            {/* Stage Masthead */}
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-[#28211C] pb-3 mb-4">
+          {/* Active Simulation Stage Header */}
+          <div className="bg-[#181412] border border-[#2F2722] rounded-md p-4 sm:p-5 shadow-lg space-y-4">
+            <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#2B231D] pb-3">
               <div>
-                <span className="text-[10px] font-mono uppercase tracking-widest text-amber-400">
+                <span className="text-[10px] font-mono uppercase tracking-widest text-emerald-400 font-bold block">
                   {activeSim.chapterTitle}
                 </span>
-                <h3 className="text-lg font-serif font-bold text-[#FAF7F2] mt-0.5">
+                <h3 className="text-lg font-serif font-bold text-[#FAF7F2]">
                   {activeSim.title}
                 </h3>
               </div>
-              <button
-                type="button"
-                onClick={handleResetParams}
-                className="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-mono text-zinc-400 hover:text-zinc-200 bg-[#201A16] border border-[#332A24] rounded transition-colors self-start sm:self-auto"
-                title="Reset simulation variables to standard defaults"
-              >
-                <RotateCcw className="w-3.5 h-3.5" />
-                <span>Reset Defaults</span>
-              </button>
+
+              {/* Viewport Zoom & Reset Controls */}
+              <div className="flex items-center gap-1 bg-[#120F0D] p-1 rounded border border-[#2B231D]">
+                <button
+                  type="button"
+                  onClick={() => setZoomLevel((z) => Math.max(0.7, z - 0.1))}
+                  className="p-1 text-zinc-400 hover:text-zinc-200 transition-colors"
+                  title="Zoom Out"
+                >
+                  <ZoomOut className="w-3.5 h-3.5" />
+                </button>
+                <span className="text-[10px] font-mono text-zinc-400 px-1.5">
+                  {Math.round(zoomLevel * 100)}%
+                </span>
+                <button
+                  type="button"
+                  onClick={() => setZoomLevel((z) => Math.min(1.5, z + 0.1))}
+                  className="p-1 text-zinc-400 hover:text-zinc-200 transition-colors"
+                  title="Zoom In"
+                >
+                  <ZoomIn className="w-3.5 h-3.5" />
+                </button>
+                <button
+                  type="button"
+                  onClick={handleResetParams}
+                  className="p-1 text-zinc-400 hover:text-amber-300 transition-colors border-l border-[#2B231D] ml-1 pl-1.5"
+                  title="Reset Parameters & Scale"
+                >
+                  <RotateCcw className="w-3.5 h-3.5" />
+                </button>
+              </div>
             </div>
 
-            {/* Instruction Callout */}
-            <div className="bg-[#1B1613] border border-[#3A2F28] rounded p-2.5 mb-4 text-xs text-amber-200/90 flex items-center gap-2">
-              <Info className="w-4 h-4 text-amber-400 flex-shrink-0" />
+            {/* Instruction Tip */}
+            <div className="flex items-start gap-2 bg-[#120F0D] border border-amber-500/20 rounded p-2.5 text-xs text-[#DDD4C5]">
+              <Info className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
               <span>{activeSim.instructionPrompt}</span>
             </div>
 
-            {/* Render Canvas by Simulation ID */}
-            <div className="bg-[#0A0807] border border-[#231B16] rounded-md p-4 min-h-[320px] flex items-center justify-center relative overflow-hidden">
-              {activeSim.id === "sim-math-unit-circle" && (
-                <UnitCircleVisualiser angleDeg={paramValues.angleDeg ?? 45} />
-              )}
-              {activeSim.id === "sim-physics-ray-optics" && (
-                <RayOpticsVisualiser
-                  objectDistance={paramValues.objectDistance ?? 35}
-                  focalLength={paramValues.focalLength ?? 20}
-                  objectHeight={paramValues.objectHeight ?? 20}
-                />
-              )}
-              {activeSim.id === "sim-physics-projectile" && (
-                <ProjectileVisualiser
-                  velocity={paramValues.launchVelocity ?? 30}
-                  angleDeg={paramValues.launchAngle ?? 45}
-                />
-              )}
-              {activeSim.id === "sim-physics-dc-circuit" && (
-                <DcCircuitVisualiser
-                  voltage={paramValues.circuitVoltage ?? 12}
-                  resistance={paramValues.circuitResistance ?? 10}
-                />
-              )}
-              {activeSim.id === "sim-chem-vsepr" && (
-                <VseprVisualiser typeIndex={paramValues.geometryType ?? 3} />
-              )}
-              {activeSim.id === "sim-bio-cell-architecture" && (
-                <CellVisualiser cellType={paramValues.cellType ?? 1} />
-              )}
-              {activeSim.id === "sim-humanities-timeline" && (
-                <TimelineVisualiser stageIndex={paramValues.yearIndex ?? 2} />
-              )}
+            {/* Visual Canvas Stage with Dynamic Zoom Scaling */}
+            <div className="w-full bg-[#0D0A08] border border-[#2C241D] rounded-md p-4 min-h-[340px] flex items-center justify-center relative overflow-hidden">
+              <div
+                className="transition-transform duration-200 w-full flex items-center justify-center"
+                style={{ transform: `scale(${zoomLevel})` }}
+              >
+                {activeSim.id === "sim-math-unit-circle" && (
+                  <UnitCircleVisualiser angleDeg={paramValues.angleDeg ?? 45} />
+                )}
+                {activeSim.id === "sim-math-quadratic-parabola" && (
+                  <QuadraticParabolaVisualiser
+                    a={paramValues.coeffA ?? 1}
+                    b={paramValues.coeffB ?? -2}
+                    c={paramValues.coeffC ?? -3}
+                  />
+                )}
+                {activeSim.id === "sim-physics-ray-optics" && (
+                  <RayOpticsVisualiser
+                    objectDistance={paramValues.objectDistance ?? 35}
+                    focalLength={paramValues.focalLength ?? 20}
+                    objectHeight={paramValues.objectHeight ?? 20}
+                  />
+                )}
+                {activeSim.id === "sim-physics-projectile" && (
+                  <ProjectileVisualiser
+                    v0={paramValues.launchVelocity ?? 30}
+                    angleDeg={paramValues.launchAngle ?? 45}
+                  />
+                )}
+                {activeSim.id === "sim-physics-dc-circuit" && (
+                  <CircuitVisualiser
+                    voltage={paramValues.circuitVoltage ?? 12}
+                    resistance={paramValues.circuitResistance ?? 10}
+                  />
+                )}
+                {activeSim.id === "sim-chem-vsepr" && (
+                  <VSEPRVisualiser geometryType={paramValues.geometryType ?? 3} />
+                )}
+                {activeSim.id === "sim-bio-cell-architecture" && (
+                  <CellVisualiser cellType={paramValues.cellType ?? 1} />
+                )}
+                {activeSim.id === "sim-commerce-equilibrium" && (
+                  <MarketEquilibriumVisualiser
+                    demandShift={paramValues.demandShift ?? 100}
+                    supplyShift={paramValues.supplyShift ?? 20}
+                  />
+                )}
+                {activeSim.id === "sim-cs-sorting" && (
+                  <SortingAlgorithmVisualiser
+                    arraySize={paramValues.arraySize ?? 7}
+                    stepIndex={paramValues.stepIndex ?? 3}
+                  />
+                )}
+              </div>
             </div>
 
-            {/* Interactive Parameter Sliders */}
-            <div className="mt-5 pt-4 border-t border-[#28211C] space-y-4">
-              <div className="text-xs font-mono uppercase tracking-wider text-zinc-400">
-                Interactive Controls & Physical Variables
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {activeSim.parameters.map((param) => {
-                  const currVal = paramValues[param.id] ?? param.defaultValue;
-                  return (
-                    <div
-                      key={param.id}
-                      className="bg-[#1C1714] border border-[#2E2520] rounded p-3 space-y-1.5"
+            {/* Animation Controls Row (for Animated/Dynamic Sims) */}
+            {(activeSim.id === "sim-math-unit-circle" || activeSim.id === "sim-cs-sorting") && (
+              <div className="flex items-center justify-between bg-[#120F0D] border border-[#2B231D] rounded p-2.5 text-xs font-mono">
+                <div className="flex items-center gap-2">
+                  <button
+                    type="button"
+                    onClick={() => setIsPlaying(!isPlaying)}
+                    className="flex items-center gap-1.5 px-3 py-1 rounded bg-[#2B221B] hover:bg-[#3D3127] text-[#FAF7F2] font-bold"
+                  >
+                    {isPlaying ? <Pause className="w-3.5 h-3.5 text-amber-400" /> : <Play className="w-3.5 h-3.5 text-emerald-400" />}
+                    <span>{isPlaying ? "Pause Motion" : "Play Motion"}</span>
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={() => {
+                      if (activeSim.id === "sim-math-unit-circle") {
+                        setParamValues((p) => ({ ...p, angleDeg: (p.angleDeg - 5 + 360) % 360 }));
+                      } else {
+                        setParamValues((p) => ({ ...p, stepIndex: Math.max(0, p.stepIndex - 1) }));
+                      }
+                    }}
+                    className="p-1 rounded bg-[#221B16] hover:bg-[#2F2620] text-zinc-300"
+                    title="Step Backward"
+                  >
+                    <ChevronLeft className="w-4 h-4" />
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      if (activeSim.id === "sim-math-unit-circle") {
+                        setParamValues((p) => ({ ...p, angleDeg: (p.angleDeg + 5) % 360 }));
+                      } else {
+                        setParamValues((p) => ({ ...p, stepIndex: (p.stepIndex + 1) % 11 }));
+                      }
+                    }}
+                    className="p-1 rounded bg-[#221B16] hover:bg-[#2F2620] text-zinc-300"
+                    title="Step Forward"
+                  >
+                    <ChevronRight className="w-4 h-4" />
+                  </button>
+                </div>
+
+                <div className="flex items-center gap-1.5 text-zinc-400">
+                  <span>Speed:</span>
+                  {[0.5, 1, 2].map((s) => (
+                    <button
+                      key={s}
+                      type="button"
+                      onClick={() => setPlaybackSpeed(s)}
+                      className={`px-1.5 py-0.5 rounded ${
+                        playbackSpeed === s ? "bg-amber-500 text-black font-bold" : "bg-[#221B16] text-zinc-400"
+                      }`}
                     >
-                      <div className="flex items-center justify-between text-xs">
-                        <span className="font-medium text-zinc-300">
-                          {param.name} ({param.symbol})
+                      {s}x
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Interactive Physical Parameter Controls */}
+            <div className="space-y-3 pt-2">
+              <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-zinc-400">
+                <Sliders className="w-3.5 h-3.5 text-amber-400" />
+                <span>Physical Parameter Tuning</span>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 bg-[#14100E] border border-[#2B231D] rounded p-4">
+                {activeSim.parameters.map((param) => {
+                  const currentVal = paramValues[param.id] ?? param.defaultValue;
+                  return (
+                    <div key={param.id} className="space-y-1.5 text-xs font-mono">
+                      <div className="flex justify-between">
+                        <span className="text-zinc-300">
+                          {param.name}{" "}
+                          <span className="text-amber-400 font-bold font-serif italic">
+                            ({param.symbol})
+                          </span>
                         </span>
-                        <span className="font-mono font-bold text-amber-400 bg-[#120E0C] px-2 py-0.5 rounded border border-[#382E27]">
-                          {currVal} {param.unit}
+                        <span className="text-[#FAF7F2] font-bold bg-[#221B16] px-2 py-0.5 rounded border border-[#3A2E26]">
+                          {currentVal} {param.unit}
                         </span>
                       </div>
                       <input
@@ -226,38 +427,110 @@ export function DiagramVisualisationLab() {
                         min={param.min}
                         max={param.max}
                         step={param.step}
-                        value={currVal}
-                        onChange={(e) =>
-                          handleParamChange(param.id, parseFloat(e.target.value))
-                        }
-                        className="w-full accent-amber-500 cursor-pointer h-1.5 bg-[#2B231E] rounded-lg"
+                        value={currentVal}
+                        onChange={(e) => handleParamChange(param.id, parseFloat(e.target.value))}
+                        className="w-full accent-amber-500 cursor-pointer h-1.5 bg-[#2A211B] rounded-lg"
                       />
-                      <div className="flex justify-between text-[10px] font-mono text-zinc-500">
-                        <span>
-                          {param.min} {param.unit}
-                        </span>
-                        <span>
-                          {param.max} {param.unit}
-                        </span>
-                      </div>
+                      <p className="text-[10px] text-zinc-400 leading-tight">
+                        {param.description}
+                      </p>
                     </div>
                   );
                 })}
               </div>
             </div>
 
-            {/* Scientific Key Principles */}
-            <div className="mt-5 pt-4 border-t border-[#28211C] space-y-2">
-              <span className="text-[11px] font-mono uppercase tracking-wider text-emerald-400 block font-bold">
-                Theoretical Axioms & Governing Principles
+            {/* Key Academic Principles */}
+            <div className="space-y-2 pt-2 border-t border-[#2B231D]">
+              <span className="text-xs font-mono uppercase tracking-wider text-emerald-400 block font-bold">
+                Core Theoretical Invariants
               </span>
-              <ul className="space-y-1 text-xs text-zinc-300 list-disc list-inside">
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-zinc-300">
                 {activeSim.keyPrinciples.map((principle, idx) => (
-                  <li key={idx} className="leading-relaxed">
-                    {principle}
+                  <li key={idx} className="flex items-start gap-1.5 font-sans leading-relaxed">
+                    <span className="text-emerald-400 font-bold shrink-0">•</span>
+                    <span>{principle}</span>
                   </li>
                 ))}
               </ul>
+            </div>
+
+            {/* Knowledge Check Mini-Quiz */}
+            <div className="pt-3 border-t border-[#2B231D] space-y-3 bg-[#130F0D] p-4 rounded border border-[#2E241E]">
+              <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-amber-300 font-bold">
+                <HelpCircle className="w-4 h-4 text-amber-400" />
+                <span>Knowledge Check: Test Your Visual Understanding</span>
+              </div>
+              <p className="text-sm font-sans font-medium text-[#FAF7F2]">
+                {activeSim.knowledgeCheck.question}
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                {activeSim.knowledgeCheck.options.map((opt, oIdx) => {
+                  const isSelected = selectedOptionIndex === oIdx;
+                  const isCorrect = oIdx === activeSim.knowledgeCheck.correctIndex;
+                  let optStyle = "bg-[#1E1815] border-[#382E27] text-zinc-300 hover:border-zinc-500";
+
+                  if (hasSubmittedQuiz) {
+                    if (isCorrect) {
+                      optStyle = "bg-emerald-950/80 border-emerald-500 text-emerald-200 font-bold ring-1 ring-emerald-500";
+                    } else if (isSelected && !isCorrect) {
+                      optStyle = "bg-rose-950/80 border-rose-500 text-rose-300";
+                    }
+                  } else if (isSelected) {
+                    optStyle = "bg-amber-950/80 border-amber-500 text-amber-200 font-bold";
+                  }
+
+                  return (
+                    <button
+                      key={oIdx}
+                      type="button"
+                      disabled={hasSubmittedQuiz}
+                      onClick={() => setSelectedOptionIndex(oIdx)}
+                      className={`p-2.5 rounded border text-left text-xs font-sans transition-all flex items-start gap-2 ${optStyle}`}
+                    >
+                      <span className="font-mono text-[10px] text-zinc-400 shrink-0 mt-0.5">
+                        {String.fromCharCode(65 + oIdx)}.
+                      </span>
+                      <span>{opt}</span>
+                    </button>
+                  );
+                })}
+              </div>
+
+              {!hasSubmittedQuiz ? (
+                <button
+                  type="button"
+                  disabled={selectedOptionIndex === null}
+                  onClick={() => setHasSubmittedQuiz(true)}
+                  className="px-4 py-2 rounded bg-amber-500 hover:bg-amber-400 text-black font-mono font-bold text-xs transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+                >
+                  Verify Answer
+                </button>
+              ) : (
+                <div
+                  className={`p-3 rounded border text-xs leading-relaxed space-y-1 ${
+                    selectedOptionIndex === activeSim.knowledgeCheck.correctIndex
+                      ? "bg-emerald-950/40 border-emerald-600/40 text-emerald-300"
+                      : "bg-rose-950/40 border-rose-600/40 text-rose-300"
+                  }`}
+                >
+                  <div className="font-bold font-mono uppercase tracking-wider flex items-center gap-1.5">
+                    {selectedOptionIndex === activeSim.knowledgeCheck.correctIndex ? (
+                      <>
+                        <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+                        <span>Concept Verified · +25 XP Earned</span>
+                      </>
+                    ) : (
+                      <>
+                        <XCircle className="w-4 h-4 text-rose-400" />
+                        <span>Incorrect Deduction</span>
+                      </>
+                    )}
+                  </div>
+                  <p className="text-zinc-300 font-sans">{activeSim.knowledgeCheck.explanation}</p>
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -276,37 +549,23 @@ function UnitCircleVisualiser({ angleDeg }: { angleDeg: number }) {
   const sinVal = Math.sin(rad);
   const tanVal = Math.abs(cosVal) > 0.01 ? (sinVal / cosVal).toFixed(3) : "Undefined (±∞)";
 
-  // Canvas coordinate mapping: center at (150, 150), radius R = 100
   const R = 100;
   const cx = 150;
   const cy = 150;
   const px = cx + R * cosVal;
-  const py = cy - R * sinVal; // canvas y is inverted
+  const py = cy - R * sinVal;
 
   return (
     <div className="flex flex-col md:flex-row items-center gap-6 w-full justify-around py-2">
-      {/* SVG Unit Circle */}
       <div className="relative">
         <svg width="300" height="300" className="bg-[#0D0A09] rounded border border-[#2E241E]">
-          {/* Coordinate Axes */}
           <line x1="20" y1="150" x2="280" y2="150" stroke="#44372F" strokeWidth="1.5" />
           <line x1="150" y1="20" x2="150" y2="280" stroke="#44372F" strokeWidth="1.5" />
-
-          {/* Unit Circle */}
           <circle cx="150" cy="150" r={R} fill="none" stroke="#685446" strokeWidth="2" strokeDasharray="4 4" />
-
-          {/* Triangle Legs */}
-          {/* Horizontal leg (cos) */}
           <line x1="150" y1="150" x2={px} y2="150" stroke="#4C9A66" strokeWidth="3" />
-          {/* Vertical leg (sin) */}
           <line x1={px} y1="150" x2={px} y2={py} stroke="#D97706" strokeWidth="3" />
-          {/* Hypotenuse radius (1) */}
           <line x1="150" y1="150" x2={px} y2={py} stroke="#FAF7F2" strokeWidth="2.5" />
-
-          {/* Angle arc */}
           <circle cx={px} cy={py} r="5" fill="#F59E0B" />
-
-          {/* Origin and Point Labels */}
           <text x="155" y="145" fill="#A89F93" fontSize="10" fontFamily="monospace">O</text>
           <text x={px + 8} y={py - 8} fill="#FAF7F2" fontSize="11" fontFamily="monospace">
             P({cosVal.toFixed(2)}, {sinVal.toFixed(2)})
@@ -314,7 +573,6 @@ function UnitCircleVisualiser({ angleDeg }: { angleDeg: number }) {
         </svg>
       </div>
 
-      {/* Real-time Math Data Readout */}
       <div className="bg-[#17120F] border border-[#302620] rounded p-4 space-y-2 text-xs font-mono min-w-[220px]">
         <div className="text-zinc-400 border-b border-[#2B221B] pb-1.5 uppercase tracking-wider text-[10px]">
           Trigonometric Projections
@@ -342,6 +600,76 @@ function UnitCircleVisualiser({ angleDeg }: { angleDeg: number }) {
   );
 }
 
+function QuadraticParabolaVisualiser({ a, b, c }: { a: number; b: number; c: number }) {
+  const discriminant = b * b - 4 * a * c;
+  const vertexX = a !== 0 ? -b / (2 * a) : 0;
+  const vertexY = a !== 0 ? c - (b * b) / (4 * a) : c;
+
+  // Build points for SVG path: x from -5 to +5
+  const width = 360;
+  const height = 260;
+  const originX = width / 2;
+  const originY = height / 2 + 30;
+  const scaleX = 25;
+  const scaleY = 12;
+
+  const points: string[] = [];
+  for (let xVal = -6; xVal <= 6; xVal += 0.25) {
+    const yVal = a * xVal * xVal + b * xVal + c;
+    const canvasX = originX + xVal * scaleX;
+    const canvasY = originY - yVal * scaleY;
+    points.push(`${canvasX},${canvasY}`);
+  }
+  const pathD = `M ${points.join(" L ")}`;
+
+  return (
+    <div className="flex flex-col md:flex-row items-center gap-6 w-full justify-around py-2">
+      <svg width={width} height={height} className="bg-[#0D0A09] rounded border border-[#2E241E] overflow-hidden">
+        {/* Axes */}
+        <line x1="20" y1={originY} x2={width - 20} y2={originY} stroke="#44372F" strokeWidth="1.5" />
+        <line x1={originX} y1="20" x2={originX} y2={height - 20} stroke="#44372F" strokeWidth="1.5" />
+
+        {/* Parabola Curve */}
+        <path d={pathD} fill="none" stroke="#F59E0B" strokeWidth="2.5" />
+
+        {/* Vertex Point */}
+        <circle cx={originX + vertexX * scaleX} cy={originY - vertexY * scaleY} r="4.5" fill="#10B981" />
+        <text
+          x={originX + vertexX * scaleX + 8}
+          y={originY - vertexY * scaleY - 6}
+          fill="#10B981"
+          fontSize="10"
+          fontFamily="monospace"
+        >
+          Vertex ({vertexX.toFixed(1)}, {vertexY.toFixed(1)})
+        </text>
+      </svg>
+
+      <div className="bg-[#17120F] border border-[#302620] rounded p-4 space-y-2 text-xs font-mono min-w-[220px]">
+        <div className="text-zinc-400 border-b border-[#2B221B] pb-1 uppercase tracking-wider text-[10px]">
+          Parabola Analysis: {a}x² + ({b})x + ({c})
+        </div>
+        <div className="flex justify-between">
+          <span className="text-zinc-400">Discriminant (Δ):</span>
+          <span className={`font-bold ${discriminant >= 0 ? "text-emerald-400" : "text-rose-400"}`}>
+            {discriminant.toFixed(2)}
+          </span>
+        </div>
+        <div className="flex justify-between">
+          <span className="text-zinc-400">Real Root Count:</span>
+          <span className="font-bold text-[#FAF7F2]">
+            {discriminant > 0 ? "2 Distinct Roots" : discriminant === 0 ? "1 Tangent Root" : "0 Real Roots"}
+          </span>
+        </div>
+        <div className="flex justify-between">
+          <span className="text-zinc-400">Curvature:</span>
+          <span className="font-bold text-amber-400">{a > 0 ? "Opens Upward (U)" : "Opens Downward (∩)"}</span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function RayOpticsVisualiser({
   objectDistance,
   focalLength,
@@ -351,275 +679,118 @@ function RayOpticsVisualiser({
   focalLength: number;
   objectHeight: number;
 }) {
-  // Lens formula: 1/f = 1/v - 1/u => 1/v = 1/f + 1/u => 1/v = 1/f - 1/|u|
   const u = -objectDistance;
-  const invV = 1 / focalLength + 1 / u;
-  const isParallel = Math.abs(invV) < 0.0001;
-  const v = isParallel ? Infinity : 1 / invV;
-  const magnification = isParallel ? 0 : v / u;
-  const imageH = isParallel ? 0 : objectHeight * magnification;
+  const f = focalLength;
+  const v = Math.abs(u + f) > 0.01 ? (f * u) / (u + f) : 9999;
+  const m = v !== 9999 ? -v / u : 1;
+  const imgHeight = objectHeight * m;
 
-  // Scale: 1 cm = 4 pixels, optical center at (250, 130)
-  const cx = 250;
-  const cy = 130;
-  const scale = 3.5;
-
-  const objX = cx + u * scale;
-  const imgX = isParallel ? cx + 250 : cx + v * scale;
-  const f1X = cx - focalLength * scale;
-  const f2X = cx + focalLength * scale;
+  const lensX = 260;
+  const axisY = 130;
+  const objX = lensX + u * 3;
+  const imgX = lensX + v * 3;
 
   return (
-    <div className="w-full flex flex-col items-center gap-4 py-2">
+    <div className="w-full flex flex-col items-center gap-3">
       <svg width="520" height="260" className="bg-[#0C0908] rounded border border-[#2B221B] overflow-visible">
-        {/* Principal Axis */}
-        <line x1="10" y1={cy} x2="510" y2={cy} stroke="#483B32" strokeWidth="1.5" />
-
-        {/* Convex Lens Line */}
-        <line x1={cx} y1="30" x2={cx} y2="230" stroke="#5E96B8" strokeWidth="3" />
-        <ellipse cx={cx} cy={cy} rx="8" ry="100" fill="none" stroke="#5E96B8" strokeWidth="1.5" strokeDasharray="3 3" />
-
-        {/* Focal Points */}
-        <circle cx={f1X} cy={cy} r="4" fill="#F59E0B" />
-        <text x={f1X - 8} y={cy + 18} fill="#F59E0B" fontSize="10" fontFamily="monospace">F1</text>
-
-        <circle cx={f2X} cy={cy} r="4" fill="#F59E0B" />
-        <text x={f2X - 8} y={cy + 18} fill="#F59E0B" fontSize="10" fontFamily="monospace">F2</text>
-
-        {/* Optical Center O */}
-        <text x={cx + 5} y={cy + 18} fill="#A89F93" fontSize="10" fontFamily="monospace">O</text>
+        <line x1="20" y1={axisY} x2="500" y2={axisY} stroke="#3E342B" strokeWidth="1.5" />
+        <ellipse cx={lensX} cy={axisY} rx="7" ry="105" fill="#3B82F6" fillOpacity="0.2" stroke="#60A5FA" strokeWidth="2" />
+        <line x1={lensX - f * 3} y1={axisY - 5} x2={lensX - f * 3} y2={axisY + 5} stroke="#A89F93" strokeWidth="2" />
+        <text x={lensX - f * 3 - 6} y={axisY + 18} fill="#A89F93" fontSize="10" fontFamily="monospace">F1</text>
+        <line x1={lensX + f * 3} y1={axisY - 5} x2={lensX + f * 3} y2={axisY + 5} stroke="#A89F93" strokeWidth="2" />
+        <text x={lensX + f * 3 - 6} y={axisY + 18} fill="#A89F93" fontSize="10" fontFamily="monospace">F2</text>
 
         {/* Object Arrow */}
-        <line x1={objX} y1={cy} x2={objX} y2={cy - objectHeight * scale * 0.4} stroke="#4C9A66" strokeWidth="3" />
-        <polygon
-          points={`${objX},${cy - objectHeight * scale * 0.4 - 6} ${objX - 4},${cy - objectHeight * scale * 0.4} ${objX + 4},${cy - objectHeight * scale * 0.4}`}
-          fill="#4C9A66"
-        />
-        <text x={objX - 16} y={cy - objectHeight * scale * 0.4 - 10} fill="#4C9A66" fontSize="10" fontFamily="monospace">
-          Object
-        </text>
+        <line x1={objX} y1={axisY} x2={objX} y2={axisY - objectHeight * 2} stroke="#10B981" strokeWidth="3" />
+        <polygon points={`${objX},${axisY - objectHeight * 2 - 6} ${objX - 4},${axisY - objectHeight * 2} ${objX + 4},${axisY - objectHeight * 2}`} fill="#10B981" />
 
-        {/* Ray 1: Parallel to axis, then through F2 */}
-        <line x1={objX} y1={cy - objectHeight * scale * 0.4} x2={cx} y2={cy - objectHeight * scale * 0.4} stroke="#EAB308" strokeWidth="1.5" />
-        <line x1={cx} y1={cy - objectHeight * scale * 0.4} x2={500} y2={cy + (500 - cx) * ((objectHeight * scale * 0.4) / (focalLength * scale))} stroke="#EAB308" strokeWidth="1.5" strokeDasharray="4 2" />
-
-        {/* Ray 2: Directly through Optical Center O */}
-        <line x1={objX} y1={cy - objectHeight * scale * 0.4} x2={500} y2={cy - (500 - cx) * ((-objectHeight * scale * 0.4) / (u * scale))} stroke="#38BDF8" strokeWidth="1.5" />
-
-        {/* Image Arrow (if not at infinity) */}
-        {!isParallel && imgX > 20 && imgX < 500 && (
+        {/* Image Arrow */}
+        {v > 0 && v < 90 && (
           <>
-            <line x1={imgX} y1={cy} x2={imgX} y2={cy - imageH * scale * 0.4} stroke="#EF4444" strokeWidth="3" />
-            <polygon
-              points={`${imgX},${cy - imageH * scale * 0.4 + (imageH < 0 ? 6 : -6)} ${imgX - 4},${cy - imageH * scale * 0.4} ${imgX + 4},${cy - imageH * scale * 0.4}`}
-              fill="#EF4444"
-            />
-            <text x={imgX - 14} y={cy - imageH * scale * 0.4 + (imageH < 0 ? 18 : -10)} fill="#EF4444" fontSize="10" fontFamily="monospace">
-              Image
-            </text>
+            <line x1={imgX} y1={axisY} x2={imgX} y2={axisY + imgHeight * 2} stroke="#F59E0B" strokeWidth="3" />
+            <polygon points={`${imgX},${axisY + imgHeight * 2 + 6} ${imgX - 4},${axisY + imgHeight * 2} ${imgX + 4},${axisY + imgHeight * 2}`} fill="#F59E0B" />
           </>
         )}
       </svg>
-
-      <div className="flex flex-wrap gap-4 text-xs font-mono bg-[#161210] border border-[#2D231C] px-4 py-2.5 rounded">
-        <div>
-          Image Distance (v):{" "}
-          <span className="text-amber-400 font-bold">
-            {isParallel ? "±∞ (At Infinity)" : `${v.toFixed(1)} cm`}
-          </span>
-        </div>
-        <div>
-          Magnification (m):{" "}
-          <span className="text-amber-400 font-bold">
-            {isParallel ? "N/A" : magnification.toFixed(2)}
-          </span>
-        </div>
-        <div>
-          Nature:{" "}
-          <span className="text-emerald-400 font-bold">
-            {isParallel
-              ? "Diffused parallel beam"
-              : v > 0
-              ? "Real & Inverted"
-              : "Virtual & Erect"}
-          </span>
-        </div>
+      <div className="text-xs font-mono text-zinc-400 flex gap-6">
+        <span>Image Distance (v): <strong className="text-amber-400">{v.toFixed(1)} cm</strong></span>
+        <span>Magnification (m): <strong className="text-emerald-400">{m.toFixed(2)}x</strong></span>
+        <span>Orientation: <strong className="text-[#FAF7F2]">{m < 0 ? "Real & Inverted" : "Virtual & Upright"}</strong></span>
       </div>
     </div>
   );
 }
 
-function ProjectileVisualiser({ velocity, angleDeg }: { velocity: number; angleDeg: number }) {
+function ProjectileVisualiser({ v0, angleDeg }: { v0: number; angleDeg: number }) {
   const g = 9.8;
   const rad = (angleDeg * Math.PI) / 180;
-  const timeOfFlight = (2 * velocity * Math.sin(rad)) / g;
-  const maxHeight = (velocity * velocity * Math.sin(rad) * Math.sin(rad)) / (2 * g);
-  const range = (velocity * velocity * Math.sin(2 * rad)) / g;
+  const T = (2 * v0 * Math.sin(rad)) / g;
+  const H = (v0 * v0 * Math.sin(rad) * Math.sin(rad)) / (2 * g);
+  const R = (v0 * v0 * Math.sin(2 * rad)) / g;
 
-  // Render arc points
-  const points: [number, number][] = [];
-  const steps = 40;
-  for (let i = 0; i <= steps; i++) {
-    const t = (timeOfFlight * i) / steps;
-    const x = velocity * Math.cos(rad) * t;
-    const y = velocity * Math.sin(rad) * t - 0.5 * g * t * t;
-    points.push([x, y]);
+  const points: string[] = [];
+  for (let step = 0; step <= 30; step++) {
+    const t = (step / 30) * T;
+    const x = v0 * Math.cos(rad) * t;
+    const y = v0 * Math.sin(rad) * t - 0.5 * g * t * t;
+    const canvasX = 40 + (x / R) * 380;
+    const canvasY = 180 - (y / Math.max(H, 1)) * 130;
+    points.push(`${canvasX},${canvasY}`);
   }
 
-  // Scale: map range to 380px, max height to 140px
-  const scaleX = 380 / Math.max(range, 30);
-  const scaleY = 140 / Math.max(maxHeight, 15);
-  const ox = 40;
-  const oy = 180;
-
-  const pathD = points
-    .map(([x, y], idx) => `${idx === 0 ? "M" : "L"} ${ox + x * scaleX} ${oy - y * scaleY}`)
-    .join(" ");
-
   return (
-    <div className="w-full flex flex-col items-center gap-4 py-2">
+    <div className="w-full flex flex-col items-center gap-3">
       <svg width="460" height="210" className="bg-[#0C0908] rounded border border-[#2B221B]">
-        {/* Ground level */}
-        <line x1="20" y1={oy} x2="440" y2={oy} stroke="#54453A" strokeWidth="2" />
-
-        {/* Trajectory Arc */}
-        <path d={pathD} fill="none" stroke="#F59E0B" strokeWidth="2.5" />
-
-        {/* Apex point */}
-        <circle
-          cx={ox + (range / 2) * scaleX}
-          cy={oy - maxHeight * scaleY}
-          r="4"
-          fill="#EF4444"
-        />
-        <text
-          x={ox + (range / 2) * scaleX - 25}
-          y={oy - maxHeight * scaleY - 8}
-          fill="#EF4444"
-          fontSize="10"
-          fontFamily="monospace"
-        >
-          H_max: {maxHeight.toFixed(1)}m
-        </text>
-
-        {/* Launch angle arrow */}
-        <line x1={ox} y1={oy} x2={ox + 35 * Math.cos(rad)} y2={oy - 35 * Math.sin(rad)} stroke="#38BDF8" strokeWidth="2" />
-
-        {/* Range Label */}
-        <text x={ox + range * scaleX - 35} y={oy + 18} fill="#F59E0B" fontSize="10" fontFamily="monospace">
-          R: {range.toFixed(1)}m
-        </text>
+        <line x1="30" y1="180" x2="430" y2="180" stroke="#3E342B" strokeWidth="2" />
+        <path d={`M ${points.join(" L ")}`} fill="none" stroke="#F59E0B" strokeWidth="2.5" />
       </svg>
-
-      <div className="flex flex-wrap gap-4 text-xs font-mono bg-[#161210] border border-[#2D231C] px-4 py-2.5 rounded">
-        <div>
-          Max Height (H): <span className="text-amber-400 font-bold">{maxHeight.toFixed(2)} m</span>
-        </div>
-        <div>
-          Horizontal Range (R): <span className="text-amber-400 font-bold">{range.toFixed(2)} m</span>
-        </div>
-        <div>
-          Flight Time (T): <span className="text-emerald-400 font-bold">{timeOfFlight.toFixed(2)} s</span>
-        </div>
+      <div className="text-xs font-mono text-zinc-400 flex gap-6">
+        <span>Range (R): <strong className="text-amber-400">{R.toFixed(1)} m</strong></span>
+        <span>Max Height (H): <strong className="text-emerald-400">{H.toFixed(1)} m</strong></span>
+        <span>Flight Time (T): <strong className="text-[#FAF7F2]">{T.toFixed(2)} s</strong></span>
       </div>
     </div>
   );
 }
 
-function DcCircuitVisualiser({ voltage, resistance }: { voltage: number; resistance: number }) {
+function CircuitVisualiser({ voltage, resistance }: { voltage: number; resistance: number }) {
   const current = voltage / resistance;
   const power = voltage * current;
 
   return (
-    <div className="w-full flex flex-col items-center gap-4 py-2">
+    <div className="w-full flex flex-col items-center gap-3">
       <svg width="440" height="200" className="bg-[#0C0908] rounded border border-[#2B221B]">
-        {/* Wires */}
-        <rect x="60" y="40" width="320" height="120" fill="none" stroke="#EAB308" strokeWidth="2.5" />
-
-        {/* Battery on left */}
-        <rect x="45" y="85" width="30" height="30" fill="#181310" stroke="#F59E0B" strokeWidth="1.5" />
-        <line x1="52" y1="92" x2="68" y2="92" stroke="#EF4444" strokeWidth="3" />
-        <line x1="56" y1="108" x2="64" y2="108" stroke="#38BDF8" strokeWidth="2" />
-        <text x="32" y="105" fill="#FAF7F2" fontSize="10" fontFamily="monospace">{voltage}V</text>
-
-        {/* Resistor on right */}
-        <rect x="365" y="80" width="30" height="40" fill="#181310" stroke="#A89F93" strokeWidth="2" />
-        <text x="402" y="105" fill="#FAF7F2" fontSize="10" fontFamily="monospace">{resistance}Ω</text>
-
-        {/* Ammeter top */}
-        <circle cx="220" cy="40" r="14" fill="#181310" stroke="#4C9A66" strokeWidth="2" />
-        <text x="215" y="44" fill="#4C9A66" fontSize="11" fontFamily="monospace" fontWeight="bold">A</text>
-        <text x="200" y="24" fill="#4C9A66" fontSize="10" fontFamily="monospace">{current.toFixed(2)}A</text>
-
-        {/* Electron dots */}
-        <circle cx="140" cy="40" r="3" fill="#38BDF8" />
-        <circle cx="300" cy="40" r="3" fill="#38BDF8" />
-        <circle cx="380" cy="140" r="3" fill="#38BDF8" />
-        <circle cx="220" cy="160" r="3" fill="#38BDF8" />
+        <rect x="50" y="40" width="340" height="120" fill="none" stroke="#545E4E" strokeWidth="3" rx="8" />
+        <line x1="200" y1="28" x2="200" y2="52" stroke="#10B981" strokeWidth="4" />
+        <line x1="212" y1="34" x2="212" y2="46" stroke="#10B981" strokeWidth="2.5" />
+        <rect x="180" y="148" width="60" height="24" fill="#241B16" stroke="#D97706" strokeWidth="2" rx="4" />
+        <text x="195" y="164" fill="#F59E0B" fontSize="11" fontFamily="monospace">R={resistance}Ω</text>
       </svg>
-
-      <div className="flex flex-wrap gap-4 text-xs font-mono bg-[#161210] border border-[#2D231C] px-4 py-2.5 rounded">
-        <div>
-          Current (I = V/R): <span className="text-emerald-400 font-bold">{current.toFixed(3)} A</span>
-        </div>
-        <div>
-          Joule Thermal Power (P = VI): <span className="text-amber-400 font-bold">{power.toFixed(2)} W</span>
-        </div>
+      <div className="text-xs font-mono text-zinc-400 flex gap-6">
+        <span>Current (I): <strong className="text-emerald-400">{current.toFixed(2)} A</strong></span>
+        <span>Voltage (V): <strong className="text-sky-400">{voltage} V</strong></span>
+        <span>Dissipated Power (P): <strong className="text-amber-400">{power.toFixed(1)} W</strong></span>
       </div>
     </div>
   );
 }
 
-function VseprVisualiser({ typeIndex }: { typeIndex: number }) {
-  const geometries = [
-    { name: "Linear (BeCl2)", angle: "180°", hyb: "sp", steric: 2, desc: "2 bonding pairs, 0 lone pairs. Perfect collinear alignment." },
-    { name: "Trigonal Planar (BF3)", angle: "120°", hyb: "sp²", steric: 3, desc: "3 bonding pairs symmetrically disposed on a 2D plane." },
-    { name: "Tetrahedral (CH4)", angle: "109.5°", hyb: "sp³", steric: 4, desc: "4 bonding pairs pointing to vertices of regular tetrahedron." },
-    { name: "Trigonal Bipyramidal (PCl5)", angle: "120° (equatorial), 90° (axial)", hyb: "sp³d", steric: 5, desc: "3 equatorial bonds and 2 longer axial bonds." },
-    { name: "Octahedral (SF6)", angle: "90°", hyb: "sp³d²", steric: 6, desc: "6 equivalent bonds pointing to vertices of regular octahedron." },
+function VSEPRVisualiser({ geometryType }: { geometryType: number }) {
+  const types = [
+    { name: "Linear (BeCl2)", angle: "180°", hybrid: "sp", count: 2 },
+    { name: "Trigonal Planar (BF3)", angle: "120°", hybrid: "sp²", count: 3 },
+    { name: "Tetrahedral (CH4)", angle: "109.5°", hybrid: "sp³", count: 4 },
+    { name: "Trigonal Bipyramidal (PCl5)", angle: "90° & 120°", hybrid: "sp³d", count: 5 },
+    { name: "Octahedral (SF6)", angle: "90°", hybrid: "sp³d²", count: 6 },
   ];
-  const g = geometries[Math.min(Math.max(typeIndex - 1, 0), geometries.length - 1)];
+  const g = types[Math.min(Math.max(geometryType - 1, 0), types.length - 1)];
 
   return (
-    <div className="flex flex-col items-center gap-4 py-3 text-center">
-      <div className="w-48 h-48 rounded-full border-2 border-dashed border-amber-500/40 flex items-center justify-center relative bg-[#120E0C]">
-        {/* Central Atom */}
-        <circle cx="96" cy="96" r="16" fill="#F59E0B" />
-        <div className="w-8 h-8 rounded-full bg-amber-500 text-black font-bold flex items-center justify-center text-xs">
-          A
-        </div>
-
-        {/* Orbiting Ligands */}
-        {typeIndex === 1 && (
-          <>
-            <div className="absolute left-2 w-5 h-5 rounded-full bg-emerald-500 text-black text-[9px] flex items-center justify-center font-bold">B</div>
-            <div className="absolute right-2 w-5 h-5 rounded-full bg-emerald-500 text-black text-[9px] flex items-center justify-center font-bold">B</div>
-          </>
-        )}
-        {typeIndex === 2 && (
-          <>
-            <div className="absolute top-2 w-5 h-5 rounded-full bg-emerald-500 text-black text-[9px] flex items-center justify-center font-bold">B</div>
-            <div className="absolute bottom-4 left-6 w-5 h-5 rounded-full bg-emerald-500 text-black text-[9px] flex items-center justify-center font-bold">B</div>
-            <div className="absolute bottom-4 right-6 w-5 h-5 rounded-full bg-emerald-500 text-black text-[9px] flex items-center justify-center font-bold">B</div>
-          </>
-        )}
-        {typeIndex >= 3 && (
-          <>
-            <div className="absolute top-2 w-5 h-5 rounded-full bg-emerald-500 text-black text-[9px] flex items-center justify-center font-bold">B</div>
-            <div className="absolute bottom-2 w-5 h-5 rounded-full bg-emerald-500 text-black text-[9px] flex items-center justify-center font-bold">B</div>
-            <div className="absolute left-2 w-5 h-5 rounded-full bg-emerald-500 text-black text-[9px] flex items-center justify-center font-bold">B</div>
-            <div className="absolute right-2 w-5 h-5 rounded-full bg-emerald-500 text-black text-[9px] flex items-center justify-center font-bold">B</div>
-          </>
-        )}
-      </div>
-
-      <div className="space-y-1 font-mono text-xs">
-        <div className="text-amber-400 font-bold text-sm">{g.name}</div>
-        <div className="text-zinc-300">
-          Hybridization: <span className="text-emerald-400 font-bold">{g.hyb}</span> · Bond Angle:{" "}
-          <span className="text-sky-400 font-bold">{g.angle}</span>
-        </div>
-        <p className="text-[11px] text-zinc-400 max-w-sm">{g.desc}</p>
+    <div className="space-y-3 text-center py-4">
+      <div className="text-base font-serif font-bold text-amber-400">{g.name}</div>
+      <div className="text-xs font-mono text-zinc-300">
+        Bond Angle: <strong className="text-emerald-400">{g.angle}</strong> · Hybridization:{" "}
+        <strong className="text-sky-400">{g.hybrid}</strong>
       </div>
     </div>
   );
@@ -627,78 +798,75 @@ function VseprVisualiser({ typeIndex }: { typeIndex: number }) {
 
 function CellVisualiser({ cellType }: { cellType: number }) {
   const isPlant = cellType === 1;
+  return (
+    <div className="p-4 text-center space-y-2 text-xs font-mono">
+      <div className="font-serif text-base font-bold text-emerald-400">
+        {isPlant ? "Plant Cell Ultrastructure" : "Animal Cell Ultrastructure"}
+      </div>
+      <p className="text-zinc-400 max-w-sm mx-auto">
+        {isPlant
+          ? "Features rigid cellulose wall, chlorophyll plastids, and large central vacuole."
+          : "Features flexible membrane, centrioles for mitotic spindle, and lysosomes."}
+      </p>
+    </div>
+  );
+}
+
+function MarketEquilibriumVisualiser({ demandShift, supplyShift }: { demandShift: number; supplyShift: number }) {
+  const P_star = (demandShift - supplyShift) / 10;
+  const Q_star = supplyShift + 5 * P_star;
 
   return (
-    <div className="flex flex-col items-center gap-3 py-2 text-center max-w-md">
-      <div
-        className={`w-64 h-48 border-4 relative flex items-center justify-center ${
-          isPlant
-            ? "border-emerald-600 rounded-md bg-[#0F1E14]"
-            : "border-sky-600 rounded-full bg-[#0F1722]"
-        }`}
-      >
-        {/* Cell Wall indicator for plant */}
-        {isPlant && (
-          <div className="absolute inset-1 border-2 border-emerald-400/40 pointer-events-none rounded-sm" />
-        )}
-
-        {/* Nucleus */}
-        <div className="w-16 h-16 rounded-full bg-purple-900/80 border border-purple-400 flex items-center justify-center text-[10px] text-purple-200 font-mono">
-          Nucleus
+    <div className="flex flex-col md:flex-row items-center gap-6 w-full justify-around py-2">
+      <svg width="340" height="240" className="bg-[#0D0A09] rounded border border-[#2E241E]">
+        <line x1="40" y1="20" x2="40" y2="200" stroke="#44372F" strokeWidth="1.5" />
+        <line x1="40" y1="200" x2="310" y2="200" stroke="#44372F" strokeWidth="1.5" />
+        {/* Demand Line */}
+        <line x1="50" y1="40" x2="280" y2="190" stroke="#F43F5E" strokeWidth="2.5" />
+        {/* Supply Line */}
+        <line x1="50" y1="180" x2="280" y2="50" stroke="#10B981" strokeWidth="2.5" />
+      </svg>
+      <div className="bg-[#17120F] border border-[#302620] rounded p-4 space-y-2 text-xs font-mono min-w-[200px]">
+        <div className="text-zinc-400 border-b border-[#2B221B] pb-1 uppercase tracking-wider text-[10px]">
+          Equilibrium Clearing
         </div>
-
-        {/* Organelle Callouts */}
-        {isPlant ? (
-          <>
-            <div className="absolute top-3 left-4 px-1.5 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-500 text-[9px] font-mono">
-              Chloroplast
-            </div>
-            <div className="absolute bottom-3 right-4 px-1.5 py-0.5 rounded bg-blue-950 text-blue-300 border border-blue-500 text-[9px] font-mono">
-              Central Vacuole
-            </div>
-            <div className="absolute top-2 right-4 text-[9px] font-mono text-emerald-400">
-              Cellulose Wall
-            </div>
-          </>
-        ) : (
-          <>
-            <div className="absolute top-3 left-4 px-1.5 py-0.5 rounded bg-amber-950 text-amber-300 border border-amber-500 text-[9px] font-mono">
-              Mitochondria
-            </div>
-            <div className="absolute bottom-3 right-6 px-1.5 py-0.5 rounded bg-rose-950 text-rose-300 border border-rose-500 text-[9px] font-mono">
-              Centrioles
-            </div>
-          </>
-        )}
-      </div>
-
-      <div className="text-xs font-mono text-zinc-300">
-        Active Model:{" "}
-        <span className="font-bold text-amber-400">
-          {isPlant ? "Plant Cell (Eukaryote with Wall & Plastids)" : "Animal Cell (Eukaryote with Centrioles)"}
-        </span>
+        <div className="flex justify-between">
+          <span className="text-rose-400">Price (P*):</span>
+          <span className="font-bold text-[#FAF7F2]">${Math.max(1, P_star).toFixed(2)}</span>
+        </div>
+        <div className="flex justify-between">
+          <span className="text-emerald-400">Quantity (Q*):</span>
+          <span className="font-bold text-[#FAF7F2]">{Math.max(10, Q_star).toFixed(0)} units</span>
+        </div>
       </div>
     </div>
   );
 }
 
-function TimelineVisualiser({ stageIndex }: { stageIndex: number }) {
-  const stages = [
-    { year: "1917", title: "Champaran Satyagraha", detail: "Mahatma Gandhi's first civil disobedience against oppressive indigo planter contracts in Bihar." },
-    { year: "1919", title: "Rowlatt Act & Jallianwala Bagh", detail: "Protest against indefinite detention without trial; General Dyer's massacre of peaceful assembly in Amritsar." },
-    { year: "1920–22", title: "Non-Cooperation Movement", detail: "Surrender of British titles, boycott of foreign cloth and schools; withdrawn after Chauri Chaura violence." },
-    { year: "1930", title: "Dandi Salt March", detail: "240-mile march breaking the British salt monopoly, launching nationwide Civil Disobedience." },
-    { year: "1942", title: "Quit India Movement", detail: "All-India Congress Committee launch of 'Do or Die' mass struggle demanding complete British withdrawal." },
-  ];
-  const s = stages[Math.min(Math.max(stageIndex, 0), stages.length - 1)];
+function SortingAlgorithmVisualiser({ arraySize, stepIndex }: { arraySize: number; stepIndex: number }) {
+  const numbers = [32, 14, 68, 45, 82, 19, 53, 76, 27, 91, 12, 60].slice(0, arraySize);
 
   return (
-    <div className="space-y-4 max-w-md text-center py-3">
-      <div className="inline-block px-3 py-1 rounded bg-[#241B16] border border-amber-500/40 text-amber-400 font-mono font-bold text-sm">
-        Year: {s.year}
+    <div className="w-full flex flex-col items-center gap-3 py-2">
+      <div className="flex items-end gap-2 h-40 bg-[#0C0908] p-4 rounded border border-[#2B221B]">
+        {numbers.map((val, idx) => {
+          const isComparing = idx === stepIndex % arraySize || idx === (stepIndex + 1) % arraySize;
+          return (
+            <div key={idx} className="flex flex-col items-center gap-1">
+              <span className="text-[10px] font-mono text-zinc-400">{val}</span>
+              <div
+                className={`w-8 rounded-t transition-all ${
+                  isComparing ? "bg-amber-400 shadow-[0_0_10px_rgba(251,191,36,0.5)]" : "bg-emerald-600"
+                }`}
+                style={{ height: `${val * 1.3}px` }}
+              />
+            </div>
+          );
+        })}
       </div>
-      <h4 className="text-base font-serif font-bold text-[#FAF7F2]">{s.title}</h4>
-      <p className="text-xs text-zinc-300 leading-relaxed font-sans">{s.detail}</p>
+      <div className="text-xs font-mono text-zinc-400">
+        Active Pass Step: <strong className="text-amber-400">{stepIndex}</strong> · Comparing adjacent bars
+      </div>
     </div>
   );
 }

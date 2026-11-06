@@ -9,6 +9,7 @@ import {
   TrendingUp,
 } from "lucide-react";
 import { calculateStudentRank } from "@/lib/junior/academy-models";
+import { ProgressBar } from "./ProgressBar";
 
 export function LearningProgressionHub() {
   const [totalXP] = useState(480);
@@ -92,16 +93,13 @@ export function LearningProgressionHub() {
 
         {/* Level XP Progress Bar */}
         <div className="mt-5 space-y-1.5">
-          <div className="flex justify-between text-xs font-mono text-zinc-400">
-            <span>Progress to Next Rank</span>
-            <span>{rank.progressPct}%</span>
-          </div>
-          <div className="w-full bg-[#100D0B] h-2.5 rounded-full overflow-hidden border border-[#2A221C]">
-            <div
-              className="bg-gradient-to-r from-amber-600 to-amber-400 h-full rounded-full transition-all duration-500"
-              style={{ width: `${rank.progressPct}%` }}
-            />
-          </div>
+          <ProgressBar
+            value={rank.progressPct}
+            label="Progress to Next Rank"
+            showPercentage={true}
+            size="md"
+            variant="gold"
+          />
         </div>
       </div>
 
@@ -188,20 +186,14 @@ export function LearningProgressionHub() {
 
         <div className="space-y-3">
           {topicMastery.map((tm, idx) => (
-            <div key={idx} className="space-y-1 text-xs font-mono">
-              <div className="flex justify-between text-zinc-300">
-                <span>
-                  <span className="text-amber-400 font-bold mr-2">[Class {tm.classLvl}]</span>
-                  {tm.topic}
-                </span>
-                <span className="font-bold text-emerald-400">{tm.masteryPct}%</span>
-              </div>
-              <div className="w-full bg-[#100D0B] h-2 rounded-full overflow-hidden border border-[#28201A]">
-                <div
-                  className="bg-emerald-500 h-full rounded-full transition-all"
-                  style={{ width: `${tm.masteryPct}%` }}
-                />
-              </div>
+            <div key={idx} className="space-y-1">
+              <ProgressBar
+                value={tm.masteryPct}
+                label={`[Class ${tm.classLvl}] ${tm.topic}`}
+                showPercentage={true}
+                size="sm"
+                variant={tm.masteryPct >= 80 ? "emerald" : "amber"}
+              />
             </div>
           ))}
         </div>

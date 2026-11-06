@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Award, CheckCircle2, Lock } from "lucide-react";
 import { ACADEMY_BADGES, calculateStudentRank } from "@/lib/junior/academy-models";
+import { ProgressBar } from "./ProgressBar";
 
 interface AchievementsPanelProps {
   totalAttemptsCompleted?: number;
@@ -55,12 +56,12 @@ export function AchievementsPanel({
                 <span>{estimatedXP} XP</span>
                 <span>{rank.nextThreshold} XP Goal</span>
               </div>
-              <div className="w-full h-2 bg-[#25201A] rounded-full overflow-hidden">
-                <div
-                  className="h-full bg-[#8FA184] transition-all duration-500 rounded-full"
-                  style={{ width: `${Math.min(100, rank.progressPct)}%` }}
-                />
-              </div>
+              <ProgressBar
+                value={rank.progressPct}
+                showPercentage={false}
+                size="sm"
+                variant="emerald"
+              />
             </div>
           </div>
         </div>
