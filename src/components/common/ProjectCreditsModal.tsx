@@ -128,3 +128,4 @@ export function ProjectCreditsModal({ isOpen, onClose }: ProjectCreditsModalProp
     </div>
   );
 }
+
