@@ -109,27 +109,27 @@ export default function JuniorResultPage({ params }: PageProps) {
     : null;
 
   return (
-    <div className="relative min-h-screen flex flex-col bg-[#0F0D0C] text-[#FAF7F2]">
-      {/* Background Illustrated Achievement Hall with Dark Vignette */}
+    <div className="relative min-h-screen flex flex-col bg-[#100E0D] text-[#FAF7F2]">
+      {/* Background Illustrated Achievement Hall with Atmospheric Vignette */}
       <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
         <Image
           src="/art/environments/env_junior_achievement_hall.jpg"
           alt="Academy Achievement Hall"
           fill
           priority
-          className="object-cover object-center opacity-25 filter blur-[0.5px]"
+          className="object-cover object-center opacity-30 filter brightness-95"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0F0D0C]/85 via-[#0F0D0C]/75 to-[#0F0D0C]/95" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#12100E]/90 via-[#181411]/80 to-[#12100E]/95" />
       </div>
       {/* 1. ACADEMY TOP NAVIGATION BAR */}
-      <header className="sticky top-0 z-30 bg-[#161311]/95 backdrop-blur-md border-b border-[#2C2621] px-4 sm:px-6 py-2.5">
+      <header className="sticky top-0 z-30 bg-[#181512]/98 backdrop-blur-md border-b-2 border-[#3D3328] px-4 sm:px-6 py-3 shadow-md">
         <div className="max-w-6xl mx-auto flex items-center justify-between gap-4">
           <Link
             href="/junior"
-            className="flex items-center gap-2.5 hover:opacity-85 transition-opacity"
+            className="flex items-center gap-3 hover:opacity-90 transition-opacity"
             title="Return to Academy Hub"
           >
-            <div className="relative w-7 h-7 rounded-full overflow-hidden border border-[#545E4E]/50">
+            <div className="relative w-8 h-8 rounded-full overflow-hidden border-2 border-[#8FA184]/70 shadow-sm">
               <Image
                 src="/brand/emblem-silence.png"
                 alt="The Unwritten"
@@ -138,31 +138,31 @@ export default function JuniorResultPage({ params }: PageProps) {
               />
             </div>
             <div>
-              <span className="font-serif font-bold text-xs tracking-wider text-[#FAF7F2]">
+              <span className="font-serif font-black text-sm tracking-wider text-white">
                 THE ACADEMY
               </span>
-              <span className="text-[10px] uppercase font-mono text-[#8FA184] block">
+              <span className="text-[11px] uppercase font-mono text-[#A8D49E] block font-bold">
                 Evaluation Monograph
               </span>
             </div>
           </Link>
 
-          <div className="flex items-center gap-2.5">
+          <div className="flex items-center gap-3">
             <Button
               type="button"
               variant="secondary"
               size="sm"
               onClick={() => void handleShare()}
-              className="bg-[#201C18] border-[#382E24] text-[#CFC5B4] hover:text-[#FAF7F2]"
+              className="bg-[#26201B] border-2 border-[#4E4133] text-white hover:bg-[#342B24] font-semibold"
             >
               {copied ? (
                 <>
-                  <Check className="w-3.5 h-3.5 mr-1.5 text-[#8FA184]" />
-                  Copied
+                  <Check className="w-3.5 h-3.5 mr-1.5 text-emerald-400" />
+                  Copied Summary
                 </>
               ) : (
                 <>
-                  <Share2 className="w-3.5 h-3.5 mr-1.5" />
+                  <Share2 className="w-3.5 h-3.5 mr-1.5 text-[#A8D49E]" />
                   Share Certificate
                 </>
               )}
@@ -174,7 +174,7 @@ export default function JuniorResultPage({ params }: PageProps) {
               >
                 <Button
                   size="sm"
-                  className="bg-[#2D4A3E] hover:bg-[#395C4D] text-[#FAF7F2] border-[#4A6E5F]"
+                  className="bg-[#2D5A47] hover:bg-[#386D56] text-white font-bold border-2 border-white/20 shadow-md"
                 >
                   <RotateCcw className="w-3.5 h-3.5 mr-1.5" />
                   Next 10 Questions
@@ -195,12 +195,12 @@ export default function JuniorResultPage({ params }: PageProps) {
             </p>
           </div>
         ) : errorMsg || !result ? (
-          <div className="max-w-md mx-auto py-24 text-center space-y-5 bg-[#171412] border border-[#2D2620] rounded-sm p-8">
-            <XCircle className="w-10 h-10 mx-auto text-[#9E6B68]" />
-            <h1 className="font-serif text-2xl text-[#FAF7F2]">
+          <div className="max-w-md mx-auto py-24 text-center space-y-5 bg-[#1C1814] border-2 border-[#4E4133] rounded-md p-8 shadow-2xl">
+            <XCircle className="w-10 h-10 mx-auto text-rose-400" />
+            <h1 className="font-serif text-2xl text-white font-bold">
               Evaluation Dossier Not Found
             </h1>
-            <p className="text-xs text-[#A89F93] leading-relaxed">{errorMsg}</p>
+            <p className="text-sm text-[#DDD4C5] leading-relaxed">{errorMsg}</p>
             <Link href="/junior">
               <Button size="md" variant="primary">
                 Return to Academy Hub
@@ -215,30 +215,30 @@ export default function JuniorResultPage({ params }: PageProps) {
             className="space-y-10"
           >
             {/* A. MASTER CERTIFICATE PLATE */}
-            <section className="bg-[#171411] text-[#FAF7F2] border-2 border-[#4A3D2F] rounded-sm p-6 sm:p-10 relative overflow-hidden shadow-2xl">
+            <section className="bg-[#1C1814]/98 text-[#FAF7F2] border-2 border-[#6B5742] rounded-md p-6 sm:p-10 relative overflow-hidden shadow-2xl ring-1 ring-amber-500/20">
               {/* Ornate Inner Border Line */}
               <div
-                className="absolute inset-3 border border-[#8FA184]/20 pointer-events-none rounded-xs"
+                className="absolute inset-3 border border-[#8FA184]/40 pointer-events-none rounded-sm"
                 aria-hidden="true"
               />
 
               <div className="relative z-10 space-y-8">
                 {/* Certificate Top Seal */}
-                <div className="flex flex-wrap items-center justify-between gap-3 text-[10px] uppercase font-mono tracking-[0.26em] text-[#8FA184] border-b border-[#2C241D] pb-4">
+                <div className="flex flex-wrap items-center justify-between gap-3 text-xs uppercase font-mono tracking-[0.2em] text-[#A6C49B] border-b-2 border-[#3D3328] pb-4 font-bold">
                   <div className="flex items-center gap-2">
-                    <GraduationCap className="w-4 h-4 text-[#8FA184]" />
+                    <GraduationCap className="w-5 h-5 text-[#8FA184]" />
                     <span>THE UNWRITTEN ACADEMY · EVALUATION CERTIFICATE</span>
                   </div>
-                  <span className="text-[#A89F93]">
-                    Candidate: <strong className="text-[#FAF7F2]">{result.participantName}</strong>
+                  <span className="text-[#DDD4C5]">
+                    Candidate: <strong className="text-white font-black text-sm bg-[#2B231B] px-3 py-1 rounded border border-[#4E3E2E] ml-1">{result.participantName}</strong>
                   </span>
                 </div>
 
                 {/* Main Score Plate & Scholar Details */}
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
                   {/* Left Score Box */}
-                  <div className="md:col-span-5 p-6 bg-[#13110E] border border-[#3E342A] rounded-sm text-center space-y-3">
-                    <div className="relative w-16 h-16 mx-auto rounded-full overflow-hidden border border-[#545E4E]/60 mb-2">
+                  <div className="md:col-span-5 p-6 sm:p-7 bg-[#231E18] border-2 border-[#544535] rounded-md text-center space-y-3.5 shadow-xl">
+                    <div className="relative w-20 h-20 mx-auto rounded-full overflow-hidden border-2 border-[#8FA184] shadow-md mb-2">
                       <Image
                         src="/art/characters/junior_student.png"
                         alt="The Scholar"
@@ -247,25 +247,29 @@ export default function JuniorResultPage({ params }: PageProps) {
                       />
                     </div>
 
-                    <span className="text-[10px] uppercase font-mono tracking-wider text-[#A89F93] block">
+                    <span className="text-xs uppercase font-mono tracking-wider text-[#DDD4C5] block font-bold">
                       {result.subjectName} · Attempt #{result.attemptNumber}
                     </span>
 
-                    <div className="font-serif text-5xl sm:text-6xl text-[#FAF7F2] leading-none py-1 font-bold">
+                    <div className="font-serif text-5xl sm:text-6xl text-white font-black leading-none py-1 drop-shadow-md">
                       {result.academicPerformance.scoreOutOf10}
-                      <span className="text-2xl text-[#8A8178] font-normal"> / 10</span>
+                      <span className="text-2xl text-[#C8BFB4] font-medium"> / 10</span>
                     </div>
 
-                    <div className="pt-2 border-t border-[#26201A] space-y-1">
-                      <p className="font-mono text-xs text-[#8FA184] font-bold">
+                    <div className="pt-3 border-t-2 border-[#3D3328] space-y-2">
+                      <p className="font-mono text-sm text-[#A6E8BA] font-extrabold">
                         {result.academicPerformance.accuracyPct}% Precision Accuracy
                       </p>
-                      <p className="text-[11px] text-[#A89F93] font-mono">
-                        {result.academicPerformance.correctAnswers} Correct ·{" "}
-                        {result.academicPerformance.incorrectAnswers} Incorrect
-                      </p>
+                      <div className="flex items-center justify-center gap-2 text-xs font-mono">
+                        <span className="px-2 py-0.5 rounded bg-[#1B3625] text-emerald-300 font-bold border border-emerald-600/50">
+                          {result.academicPerformance.correctAnswers} Correct
+                        </span>
+                        <span className="px-2 py-0.5 rounded bg-[#381B1B] text-rose-300 font-bold border border-rose-600/50">
+                          {result.academicPerformance.incorrectAnswers} Incorrect
+                        </span>
+                      </div>
                       {rank && (
-                        <div className="inline-block px-2.5 py-0.5 rounded-xs bg-[#241F1A] border border-[#3E352B] text-[10px] uppercase font-mono text-[#E5D7C0] mt-1">
+                        <div className="inline-block px-3.5 py-1 rounded-sm bg-gradient-to-r from-[#332A20] to-[#42372A] border border-[#7A664F] text-xs uppercase font-mono text-[#F7E7CD] font-extrabold shadow-sm mt-2">
                           Rank: {rank.title}
                         </div>
                       )}
@@ -273,32 +277,32 @@ export default function JuniorResultPage({ params }: PageProps) {
                   </div>
 
                   {/* Right Narrative Monograph */}
-                  <div className="md:col-span-7 space-y-3">
-                    <div className="flex items-center gap-2">
-                      <span className="text-[10px] uppercase font-mono tracking-wider px-2 py-0.5 rounded-xs bg-[#25382E] border border-[#3E5C4B] text-[#8FA184] font-bold">
+                  <div className="md:col-span-7 space-y-4">
+                    <div className="flex flex-wrap items-center gap-2">
+                      <span className="text-xs uppercase font-mono tracking-wider px-3 py-1 rounded-sm bg-[#22402F] border border-[#3F6E51] text-[#9FE3B5] font-black">
                         {result.stream} Stream Folio
                       </span>
-                      <span className="text-xs text-[#70685F] font-mono">
+                      <span className="text-xs text-[#DDD4C5] font-mono font-semibold bg-[#26201A] px-2.5 py-1 rounded border border-[#44382C]">
                         Cycle {result.cycleNumber} · {result.difficultyPreference}
                       </span>
                     </div>
 
-                    <h1 className="font-serif text-2xl sm:text-3xl text-[#FAF7F2] leading-tight font-bold">
+                    <h1 className="font-serif text-2xl sm:text-3xl text-white leading-tight font-extrabold tracking-wide">
                       {result.descriptiveProfile.title}
                     </h1>
 
-                    <p className="font-serif italic text-base text-[#D6CEC0]">
+                    <p className="font-serif italic text-base sm:text-lg text-[#F2E8DC] font-medium leading-snug">
                       {result.descriptiveProfile.subtitle}
                     </p>
 
-                    <p className="text-xs text-[#A89F93] leading-relaxed font-sans">
+                    <p className="text-sm sm:text-base text-[#E5DCD0] leading-relaxed font-sans">
                       {result.descriptiveProfile.narrative}
                     </p>
                   </div>
                 </div>
 
                 {/* Certificate Footer Metadata */}
-                <div className="pt-4 border-t border-[#2C241D] flex flex-wrap items-center justify-between gap-4 text-[10px] font-mono text-[#70685F]">
+                <div className="pt-4 border-t-2 border-[#3D3328] flex flex-wrap items-center justify-between gap-4 text-xs font-mono text-[#C8BFB4] font-medium">
                   <span>
                     Deterministic Scoring Engine v{result.scoringAlgorithmVersion} · MSBSHSE / NCERT 2026
                   </span>
@@ -311,12 +315,12 @@ export default function JuniorResultPage({ params }: PageProps) {
 
             {/* B. STREAM REASONING INDICATORS */}
             <section className="space-y-4">
-              <div className="border-b border-[#2C241D] pb-3 flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
-                <h2 className="font-serif text-xl sm:text-2xl text-[#FAF7F2] flex items-center gap-2">
-                  <Award className="w-5 h-5 text-[#8FA184]" />
+              <div className="border-b-2 border-[#3D3328] pb-3 flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+                <h2 className="font-serif text-xl sm:text-2xl text-white font-extrabold flex items-center gap-2.5">
+                  <Award className="w-6 h-6 text-[#8FA184]" />
                   <span>Cognitive &amp; Academic Ability Dimensions</span>
                 </h2>
-                <span className="text-[10px] uppercase font-mono text-[#70685F]">
+                <span className="text-xs uppercase font-mono text-[#C8BFB4] font-semibold">
                   Dimension Mastery Matrix
                 </span>
               </div>
@@ -325,45 +329,45 @@ export default function JuniorResultPage({ params }: PageProps) {
                 {result.abilityIndicators.map((ind) => (
                   <div
                     key={ind.key}
-                    className="p-5 bg-[#171412] border border-[#2D2620] rounded-sm space-y-3"
+                    className="p-5 sm:p-6 bg-[#211C18] border-2 border-[#4E4133] rounded-md space-y-3.5 shadow-lg hover:border-[#6B5A47] transition-all"
                   >
                     <div className="flex items-baseline justify-between gap-2">
-                      <h3 className="font-serif font-bold text-base text-[#FAF7F2]">
+                      <h3 className="font-serif font-extrabold text-base sm:text-lg text-white">
                         {ind.label}
                       </h3>
                       <span
-                        className={`px-2 py-0.5 text-[10px] uppercase font-mono rounded-xs border ${
+                        className={`px-2.5 py-1 text-xs uppercase font-mono font-black rounded-xs border-2 ${
                           ind.qualitativeBand === "Strong"
-                            ? "bg-[#25382E] border-[#3E5C4B] text-[#8FA184] font-bold"
+                            ? "bg-[#1E422C] border-emerald-400 text-emerald-200"
                             : ind.qualitativeBand === "Consistent"
-                            ? "bg-[#221E19] border-[#382F24] text-[#CFC5B4]"
+                            ? "bg-[#3D3322] border-amber-400 text-amber-200"
                             : ind.qualitativeBand === "Developing"
-                            ? "bg-[#3D1E1E] border-[#8A4E4E] text-[#C96B68]"
-                            : "bg-[#181512] border-[#2C241D] text-[#70685F]"
+                            ? "bg-[#4A1E1E] border-rose-400 text-rose-200"
+                            : "bg-[#2A241F] border-stone-500 text-stone-200"
                         }`}
                       >
                         {ind.qualitativeBand}
                       </span>
                     </div>
 
-                    <p className="text-xs text-[#A89F93] leading-relaxed">
+                    <p className="text-xs sm:text-sm text-[#E2D9CD] leading-relaxed">
                       {ind.supportingEvidenceSummary}
                     </p>
 
                     {ind.scorePct !== null ? (
-                      <div className="space-y-1.5 pt-1">
-                        <div className="w-full h-1.5 bg-[#201C18] rounded-full overflow-hidden border border-[#2C251E]">
+                      <div className="space-y-2 pt-1">
+                        <div className="w-full h-2 bg-[#141210] rounded-full overflow-hidden border border-[#44382C]">
                           <div
-                            className="h-full bg-[#8FA184]"
+                            className="h-full bg-gradient-to-r from-emerald-600 to-[#8FA184]"
                             style={{ width: `${ind.scorePct}%` }}
                           />
                         </div>
-                        <p className="text-[10px] font-mono text-[#70685F]">
+                        <p className="text-xs font-mono text-[#DDD4C5] font-semibold">
                           {ind.correctMappedCount}/{ind.mappedQuestionsCount} items correct ({ind.scorePct}%)
                         </p>
                       </div>
                     ) : (
-                      <p className="text-xs italic text-[#70685F]">{ind.displayStatus}</p>
+                      <p className="text-xs italic text-[#DDD4C5]">{ind.displayStatus}</p>
                     )}
                   </div>
                 ))}
@@ -372,12 +376,12 @@ export default function JuniorResultPage({ params }: PageProps) {
 
             {/* C. SYLLABUS CHAPTER BREAKDOWN */}
             <section className="space-y-4">
-              <div className="border-b border-[#2C241D] pb-3 flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
-                <h2 className="font-serif text-xl sm:text-2xl text-[#FAF7F2] flex items-center gap-2">
-                  <BookOpen className="w-5 h-5 text-[#8FA184]" />
+              <div className="border-b-2 border-[#3D3328] pb-3 flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+                <h2 className="font-serif text-xl sm:text-2xl text-white font-extrabold flex items-center gap-2.5">
+                  <BookOpen className="w-6 h-6 text-[#8FA184]" />
                   <span>Syllabus Chapter Mastery Breakdown</span>
                 </h2>
-                <span className="text-[10px] uppercase font-mono text-[#70685F]">
+                <span className="text-xs uppercase font-mono text-[#C8BFB4] font-semibold">
                   {result.subjectName} Chapters Evaluated
                 </span>
               </div>
@@ -386,21 +390,21 @@ export default function JuniorResultPage({ params }: PageProps) {
                 {result.academicPerformance.chapterBreakdown.map((ch) => (
                   <div
                     key={`${ch.chapterNumber}-${ch.chapter}`}
-                    className="p-4 bg-[#171412] border border-[#2D2620] rounded-sm flex items-center justify-between gap-4"
+                    className="p-4 sm:p-5 bg-[#211C18] border-2 border-[#4E4133] rounded-md flex items-center justify-between gap-4 shadow-md hover:border-[#6B5A47] transition-all"
                   >
                     <div>
-                      <span className="text-[10px] font-mono uppercase text-[#8FA184] block font-bold">
+                      <span className="text-xs font-mono uppercase text-[#A8D49E] block font-extrabold tracking-wider">
                         Chapter {ch.chapterNumber}
                       </span>
-                      <span className="font-serif font-bold text-sm text-[#FAF7F2]">
+                      <span className="font-serif font-bold text-base text-white mt-0.5 block">
                         {ch.chapter}
                       </span>
                     </div>
-                    <div className="text-right font-mono text-xs">
-                      <span className="text-sm font-bold text-[#FAF7F2] block">
+                    <div className="text-right font-mono">
+                      <span className="text-base sm:text-lg font-black text-white block">
                         {ch.correct} / {ch.attempted}
                       </span>
-                      <span className="text-[10px] text-[#8A8178]">
+                      <span className="text-xs font-mono font-bold text-[#DDD4C5] mt-0.5 block">
                         {ch.accuracyPct}% accuracy
                       </span>
                     </div>
@@ -411,20 +415,20 @@ export default function JuniorResultPage({ params }: PageProps) {
 
             {/* D. QUESTION DERIVATION REVIEW SECTION */}
             <section className="space-y-4">
-              <div className="border-b border-[#2C241D] pb-3 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                <h2 className="font-serif text-xl sm:text-2xl text-[#FAF7F2]">
+              <div className="border-b-2 border-[#3D3328] pb-3 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <h2 className="font-serif text-xl sm:text-2xl text-white font-extrabold">
                   Question &amp; Derivation Monograph
                 </h2>
 
                 {/* Filter Pills */}
-                <div className="flex items-center gap-1.5">
+                <div className="flex items-center gap-2">
                   <button
                     type="button"
                     onClick={() => setReviewFilter("all")}
-                    className={`px-2.5 py-1 text-xs font-mono rounded-xs border transition-colors ${
+                    className={`px-3 py-1.5 text-xs font-mono rounded-sm border-2 transition-all cursor-pointer ${
                       reviewFilter === "all"
-                        ? "bg-[#FAF7F2] text-[#12100E] border-[#FAF7F2] font-bold"
-                        : "bg-[#171412] text-[#A89F93] border-[#2C241D] hover:border-[#42372A]"
+                        ? "bg-white text-[#12100E] border-white font-black shadow-md"
+                        : "bg-[#241F1A] text-[#DDD4C5] border-[#4E4133] hover:border-white hover:text-white font-bold"
                     }`}
                   >
                     All (10)
@@ -432,10 +436,10 @@ export default function JuniorResultPage({ params }: PageProps) {
                   <button
                     type="button"
                     onClick={() => setReviewFilter("wrong")}
-                    className={`px-2.5 py-1 text-xs font-mono rounded-xs border transition-colors ${
+                    className={`px-3 py-1.5 text-xs font-mono rounded-sm border-2 transition-all cursor-pointer ${
                       reviewFilter === "wrong"
-                        ? "bg-[#8A4E4E] text-[#FAF7F2] border-[#8A4E4E] font-bold"
-                        : "bg-[#171412] text-[#A89F93] border-[#2C241D] hover:border-[#42372A]"
+                        ? "bg-rose-600 text-white border-rose-300 font-black shadow-md"
+                        : "bg-[#241F1A] text-[#FFB3B3] border-[#4E4133] hover:border-rose-400 font-bold"
                     }`}
                   >
                     Incorrect ({result.academicPerformance.incorrectAnswers})
@@ -443,10 +447,10 @@ export default function JuniorResultPage({ params }: PageProps) {
                   <button
                     type="button"
                     onClick={() => setReviewFilter("correct")}
-                    className={`px-2.5 py-1 text-xs font-mono rounded-xs border transition-colors ${
+                    className={`px-3 py-1.5 text-xs font-mono rounded-sm border-2 transition-all cursor-pointer ${
                       reviewFilter === "correct"
-                        ? "bg-[#3E5C4B] text-[#FAF7F2] border-[#3E5C4B] font-bold"
-                        : "bg-[#171412] text-[#A89F93] border-[#2C241D] hover:border-[#42372A]"
+                        ? "bg-emerald-600 text-white border-emerald-300 font-black shadow-md"
+                        : "bg-[#241F1A] text-[#A8E2B8] border-[#4E4133] hover:border-emerald-400 font-bold"
                     }`}
                   >
                     Correct ({result.academicPerformance.correctAnswers})
@@ -454,64 +458,66 @@ export default function JuniorResultPage({ params }: PageProps) {
                 </div>
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-5">
                 {filteredQuestions.map((item) => (
                   <div
                     key={item.questionId}
-                    className="p-5 sm:p-6 bg-[#171412] border border-[#2D2620] rounded-sm space-y-4"
+                    className="p-6 sm:p-7 bg-[#1F1A16] border-2 border-[#544535] rounded-md space-y-5 shadow-xl"
                   >
                     {/* Item Header */}
-                    <div className="flex flex-wrap items-center justify-between gap-2 text-xs border-b border-[#25201A] pb-3">
-                      <span className="font-mono text-[11px] text-[#A89F93]">
+                    <div className="flex flex-wrap items-center justify-between gap-3 text-xs border-b-2 border-[#3D3328] pb-3.5">
+                      <span className="font-mono text-xs sm:text-sm text-[#DDD4C5] font-bold">
                         Q{String(item.slotNumber).padStart(2, "0")} · {item.chapter} ({item.difficulty})
                       </span>
                       {item.isCorrect ? (
-                        <span className="inline-flex items-center gap-1.5 text-xs font-bold text-[#8FA184]">
-                          <CheckCircle2 className="w-4 h-4 text-[#8FA184]" />
-                          Correct
+                        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-sm bg-[#1A3825] border-2 border-emerald-400 text-xs font-black text-emerald-200 shadow-sm">
+                          <CheckCircle2 className="w-4 h-4 text-emerald-300" />
+                          Correct Choice
                         </span>
                       ) : (
-                        <span className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C96B68]">
-                          <XCircle className="w-4 h-4 text-[#C96B68]" />
+                        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-sm bg-[#421A1A] border-2 border-rose-400 text-xs font-black text-rose-200 shadow-sm">
+                          <XCircle className="w-4 h-4 text-rose-300" />
                           {item.selectedOptionKey ? "Incorrect Choice" : "Unanswered"}
                         </span>
                       )}
                     </div>
 
                     {/* Question Text */}
-                    <div className="font-serif text-base sm:text-lg text-[#FAF7F2] leading-snug">
+                    <div className="font-serif text-lg sm:text-xl text-white leading-relaxed font-normal py-1">
                       <MathRenderer content={item.questionText} />
                     </div>
 
                     {/* User Selection vs Correct Answer */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
                       <div
-                        className={`p-3 rounded-sm border ${
+                        className={`p-4 rounded-md border-2 shadow-md ${
                           item.isCorrect
-                            ? "bg-[#1A2E22] border-[#3E5C4B]"
-                            : "bg-[#2E1818] border-[#8A4E4E]"
+                            ? "bg-[#1A3825]/90 border-emerald-500/80"
+                            : "bg-[#421A1A]/90 border-rose-500/80"
                         }`}
                       >
-                        <span className="block text-[10px] uppercase font-mono tracking-wider text-[#A89F93]">
+                        <span className={`block text-xs uppercase font-mono tracking-wider font-extrabold ${
+                          item.isCorrect ? "text-emerald-300" : "text-rose-300"
+                        }`}>
                           Candidate Selection
                         </span>
-                        <div className="font-medium text-[#FAF7F2] mt-1">
+                        <div className="font-semibold text-white text-base mt-1.5">
                           {item.selectedOptionKey ? (
                             <span>
                               [{item.selectedOptionKey}]{" "}
                               <MathRenderer content={item.selectedOptionText || ""} />
                             </span>
                           ) : (
-                            <span className="italic text-[#70685F]">No option submitted</span>
+                            <span className="italic text-[#DDD4C5]">No option submitted</span>
                           )}
                         </div>
                       </div>
 
-                      <div className="p-3 rounded-sm border bg-[#1A2E22] border-[#3E5C4B]">
-                        <span className="block text-[10px] uppercase font-mono tracking-wider text-[#8FA184]">
+                      <div className="p-4 rounded-md border-2 bg-[#1A3825]/90 border-emerald-500/80 shadow-md">
+                        <span className="block text-xs uppercase font-mono tracking-wider text-emerald-300 font-extrabold">
                           Verified Master Key
                         </span>
-                        <div className="font-medium text-[#FAF7F2] mt-1">
+                        <div className="font-semibold text-white text-base mt-1.5">
                           <span>
                             [{item.correctOptionKey}]{" "}
                             <MathRenderer content={item.correctOptionText} />
@@ -521,13 +527,14 @@ export default function JuniorResultPage({ params }: PageProps) {
                     </div>
 
                     {/* Derivation / Pedagogical Explanation */}
-                    <div className="p-4 bg-[#13110E] border border-[#26201A] rounded-sm space-y-1.5 text-xs">
-                      <div className="text-[#CFC5B4] leading-relaxed">
-                        <strong className="text-[#8FA184] mr-1.5 font-mono">Derivation:</strong>
+                    <div className="p-5 sm:p-6 bg-[#161310] border-2 border-[#5A4A3A] rounded-md space-y-2.5 shadow-inner">
+                      <div className="text-white text-sm sm:text-base leading-relaxed font-sans">
+                        <strong className="text-[#A8D49E] mr-2 font-mono text-xs sm:text-sm uppercase tracking-wider block sm:inline font-black">Derivation &amp; Proof:</strong>
                         <MathRenderer content={item.explanation} />
                       </div>
-                      <p className="text-[11px] text-[#70685F] font-mono pt-1">
-                        Reference: {item.syllabusReference}
+                      <p className="text-xs text-[#C5BDB2] font-mono pt-2.5 border-t border-[#332A20] flex items-center gap-2">
+                        <span>Syllabus Reference:</span>
+                        <span className="text-white font-bold bg-[#26201A] px-2 py-0.5 rounded border border-[#44382C]">{item.syllabusReference}</span>
                       </p>
                     </div>
                   </div>
@@ -536,19 +543,19 @@ export default function JuniorResultPage({ params }: PageProps) {
             </section>
 
             {/* E. FOOTER ACTIONS & NOTICE */}
-            <div className="p-6 bg-[#171412] border border-[#2D2620] rounded-sm flex flex-wrap items-center justify-between gap-4">
+            <div className="p-6 sm:p-8 bg-[#211C18] border-2 border-[#544535] rounded-md flex flex-wrap items-center justify-between gap-4 shadow-xl">
               <div>
-                <h4 className="font-serif font-bold text-base text-[#FAF7F2]">
+                <h4 className="font-serif font-extrabold text-lg sm:text-xl text-white">
                   Ready for Cycle #{result.cycleNumber + 1}?
                 </h4>
-                <p className="text-xs text-[#A89F93]">
+                <p className="text-xs sm:text-sm text-[#DDD4C5] mt-1">
                   Next 10 unseen questions guaranteed from the 100-question subject reservoir.
                 </p>
               </div>
 
               <div className="flex items-center gap-3">
                 <Link href="/junior">
-                  <Button variant="secondary" size="md" className="bg-[#201C18] border-[#382E24] text-[#CFC5B4]">
+                  <Button variant="secondary" size="md" className="bg-[#2A231C] border-2 border-[#544535] text-white hover:bg-[#382F26] font-mono font-bold px-4 py-2">
                     Academy Entrance
                   </Button>
                 </Link>
@@ -558,7 +565,7 @@ export default function JuniorResultPage({ params }: PageProps) {
                   <Button
                     variant="primary"
                     size="md"
-                    className="bg-[#2D4A3E] hover:bg-[#395C4D] text-[#FAF7F2] border-[#4A6E5F]"
+                    className="bg-[#2D5A47] hover:bg-[#386D56] text-white font-black font-mono border-2 border-white/30 shadow-lg px-6 py-2.5"
                   >
                     <span>Begin Next 10 Questions</span>
                     <ChevronRight className="w-4 h-4 ml-1.5" />

@@ -267,24 +267,24 @@ export default function ResultReportPage({ params }: PageProps) {
             className="space-y-12"
           >
             {/* Shareable Monograph Cover Plate */}
-            <section className="bg-[#141210] text-[#FAF7F2] border border-[#3E3730] rounded-sm p-7 sm:p-12 relative overflow-hidden">
+            <section className="bg-[#1C1814] text-[#FAF7F2] border-2 border-[#544535] rounded-md p-7 sm:p-12 relative overflow-hidden shadow-2xl ring-1 ring-white/10">
               <div
-                className="absolute inset-4 border border-[#FAF7F2]/12 pointer-events-none"
+                className="absolute inset-4 border border-[#8FA184]/30 pointer-events-none rounded-sm"
                 aria-hidden="true"
               />
 
               <div className="relative z-10 space-y-8">
-                <div className="flex flex-wrap items-center justify-between gap-3 text-[10px] uppercase tracking-[0.26em] text-[#A89F93] border-b border-[#FAF7F2]/12 pb-4">
+                <div className="flex flex-wrap items-center justify-between gap-3 text-xs uppercase tracking-[0.24em] text-[#DDD4C5] border-b-2 border-[#3D3328] pb-4 font-bold">
                   <span>THE UNWRITTEN · SENIOR NARRATIVE DOSSIER</span>
                   <div className="flex items-center gap-3">
                     {claimKey && (
-                      <span className="font-mono text-emerald-400 bg-emerald-950/60 border border-emerald-800/80 px-2 py-0.5 rounded text-[10px]">
+                      <span className="font-mono text-emerald-300 bg-emerald-950/80 border-2 border-emerald-500/80 px-2.5 py-0.5 rounded text-xs font-bold">
                         CLAIM KEY: {claimKey}
                       </span>
                     )}
                     <span>
                       Prepared for{" "}
-                      <strong className="text-[#FAF7F2] font-medium">
+                      <strong className="text-white font-black ml-1 bg-[#28211A] px-2.5 py-0.5 rounded border border-[#4E3E2E]">
                         {report.playerName}
                       </strong>
                     </span>
@@ -292,33 +292,33 @@ export default function ResultReportPage({ params }: PageProps) {
                 </div>
 
                 <div className="space-y-4 py-2">
-                  <p className="text-[11px] uppercase tracking-[0.28em] text-[#C8B28E]">
+                  <p className="text-xs uppercase tracking-[0.28em] text-[#A8D49E] font-extrabold">
                     Primary Narrative Archetype
                   </p>
-                  <h1 className="font-serif text-4xl sm:text-6xl text-[#FAF7F2] tracking-tight leading-none">
+                  <h1 className="font-serif text-4xl sm:text-6xl text-white tracking-tight leading-none font-black drop-shadow-md">
                     {report.archetype}
                   </h1>
-                  <p className="font-serif italic text-lg sm:text-xl text-[#D6CEC0] max-w-2xl">
+                  <p className="font-serif italic text-lg sm:text-2xl text-[#F2E8DC] max-w-2xl font-medium">
                     {report.subtitle}
                   </p>
                 </div>
 
-                <p className="text-sm sm:text-base text-[#E7E0D3] leading-relaxed max-w-2xl font-light">
+                <p className="text-sm sm:text-base text-[#E8DFD3] leading-relaxed max-w-2xl font-normal">
                   {report.interpretation}
                 </p>
 
-                <div className="pt-4 border-t border-[#FAF7F2]/12 flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs">
+                <div className="pt-4 border-t-2 border-[#3D3328] flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs">
                   <div className="space-y-1">
-                    <span className="text-[10px] uppercase tracking-[0.22em] text-[#A89F93] block">
-                      Pattern Confidence · {report.confidence}
+                    <span className="text-xs uppercase tracking-[0.22em] text-[#DDD4C5] block font-bold">
+                      Pattern Confidence · <strong className="text-white">{report.confidence}</strong>
                     </span>
-                    <span className="text-[#D6CEC0] text-xs">
+                    <span className="text-[#C8BFB4] text-xs">
                       {report.confidenceRationale}
                     </span>
                   </div>
-                  <div className="text-[10px] uppercase tracking-[0.22em] text-[#A89F93] shrink-0">
+                  <div className="text-xs uppercase tracking-[0.22em] text-[#DDD4C5] shrink-0 font-medium">
                     Secondary Resonance:{" "}
-                    <span className="text-[#FAF7F2]">
+                    <span className="text-white font-bold bg-[#28211A] px-2 py-0.5 rounded border border-[#4E3E2E]">
                       {report.runnerUpArchetype}
                     </span>
                   </div>

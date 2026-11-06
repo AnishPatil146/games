@@ -52,18 +52,18 @@ export function FormulaReferenceDrawer({
       aria-modal="true"
       aria-label="Formula & Reference Theorem Drawer"
     >
-      <div className="w-full max-w-lg h-full bg-[#1A1715] text-[#FAF7F2] border-l border-[#352F29] shadow-2xl flex flex-col">
+      <div className="w-full max-w-lg h-full bg-[#1C1814] text-[#FAF7F2] border-l-2 border-[#4E4133] shadow-2xl flex flex-col">
         {/* Header */}
-        <div className="p-4 sm:p-5 border-b border-[#2C2621] flex items-center justify-between bg-[#151311]">
+        <div className="p-4 sm:p-5 border-b-2 border-[#3D3328] flex items-center justify-between bg-[#161310]">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-full bg-[#545E4E]/20 border border-[#545E4E]/50 flex items-center justify-center text-[#8FA184]">
+            <div className="w-9 h-9 rounded-full bg-[#2A3F30] border-2 border-[#8FA184] flex items-center justify-center text-[#A8D49E] shadow-sm">
               <BookOpen className="w-4 h-4" />
             </div>
             <div>
-              <h3 className="font-serif font-bold text-base text-[#FAF7F2]">
+              <h3 className="font-serif font-black text-base text-white">
                 Formula &amp; Reference Drawer
               </h3>
-              <p className="text-[11px] text-[#A89F93] font-mono">
+              <p className="text-xs text-[#DDD4C5] font-mono font-semibold">
                 {subjectName} · Reference Compendium
               </p>
             </div>
@@ -71,7 +71,7 @@ export function FormulaReferenceDrawer({
           <button
             type="button"
             onClick={onClose}
-            className="p-1.5 text-[#8A8178] hover:text-[#FAF7F2] hover:bg-[#26211C] rounded-sm transition-colors"
+            className="p-2 text-[#DDD4C5] hover:text-white hover:bg-[#2A231C] rounded-sm transition-colors border border-[#4E4133]"
             title="Close Drawer (Esc)"
           >
             <X className="w-5 h-5" />
@@ -79,15 +79,15 @@ export function FormulaReferenceDrawer({
         </div>
 
         {/* Search Bar */}
-        <div className="p-3 sm:p-4 border-b border-[#2C2621] bg-[#171412]">
+        <div className="p-3.5 sm:p-4 border-b-2 border-[#3D3328] bg-[#1E1915]">
           <div className="relative">
-            <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-[#8A8178]" />
+            <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-[#DDD4C5]" />
             <input
               type="text"
               placeholder="Search theorems, formulas, identities..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full bg-[#12100E] border border-[#2F2923] focus:border-[#8FA184] rounded-sm pl-9 pr-3 py-1.5 text-xs text-[#FAF7F2] placeholder-[#70685F] outline-none font-mono"
+              className="w-full bg-[#161310] border-2 border-[#4E4133] focus:border-[#8FA184] rounded-sm pl-9 pr-3 py-2 text-xs text-white placeholder-[#A89F93] outline-none font-mono font-medium"
             />
           </div>
         </div>
@@ -95,10 +95,10 @@ export function FormulaReferenceDrawer({
         {/* Formula Cards List */}
         <div className="flex-1 overflow-y-auto p-4 sm:p-5 space-y-4">
           {relevantFormulas.length === 0 ? (
-            <div className="text-center py-12 text-[#8A8178] space-y-2">
-              <Lightbulb className="w-8 h-8 mx-auto text-[#545E4E]" />
-              <p className="text-sm">No formulas found for this search.</p>
-              <p className="text-xs text-[#70685F]">
+            <div className="text-center py-12 text-[#DDD4C5] space-y-2">
+              <Lightbulb className="w-10 h-10 mx-auto text-[#8FA184]" />
+              <p className="text-sm font-semibold text-white">No formulas found for this search.</p>
+              <p className="text-xs text-[#DDD4C5]">
                 Try searching general mathematical or scientific keywords.
               </p>
             </div>
@@ -106,42 +106,42 @@ export function FormulaReferenceDrawer({
             relevantFormulas.map((f: FormulaReferenceItem) => (
               <div
                 key={f.id}
-                className="bg-[#201D1A] border border-[#332C26] rounded-sm p-4 space-y-3 hover:border-[#545E4E] transition-colors"
+                className="bg-[#241F1A] border-2 border-[#4E4133] rounded-md p-4 sm:p-5 space-y-3 hover:border-[#8FA184] transition-all shadow-md"
               >
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
-                    <span className="text-[10px] uppercase font-mono px-2 py-0.5 rounded-xs bg-[#2B2520] border border-[#3E352D] text-[#8FA184]">
+                    <span className="text-[10px] uppercase font-mono px-2 py-0.5 rounded-xs bg-[#22402F] border border-[#3F6E51] text-[#9FE3B5] font-black">
                       {f.category}
                     </span>
-                    <h4 className="font-serif font-bold text-sm text-[#FAF7F2]">
+                    <h4 className="font-serif font-black text-sm sm:text-base text-white">
                       {f.title}
                     </h4>
                   </div>
                   <button
                     type="button"
                     onClick={() => handleCopyFormula(f.id, f.latexFormula)}
-                    className="text-[#8A8178] hover:text-[#FAF7F2] p-1 transition-colors"
+                    className="text-[#DDD4C5] hover:text-white p-1.5 transition-colors bg-[#1A1613] rounded border border-[#44382C] hover:border-white"
                     title="Copy LaTeX Formula"
                   >
                     {copiedId === f.id ? (
-                      <Check className="w-3.5 h-3.5 text-[#8FA184]" />
+                      <Check className="w-4 h-4 text-emerald-400" />
                     ) : (
-                      <Copy className="w-3.5 h-3.5" />
+                      <Copy className="w-4 h-4" />
                     )}
                   </button>
                 </div>
 
                 {/* KaTeX Formula Display */}
-                <div className="p-3 rounded-xs bg-[#151311] border border-[#29231D] overflow-x-auto text-center">
+                <div className="p-3.5 rounded-sm bg-[#161310] border-2 border-[#3D3328] overflow-x-auto text-center text-white text-base">
                   <MathRenderer content={`$$${f.latexFormula}$$`} />
                 </div>
 
-                <p className="text-xs text-[#C8BFB4] leading-relaxed">
+                <p className="text-xs sm:text-sm text-white leading-relaxed font-sans">
                   <MathRenderer content={f.explanation} />
                 </p>
 
-                <div className="text-[11px] text-[#A89F93] italic bg-[#181513] border-l-2 border-[#545E4E] pl-2 py-1">
-                  Applicability: {f.applicabilityNote}
+                <div className="text-xs text-[#DDD4C5] italic bg-[#1A1613] border-l-2 border-[#8FA184] pl-3 py-1.5 rounded-r-xs">
+                  <strong className="text-white not-italic mr-1">Applicability:</strong> {f.applicabilityNote}
                 </div>
               </div>
             ))
@@ -149,7 +149,7 @@ export function FormulaReferenceDrawer({
         </div>
 
         {/* Footer */}
-        <div className="p-3 border-t border-[#2C2621] bg-[#12100E] text-center text-[11px] text-[#70685F] font-mono">
+        <div className="p-3 border-t-2 border-[#3D3328] bg-[#161310] text-center text-xs text-[#DDD4C5] font-mono font-medium">
           THE ACADEMY · Reference Compendium v2.0
         </div>
       </div>

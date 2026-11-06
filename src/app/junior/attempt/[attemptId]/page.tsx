@@ -288,16 +288,16 @@ export default function JuniorAttemptPage({ params }: PageProps) {
         <div className="absolute inset-0 bg-gradient-to-b from-[#12100E]/90 via-[#181411]/85 to-[#12100E]/95" />
       </div>
       {/* 1. TOP SCHOLAR EXAMINATION BAR */}
-      <header className="sticky top-0 z-30 bg-[#161311]/95 backdrop-blur-md border-b border-[#2C2621] px-4 sm:px-6 py-2.5">
+      <header className="sticky top-0 z-30 bg-[#181512]/98 backdrop-blur-md border-b-2 border-[#3D3328] px-4 sm:px-6 py-3 shadow-md">
         <div className="max-w-6xl mx-auto flex items-center justify-between gap-4">
           {/* Logo & Subject Info */}
           <div className="flex items-center gap-3">
             <Link
               href="/junior"
-              className="flex items-center gap-2 hover:opacity-85 transition-opacity"
+              className="flex items-center gap-2.5 hover:opacity-90 transition-opacity"
               title="Return to The Academy"
             >
-              <div className="relative w-7 h-7 rounded-full overflow-hidden border border-[#545E4E]/50">
+              <div className="relative w-8 h-8 rounded-full overflow-hidden border-2 border-[#8FA184]/70 shadow-sm">
                 <Image
                   src="/brand/emblem-silence.png"
                   alt="The Unwritten"
@@ -306,22 +306,22 @@ export default function JuniorAttemptPage({ params }: PageProps) {
                 />
               </div>
               <div className="hidden sm:block leading-tight">
-                <span className="font-serif font-bold text-xs tracking-wider text-[#FAF7F2]">
+                <span className="font-serif font-black text-xs tracking-wider text-white">
                   THE ACADEMY
                 </span>
-                <span className="text-[10px] uppercase font-mono text-[#8FA184] block">
+                <span className="text-[10px] uppercase font-mono text-[#A8D49E] block font-bold">
                   Scholar&apos;s Desk
                 </span>
               </div>
             </Link>
 
             {attempt && (
-              <div className="border-l border-[#2E2822] pl-3 ml-1">
+              <div className="border-l-2 border-[#3D3328] pl-3 ml-1">
                 <div className="flex items-center gap-2">
-                  <span className="font-serif font-bold text-sm text-[#FAF7F2]">
+                  <span className="font-serif font-bold text-sm sm:text-base text-white">
                     {attempt.subjectName}
                   </span>
-                  <span className="text-[10px] uppercase font-mono px-1.5 py-0.5 rounded-xs bg-[#241F1A] border border-[#3A332B] text-[#A89F93]">
+                  <span className="text-[10px] uppercase font-mono px-2 py-0.5 rounded-xs bg-[#2D241C] border border-[#544535] text-white font-bold">
                     {attempt.stream}
                   </span>
                 </div>
@@ -331,16 +331,16 @@ export default function JuniorAttemptPage({ params }: PageProps) {
 
           {/* Center Timer & Progress Counter */}
           <div className="flex items-center gap-4">
-            <div className="flex items-center gap-2 bg-[#1C1815] border border-[#2F2922] rounded-sm px-3 py-1">
-              <Clock className="w-3.5 h-3.5 text-[#8FA184]" />
-              <span className="font-mono text-xs font-bold text-[#FAF7F2]">
+            <div className="flex items-center gap-2 bg-[#241E18] border-2 border-[#4E4133] rounded-sm px-3.5 py-1 shadow-sm">
+              <Clock className="w-4 h-4 text-[#A8D49E]" />
+              <span className="font-mono text-xs font-black text-white">
                 {formatTimer(elapsedSeconds)}
               </span>
             </div>
 
             {attempt && (
-              <div className="hidden md:flex items-center gap-1.5 text-xs font-mono text-[#A89F93]">
-                <span className="text-[#8FA184] font-bold">{answeredCount}</span>
+              <div className="hidden md:flex items-center gap-1.5 text-xs font-mono text-[#DDD4C5] font-semibold">
+                <span className="text-emerald-400 font-extrabold">{answeredCount}</span>
                 <span>/</span>
                 <span>{attempt.questions.length} answered</span>
               </div>
@@ -348,17 +348,17 @@ export default function JuniorAttemptPage({ params }: PageProps) {
           </div>
 
           {/* Right Action Buttons */}
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2.5">
             {attempt && (
               <button
                 type="button"
                 onClick={() => setIsFormulaDrawerOpen(true)}
-                className="flex items-center gap-1.5 px-2.5 py-1 text-xs rounded-sm bg-[#221E1A] hover:bg-[#2C2621] border border-[#3A3229] text-[#CFC5B4] hover:text-[#FAF7F2] transition-colors"
+                className="flex items-center gap-1.5 px-3 py-1.5 text-xs rounded-sm bg-[#2A231C] hover:bg-[#342B24] border-2 border-[#4E4133] text-white font-bold transition-colors cursor-pointer shadow-sm"
                 title="Open Formula Drawer (Hotkey: F)"
               >
-                <BookOpen className="w-3.5 h-3.5 text-[#8FA184]" />
+                <BookOpen className="w-3.5 h-3.5 text-[#A8D49E]" />
                 <span className="hidden sm:inline">Formulas</span>
-                <kbd className="hidden md:inline-block text-[9px] font-mono px-1 bg-[#151311] border border-[#352D24] rounded-xs text-[#8A8178]">
+                <kbd className="hidden md:inline-block text-[10px] font-mono px-1.5 py-0.5 bg-[#171310] border border-[#544535] rounded-xs text-[#DDD4C5]">
                   F
                 </kbd>
               </button>
@@ -369,7 +369,7 @@ export default function JuniorAttemptPage({ params }: PageProps) {
               variant="primary"
               size="sm"
               onClick={() => setShowConfirmModal(true)}
-              className="bg-[#2D4A3E] hover:bg-[#395C4D] text-[#FAF7F2] border-[#4A6E5F]"
+              className="bg-[#2D5A47] hover:bg-[#386D56] text-white font-black border-2 border-white/20 shadow-md"
             >
               <Send className="w-3.5 h-3.5 mr-1.5" />
               <span>Submit</span>
@@ -388,12 +388,12 @@ export default function JuniorAttemptPage({ params }: PageProps) {
             </p>
           </div>
         ) : errorMsg && !attempt ? (
-          <div className="max-w-md mx-auto py-24 text-center space-y-5 bg-[#171412] border border-[#2D2620] rounded-sm p-8">
-            <AlertCircle className="w-10 h-10 mx-auto text-[#9E6B68]" />
-            <h1 className="font-serif text-2xl text-[#FAF7F2]">
+          <div className="max-w-md mx-auto py-24 text-center space-y-5 bg-[#1C1814] border-2 border-[#4E4133] rounded-md p-8 shadow-2xl">
+            <AlertCircle className="w-10 h-10 mx-auto text-rose-400" />
+            <h1 className="font-serif text-2xl text-white font-bold">
               Evaluation Session Not Found
             </h1>
-            <p className="text-xs text-[#A89F93] leading-relaxed">{errorMsg}</p>
+            <p className="text-sm text-[#DDD4C5] leading-relaxed">{errorMsg}</p>
             <Link href="/junior">
               <Button size="md" variant="primary">
                 Return to Academy Gate
@@ -403,13 +403,13 @@ export default function JuniorAttemptPage({ params }: PageProps) {
         ) : attempt && currentQuestion ? (
           <div className="space-y-6">
             {/* 10-Question Navigation Palette */}
-            <div className="bg-[#201C18]/95 backdrop-blur-md border border-[#44382C] rounded-sm p-3.5 sm:p-4 flex flex-wrap items-center justify-between gap-3 shadow-lg">
+            <div className="bg-[#211C18]/98 backdrop-blur-md border-2 border-[#544535] rounded-md p-3.5 sm:p-4 flex flex-wrap items-center justify-between gap-3 shadow-xl">
               <div className="flex items-center gap-2">
-                <span className="text-[11px] font-mono uppercase tracking-wider text-[#D4C8B8] font-bold mr-1 hidden sm:inline">
+                <span className="text-xs font-mono uppercase tracking-wider text-white font-extrabold mr-1 hidden sm:inline">
                   Question Palette:
                 </span>
                 <div
-                  className="flex flex-wrap items-center gap-1.5"
+                  className="flex flex-wrap items-center gap-2"
                   role="navigation"
                   aria-label="Question slots"
                 >
@@ -425,12 +425,12 @@ export default function JuniorAttemptPage({ params }: PageProps) {
                           isAnswered ? " (answered)" : " (unanswered)"
                         }`}
                         aria-current={isCurrent ? "step" : undefined}
-                        className={`w-7 h-7 sm:w-8 sm:h-8 text-xs font-mono rounded-sm border transition-all cursor-pointer font-bold ${
+                        className={`w-8 h-8 sm:w-9 sm:h-9 text-xs font-mono rounded-sm transition-all cursor-pointer font-black ${
                           isCurrent
-                            ? "bg-[#8FA184] text-[#12100E] border-2 border-white shadow-md scale-105"
+                            ? "bg-[#8FA184] text-[#12100E] border-2 border-white shadow-[0_0_12px_rgba(255,255,255,0.4)] scale-110"
                             : isAnswered
-                            ? "bg-[#2D4536] text-[#A3B897] border border-[#4E755D]"
-                            : "bg-[#2C241E] text-[#E0D7CC] border border-[#4A3D32] hover:border-[#8FA184] hover:text-white"
+                            ? "bg-[#254A34] text-[#A6E8BA] border-2 border-[#4E8260] hover:scale-105"
+                            : "bg-[#2D2620] text-white border-2 border-[#544535] hover:border-white hover:scale-105"
                         }`}
                       >
                         {String(idx + 1).padStart(2, "0")}
@@ -440,14 +440,14 @@ export default function JuniorAttemptPage({ params }: PageProps) {
                 </div>
               </div>
 
-              <div className="flex items-center gap-3 text-xs font-mono text-[#D4C8B8]">
+              <div className="flex items-center gap-3 text-xs font-mono">
                 <div className="flex items-center gap-1.5">
-                  <span className="w-2.5 h-2.5 rounded-xs bg-[#2D4536] border border-[#4E755D]" />
-                  <span className="text-[11px] text-[#A3B897] font-semibold">Answered</span>
+                  <span className="w-3 h-3 rounded-xs bg-[#254A34] border border-[#4E8260]" />
+                  <span className="text-xs text-[#A6E8BA] font-bold">Answered</span>
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <span className="w-2.5 h-2.5 rounded-xs bg-[#2C241E] border border-[#4A3D32]" />
-                  <span className="text-[11px] text-[#D4C8B8]">Pending</span>
+                  <span className="w-3 h-3 rounded-xs bg-[#2D2620] border border-[#544535]" />
+                  <span className="text-xs text-[#DDD4C5] font-semibold">Pending</span>
                 </div>
               </div>
             </div>
@@ -458,31 +458,31 @@ export default function JuniorAttemptPage({ params }: PageProps) {
               initial={prefersReducedMotion ? false : { opacity: 0, y: 6 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.2 }}
-              className="bg-[#1C1814]/95 backdrop-blur-md border border-[#4A3E31] rounded-sm p-6 sm:p-8 space-y-6 shadow-2xl ring-1 ring-white/5"
+              className="bg-[#1E1A16]/98 backdrop-blur-md border-2 border-[#60503E] rounded-md p-6 sm:p-8 space-y-6 shadow-2xl ring-1 ring-white/10"
             >
               {/* Question Header & Syllabus Metadata */}
-              <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[#3D3328] pb-4">
-                <div className="space-y-1">
-                  <div className="flex items-center gap-2">
-                    <span className="text-[10px] uppercase font-mono tracking-wider px-2.5 py-0.5 rounded-xs bg-[#2D4536] border border-[#4E755D] text-[#A3B897] font-bold">
+              <div className="flex flex-wrap items-center justify-between gap-3 border-b-2 border-[#3D3328] pb-4">
+                <div className="space-y-1.5">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="text-xs uppercase font-mono tracking-wider px-3 py-1 rounded-sm bg-[#22402F] border border-[#3F6E51] text-[#9FE3B5] font-black">
                       Question {currentIndex + 1} of {attempt.questions.length}
                     </span>
-                    <span className="text-sm font-semibold text-[#FAF7F2]">
+                    <span className="text-base font-bold text-white">
                       Chapter {currentQuestion.chapterNumber}: {currentQuestion.chapter}
                     </span>
                   </div>
-                  <div className="text-xs text-[#CFC5B4] font-mono">
-                    Topic: <span className="text-[#FAF7F2] font-semibold">{currentQuestion.topic}</span>
+                  <div className="text-xs text-[#DDD4C5] font-mono">
+                    Topic: <span className="text-white font-bold">{currentQuestion.topic}</span>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-2">
-                  <span className={`text-[10px] uppercase tracking-wider font-mono px-2.5 py-1 rounded-xs font-bold border ${
+                  <span className={`text-xs uppercase tracking-wider font-mono px-3 py-1 rounded-sm font-black border-2 ${
                     currentQuestion.difficulty === "Hard"
-                      ? "bg-amber-950/60 border-amber-600/50 text-amber-300"
+                      ? "bg-amber-950/80 border-amber-500 text-amber-200"
                       : currentQuestion.difficulty === "Medium"
-                      ? "bg-blue-950/60 border-blue-600/50 text-blue-300"
-                      : "bg-emerald-950/60 border-emerald-600/50 text-emerald-300"
+                      ? "bg-blue-950/80 border-blue-500 text-blue-200"
+                      : "bg-emerald-950/80 border-emerald-500 text-emerald-200"
                   }`}>
                     {currentQuestion.difficulty}
                   </span>
@@ -490,13 +490,13 @@ export default function JuniorAttemptPage({ params }: PageProps) {
               </div>
 
               {/* Question Text with KaTeX Equations */}
-              <div className="text-lg sm:text-xl font-serif text-[#FFFFFF] leading-relaxed tracking-wide font-normal">
+              <div className="text-lg sm:text-xl font-serif text-white leading-relaxed tracking-wide font-normal py-1">
                 <MathRenderer content={currentQuestion.questionText} />
               </div>
 
               {/* Diagram Rendering (if present) */}
               {currentQuestion.diagramType && (
-                <div className="p-4 bg-[#14110E] border border-[#3D3328] rounded-sm">
+                <div className="p-4 bg-[#14110E] border-2 border-[#4E4133] rounded-md">
                   <JuniorInteractiveDiagram type={currentQuestion.diagramType} />
                 </div>
               )}
@@ -523,29 +523,29 @@ export default function JuniorAttemptPage({ params }: PageProps) {
                       role="radio"
                       aria-checked={isSelected}
                       onClick={() => handleSelectOption(opt.key)}
-                      className={`w-full text-left p-4 sm:p-5 rounded-sm border transition-all flex items-start gap-4 cursor-pointer group shadow-md ${
+                      className={`w-full text-left p-4 sm:p-5 rounded-md border-2 transition-all flex items-start gap-4 cursor-pointer group shadow-lg ${
                         isRevealedCorrect
-                          ? "bg-[#1E3E2C] border-2 border-emerald-400 text-white"
+                          ? "bg-[#163824] border-emerald-400 text-white shadow-[0_0_20px_rgba(52,211,153,0.4)]"
                           : isRevealedWrong
-                          ? "bg-[#451F1F] border-2 border-rose-500 text-white"
+                          ? "bg-[#421A1A] border-rose-400 text-white shadow-[0_0_20px_rgba(244,63,94,0.4)]"
                           : isSelected
-                          ? "bg-[#2A231C] border-2 border-[#8FA184] text-white shadow-lg ring-1 ring-[#8FA184]"
-                          : "bg-[#221C18] hover:bg-[#2C241E] text-[#FAF7F2] border border-[#44372A] hover:border-[#8FA184]"
+                          ? "bg-[#2B281F] border-emerald-400 text-white shadow-[0_0_20px_rgba(52,211,153,0.3)] ring-2 ring-emerald-400/50"
+                          : "bg-[#241E19] hover:bg-[#302720] text-white border-[#544535] hover:border-[#8FA184]"
                       }`}
                     >
                       <span
-                        className={`w-8 h-8 rounded-sm border font-mono text-xs font-bold flex items-center justify-center shrink-0 mt-0.5 transition-colors ${
+                        className={`w-9 h-9 rounded-sm border-2 font-mono text-sm font-black flex items-center justify-center shrink-0 mt-0.5 transition-all shadow-sm ${
                           isSelected
-                            ? "border-[#8FA184] bg-[#8FA184] text-[#12100E] font-black"
-                            : "border-[#4A3D30] bg-[#2E2620] text-[#D4C8B8] group-hover:border-[#8FA184] group-hover:text-white"
+                            ? "border-white bg-emerald-400 text-[#12100E]"
+                            : "border-[#6E5D4A] bg-[#332A22] text-white group-hover:border-[#8FA184] group-hover:bg-[#40352A]"
                         }`}
                       >
                         {opt.key}
                       </span>
-                      <span className="text-base sm:text-lg leading-relaxed flex-1 text-[#FFFFFF]">
+                      <span className="text-base sm:text-lg leading-relaxed flex-1 text-white font-medium">
                         <MathRenderer content={opt.text} />
                       </span>
-                      <span className="hidden sm:inline-block text-[10px] font-mono text-[#A89F93] opacity-0 group-hover:opacity-100 transition-opacity">
+                      <span className="hidden sm:inline-block text-xs font-mono text-[#DDD4C5] opacity-0 group-hover:opacity-100 transition-opacity font-semibold">
                         Press [{opt.key}]
                       </span>
                     </button>
@@ -555,25 +555,25 @@ export default function JuniorAttemptPage({ params }: PageProps) {
 
               {/* Instant Guided Feedback (if enabled) */}
               {currentFeedback && (
-                <div className="p-4 sm:p-5 bg-[#14120F] border border-[#382F24] rounded-sm space-y-2">
+                <div className="p-5 sm:p-6 bg-[#161310] border-2 border-[#544535] rounded-md space-y-2.5 shadow-inner">
                   <div className="flex items-center gap-2 text-xs font-bold uppercase font-mono tracking-wider">
                     {currentSelectedKey === currentFeedback.correctOptionKey ? (
                       <>
-                        <CheckCircle2 className="w-4 h-4 text-[#8FA184]" />
-                        <span className="text-[#8FA184]">
+                        <CheckCircle2 className="w-5 h-5 text-emerald-400" />
+                        <span className="text-emerald-300 font-black">
                           Correct · Option {currentFeedback.correctOptionKey} Validated
                         </span>
                       </>
                     ) : (
                       <>
-                        <XCircle className="w-4 h-4 text-[#C96B68]" />
-                        <span className="text-[#C96B68]">
+                        <XCircle className="w-5 h-5 text-rose-400" />
+                        <span className="text-rose-300 font-black">
                           Incorrect · Master Key: Option {currentFeedback.correctOptionKey}
                         </span>
                       </>
                     )}
                   </div>
-                  <div className="text-xs sm:text-sm text-[#C8BFB4] leading-relaxed">
+                  <div className="text-sm sm:text-base text-white leading-relaxed font-sans">
                     <MathRenderer content={currentFeedback.explanation} />
                   </div>
                 </div>
@@ -588,14 +588,14 @@ export default function JuniorAttemptPage({ params }: PageProps) {
                 size="md"
                 disabled={currentIndex === 0}
                 onClick={() => navigateSlot(currentIndex - 1)}
-                className="border-[#4E4133] text-[#FAF7F2] hover:text-white bg-[#28221C] hover:bg-[#342C24] font-mono font-semibold"
+                className="border-2 border-[#544535] text-white hover:text-white bg-[#2A231C] hover:bg-[#362D24] font-mono font-bold px-5 py-2.5 shadow-md"
               >
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Previous Question
               </Button>
 
-              <div className="flex items-center gap-2 text-[11px] font-mono text-[#D4C8B8] hidden md:flex font-medium">
-                <Keyboard className="w-3.5 h-3.5" />
+              <div className="flex items-center gap-2 text-xs font-mono text-[#DDD4C5] hidden md:flex font-semibold">
+                <Keyboard className="w-4 h-4 text-[#8FA184]" />
                 <span>Shortcuts: [1-4 / A-D] to pick · [← / →] to navigate · [F] formulas</span>
               </div>
 
@@ -606,7 +606,7 @@ export default function JuniorAttemptPage({ params }: PageProps) {
                     variant="primary"
                     size="md"
                     onClick={() => navigateSlot(currentIndex + 1)}
-                    className="bg-[#8FA184] hover:bg-[#A3B897] text-[#12100E] font-bold font-mono border-transparent shadow-md"
+                    className="bg-[#8FA184] hover:bg-[#A3B897] text-[#12100E] font-black font-mono border-2 border-white/50 shadow-xl px-6 py-2.5"
                   >
                     <span>Next Question</span>
                     <ArrowRight className="w-4 h-4 ml-2" />
@@ -617,7 +617,7 @@ export default function JuniorAttemptPage({ params }: PageProps) {
                     variant="primary"
                     size="md"
                     onClick={() => setShowConfirmModal(true)}
-                    className="bg-[#8FA184] hover:bg-[#A3B897] text-[#12100E] font-bold font-mono border-transparent shadow-lg"
+                    className="bg-[#2D5A47] hover:bg-[#386D56] text-white font-black font-mono border-2 border-white/50 shadow-xl px-6 py-2.5"
                   >
                     <Send className="w-4 h-4 mr-2" />
                     Review &amp; Submit Folio
@@ -647,30 +647,30 @@ export default function JuniorAttemptPage({ params }: PageProps) {
           aria-labelledby="submit-dialog-title"
           className="fixed inset-0 z-50 bg-black/75 backdrop-blur-xs flex items-center justify-center p-4 sm:p-6"
         >
-          <div className="max-w-md w-full bg-[#181512] text-[#FAF7F2] border border-[#3E342A] rounded-sm p-6 sm:p-8 space-y-5 shadow-2xl">
+          <div className="max-w-md w-full bg-[#1C1814] text-[#FAF7F2] border-2 border-[#544535] rounded-md p-6 sm:p-8 space-y-5 shadow-2xl">
             <div className="space-y-2">
-              <p className="text-[10px] uppercase tracking-[0.24em] text-[#8FA184] font-mono font-bold">
+              <p className="text-xs uppercase tracking-[0.24em] text-[#A8D49E] font-mono font-black">
                 The Academy Evaluation
               </p>
               <h2
                 id="submit-dialog-title"
-                className="font-serif text-2xl text-[#FAF7F2]"
+                className="font-serif text-2xl text-white font-extrabold"
               >
                 Submit 10-Question Folio?
               </h2>
-              <p className="text-xs text-[#A89F93] leading-relaxed">
+              <p className="text-sm text-[#DDD4C5] leading-relaxed">
                 You have marked{" "}
-                <strong className="text-[#8FA184] font-mono">{answeredCount}</strong> of{" "}
-                <strong className="text-[#FAF7F2] font-mono">{attempt.questions.length}</strong>{" "}
-                questions in <strong className="text-[#FAF7F2]">{attempt.subjectName}</strong>.
+                <strong className="text-emerald-400 font-mono font-black">{answeredCount}</strong> of{" "}
+                <strong className="text-white font-mono font-black">{attempt.questions.length}</strong>{" "}
+                questions in <strong className="text-white font-bold">{attempt.subjectName}</strong>.
               </p>
             </div>
 
             {unansweredCount > 0 && (
-              <div className="p-3.5 bg-[#3D1E1E]/60 border border-[#8A4E4E] rounded-sm flex items-start gap-2.5 text-xs text-[#FAF7F2]">
-                <AlertCircle className="w-4 h-4 text-[#C96B68] shrink-0 mt-0.5" />
-                <span>
-                  {unansweredCount} question{unansweredCount > 1 ? "s" : ""} remain
+              <div className="p-4 bg-[#421A1A] border-2 border-rose-400 rounded-sm flex items-start gap-3 text-xs text-white shadow-md">
+                <AlertCircle className="w-5 h-5 text-rose-300 shrink-0 mt-0.5" />
+                <span className="leading-relaxed">
+                  <strong className="font-bold text-rose-200">{unansweredCount} question{unansweredCount > 1 ? "s" : ""}</strong> remain
                   unanswered. Unanswered questions yield 0 marks.
                 </span>
               </div>
@@ -683,7 +683,7 @@ export default function JuniorAttemptPage({ params }: PageProps) {
                 size="sm"
                 disabled={isSubmitting}
                 onClick={() => setShowConfirmModal(false)}
-                className="bg-[#241F1A] border-[#382E24] text-[#CFC5B4]"
+                className="bg-[#2A231C] border-2 border-[#544535] text-white hover:bg-[#342B24] font-bold"
               >
                 Continue Reviewing
               </Button>
@@ -693,7 +693,7 @@ export default function JuniorAttemptPage({ params }: PageProps) {
                 size="sm"
                 disabled={isSubmitting}
                 onClick={() => void handleConfirmSubmit()}
-                className="bg-[#2D4A3E] hover:bg-[#395C4D] text-[#FAF7F2] border-[#4A6E5F]"
+                className="bg-[#2D5A47] hover:bg-[#386D56] text-white font-black border-2 border-white/20 shadow-md"
               >
                 {isSubmitting ? "Calculating Evaluation..." : "Confirm & Submit"}
               </Button>
