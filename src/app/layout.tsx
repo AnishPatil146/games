@@ -14,14 +14,20 @@ const sansFont = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "THE UNWRITTEN — Every Choice Leaves a Trace",
+  title: "THE UNWRITTEN — Where Silence Speaks",
   description:
-    "Six chapters. Unexpected decisions. A story that becomes your own. An interactive narrative experience.",
+    "An atmospheric psychological mystery and competitive deduction experience. Choose your journey: Junior Academy, Senior Solo Investigation, or Alliance Co-op.",
+  icons: {
+    icon: "/brand/favicon.png",
+    shortcut: "/brand/favicon.png",
+    apple: "/brand/logo-header.png",
+  },
   openGraph: {
-    title: "THE UNWRITTEN",
+    title: "THE UNWRITTEN — Where Silence Speaks",
     description:
-      "Every choice leaves a trace. Six chapters. Unexpected decisions. A story that becomes your own.",
+      "Where silence speaks. Psychological mystery, high-stakes co-op deduction, and rigorous academic reasoning.",
     type: "website",
+    images: ["/brand/logo-circular.png"],
   },
 };
 

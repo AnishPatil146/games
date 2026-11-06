@@ -83,6 +83,16 @@ export function verifyPassword(
   }
 }
 
+// Static embedded fallback credentials for serverless environments
+const STATIC_SEEDED_CREDENTIALS: AdminCredentialsRecord = {
+  email: AUTHORIZED_ADMIN_EMAIL,
+  role: "SUPER_ADMIN",
+  salt: "09e47ceb9e8094b9f3ffdfe78593c7bbf7be7629d3f173c948cb2dbd81f25500",
+  hash: "693966939e1ce387391f8b9db8f0234608b61d5a4656661969a865dba8368b1371898004937976a60fb722c64d5dee5d1a019aef02a8eb37012da9ad126c98f4",
+  iterations: 100000,
+  updatedAt: "2026-11-06T06:59:38.087Z",
+};
+
 /**
  * Reads local or bundled administrator credentials record.
  */
@@ -103,8 +113,11 @@ export function getStoredAdminCredentials(): AdminCredentialsRecord | null {
         }
       }
     }
-    return null;
+    // Return static embedded credentials if filesystem is unavailable on serverless
+    inMemoryAdminCredentials = STATIC_SEEDED_CREDENTIALS;
+    return STATIC_SEEDED_CREDENTIALS;
   } catch {
+    inMemoryAdminCredentials = inMemoryAdminCredentials || STATIC_SEEDED_CREDENTIALS;
     return inMemoryAdminCredentials;
   }
 }
