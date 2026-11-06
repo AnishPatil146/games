@@ -85,6 +85,12 @@ export default function SoloCampaignPage() {
               Re-enter Chamber 01
             </button>
           </div>
+
+          <div className="mt-8 pt-4 border-t border-white/10 text-center font-mono text-[10px] uppercase tracking-[0.2em] text-[#8A8178]">
+            <span>Created by Anish Patil</span>
+            <span className="mx-2">•</span>
+            <span>Human Vision × AI-Assisted Worldbuilding</span>
+          </div>
         </div>
       </div>
     );

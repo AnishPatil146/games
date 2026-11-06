@@ -15,6 +15,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import { useGameSession } from "@/lib/useGameSession";
+import { CreatorIdentitySection } from "@/components/common/CreatorIdentitySection";
 
 export type CharacterIdentityId = "junior" | "senior";
 
@@ -430,19 +431,30 @@ export function CharacterSelectScreen() {
             </div>
           </div>
         </motion.div>
+
+        {/* 5. INDEPENDENT CREATOR IDENTITY & AI DESIGN RECOGNITION */}
+        <CreatorIdentitySection />
       </main>
 
-      {/* 5. MINIMAL COLOPHON FOOTER */}
-      <footer className="relative z-20 w-full max-w-7xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-[10px] font-mono uppercase tracking-[0.25em] text-zinc-500">
-        <div className="flex items-center gap-2">
-          <span>THE UNWRITTEN ARCHITECTURE</span>
+      {/* 6. MINIMAL COLOPHON FOOTER */}
+      <footer className="relative z-20 w-full max-w-7xl mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[10px] font-mono uppercase tracking-[0.2em] text-zinc-400 border-t border-white/10 mt-6">
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="text-[#FAF7F2] font-semibold">THE UNWRITTEN</span>
           <span>•</span>
-          <span>AUTONOMOUS GAMEPLAY &amp; REASONING SYSTEM</span>
+          <span className="text-[#8FA184] font-bold">Created by Anish Patil</span>
+          <span>•</span>
+          <span>Human Vision × AI-Assisted Architecture</span>
         </div>
         <div className="flex items-center gap-4">
-          <Link href="/privacy" className="hover:text-zinc-300 transition-colors">
+          <Link href="/privacy" className="hover:text-zinc-200 transition-colors">
             Privacy &amp; Data Governance
           </Link>
+          <a
+            href="mailto:anishpatil146@gmail.com"
+            className="hover:text-zinc-200 transition-colors lowercase tracking-normal font-mono"
+          >
+            anishpatil146@gmail.com
+          </a>
         </div>
       </footer>
     </div>

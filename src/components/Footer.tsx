@@ -10,14 +10,16 @@ export function Footer() {
               THE UNWRITTEN
             </span>
             <span className="text-[#DDD4C5]">/</span>
-            <span className="text-[11px] uppercase tracking-[0.18em] text-[#8A8178]">
-              An experiment in human curiosity.
+            <span className="text-[11px] uppercase tracking-[0.18em] text-[#545E4E] font-bold">
+              Created by Anish Patil
+            </span>
+            <span className="text-[#DDD4C5] hidden sm:inline">•</span>
+            <span className="text-[11px] font-mono text-[#8A8178] hidden sm:inline">
+              Human Vision × AI-Assisted Architecture
             </span>
           </div>
           <p className="text-[11px] text-[#8A8178] leading-relaxed max-w-xl">
-            Senior Narrative Monograph &amp; Junior Class 11 Reasoning Studio.
-            All reflections and profiles are game-generated interpretations — not
-            clinical, psychological, or board-endorsed assessments.
+            An independently conceived and developed interactive experience. Designed with AI as a creative and engineering partner. All narrative profiles and academic evaluations are authentic system interpretations.
           </p>
         </div>
 

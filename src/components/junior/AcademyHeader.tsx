@@ -74,8 +74,8 @@ export function AcademyHeader({
               <span className="font-serif italic font-bold tracking-wider text-sm text-[#FAF7F2]">
                 THE ACADEMY
               </span>
-              <span className="hidden sm:inline-block text-[10px] uppercase tracking-[0.2em] text-[#8FA184] ml-2">
-                Reasoning &amp; Entrance Studio
+              <span className="hidden sm:inline-block text-[10px] uppercase tracking-[0.16em] text-[#8FA184] ml-2 font-mono">
+                By Anish Patil · AI-Assisted Architecture
               </span>
             </div>
           </Link>

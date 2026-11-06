@@ -63,12 +63,48 @@ export default function AdminSettingsPage() {
     <div className="space-y-8">
       <header className="border-b border-[#DDD4C5] pb-5">
         <p className="text-[10px] uppercase tracking-[0.26em] text-[#545E4E] font-semibold">
-          Security, Governance &amp; Audit
+          Security, Governance &amp; Creator Provenance
         </p>
         <h1 className="font-serif text-3xl sm:text-4xl text-[#1C1917] mt-1">
-          Platform Settings
+          Platform Architecture &amp; Settings
         </h1>
       </header>
+
+      {/* Creator Provenance & AI-Assisted Architecture Banner */}
+      <section className="p-6 bg-[#FAF7F2] border border-[#DDD4C5] rounded-sm space-y-3">
+        <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[#E5DEC9] pb-3">
+          <div className="space-y-0.5">
+            <span className="text-[10px] uppercase font-mono tracking-[0.22em] text-[#545E4E] font-bold block">
+              Independent Creation Provenance
+            </span>
+            <h2 className="font-serif text-xl font-bold text-[#1C1917]">
+              THE UNWRITTEN — Built by Anish Patil
+            </h2>
+          </div>
+          <span className="px-3 py-1 bg-[#8FA184]/15 border border-[#8FA184]/40 text-[#545E4E] rounded text-xs font-mono font-bold">
+            Human Vision × AI-Assisted Engineering
+          </span>
+        </div>
+
+        <p className="text-xs text-[#57524C] leading-relaxed max-w-3xl">
+          THE UNWRITTEN was conceived, designed, and developed independently by Anish Patil, utilizing artificial intelligence as an advanced creative and engineering partner for rapid visual iteration, LaTeX typesetting, and architecture verification. All game logic, curriculum mapping, and telemetry state machines are original systems.
+        </p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 text-xs font-mono">
+          <div className="p-3 bg-white border border-[#DDD4C5] rounded space-y-0.5">
+            <span className="text-[9px] uppercase text-[#8A8178] block">Lead Architect</span>
+            <span className="font-bold text-[#1C1917]">Anish Patil</span>
+          </div>
+          <div className="p-3 bg-white border border-[#DDD4C5] rounded space-y-0.5">
+            <span className="text-[9px] uppercase text-[#8A8178] block">Methodology</span>
+            <span className="font-bold text-[#1C1917]">Independent · AI-Assisted</span>
+          </div>
+          <div className="p-3 bg-white border border-[#DDD4C5] rounded space-y-0.5">
+            <span className="text-[9px] uppercase text-[#8A8178] block">Pillars</span>
+            <span className="font-bold text-[#1C1917]">Senior Solo &amp; Junior Academy</span>
+          </div>
+        </div>
+      </section>
 
       {/* Curator Access & Backend Status */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
