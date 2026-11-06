@@ -366,10 +366,10 @@ export default function JuniorAttemptPage({ params }: PageProps) {
 
             <Button
               type="button"
-              variant="primary"
+              variant="academy"
               size="sm"
               onClick={() => setShowConfirmModal(true)}
-              className="bg-[#2D5A47] hover:bg-[#386D56] text-white font-black border-2 border-white/20 shadow-md"
+              className="border-2 border-white/20 shadow-md font-black"
             >
               <Send className="w-3.5 h-3.5 mr-1.5" />
               <span>Submit</span>
@@ -581,21 +581,25 @@ export default function JuniorAttemptPage({ params }: PageProps) {
             </motion.section>
 
             {/* Navigation & Controls Dock */}
-            <div className="flex flex-wrap items-center justify-between gap-4 pt-2">
+            <div className="flex flex-wrap items-center justify-between gap-4 pt-3 pb-6">
               <Button
                 type="button"
-                variant="secondary"
+                variant="custom"
                 size="md"
                 disabled={currentIndex === 0}
                 onClick={() => navigateSlot(currentIndex - 1)}
-                className="border-2 border-[#544535] text-white hover:text-white bg-[#2A231C] hover:bg-[#362D24] font-mono font-bold px-5 py-2.5 shadow-md"
+                className={`font-mono font-bold px-5 py-2.5 rounded-sm transition-all border-2 flex items-center ${
+                  currentIndex === 0
+                    ? "bg-[#1E1915] border-[#382E24] text-[#70685F] cursor-not-allowed opacity-40"
+                    : "bg-[#2A231C] border-[#6E5943] text-white hover:bg-[#382F26] hover:border-white shadow-md cursor-pointer"
+                }`}
               >
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Previous Question
               </Button>
 
-              <div className="flex items-center gap-2 text-xs font-mono text-[#DDD4C5] hidden md:flex font-semibold">
-                <Keyboard className="w-4 h-4 text-[#8FA184]" />
+              <div className="flex items-center gap-2 text-xs font-mono text-white bg-[#26201B] border-2 border-[#544535] px-3.5 py-1.5 rounded-full hidden md:flex font-medium shadow-sm">
+                <Keyboard className="w-4 h-4 text-[#A8D49E]" />
                 <span>Shortcuts: [1-4 / A-D] to pick · [← / →] to navigate · [F] formulas</span>
               </div>
 
@@ -603,10 +607,10 @@ export default function JuniorAttemptPage({ params }: PageProps) {
                 {currentIndex < attempt.questions.length - 1 ? (
                   <Button
                     type="button"
-                    variant="primary"
+                    variant="academy-action"
                     size="md"
                     onClick={() => navigateSlot(currentIndex + 1)}
-                    className="bg-[#8FA184] hover:bg-[#A3B897] text-[#12100E] font-black font-mono border-2 border-white/50 shadow-xl px-6 py-2.5"
+                    className="font-black font-mono border-2 border-white/60 shadow-xl px-6 py-2.5 text-sm"
                   >
                     <span>Next Question</span>
                     <ArrowRight className="w-4 h-4 ml-2" />
@@ -614,10 +618,10 @@ export default function JuniorAttemptPage({ params }: PageProps) {
                 ) : (
                   <Button
                     type="button"
-                    variant="primary"
+                    variant="academy"
                     size="md"
                     onClick={() => setShowConfirmModal(true)}
-                    className="bg-[#2D5A47] hover:bg-[#386D56] text-white font-black font-mono border-2 border-white/50 shadow-xl px-6 py-2.5"
+                    className="font-black font-mono border-2 border-white/40 shadow-xl px-6 py-2.5 text-sm"
                   >
                     <Send className="w-4 h-4 mr-2" />
                     Review &amp; Submit Folio
@@ -679,21 +683,19 @@ export default function JuniorAttemptPage({ params }: PageProps) {
             <div className="flex items-center justify-end gap-3 pt-3">
               <Button
                 type="button"
-                variant="secondary"
+                variant="academy-secondary"
                 size="sm"
                 disabled={isSubmitting}
                 onClick={() => setShowConfirmModal(false)}
-                className="bg-[#2A231C] border-2 border-[#544535] text-white hover:bg-[#342B24] font-bold"
               >
                 Continue Reviewing
               </Button>
               <Button
                 type="button"
-                variant="primary"
+                variant="academy"
                 size="sm"
                 disabled={isSubmitting}
                 onClick={() => void handleConfirmSubmit()}
-                className="bg-[#2D5A47] hover:bg-[#386D56] text-white font-black border-2 border-white/20 shadow-md"
               >
                 {isSubmitting ? "Calculating Evaluation..." : "Confirm & Submit"}
               </Button>

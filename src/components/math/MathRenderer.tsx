@@ -173,7 +173,7 @@ export function MathRenderer({
     return tokens.map((token, idx) => {
       if (token.type === "text") {
         return (
-          <span key={`text-${idx}`} className="align-baseline">
+          <span key={`text-${idx}`} className="align-baseline text-inherit">
             {token.value}
           </span>
         );
@@ -196,11 +196,11 @@ export function MathRenderer({
         return (
           <React.Fragment key={`math-${idx}`}>
             <span
-              className={`katex-math-render inline-block max-w-full overflow-x-auto overflow-y-hidden align-middle scrollbar-thin scrollbar-thumb-zinc-700 mx-0.5`}
+              className={`katex-math-render inline-block max-w-full overflow-x-auto overflow-y-hidden align-middle scrollbar-thin scrollbar-thumb-zinc-700 mx-0.5 text-inherit`}
               dangerouslySetInnerHTML={{ __html: html }}
             />
             {trailingPunctuation && (
-              <span className="align-baseline">{trailingPunctuation}</span>
+              <span className="align-baseline text-inherit">{trailingPunctuation}</span>
             )}
           </React.Fragment>
         );
@@ -220,7 +220,7 @@ export function MathRenderer({
   const Wrapper = inline ? "span" : "div";
 
   return (
-    <Wrapper className={`math-rendered-block select-text ${className}`}>
+    <Wrapper className={`math-rendered-block select-text text-inherit ${className}`}>
       {renderedElements}
     </Wrapper>
   );

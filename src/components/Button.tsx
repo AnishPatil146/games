@@ -2,8 +2,18 @@
 
 import React from "react";
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "secondary" | "subtle" | "outline" | "danger" | "ivory";
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  variant?:
+    | "primary"
+    | "secondary"
+    | "subtle"
+    | "outline"
+    | "danger"
+    | "ivory"
+    | "academy"
+    | "academy-secondary"
+    | "academy-action"
+    | "custom";
   size?: "sm" | "md" | "lg";
   children: React.ReactNode;
 }
@@ -17,7 +27,7 @@ export function Button({
   ...props
 }: ButtonProps) {
   const baseStyles =
-    "inline-flex items-center justify-center font-medium transition-all duration-200 cursor-pointer select-none active:scale-[0.99] disabled:opacity-45 disabled:pointer-events-none disabled:active:scale-100 rounded-sm focus-visible:outline-2 focus-visible:outline-[#545E4E] focus-visible:outline-offset-2";
+    "inline-flex items-center justify-center font-medium transition-all duration-200 cursor-pointer select-none active:scale-[0.99] disabled:opacity-40 disabled:cursor-not-allowed disabled:pointer-events-none disabled:active:scale-100 rounded-sm focus-visible:outline-2 focus-visible:outline-[#8FA184] focus-visible:outline-offset-2";
 
   const sizeStyles = {
     sm: "px-3.5 py-2 text-[11px] tracking-[0.16em] uppercase",
@@ -38,6 +48,13 @@ export function Button({
       "bg-transparent text-[#57524C] hover:text-[#1C1917] hover:bg-[#F3EDE2]",
     danger:
       "bg-[#9E6B68] text-[#FAF7F2] border border-[#9E6B68] hover:bg-[#875855]",
+    academy:
+      "bg-[#2D5A47] text-white hover:bg-[#386D56] border-2 border-[#4E826B] shadow-md font-bold",
+    "academy-secondary":
+      "bg-[#26201B] text-white hover:bg-[#342B24] border-2 border-[#544535] shadow-sm font-semibold",
+    "academy-action":
+      "bg-[#8FA184] text-[#12100E] hover:bg-[#A3B897] font-black border-2 border-white/60 shadow-lg",
+    custom: "",
   };
 
   return (

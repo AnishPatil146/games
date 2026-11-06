@@ -150,10 +150,10 @@ export default function JuniorResultPage({ params }: PageProps) {
           <div className="flex items-center gap-3">
             <Button
               type="button"
-              variant="secondary"
+              variant="academy-secondary"
               size="sm"
               onClick={() => void handleShare()}
-              className="bg-[#26201B] border-2 border-[#4E4133] text-white hover:bg-[#342B24] font-semibold"
+              className="font-semibold shadow-sm"
             >
               {copied ? (
                 <>
@@ -173,8 +173,9 @@ export default function JuniorResultPage({ params }: PageProps) {
                 href={`/junior?stream=${result.stream}&subject=${result.subjectSlug}`}
               >
                 <Button
+                  variant="academy"
                   size="sm"
-                  className="bg-[#2D5A47] hover:bg-[#386D56] text-white font-bold border-2 border-white/20 shadow-md"
+                  className="font-bold border-2 border-white/20 shadow-md"
                 >
                   <RotateCcw className="w-3.5 h-3.5 mr-1.5" />
                   Next 10 Questions
@@ -458,15 +459,15 @@ export default function JuniorResultPage({ params }: PageProps) {
                 </div>
               </div>
 
-              <div className="space-y-5">
+              <div className="space-y-6">
                 {filteredQuestions.map((item) => (
                   <div
                     key={item.questionId}
-                    className="p-6 sm:p-7 bg-[#1F1A16] border-2 border-[#544535] rounded-md space-y-5 shadow-xl"
+                    className="p-6 sm:p-8 bg-[#201C18] border-2 border-[#5C4D3C] rounded-lg space-y-5 shadow-2xl ring-1 ring-white/10"
                   >
                     {/* Item Header */}
-                    <div className="flex flex-wrap items-center justify-between gap-3 text-xs border-b-2 border-[#3D3328] pb-3.5">
-                      <span className="font-mono text-xs sm:text-sm text-[#DDD4C5] font-bold">
+                    <div className="flex flex-wrap items-center justify-between gap-3 text-xs bg-[#29221C] border border-[#4E3E2E] p-3.5 rounded-sm">
+                      <span className="font-mono text-xs sm:text-sm text-white font-bold">
                         Q{String(item.slotNumber).padStart(2, "0")} · {item.chapter} ({item.difficulty})
                       </span>
                       {item.isCorrect ? (
@@ -483,41 +484,41 @@ export default function JuniorResultPage({ params }: PageProps) {
                     </div>
 
                     {/* Question Text */}
-                    <div className="font-serif text-lg sm:text-xl text-white leading-relaxed font-normal py-1">
+                    <div className="font-serif text-lg sm:text-xl text-white font-medium leading-relaxed py-1">
                       <MathRenderer content={item.questionText} />
                     </div>
 
                     {/* User Selection vs Correct Answer */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 text-xs">
                       <div
                         className={`p-4 rounded-md border-2 shadow-md ${
                           item.isCorrect
-                            ? "bg-[#1A3825]/90 border-emerald-500/80"
-                            : "bg-[#421A1A]/90 border-rose-500/80"
+                            ? "bg-[#1A3825] border-emerald-500"
+                            : "bg-[#421A1A] border-rose-500"
                         }`}
                       >
                         <span className={`block text-xs uppercase font-mono tracking-wider font-extrabold ${
                           item.isCorrect ? "text-emerald-300" : "text-rose-300"
                         }`}>
-                          Candidate Selection
+                          {item.isCorrect ? "Your Selection (Correct)" : "Your Selection (Incorrect)"}
                         </span>
-                        <div className="font-semibold text-white text-base mt-1.5">
+                        <div className="font-bold text-white text-base mt-2">
                           {item.selectedOptionKey ? (
                             <span>
                               [{item.selectedOptionKey}]{" "}
                               <MathRenderer content={item.selectedOptionText || ""} />
                             </span>
                           ) : (
-                            <span className="italic text-[#DDD4C5]">No option submitted</span>
+                            <span className="italic text-rose-200">No option submitted</span>
                           )}
                         </div>
                       </div>
 
-                      <div className="p-4 rounded-md border-2 bg-[#1A3825]/90 border-emerald-500/80 shadow-md">
+                      <div className="p-4 rounded-md border-2 bg-[#1A3825] border-emerald-500 shadow-md">
                         <span className="block text-xs uppercase font-mono tracking-wider text-emerald-300 font-extrabold">
                           Verified Master Key
                         </span>
-                        <div className="font-semibold text-white text-base mt-1.5">
+                        <div className="font-bold text-white text-base mt-2">
                           <span>
                             [{item.correctOptionKey}]{" "}
                             <MathRenderer content={item.correctOptionText} />
@@ -527,14 +528,16 @@ export default function JuniorResultPage({ params }: PageProps) {
                     </div>
 
                     {/* Derivation / Pedagogical Explanation */}
-                    <div className="p-5 sm:p-6 bg-[#161310] border-2 border-[#5A4A3A] rounded-md space-y-2.5 shadow-inner">
-                      <div className="text-white text-sm sm:text-base leading-relaxed font-sans">
-                        <strong className="text-[#A8D49E] mr-2 font-mono text-xs sm:text-sm uppercase tracking-wider block sm:inline font-black">Derivation &amp; Proof:</strong>
+                    <div className="p-5 sm:p-6 bg-[#161310] border-2 border-[#6E5943] rounded-md space-y-3 shadow-inner">
+                      <div className="text-white text-base leading-relaxed font-sans">
+                        <strong className="text-amber-300 mr-2 font-mono text-xs sm:text-sm uppercase tracking-wider block sm:inline font-black">
+                          Derivation &amp; Proof:
+                        </strong>
                         <MathRenderer content={item.explanation} />
                       </div>
-                      <p className="text-xs text-[#C5BDB2] font-mono pt-2.5 border-t border-[#332A20] flex items-center gap-2">
-                        <span>Syllabus Reference:</span>
-                        <span className="text-white font-bold bg-[#26201A] px-2 py-0.5 rounded border border-[#44382C]">{item.syllabusReference}</span>
+                      <p className="text-xs text-[#DDD4C5] font-mono pt-3 border-t border-[#332A20] flex items-center gap-2">
+                        <span className="font-semibold text-white">Syllabus Reference:</span>
+                        <span className="text-amber-200 font-bold bg-[#26201A] px-2.5 py-0.5 rounded border border-[#544535]">{item.syllabusReference}</span>
                       </p>
                     </div>
                   </div>
@@ -555,7 +558,7 @@ export default function JuniorResultPage({ params }: PageProps) {
 
               <div className="flex items-center gap-3">
                 <Link href="/junior">
-                  <Button variant="secondary" size="md" className="bg-[#2A231C] border-2 border-[#544535] text-white hover:bg-[#382F26] font-mono font-bold px-4 py-2">
+                  <Button variant="academy-secondary" size="md">
                     Academy Entrance
                   </Button>
                 </Link>
@@ -563,9 +566,8 @@ export default function JuniorResultPage({ params }: PageProps) {
                   href={`/junior?stream=${result.stream}&subject=${result.subjectSlug}`}
                 >
                   <Button
-                    variant="primary"
+                    variant="academy"
                     size="md"
-                    className="bg-[#2D5A47] hover:bg-[#386D56] text-white font-black font-mono border-2 border-white/30 shadow-lg px-6 py-2.5"
                   >
                     <span>Begin Next 10 Questions</span>
                     <ChevronRight className="w-4 h-4 ml-1.5" />
