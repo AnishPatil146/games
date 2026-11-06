@@ -303,3 +303,4 @@ export const DIAGRAM_SIMULATION_CATALOGUE: DiagramSimulationSpec[] = [
     ],
   },
 ];
+
