@@ -140,3 +140,4 @@ Vercel serverless executes functions within ephemeral environments with a defaul
 - For the existing HTTP polling and Server-Sent Events (SSE) architecture, Vercel Serverless paired with Upstash Redis handles **up to 5,000 concurrent active users** efficiently.
 - When scaling beyond **5,000 concurrent users** or requiring ultra-low-latency persistent bidirectional WebSockets (<50ms tick rate):
   - **Recommendation:** Deploy a dedicated lightweight WebSocket gateway (Node.js / Bun cluster on Fly.io or Railway) that handles persistent TCP connections, while keeping the Next.js frontend and Supabase PostgreSQL on Vercel. Both tiers communicate seamlessly through the shared Redis state layer.
+

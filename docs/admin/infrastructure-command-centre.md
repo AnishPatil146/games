@@ -53,3 +53,4 @@ The Infrastructure & Operations panel exposes genuine operational telemetry gath
    - **Degraded Mode:** Freezes non-critical logging; prioritizes active 6×6 Sudoku moves; serves academic questions from memory.
    - **Emergency Read-Only:** Disables room creation during severe upstream outages while preserving existing player monographs.
 3. **Security Invariant:** Zero credentials, passwords, session secrets, or personal identifiable student data are ever displayed in telemetry feeds or incident summaries.
+

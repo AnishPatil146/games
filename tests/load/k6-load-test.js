@@ -65,7 +65,7 @@ export default function () {
       difficulty: 'medium',
     });
     const createRes = http.post(`${BASE_URL}/api/v1/multiplayer/rooms`, createPayload, { headers });
-    
+
     check(createRes, {
       'room created successfully': (r) => r.status === 200,
     });
@@ -83,7 +83,7 @@ export default function () {
       playerName: `Teammate_${__VU}`,
     });
     const joinRes = http.post(`${BASE_URL}/api/v1/multiplayer/rooms/${roomCode}`, joinPayload, { headers });
-    
+
     check(joinRes, {
       'teammate joined room': (r) => r.status === 200,
     });

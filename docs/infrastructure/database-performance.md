@@ -66,3 +66,4 @@ A common failure mode in online puzzle games is writing every cell click or curs
 | **Point-in-Time Recovery (PITR)** | PostgreSQL WAL streaming | Continuous (per transaction) | 7 Days | RPO < 1 min, RTO < 15 min |
 | **Full Daily Snapshot** | Managed Supabase Storage backup | Once every 24 hours (02:00 UTC) | 30 Days | RPO < 24 hrs, RTO < 30 min |
 | **Critical Static Dump** | Encrypted JSON catalogue export | Committed to Git on release | Indefinite | RPO = 0 (Static question bank) |
+

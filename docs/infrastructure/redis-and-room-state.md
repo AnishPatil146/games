@@ -85,3 +85,4 @@ try {
 THE UNWRITTEN supports both native Redis instances and serverless Upstash Redis via REST API:
 - **Environment Variables:** `UPSTASH_REDIS_REST_URL` and `UPSTASH_REDIS_REST_TOKEN` (or standard `REDIS_URL`).
 - **Resilient Fallback Mode:** When Redis environment variables are not supplied (e.g., local developer workstations or offline environments), the system transparently falls back to an enhanced in-memory L1 provider with EventEmitter coordination, ensuring uninterrupted developer workflow with zero code divergence.
+

@@ -52,3 +52,4 @@
   npx vercel rollback --yes
   ```
   Vercel Anycast edge routes 100% of incoming traffic back to the prior stable deployment ID in under 15 seconds without rebuilding.
+

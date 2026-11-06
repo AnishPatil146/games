@@ -95,3 +95,4 @@ When an operative's client reloads or reconnects:
 - Every connected client sends a lightweight heartbeat (`ping`) every **15 seconds**.
 - If no heartbeat is received from an operative for **45 seconds**, the player is flagged as `inactive`, freeing their cell cursor.
 - If the host disconnects, host authority is temporarily held in escrow for 90 seconds. If the host fails to return within 90 seconds, host privileges automatically transfer to the next senior operative in the squad.
+

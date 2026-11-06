@@ -55,3 +55,4 @@ THE UNWRITTEN enforces rate limiting at three distinct levels:
 1. **Solution Redaction:** The Sudoku solution grid is stored exclusively server-side. The `solution` array is removed from all client JSON responses until the room status reaches `level_completed`.
 2. **Private Dossier Isolation:** A player can only inspect their own personal dossier or completed monograph unless holding the verified 8-character claim key.
 3. **Secret Isolation:** Zero secrets are embedded into client JavaScript bundles. Secrets (`ADMIN_RECOVERY_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, `ADMIN_SESSION_SECRET`) are accessible exclusively to server-side Node.js environments.
+

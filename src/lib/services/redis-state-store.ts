@@ -337,3 +337,4 @@ export function getStateStoreTelemetry(): StateStoreTelemetry {
     uptimeSeconds: Math.floor((Date.now() - STORE_START_TIME) / 1000),
   };
 }
+

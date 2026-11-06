@@ -97,3 +97,4 @@ To achieve seamless horizontal scale-out under high traffic without changing the
 3. Provide **reconnect recovery tokens** so network hiccups or browser refreshes never forfeit game progress.
 4. Establish a **Database Performance Layer** with query timeouts, write batching, and circuit breakers.
 5. Deploy the **Infrastructure Command Centre** into the Admin Portal for real-time live ops.
+
