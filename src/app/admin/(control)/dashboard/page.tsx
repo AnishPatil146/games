@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ArrowRight, Users, CheckCircle2, ShieldCheck, Activity, Compass } from "lucide-react";
 import { formatDateTime } from "@/components/admin/formatters";
 import { MathRenderer } from "@/components/math/MathRenderer";
+import { InfrastructureLiveOpsPanel } from "@/components/admin/InfrastructureLiveOpsPanel";
 
 interface UnifiedOverview {
   storageBackend: string;
@@ -437,6 +438,11 @@ export default function AdminExecutiveDashboardPage() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Live Operations & Scalability Infrastructure Command */}
+      <section>
+        <InfrastructureLiveOpsPanel />
       </section>
     </div>
   );

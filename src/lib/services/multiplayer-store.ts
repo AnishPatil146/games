@@ -7,6 +7,11 @@ import {
   getSudoku6x6Hint,
   Sudoku6x6Difficulty,
 } from "@/lib/gameplay/sudoku-6x6-engine";
+import {
+  generateReconnectToken,
+  validateReconnectToken,
+  setSerializedRoom,
+} from "./redis-state-store";
 
 export interface MultiplayerPlayer {
   id: string;
@@ -17,6 +22,9 @@ export interface MultiplayerPlayer {
   lastActiveAt: string;
   currentLevelSolved: boolean;
   betrayalDecision?: "COOPERATE" | "BETRAY";
+  reconnectToken?: string;
+  isOnline?: boolean;
+  lastHeartbeatTimestamp?: number;
 }
 
 export interface PlayerContribution {
@@ -31,6 +39,7 @@ export interface PlayerContribution {
 export interface SharedSudoku6x6State {
   puzzleId: string;
   difficulty: Sudoku6x6Difficulty;
+  stateVersion: number; // Monotonic sequence version for optimistic concurrency
   initialGrid: number[][]; // 6x6 immutable given clues (0 = blank)
   currentGrid: number[][]; // 6x6 live shared board
   solution?: number[][]; // 6x6 server-authoritative solution (redacted until complete)
@@ -87,6 +96,7 @@ export interface MultiplayerRoom {
   status: "lobby" | "in_progress" | "level_completed" | "game_over" | "retry_pending";
   currentLevel: number;
   totalLevels: number;
+  stateVersion: number;
   difficulty: Sudoku6x6Difficulty; // Selected in lobby: easy | medium | hard
   players: MultiplayerPlayer[];
   serverDeadlineTimestamp?: number | null;
@@ -106,15 +116,31 @@ export interface MultiplayerRoom {
   >;
 }
 
-// Global in-memory room store (persists across requests)
+// Global in-memory room store (persists across requests within worker)
 const activeRooms: Map<string, MultiplayerRoom> = new Map();
+
+// Idempotency cache for transaction deduplication (TTL: 5 minutes)
+const processedTransactions: Map<string, { result: unknown; timestamp: number }> = new Map();
+
+function cleanStaleTransactions() {
+  const cutoff = Date.now() - 5 * 60 * 1000;
+  for (const [txId, entry] of processedTransactions.entries()) {
+    if (entry.timestamp < cutoff) processedTransactions.delete(txId);
+  }
+}
 
 export function createRoom(
   hostName: string,
   initialDifficulty: Sudoku6x6Difficulty = "medium"
-): { room: MultiplayerRoom; hostId: string } {
+): { room: MultiplayerRoom; hostId: string; reconnectToken: string } {
   const code = "AL" + Math.floor(1000 + Math.random() * 9000).toString();
   const hostId = "usr_" + crypto.randomBytes(6).toString("hex");
+  const { token: reconnectToken } = generateReconnectToken(
+    code,
+    hostId,
+    hostName || "Operative Alpha",
+    "aarav"
+  );
 
   const room: MultiplayerRoom = {
     code,
@@ -123,6 +149,7 @@ export function createRoom(
     status: "lobby",
     currentLevel: 1,
     totalLevels: 8,
+    stateVersion: 1,
     difficulty: initialDifficulty,
     retriesCount: 0,
     players: [
@@ -134,13 +161,17 @@ export function createRoom(
         avatarId: "aarav",
         lastActiveAt: new Date().toISOString(),
         currentLevelSolved: false,
+        reconnectToken,
+        isOnline: true,
+        lastHeartbeatTimestamp: Date.now(),
       },
     ],
     outcomeHistory: {},
   };
 
   activeRooms.set(code, room);
-  return { room: sanitizeRoomForClient(room), hostId };
+  void setSerializedRoom(code, JSON.stringify(room));
+  return { room: sanitizeRoomForClient(room), hostId, reconnectToken };
 }
 
 export function getRoom(code: string): MultiplayerRoom | null {
@@ -185,7 +216,7 @@ export function setRoomDifficulty(
 export function joinRoom(
   code: string,
   playerName: string
-): { success: boolean; playerId?: string; room?: MultiplayerRoom; error?: string } {
+): { success: boolean; playerId?: string; room?: MultiplayerRoom; reconnectToken?: string; error?: string } {
   const room = getRoom(code);
   if (!room) {
     return { success: false, error: "Alliance room not found." };
@@ -205,19 +236,33 @@ export function joinRoom(
     "warden",
   ];
   const assignedAvatar = avatars[room.players.length % avatars.length];
+  const operativeName = playerName || `Operative ${room.players.length + 1}`;
+
+  const { token: reconnectToken } = generateReconnectToken(
+    code,
+    playerId,
+    operativeName,
+    assignedAvatar
+  );
 
   const newPlayer: MultiplayerPlayer = {
     id: playerId,
-    name: playerName || `Operative ${room.players.length + 1}`,
+    name: operativeName,
     isHost: false,
     isReady: false,
     avatarId: assignedAvatar,
     lastActiveAt: new Date().toISOString(),
     currentLevelSolved: false,
+    reconnectToken,
+    isOnline: true,
+    lastHeartbeatTimestamp: Date.now(),
   };
 
   room.players.push(newPlayer);
-  return { success: true, playerId, room: sanitizeRoomForClient(room) };
+  room.stateVersion = (room.stateVersion || 1) + 1;
+  void setSerializedRoom(code, JSON.stringify(room));
+
+  return { success: true, playerId, reconnectToken, room: sanitizeRoomForClient(room) };
 }
 
 export function togglePlayerReady(code: string, playerId: string): MultiplayerRoom | null {
@@ -270,6 +315,7 @@ export function startCampaign(
   room.sudokuState = {
     puzzleId: puzzle.id,
     difficulty: room.difficulty || "medium",
+    stateVersion: 1,
     initialGrid: cloneGrid6x6(puzzle.initialGrid),
     currentGrid: cloneGrid6x6(puzzle.initialGrid),
     solution: cloneGrid6x6(puzzle.solution),
@@ -283,6 +329,8 @@ export function startCampaign(
     isComplete: false,
   };
 
+  room.stateVersion = (room.stateVersion || 1) + 1;
+  void setSerializedRoom(code, JSON.stringify(room));
   return { success: true, room: sanitizeRoomForClient(room) };
 }
 
@@ -291,8 +339,20 @@ export function makeSudoku6x6Move(
   playerId: string,
   row: number,
   col: number,
-  value: number
+  value: number,
+  txId?: string,
+  expectedVersion?: number
 ): { success: boolean; room?: MultiplayerRoom; error?: string; isComplete?: boolean } {
+  cleanStaleTransactions();
+  if (txId && processedTransactions.has(txId)) {
+    return processedTransactions.get(txId)!.result as {
+      success: boolean;
+      room?: MultiplayerRoom;
+      error?: string;
+      isComplete?: boolean;
+    };
+  }
+
   const room = getRoom(code);
   if (!room) return { success: false, error: "Room not found" };
   if (room.status !== "in_progress") {
@@ -305,6 +365,15 @@ export function makeSudoku6x6Move(
   const state = room.sudokuState;
   const player = room.players.find((p) => p.id === playerId);
   if (!player) return { success: false, error: "Operative not recognized" };
+
+  // Optimistic concurrency check
+  if (expectedVersion !== undefined && state.stateVersion !== expectedVersion) {
+    return {
+      success: false,
+      error: "State conflict: Board updated by teammate. Synchronizing latest grid.",
+      room: sanitizeRoomForClient(room),
+    };
+  }
 
   // Validate coordinates
   if (row < 0 || row > 5 || col < 0 || col > 5) {
@@ -388,7 +457,16 @@ export function makeSudoku6x6Move(
     };
   }
 
-  return { success: true, room: sanitizeRoomForClient(room), isComplete };
+  state.stateVersion = (state.stateVersion || 1) + 1;
+  room.stateVersion = (room.stateVersion || 1) + 1;
+
+  const result = { success: true, room: sanitizeRoomForClient(room), isComplete };
+  if (txId) {
+    processedTransactions.set(txId, { result, timestamp: Date.now() });
+  }
+
+  void setSerializedRoom(room.code, JSON.stringify(room));
+  return result;
 }
 
 export function updatePlayerCursor(
@@ -528,6 +606,79 @@ export function triggerTeamRetry(code: string): MultiplayerRoom | null {
   return sanitizeRoomForClient(room);
 }
 
+export async function reconnectPlayer(
+  code: string,
+  playerId: string,
+  candidateToken: string
+): Promise<{ success: boolean; room?: MultiplayerRoom; error?: string }> {
+  const room = getRoom(code);
+  if (!room) {
+    return { success: false, error: "Alliance room not found or session expired." };
+  }
+  const player = room.players.find((p) => p.id === playerId);
+  if (!player) {
+    return { success: false, error: "Player identity does not belong to this squad." };
+  }
+
+  // Validate reconnect token
+  const tokenPayload = await validateReconnectToken(candidateToken);
+  const tokenMatches =
+    (tokenPayload && tokenPayload.roomCode === code.toUpperCase() && tokenPayload.playerId === playerId) ||
+    player.reconnectToken === candidateToken;
+
+  if (!tokenMatches) {
+    return { success: false, error: "Invalid or expired reconnection token." };
+  }
+
+  player.isOnline = true;
+  player.lastHeartbeatTimestamp = Date.now();
+  player.lastActiveAt = new Date().toISOString();
+
+  return { success: true, room: sanitizeRoomForClient(room) };
+}
+
+export function recordPlayerHeartbeat(
+  code: string,
+  playerId: string
+): { success: boolean; activeCount: number } {
+  const room = getRoom(code);
+  if (!room) return { success: false, activeCount: 0 };
+  const now = Date.now();
+  const player = room.players.find((p) => p.id === playerId);
+  if (player) {
+    player.lastHeartbeatTimestamp = now;
+    player.isOnline = true;
+  }
+
+  // Check all players' heartbeat status (45s window)
+  room.players.forEach((p) => {
+    if (p.lastHeartbeatTimestamp && now - p.lastHeartbeatTimestamp > 45_000) {
+      p.isOnline = false;
+    }
+  });
+
+  const activeCount = room.players.filter((p) => p.isOnline !== false).length;
+  return { success: true, activeCount };
+}
+
+export function getMultiplayerStoreMetrics(): {
+  activeRoomsCount: number;
+  totalPlayersCount: number;
+  inProgressRoomsCount: number;
+} {
+  let totalPlayers = 0;
+  let inProgress = 0;
+  for (const r of activeRooms.values()) {
+    totalPlayers += r.players.length;
+    if (r.status === "in_progress") inProgress++;
+  }
+  return {
+    activeRoomsCount: activeRooms.size,
+    totalPlayersCount: totalPlayers,
+    inProgressRoomsCount: inProgress,
+  };
+}
+
 export const multiplayerStore = {
   createRoom,
   getRoom,
@@ -541,4 +692,7 @@ export const multiplayerStore = {
   requestSharedSudokuHint,
   submitLevelSolution,
   triggerTeamRetry,
+  reconnectPlayer,
+  recordPlayerHeartbeat,
+  getMultiplayerStoreMetrics,
 };

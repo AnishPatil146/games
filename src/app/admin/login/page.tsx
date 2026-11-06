@@ -15,7 +15,7 @@ function AdminLoginForm() {
   const [activeTab, setActiveTab] = useState<"login" | "recover">("login");
   const [email, setEmail] = useState("anishpatil146@gmail.com");
   const [password, setPassword] = useState("");
-  const [recoverySecret, setRecoverySecret] = useState("SilenceSpeaks#2026");
+  const [recoverySecret, setRecoverySecret] = useState("");
   const [newPassword, setNewPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -141,11 +141,10 @@ function AdminLoginForm() {
               setActiveTab("login");
               setErrorMsg(null);
             }}
-            className={`flex-1 py-1.5 text-xs font-mono tracking-wider transition-colors rounded-sm ${
-              activeTab === "login"
+            className={`flex-1 py-1.5 text-xs font-mono tracking-wider transition-colors rounded-sm ${activeTab === "login"
                 ? "bg-[#2A2420] text-[#FAF7F2] font-bold shadow-sm"
                 : "text-[#8A8178] hover:text-[#FAF7F2]"
-            }`}
+              }`}
           >
             Sign In
           </button>
@@ -155,11 +154,10 @@ function AdminLoginForm() {
               setActiveTab("recover");
               setErrorMsg(null);
             }}
-            className={`flex-1 py-1.5 text-xs font-mono tracking-wider transition-colors rounded-sm ${
-              activeTab === "recover"
+            className={`flex-1 py-1.5 text-xs font-mono tracking-wider transition-colors rounded-sm ${activeTab === "recover"
                 ? "bg-[#2A2420] text-[#FAF7F2] font-bold shadow-sm"
                 : "text-[#8A8178] hover:text-[#FAF7F2]"
-            }`}
+              }`}
           >
             Establish Password
           </button>
@@ -266,15 +264,14 @@ function AdminLoginForm() {
               >
                 Master Recovery Key
               </label>
-              <span className="text-[10px] text-emerald-400 font-mono">Verified Vercel Secret</span>
             </div>
             <input
               id="recovery-key"
-              type="text"
+              type="password"
               required
               value={recoverySecret}
               onChange={(e) => setRecoverySecret(e.target.value)}
-              placeholder="SilenceSpeaks#2026"
+              placeholder="Enter Master Recovery Key"
               className="w-full px-3 py-2 bg-[#12100E] border border-[#3A332C] rounded-sm text-xs text-[#FAF7F2] font-mono focus:outline-none focus:border-[#FAF7F2]"
             />
           </div>

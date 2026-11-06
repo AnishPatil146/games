@@ -10,7 +10,13 @@ import {
   updatePlayerCursor,
   requestSharedSudokuHint,
   triggerTeamRetry,
+  reconnectPlayer,
+  recordPlayerHeartbeat,
 } from "@/lib/services/multiplayer-store";
+import {
+  enforceRateLimit,
+  validatePayloadSize,
+} from "@/lib/services/traffic-guard";
 
 interface RouteProps {
   params: Promise<{ code: string }>;
@@ -45,6 +51,13 @@ export async function GET(req: NextRequest, { params }: RouteProps) {
 
 export async function POST(req: NextRequest, { params }: RouteProps) {
   const { code } = await params;
+
+  // 1. Enforce payload size
+  const sizeCheck = validatePayloadSize(req, 64 * 1024);
+  if (!sizeCheck.valid) {
+    return NextResponse.json({ success: false, error: sizeCheck.error }, { status: 413 });
+  }
+
   try {
     const body = await req.json().catch(() => ({}));
     const action = body.action;
@@ -56,6 +69,25 @@ export async function POST(req: NextRequest, { params }: RouteProps) {
       if (!result.success) {
         return NextResponse.json(result, { status: 400 });
       }
+      return NextResponse.json(result);
+    }
+
+    if (action === "reconnect") {
+      const rl = await enforceRateLimit(req, "RECONNECT", code);
+      if (!rl.allowed && rl.response) return rl.response;
+
+      const playerId = String(body.playerId || "");
+      const reconnectToken = String(body.reconnectToken || "");
+      const result = await reconnectPlayer(code, playerId, reconnectToken);
+      if (!result.success) {
+        return NextResponse.json(result, { status: 401 });
+      }
+      return NextResponse.json(result);
+    }
+
+    if (action === "heartbeat") {
+      const playerId = String(body.playerId || "");
+      const result = recordPlayerHeartbeat(code, playerId);
       return NextResponse.json(result);
     }
 
@@ -97,14 +129,21 @@ export async function POST(req: NextRequest, { params }: RouteProps) {
     }
 
     if (action === "sudoku_move") {
+      const rl = await enforceRateLimit(req, "SUDOKU_MOVE", code);
+      if (!rl.allowed && rl.response) return rl.response;
+
       const playerId = String(body.playerId || "");
       const row = Number(body.row);
       const col = Number(body.col);
       const value = Number(body.value);
+      const txId = typeof body.txId === "string" ? body.txId : undefined;
+      const expectedVersion =
+        typeof body.expectedVersion === "number" ? body.expectedVersion : undefined;
 
-      const result = makeSudoku6x6Move(code, playerId, row, col, value);
+      const result = makeSudoku6x6Move(code, playerId, row, col, value, txId, expectedVersion);
       if (!result.success) {
-        return NextResponse.json(result, { status: 400 });
+        const status = result.error?.includes("conflict") ? 409 : 400;
+        return NextResponse.json(result, { status });
       }
       return NextResponse.json(result);
     }
@@ -119,6 +158,9 @@ export async function POST(req: NextRequest, { params }: RouteProps) {
     }
 
     if (action === "sudoku_hint") {
+      const rl = await enforceRateLimit(req, "SUDOKU_HINT", code);
+      if (!rl.allowed && rl.response) return rl.response;
+
       const playerId = String(body.playerId || "");
       const result = requestSharedSudokuHint(code, playerId);
       if (!result.success) {

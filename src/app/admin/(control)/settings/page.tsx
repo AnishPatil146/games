@@ -5,6 +5,7 @@ import { ShieldCheck } from "lucide-react";
 import { AdminAuditLogEntry } from "@/lib/platform-types";
 import { DeletionRequest } from "@/lib/types";
 import { formatDateTime } from "@/components/admin/formatters";
+import { InfrastructureLiveOpsPanel } from "@/components/admin/InfrastructureLiveOpsPanel";
 
 interface SettingsPayload {
   adminEmail: string;
@@ -118,6 +119,11 @@ export default function AdminSettingsPage() {
             </strong>
           </p>
         </div>
+      </section>
+
+      {/* Live Operations & Scalability Infrastructure Command */}
+      <section>
+        <InfrastructureLiveOpsPanel />
       </section>
 
       {/* Data Deletion Queue */}

@@ -251,12 +251,6 @@ export function CharacterSelectScreen() {
               <BookOpen className="w-3.5 h-3.5 text-emerald-400" />
               <span>Learning Arena</span>
             </Link>
-            <Link
-              href="/admin/dashboard"
-              className="hover:text-zinc-200 text-zinc-400 transition-colors"
-            >
-              Admin
-            </Link>
           </nav>
 
           <button
@@ -489,9 +483,6 @@ export function CharacterSelectScreen() {
         <div className="flex items-center gap-4">
           <Link href="/privacy" className="hover:text-zinc-300 transition-colors">
             Privacy &amp; Data Governance
-          </Link>
-          <Link href="/admin/login" className="hover:text-zinc-300 transition-colors">
-            Staff Terminal
           </Link>
         </div>
       </footer>
