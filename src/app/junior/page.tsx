@@ -27,6 +27,14 @@ import { CompetitiveExamHub } from "@/components/junior/CompetitiveExamHub";
 import { RevisionCentre } from "@/components/junior/RevisionCentre";
 import { AchievementsPanel } from "@/components/junior/AchievementsPanel";
 import { PerformanceAnalyticsPanel } from "@/components/junior/PerformanceAnalyticsPanel";
+import { ClassSelector } from "@/components/junior/ClassSelector";
+import { FormulaLibraryHub } from "@/components/junior/FormulaLibraryHub";
+import { ConceptLibraryHub } from "@/components/junior/ConceptLibraryHub";
+import { DiagramVisualisationLab } from "@/components/junior/DiagramVisualisationLab";
+import { PracticeArenaHub } from "@/components/junior/PracticeArenaHub";
+import { TestCentreHub } from "@/components/junior/TestCentreHub";
+import { LearningProgressionHub } from "@/components/junior/LearningProgressionHub";
+import { AcademicBoardId, AcademicClassLevel } from "@/lib/junior/curriculum-data";
 
 interface EnrichedSubject extends AcademicSubjectConfig {
   publishedQuestionCount: number;
@@ -49,7 +57,8 @@ function AcademyContent() {
   const initialSubjectParam = searchParams.get("subject");
 
   const [activeTab, setActiveTab] = useState<AcademyTab>("home");
-  const [selectedClass, setSelectedClass] = useState<11 | 12>(11);
+  const [selectedClass, setSelectedClass] = useState<AcademicClassLevel>(10);
+  const [selectedBoard, setSelectedBoard] = useState<AcademicBoardId>("CBSE");
   const [streams, setStreams] = useState<AcademicStreamConfig[]>([]);
   const [selectedStream, setSelectedStream] = useState<StreamSlug>(
     initialStreamParam === "commerce" || initialStreamParam === "arts"
@@ -327,30 +336,41 @@ function AcademyContent() {
                     Step into an illustrated academic world. Master high-school curriculum standards, evaluate your competitive entrance instincts, and engage in zero-repetition mathematical challenges.
                   </p>
 
-                  {/* Class 11 vs Class 12 Quick Switcher */}
+                  {/* Class 10 vs 11 vs 12 Quick Switcher */}
                   <div className="pt-2 flex flex-wrap items-center gap-3 font-mono text-xs">
                     <div className="flex p-1 bg-black/60 border border-white/15 rounded-sm backdrop-blur-sm">
                       <button
                         type="button"
+                        onClick={() => setSelectedClass(10)}
+                        className={`px-3.5 py-1.5 uppercase tracking-wider rounded-sm transition-all cursor-pointer ${
+                          selectedClass === 10
+                            ? "bg-[#8FA184] text-[#12100E] font-bold shadow-md"
+                            : "text-[#A89F93] hover:text-[#FAF7F2]"
+                        }`}
+                      >
+                        Class 10
+                      </button>
+                      <button
+                        type="button"
                         onClick={() => setSelectedClass(11)}
-                        className={`px-4 py-2 uppercase tracking-wider rounded-sm transition-all cursor-pointer ${
+                        className={`px-3.5 py-1.5 uppercase tracking-wider rounded-sm transition-all cursor-pointer ${
                           selectedClass === 11
                             ? "bg-[#8FA184] text-[#12100E] font-bold shadow-md"
                             : "text-[#A89F93] hover:text-[#FAF7F2]"
                         }`}
                       >
-                        Class 11 (FYJC) · Active
+                        Class 11
                       </button>
                       <button
                         type="button"
                         onClick={() => setSelectedClass(12)}
-                        className={`px-4 py-2 uppercase tracking-wider rounded-sm transition-all cursor-pointer ${
+                        className={`px-3.5 py-1.5 uppercase tracking-wider rounded-sm transition-all cursor-pointer ${
                           selectedClass === 12
                             ? "bg-[#8FA184] text-[#12100E] font-bold shadow-md"
                             : "text-[#A89F93] hover:text-[#FAF7F2]"
                         }`}
                       >
-                        Class 12 (HSC) · Active
+                        Class 12
                       </button>
                     </div>
 
@@ -423,11 +443,19 @@ function AcademyContent() {
               </div>
             </div>
 
-            {/* 4 Major Academy Portals */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-              {/* Portal 1: Board Preparation */}
+            {/* Class 10, 11 & 12 Academic Level & Board Selection */}
+            <ClassSelector
+              selectedClass={selectedClass}
+              onSelectClass={setSelectedClass}
+              selectedBoard={selectedBoard}
+              onSelectBoard={setSelectedBoard}
+            />
+
+            {/* Major Academy Portals */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {/* Portal 1: Concept Library */}
               <div
-                onClick={() => setActiveTab("board_prep")}
+                onClick={() => setActiveTab("learn")}
                 className="p-5 bg-[#1B1814] border border-[#2E2822] hover:border-[#8FA184] rounded-sm space-y-3 transition-all cursor-pointer group shadow-sm"
               >
                 <div className="w-9 h-9 rounded bg-[#25201A] border border-[#3A332A] flex items-center justify-center text-[#8FA184] group-hover:scale-105 transition-transform">
@@ -435,39 +463,60 @@ function AcademyContent() {
                 </div>
                 <div>
                   <h3 className="font-serif text-lg font-bold text-[#FAF7F2] group-hover:text-[#8FA184] transition-colors">
-                    Board Preparation
+                    Concept Library
                   </h3>
                   <p className="text-xs text-[#A89F93] mt-1 leading-relaxed">
-                    Syllabus, chapter maps, concepts, solved models, and State Board FYJC/HSC pattern tests.
+                    Dual-tier explanations with simple beginner analogies alongside syllabus-strict exam rigor and misconceptions.
                   </p>
                 </div>
                 <span className="text-[10px] font-mono text-[#8FA184] uppercase tracking-wider flex items-center gap-1 font-bold pt-2">
-                  Enter Board Hub <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                  Explore Concepts <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
                 </span>
               </div>
 
-              {/* Portal 2: Competitive Entrance Arena */}
+              {/* Portal 2: Formula Library */}
               <div
-                onClick={() => setActiveTab("competitive_exams")}
-                className="p-5 bg-[#1B1814] border border-[#2E2822] hover:border-[#C4A47C] rounded-sm space-y-3 transition-all cursor-pointer group shadow-sm"
+                onClick={() => setActiveTab("formula_library")}
+                className="p-5 bg-[#1B1814] border border-[#2E2822] hover:border-[#8FA184] rounded-sm space-y-3 transition-all cursor-pointer group shadow-sm"
               >
-                <div className="w-9 h-9 rounded bg-[#25201A] border border-[#3A332A] flex items-center justify-center text-[#C4A47C] group-hover:scale-105 transition-transform">
-                  <Trophy className="w-4 h-4" />
+                <div className="w-9 h-9 rounded bg-[#25201A] border border-[#3A332A] flex items-center justify-center text-[#8FA184] group-hover:scale-105 transition-transform">
+                  <Award className="w-4 h-4" />
                 </div>
                 <div>
-                  <h3 className="font-serif text-lg font-bold text-[#FAF7F2] group-hover:text-[#C4A47C] transition-colors">
-                    Entrance Arena
+                  <h3 className="font-serif text-lg font-bold text-[#FAF7F2] group-hover:text-[#8FA184] transition-colors">
+                    Formula Library
                   </h3>
                   <p className="text-xs text-[#A89F93] mt-1 leading-relaxed">
-                    JEE Main/Adv, NEET, MHT-CET, CUET, NDA, CA Foundation &amp; CLAT timed challenges.
+                    Complete formula specifications with symbol tables, SI units, solved examples, and interactive Recall Mode.
                   </p>
                 </div>
-                <span className="text-[10px] font-mono text-[#C4A47C] uppercase tracking-wider flex items-center gap-1 font-bold pt-2">
-                  Enter Entrance Arena <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                <span className="text-[10px] font-mono text-[#8FA184] uppercase tracking-wider flex items-center gap-1 font-bold pt-2">
+                  Open Formula Vault <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
                 </span>
               </div>
 
-              {/* Portal 3: Practice Studio */}
+              {/* Portal 3: Diagram Lab */}
+              <div
+                onClick={() => setActiveTab("visualise")}
+                className="p-5 bg-[#1B1814] border border-[#2E2822] hover:border-[#8FA184] rounded-sm space-y-3 transition-all cursor-pointer group shadow-sm"
+              >
+                <div className="w-9 h-9 rounded bg-[#25201A] border border-[#3A332A] flex items-center justify-center text-[#8FA184] group-hover:scale-105 transition-transform">
+                  <Play className="w-4 h-4" />
+                </div>
+                <div>
+                  <h3 className="font-serif text-lg font-bold text-[#FAF7F2] group-hover:text-[#8FA184] transition-colors">
+                    Diagram Visualisation Lab
+                  </h3>
+                  <p className="text-xs text-[#A89F93] mt-1 leading-relaxed">
+                    Interactive simulations with real-time sliders for Ray Optics, Unit Circles, Projectiles, DC Circuits, and VSEPR.
+                  </p>
+                </div>
+                <span className="text-[10px] font-mono text-[#8FA184] uppercase tracking-wider flex items-center gap-1 font-bold pt-2">
+                  Launch Visualiser <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                </span>
+              </div>
+
+              {/* Portal 4: Practice Studio */}
               <div
                 onClick={() => setActiveTab("practice_arena")}
                 className="p-5 bg-[#1B1814] border border-[#2E2822] hover:border-[#8FA184] rounded-sm space-y-3 transition-all cursor-pointer group shadow-sm"
@@ -480,7 +529,7 @@ function AcademyContent() {
                     Practice Studio
                   </h3>
                   <p className="text-xs text-[#A89F93] mt-1 leading-relaxed">
-                    10-question evaluation sessions with 100-question zero-repeat cycle guarantees.
+                    Class 10, 11 &amp; 12 multi-format questions with 3-tier progressive hints and step-by-step solutions.
                   </p>
                 </div>
                 <span className="text-[10px] font-mono text-[#8FA184] uppercase tracking-wider flex items-center gap-1 font-bold pt-2">
@@ -488,28 +537,70 @@ function AcademyContent() {
                 </span>
               </div>
 
-              {/* Portal 4: Revision & Formula Centre */}
+              {/* Portal 5: Board Preparation */}
               <div
-                onClick={() => setActiveTab("revision_centre")}
+                onClick={() => setActiveTab("board_prep")}
                 className="p-5 bg-[#1B1814] border border-[#2E2822] hover:border-[#8FA184] rounded-sm space-y-3 transition-all cursor-pointer group shadow-sm"
               >
                 <div className="w-9 h-9 rounded bg-[#25201A] border border-[#3A332A] flex items-center justify-center text-[#8FA184] group-hover:scale-105 transition-transform">
-                  <Award className="w-4 h-4" />
+                  <BookOpen className="w-4 h-4" />
                 </div>
                 <div>
                   <h3 className="font-serif text-lg font-bold text-[#FAF7F2] group-hover:text-[#8FA184] transition-colors">
-                    Formula Library
+                    Board Preparation
                   </h3>
                   <p className="text-xs text-[#A89F93] mt-1 leading-relaxed">
-                    Master formula sheets, key theorems, chemical laws, and accounting ledgers in KaTeX.
+                    CBSE 2026-27 &amp; Maharashtra State Board syllabus maps, unit weightages, and blueprint question sets.
                   </p>
                 </div>
                 <span className="text-[10px] font-mono text-[#8FA184] uppercase tracking-wider flex items-center gap-1 font-bold pt-2">
-                  Open Formula Vault <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                  Enter Board Hub <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                </span>
+              </div>
+
+              {/* Portal 6: Mock Test Centre */}
+              <div
+                onClick={() => setActiveTab("mock_hall")}
+                className="p-5 bg-[#1B1814] border border-[#2E2822] hover:border-[#C4A47C] rounded-sm space-y-3 transition-all cursor-pointer group shadow-sm"
+              >
+                <div className="w-9 h-9 rounded bg-[#25201A] border border-[#3A332A] flex items-center justify-center text-[#C4A47C] group-hover:scale-105 transition-transform">
+                  <Trophy className="w-4 h-4" />
+                </div>
+                <div>
+                  <h3 className="font-serif text-lg font-bold text-[#FAF7F2] group-hover:text-[#C4A47C] transition-colors">
+                    Mock Test Centre
+                  </h3>
+                  <p className="text-xs text-[#A89F93] mt-1 leading-relaxed">
+                    Authentic exam conditions, timed countdowns, negative marking (+4 / -1), and diagnostic reports.
+                  </p>
+                </div>
+                <span className="text-[10px] font-mono text-[#C4A47C] uppercase tracking-wider flex items-center gap-1 font-bold pt-2">
+                  Enter Examination Hall <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
                 </span>
               </div>
             </div>
           </div>
+        )}
+
+        {/* =========================================================================
+            TAB: CONCEPT LIBRARY (DUAL-TIER LEARNING)
+        ========================================================================= */}
+        {activeTab === "learn" && (
+          <ConceptLibraryHub initialClass={selectedClass} />
+        )}
+
+        {/* =========================================================================
+            TAB: FORMULA LIBRARY (ACTIVE RECALL & 12 SPECIFICATIONS)
+        ========================================================================= */}
+        {activeTab === "formula_library" && (
+          <FormulaLibraryHub initialClass={selectedClass} />
+        )}
+
+        {/* =========================================================================
+            TAB: DIAGRAM VISUALISATION LAB (INTERACTIVE SIMULATIONS)
+        ========================================================================= */}
+        {activeTab === "visualise" && (
+          <DiagramVisualisationLab />
         )}
 
         {/* =========================================================================
@@ -544,136 +635,142 @@ function AcademyContent() {
         )}
 
         {/* =========================================================================
-            TAB 4: PRACTICE ARENA (SUBJECT SELECTION & CUSTOM LAUNCHER)
+            TAB 4: PRACTICE ARENA (INTERACTIVE SOLVER & CUSTOM LAUNCHER)
         ========================================================================= */}
         {activeTab === "practice_arena" && (
-          <div className="space-y-8 animate-fadeIn">
-            <div className="bg-[#1B1814] border border-[#2E2822] rounded-sm p-6 sm:p-8 space-y-3">
-              <span className="text-[10px] font-mono uppercase tracking-[0.25em] text-[#8FA184] font-bold">
-                Tailored 10-Question Exploration Studio
-              </span>
-              <h2 className="font-serif text-3xl sm:text-4xl text-[#FAF7F2]">
-                Practice Arena
-              </h2>
-              <p className="text-xs sm:text-sm text-[#A89F93] max-w-2xl leading-relaxed">
-                Select your subject and difficulty preference. Your progress is strictly tracked to ensure questions never repeat within your 100-question cycle.
-              </p>
-            </div>
+          <div className="space-y-12 animate-fadeIn">
+            {/* Interactive Concept & Multiformat Question Arena */}
+            <PracticeArenaHub initialClass={selectedClass} />
 
-            {/* Subject Cards Grid */}
-            <div className="space-y-3">
-              <div className="flex items-center justify-between font-mono text-xs text-[#A89F93]">
-                <span>Choose Subject ({subjects.length} Available)</span>
-                <span>Stream: {activeStreamConfig?.name}</span>
+            {/* Custom 10-Question Exploration Stream Studio */}
+            <div className="pt-8 border-t border-[#2E2822] space-y-6">
+              <div className="bg-[#1B1814] border border-[#2E2822] rounded-sm p-6 sm:p-8 space-y-3">
+                <span className="text-[10px] font-mono uppercase tracking-[0.25em] text-[#8FA184] font-bold">
+                  Curriculum Cycle Launcher
+                </span>
+                <h3 className="font-serif text-2xl sm:text-3xl text-[#FAF7F2]">
+                  Standard Subject Question Bank
+                </h3>
+                <p className="text-xs sm:text-sm text-[#A89F93] max-w-2xl leading-relaxed">
+                  Select your subject and difficulty preference. Your progress is strictly tracked to ensure questions never repeat within your 100-question cycle.
+                </p>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {subjects.map((subj) => {
-                  const isSelected = subj.slug === selectedSubjectSlug;
-                  const completed = subj.participantProgress?.completedQuestionsCount || 0;
-                  const cycle = subj.participantProgress?.cycleNumber || 1;
-                  return (
-                    <div
-                      key={subj.slug}
-                      onClick={() => setSelectedSubjectSlug(subj.slug)}
-                      className={`p-5 rounded-sm border transition-all cursor-pointer flex flex-col justify-between ${
-                        isSelected
-                          ? "bg-[#25201A] border-[#8FA184] shadow-md scale-[1.01]"
-                          : "bg-[#1B1814] border-[#2E2822] hover:border-[#545E4E]"
-                      }`}
-                    >
-                      <div className="space-y-2">
-                        <div className="flex items-center justify-between">
-                          <span
-                            className={`text-[9px] font-mono uppercase tracking-widest ${
-                              isSelected ? "text-[#8FA184] font-bold" : "text-[#7A7165]"
-                            }`}
-                          >
-                            Cycle {cycle} · {completed}/100 Qs Solved
-                          </span>
-                          {isSelected && <CheckCircle2 className="w-4 h-4 text-[#8FA184]" />}
-                        </div>
+              {/* Subject Cards Grid */}
+              <div className="space-y-3">
+                <div className="flex items-center justify-between font-mono text-xs text-[#A89F93]">
+                  <span>Choose Subject ({subjects.length} Available)</span>
+                  <span>Stream: {activeStreamConfig?.name}</span>
+                </div>
 
-                        <h3 className="font-serif text-lg font-bold text-[#FAF7F2]">
-                          {subj.name}
-                        </h3>
-
-                        <p className="text-xs text-[#A89F93] line-clamp-2 leading-relaxed">
-                          {subj.description}
-                        </p>
-                      </div>
-
-                      <div className="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-[11px] font-mono">
-                        <span className="text-[#8FA184]">{subj.publishedQuestionCount} Questions</span>
-                        <button
-                          type="button"
-                          onClick={(e) => handleResetSubjectCycle(e, subj.slug, subj.name)}
-                          className="text-zinc-500 hover:text-zinc-300 flex items-center gap-1 text-[10px]"
-                          title="Reset question cycle"
-                        >
-                          <RotateCcw className="w-2.5 h-2.5" />
-                          <span>Reset</span>
-                        </button>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-
-            {/* Launch Settings & Action Banner */}
-            {selectedSubject && (
-              <div className="p-6 bg-[#1B1814] border border-[#2E2822] rounded-sm space-y-6">
-                <div className="flex flex-wrap items-center justify-between gap-4 border-b border-white/10 pb-4">
-                  <div>
-                    <span className="text-[10px] font-mono uppercase tracking-wider text-[#8FA184] block font-bold">
-                      Selected Target
-                    </span>
-                    <h4 className="font-serif text-2xl text-[#FAF7F2]">{selectedSubject.name}</h4>
-                  </div>
-
-                  {/* Difficulty Selector */}
-                  <div className="flex items-center gap-1.5 font-mono text-xs">
-                    {(["Mixed", "Easy", "Medium", "Hard"] as const).map((d) => (
-                      <button
-                        key={d}
-                        type="button"
-                        onClick={() => setDifficulty(d)}
-                        className={`px-3 py-1.5 rounded-sm uppercase tracking-wider transition-colors cursor-pointer ${
-                          difficulty === d
-                            ? "bg-[#8FA184] text-[#12100E] font-bold shadow-sm"
-                            : "bg-[#25201A] border border-[#3A332A] text-[#A89F93] hover:text-[#FAF7F2]"
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {subjects.map((subj) => {
+                    const isSelected = subj.slug === selectedSubjectSlug;
+                    const completed = subj.participantProgress?.completedQuestionsCount || 0;
+                    const cycle = subj.participantProgress?.cycleNumber || 1;
+                    return (
+                      <div
+                        key={subj.slug}
+                        onClick={() => setSelectedSubjectSlug(subj.slug)}
+                        className={`p-5 rounded-sm border transition-all cursor-pointer flex flex-col justify-between ${
+                          isSelected
+                            ? "bg-[#25201A] border-[#8FA184] shadow-md scale-[1.01]"
+                            : "bg-[#1B1814] border-[#2E2822] hover:border-[#545E4E]"
                         }`}
                       >
-                        {d}
-                      </button>
-                    ))}
-                  </div>
-                </div>
+                        <div className="space-y-2">
+                          <div className="flex items-center justify-between">
+                            <span
+                              className={`text-[9px] font-mono uppercase tracking-widest ${
+                                isSelected ? "text-[#8FA184] font-bold" : "text-[#7A7165]"
+                              }`}
+                            >
+                              Cycle {cycle} · {completed}/100 Qs Solved
+                            </span>
+                            {isSelected && <CheckCircle2 className="w-4 h-4 text-[#8FA184]" />}
+                          </div>
 
-                <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
-                  <label className="flex items-center gap-2.5 text-xs text-[#DDD4C5] font-mono cursor-pointer select-none">
-                    <input
-                      type="checkbox"
-                      checked={instantFeedback}
-                      onChange={(e) => setInstantFeedback(e.target.checked)}
-                      className="rounded border-[#3A332A] text-[#8FA184] focus:ring-0"
-                    />
-                    <span>Instant Feedback Mode (Reveal solution immediately per question)</span>
-                  </label>
+                          <h4 className="font-serif text-lg font-bold text-[#FAF7F2]">
+                            {subj.name}
+                          </h4>
 
-                  <button
-                    type="button"
-                    onClick={() => handleStartAttempt()}
-                    disabled={isStarting}
-                    className="w-full sm:w-auto px-8 py-3.5 bg-[#8FA184] hover:bg-[#A3B897] text-[#12100E] font-mono text-xs uppercase tracking-[0.2em] font-bold rounded-sm transition-all shadow-md cursor-pointer flex items-center justify-center gap-2 active:scale-[0.98]"
-                  >
-                    <Play className="w-4 h-4 fill-[#12100E]" />
-                    <span>{isStarting ? "Initializing..." : "Begin Practice Challenge (10 Qs)"}</span>
-                  </button>
+                          <p className="text-xs text-[#A89F93] line-clamp-2 leading-relaxed">
+                            {subj.description}
+                          </p>
+                        </div>
+
+                        <div className="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-[11px] font-mono">
+                          <span className="text-[#8FA184]">{subj.publishedQuestionCount} Questions</span>
+                          <button
+                            type="button"
+                            onClick={(e) => handleResetSubjectCycle(e, subj.slug, subj.name)}
+                            className="text-zinc-500 hover:text-zinc-300 flex items-center gap-1 text-[10px]"
+                            title="Reset question cycle"
+                          >
+                            <RotateCcw className="w-2.5 h-2.5" />
+                            <span>Reset</span>
+                          </button>
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
-            )}
+
+              {/* Launch Settings & Action Banner */}
+              {selectedSubject && (
+                <div className="p-6 bg-[#1B1814] border border-[#2E2822] rounded-sm space-y-6">
+                  <div className="flex flex-wrap items-center justify-between gap-4 border-b border-white/10 pb-4">
+                    <div>
+                      <span className="text-[10px] font-mono uppercase tracking-wider text-[#8FA184] block font-bold">
+                        Selected Target
+                      </span>
+                      <h4 className="font-serif text-2xl text-[#FAF7F2]">{selectedSubject.name}</h4>
+                    </div>
+
+                    {/* Difficulty Selector */}
+                    <div className="flex items-center gap-1.5 font-mono text-xs">
+                      {(["Mixed", "Easy", "Medium", "Hard"] as const).map((d) => (
+                        <button
+                          key={d}
+                          type="button"
+                          onClick={() => setDifficulty(d)}
+                          className={`px-3 py-1.5 rounded-sm uppercase tracking-wider transition-colors cursor-pointer ${
+                            difficulty === d
+                              ? "bg-[#8FA184] text-[#12100E] font-bold shadow-sm"
+                              : "bg-[#25201A] border border-[#3A332A] text-[#A89F93] hover:text-[#FAF7F2]"
+                          }`}
+                        >
+                          {d}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
+                    <label className="flex items-center gap-2.5 text-xs text-[#DDD4C5] font-mono cursor-pointer select-none">
+                      <input
+                        type="checkbox"
+                        checked={instantFeedback}
+                        onChange={(e) => setInstantFeedback(e.target.checked)}
+                        className="rounded border-[#3A332A] text-[#8FA184] focus:ring-0"
+                      />
+                      <span>Instant Feedback Mode (Reveal solution immediately per question)</span>
+                    </label>
+
+                    <button
+                      type="button"
+                      onClick={() => handleStartAttempt()}
+                      disabled={isStarting}
+                      className="w-full sm:w-auto px-8 py-3.5 bg-[#8FA184] hover:bg-[#A3B897] text-[#12100E] font-mono text-xs uppercase tracking-[0.2em] font-bold rounded-sm transition-all shadow-md cursor-pointer flex items-center justify-center gap-2 active:scale-[0.98]"
+                    >
+                      <Play className="w-4 h-4 fill-[#12100E]" />
+                      <span>{isStarting ? "Initializing..." : "Begin Practice Challenge (10 Qs)"}</span>
+                    </button>
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         )}
 
@@ -682,87 +779,7 @@ function AcademyContent() {
         ========================================================================= */}
         {activeTab === "mock_hall" && (
           <div className="space-y-8 animate-fadeIn">
-            <div className="bg-[#181512] border border-[#2E2822] rounded-sm p-6 sm:p-8 text-[#FAF7F2] space-y-3">
-              <span className="text-[10px] font-mono uppercase tracking-[0.25em] text-[#C4A47C] font-bold">
-                Timed Examination Simulation
-              </span>
-              <h2 className="font-serif text-3xl sm:text-4xl text-[#FAF7F2]">
-                Mock Examination Hall
-              </h2>
-              <p className="text-xs sm:text-sm text-[#A89F93] max-w-2xl leading-relaxed">
-                Experience full-length examination conditions. Timed countdowns, zero external aids, and authentic national percentile estimations.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="p-6 bg-[#1B1814] border border-[#2E2822] rounded-sm space-y-4">
-                <span className="text-[10px] font-mono uppercase tracking-widest text-[#8FA184] font-bold">
-                  Class 11 Mock Exam Standard
-                </span>
-                <h3 className="font-serif text-2xl font-bold text-[#FAF7F2]">
-                  Annual Board Comprehensive Mock
-                </h3>
-                <p className="text-xs text-[#A89F93] leading-relaxed">
-                  Full 10-chapter assessment aligned strictly with the State Board FYJC pattern. Includes Section A MCQs, numerical assertions, and multi-concept diagrams.
-                </p>
-                <div className="pt-2 font-mono text-xs text-[#DDD4C5] space-y-1">
-                  <div className="flex justify-between">
-                    <span>Duration:</span>
-                    <span>60 Minutes</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Questions:</span>
-                    <span>10 Curated Comprehensive Items</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Marking:</span>
-                    <span>+1 Mark per correct answer (No negative)</span>
-                  </div>
-                </div>
-
-                <button
-                  type="button"
-                  onClick={() => handleStartAttempt(subjects[0]?.slug, "Mixed")}
-                  className="w-full mt-4 py-3 bg-[#8FA184] hover:bg-[#A3B897] text-[#12100E] font-mono text-xs uppercase tracking-wider font-bold rounded-sm transition-colors cursor-pointer"
-                >
-                  Enter Board Mock Hall
-                </button>
-              </div>
-
-              <div className="p-6 bg-[#1B1814] border border-[#2E2822] rounded-sm space-y-4">
-                <span className="text-[10px] font-mono uppercase tracking-widest text-[#C4A47C] font-bold">
-                  Entrance Simulation Standard
-                </span>
-                <h3 className="font-serif text-2xl font-bold text-[#FAF7F2]">
-                  National Entrance Benchmark Mock
-                </h3>
-                <p className="text-xs text-[#A89F93] leading-relaxed">
-                  Simulated multi-concept questions featuring negative marking penalties (+4 / -1) and strict time discipline to train speed under pressure.
-                </p>
-                <div className="pt-2 font-mono text-xs text-[#DDD4C5] space-y-1">
-                  <div className="flex justify-between">
-                    <span>Duration:</span>
-                    <span>45 Minutes</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Questions:</span>
-                    <span>10 High-Difficulty Items</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Marking:</span>
-                    <span className="text-amber-400 font-bold">+4 / -1 Negative Marking</span>
-                  </div>
-                </div>
-
-                <button
-                  type="button"
-                  onClick={() => handleStartAttempt(subjects[0]?.slug, "Hard")}
-                  className="w-full mt-4 py-3 bg-[#C4A47C] hover:bg-[#D6B892] text-[#12100E] font-mono text-xs uppercase tracking-wider font-bold rounded-sm transition-colors cursor-pointer"
-                >
-                  Enter Entrance Benchmark Mock
-                </button>
-              </div>
-            </div>
+            <TestCentreHub initialClass={selectedClass} />
           </div>
         )}
 
@@ -775,16 +792,19 @@ function AcademyContent() {
             TAB 7: ACHIEVEMENTS & SCHOLASTIC HONORS
         ========================================================================= */}
         {activeTab === "achievements" && (
-          <AchievementsPanel
-            totalAttemptsCompleted={totalAttemptsCount}
-            bestScoreOutOf10={
-              subjects.reduce(
-                (max, s) => Math.max(max, s.participantProgress?.bestScoreOutOf10 || 0),
-                0
-              ) || 8
-            }
-            studentName={existingDisplayName || fullName || "The Scholar"}
-          />
+          <div className="space-y-10 animate-fadeIn">
+            <LearningProgressionHub />
+            <AchievementsPanel
+              totalAttemptsCompleted={totalAttemptsCount}
+              bestScoreOutOf10={
+                subjects.reduce(
+                  (max, s) => Math.max(max, s.participantProgress?.bestScoreOutOf10 || 0),
+                  0
+                ) || 8
+              }
+              studentName={existingDisplayName || fullName || "The Scholar"}
+            />
+          </div>
         )}
 
         {/* =========================================================================

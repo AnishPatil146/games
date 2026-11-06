@@ -39,12 +39,15 @@ export function AcademyHeader({
 }: AcademyHeaderProps) {
   const tabs: { id: AcademyTab; label: string; icon: typeof BookOpen }[] = [
     { id: "home", label: "Academy Gate", icon: Compass },
+    { id: "learn", label: "Learn", icon: BookOpen },
+    { id: "formula_library", label: "Formula Library", icon: FileText },
+    { id: "visualise", label: "Visualise", icon: Compass },
+    { id: "practice_arena", label: "Practice", icon: GraduationCap },
     { id: "board_prep", label: "Board Prep", icon: BookOpen },
     { id: "competitive_exams", label: "Entrance Arena", icon: Trophy },
-    { id: "practice_arena", label: "Practice Studio", icon: GraduationCap },
-    { id: "mock_hall", label: "Mock Exam Hall", icon: FileText },
-    { id: "revision_centre", label: "Revision & Formulas", icon: Award },
-    { id: "achievements", label: "Honors & Badges", icon: Award },
+    { id: "mock_hall", label: "Test Centre", icon: FileText },
+    { id: "revision_centre", label: "Revision", icon: Award },
+    { id: "achievements", label: "My Progress", icon: Award },
     { id: "analytics", label: "Analytics", icon: BarChart3 },
   ];
 

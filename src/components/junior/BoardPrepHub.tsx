@@ -21,8 +21,8 @@ interface EnrichedSubject extends AcademicSubjectConfig {
 }
 
 interface BoardPrepHubProps {
-  selectedClass: 11 | 12;
-  onClassChange: (c: 11 | 12) => void;
+  selectedClass: 10 | 11 | 12;
+  onClassChange: (c: 10 | 11 | 12) => void;
   selectedStream: StreamSlug;
   onStreamChange: (s: StreamSlug) => void;
   streams: AcademicStreamConfig[];
@@ -75,25 +75,36 @@ export function BoardPrepHub({
             <div className="inline-flex p-1 bg-[#12100E] border border-[#3A332A] rounded-sm">
               <button
                 type="button"
+                onClick={() => onClassChange(10)}
+                className={`px-3 sm:px-4 py-1.5 text-xs font-mono uppercase tracking-wider rounded-sm transition-all cursor-pointer ${
+                  selectedClass === 10
+                    ? "bg-[#2A241E] text-[#FAF7F2] font-bold shadow-sm"
+                    : "text-[#8A8178] hover:text-[#FAF7F2]"
+                }`}
+              >
+                Class 10 (SSC/CBSE)
+              </button>
+              <button
+                type="button"
                 onClick={() => onClassChange(11)}
-                className={`px-4 py-1.5 text-xs font-mono uppercase tracking-wider rounded-sm transition-all cursor-pointer ${
+                className={`px-3 sm:px-4 py-1.5 text-xs font-mono uppercase tracking-wider rounded-sm transition-all cursor-pointer ${
                   selectedClass === 11
                     ? "bg-[#2A241E] text-[#FAF7F2] font-bold shadow-sm"
                     : "text-[#8A8178] hover:text-[#FAF7F2]"
                 }`}
               >
-                Class 11 (FYJC) · Full Syllabus
+                Class 11 (FYJC)
               </button>
               <button
                 type="button"
                 onClick={() => onClassChange(12)}
-                className={`px-4 py-1.5 text-xs font-mono uppercase tracking-wider rounded-sm transition-all cursor-pointer ${
+                className={`px-3 sm:px-4 py-1.5 text-xs font-mono uppercase tracking-wider rounded-sm transition-all cursor-pointer ${
                   selectedClass === 12
                     ? "bg-[#2A241E] text-[#FAF7F2] font-bold shadow-sm"
                     : "text-[#8A8178] hover:text-[#FAF7F2]"
                 }`}
               >
-                Class 12 (HSC) · Pre-Board Mode
+                Class 12 (HSC)
               </button>
             </div>
 

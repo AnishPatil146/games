@@ -12,9 +12,12 @@ import { StreamSlug } from "@/lib/platform-types";
 
 export type AcademyTab =
   | "home"
+  | "learn"
+  | "formula_library"
+  | "visualise"
+  | "practice_arena"
   | "board_prep"
   | "competitive_exams"
-  | "practice_arena"
   | "mock_hall"
   | "revision_centre"
   | "achievements"
