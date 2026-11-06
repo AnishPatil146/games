@@ -57,6 +57,20 @@ describe("THE UNWRITTEN — Academy 3.0 Intelligence & Diagnostic Verification S
       assert.equal(stripDelimiters("$F = m a$"), "F = m a");
       assert.equal(stripDelimiters("E = mc^2"), "E = mc^2");
     });
+
+    test("Preserves English prose spacing and isolates mathematical formulas in mixed question text", () => {
+      const q1 = "If two non-zero vectors A and B satisfy |A × B| = √3 (A · B), what is the magnitude of their resultant |A + B|?";
+      assert.ok(q1.includes("If two non-zero vectors"));
+      assert.ok(q1.includes("what is the magnitude of their resultant"));
+
+      const mathSnippet1 = katex.renderToString("|A \\times B| = \\sqrt{3}(A \\cdot B)", { throwOnError: false });
+      assert.ok(mathSnippet1.includes("katex"));
+      assert.ok(!mathSnippet1.includes("katex-error"));
+
+      const mathSnippet2 = katex.renderToString("|A + B|", { throwOnError: false });
+      assert.ok(mathSnippet2.includes("katex"));
+      assert.ok(!mathSnippet2.includes("katex-error"));
+    });
   });
 
   // 2. Prerequisite Weakness Detection DAG

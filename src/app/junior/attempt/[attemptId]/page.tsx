@@ -283,9 +283,9 @@ export default function JuniorAttemptPage({ params }: PageProps) {
           alt="Academy Environment"
           fill
           priority
-          className="object-cover object-center opacity-20 filter blur-[0.5px]"
+          className="object-cover object-center opacity-30 filter brightness-90"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0F0D0C]/85 via-[#0F0D0C]/75 to-[#0F0D0C]/95" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#12100E]/90 via-[#181411]/85 to-[#12100E]/95" />
       </div>
       {/* 1. TOP SCHOLAR EXAMINATION BAR */}
       <header className="sticky top-0 z-30 bg-[#161311]/95 backdrop-blur-md border-b border-[#2C2621] px-4 sm:px-6 py-2.5">
@@ -403,9 +403,9 @@ export default function JuniorAttemptPage({ params }: PageProps) {
         ) : attempt && currentQuestion ? (
           <div className="space-y-6">
             {/* 10-Question Navigation Palette */}
-            <div className="bg-[#171412] border border-[#2C2620] rounded-sm p-3 sm:p-4 flex flex-wrap items-center justify-between gap-3">
+            <div className="bg-[#201C18]/95 backdrop-blur-md border border-[#44382C] rounded-sm p-3.5 sm:p-4 flex flex-wrap items-center justify-between gap-3 shadow-lg">
               <div className="flex items-center gap-2">
-                <span className="text-[11px] font-mono uppercase tracking-wider text-[#8A8178] mr-1 hidden sm:inline">
+                <span className="text-[11px] font-mono uppercase tracking-wider text-[#D4C8B8] font-bold mr-1 hidden sm:inline">
                   Question Palette:
                 </span>
                 <div
@@ -427,10 +427,10 @@ export default function JuniorAttemptPage({ params }: PageProps) {
                         aria-current={isCurrent ? "step" : undefined}
                         className={`w-7 h-7 sm:w-8 sm:h-8 text-xs font-mono rounded-sm border transition-all cursor-pointer font-bold ${
                           isCurrent
-                            ? "bg-[#8FA184] text-[#12100E] border-[#8FA184] shadow-sm scale-105"
+                            ? "bg-[#8FA184] text-[#12100E] border-2 border-white shadow-md scale-105"
                             : isAnswered
-                            ? "bg-[#25382E] text-[#8FA184] border-[#3E5C4B]"
-                            : "bg-[#1E1B18] text-[#8A8178] border-[#322A22] hover:border-[#545E4E] hover:text-[#FAF7F2]"
+                            ? "bg-[#2D4536] text-[#A3B897] border border-[#4E755D]"
+                            : "bg-[#2C241E] text-[#E0D7CC] border border-[#4A3D32] hover:border-[#8FA184] hover:text-white"
                         }`}
                       >
                         {String(idx + 1).padStart(2, "0")}
@@ -440,14 +440,14 @@ export default function JuniorAttemptPage({ params }: PageProps) {
                 </div>
               </div>
 
-              <div className="flex items-center gap-3 text-xs font-mono text-[#8A8178]">
+              <div className="flex items-center gap-3 text-xs font-mono text-[#D4C8B8]">
                 <div className="flex items-center gap-1.5">
-                  <span className="w-2.5 h-2.5 rounded-xs bg-[#25382E] border border-[#3E5C4B]" />
-                  <span className="text-[10px]">Answered</span>
+                  <span className="w-2.5 h-2.5 rounded-xs bg-[#2D4536] border border-[#4E755D]" />
+                  <span className="text-[11px] text-[#A3B897] font-semibold">Answered</span>
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <span className="w-2.5 h-2.5 rounded-xs bg-[#1E1B18] border border-[#322A22]" />
-                  <span className="text-[10px]">Pending</span>
+                  <span className="w-2.5 h-2.5 rounded-xs bg-[#2C241E] border border-[#4A3D32]" />
+                  <span className="text-[11px] text-[#D4C8B8]">Pending</span>
                 </div>
               </div>
             </div>
@@ -458,39 +458,45 @@ export default function JuniorAttemptPage({ params }: PageProps) {
               initial={prefersReducedMotion ? false : { opacity: 0, y: 6 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.2 }}
-              className="bg-[#181512] border border-[#332B23] rounded-sm p-6 sm:p-8 space-y-6 shadow-xl"
+              className="bg-[#1C1814]/95 backdrop-blur-md border border-[#4A3E31] rounded-sm p-6 sm:p-8 space-y-6 shadow-2xl ring-1 ring-white/5"
             >
               {/* Question Header & Syllabus Metadata */}
-              <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[#2C241D] pb-4">
+              <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[#3D3328] pb-4">
                 <div className="space-y-1">
                   <div className="flex items-center gap-2">
-                    <span className="text-[10px] uppercase font-mono tracking-wider px-2 py-0.5 rounded-xs bg-[#25382E] border border-[#3E5C4B] text-[#8FA184] font-bold">
+                    <span className="text-[10px] uppercase font-mono tracking-wider px-2.5 py-0.5 rounded-xs bg-[#2D4536] border border-[#4E755D] text-[#A3B897] font-bold">
                       Question {currentIndex + 1} of {attempt.questions.length}
                     </span>
-                    <span className="text-xs text-[#A89F93]">
+                    <span className="text-sm font-semibold text-[#FAF7F2]">
                       Chapter {currentQuestion.chapterNumber}: {currentQuestion.chapter}
                     </span>
                   </div>
-                  <div className="text-xs text-[#70685F] font-mono">
-                    Topic: {currentQuestion.topic}
+                  <div className="text-xs text-[#CFC5B4] font-mono">
+                    Topic: <span className="text-[#FAF7F2] font-semibold">{currentQuestion.topic}</span>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-2">
-                  <span className="text-[10px] uppercase tracking-wider font-mono px-2 py-0.5 rounded-xs bg-[#201C18] border border-[#3A3127] text-[#CFC5B4]">
+                  <span className={`text-[10px] uppercase tracking-wider font-mono px-2.5 py-1 rounded-xs font-bold border ${
+                    currentQuestion.difficulty === "Hard"
+                      ? "bg-amber-950/60 border-amber-600/50 text-amber-300"
+                      : currentQuestion.difficulty === "Medium"
+                      ? "bg-blue-950/60 border-blue-600/50 text-blue-300"
+                      : "bg-emerald-950/60 border-emerald-600/50 text-emerald-300"
+                  }`}>
                     {currentQuestion.difficulty}
                   </span>
                 </div>
               </div>
 
               {/* Question Text with KaTeX Equations */}
-              <div className="text-lg sm:text-xl font-serif text-[#FAF7F2] leading-relaxed">
+              <div className="text-lg sm:text-xl font-serif text-[#FFFFFF] leading-relaxed tracking-wide font-normal">
                 <MathRenderer content={currentQuestion.questionText} />
               </div>
 
               {/* Diagram Rendering (if present) */}
               {currentQuestion.diagramType && (
-                <div className="p-4 bg-[#141210] border border-[#2C241D] rounded-sm">
+                <div className="p-4 bg-[#14110E] border border-[#3D3328] rounded-sm">
                   <JuniorInteractiveDiagram type={currentQuestion.diagramType} />
                 </div>
               )}
@@ -517,29 +523,29 @@ export default function JuniorAttemptPage({ params }: PageProps) {
                       role="radio"
                       aria-checked={isSelected}
                       onClick={() => handleSelectOption(opt.key)}
-                      className={`w-full text-left p-4 sm:p-5 rounded-sm border transition-all flex items-start gap-4 cursor-pointer group ${
+                      className={`w-full text-left p-4 sm:p-5 rounded-sm border transition-all flex items-start gap-4 cursor-pointer group shadow-md ${
                         isRevealedCorrect
-                          ? "bg-[#1E3828] border-[#4E8A68] text-[#FAF7F2]"
+                          ? "bg-[#1E3E2C] border-2 border-emerald-400 text-white"
                           : isRevealedWrong
-                          ? "bg-[#3D1E1E] border-[#8A4E4E] text-[#FAF7F2]"
+                          ? "bg-[#451F1F] border-2 border-rose-500 text-white"
                           : isSelected
-                          ? "bg-[#27211B] border-[#8FA184] text-[#FAF7F2] shadow-md ring-1 ring-[#8FA184]"
-                          : "bg-[#14120F] hover:bg-[#1C1814] text-[#CFC5B4] hover:text-[#FAF7F2] border-[#2C241D] hover:border-[#42372A]"
+                          ? "bg-[#2A231C] border-2 border-[#8FA184] text-white shadow-lg ring-1 ring-[#8FA184]"
+                          : "bg-[#221C18] hover:bg-[#2C241E] text-[#FAF7F2] border border-[#44372A] hover:border-[#8FA184]"
                       }`}
                     >
                       <span
-                        className={`w-7 h-7 rounded-sm border font-mono text-xs font-bold flex items-center justify-center shrink-0 mt-0.5 transition-colors ${
+                        className={`w-8 h-8 rounded-sm border font-mono text-xs font-bold flex items-center justify-center shrink-0 mt-0.5 transition-colors ${
                           isSelected
-                            ? "border-[#8FA184] bg-[#8FA184] text-[#12100E]"
-                            : "border-[#3A3127] bg-[#1E1B17] text-[#A89F93] group-hover:border-[#545E4E]"
+                            ? "border-[#8FA184] bg-[#8FA184] text-[#12100E] font-black"
+                            : "border-[#4A3D30] bg-[#2E2620] text-[#D4C8B8] group-hover:border-[#8FA184] group-hover:text-white"
                         }`}
                       >
                         {opt.key}
                       </span>
-                      <span className="text-sm sm:text-base leading-relaxed flex-1">
+                      <span className="text-base sm:text-lg leading-relaxed flex-1 text-[#FFFFFF]">
                         <MathRenderer content={opt.text} />
                       </span>
-                      <span className="hidden sm:inline-block text-[10px] font-mono text-[#575047] opacity-0 group-hover:opacity-100 transition-opacity">
+                      <span className="hidden sm:inline-block text-[10px] font-mono text-[#A89F93] opacity-0 group-hover:opacity-100 transition-opacity">
                         Press [{opt.key}]
                       </span>
                     </button>
@@ -582,13 +588,13 @@ export default function JuniorAttemptPage({ params }: PageProps) {
                 size="md"
                 disabled={currentIndex === 0}
                 onClick={() => navigateSlot(currentIndex - 1)}
-                className="border-[#382E24] text-[#CFC5B4] hover:text-[#FAF7F2] bg-[#171412]"
+                className="border-[#4E4133] text-[#FAF7F2] hover:text-white bg-[#28221C] hover:bg-[#342C24] font-mono font-semibold"
               >
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Previous Question
               </Button>
 
-              <div className="flex items-center gap-2 text-[11px] font-mono text-[#70685F] hidden md:flex">
+              <div className="flex items-center gap-2 text-[11px] font-mono text-[#D4C8B8] hidden md:flex font-medium">
                 <Keyboard className="w-3.5 h-3.5" />
                 <span>Shortcuts: [1-4 / A-D] to pick · [← / →] to navigate · [F] formulas</span>
               </div>
@@ -600,7 +606,7 @@ export default function JuniorAttemptPage({ params }: PageProps) {
                     variant="primary"
                     size="md"
                     onClick={() => navigateSlot(currentIndex + 1)}
-                    className="bg-[#2D4A3E] hover:bg-[#395C4D] text-[#FAF7F2] border-[#4A6E5F]"
+                    className="bg-[#8FA184] hover:bg-[#A3B897] text-[#12100E] font-bold font-mono border-transparent shadow-md"
                   >
                     <span>Next Question</span>
                     <ArrowRight className="w-4 h-4 ml-2" />
@@ -611,7 +617,7 @@ export default function JuniorAttemptPage({ params }: PageProps) {
                     variant="primary"
                     size="md"
                     onClick={() => setShowConfirmModal(true)}
-                    className="bg-[#8FA184] hover:bg-[#A3B597] text-[#12100E] font-bold border-transparent"
+                    className="bg-[#8FA184] hover:bg-[#A3B897] text-[#12100E] font-bold font-mono border-transparent shadow-lg"
                   >
                     <Send className="w-4 h-4 mr-2" />
                     Review &amp; Submit Folio

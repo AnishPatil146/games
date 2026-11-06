@@ -81,8 +81,8 @@ export default function AdminJuniorModePage() {
   const filteredFormulas = ACADEMIC_FORMULA_REGISTRY.filter(
     (f) =>
       f.name.toLowerCase().includes(formulaSearch.toLowerCase()) ||
-      f.latex.toLowerCase().includes(formulaSearch.toLowerCase()) ||
-      f.subjectId.toLowerCase().includes(formulaSearch.toLowerCase())
+      f.latexExpression.toLowerCase().includes(formulaSearch.toLowerCase()) ||
+      f.subjectSlug.toLowerCase().includes(formulaSearch.toLowerCase())
   );
 
   return (
@@ -117,11 +117,10 @@ export default function AdminJuniorModePage() {
       <div className="flex flex-wrap gap-2 border-b border-[#DDD4C5] pb-3 text-xs font-mono">
         <button
           onClick={() => setActiveTab("telemetry")}
-          className={`px-3.5 py-2 rounded-sm flex items-center gap-2 transition-all ${
-            activeTab === "telemetry"
+          className={`px-3.5 py-2 rounded-sm flex items-center gap-2 transition-all ${activeTab === "telemetry"
               ? "bg-[#181512] text-[#FAF7F2] font-bold shadow-sm"
               : "bg-[#EFEBE4] text-[#57524C] hover:bg-[#E5DEC9]"
-          }`}
+            }`}
         >
           <Layers className="w-4 h-4" />
           <span>Subject Bank Telemetry</span>
@@ -129,11 +128,10 @@ export default function AdminJuniorModePage() {
 
         <button
           onClick={() => setActiveTab("visual-studio")}
-          className={`px-3.5 py-2 rounded-sm flex items-center gap-2 transition-all ${
-            activeTab === "visual-studio"
+          className={`px-3.5 py-2 rounded-sm flex items-center gap-2 transition-all ${activeTab === "visual-studio"
               ? "bg-[#181512] text-[#FAF7F2] font-bold shadow-sm"
               : "bg-[#EFEBE4] text-[#57524C] hover:bg-[#E5DEC9]"
-          }`}
+            }`}
         >
           <Eye className="w-4 h-4 text-[#8FA184]" />
           <span>Visual Content Studio ({visuals.length})</span>
@@ -141,11 +139,10 @@ export default function AdminJuniorModePage() {
 
         <button
           onClick={() => setActiveTab("formulas")}
-          className={`px-3.5 py-2 rounded-sm flex items-center gap-2 transition-all ${
-            activeTab === "formulas"
+          className={`px-3.5 py-2 rounded-sm flex items-center gap-2 transition-all ${activeTab === "formulas"
               ? "bg-[#181512] text-[#FAF7F2] font-bold shadow-sm"
               : "bg-[#EFEBE4] text-[#57524C] hover:bg-[#E5DEC9]"
-          }`}
+            }`}
         >
           <Calculator className="w-4 h-4 text-[#C8B28E]" />
           <span>Formula Intelligence Studio</span>
@@ -153,11 +150,10 @@ export default function AdminJuniorModePage() {
 
         <button
           onClick={() => setActiveTab("prerequisites")}
-          className={`px-3.5 py-2 rounded-sm flex items-center gap-2 transition-all ${
-            activeTab === "prerequisites"
+          className={`px-3.5 py-2 rounded-sm flex items-center gap-2 transition-all ${activeTab === "prerequisites"
               ? "bg-[#181512] text-[#FAF7F2] font-bold shadow-sm"
               : "bg-[#EFEBE4] text-[#57524C] hover:bg-[#E5DEC9]"
-          }`}
+            }`}
         >
           <Network className="w-4 h-4 text-[#545E4E]" />
           <span>Prerequisite Dependency Graph</span>
@@ -174,11 +170,10 @@ export default function AdminJuniorModePage() {
                 key={st}
                 type="button"
                 onClick={() => setStreamFilter(st)}
-                className={`px-3.5 py-1.5 text-xs uppercase tracking-[0.16em] rounded-sm border cursor-pointer ${
-                  streamFilter === st
+                className={`px-3.5 py-1.5 text-xs uppercase tracking-[0.16em] rounded-sm border cursor-pointer ${streamFilter === st
                     ? "bg-[#1C1917] text-[#FAF7F2] border-[#1C1917]"
                     : "bg-[#FAF7F2] text-[#57524C] border-[#DDD4C5]"
-                }`}
+                  }`}
               >
                 {st}
               </button>
@@ -215,9 +210,8 @@ export default function AdminJuniorModePage() {
                         </td>
                         <td className="py-3.5 px-4">
                           <span
-                            className={`inline-flex items-center gap-1.5 font-mono ${
-                              healthy ? "text-[#545E4E]" : "text-[#9E6B68]"
-                            }`}
+                            className={`inline-flex items-center gap-1.5 font-mono ${healthy ? "text-[#545E4E]" : "text-[#9E6B68]"
+                              }`}
                           >
                             {healthy ? (
                               <CheckCircle2 className="w-3.5 h-3.5" />
@@ -267,11 +261,10 @@ export default function AdminJuniorModePage() {
                   <div
                     key={spec.id}
                     onClick={() => setSelectedVisual(spec)}
-                    className={`p-3 rounded-sm border cursor-pointer transition-all text-xs ${
-                      selectedVisual.id === spec.id
+                    className={`p-3 rounded-sm border cursor-pointer transition-all text-xs ${selectedVisual.id === spec.id
                         ? "bg-[#181512] text-[#FAF7F2] border-[#181512]"
                         : "bg-white text-[#1C1917] border-[#DDD4C5] hover:bg-[#F3EDE2]"
-                    }`}
+                      }`}
                   >
                     <div className="flex items-center justify-between mb-1">
                       <span className="font-serif font-bold text-sm">
@@ -282,13 +275,12 @@ export default function AdminJuniorModePage() {
                       </span>
                     </div>
                     <p
-                      className={`text-[11px] line-clamp-2 ${
-                        selectedVisual.id === spec.id
+                      className={`text-[11px] line-clamp-2 ${selectedVisual.id === spec.id
                           ? "text-[#A89F93]"
                           : "text-[#57524C]"
-                      }`}
+                        }`}
                     >
-                      {spec.curriculumAnchor}
+                      {spec.subjectName} • {spec.chapterTitle}
                     </p>
                   </div>
                 ))}
@@ -300,13 +292,13 @@ export default function AdminJuniorModePage() {
               <div className="flex items-start justify-between border-b border-[#DDD4C5] pb-4">
                 <div>
                   <span className="text-[10px] font-mono uppercase text-[#8FA184] font-bold tracking-wider">
-                    {selectedVisual.domain.toUpperCase()} • {selectedVisual.visualisationType.toUpperCase()}
+                    {selectedVisual.domain.toUpperCase()} • {selectedVisual.visualType.toUpperCase()}
                   </span>
                   <h3 className="font-serif text-2xl font-bold text-[#1C1917] mt-0.5">
                     {selectedVisual.title}
                   </h3>
                   <p className="text-xs text-[#57524C] mt-1 font-mono">
-                    Anchor: {selectedVisual.curriculumAnchor}
+                    Anchor: {selectedVisual.subjectName} • {selectedVisual.chapterTitle}
                   </p>
                 </div>
                 <span className="px-3 py-1 bg-emerald-100 text-emerald-800 border border-emerald-300 rounded text-xs font-mono font-bold">
@@ -320,7 +312,7 @@ export default function AdminJuniorModePage() {
                   Explanatory Pedagogical Narrative:
                 </span>
                 <p className="font-serif text-sm leading-relaxed text-[#1C1917]">
-                  {selectedVisual.explanation}
+                  {selectedVisual.description}
                 </p>
               </div>
 
@@ -332,11 +324,11 @@ export default function AdminJuniorModePage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs font-mono">
                   {selectedVisual.parameters.map((p) => (
                     <div
-                      key={p.key}
+                      key={p.id}
                       className="p-3 bg-white border border-[#DDD4C5] rounded space-y-1"
                     >
                       <div className="flex justify-between items-center">
-                        <span className="font-bold text-[#1C1917]">{p.label}</span>
+                        <span className="font-bold text-[#1C1917]">{p.name} ({p.symbol})</span>
                         <span className="text-[10px] text-[#8A8178]">
                           {p.min} → {p.max} {p.unit}
                         </span>
@@ -356,7 +348,7 @@ export default function AdminJuniorModePage() {
                     Integrated Knowledge Check Quiz:
                   </span>
                   <p className="font-serif text-sm font-semibold text-[#1C1917]">
-                    {selectedVisual.knowledgeCheck.prompt}
+                    {selectedVisual.knowledgeCheck.question}
                   </p>
                   <p className="text-[11px] text-[#545E4E] pt-1">
                     <strong>Explanation:</strong> {selectedVisual.knowledgeCheck.explanation}
@@ -390,20 +382,19 @@ export default function AdminJuniorModePage() {
                   <div
                     key={f.id}
                     onClick={() => setSelectedFormula(f)}
-                    className={`p-3 rounded-sm border cursor-pointer transition-all text-xs ${
-                      selectedFormula.id === f.id
+                    className={`p-3 rounded-sm border cursor-pointer transition-all text-xs ${selectedFormula.id === f.id
                         ? "bg-[#181512] text-[#FAF7F2] border-[#181512]"
                         : "bg-white text-[#1C1917] border-[#DDD4C5] hover:bg-[#F3EDE2]"
-                    }`}
+                      }`}
                   >
                     <div className="flex items-center justify-between mb-1">
                       <span className="font-serif font-bold text-sm">{f.name}</span>
                       <span className="text-[9px] font-mono uppercase px-1.5 py-0.2 rounded bg-black/10">
-                        {f.subjectId}
+                        {f.subjectSlug}
                       </span>
                     </div>
                     <div className="my-1 py-0.5">
-                      <FormulaRenderer latex={f.latex} displayMode={false} />
+                      <FormulaRenderer latex={f.latexExpression} displayMode={false} />
                     </div>
                   </div>
                 ))}
@@ -414,13 +405,13 @@ export default function AdminJuniorModePage() {
             <div className="lg:col-span-2 bg-[#FAF7F2] border border-[#DDD4C5] rounded-sm p-6 space-y-5">
               <div className="border-b border-[#DDD4C5] pb-4">
                 <span className="text-[10px] font-mono uppercase text-[#8FA184] font-bold tracking-wider">
-                  Subject: {selectedFormula.subjectId.toUpperCase()} • Class {selectedFormula.academicClass}
+                  Subject: {selectedFormula.subjectSlug.toUpperCase()} • Class {selectedFormula.classLevel}
                 </span>
                 <h3 className="font-serif text-2xl font-bold text-[#1C1917] mt-0.5">
                   {selectedFormula.name}
                 </h3>
                 <div className="my-3 p-4 bg-[#181512] rounded-sm text-center">
-                  <FormulaRenderer latex={selectedFormula.latex} displayMode={true} />
+                  <FormulaRenderer latex={selectedFormula.latexExpression} displayMode={true} />
                 </div>
               </div>
 
@@ -432,19 +423,19 @@ export default function AdminJuniorModePage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs font-mono">
                   <div className="p-3 bg-white border border-[#DDD4C5] rounded space-y-1">
                     <span className="text-[10px] text-[#8A8178] uppercase block">SI Unit of Output</span>
-                    <span className="font-bold text-[#1C1917]">{selectedFormula.siUnitOfOutput}</span>
+                    <span className="font-bold text-[#1C1917]">{selectedFormula.outputUnit}</span>
                   </div>
                   <div className="p-3 bg-white border border-[#DDD4C5] rounded space-y-1">
-                    <span className="text-[10px] text-[#8A8178] uppercase block">Dimensional Formula</span>
-                    <span className="font-bold text-[#1C1917]">{selectedFormula.dimensionalFormula}</span>
+                    <span className="text-[10px] text-[#8A8178] uppercase block">Category &amp; Domain</span>
+                    <span className="font-bold text-[#1C1917]">{selectedFormula.category}</span>
                   </div>
                   <div className="p-3 bg-white border border-[#DDD4C5] rounded space-y-1">
                     <span className="text-[10px] text-[#8A8178] uppercase block">Conditions of Validity</span>
-                    <span className="font-sans text-xs text-[#1C1917]">{selectedFormula.conditionsOfValidity}</span>
+                    <span className="font-sans text-xs text-[#1C1917]">{selectedFormula.applicabilityConditions.join("; ")}</span>
                   </div>
                   <div className="p-3 bg-white border border-[#DDD4C5] rounded space-y-1">
                     <span className="text-[10px] text-[#8A8178] uppercase block">Frequent Student Misconceptions</span>
-                    <span className="font-sans text-xs text-[#9E6B68]">{selectedFormula.commonMisconceptions}</span>
+                    <span className="font-sans text-xs text-[#9E6B68]">{selectedFormula.commonMistakes.join("; ")}</span>
                   </div>
                 </div>
               </div>
@@ -471,7 +462,7 @@ export default function AdminJuniorModePage() {
                           <td className="p-2 font-sans">{sym.meaning}</td>
                           <td className="p-2 text-[#545E4E]">{sym.siUnit}</td>
                           <td className="p-2 text-[10px] uppercase text-[#8A8178]">
-                            {sym.isConstant ? `Constant (${sym.constantValue})` : "Variable"}
+                            {sym.isConstant ? `Constant (${sym.typicalValue || "Fixed"})` : "Variable"}
                           </td>
                         </tr>
                       ))}
@@ -518,19 +509,19 @@ export default function AdminJuniorModePage() {
                   <div className="space-y-2">
                     {prereqs.map((p) => (
                       <div
-                        key={p.prerequisiteId}
+                        key={p.conceptId}
                         className="p-2.5 bg-[#FAF7F2] border border-[#E5DEC9] rounded flex items-center justify-between text-xs font-mono"
                       >
                         <div className="space-y-0.5">
                           <span className="font-bold text-[#1C1917] block">
-                            ← {p.prerequisiteName}
+                            ← {p.conceptTitle}
                           </span>
                           <span className="text-[10px] text-[#8A8178]">
-                            Subject: {p.subjectId}
+                            Subject: {p.subjectSlug} • Class {p.classLevel}
                           </span>
                         </div>
                         <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-[#545E4E]/15 text-[#545E4E]">
-                          Weight: {p.dependencyWeight}
+                          {p.importance}
                         </span>
                       </div>
                     ))}
@@ -544,3 +535,4 @@ export default function AdminJuniorModePage() {
     </div>
   );
 }
+
