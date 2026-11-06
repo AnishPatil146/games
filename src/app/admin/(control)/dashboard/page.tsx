@@ -102,10 +102,10 @@ export default function AdminExecutiveDashboardPage() {
             <ArrowRight className="w-3 h-3 text-[#C8B28E]" />
           </Link>
           <Link
-            href="/alliance"
+            href="/junior"
             className="inline-flex items-center gap-1.5 px-3 py-2 bg-[#1C2F24] text-[#FAF7F2] rounded-sm text-xs uppercase tracking-[0.16em] hover:bg-[#253D30]"
           >
-            <span>Alliance War Room</span>
+            <span>Junior Academy</span>
             <ArrowRight className="w-3 h-3 text-[#52B788]" />
           </Link>
           <Link
@@ -319,7 +319,7 @@ export default function AdminExecutiveDashboardPage() {
               ✓ Route &amp; State Uplink
             </span>
             <span className="font-bold text-[#1C1917] block">1-Click &quot;ENTER WORLD&quot;</span>
-            <span className="text-[11px] text-[#57524C]">Direct routing to /junior, /solo, and /alliance with saved progress awareness.</span>
+            <span className="text-[11px] text-[#57524C]">Direct routing to /junior and /solo with saved progress awareness.</span>
           </div>
         </div>
 
@@ -386,11 +386,11 @@ export default function AdminExecutiveDashboardPage() {
 
             <div className="p-3 bg-[#F3EDE2]/60 rounded-sm flex items-center justify-between">
               <div>
-                <span className="font-bold text-[#1C1917]">Multiplayer Alliance — The Last Alliance</span>
-                <span className="block text-[11px] text-[#57524C]">Shared 6×6 Sudoku Lock · 3 Difficulties (Easy, Medium, Hard) · 5 Shared Hints · Real-time Sync</span>
+                <span className="font-bold text-[#1C1917]">The Academy 2.0 — Complete Academic Foundation</span>
+                <span className="block text-[11px] text-[#57524C]">Class 10, 11 &amp; 12 · 7 Visualisation Simulations · 12 Key Formula Proofs · Authentic Scoring</span>
               </div>
               <span className="flex items-center gap-1 text-[11px] font-mono text-emerald-700 font-bold">
-                <CheckCircle2 className="w-3.5 h-3.5" /> 6×6 Co-op Online
+                <CheckCircle2 className="w-3.5 h-3.5" /> 100% Curated
               </span>
             </div>
 

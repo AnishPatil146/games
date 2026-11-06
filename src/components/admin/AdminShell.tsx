@@ -17,7 +17,6 @@ import {
   Menu,
   Settings,
   Shield,
-  ShieldCheck,
   Sparkles,
   Users,
   X,
@@ -43,11 +42,6 @@ const NAV_ITEMS = [
     href: "/solo",
     label: "Solo Storyboard",
     icon: Sparkles,
-  },
-  {
-    href: "/alliance",
-    label: "Alliance Live",
-    icon: ShieldCheck,
   },
   {
     href: "/admin/senior",

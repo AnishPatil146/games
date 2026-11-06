@@ -7,7 +7,6 @@ import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Sparkles,
-  Users,
   BookOpen,
   ArrowRight,
   Volume2,
@@ -17,7 +16,7 @@ import {
 } from "lucide-react";
 import { useGameSession } from "@/lib/useGameSession";
 
-export type CharacterIdentityId = "junior" | "senior" | "alliance";
+export type CharacterIdentityId = "junior" | "senior";
 
 interface CharacterIdentityConfig {
   id: CharacterIdentityId;
@@ -101,36 +100,6 @@ const IDENTITIES: Record<CharacterIdentityId, CharacterIdentityConfig> = {
     glowColor: "rgba(200, 178, 142, 0.45)",
     buttonLabel: "Enter Solo Campaign",
   },
-  alliance: {
-    id: "alliance",
-    badge: "MULTIPLAYER CAMPAIGN",
-    badgeColor: "text-rose-400",
-    badgeBorder: "border-rose-500/40",
-    badgeBg: "bg-rose-950/60",
-    title: "THE SQUAD",
-    callsign: "The Last Alliance",
-    modeName: "Cooperative & Psychological War Room",
-    tagline: "Synchronous 2–4 player tactical missions, live 9x9 Sudoku, and Count Vesper's Gambit.",
-    description:
-      "Enter a high-stakes tactical War Room with 2 to 4 operatives. Crack server-authoritative 9x9 Sudoku grid locks, counter Count Vesper's live 8x8 Chessboard Mate-in-2 puzzle, identify the imposter under 90-second deadlines, and face the final test: a live 4-quadrant Prisoner's Dilemma betrayal matrix.",
-    features: [
-      "Synchronous 2–4 Player Squad War Room With 6-Char Codes",
-      "Real 9x9 Sudoku Generator With Row/Col/Box Conflict Glow",
-      "Interactive 8x8 Chessboard Against Count Vesper (Mate-in-2)",
-      "Live 4-Quadrant Prisoner's Dilemma Betrayal Matrix",
-    ],
-    specs: [
-      { label: "Players", value: "2–4 Synchronous" },
-      { label: "Timed Rush", value: "90s Server Countdown" },
-      { label: "Climax", value: "Prisoner's Betrayal Matrix" },
-    ],
-    route: "/alliance",
-    environmentUrl: "/art/environments/env_alliance_warroom.jpg",
-    characterSpriteUrl: "/art/characters/alliance_squad.png",
-    characterScale: 1.0,
-    glowColor: "rgba(231, 111, 81, 0.45)",
-    buttonLabel: "Deploy War Room",
-  },
 };
 
 export function CharacterSelectScreen() {
@@ -146,12 +115,9 @@ export function CharacterSelectScreen() {
   // Keyboard navigation: Left/Right to cycle, Enter to deploy
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "ArrowLeft") {
+      if (e.key === "ArrowLeft" || e.key === "ArrowRight") {
         e.preventDefault();
-        setSelectedId((prev) => (prev === "alliance" ? "senior" : prev === "senior" ? "junior" : "alliance"));
-      } else if (e.key === "ArrowRight") {
-        e.preventDefault();
-        setSelectedId((prev) => (prev === "junior" ? "senior" : prev === "senior" ? "alliance" : "junior"));
+        setSelectedId((prev) => (prev === "junior" ? "senior" : "junior"));
       } else if (e.key === "Enter") {
         e.preventDefault();
         router.push(IDENTITIES[selectedId].route);
@@ -238,13 +204,6 @@ export function CharacterSelectScreen() {
               <span>Solo Campaign</span>
             </Link>
             <Link
-              href="/alliance"
-              className="hover:text-rose-300 transition-colors flex items-center gap-1.5"
-            >
-              <Users className="w-3.5 h-3.5 text-rose-400" />
-              <span>War Room</span>
-            </Link>
-            <Link
               href="/junior"
               className="hover:text-emerald-300 transition-colors flex items-center gap-1.5"
             >
@@ -289,9 +248,9 @@ export function CharacterSelectScreen() {
           </p>
         </div>
 
-        {/* Three Interactive Character Figures */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-end justify-center max-w-5xl mx-auto w-full pt-4">
-          {(["junior", "senior", "alliance"] as CharacterIdentityId[]).map((id) => {
+        {/* Two Interactive Character Figures */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-end justify-center max-w-4xl mx-auto w-full pt-4">
+          {(["junior", "senior"] as CharacterIdentityId[]).map((id) => {
             const config = IDENTITIES[id];
             const isSelected = selectedId === id;
             const isHovered = hoveredId === id;

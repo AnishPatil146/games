@@ -16,7 +16,7 @@ const sansFont = Inter({
 export const metadata: Metadata = {
   title: "THE UNWRITTEN — Where Silence Speaks",
   description:
-    "An atmospheric psychological mystery and competitive deduction experience. Choose your journey: Junior Academy, Senior Solo Investigation, or Alliance Co-op.",
+    "An atmospheric psychological mystery and rigorous academic reasoning experience. Choose your journey: Junior Academy or Senior Solo Investigation.",
   icons: {
     icon: "/brand/favicon.png",
     shortcut: "/brand/favicon.png",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "THE UNWRITTEN — Where Silence Speaks",
     description:
-      "Where silence speaks. Psychological mystery, high-stakes co-op deduction, and rigorous academic reasoning.",
+      "Where silence speaks. Psychological mystery, high-stakes deduction, and rigorous academic reasoning.",
     type: "website",
     images: ["/brand/logo-circular.png"],
   },
