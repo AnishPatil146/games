@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { Award, Search, Copy, Check, Sparkles } from "lucide-react";
 import { FORMULA_REFERENCE_CATALOGUE } from "@/lib/junior/academy-models";
 import { MathRenderer } from "@/components/math/MathRenderer";
@@ -39,8 +40,15 @@ export function RevisionCentre() {
 
   return (
     <div className="space-y-8 animate-fadeIn">
-      {/* 1. Masthead */}
-      <div className="bg-[#181512] border border-[#2E2822] rounded-sm p-6 sm:p-8 text-[#FAF7F2] relative overflow-hidden shadow-lg">
+      {/* 1. Masthead with Physics Laboratory Background */}
+      <div className="bg-[#181512] border border-[#2E2822] rounded-sm p-6 sm:p-8 text-[#FAF7F2] relative overflow-hidden shadow-lg min-h-[220px]">
+        <Image
+          src="/art/environments/env_junior_physics_lab.jpg"
+          alt="Physics Laboratory"
+          fill
+          className="object-cover object-center filter brightness-[0.25] contrast-[1.15] pointer-events-none"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#181512] via-[#181512]/75 to-transparent pointer-events-none" />
         <div className="relative z-10 max-w-3xl space-y-3">
           <div className="flex items-center gap-2 text-[10px] font-mono uppercase tracking-[0.25em] text-[#8FA184]">
             <Award className="w-3.5 h-3.5" />

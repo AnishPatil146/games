@@ -1,9 +1,10 @@
 "use client";
 
 import { Suspense, useState } from "react";
+import Image from "next/image";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
-import { KeyRound, Lock, Shield, ArrowRight, CheckCircle2 } from "lucide-react";
+import { KeyRound, Lock, ArrowRight, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/Button";
 
 function AdminLoginForm() {
@@ -120,8 +121,14 @@ function AdminLoginForm() {
   return (
     <div className="w-full max-w-md bg-[#1B1815] border border-[#2F2A25] rounded-sm p-7 sm:p-9 space-y-6 shadow-xl">
       <div className="space-y-2 text-center border-b border-[#2F2A25] pb-5">
-        <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#24201C] border border-[#3A332C] mb-1">
-          <Shield className="w-4 h-4 text-[#8FA184]" />
+        <div className="relative w-16 h-16 mx-auto mb-2 rounded-full border border-zinc-500/50 shadow-xl overflow-hidden group">
+          <Image
+            src="/brand/logo-circular.png"
+            alt="THE UNWRITTEN"
+            fill
+            priority
+            className="object-cover"
+          />
         </div>
         <p className="text-[10px] uppercase tracking-[0.3em] text-[#8FA184] font-mono">
           THE UNWRITTEN / CONTROL

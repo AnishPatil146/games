@@ -133,7 +133,15 @@ export function createRoom(
   hostName: string,
   initialDifficulty: Sudoku6x6Difficulty = "medium"
 ): { room: MultiplayerRoom; hostId: string; reconnectToken: string } {
-  const code = "AL" + Math.floor(1000 + Math.random() * 9000).toString();
+  let code = "AL" + Math.floor(1000 + Math.random() * 9000).toString();
+  let attempts = 0;
+  while (activeRooms.has(code) && attempts < 50) {
+    code = "AL" + Math.floor(1000 + Math.random() * 9000).toString();
+    attempts++;
+  }
+  if (activeRooms.has(code)) {
+    code = "AL" + crypto.randomBytes(3).toString("hex").toUpperCase();
+  }
   const hostId = "usr_" + crypto.randomBytes(6).toString("hex");
   const { token: reconnectToken } = generateReconnectToken(
     code,

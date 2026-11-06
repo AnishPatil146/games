@@ -109,7 +109,18 @@ export default function JuniorResultPage({ params }: PageProps) {
     : null;
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#0F0D0C] text-[#FAF7F2]">
+    <div className="relative min-h-screen flex flex-col bg-[#0F0D0C] text-[#FAF7F2]">
+      {/* Background Illustrated Achievement Hall with Dark Vignette */}
+      <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+        <Image
+          src="/art/environments/env_junior_achievement_hall.jpg"
+          alt="Academy Achievement Hall"
+          fill
+          priority
+          className="object-cover object-center opacity-25 filter blur-[0.5px]"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0F0D0C]/85 via-[#0F0D0C]/75 to-[#0F0D0C]/95" />
+      </div>
       {/* 1. ACADEMY TOP NAVIGATION BAR */}
       <header className="sticky top-0 z-30 bg-[#161311]/95 backdrop-blur-md border-b border-[#2C2621] px-4 sm:px-6 py-2.5">
         <div className="max-w-6xl mx-auto flex items-center justify-between gap-4">

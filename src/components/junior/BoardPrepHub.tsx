@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import {
   BookOpen,
   ChevronRight,
@@ -47,8 +48,15 @@ export function BoardPrepHub({
 
   return (
     <div className="space-y-8 animate-fadeIn">
-      {/* 1. Masthead & Board Identity */}
-      <div className="bg-[#1B1814] border border-[#2F2922] rounded-sm p-6 sm:p-8 text-[#FAF7F2] relative overflow-hidden shadow-lg">
+      {/* 1. Masthead & Board Identity with Grand Library Background */}
+      <div className="bg-[#1B1814] border border-[#2F2922] rounded-sm p-6 sm:p-8 text-[#FAF7F2] relative overflow-hidden shadow-lg min-h-[220px]">
+        <Image
+          src="/art/environments/env_junior_grand_library.jpg"
+          alt="Academy Grand Library"
+          fill
+          className="object-cover object-center filter brightness-[0.25] contrast-[1.15] pointer-events-none"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#1B1814] via-[#1B1814]/75 to-transparent pointer-events-none" />
         <div className="relative z-10 max-w-3xl space-y-3">
           <div className="flex items-center gap-2 text-[10px] font-mono uppercase tracking-[0.25em] text-[#8FA184]">
             <BookOpen className="w-3.5 h-3.5" />

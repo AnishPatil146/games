@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Award, CheckCircle2, Lock } from "lucide-react";
 import { ACADEMY_BADGES, calculateStudentRank } from "@/lib/junior/academy-models";
 
@@ -19,8 +20,15 @@ export function AchievementsPanel({
 
   return (
     <div className="space-y-8 animate-fadeIn">
-      {/* 1. Masthead & Scholar Rank Card */}
-      <div className="bg-[#181512] border border-[#2E2822] rounded-sm p-6 sm:p-8 text-[#FAF7F2] relative overflow-hidden shadow-lg">
+      {/* 1. Masthead & Scholar Rank Card with Achievement Hall Background */}
+      <div className="bg-[#181512] border border-[#2E2822] rounded-sm p-6 sm:p-8 text-[#FAF7F2] relative overflow-hidden shadow-lg min-h-[220px]">
+        <Image
+          src="/art/environments/env_junior_achievement_hall.jpg"
+          alt="Achievement Hall"
+          fill
+          className="object-cover object-center filter brightness-[0.25] contrast-[1.15] pointer-events-none"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#181512] via-[#181512]/75 to-transparent pointer-events-none" />
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center relative z-10">
           <div className="md:col-span-8 space-y-2">
             <span className="text-[10px] font-mono uppercase tracking-[0.25em] text-[#C4A47C] font-bold">

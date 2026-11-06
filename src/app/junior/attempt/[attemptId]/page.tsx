@@ -262,8 +262,31 @@ export default function JuniorAttemptPage({ params }: PageProps) {
       ? attempt.instantFeedbackMap[currentQuestion.questionId]
       : null;
 
+  const getSubjectBackground = (subjectSlug?: string) => {
+    if (!subjectSlug) return "/art/environments/env_junior_exam_hall.jpg";
+    const sid = subjectSlug.toLowerCase();
+    if (sid.includes("math")) return "/art/environments/env_junior_math_lab.jpg";
+    if (sid.includes("physics")) return "/art/environments/env_junior_physics_lab.jpg";
+    if (sid.includes("chem")) return "/art/environments/env_junior_chemistry_lab.jpg";
+    if (sid.includes("bio")) return "/art/environments/env_junior_biology_lab.jpg";
+    if (sid.includes("hist") || sid.includes("geo") || sid.includes("eco"))
+      return "/art/environments/env_junior_grand_library.jpg";
+    return "/art/environments/env_junior_exam_hall.jpg";
+  };
+
   return (
-    <div className="min-h-screen flex flex-col bg-[#0F0D0C] text-[#FAF7F2]">
+    <div className="relative min-h-screen flex flex-col bg-[#0F0D0C] text-[#FAF7F2]">
+      {/* Background Illustrated Environment with Dark Film Vignette */}
+      <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+        <Image
+          src={getSubjectBackground(attempt?.subjectSlug)}
+          alt="Academy Environment"
+          fill
+          priority
+          className="object-cover object-center opacity-20 filter blur-[0.5px]"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0F0D0C]/85 via-[#0F0D0C]/75 to-[#0F0D0C]/95" />
+      </div>
       {/* 1. TOP SCHOLAR EXAMINATION BAR */}
       <header className="sticky top-0 z-30 bg-[#161311]/95 backdrop-blur-md border-b border-[#2C2621] px-4 sm:px-6 py-2.5">
         <div className="max-w-6xl mx-auto flex items-center justify-between gap-4">
