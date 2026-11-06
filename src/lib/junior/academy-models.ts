@@ -323,3 +323,4 @@ export function calculateStudentRank(totalXP: number): {
     return { title: "Grand Master of Deduction", level: 5, progressPct: 100, nextThreshold: 1500 };
   }
 }
+
