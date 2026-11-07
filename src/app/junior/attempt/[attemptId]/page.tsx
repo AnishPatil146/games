@@ -276,19 +276,19 @@ export default function JuniorAttemptPage({ params }: PageProps) {
 
   return (
     <div className="relative min-h-screen flex flex-col bg-[#14110E] text-[#FAF7F2]">
-      {/* Background Illustrated Environment with Light Atmospheric Vignette */}
+      {/* Background Illustrated Environment with Darker Atmospheric Vignette */}
       <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
         <Image
           src={getSubjectBackground(attempt?.subjectSlug)}
           alt="Academy Environment"
           fill
           priority
-          className="object-cover object-center opacity-40 filter brightness-105"
+          className="object-cover object-center opacity-25 filter brightness-75"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#14110E]/80 via-[#181410]/70 to-[#14110E]/85" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#100D0A]/90 via-[#14100C]/85 to-[#100D0A]/95" />
       </div>
       {/* 1. TOP SCHOLAR EXAMINATION BAR */}
-      <header className="sticky top-0 z-30 bg-[#181512]/98 backdrop-blur-md border-b-2 border-[#3D3328] px-4 sm:px-6 py-3 shadow-md">
+      <header className="sticky top-0 z-30 bg-[#1C1713] border-b-2 border-[#544535] px-4 sm:px-6 py-3 shadow-md">
         <div className="max-w-6xl mx-auto flex items-center justify-between gap-4">
           {/* Logo & Subject Info */}
           <div className="flex items-center gap-3">
@@ -401,7 +401,7 @@ export default function JuniorAttemptPage({ params }: PageProps) {
         ) : attempt && currentQuestion ? (
           <div className="space-y-6">
             {/* 10-Question Navigation Palette */}
-            <div className="bg-[#211C18]/98 backdrop-blur-md border-2 border-[#544535] rounded-md p-3.5 sm:p-4 flex flex-wrap items-center justify-between gap-3 shadow-xl">
+            <div className="bg-[#241E18] border-2 border-[#6E5A44] rounded-xl p-3.5 sm:p-4 flex flex-wrap items-center justify-between gap-3 shadow-xl">
               <div className="flex items-center gap-2">
                 <span className="text-xs font-mono uppercase tracking-wider text-white font-extrabold mr-1 hidden sm:inline">
                   Question Palette:
@@ -456,10 +456,10 @@ export default function JuniorAttemptPage({ params }: PageProps) {
               initial={prefersReducedMotion ? false : { opacity: 0, y: 6 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.2 }}
-              className="bg-[#241F1A] border-2 border-[#7D6852] rounded-xl p-6 sm:p-8 space-y-6 shadow-2xl ring-1 ring-amber-500/20"
+              className="bg-[#241F1A] border-2 border-[#8A7055] rounded-xl p-6 sm:p-8 space-y-6 shadow-[0_12px_40px_rgba(0,0,0,0.85)] ring-1 ring-amber-500/25"
             >
               {/* Question Header & Syllabus Metadata */}
-              <div className="flex flex-wrap items-center justify-between gap-3 bg-[#2E2822] border-2 border-[#544535] p-4 rounded-lg">
+              <div className="flex flex-wrap items-center justify-between gap-3 bg-[#302720] border-2 border-[#6E5A44] p-4 rounded-xl">
                 <div className="space-y-1.5">
                   <div className="flex flex-wrap items-center gap-2">
                     <span className="text-xs uppercase font-mono tracking-wider px-3.5 py-1 rounded-md bg-[#2D4536] border-2 border-emerald-400 text-emerald-200 font-black">
@@ -488,7 +488,7 @@ export default function JuniorAttemptPage({ params }: PageProps) {
               </div>
 
               {/* Question Text Box with KaTeX Equations */}
-              <div className="p-5 rounded-lg bg-[#181410] border-2 border-[#544535] text-white text-lg sm:text-xl font-medium leading-relaxed shadow-inner">
+              <div className="p-6 rounded-xl bg-[#191410] border-2 border-[#6E5A44] text-white text-lg sm:text-xl font-medium leading-relaxed shadow-inner">
                 <MathRenderer content={currentQuestion.questionText} />
               </div>
 
@@ -521,21 +521,21 @@ export default function JuniorAttemptPage({ params }: PageProps) {
                       role="radio"
                       aria-checked={isSelected}
                       onClick={() => handleSelectOption(opt.key)}
-                      className={`w-full text-left p-5 rounded-xl border-2 transition-all flex items-start gap-4 cursor-pointer group shadow-xl ${
+                      className={`w-full text-left p-5 sm:p-6 rounded-xl border-2 transition-all flex items-start gap-4 cursor-pointer group shadow-xl ${
                         isRevealedCorrect
                           ? "bg-[#143B25] border-2 border-emerald-400 text-white shadow-[0_0_20px_rgba(52,211,153,0.5)]"
                           : isRevealedWrong
                           ? "bg-[#451818] border-2 border-rose-500 text-white shadow-[0_0_20px_rgba(244,63,94,0.5)]"
                           : isSelected
-                          ? "bg-[#1A3825] border-2 border-emerald-400 text-white shadow-[0_0_25px_rgba(52,211,153,0.4)] ring-2 ring-emerald-400"
-                          : "bg-[#28221C] hover:bg-[#362D24] text-white border-2 border-[#6E5A44] hover:border-amber-400"
+                          ? "bg-[#163825] border-2 border-emerald-400 text-white shadow-[0_0_25px_rgba(52,211,153,0.4)] ring-2 ring-emerald-400"
+                          : "bg-[#2D241C] hover:bg-[#3D3126] text-white border-2 border-[#7D6650] hover:border-amber-400"
                       }`}
                     >
                       <span
-                        className={`w-10 h-10 rounded-lg border-2 font-mono text-base font-black flex items-center justify-center shrink-0 mt-0.5 transition-all shadow-md ${
+                        className={`w-11 h-11 rounded-lg border-2 font-mono text-base font-black flex items-center justify-center shrink-0 mt-0.5 transition-all shadow-md ${
                           isSelected
-                            ? "border-white bg-emerald-400 text-black"
-                            : "border-[#8A755D] bg-[#3B3026] text-white group-hover:border-amber-400 group-hover:bg-[#4D3F33]"
+                            ? "border-white bg-emerald-400 text-black shadow-[0_0_15px_rgba(52,211,153,0.5)]"
+                            : "border-[#A88C6F] bg-[#423427] text-white group-hover:border-amber-400 group-hover:bg-[#524131]"
                         }`}
                       >
                         {opt.key}

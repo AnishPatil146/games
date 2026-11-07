@@ -78,6 +78,30 @@ function normalizeMathToLatex(raw: string): { latex: string; trailingPunctuation
 }
 
 /**
+ * Detects whether a string actually contains mathematical indicators or operators.
+ * Prevents plain English text with units (e.g. "7 min 30 s", "20 mA", "4.48 S/m")
+ * from being stripped of spaces by KaTeX math mode.
+ */
+function hasMathIndicators(str: string): boolean {
+  if (!str || !str.trim()) return false;
+  // Explicit LaTeX commands or delimiters
+  if (/[$\\]/.test(str)) return true;
+  // Radicals, superscripts, subscripts
+  if (/[√^_]/.test(str)) return true;
+  // Special mathematical operators & symbols
+  if (/[±≠≤≥×÷·∫∑∂∞≈≡∝∇]/.test(str)) return true;
+  // Greek letters often used in math/physics
+  if (/[α-ωΑ-Ω]/.test(str)) return true;
+  // Piped vector / absolute value notation: |A|, |A × B|
+  if (/\|[^|]+\|/.test(str)) return true;
+  // Explicit formula equality: e.g. "E = mc^2", "v = u + at"
+  if (/\b[a-zA-Z][a-zA-Z0-9_]*\s*=\s*[^,;]+/.test(str)) return true;
+  // Algebraic expressions with parentheses and operators: (A + B), (A^2 + B^2)
+  if (/\([a-zA-Z0-9\s-+*/^]+\)/.test(str) && /[-+*/^]/.test(str)) return true;
+  return false;
+}
+
+/**
  * Tokenizes strings into standard prose chunks and mathematical KaTeX chunks.
  * Prevents KaTeX math mode from collapsing English prose words into unspaced italic variables.
  */
@@ -117,7 +141,13 @@ function tokenizeContent(rawContent: string): ParsedToken[] {
     }
   }
 
-  // 2. Pure Math Check: If string contains <= 1 English prose words (options like "√(A^2 + B^2 + AB)" or "4.48 S/m")
+  // 2. If the string contains NO mathematical indicators at all (e.g. "7 min 30 s", "Plane angle and solid angle"),
+  // treat entirely as plain text to preserve natural typography and whitespace.
+  if (!hasMathIndicators(rawContent)) {
+    return [{ type: "text", value: rawContent }];
+  }
+
+  // 3. Pure Math Check: If string contains <= 1 English prose words (options like "√(A^2 + B^2 + AB)" or "A + B")
   const englishWords = (rawContent.match(/[a-zA-Z]{3,}/g) || []).filter(
     (w) =>
       !["sin", "cos", "tan", "cot", "sec", "csc", "log", "lim", "exp", "det", "deg"].includes(
@@ -129,7 +159,7 @@ function tokenizeContent(rawContent: string): ParsedToken[] {
     return [{ type: "math", value: rawContent }];
   }
 
-  // 3. Mixed Text: Detect equations, piped vector expressions, powers, subscripts, and radicals
+  // 4. Mixed Text: Detect equations, piped vector expressions, powers, subscripts, and radicals
   const tokens: ParsedToken[] = [];
   const mathRegex =
     /(\|[^|]+\|\s*=\s*[^,;?]+?(?=\s*(?:,|\band\b|\bwhere\b|\bwith\b|\bfor\b|\btaking\b|(?:\.\s)|(?:\.$)|\?|$))|\|[^|]+\||[a-zA-Zα-ωΑ-Ω][a-zA-Z0-9α-ωΑ-Ω_]*\s*=\s*[^,;?]+?(?=\s*(?:,|\band\b|\bwhere\b|\bwith\b|\bfor\b|\btaking\b|(?:\.\s)|(?:\.$)|\?|$))|[a-zA-Z0-9α-ωΑ-Ω]+(?:[\^_][a-zA-Z0-9\-+{}]+)+|√\([^)]+\)|√[0-9a-zA-Z]+)/gi;

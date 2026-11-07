@@ -71,6 +71,30 @@ describe("THE UNWRITTEN — Academy 3.0 Intelligence & Diagnostic Verification S
       assert.ok(mathSnippet2.includes("katex"));
       assert.ok(!mathSnippet2.includes("katex-error"));
     });
+
+    test("Preserves whitespace in options with units (e.g. '7 min 30 s', '20 mA')", () => {
+      // Units and plain values should never be stripped of whitespace by KaTeX math mode
+      const hasMathIndicators = (str: string): boolean => {
+        if (!str || !str.trim()) return false;
+        if (/[$\\]/.test(str)) return true;
+        if (/[√^_]/.test(str)) return true;
+        if (/[±≠≤≥×÷·∫∑∂∞≈≡∝∇]/.test(str)) return true;
+        if (/[α-ωΑ-Ω]/.test(str)) return true;
+        if (/\|[^|]+\|/.test(str)) return true;
+        if (/\b[a-zA-Z][a-zA-Z0-9_]*\s*=\s*[^,;]+/.test(str)) return true;
+        if (/\([a-zA-Z0-9\s-+*/^]+\)/.test(str) && /[-+*/^]/.test(str)) return true;
+        return false;
+      };
+
+      assert.strictEqual(hasMathIndicators("7 min 30 s"), false);
+      assert.strictEqual(hasMathIndicators("6 min 00 s"), false);
+      assert.strictEqual(hasMathIndicators("20 mA"), false);
+      assert.strictEqual(hasMathIndicators("4.48 S/m"), false);
+      assert.strictEqual(hasMathIndicators("0.004050 m"), false);
+      assert.strictEqual(hasMathIndicators("Plane angle and solid angle"), false);
+      assert.strictEqual(hasMathIndicators("√(A^2 + B^2 + AB)"), true);
+      assert.strictEqual(hasMathIndicators("|A × B| = √3 (A · B)"), true);
+    });
   });
 
   // 2. Prerequisite Weakness Detection DAG
