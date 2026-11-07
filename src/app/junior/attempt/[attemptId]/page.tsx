@@ -275,17 +275,17 @@ export default function JuniorAttemptPage({ params }: PageProps) {
   };
 
   return (
-    <div className="relative min-h-screen flex flex-col bg-[#0F0D0C] text-[#FAF7F2]">
-      {/* Background Illustrated Environment with Dark Film Vignette */}
+    <div className="relative min-h-screen flex flex-col bg-[#14110E] text-[#FAF7F2]">
+      {/* Background Illustrated Environment with Light Atmospheric Vignette */}
       <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
         <Image
           src={getSubjectBackground(attempt?.subjectSlug)}
           alt="Academy Environment"
           fill
           priority
-          className="object-cover object-center opacity-30 filter brightness-90"
+          className="object-cover object-center opacity-40 filter brightness-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#12100E]/90 via-[#181411]/85 to-[#12100E]/95" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#14110E]/80 via-[#181410]/70 to-[#14110E]/85" />
       </div>
       {/* 1. TOP SCHOLAR EXAMINATION BAR */}
       <header className="sticky top-0 z-30 bg-[#181512]/98 backdrop-blur-md border-b-2 border-[#3D3328] px-4 sm:px-6 py-3 shadow-md">
@@ -364,16 +364,14 @@ export default function JuniorAttemptPage({ params }: PageProps) {
               </button>
             )}
 
-            <Button
+            <button
               type="button"
-              variant="academy"
-              size="sm"
               onClick={() => setShowConfirmModal(true)}
-              className="border-2 border-white/20 shadow-md font-black"
+              className="bg-emerald-500 hover:bg-emerald-400 text-black font-black text-xs uppercase tracking-wider px-4 py-2 rounded-md border-2 border-white shadow-[0_0_15px_rgba(16,185,129,0.5)] transition-all cursor-pointer flex items-center gap-1.5 active:scale-95"
             >
-              <Send className="w-3.5 h-3.5 mr-1.5" />
+              <Send className="w-3.5 h-3.5" />
               <span>Submit</span>
-            </Button>
+            </button>
           </div>
         </div>
       </header>
@@ -458,13 +456,13 @@ export default function JuniorAttemptPage({ params }: PageProps) {
               initial={prefersReducedMotion ? false : { opacity: 0, y: 6 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.2 }}
-              className="bg-[#1E1A16]/98 backdrop-blur-md border-2 border-[#60503E] rounded-md p-6 sm:p-8 space-y-6 shadow-2xl ring-1 ring-white/10"
+              className="bg-[#241F1A] border-2 border-[#7D6852] rounded-xl p-6 sm:p-8 space-y-6 shadow-2xl ring-1 ring-amber-500/20"
             >
               {/* Question Header & Syllabus Metadata */}
-              <div className="flex flex-wrap items-center justify-between gap-3 border-b-2 border-[#3D3328] pb-4">
+              <div className="flex flex-wrap items-center justify-between gap-3 bg-[#2E2822] border-2 border-[#544535] p-4 rounded-lg">
                 <div className="space-y-1.5">
                   <div className="flex flex-wrap items-center gap-2">
-                    <span className="text-xs uppercase font-mono tracking-wider px-3 py-1 rounded-sm bg-[#22402F] border border-[#3F6E51] text-[#9FE3B5] font-black">
+                    <span className="text-xs uppercase font-mono tracking-wider px-3.5 py-1 rounded-md bg-[#2D4536] border-2 border-emerald-400 text-emerald-200 font-black">
                       Question {currentIndex + 1} of {attempt.questions.length}
                     </span>
                     <span className="text-base font-bold text-white">
@@ -477,20 +475,20 @@ export default function JuniorAttemptPage({ params }: PageProps) {
                 </div>
 
                 <div className="flex items-center gap-2">
-                  <span className={`text-xs uppercase tracking-wider font-mono px-3 py-1 rounded-sm font-black border-2 ${
+                  <span className={`text-xs uppercase tracking-wider font-mono px-3.5 py-1 rounded-md font-black border-2 ${
                     currentQuestion.difficulty === "Hard"
-                      ? "bg-amber-950/80 border-amber-500 text-amber-200"
+                      ? "bg-amber-950/90 border-amber-400 text-amber-200"
                       : currentQuestion.difficulty === "Medium"
-                      ? "bg-blue-950/80 border-blue-500 text-blue-200"
-                      : "bg-emerald-950/80 border-emerald-500 text-emerald-200"
+                      ? "bg-blue-950/90 border-blue-400 text-blue-200"
+                      : "bg-emerald-950/90 border-emerald-400 text-emerald-200"
                   }`}>
                     {currentQuestion.difficulty}
                   </span>
                 </div>
               </div>
 
-              {/* Question Text with KaTeX Equations */}
-              <div className="text-lg sm:text-xl font-serif text-white leading-relaxed tracking-wide font-normal py-1">
+              {/* Question Text Box with KaTeX Equations */}
+              <div className="p-5 rounded-lg bg-[#181410] border-2 border-[#544535] text-white text-lg sm:text-xl font-medium leading-relaxed shadow-inner">
                 <MathRenderer content={currentQuestion.questionText} />
               </div>
 
@@ -505,7 +503,7 @@ export default function JuniorAttemptPage({ params }: PageProps) {
               <div
                 role="radiogroup"
                 aria-label={`Options for question ${currentIndex + 1}`}
-                className="grid grid-cols-1 gap-3 pt-2"
+                className="grid grid-cols-1 gap-3.5 pt-2"
               >
                 {currentQuestion.options.map((opt) => {
                   const isSelected = currentSelectedKey === opt.key;
@@ -523,29 +521,29 @@ export default function JuniorAttemptPage({ params }: PageProps) {
                       role="radio"
                       aria-checked={isSelected}
                       onClick={() => handleSelectOption(opt.key)}
-                      className={`w-full text-left p-4 sm:p-5 rounded-md border-2 transition-all flex items-start gap-4 cursor-pointer group shadow-lg ${
+                      className={`w-full text-left p-5 rounded-xl border-2 transition-all flex items-start gap-4 cursor-pointer group shadow-xl ${
                         isRevealedCorrect
-                          ? "bg-[#163824] border-emerald-400 text-white shadow-[0_0_20px_rgba(52,211,153,0.4)]"
+                          ? "bg-[#143B25] border-2 border-emerald-400 text-white shadow-[0_0_20px_rgba(52,211,153,0.5)]"
                           : isRevealedWrong
-                          ? "bg-[#421A1A] border-rose-400 text-white shadow-[0_0_20px_rgba(244,63,94,0.4)]"
+                          ? "bg-[#451818] border-2 border-rose-500 text-white shadow-[0_0_20px_rgba(244,63,94,0.5)]"
                           : isSelected
-                          ? "bg-[#2B281F] border-emerald-400 text-white shadow-[0_0_20px_rgba(52,211,153,0.3)] ring-2 ring-emerald-400/50"
-                          : "bg-[#241E19] hover:bg-[#302720] text-white border-[#544535] hover:border-[#8FA184]"
+                          ? "bg-[#1A3825] border-2 border-emerald-400 text-white shadow-[0_0_25px_rgba(52,211,153,0.4)] ring-2 ring-emerald-400"
+                          : "bg-[#28221C] hover:bg-[#362D24] text-white border-2 border-[#6E5A44] hover:border-amber-400"
                       }`}
                     >
                       <span
-                        className={`w-9 h-9 rounded-sm border-2 font-mono text-sm font-black flex items-center justify-center shrink-0 mt-0.5 transition-all shadow-sm ${
+                        className={`w-10 h-10 rounded-lg border-2 font-mono text-base font-black flex items-center justify-center shrink-0 mt-0.5 transition-all shadow-md ${
                           isSelected
-                            ? "border-white bg-emerald-400 text-[#12100E]"
-                            : "border-[#6E5D4A] bg-[#332A22] text-white group-hover:border-[#8FA184] group-hover:bg-[#40352A]"
+                            ? "border-white bg-emerald-400 text-black"
+                            : "border-[#8A755D] bg-[#3B3026] text-white group-hover:border-amber-400 group-hover:bg-[#4D3F33]"
                         }`}
                       >
                         {opt.key}
                       </span>
-                      <span className="text-base sm:text-lg leading-relaxed flex-1 text-white font-medium">
+                      <span className="text-base sm:text-lg leading-relaxed flex-1 text-white font-semibold pt-1">
                         <MathRenderer content={opt.text} />
                       </span>
-                      <span className="hidden sm:inline-block text-xs font-mono text-[#DDD4C5] opacity-0 group-hover:opacity-100 transition-opacity font-semibold">
+                      <span className="hidden sm:inline-block text-xs font-mono text-[#DDD4C5] opacity-0 group-hover:opacity-100 transition-opacity font-bold pt-2">
                         Press [{opt.key}]
                       </span>
                     </button>
@@ -555,8 +553,8 @@ export default function JuniorAttemptPage({ params }: PageProps) {
 
               {/* Instant Guided Feedback (if enabled) */}
               {currentFeedback && (
-                <div className="p-5 sm:p-6 bg-[#161310] border-2 border-[#544535] rounded-md space-y-2.5 shadow-inner">
-                  <div className="flex items-center gap-2 text-xs font-bold uppercase font-mono tracking-wider">
+                <div className="p-6 bg-[#181410] border-2 border-amber-500/80 rounded-lg space-y-3 shadow-inner">
+                  <div className="flex items-center gap-2 text-xs font-black uppercase font-mono tracking-wider">
                     {currentSelectedKey === currentFeedback.correctOptionKey ? (
                       <>
                         <CheckCircle2 className="w-5 h-5 text-emerald-400" />
@@ -581,51 +579,45 @@ export default function JuniorAttemptPage({ params }: PageProps) {
             </motion.section>
 
             {/* Navigation & Controls Dock */}
-            <div className="flex flex-wrap items-center justify-between gap-4 pt-3 pb-6">
-              <Button
+            <div className="flex flex-wrap items-center justify-between gap-4 pt-4 pb-8">
+              <button
                 type="button"
-                variant="custom"
-                size="md"
                 disabled={currentIndex === 0}
                 onClick={() => navigateSlot(currentIndex - 1)}
-                className={`font-mono font-bold px-5 py-2.5 rounded-sm transition-all border-2 flex items-center ${
+                className={`font-mono font-bold text-sm uppercase tracking-wider px-6 py-3.5 rounded-md transition-all border-2 flex items-center gap-2 ${
                   currentIndex === 0
                     ? "bg-[#1E1915] border-[#382E24] text-[#70685F] cursor-not-allowed opacity-40"
-                    : "bg-[#2A231C] border-[#6E5943] text-white hover:bg-[#382F26] hover:border-white shadow-md cursor-pointer"
+                    : "bg-[#2E2620] hover:bg-[#3D332A] border-[#8A755D] text-white hover:border-white shadow-md cursor-pointer active:scale-95"
                 }`}
               >
-                <ArrowLeft className="w-4 h-4 mr-2" />
-                Previous Question
-              </Button>
+                <ArrowLeft className="w-4 h-4" />
+                <span>Previous Question</span>
+              </button>
 
-              <div className="flex items-center gap-2 text-xs font-mono text-white bg-[#26201B] border-2 border-[#544535] px-3.5 py-1.5 rounded-full hidden md:flex font-medium shadow-sm">
-                <Keyboard className="w-4 h-4 text-[#A8D49E]" />
+              <div className="flex items-center gap-2 text-xs font-mono text-white bg-[#26201B] border-2 border-[#544535] px-4 py-2 rounded-full hidden md:flex font-semibold shadow-sm">
+                <Keyboard className="w-4 h-4 text-amber-400" />
                 <span>Shortcuts: [1-4 / A-D] to pick · [← / →] to navigate · [F] formulas</span>
               </div>
 
               <div className="flex items-center gap-3">
                 {currentIndex < attempt.questions.length - 1 ? (
-                  <Button
+                  <button
                     type="button"
-                    variant="academy-action"
-                    size="md"
                     onClick={() => navigateSlot(currentIndex + 1)}
-                    className="font-black font-mono border-2 border-white/60 shadow-xl px-6 py-2.5 text-sm"
+                    className="bg-emerald-500 hover:bg-emerald-400 text-black font-black text-sm uppercase tracking-wider px-8 py-3.5 rounded-md border-2 border-white shadow-[0_0_25px_rgba(16,185,129,0.5)] transition-all cursor-pointer flex items-center gap-2 active:scale-95"
                   >
                     <span>Next Question</span>
-                    <ArrowRight className="w-4 h-4 ml-2" />
-                  </Button>
+                    <ArrowRight className="w-4 h-4" />
+                  </button>
                 ) : (
-                  <Button
+                  <button
                     type="button"
-                    variant="academy"
-                    size="md"
                     onClick={() => setShowConfirmModal(true)}
-                    className="font-black font-mono border-2 border-white/40 shadow-xl px-6 py-2.5 text-sm"
+                    className="bg-amber-400 hover:bg-amber-300 text-black font-black text-sm uppercase tracking-wider px-8 py-3.5 rounded-md border-2 border-white shadow-[0_0_25px_rgba(251,191,36,0.6)] transition-all cursor-pointer flex items-center gap-2 active:scale-95"
                   >
-                    <Send className="w-4 h-4 mr-2" />
-                    Review &amp; Submit Folio
-                  </Button>
+                    <Send className="w-4 h-4" />
+                    <span>Review &amp; Submit Folio</span>
+                  </button>
                 )}
               </div>
             </div>
@@ -681,24 +673,22 @@ export default function JuniorAttemptPage({ params }: PageProps) {
             )}
 
             <div className="flex items-center justify-end gap-3 pt-3">
-              <Button
+              <button
                 type="button"
-                variant="academy-secondary"
-                size="sm"
                 disabled={isSubmitting}
                 onClick={() => setShowConfirmModal(false)}
+                className="bg-[#2A231C] border-2 border-[#544535] text-white hover:bg-[#342B24] font-bold text-xs uppercase tracking-wider px-4 py-2.5 rounded-md transition-all cursor-pointer"
               >
                 Continue Reviewing
-              </Button>
-              <Button
+              </button>
+              <button
                 type="button"
-                variant="academy"
-                size="sm"
                 disabled={isSubmitting}
                 onClick={() => void handleConfirmSubmit()}
+                className="bg-emerald-500 hover:bg-emerald-400 text-black font-black text-sm uppercase tracking-wider px-6 py-2.5 rounded-md border-2 border-white shadow-[0_0_20px_rgba(16,185,129,0.5)] transition-all cursor-pointer"
               >
                 {isSubmitting ? "Calculating Evaluation..." : "Confirm & Submit"}
-              </Button>
+              </button>
             </div>
           </div>
         </div>
