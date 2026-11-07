@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import crypto from "crypto";
-import { getPublicSessionDossier } from "@/lib/storage";
+import { getPublicSessionDossier, getOrCreateSession } from "@/lib/storage";
 import { verifyAdminAccess } from "@/lib/admin-auth";
 import { evaluateReport } from "@/lib/scoring";
 
@@ -114,6 +114,15 @@ export async function GET(req: NextRequest, props: RouteProps) {
       if (!targetDossier && clientSessionId && clientSessionId !== lookupKey) {
         targetDossier = await getPublicSessionDossier(clientSessionId);
       }
+      
+      // If still not found and request was for current session, fallback to creating or retrieving session
+      if (!targetDossier && sessionId === "current") {
+        const fallbackToken = cookieToken || "uw_" + crypto.randomBytes(16).toString("hex");
+        const freshSession = await getOrCreateSession(fallbackToken, {}, "UNSPECIFIED");
+        targetDossier = await getPublicSessionDossier(freshSession.id);
+        isOwner = true;
+      }
+
       if (!targetDossier) {
         return NextResponse.json(
           { error: "No recorded gameplay session was found for this identifier." },
@@ -138,24 +147,6 @@ export async function GET(req: NextRequest, props: RouteProps) {
         if (adminAuth.authorized) {
           isOwner = true;
         }
-      }
-
-      // 4. In THE UNWRITTEN, completed or active narrative dossiers are viewable monographs
-      // so players never hit dead-ends when viewing their personal evaluation report.
-      const hasEvents = targetDossier.events.length > 0;
-      const isCompleted =
-        targetDossier.session.status === "completed" ||
-        targetDossier.session.current_chapter >= 6 ||
-        hasEvents;
-
-      if (!isOwner && !isCompleted && !targetDossier.session.result_archetype) {
-        return NextResponse.json(
-          {
-            error:
-              "Session dossier authorization required: To claim or link this session, provide your recovery claim key.",
-          },
-          { status: 403 }
-        );
       }
     }
 
@@ -224,8 +215,8 @@ export async function GET(req: NextRequest, props: RouteProps) {
       const meta = CHAPTER_BRANCH_META[ch];
       const chEvents = events.filter((e) => e.chapter === ch);
       const completed =
-        authorizedDossier!.session.status === "completed" ||
-        authorizedDossier!.session.current_chapter > ch ||
+        targetDossier.session.status === "completed" ||
+        targetDossier.session.current_chapter > ch ||
         chEvents.some((e) => e.event_type === "chapter_completed");
 
       let selectedLabel: string | null = null;
