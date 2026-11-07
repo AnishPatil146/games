@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import { useGameSession } from "@/lib/useGameSession";
 import { CreatorIdentitySection } from "@/components/common/CreatorIdentitySection";
+import { CinematicCreatorIntro } from "./CinematicCreatorIntro";
 
 export type CharacterIdentityId = "junior" | "senior";
 
@@ -111,10 +112,30 @@ export function CharacterSelectScreen() {
   const [hoveredId, setHoveredId] = useState<CharacterIdentityId | null>(null);
   const [isAudioMuted, setIsAudioMuted] = useState(true);
 
+  // Cinematic Creator Intro session gate
+  const [showIntro, setShowIntro] = useState<boolean | null>(null);
+  const [isReplayingIntro, setIsReplayingIntro] = useState(false);
+
+  useEffect(() => {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const forceIntro = params.get("intro") === "1" || params.get("replay") === "1";
+      if (forceIntro) {
+        setShowIntro(true);
+        return;
+      }
+      const seen = sessionStorage.getItem("unwritten_intro_seen");
+      setShowIntro(seen !== "true");
+    } catch {
+      setShowIntro(false);
+    }
+  }, []);
+
   const activeIdentity = IDENTITIES[hoveredId || selectedId];
 
   // Keyboard navigation: Left/Right to cycle, Enter to deploy
   useEffect(() => {
+    if (showIntro) return; // Prevent character selection keys while intro is active
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "ArrowLeft" || e.key === "ArrowRight") {
         e.preventDefault();
@@ -126,7 +147,7 @@ export function CharacterSelectScreen() {
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [selectedId, router]);
+  }, [selectedId, router, showIntro]);
 
   // Determine active background environment
   const currentBgUrl = hoveredId
@@ -137,6 +158,20 @@ export function CharacterSelectScreen() {
 
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-[#0A0D12] text-[#FAF7F2] select-none flex flex-col justify-between">
+      {/* 0. CINEMATIC CREATOR INTRO OVERLAY */}
+      <AnimatePresence>
+        {showIntro && (
+          <CinematicCreatorIntro
+            key="cinematic-intro"
+            isReplay={isReplayingIntro}
+            onComplete={() => {
+              setShowIntro(false);
+              setIsReplayingIntro(false);
+            }}
+          />
+        )}
+      </AnimatePresence>
+
       {/* 1. CINEMATIC ILLUSTRATED ENVIRONMENT BACKGROUND WITH CROSS-FADE */}
       <div className="absolute inset-0 w-full h-full z-0 overflow-hidden pointer-events-none">
         <AnimatePresence mode="wait">
@@ -433,7 +468,12 @@ export function CharacterSelectScreen() {
         </motion.div>
 
         {/* 5. INDEPENDENT CREATOR IDENTITY & AI DESIGN RECOGNITION */}
-        <CreatorIdentitySection />
+        <CreatorIdentitySection
+          onWatchIntro={() => {
+            setIsReplayingIntro(true);
+            setShowIntro(true);
+          }}
+        />
       </main>
 
       {/* 6. MINIMAL COLOPHON FOOTER */}

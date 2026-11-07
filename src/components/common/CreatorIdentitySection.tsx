@@ -1,11 +1,15 @@
 "use client";
 
 import React, { useState } from "react";
-import { Sparkles, Compass, Code2, ArrowUpRight } from "lucide-react";
+import { Sparkles, Compass, Code2, ArrowUpRight, Play } from "lucide-react";
 import { AboutProjectModal } from "./AboutProjectModal";
 import { ProjectCreditsModal } from "./ProjectCreditsModal";
 
-export function CreatorIdentitySection() {
+export interface CreatorIdentitySectionProps {
+  onWatchIntro?: () => void;
+}
+
+export function CreatorIdentitySection({ onWatchIntro }: CreatorIdentitySectionProps) {
   const [isStoryOpen, setIsStoryOpen] = useState(false);
   const [isCreditsOpen, setIsCreditsOpen] = useState(false);
 
@@ -51,8 +55,19 @@ export function CreatorIdentitySection() {
               </div>
             </div>
 
-            {/* Subtle Action Buttons */}
+            {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row md:flex-col gap-2.5 shrink-0">
+              {onWatchIntro && (
+                <button
+                  type="button"
+                  onClick={onWatchIntro}
+                  className="px-5 py-2.5 rounded-lg bg-amber-500/15 hover:bg-amber-500/25 border border-amber-400/50 text-amber-200 hover:text-white font-mono text-xs uppercase tracking-wider font-bold transition-all flex items-center justify-center gap-2 cursor-pointer shadow-md group"
+                >
+                  <Play className="w-3.5 h-3.5 text-amber-400 fill-amber-400 transition-transform group-hover:scale-110" />
+                  <span>Watch Creator Intro</span>
+                </button>
+              )}
+
               <button
                 type="button"
                 onClick={() => setIsStoryOpen(true)}
@@ -77,7 +92,11 @@ export function CreatorIdentitySection() {
       </section>
 
       {/* Interactive Modals */}
-      <AboutProjectModal isOpen={isStoryOpen} onClose={() => setIsStoryOpen(false)} />
+      <AboutProjectModal
+        isOpen={isStoryOpen}
+        onClose={() => setIsStoryOpen(false)}
+        onReplayIntro={onWatchIntro}
+      />
       <ProjectCreditsModal isOpen={isCreditsOpen} onClose={() => setIsCreditsOpen(false)} />
     </>
   );

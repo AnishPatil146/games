@@ -7,9 +7,10 @@ import { X, Sparkles, User, Code2, Compass, Layers, ShieldCheck, Heart } from "l
 interface AboutProjectModalProps {
   isOpen: boolean;
   onClose: () => void;
+  onReplayIntro?: () => void;
 }
 
-export function AboutProjectModal({ isOpen, onClose }: AboutProjectModalProps) {
+export function AboutProjectModal({ isOpen, onClose, onReplayIntro }: AboutProjectModalProps) {
   if (!isOpen) return null;
 
   return (
@@ -121,13 +122,28 @@ export function AboutProjectModal({ isOpen, onClose }: AboutProjectModalProps) {
             <Heart className="w-3.5 h-3.5 text-[#9E6B68]" />
             <span>Crafted with intention by Anish Patil</span>
           </div>
-          <button
-            type="button"
-            onClick={onClose}
-            className="px-5 py-2 rounded bg-[#FAF7F2] text-[#12100E] font-bold hover:bg-[#E7E0D3] transition-colors"
-          >
-            Close Story
-          </button>
+          <div className="flex items-center gap-2">
+            {onReplayIntro && (
+              <button
+                type="button"
+                onClick={() => {
+                  onClose();
+                  onReplayIntro();
+                }}
+                className="px-4 py-2 rounded bg-amber-500/15 border border-amber-400/40 text-amber-300 font-mono text-xs uppercase tracking-wider font-bold hover:bg-amber-500/25 transition-colors flex items-center gap-1.5 cursor-pointer shadow-sm"
+              >
+                <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+                <span>Replay Intro</span>
+              </button>
+            )}
+            <button
+              type="button"
+              onClick={onClose}
+              className="px-5 py-2 rounded bg-[#FAF7F2] text-[#12100E] font-bold hover:bg-[#E7E0D3] transition-colors cursor-pointer"
+            >
+              Close Story
+            </button>
+          </div>
         </div>
       </div>
     </div>
