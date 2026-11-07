@@ -119,7 +119,7 @@ export async function GET(req: NextRequest, props: RouteProps) {
       if (!targetDossier && sessionId === "current") {
         const fallbackToken = cookieToken || "uw_" + crypto.randomBytes(16).toString("hex");
         const freshSession = await getOrCreateSession(fallbackToken, {}, "UNSPECIFIED");
-        targetDossier = await getPublicSessionDossier(freshSession.id);
+        targetDossier = await getPublicSessionDossier(freshSession.session.id);
         isOwner = true;
       }
 
