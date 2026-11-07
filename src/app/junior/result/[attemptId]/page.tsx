@@ -110,7 +110,7 @@ export default function JuniorResultPage({ params }: PageProps) {
     : null;
 
   return (
-    <div className="relative min-h-screen flex flex-col bg-[#14110E] text-[#FAF7F2]">
+    <div className="relative min-h-screen w-full max-w-full overflow-x-hidden flex flex-col bg-[#14110E] text-[#FAF7F2]">
       {/* Background Illustrated Achievement Hall with Atmospheric Vignette (Layer 1-3) */}
       <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
         <Image
@@ -123,14 +123,14 @@ export default function JuniorResultPage({ params }: PageProps) {
         <div className="absolute inset-0 bg-gradient-to-b from-[#100D0A]/95 via-[#14100C]/90 to-[#100D0A]/98" />
       </div>
       {/* 1. ACADEMY TOP NAVIGATION BAR */}
-      <header className="sticky top-0 z-30 bg-[#1C1713] border-b-2 border-[#544535] px-4 sm:px-6 py-3 shadow-md">
-        <div className="max-w-6xl mx-auto flex items-center justify-between gap-4">
+      <header className="sticky top-0 z-30 w-full bg-[#1C1713] border-b-2 border-[#544535] px-2.5 sm:px-6 py-2.5 sm:py-3 shadow-md">
+        <div className="w-full max-w-5xl mx-auto flex items-center justify-between gap-2 sm:gap-4">
           <Link
             href="/junior"
-            className="flex items-center gap-3 hover:opacity-90 transition-opacity"
+            className="flex items-center gap-2 sm:gap-3 hover:opacity-90 transition-opacity min-w-0 shrink"
             title="Return to Academy Hub"
           >
-            <div className="relative w-8 h-8 rounded-full overflow-hidden border-2 border-amber-400 shadow-sm">
+            <div className="relative w-7 h-7 sm:w-8 sm:h-8 rounded-full overflow-hidden border-2 border-amber-400 shadow-sm shrink-0">
               <Image
                 src="/brand/emblem-silence.png"
                 alt="The Unwritten"
@@ -138,31 +138,33 @@ export default function JuniorResultPage({ params }: PageProps) {
                 className="object-cover"
               />
             </div>
-            <div>
-              <span className="font-serif font-black text-sm tracking-wider text-white">
+            <div className="min-w-0">
+              <span className="font-serif font-black text-xs sm:text-sm tracking-wider text-white block">
                 THE ACADEMY
               </span>
-              <span className="text-[11px] uppercase font-mono text-amber-300 block font-bold">
+              <span className="text-[10px] sm:text-[11px] uppercase font-mono text-amber-300 block font-bold truncate">
                 Evaluation Monograph
               </span>
             </div>
           </Link>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
             <button
               type="button"
               onClick={() => void handleShare()}
-              className="bg-[#342A20] hover:bg-[#44382B] text-white font-bold text-xs uppercase tracking-wider px-4 py-2.5 rounded-lg border-2 border-[#947A5F] hover:border-white shadow-md flex items-center gap-1.5 cursor-pointer transition-all active:scale-95"
+              className="bg-[#342A20] hover:bg-[#44382B] text-white font-bold text-xs uppercase tracking-wider px-3 sm:px-4 py-2 sm:py-2.5 rounded-lg border-2 border-[#947A5F] hover:border-white shadow-md flex items-center gap-1.5 cursor-pointer transition-all active:scale-95"
             >
               {copied ? (
                 <>
                   <Check className="w-3.5 h-3.5 text-emerald-400" />
-                  <span>Copied Summary</span>
+                  <span className="hidden sm:inline">Copied Summary</span>
+                  <span className="sm:hidden">Copied</span>
                 </>
               ) : (
                 <>
                   <Share2 className="w-3.5 h-3.5 text-amber-300" />
-                  <span>Share Certificate</span>
+                  <span className="hidden sm:inline">Share Certificate</span>
+                  <span className="sm:hidden">Share</span>
                 </>
               )}
             </button>
@@ -173,10 +175,11 @@ export default function JuniorResultPage({ params }: PageProps) {
               >
                 <button
                   type="button"
-                  className="bg-emerald-500 hover:bg-emerald-400 text-black font-black text-xs uppercase tracking-wider px-5 py-2.5 rounded-lg border-2 border-white shadow-[0_0_15px_rgba(16,185,129,0.5)] flex items-center gap-1.5 cursor-pointer transition-all active:scale-95"
+                  className="bg-emerald-500 hover:bg-emerald-400 text-black font-black text-xs uppercase tracking-wider px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-lg border-2 border-white shadow-[0_0_15px_rgba(16,185,129,0.5)] flex items-center gap-1.5 cursor-pointer transition-all active:scale-95"
                 >
                   <RotateCcw className="w-3.5 h-3.5" />
-                  <span>Next 10 Questions</span>
+                  <span className="hidden sm:inline">Next 10 Questions</span>
+                  <span className="sm:hidden">Next 10</span>
                 </button>
               </Link>
             )}
@@ -185,7 +188,7 @@ export default function JuniorResultPage({ params }: PageProps) {
       </header>
 
       {/* 2. MAIN EVALUATION CERTIFICATE (LAYER 4-6) */}
-      <main className="relative z-10 flex-1 max-w-4xl w-full mx-auto px-4 sm:px-6 py-8 sm:py-12 space-y-10">
+      <main className="relative z-10 flex-1 w-full max-w-4xl mx-auto px-2.5 sm:px-6 py-4 sm:py-12 space-y-6 sm:space-y-10">
         {isLoading ? (
           <div className="py-32 flex flex-col items-center justify-center space-y-4">
             <div className="w-10 h-10 border-3 border-amber-400 border-t-transparent rounded-full animate-spin" />
@@ -217,29 +220,29 @@ export default function JuniorResultPage({ params }: PageProps) {
             className="space-y-10"
           >
             {/* A. MASTER CERTIFICATE PLATE */}
-            <section className="bg-[#28211A] text-[#FAF7F2] border-2 border-[#947A5F] rounded-2xl p-6 sm:p-10 relative overflow-hidden shadow-2xl ring-1 ring-amber-500/30">
+            <section className="w-full bg-[#28211A] text-[#FAF7F2] border-2 border-[#947A5F] rounded-xl sm:rounded-2xl p-4 sm:p-10 relative overflow-hidden shadow-2xl ring-1 ring-amber-500/30">
               {/* Ornate Inner Border Line */}
               <div
-                className="absolute inset-3 border-2 border-amber-400/30 pointer-events-none rounded-xl"
+                className="absolute inset-2 sm:inset-3 border-2 border-amber-400/30 pointer-events-none rounded-lg sm:rounded-xl"
                 aria-hidden="true"
               />
 
-              <div className="relative z-10 space-y-8">
+              <div className="relative z-10 space-y-6 sm:space-y-8">
                 {/* Certificate Top Seal */}
-                <div className="bg-[#342A20] border-2 border-[#7D644D] p-4 rounded-xl flex flex-wrap items-center justify-between gap-3 text-xs uppercase font-mono tracking-[0.2em] text-[#C2E0B8] font-bold">
+                <div className="bg-[#342A20] border-2 border-[#7D644D] p-3 sm:p-4 rounded-lg sm:rounded-xl flex flex-wrap items-center justify-between gap-2.5 sm:gap-3 text-xs uppercase font-mono tracking-[0.2em] text-[#C2E0B8] font-bold">
                   <div className="flex items-center gap-2">
-                    <GraduationCap className="w-5 h-5 text-amber-400" />
-                    <span className="text-white">THE UNWRITTEN ACADEMY · EVALUATION CERTIFICATE</span>
+                    <GraduationCap className="w-4 h-4 sm:w-5 sm:h-5 text-amber-400 shrink-0" />
+                    <span className="text-white text-[11px] sm:text-xs">THE UNWRITTEN ACADEMY · EVALUATION CERTIFICATE</span>
                   </div>
-                  <span className="text-[#DDD4C5]">
-                    Candidate: <strong className="text-white font-black text-sm bg-[#1E1712] px-3 py-1 rounded border border-[#7D644D] ml-1">{result.participantName}</strong>
+                  <span className="text-[#DDD4C5] text-xs">
+                    Candidate: <strong className="text-white font-black text-xs sm:text-sm bg-[#1E1712] px-2.5 sm:px-3 py-0.5 sm:py-1 rounded border border-[#7D644D] ml-1">{result.participantName}</strong>
                   </span>
                 </div>
 
                 {/* Main Score Plate & Scholar Details */}
-                <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                <div className="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-center">
                   {/* Left Score Box */}
-                  <div className="md:col-span-5 p-6 sm:p-8 bg-[#32261C] border-2 border-amber-400 rounded-xl text-center space-y-4 shadow-xl">
+                  <div className="md:col-span-5 p-5 sm:p-8 bg-[#32261C] border-2 border-amber-400 rounded-xl text-center space-y-3 sm:space-y-4 shadow-xl">
                     <div className="relative w-20 h-20 mx-auto rounded-full overflow-hidden border-2 border-amber-400 shadow-md mb-2">
                       <Image
                         src="/art/characters/junior_student.png"
@@ -573,7 +576,7 @@ export default function JuniorResultPage({ params }: PageProps) {
             </section>
 
             {/* E. FOOTER ACTIONS & NOTICE */}
-            <div className="p-6 sm:p-8 bg-[#28211A] border-2 border-[#947A5F] rounded-2xl flex flex-wrap items-center justify-between gap-4 shadow-2xl">
+            <div className="w-full p-4 sm:p-8 bg-[#28211A] border-2 border-[#947A5F] rounded-xl sm:rounded-2xl flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4 shadow-2xl">
               <div>
                 <h4 className="font-serif font-black text-lg sm:text-xl text-white">
                   Ready for Cycle #{result.cycleNumber + 1}?
@@ -583,24 +586,25 @@ export default function JuniorResultPage({ params }: PageProps) {
                 </p>
               </div>
 
-              <div className="flex items-center gap-3">
-                <Link href="/junior">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+                <Link href="/junior" className="w-full sm:w-auto">
                   <button
                     type="button"
-                    className="bg-[#382D22] hover:bg-[#483B2D] text-white font-bold text-sm uppercase tracking-wider px-6 py-3.5 rounded-lg border-2 border-[#947A5F] hover:border-white shadow-md flex items-center gap-2 cursor-pointer transition-all active:scale-95"
+                    className="w-full sm:w-auto justify-center bg-[#382D22] hover:bg-[#483B2D] text-white font-bold text-sm uppercase tracking-wider px-6 py-3.5 rounded-lg border-2 border-[#947A5F] hover:border-white shadow-md flex items-center gap-2 cursor-pointer transition-all active:scale-95"
                   >
                     Academy Entrance
                   </button>
                 </Link>
                 <Link
                   href={`/junior?stream=${result.stream}&subject=${result.subjectSlug}`}
+                  className="w-full sm:w-auto"
                 >
                   <button
                     type="button"
-                    className="bg-emerald-500 hover:bg-emerald-400 text-black font-black text-sm uppercase tracking-wider px-8 py-3.5 rounded-lg border-2 border-white shadow-[0_0_25px_rgba(16,185,129,0.5)] flex items-center gap-2 cursor-pointer transition-all active:scale-95"
+                    className="w-full sm:w-auto justify-center bg-emerald-500 hover:bg-emerald-400 text-black font-black text-sm uppercase tracking-wider px-8 py-3.5 rounded-lg border-2 border-white shadow-[0_0_25px_rgba(16,185,129,0.5)] flex items-center gap-2 cursor-pointer transition-all active:scale-95"
                   >
                     <span>Begin Next 10 Questions</span>
-                    <ChevronRight className="w-4 h-4" />
+                    <ChevronRight className="w-4 h-4 shrink-0" />
                   </button>
                 </Link>
               </div>

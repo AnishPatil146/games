@@ -384,11 +384,11 @@ export function PracticeArenaHub({
                   }}
                   className={`p-4 rounded-xl border-2 text-sm font-mono transition-all flex items-center justify-between cursor-pointer ${cardStyle}`}
                 >
-                  <div className="flex items-center gap-3">
-                    <span className="w-7 h-7 rounded-lg bg-[#44362A] border-2 border-[#8C7156] text-white flex items-center justify-center font-bold text-xs">
+                  <div className="flex items-center gap-3 flex-1 min-w-0">
+                    <span className="w-7 h-7 rounded-lg bg-[#44362A] border-2 border-[#8C7156] text-white flex items-center justify-center font-bold text-xs shrink-0">
                       {opt.key}
                     </span>
-                    <span className="font-semibold text-white">
+                    <span className="font-semibold text-white flex-1 min-w-0 break-words">
                       <MathRenderer content={opt.text} />
                     </span>
                   </div>

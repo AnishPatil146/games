@@ -302,15 +302,15 @@ export function TestCentreHub({
 
       {/* 3. IN-TEST RUNTIME EXPERIENCE */}
       {testPhase === "in_test" && (
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div className="w-full grid grid-cols-1 lg:grid-cols-12 gap-6">
           {/* Main Question Plate */}
-          <div className="lg:col-span-8 bg-[#241D17] border-2 border-[#6E553F] rounded-xl p-6 shadow-xl space-y-6">
-            <div className="flex items-center justify-between border-b-2 border-[#4A392B] pb-3">
+          <div className="w-full lg:col-span-8 bg-[#241D17] border-2 border-[#6E553F] rounded-xl p-4 sm:p-6 shadow-xl space-y-4 sm:space-y-6">
+            <div className="flex flex-wrap items-center justify-between gap-2 border-b-2 border-[#4A392B] pb-3">
               <div>
                 <span className="text-xs font-mono uppercase tracking-widest text-emerald-300 font-bold">
                   {questions[currentQIndex]?.topic}
                 </span>
-                <h3 className="text-lg font-serif font-black text-white">
+                <h3 className="text-base sm:text-lg font-serif font-black text-white">
                   Question {currentQIndex + 1} of {questions.length}
                 </h3>
               </div>
@@ -332,29 +332,29 @@ export function TestCentreHub({
               </button>
             </div>
 
-            <div className="text-base font-serif text-white leading-relaxed p-4 bg-[#1C1611] rounded-xl border-2 border-[#544333]">
+            <div className="text-sm sm:text-base font-serif text-white leading-relaxed p-4 bg-[#1C1611] rounded-xl border-2 border-[#544333] break-words overflow-x-auto">
               <MathRenderer content={questions[currentQIndex]?.prompt || ""} />
             </div>
 
-            <div className="space-y-3">
+            <div className="space-y-3 w-full">
               {questions[currentQIndex]?.options.map((opt) => {
                 const isSelected = userAnswers[questions[currentQIndex].id] === opt.key;
                 return (
                   <div
                     key={opt.key}
                     onClick={() => handleSelectAnswer(questions[currentQIndex].id, opt.key)}
-                    className={`p-4 rounded-xl border-2 text-sm font-mono transition-all flex items-center gap-3 cursor-pointer ${
+                    className={`p-3.5 sm:p-4 rounded-xl border-2 text-sm font-mono transition-all flex items-center gap-3 cursor-pointer w-full ${
                       isSelected
                         ? "bg-[#16442A] border-emerald-400 text-white ring-2 ring-emerald-400 shadow-[0_0_15px_rgba(52,211,153,0.3)]"
                         : "bg-[#2D241C] border-[#7D644D] text-white hover:border-amber-400 hover:bg-[#382D22]"
                     }`}
                   >
-                    <span className={`w-7 h-7 rounded-lg border-2 flex items-center justify-center font-bold text-xs ${
+                    <span className={`w-8 h-8 rounded-lg border-2 flex items-center justify-center font-bold text-xs shrink-0 ${
                       isSelected ? "bg-emerald-400 text-black border-white" : "bg-[#44362A] border-[#8C7156] text-white"
                     }`}>
                       {opt.key}
                     </span>
-                    <span className="font-semibold text-white">
+                    <span className="font-semibold text-white flex-1 min-w-0 break-words">
                       <MathRenderer content={opt.text} />
                     </span>
                   </div>
@@ -363,12 +363,12 @@ export function TestCentreHub({
             </div>
 
             {/* Navigation buttons */}
-            <div className="flex items-center justify-between pt-4 border-t-2 border-[#4A392B]">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 pt-4 border-t-2 border-[#4A392B] w-full">
               <button
                 type="button"
                 disabled={currentQIndex === 0}
                 onClick={() => setCurrentQIndex(currentQIndex - 1)}
-                className="px-5 py-2.5 text-xs font-mono font-bold uppercase rounded-lg bg-[#342A20] border-2 border-[#7D644D] text-white hover:border-white disabled:opacity-40 disabled:cursor-not-allowed transition-all"
+                className="w-full sm:w-auto justify-center px-5 py-2.5 text-xs font-mono font-bold uppercase rounded-lg bg-[#342A20] border-2 border-[#7D644D] text-white hover:border-white disabled:opacity-50 disabled:cursor-not-allowed transition-all"
               >
                 Previous
               </button>
@@ -376,7 +376,7 @@ export function TestCentreHub({
                 <button
                   type="button"
                   onClick={() => setCurrentQIndex(currentQIndex + 1)}
-                  className="px-6 py-2.5 text-xs font-mono font-black uppercase rounded-lg bg-emerald-500 hover:bg-emerald-400 text-black border-2 border-white shadow-[0_0_15px_rgba(16,185,129,0.5)] transition-all"
+                  className="w-full sm:w-auto justify-center px-6 py-2.5 text-xs font-mono font-black uppercase rounded-lg bg-emerald-500 hover:bg-emerald-400 text-black border-2 border-white shadow-[0_0_15px_rgba(16,185,129,0.5)] transition-all"
                 >
                   Save & Next
                 </button>
@@ -384,7 +384,7 @@ export function TestCentreHub({
                 <button
                   type="button"
                   onClick={() => setTestPhase("debrief")}
-                  className="px-6 py-2.5 text-xs font-mono font-black uppercase rounded-lg bg-amber-400 hover:bg-amber-300 text-black border-2 border-white shadow-[0_0_15px_rgba(251,191,36,0.6)] transition-all"
+                  className="w-full sm:w-auto justify-center px-6 py-2.5 text-xs font-mono font-black uppercase rounded-lg bg-amber-400 hover:bg-amber-300 text-black border-2 border-white shadow-[0_0_25px_rgba(251,191,36,0.6)] transition-all"
                 >
                   Submit Examination
                 </button>
@@ -393,10 +393,10 @@ export function TestCentreHub({
           </div>
 
           {/* Question Palette & Live Timer */}
-          <div className="lg:col-span-4 space-y-4">
+          <div className="w-full lg:col-span-4 space-y-4">
             {/* Timer card */}
-            <div className="bg-[#15110F] border border-[#2F2722] rounded-md p-4 text-center space-y-1 shadow-md">
-              <span className="text-[10px] font-mono uppercase tracking-widest text-zinc-400">
+            <div className="bg-[#241D17] border-2 border-[#6E553F] rounded-xl p-4 text-center space-y-1 shadow-md">
+              <span className="text-[10px] font-mono uppercase tracking-widest text-[#DDD4C5] font-bold">
                 Time Remaining
               </span>
               <div className="text-2xl font-mono font-bold text-amber-400">
@@ -406,8 +406,8 @@ export function TestCentreHub({
             </div>
 
             {/* Question Palette Grid */}
-            <div className="bg-[#15110F] border border-[#2F2722] rounded-md p-4 space-y-3 shadow-md">
-              <span className="text-xs font-mono uppercase tracking-wider text-zinc-400 block font-bold">
+            <div className="bg-[#241D17] border-2 border-[#6E553F] rounded-xl p-4 space-y-3 shadow-md">
+              <span className="text-xs font-mono uppercase tracking-wider text-white block font-bold">
                 Question Palette
               </span>
               <div className="grid grid-cols-5 gap-2">
@@ -416,11 +416,11 @@ export function TestCentreHub({
                   const isReview = markedForReview.has(q.id);
                   const isCurrent = currentQIndex === idx;
 
-                  let colorStyle = "bg-[#181310] text-zinc-400 border-[#2D231C]";
+                  let colorStyle = "bg-[#382D23] text-white border-2 border-[#735D49]";
                   if (isReview) {
-                    colorStyle = "bg-purple-950 text-purple-300 border-purple-500 font-bold";
+                    colorStyle = "bg-purple-900 text-purple-200 border-2 border-purple-400 font-bold";
                   } else if (isAnswered) {
-                    colorStyle = "bg-emerald-950 text-emerald-300 border-emerald-500 font-bold";
+                    colorStyle = "bg-[#1B4D30] text-emerald-200 border-2 border-emerald-500 font-bold";
                   }
 
                   return (
@@ -428,8 +428,8 @@ export function TestCentreHub({
                       key={q.id}
                       type="button"
                       onClick={() => setCurrentQIndex(idx)}
-                      className={`h-9 rounded text-xs font-mono border transition-all flex items-center justify-center ${colorStyle} ${
-                        isCurrent ? "ring-2 ring-amber-400 font-bold" : ""
+                      className={`h-9 rounded-md text-xs font-mono border-2 transition-all flex items-center justify-center ${colorStyle} ${
+                        isCurrent ? "ring-2 ring-white font-black scale-105" : ""
                       }`}
                     >
                       {idx + 1}
@@ -439,9 +439,9 @@ export function TestCentreHub({
               </div>
 
               {/* Palette Legend */}
-              <div className="pt-3 border-t border-[#28211C] grid grid-cols-2 gap-2 text-[10px] font-mono text-zinc-400">
+              <div className="pt-3 border-t-2 border-[#4A392B] grid grid-cols-2 gap-2 text-[10px] font-mono text-[#DDD4C5]">
                 <div className="flex items-center gap-1.5">
-                  <div className="w-2.5 h-2.5 rounded bg-emerald-500" />
+                  <div className="w-3 h-3 rounded bg-emerald-500 border border-white" />
                   <span>Answered</span>
                 </div>
                 <div className="flex items-center gap-1.5">

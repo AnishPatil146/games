@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Newsreader, Inter } from "next/font/google";
 import "./globals.css";
 
@@ -12,6 +12,13 @@ const sansFont = Inter({
   variable: "--font-sans",
   subsets: ["latin"],
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
+};
 
 export const metadata: Metadata = {
   title: "THE UNWRITTEN — Where Silence Speaks",
@@ -39,9 +46,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${serifFont.variable} ${sansFont.variable} h-full`}
+      className={`${serifFont.variable} ${sansFont.variable} h-full w-full`}
     >
-      <body className="min-h-full flex flex-col bg-[#FAF7F2] text-[#1C1917] selection:bg-[#E7E0D3] selection:text-[#1C1917]">
+      <body className="min-h-full w-full max-w-full overflow-x-hidden flex flex-col bg-[#FAF7F2] text-[#1C1917] selection:bg-[#E7E0D3] selection:text-[#1C1917]">
         {children}
       </body>
     </html>
