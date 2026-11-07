@@ -17,6 +17,7 @@ import {
 import { useGameSession } from "@/lib/useGameSession";
 import { CreatorIdentitySection } from "@/components/common/CreatorIdentitySection";
 import { CinematicCreatorIntro } from "./CinematicCreatorIntro";
+import { PlayerRegistrationModal, RegisteredPlayer } from "./PlayerRegistrationModal";
 
 export type CharacterIdentityId = "junior" | "senior";
 
@@ -116,6 +117,43 @@ export function CharacterSelectScreen() {
   const [showIntro, setShowIntro] = useState<boolean | null>(null);
   const [isReplayingIntro, setIsReplayingIntro] = useState(false);
 
+  // Player Registration Gate (Part 4)
+  const [registeredPlayer, setRegisteredPlayer] = useState<RegisteredPlayer | null>(null);
+  const [showRegModal, setShowRegModal] = useState(false);
+  const [pendingRoute, setPendingRoute] = useState<string>("/solo");
+
+  useEffect(() => {
+    try {
+      const stored = localStorage.getItem("the_unwritten_player");
+      if (stored) {
+        const parsed = JSON.parse(stored) as RegisteredPlayer;
+        if (parsed.username) setRegisteredPlayer(parsed);
+      } else {
+        // Check /api/player/me
+        fetch("/api/player/me")
+          .then((r) => r.json())
+          .then((d) => {
+            if (d.registered && d.player) {
+              setRegisteredPlayer(d.player);
+              localStorage.setItem("the_unwritten_player", JSON.stringify(d.player));
+            }
+          })
+          .catch(() => {});
+      }
+    } catch {
+      // ignore
+    }
+  }, []);
+
+  const handleDeployIdentity = (route: string) => {
+    if (registeredPlayer) {
+      router.push(route);
+    } else {
+      setPendingRoute(route);
+      setShowRegModal(true);
+    }
+  };
+
   useEffect(() => {
     try {
       const params = new URLSearchParams(window.location.search);
@@ -135,19 +173,19 @@ export function CharacterSelectScreen() {
 
   // Keyboard navigation: Left/Right to cycle, Enter to deploy
   useEffect(() => {
-    if (showIntro) return; // Prevent character selection keys while intro is active
+    if (showIntro || showRegModal) return; // Prevent character selection keys while modals are active
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "ArrowLeft" || e.key === "ArrowRight") {
         e.preventDefault();
         setSelectedId((prev) => (prev === "junior" ? "senior" : "junior"));
       } else if (e.key === "Enter") {
         e.preventDefault();
-        router.push(IDENTITIES[selectedId].route);
+        handleDeployIdentity(IDENTITIES[selectedId].route);
       }
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [selectedId, router, showIntro]);
+  }, [selectedId, router, showIntro, showRegModal, registeredPlayer]);
 
   // Determine active background environment
   const currentBgUrl = hoveredId
@@ -231,6 +269,13 @@ export function CharacterSelectScreen() {
 
         {/* Global Section Links & Audio Toggle */}
         <div className="flex items-center gap-3 sm:gap-6">
+          {registeredPlayer && (
+            <div className="flex items-center gap-2 bg-[#1C1613] border border-amber-500/50 px-3 py-1.5 rounded-full text-xs font-mono shadow-sm">
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+              <span className="text-white font-bold">{registeredPlayer.username}</span>
+            </div>
+          )}
+
           <nav className="hidden md:flex items-center gap-5 text-[11px] font-mono uppercase tracking-[0.2em] text-[#DDD4C5]">
             <Link
               href="/solo"
@@ -425,8 +470,8 @@ export function CharacterSelectScreen() {
             {/* Direct Action Button */}
             <button
               type="button"
-              onClick={() => router.push(activeIdentity.route)}
-              className="px-8 py-3.5 rounded-full bg-[#FAF7F2] text-[#12100E] font-sans font-bold text-sm tracking-wide hover:bg-[#E7E0D3] transition-all shadow-[0_4px_20px_rgba(250,247,242,0.25)] flex items-center justify-center gap-2.5 cursor-pointer group"
+              onClick={() => handleDeployIdentity(activeIdentity.route)}
+              className="px-8 py-3.5 rounded-full bg-[#FAF7F2] text-[#12100E] font-sans font-bold text-sm tracking-wide hover:bg-[#E7E0D3] transition-all shadow-[0_4px_20px_rgba(250,247,242,0.25)] flex items-center justify-center gap-2.5 cursor-pointer group active:scale-95"
             >
               <span>
                 {activeIdentity.id === "senior" && session?.status === "in_progress"
@@ -497,6 +542,22 @@ export function CharacterSelectScreen() {
           </a>
         </div>
       </footer>
+
+      {/* 7. DEDICATED PLAYER REGISTRATION GATE (PART 4) */}
+      <AnimatePresence>
+        {showRegModal && (
+          <PlayerRegistrationModal
+            isOpen={showRegModal}
+            targetModeName={activeIdentity.modeName}
+            onRegistered={(player) => {
+              setRegisteredPlayer(player);
+              setShowRegModal(false);
+              router.push(pendingRoute);
+            }}
+            onClose={() => setShowRegModal(false)}
+          />
+        )}
+      </AnimatePresence>
     </div>
   );
 }

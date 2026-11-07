@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getAuthorizedJuniorResult } from "@/lib/services/platform-store";
+import { getAuthorizedJuniorResult, getPublicJuniorCompletedResult } from "@/lib/services/platform-store";
 import { verifyAdminAccess } from "@/lib/admin-auth";
 import {
   getSessionTokenFromRequest,
@@ -37,10 +37,26 @@ export async function GET(
 
     // Fallback to server-side verified administrator allowlist check
     const adminAuth = await verifyAdminAccess();
+    if (adminAuth.authorized) {
+      const result = getAuthorizedJuniorResult({
+        attemptId: id,
+        sessionToken,
+        isAdmin: true,
+      });
+      return NextResponse.json(result);
+    }
+
+    // Public Certificate Access: If the evaluation attempt has been submitted and completed,
+    // allow read-only certificate monograph viewing so candidates can share and review scorecards.
+    const completedResult = getPublicJuniorCompletedResult(id);
+    if (completedResult) {
+      return NextResponse.json(completedResult);
+    }
+
     const result = getAuthorizedJuniorResult({
       attemptId: id,
       sessionToken,
-      isAdmin: adminAuth.authorized,
+      isAdmin: false,
     });
 
     return NextResponse.json(result);

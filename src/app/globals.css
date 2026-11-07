@@ -27,8 +27,13 @@
 html {
   scroll-behavior: smooth;
   width: 100%;
-  max-width: 100vw;
+  max-width: 100%;
   overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -39,8 +44,33 @@ body {
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: -0.01em;
   width: 100%;
-  max-width: 100vw;
+  max-width: 100%;
   overflow-x: hidden;
+}
+
+/* KaTeX mathematical high-contrast rendering across atmospheric backgrounds */
+.katex {
+  font-size: 1.05em;
+  text-rendering: auto;
+  color: inherit;
+}
+.katex-html {
+  color: inherit;
+}
+
+/* Ensure dark-themed question desks, options, and derivation monographs render equations with radiant contrast */
+[class*="bg-[#1"],
+[class*="bg-[#2"],
+[class*="bg-[#3"],
+[class*="bg-[#0"] {
+  & .katex, & .katex-html, & .katex-html * {
+    color: inherit;
+  }
+}
+
+.math-rendered-block {
+  display: inline-block;
+  color: inherit;
 }
 
 /* Tactile museum-paper grain overlay (pure CSS SVG data URI, zero external request) */

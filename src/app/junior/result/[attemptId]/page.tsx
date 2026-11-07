@@ -481,10 +481,10 @@ export default function JuniorResultPage({ params }: PageProps) {
                 {filteredQuestions.map((item) => (
                   <div
                     key={item.questionId}
-                    className="p-6 sm:p-8 bg-[#28211A] border-2 border-[#947A5F] rounded-2xl space-y-6 shadow-2xl ring-1 ring-amber-500/20"
+                    className="p-6 sm:p-8 bg-[#201A14] border-2 border-[#A88C6F] rounded-2xl space-y-6 shadow-2xl ring-1 ring-amber-500/30"
                   >
                     {/* Item Header */}
-                    <div className="flex flex-wrap items-center justify-between gap-3 text-xs bg-[#342A20] border-2 border-[#7D644D] p-4 rounded-xl">
+                    <div className="flex flex-wrap items-center justify-between gap-3 text-xs bg-[#2D231A] border-2 border-[#8C735B] p-4 rounded-xl">
                       <span className="font-mono text-sm sm:text-base text-white font-bold">
                         Question {String(item.slotNumber).padStart(2, "0")} · {item.chapter} ({item.difficulty})
                       </span>
@@ -502,7 +502,7 @@ export default function JuniorResultPage({ params }: PageProps) {
                     </div>
 
                     {/* Question Text Box */}
-                    <div className="p-5 sm:p-6 rounded-xl bg-[#1C1611] border-2 border-[#7A644E] text-white text-lg sm:text-xl font-medium leading-relaxed shadow-inner">
+                    <div className="p-5 sm:p-6 rounded-xl bg-[#14100D] border-2 border-[#8C735B] text-white text-lg sm:text-xl font-medium leading-relaxed shadow-inner">
                       <MathRenderer content={item.questionText} />
                     </div>
 
@@ -511,12 +511,14 @@ export default function JuniorResultPage({ params }: PageProps) {
                       <div
                         className={`p-5 rounded-xl border-2 shadow-lg ${
                           item.isCorrect
-                            ? "bg-[#144227] border-emerald-400"
-                            : "bg-[#4A1B1B] border-rose-400"
+                            ? "bg-[#0F4A2A] border-emerald-400"
+                            : item.selectedOptionKey
+                            ? "bg-[#5C1A1A] border-rose-400"
+                            : "bg-[#3D251D] border-amber-600/70"
                         }`}
                       >
                         <div className={`text-xs uppercase font-mono tracking-wider font-black flex items-center gap-1.5 ${
-                          item.isCorrect ? "text-emerald-300" : "text-rose-300"
+                          item.isCorrect ? "text-emerald-300" : item.selectedOptionKey ? "text-rose-300" : "text-amber-200"
                         }`}>
                           {item.isCorrect ? (
                             <>
@@ -526,7 +528,7 @@ export default function JuniorResultPage({ params }: PageProps) {
                           ) : (
                             <>
                               <XCircle className="w-4 h-4 text-rose-400" />
-                              <span>YOUR ANSWER (INCORRECT)</span>
+                              <span>YOUR ANSWER ({item.selectedOptionKey ? "INCORRECT" : "NOT SUBMITTED"})</span>
                             </>
                           )}
                         </div>
@@ -537,12 +539,12 @@ export default function JuniorResultPage({ params }: PageProps) {
                               <MathRenderer content={item.selectedOptionText || ""} />
                             </span>
                           ) : (
-                            <span className="italic text-rose-200">No option submitted</span>
+                            <span className="italic text-amber-100 font-bold">No option submitted</span>
                           )}
                         </div>
                       </div>
 
-                      <div className="p-5 rounded-xl border-2 bg-[#144227] border-emerald-400 shadow-lg">
+                      <div className="p-5 rounded-xl border-2 bg-[#0F4A2A] border-emerald-400 shadow-lg">
                         <div className="text-xs uppercase font-mono tracking-wider text-emerald-300 font-black flex items-center gap-1.5">
                           <Check className="w-4 h-4 text-emerald-400" />
                           <span>VERIFIED MASTER KEY</span>
@@ -557,8 +559,8 @@ export default function JuniorResultPage({ params }: PageProps) {
                     </div>
 
                     {/* Derivation / Pedagogical Explanation */}
-                    <div className="p-6 sm:p-7 bg-[#221B15] border-2 border-amber-500 rounded-xl space-y-3.5 shadow-inner">
-                      <div className="text-amber-300 font-mono text-sm uppercase tracking-wider flex items-center gap-2 font-black border-b-2 border-[#4A3928] pb-2">
+                    <div className="p-6 sm:p-7 bg-[#261E16] border-2 border-amber-400 rounded-xl space-y-3.5 shadow-inner">
+                      <div className="text-amber-300 font-mono text-sm uppercase tracking-wider flex items-center gap-2 font-black border-b-2 border-amber-500/40 pb-2">
                         <Award className="w-4 h-4 text-amber-400" />
                         <span>Derivation &amp; Pedagogical Proof</span>
                       </div>

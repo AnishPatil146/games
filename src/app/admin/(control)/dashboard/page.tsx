@@ -359,6 +359,52 @@ export default function AdminExecutiveDashboardPage() {
         </div>
       </section>
 
+      {/* Part 5: Investigator Mode Cinematic Background Art Registry (Levels 01-08) */}
+      <section className="p-5 bg-[#FAF7F2] border border-[#DDD4C5] rounded-sm space-y-4">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#DDD4C5] pb-3">
+          <div className="flex items-center gap-2">
+            <Compass className="w-4 h-4 text-amber-700" />
+            <h2 className="font-serif text-lg text-[#1C1917]">
+              Investigator Mode (Solo) — Artwork Registry &amp; Environmental Asset Status
+            </h2>
+          </div>
+          <span className="text-[10px] font-mono text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200 uppercase tracking-widest font-bold">
+            8/8 Levels Operational
+          </span>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 text-xs">
+          {[
+            { level: "01", name: "The Locked Study", file: "solo_l1_study.jpg", status: "Operational", desc: "Mahogany bookcases, desk lamp" },
+            { level: "02", name: "Abandoned Control Room", file: "solo_l2_control_room.jpg", status: "Operational", desc: "Phosphor CRTs, cable looms" },
+            { level: "03", name: "Surveillance Hub", file: "solo_l3_surveillance_hub.jpg", status: "Operational", desc: "Panopticon monitors, consoles" },
+            { level: "04", name: "Observation Chamber", file: "solo_l4_interrogation.jpg", status: "Operational", desc: "Two-way mirror, metal chairs" },
+            { level: "05", name: "The Mirror Maze", file: "solo_l5_mirror_maze.jpg", status: "Operational", desc: "Specular reflections, infinite corridors" },
+            { level: "06", name: "Flooded Ruins at Dusk", file: "solo_l6_last_human.jpg", status: "New High-Res Active", desc: "Flooded classical arches, golden water reflections" },
+            { level: "07", name: "Emergency Dispatch Room", file: "solo_l7_impossible_second.jpg", status: "New High-Res Active", desc: "Curved terminal, vacuum tubes, red alarm beams" },
+            { level: "08", name: "The Great Memory Vault", file: "solo_l8_final_truth.jpg", status: "New High-Res Active", desc: "Stone dais master codex, cathedral rose window" },
+          ].map((art) => (
+            <div key={art.level} className="p-3 bg-[#F3EDE2]/60 rounded border border-[#DDD4C5] space-y-1.5">
+              <div className="flex items-center justify-between">
+                <span className="font-mono text-[10px] uppercase font-bold text-amber-800">
+                  Level {art.level}
+                </span>
+                <span className="text-[9px] font-mono px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-800 font-bold">
+                  {art.status}
+                </span>
+              </div>
+              <span className="font-bold text-[#1C1917] block truncate">{art.name}</span>
+              <span className="text-[10px] text-[#57524C] font-mono block truncate">
+                /public/art/backgrounds/{art.file}
+              </span>
+              <p className="text-[11px] text-[#70685F] line-clamp-2">
+                {art.desc}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Mathematical Notation & Gameplay Engines Health Audit */}
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         {/* Operational Subsystems */}

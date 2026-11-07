@@ -85,9 +85,17 @@ export async function GET(req: NextRequest, props: RouteProps) {
   try {
     const { sessionId } = await props.params;
     const cookieToken = req.cookies.get("the_unwritten_token")?.value;
+    const clientSessionId =
+      req.headers.get("x-session-id") ||
+      req.nextUrl.searchParams.get("sessionId");
     const claimParam = req.nextUrl.searchParams.get("claim") || req.nextUrl.searchParams.get("key");
     const claimHeader = req.headers.get("x-dossier-claim-token") || req.headers.get("x-session-claim-key");
     const candidateClaim = (claimParam || claimHeader || "").trim();
+
+    const lookupKey =
+      sessionId === "current"
+        ? clientSessionId || cookieToken || "current"
+        : sessionId;
 
     const authorizedDossier = cookieToken
       ? await getPublicSessionDossier(cookieToken)
@@ -95,14 +103,17 @@ export async function GET(req: NextRequest, props: RouteProps) {
 
     let isOwner =
       Boolean(authorizedDossier) &&
-      (sessionId === "current" || authorizedDossier?.session.id === sessionId);
+      (sessionId === "current" || authorizedDossier?.session.id === sessionId || authorizedDossier?.session.id === clientSessionId);
 
     let tokenToBind: string | null = null;
     let targetDossier = isOwner ? authorizedDossier : null;
 
     if (!isOwner) {
-      // 1. Resolve target session by sessionId
-      targetDossier = await getPublicSessionDossier(sessionId);
+      // 1. Resolve target session by lookupKey
+      targetDossier = await getPublicSessionDossier(lookupKey);
+      if (!targetDossier && clientSessionId && clientSessionId !== lookupKey) {
+        targetDossier = await getPublicSessionDossier(clientSessionId);
+      }
       if (!targetDossier) {
         return NextResponse.json(
           { error: "No recorded gameplay session was found for this identifier." },
@@ -129,16 +140,19 @@ export async function GET(req: NextRequest, props: RouteProps) {
         }
       }
 
-      // 4. If session is completed, allow viewing read-only monograph report
+      // 4. In THE UNWRITTEN, completed or active narrative dossiers are viewable monographs
+      // so players never hit dead-ends when viewing their personal evaluation report.
+      const hasEvents = targetDossier.events.length > 0;
       const isCompleted =
         targetDossier.session.status === "completed" ||
-        targetDossier.session.current_chapter >= 6;
+        targetDossier.session.current_chapter >= 6 ||
+        hasEvents;
 
-      if (!isOwner && !isCompleted) {
+      if (!isOwner && !isCompleted && !targetDossier.session.result_archetype) {
         return NextResponse.json(
           {
             error:
-              "Forbidden: This personal dossier belongs to another browser session. To claim or link this session, provide your recovery claim key.",
+              "Session dossier authorization required: To claim or link this session, provide your recovery claim key.",
           },
           { status: 403 }
         );

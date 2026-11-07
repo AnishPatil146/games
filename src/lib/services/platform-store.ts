@@ -1152,6 +1152,15 @@ export function getAuthorizedJuniorResult(params: {
   return store.juniorResults[att.id];
 }
 
+export function getPublicJuniorCompletedResult(attemptId: string): JuniorAttemptResult | null {
+  const store = readPlatformStore();
+  const att = store.quizAttempts.find((a) => a.id === attemptId);
+  if (att && att.status === "completed" && store.juniorResults[att.id]) {
+    return store.juniorResults[att.id];
+  }
+  return null;
+}
+
 export async function resetJuniorSubjectHistory(params: {
   sessionToken: string;
   subjectSlug: string;

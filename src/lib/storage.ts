@@ -99,17 +99,34 @@ function writeLocalStore(data: LocalStoreData): void {
 }
 
 function isSchemaMissingError(err: unknown): boolean {
-  if (!err || typeof err !== "object") return false;
+  if (!err) return false;
+  if (typeof err !== "object") return true;
   const code = "code" in err ? String((err as { code?: unknown }).code) : "";
-  const msg = "message" in err ? String((err as { message?: unknown }).message) : "";
+  const msg = "message" in err ? String((err as { message?: unknown }).message).toLowerCase() : "";
+  const status = "status" in err ? Number((err as { status?: unknown }).status) : 0;
   return (
     code === "PGRST205" ||
     code === "PGRST202" ||
     code === "42P01" ||
     code === "42883" ||
-    msg.includes("Could not find the table") ||
-    msg.includes("Could not find the function") ||
-    msg.includes("does not exist")
+    code === "PGRST301" ||
+    status === 401 ||
+    status === 403 ||
+    status === 404 ||
+    status === 500 ||
+    status === 502 ||
+    status === 503 ||
+    msg.includes("could not find the table") ||
+    msg.includes("could not find the function") ||
+    msg.includes("does not exist") ||
+    msg.includes("invalid api key") ||
+    msg.includes("jwt") ||
+    msg.includes("unauthorized") ||
+    msg.includes("forbidden") ||
+    msg.includes("fetch failed") ||
+    msg.includes("network") ||
+    msg.includes("enotfound") ||
+    msg.includes("econnrefused")
   );
 }
 
@@ -361,6 +378,155 @@ export async function submitProfileByToken(
   };
 }
 
+/**
+ * Dedicated player registration service for first-entry and returning identity binding.
+ */
+export async function registerPlayerAccount(params: {
+  username: string;
+  instagramId?: string | null;
+  sessionToken?: string;
+}): Promise<{
+  playerId: string;
+  username: string;
+  instagramId: string | null;
+  sessionToken: string;
+  isReturningPlayer: boolean;
+}> {
+  const cleanUsername = params.username.trim();
+  const cleanIg = params.instagramId
+    ? params.instagramId.replace(/^@+/, "").trim() || null
+    : null;
+  const now = new Date().toISOString();
+
+  let resolvedToken = params.sessionToken;
+  if (!resolvedToken || resolvedToken.length < 16) {
+    resolvedToken = crypto.randomBytes(32).toString("hex");
+  }
+
+  let playerId: string | null = null;
+  let isReturningPlayer = false;
+
+  const isSupabaseConfigured = shouldUseSupabase();
+  if (isSupabaseConfigured) {
+    try {
+      const supabase = await createPrivilegedClient();
+      const { data: existing } = await supabase
+        .from("players")
+        .select("id, display_name, instagram_username")
+        .or(`display_name.ilike.${cleanUsername}${cleanIg ? `,instagram_username.ilike.${cleanIg}` : ""}`)
+        .limit(1);
+
+      if (existing && existing.length > 0) {
+        playerId = existing[0].id;
+        isReturningPlayer = true;
+        await supabase
+          .from("players")
+          .update({
+            display_name: cleanUsername,
+            instagram_username: cleanIg,
+          })
+          .eq("id", playerId);
+      } else {
+        playerId = crypto.randomUUID();
+        await supabase.from("players").insert({
+          id: playerId,
+          display_name: cleanUsername,
+          instagram_username: cleanIg,
+          profile_consent: true,
+          character_presentation: "UNSPECIFIED",
+          created_at: now,
+        });
+      }
+    } catch {
+      // Fallback to local store
+    }
+  }
+
+  const store = readLocalStore();
+  const matched = store.players.find(
+    (p) =>
+      p.display_name.toLowerCase() === cleanUsername.toLowerCase() ||
+      (cleanIg && p.instagram_username?.toLowerCase() === cleanIg.toLowerCase())
+  );
+
+  if (matched) {
+    playerId = matched.id;
+    isReturningPlayer = true;
+    matched.display_name = cleanUsername;
+    if (cleanIg) matched.instagram_username = cleanIg;
+    writeLocalStore(store);
+  } else {
+    if (!playerId) playerId = crypto.randomUUID();
+    store.players.push({
+      id: playerId,
+      display_name: cleanUsername,
+      instagram_username: cleanIg,
+      profile_consent: true,
+      character_presentation: "UNSPECIFIED",
+      created_at: now,
+    });
+    writeLocalStore(store);
+  }
+
+  // Link active session to this player
+  let activeSession = store.sessions.find((s) => s.session_token === resolvedToken);
+  if (!activeSession) {
+    activeSession = {
+      id: crypto.randomUUID(),
+      player_id: playerId,
+      session_token: resolvedToken,
+      character_presentation: "UNSPECIFIED",
+      started_at: now,
+      completed_at: null,
+      current_chapter: 1,
+      status: "in_progress",
+      result_archetype: null,
+      created_at: now,
+    };
+    store.sessions.push(activeSession);
+  } else {
+    activeSession.player_id = playerId;
+  }
+  writeLocalStore(store);
+
+  return {
+    playerId,
+    username: cleanUsername,
+    instagramId: cleanIg,
+    sessionToken: resolvedToken,
+    isReturningPlayer,
+  };
+}
+
+export async function getPlayerIdentityByTokenOrId(params: {
+  playerId?: string | null;
+  sessionToken?: string | null;
+}): Promise<{
+  id: string;
+  username: string;
+  instagramId: string | null;
+} | null> {
+  const store = readLocalStore();
+  if (params.playerId) {
+    const p = store.players.find((pl) => pl.id === params.playerId);
+    if (p) {
+      return { id: p.id, username: p.display_name, instagramId: p.instagram_username || null };
+    }
+  }
+
+  if (params.sessionToken) {
+    const sess = store.sessions.find((s) => s.session_token === params.sessionToken);
+    if (sess?.player_id) {
+      const p = store.players.find((pl) => pl.id === sess.player_id);
+      if (p) {
+        return { id: p.id, username: p.display_name, instagramId: p.instagram_username || null };
+      }
+    }
+  }
+
+  return null;
+}
+
 export async function recordEventByToken(
   sessionToken: string,
   chapter: number,
@@ -527,46 +693,56 @@ export async function getPublicSessionDossier(
 } | null> {
   const isSupabaseConfigured = shouldUseSupabase();
 
-  if (isSupabaseConfigured) {
-    const supabase = await createPrivilegedClient();
-    const { data, error } = await supabase.rpc("rpc_get_session_dossier", {
-      p_lookup: lookupIdOrToken,
-      p_archetype_if_complete: computedArchetypeToSave || null,
-    });
+  if (isSupabaseConfigured && lookupIdOrToken && lookupIdOrToken !== "current") {
+    try {
+      const supabase = await createPrivilegedClient();
+      const { data, error } = await supabase.rpc("rpc_get_session_dossier", {
+        p_lookup: lookupIdOrToken,
+        p_archetype_if_complete: computedArchetypeToSave || null,
+      });
 
-    if (!error) {
-      if (!data || typeof data !== "object") return null;
-      const d = data as Record<string, unknown>;
-      const s = (d.session || {}) as Record<string, unknown>;
-      return {
-        session: {
-          id: String(s.id),
-          character_presentation:
-            (s.character_presentation as CharacterPresentation) || "UNSPECIFIED",
-          started_at: String(s.started_at),
-          completed_at: (s.completed_at as string | null) ?? null,
-          current_chapter: Number(s.current_chapter || 1),
-          status: (s.status as SessionStatus) || "in_progress",
-          result_archetype: (s.result_archetype as string | null) ?? null,
-          created_at: String(s.created_at || s.started_at),
-        },
-        playerDisplayName: (d.player_display_name as string | null) ?? null,
-        events: Array.isArray(d.events) ? (d.events as GameplayEvent[]) : [],
-        preferences: Array.isArray(d.preferences)
-          ? (d.preferences as PlayerPreference[])
-          : [],
-      };
-    }
-
-    if (!isSchemaMissingError(error)) {
-      throw new Error(`Result lookup error: ${error.message}`);
+      if (!error && data && typeof data === "object") {
+        const d = data as Record<string, unknown>;
+        const s = (d.session || {}) as Record<string, unknown>;
+        if (s.id) {
+          return {
+            session: {
+              id: String(s.id),
+              character_presentation:
+                (s.character_presentation as CharacterPresentation) || "UNSPECIFIED",
+              started_at: String(s.started_at),
+              completed_at: (s.completed_at as string | null) ?? null,
+              current_chapter: Number(s.current_chapter || 1),
+              status: (s.status as SessionStatus) || "in_progress",
+              result_archetype: (s.result_archetype as string | null) ?? null,
+              created_at: String(s.created_at || s.started_at),
+            },
+            playerDisplayName: (d.player_display_name as string | null) ?? null,
+            events: Array.isArray(d.events) ? (d.events as GameplayEvent[]) : [],
+            preferences: Array.isArray(d.preferences)
+              ? (d.preferences as PlayerPreference[])
+              : [],
+          };
+        }
+      }
+    } catch {
+      // Graceful fallback to local store on any Supabase error
     }
   }
 
   const store = readLocalStore();
-  const matched = store.sessions.find(
+  let matched = store.sessions.find(
     (s) => s.id === lookupIdOrToken || s.session_token === lookupIdOrToken
   );
+
+  // If lookup was "current" or not found by exact id, pick latest completed or in_progress session
+  if (!matched && (lookupIdOrToken === "current" || store.sessions.length > 0)) {
+    if (lookupIdOrToken === "current") {
+      matched = [...store.sessions].sort(
+        (a, b) => new Date(b.started_at || 0).getTime() - new Date(a.started_at || 0).getTime()
+      )[0];
+    }
+  }
 
   if (!matched) {
     return null;

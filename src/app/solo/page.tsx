@@ -38,12 +38,37 @@ export default function SoloCampaignPage() {
           ? "The Unpredictable"
           : "The Survivor";
       setChosenEnding(endingTitle);
+
+      // Persist completion telemetry to storage immediately
+      void trackEvent(8, "game_completed", {
+        sceneId: currentSceneId,
+        endingId,
+        chosenEnding: endingTitle,
+        completed: true,
+        ...results,
+      });
+
+      if (sessionId) {
+        try {
+          localStorage.setItem("the_unwritten_last_session_id", sessionId);
+        } catch {
+          // ignore
+        }
+      }
     } else if (nextId && SOLO_CAMPAIGN_SCENES[nextId]) {
       setCurrentSceneId(nextId);
     }
   };
 
   if (gameEnded) {
+    const handleInspectMonograph = () => {
+      let resolvedId = sessionId;
+      if (!resolvedId && typeof window !== "undefined") {
+        resolvedId = localStorage.getItem("the_unwritten_last_session_id") || "";
+      }
+      router.push(`/result/${resolvedId || "current"}`);
+    };
+
     return (
       <div className="min-h-screen bg-[#12100E] text-[#FAF7F2] flex flex-col items-center justify-center p-6 text-center select-none">
         <div className="max-w-xl bg-[#1C1917] p-8 md:p-12 rounded-3xl border border-[#453D35] shadow-2xl">
@@ -70,8 +95,8 @@ export default function SoloCampaignPage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
-              onClick={() => router.push(`/result/${sessionId || "current"}`)}
-              className="px-6 py-3 rounded-full bg-[#FAF7F2] text-[#1C1917] font-sans font-bold text-sm hover:bg-[#E7E0D3] transition-all shadow-md"
+              onClick={handleInspectMonograph}
+              className="px-6 py-3 rounded-full bg-[#FAF7F2] text-[#1C1917] font-sans font-bold text-sm hover:bg-[#E7E0D3] transition-all shadow-md cursor-pointer"
             >
               Inspect Personal Monograph →
             </button>

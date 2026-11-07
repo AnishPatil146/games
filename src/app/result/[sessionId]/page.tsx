@@ -55,7 +55,23 @@ export default function ResultReportPage({ params }: PageProps) {
 
   useEffect(() => {
     let active = true;
-    fetch(`/api/result/${resolvedParams.sessionId}`)
+    const localLastSession =
+      typeof window !== "undefined"
+        ? localStorage.getItem("the_unwritten_last_session_id") ||
+          localStorage.getItem("the_unwritten_session_id")
+        : null;
+
+    const headers: Record<string, string> = {};
+    if (localLastSession) {
+      headers["x-session-id"] = localLastSession;
+    }
+
+    const query =
+      localLastSession && resolvedParams.sessionId === "current"
+        ? `?sessionId=${encodeURIComponent(localLastSession)}`
+        : "";
+
+    fetch(`/api/result/${resolvedParams.sessionId}${query}`, { headers })
       .then((res) => res.json() as Promise<{
         report?: GameplayReport;
         choiceMapSteps?: ChoiceMapStep[];
@@ -90,6 +106,25 @@ export default function ResultReportPage({ params }: PageProps) {
           }
           setErrorMsg(null);
         } else {
+          // If sessionId was 'current' and returned not found, try fallback to localLastSession
+          if (localLastSession && resolvedParams.sessionId === "current") {
+            fetch(`/api/result/${localLastSession}`)
+              .then((r) => r.json())
+              .then((fallbackData) => {
+                if (fallbackData?.report && active) {
+                  setReport(fallbackData.report);
+                  setChoiceMapSteps(fallbackData.choiceMapSteps || []);
+                  if (fallbackData.claimKey) setClaimKey(fallbackData.claimKey);
+                  setErrorMsg(null);
+                } else if (active) {
+                  setErrorMsg(data.error || "Unable to load report.");
+                }
+              })
+              .catch(() => {
+                if (active) setErrorMsg(data.error || "Unable to load report.");
+              });
+            return;
+          }
           setErrorMsg(data.error || "Unable to load report.");
         }
       })
@@ -212,52 +247,60 @@ export default function ResultReportPage({ params }: PageProps) {
           </div>
         ) : errorMsg || !report ? (
           <div className="max-w-lg mx-auto py-16 text-center space-y-6">
-            <p className="text-[11px] uppercase tracking-[0.26em] text-[#9E6B68]">
-              Restricted or Unclaimed Dossier
+            <p className="text-[11px] uppercase tracking-[0.26em] text-[#9E6B68] font-mono font-bold">
+              Personal Investigation Archive
             </p>
-            <h1 className="font-serif text-3xl text-[#1C1917]">
-              Session dossier authorization required
+            <h1 className="font-serif text-3xl sm:text-4xl text-[#1C1917] font-black">
+              Session Dossier Not Found
             </h1>
             <p className="text-sm text-[#57524C] leading-relaxed">
               {errorMsg ||
-                "This personal dossier is protected and bound to its authoring session. If this is your journey, enter your 8-character Session Claim Key or session token below."}
+                "No completed gameplay session was found for this identifier. If you just concluded a session or reloaded, you can return to the Institute or start a fresh deduction run."}
             </p>
 
-            {/* In-Browser Dossier Claim & Device Linking Form */}
-            <form
-              onSubmit={(e) => void handleClaimSubmit(e)}
-              className="p-5 bg-white border border-[#DDD4C5] rounded-sm text-left space-y-3 shadow-sm"
-            >
-              <label
-                htmlFor="claim-key-input"
-                className="block text-[10px] uppercase tracking-wider font-mono text-[#8A8178] font-bold"
-              >
-                Enter Session Claim Key or Original Token:
-              </label>
-              <div className="flex gap-2">
-                <input
-                  id="claim-key-input"
-                  type="text"
-                  required
-                  placeholder="e.g. 7A8B9C0D or session_token"
-                  value={claimInput}
-                  onChange={(e) => setClaimInput(e.target.value)}
-                  className="flex-1 px-3 py-2 bg-[#FAF7F2] border border-[#DDD4C5] rounded text-sm font-mono text-[#1C1917] focus:outline-none focus:border-[#8A5A36]"
-                />
-                <Button size="sm" type="submit" disabled={isClaiming}>
-                  {isClaiming ? "Verifying..." : "Claim Dossier"}
-                </Button>
-              </div>
-              <p className="text-[11px] text-[#8A8178]">
-                Claiming binds this dossier to your current browser session and establishes authenticated ownership.
-              </p>
-            </form>
-
-            <div className="pt-2 flex justify-center gap-3">
-              <Link href="/play">
-                <Button size="md" variant="secondary">Begin Fresh Journey</Button>
+            <div className="pt-2 flex flex-wrap justify-center gap-3">
+              <Link href="/">
+                <Button size="md" variant="primary">Return to Hub</Button>
+              </Link>
+              <Link href="/solo">
+                <Button size="md" variant="secondary">Solo Investigation</Button>
               </Link>
             </div>
+
+            {/* Collapsed In-Browser Dossier Claim & Device Linking Form */}
+            <details className="mt-8 text-left bg-white border border-[#DDD4C5] rounded-lg p-4 shadow-sm group">
+              <summary className="text-xs font-mono uppercase tracking-wider text-[#8A8178] font-bold cursor-pointer hover:text-[#1C1917] select-none">
+                ▸ Have a recovery session token or claim key?
+              </summary>
+              <form
+                onSubmit={(e) => void handleClaimSubmit(e)}
+                className="pt-4 space-y-3"
+              >
+                <label
+                  htmlFor="claim-key-input"
+                  className="block text-[10px] uppercase tracking-wider font-mono text-[#8A8178] font-bold"
+                >
+                  Enter Session Claim Key or Original Token:
+                </label>
+                <div className="flex gap-2">
+                  <input
+                    id="claim-key-input"
+                    type="text"
+                    required
+                    placeholder="e.g. 7A8B9C0D or session_token"
+                    value={claimInput}
+                    onChange={(e) => setClaimInput(e.target.value)}
+                    className="flex-1 px-3 py-2 bg-[#FAF7F2] border border-[#DDD4C5] rounded text-sm font-mono text-[#1C1917] focus:outline-none focus:border-[#8A5A36]"
+                  />
+                  <Button size="sm" type="submit" disabled={isClaiming}>
+                    {isClaiming ? "Verifying..." : "Claim Dossier"}
+                  </Button>
+                </div>
+                <p className="text-[11px] text-[#8A8178]">
+                  Claiming binds this dossier to your current browser session and establishes authenticated ownership.
+                </p>
+              </form>
+            </details>
           </div>
         ) : (
           <motion.article
