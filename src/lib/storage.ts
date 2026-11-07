@@ -396,101 +396,29 @@ export async function registerPlayerAccount(params: {
   const cleanIg = params.instagramId
     ? params.instagramId.replace(/^@+/, "").trim() || null
     : null;
-  const now = new Date().toISOString();
 
   let resolvedToken = params.sessionToken;
   if (!resolvedToken || resolvedToken.length < 16) {
-    resolvedToken = crypto.randomBytes(32).toString("hex");
+    resolvedToken = "uw_" + crypto.randomBytes(20).toString("hex");
   }
 
-  let playerId: string | null = null;
-  let isReturningPlayer = false;
+  // 1. Ensure game session exists
+  await getOrCreateSession(resolvedToken, {}, "UNSPECIFIED");
 
-  const isSupabaseConfigured = shouldUseSupabase();
-  if (isSupabaseConfigured) {
-    try {
-      const supabase = await createPrivilegedClient();
-      const { data: existing } = await supabase
-        .from("players")
-        .select("id, display_name, instagram_username")
-        .or(`display_name.ilike.${cleanUsername}${cleanIg ? `,instagram_username.ilike.${cleanIg}` : ""}`)
-        .limit(1);
-
-      if (existing && existing.length > 0) {
-        playerId = existing[0].id;
-        isReturningPlayer = true;
-        await supabase
-          .from("players")
-          .update({
-            display_name: cleanUsername,
-            instagram_username: cleanIg,
-          })
-          .eq("id", playerId);
-      } else {
-        playerId = crypto.randomUUID();
-        await supabase.from("players").insert({
-          id: playerId,
-          display_name: cleanUsername,
-          instagram_username: cleanIg,
-          profile_consent: true,
-          character_presentation: "UNSPECIFIED",
-          created_at: now,
-        });
-      }
-    } catch {
-      // Fallback to local store
-    }
-  }
+  // 2. Submit player profile via established, resilient pipeline
+  const profileRes = await submitProfileByToken(resolvedToken, {
+    displayName: cleanUsername,
+    instagramUsername: cleanIg || undefined,
+    consent: true,
+    characterPresentation: "UNSPECIFIED",
+  });
 
   const store = readLocalStore();
-  const matched = store.players.find(
-    (p) =>
-      p.display_name.toLowerCase() === cleanUsername.toLowerCase() ||
-      (cleanIg && p.instagram_username?.toLowerCase() === cleanIg.toLowerCase())
-  );
-
-  if (matched) {
-    playerId = matched.id;
-    isReturningPlayer = true;
-    matched.display_name = cleanUsername;
-    if (cleanIg) matched.instagram_username = cleanIg;
-    writeLocalStore(store);
-  } else {
-    if (!playerId) playerId = crypto.randomUUID();
-    store.players.push({
-      id: playerId,
-      display_name: cleanUsername,
-      instagram_username: cleanIg,
-      profile_consent: true,
-      character_presentation: "UNSPECIFIED",
-      created_at: now,
-    });
-    writeLocalStore(store);
-  }
-
-  // Link active session to this player
-  let activeSession = store.sessions.find((s) => s.session_token === resolvedToken);
-  if (!activeSession) {
-    activeSession = {
-      id: crypto.randomUUID(),
-      player_id: playerId,
-      session_token: resolvedToken,
-      character_presentation: "UNSPECIFIED",
-      started_at: now,
-      completed_at: null,
-      current_chapter: 1,
-      status: "in_progress",
-      result_archetype: null,
-      created_at: now,
-    };
-    store.sessions.push(activeSession);
-  } else {
-    activeSession.player_id = playerId;
-  }
-  writeLocalStore(store);
+  const isReturningPlayer =
+    store.sessions.filter((s) => s.player_id === profileRes.playerId).length > 1;
 
   return {
-    playerId,
+    playerId: profileRes.playerId,
     username: cleanUsername,
     instagramId: cleanIg,
     sessionToken: resolvedToken,

@@ -33,10 +33,10 @@ export default function SoloCampaignPage() {
         endingId === "ENDING_MASTERMIND"
           ? "The Mastermind"
           : endingId === "ENDING_HUMANIST"
-          ? "The Humanist"
-          : endingId === "ENDING_UNPREDICTABLE"
-          ? "The Unpredictable"
-          : "The Survivor";
+            ? "The Humanist"
+            : endingId === "ENDING_UNPREDICTABLE"
+              ? "The Unpredictable"
+              : "The Survivor";
       setChosenEnding(endingTitle);
 
       // Persist completion telemetry to storage immediately
