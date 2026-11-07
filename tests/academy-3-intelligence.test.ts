@@ -82,7 +82,7 @@ describe("THE UNWRITTEN — Academy 3.0 Intelligence & Diagnostic Verification S
         if (/[α-ωΑ-Ω]/.test(str)) return true;
         if (/\|[^|]+\|/.test(str)) return true;
         if (/\b[a-zA-Z][a-zA-Z0-9_]*\s*=\s*[^,;]+/.test(str)) return true;
-        if (/\([a-zA-Z0-9\s-+*/^]+\)/.test(str) && /[-+*/^]/.test(str)) return true;
+        if (/\([a-zA-Z0-9\s*+/^-]+\)/.test(str) && /[-+*/^]/.test(str)) return true;
         return false;
       };
 

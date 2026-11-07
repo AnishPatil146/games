@@ -35,6 +35,7 @@ export function BoardPrepHub({
   onClassChange,
   selectedStream,
   onStreamChange,
+
   streams,
   subjects,
   onStartSubjectPractice,
@@ -76,33 +77,30 @@ export function BoardPrepHub({
               <button
                 type="button"
                 onClick={() => onClassChange(10)}
-                className={`px-3 sm:px-4 py-1.5 text-xs font-mono uppercase tracking-wider rounded-sm transition-all cursor-pointer ${
-                  selectedClass === 10
+                className={`px-3 sm:px-4 py-1.5 text-xs font-mono uppercase tracking-wider rounded-sm transition-all cursor-pointer ${selectedClass === 10
                     ? "bg-[#2A241E] text-[#FAF7F2] font-bold shadow-sm"
                     : "text-[#8A8178] hover:text-[#FAF7F2]"
-                }`}
+                  }`}
               >
                 Class 10 (SSC/CBSE)
               </button>
               <button
                 type="button"
                 onClick={() => onClassChange(11)}
-                className={`px-3 sm:px-4 py-1.5 text-xs font-mono uppercase tracking-wider rounded-sm transition-all cursor-pointer ${
-                  selectedClass === 11
+                className={`px-3 sm:px-4 py-1.5 text-xs font-mono uppercase tracking-wider rounded-sm transition-all cursor-pointer ${selectedClass === 11
                     ? "bg-[#2A241E] text-[#FAF7F2] font-bold shadow-sm"
                     : "text-[#8A8178] hover:text-[#FAF7F2]"
-                }`}
+                  }`}
               >
                 Class 11 (FYJC)
               </button>
               <button
                 type="button"
                 onClick={() => onClassChange(12)}
-                className={`px-3 sm:px-4 py-1.5 text-xs font-mono uppercase tracking-wider rounded-sm transition-all cursor-pointer ${
-                  selectedClass === 12
+                className={`px-3 sm:px-4 py-1.5 text-xs font-mono uppercase tracking-wider rounded-sm transition-all cursor-pointer ${selectedClass === 12
                     ? "bg-[#2A241E] text-[#FAF7F2] font-bold shadow-sm"
                     : "text-[#8A8178] hover:text-[#FAF7F2]"
-                }`}
+                  }`}
               >
                 Class 12 (HSC)
               </button>
@@ -115,11 +113,10 @@ export function BoardPrepHub({
                   key={st.slug}
                   type="button"
                   onClick={() => onStreamChange(st.slug)}
-                  className={`px-3 py-1.5 text-xs font-mono uppercase tracking-wider rounded-sm transition-colors cursor-pointer ${
-                    selectedStream === st.slug
+                  className={`px-3 py-1.5 text-xs font-mono uppercase tracking-wider rounded-sm transition-colors cursor-pointer ${selectedStream === st.slug
                       ? "bg-[#8FA184]/20 border border-[#8FA184] text-[#FAF7F2] font-bold"
                       : "bg-[#12100E] border border-[#2E2822] text-[#A89F93] hover:text-[#FAF7F2]"
-                  }`}
+                    }`}
                 >
                   {st.name}
                 </button>
@@ -149,18 +146,16 @@ export function BoardPrepHub({
                 <div
                   key={subj.slug}
                   onClick={() => setActiveSubjectSlug(subj.slug)}
-                  className={`p-4 rounded-sm border transition-all cursor-pointer ${
-                    isSelected
+                  className={`p-4 rounded-sm border transition-all cursor-pointer ${isSelected
                       ? "bg-[#1B1814] border-[#8FA184] text-[#FAF7F2] shadow-md"
                       : "bg-[#FAF7F2] border-[#DDD4C5] text-[#1C1917] hover:bg-[#F3EDE2]"
-                  }`}
+                    }`}
                 >
                   <div className="flex items-start justify-between gap-2">
                     <div>
                       <span
-                        className={`text-[9px] font-mono uppercase tracking-widest block mb-1 ${
-                          isSelected ? "text-[#8FA184]" : "text-[#545E4E]"
-                        }`}
+                        className={`text-[9px] font-mono uppercase tracking-widest block mb-1 ${isSelected ? "text-[#8FA184]" : "text-[#545E4E]"
+                          }`}
                       >
                         Code {subj.code || "STD"} · {subj.chapters.length} Chapters
                       </span>
@@ -174,9 +169,8 @@ export function BoardPrepHub({
                   </div>
 
                   <p
-                    className={`text-xs mt-2 line-clamp-2 leading-relaxed ${
-                      isSelected ? "text-[#A89F93]" : "text-[#57524C]"
-                    }`}
+                    className={`text-xs mt-2 line-clamp-2 leading-relaxed ${isSelected ? "text-[#A89F93]" : "text-[#57524C]"
+                      }`}
                   >
                     {subj.description}
                   </p>

@@ -38,6 +38,19 @@ function cleanLatexExpression(raw: string): { cleanExpr: string; isDisplay: bool
 
   // Common LaTeX cleanup for textbook formatting
   expr = expr
+    .replace(/×/g, " \\times ")
+    .replace(/·/g, " \\cdot ")
+    .replace(/÷/g, " \\div ")
+    .replace(/±/g, " \\pm ")
+    .replace(/≠/g, " \\ne ")
+    .replace(/≤/g, " \\le ")
+    .replace(/≥/g, " \\ge ")
+    .replace(/°C/g, "^{\\circ}\\text{C}")
+    .replace(/°/g, "^\\circ")
+    .replace(/∛\(([^)]+)\)/g, (_m, g) => `\\sqrt[3]{${g}}`)
+    .replace(/∛([0-9a-zA-Z]+)/g, (_m, g) => `\\sqrt[3]{${g}}`)
+    .replace(/√\(([^)]+)\)/g, (_m, g) => `\\sqrt{${g}}`)
+    .replace(/√([0-9a-zA-Z]+)/g, (_m, g) => `\\sqrt{${g}}`)
     .replace(/\\iff/g, "\\Longleftrightarrow")
     .replace(/\\quad/g, " \\;\\; ")
     .replace(/\\qquad/g, " \\;\\;\\;\\; ");
@@ -101,7 +114,7 @@ export function FormulaRenderer({
 
   return (
     <span
-      className={`katex-math-render inline-block max-w-full overflow-x-auto overflow-y-hidden align-middle scrollbar-thin scrollbar-thumb-zinc-700 ${className}`}
+      className={`katex-math-render inline-block max-w-full overflow-x-auto align-middle scrollbar-thin scrollbar-thumb-zinc-700 py-0.5 ${className}`}
       dangerouslySetInnerHTML={{ __html: renderedHtml }}
     />
   );

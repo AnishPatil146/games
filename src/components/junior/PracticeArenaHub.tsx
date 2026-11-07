@@ -326,36 +326,36 @@ export function PracticeArenaHub({
 
       {/* 2. Question Workspace */}
       {currQ ? (
-        <div className="bg-[#15110F] border border-[#2F2722] rounded-md p-6 shadow-xl space-y-6">
+        <div className="bg-[#241D17] border-2 border-[#6E553F] rounded-xl p-6 shadow-xl space-y-6">
           {/* Header Status Bar */}
-          <div className="flex items-center justify-between border-b border-[#28211C] pb-3">
+          <div className="flex items-center justify-between border-b-2 border-[#4A392B] pb-3">
             <div className="flex items-center gap-2">
-              <span className="text-[10px] font-mono uppercase tracking-widest text-amber-400 bg-amber-950/40 border border-amber-500/20 px-2 py-0.5 rounded">
+              <span className="text-[10px] font-mono uppercase tracking-widest text-amber-300 bg-[#342A20] border-2 border-[#7D644D] px-2.5 py-1 rounded font-bold">
                 Class {currQ.classLevel} · {currQ.subjectName}
               </span>
-              <span className="text-zinc-500 text-xs">·</span>
-              <span className="text-xs font-mono text-zinc-400">{currQ.chapterTitle}</span>
+              <span className="text-zinc-400 text-xs">·</span>
+              <span className="text-xs font-mono text-emerald-300 font-bold">{currQ.chapterTitle}</span>
             </div>
             <div className="flex items-center gap-3">
               <span
-                className={`text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded ${
+                className={`text-[10px] font-mono font-bold uppercase tracking-wider px-2.5 py-1 rounded border-2 ${
                   currQ.difficulty === "Easy"
-                    ? "bg-emerald-950/60 text-emerald-400 border border-emerald-500/30"
+                    ? "bg-[#14532D] text-emerald-200 border-emerald-400"
                     : currQ.difficulty === "Medium"
-                    ? "bg-amber-950/60 text-amber-400 border border-amber-500/30"
-                    : "bg-rose-950/60 text-rose-400 border border-rose-500/30"
+                    ? "bg-amber-500 text-black border-white font-black"
+                    : "bg-rose-600 text-white border-white font-black"
                 }`}
               >
                 {currQ.difficulty}
               </span>
-              <span className="text-xs font-mono text-zinc-400">
+              <span className="text-xs font-mono text-white font-bold">
                 Question {activeQuestionIndex + 1} of {filteredQuestions.length}
               </span>
             </div>
           </div>
 
           {/* Prompt */}
-          <div className="text-sm font-serif font-medium text-[#FAF7F2] leading-relaxed">
+          <div className="text-base font-serif font-medium text-white leading-relaxed p-4 bg-[#1C1611] rounded-xl border-2 border-[#544333]">
             <MathRenderer content={currQ.prompt} />
           </div>
 
@@ -365,15 +365,15 @@ export function PracticeArenaHub({
               const isSelected = selectedOption === opt.key;
               const isCorrect = opt.key === currQ.correctKey;
 
-              let cardStyle = "bg-[#181310] border-[#2C231D] text-zinc-300 hover:border-zinc-500";
+              let cardStyle = "bg-[#2D241C] border-2 border-[#7D644D] text-white hover:border-amber-400 hover:bg-[#382D22]";
               if (isAnswerSubmitted) {
                 if (isCorrect) {
-                  cardStyle = "bg-emerald-950/60 border-emerald-500 text-emerald-300 font-bold ring-1 ring-emerald-500/40";
+                  cardStyle = "bg-[#14532D] border-2 border-emerald-400 text-white font-bold ring-2 ring-emerald-400/50";
                 } else if (isSelected) {
-                  cardStyle = "bg-rose-950/60 border-rose-500 text-rose-300 ring-1 ring-rose-500/40";
+                  cardStyle = "bg-[#7F1D1D] border-2 border-rose-400 text-white ring-2 ring-rose-400/50";
                 }
               } else if (isSelected) {
-                cardStyle = "bg-[#251D18] border-amber-500 text-amber-300 ring-1 ring-amber-500/40";
+                cardStyle = "bg-[#16442A] border-2 border-emerald-400 text-white ring-2 ring-emerald-400 shadow-[0_0_15px_rgba(52,211,153,0.3)]";
               }
 
               return (
@@ -382,13 +382,13 @@ export function PracticeArenaHub({
                   onClick={() => {
                     if (!isAnswerSubmitted) setSelectedOption(opt.key);
                   }}
-                  className={`p-3.5 rounded border text-xs font-mono transition-all flex items-center justify-between cursor-pointer ${cardStyle}`}
+                  className={`p-4 rounded-xl border-2 text-sm font-mono transition-all flex items-center justify-between cursor-pointer ${cardStyle}`}
                 >
                   <div className="flex items-center gap-3">
-                    <span className="w-5 h-5 rounded-full bg-[#120E0C] border border-[#3A2F27] flex items-center justify-center font-bold text-[10px]">
+                    <span className="w-7 h-7 rounded-lg bg-[#44362A] border-2 border-[#8C7156] text-white flex items-center justify-center font-bold text-xs">
                       {opt.key}
                     </span>
-                    <span>
+                    <span className="font-semibold text-white">
                       <MathRenderer content={opt.text} />
                     </span>
                   </div>

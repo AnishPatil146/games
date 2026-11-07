@@ -304,26 +304,26 @@ export function TestCentreHub({
       {testPhase === "in_test" && (
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
           {/* Main Question Plate */}
-          <div className="lg:col-span-8 bg-[#15110F] border border-[#2F2722] rounded-md p-6 shadow-xl space-y-6">
-            <div className="flex items-center justify-between border-b border-[#28211C] pb-3">
+          <div className="lg:col-span-8 bg-[#241D17] border-2 border-[#6E553F] rounded-xl p-6 shadow-xl space-y-6">
+            <div className="flex items-center justify-between border-b-2 border-[#4A392B] pb-3">
               <div>
-                <span className="text-[10px] font-mono uppercase tracking-widest text-amber-400">
+                <span className="text-xs font-mono uppercase tracking-widest text-emerald-300 font-bold">
                   {questions[currentQIndex]?.topic}
                 </span>
-                <h3 className="text-base font-serif font-bold text-[#FAF7F2]">
+                <h3 className="text-lg font-serif font-black text-white">
                   Question {currentQIndex + 1} of {questions.length}
                 </h3>
               </div>
               <button
                 type="button"
                 onClick={() => handleToggleReview(questions[currentQIndex].id)}
-                className={`px-2.5 py-1 text-xs font-mono rounded flex items-center gap-1.5 border ${
+                className={`px-3 py-1.5 text-xs font-mono rounded-md flex items-center gap-1.5 border-2 transition-all ${
                   markedForReview.has(questions[currentQIndex].id)
-                    ? "bg-purple-950/80 text-purple-300 border-purple-500 font-bold"
-                    : "bg-[#1C1613] text-zinc-400 border-[#312720]"
+                    ? "bg-purple-900 text-purple-200 border-purple-400 font-bold shadow-md"
+                    : "bg-[#342A20] text-amber-200 border-[#7D644D] hover:border-amber-400"
                 }`}
               >
-                <Bookmark className="w-3 h-3" />
+                <Bookmark className="w-3.5 h-3.5" />
                 <span>
                   {markedForReview.has(questions[currentQIndex].id)
                     ? "Marked for Review"
@@ -332,27 +332,29 @@ export function TestCentreHub({
               </button>
             </div>
 
-            <div className="text-sm font-serif text-[#FAF7F2] leading-relaxed">
+            <div className="text-base font-serif text-white leading-relaxed p-4 bg-[#1C1611] rounded-xl border-2 border-[#544333]">
               <MathRenderer content={questions[currentQIndex]?.prompt || ""} />
             </div>
 
-            <div className="space-y-2.5">
+            <div className="space-y-3">
               {questions[currentQIndex]?.options.map((opt) => {
                 const isSelected = userAnswers[questions[currentQIndex].id] === opt.key;
                 return (
                   <div
                     key={opt.key}
                     onClick={() => handleSelectAnswer(questions[currentQIndex].id, opt.key)}
-                    className={`p-3.5 rounded border text-xs font-mono transition-all flex items-center gap-3 cursor-pointer ${
+                    className={`p-4 rounded-xl border-2 text-sm font-mono transition-all flex items-center gap-3 cursor-pointer ${
                       isSelected
-                        ? "bg-[#251D18] border-amber-500 text-amber-300 ring-1 ring-amber-500/40"
-                        : "bg-[#181310] border-[#2C231D] text-zinc-300 hover:border-zinc-500"
+                        ? "bg-[#16442A] border-emerald-400 text-white ring-2 ring-emerald-400 shadow-[0_0_15px_rgba(52,211,153,0.3)]"
+                        : "bg-[#2D241C] border-[#7D644D] text-white hover:border-amber-400 hover:bg-[#382D22]"
                     }`}
                   >
-                    <span className="w-5 h-5 rounded-full bg-[#120E0C] border border-[#3A2F27] flex items-center justify-center font-bold text-[10px]">
+                    <span className={`w-7 h-7 rounded-lg border-2 flex items-center justify-center font-bold text-xs ${
+                      isSelected ? "bg-emerald-400 text-black border-white" : "bg-[#44362A] border-[#8C7156] text-white"
+                    }`}>
                       {opt.key}
                     </span>
-                    <span>
+                    <span className="font-semibold text-white">
                       <MathRenderer content={opt.text} />
                     </span>
                   </div>
@@ -361,12 +363,12 @@ export function TestCentreHub({
             </div>
 
             {/* Navigation buttons */}
-            <div className="flex items-center justify-between pt-4 border-t border-[#28211C]">
+            <div className="flex items-center justify-between pt-4 border-t-2 border-[#4A392B]">
               <button
                 type="button"
                 disabled={currentQIndex === 0}
                 onClick={() => setCurrentQIndex(currentQIndex - 1)}
-                className="px-4 py-2 text-xs font-mono rounded bg-[#1C1613] border border-[#302620] text-zinc-400 hover:text-white disabled:opacity-30 disabled:cursor-not-allowed"
+                className="px-5 py-2.5 text-xs font-mono font-bold uppercase rounded-lg bg-[#342A20] border-2 border-[#7D644D] text-white hover:border-white disabled:opacity-40 disabled:cursor-not-allowed transition-all"
               >
                 Previous
               </button>
@@ -374,7 +376,7 @@ export function TestCentreHub({
                 <button
                   type="button"
                   onClick={() => setCurrentQIndex(currentQIndex + 1)}
-                  className="px-4 py-2 text-xs font-mono font-bold rounded bg-[#2A211B] text-amber-300 border border-amber-500/40 hover:bg-[#352A22]"
+                  className="px-6 py-2.5 text-xs font-mono font-black uppercase rounded-lg bg-emerald-500 hover:bg-emerald-400 text-black border-2 border-white shadow-[0_0_15px_rgba(16,185,129,0.5)] transition-all"
                 >
                   Save & Next
                 </button>
@@ -382,7 +384,7 @@ export function TestCentreHub({
                 <button
                   type="button"
                   onClick={() => setTestPhase("debrief")}
-                  className="px-5 py-2 text-xs font-mono font-bold rounded bg-emerald-600 text-white hover:bg-emerald-500"
+                  className="px-6 py-2.5 text-xs font-mono font-black uppercase rounded-lg bg-amber-400 hover:bg-amber-300 text-black border-2 border-white shadow-[0_0_15px_rgba(251,191,36,0.6)] transition-all"
                 >
                   Submit Examination
                 </button>

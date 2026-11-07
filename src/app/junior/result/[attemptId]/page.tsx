@@ -11,6 +11,7 @@ import {
   CheckCircle2,
   ChevronRight,
   GraduationCap,
+  Info,
   RotateCcw,
   Share2,
   XCircle,
@@ -110,16 +111,16 @@ export default function JuniorResultPage({ params }: PageProps) {
 
   return (
     <div className="relative min-h-screen flex flex-col bg-[#14110E] text-[#FAF7F2]">
-      {/* Background Illustrated Achievement Hall with Dark Atmospheric Vignette */}
+      {/* Background Illustrated Achievement Hall with Atmospheric Vignette (Layer 1-3) */}
       <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
         <Image
           src="/art/environments/env_junior_achievement_hall.jpg"
           alt="Academy Achievement Hall"
           fill
           priority
-          className="object-cover object-center opacity-25 filter brightness-75"
+          className="object-cover object-center opacity-20 filter brightness-75"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#100D0A]/90 via-[#14100C]/85 to-[#100D0A]/95" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#100D0A]/95 via-[#14100C]/90 to-[#100D0A]/98" />
       </div>
       {/* 1. ACADEMY TOP NAVIGATION BAR */}
       <header className="sticky top-0 z-30 bg-[#1C1713] border-b-2 border-[#544535] px-4 sm:px-6 py-3 shadow-md">
@@ -151,7 +152,7 @@ export default function JuniorResultPage({ params }: PageProps) {
             <button
               type="button"
               onClick={() => void handleShare()}
-              className="bg-[#2D2620] hover:bg-[#3D332A] text-white font-bold text-xs uppercase tracking-wider px-4 py-2 rounded-md border-2 border-[#8A755D] shadow-md flex items-center gap-1.5 cursor-pointer transition-all active:scale-95"
+              className="bg-[#342A20] hover:bg-[#44382B] text-white font-bold text-xs uppercase tracking-wider px-4 py-2.5 rounded-lg border-2 border-[#947A5F] hover:border-white shadow-md flex items-center gap-1.5 cursor-pointer transition-all active:scale-95"
             >
               {copied ? (
                 <>
@@ -172,7 +173,7 @@ export default function JuniorResultPage({ params }: PageProps) {
               >
                 <button
                   type="button"
-                  className="bg-emerald-500 hover:bg-emerald-400 text-black font-black text-xs uppercase tracking-wider px-4 py-2 rounded-md border-2 border-white shadow-[0_0_15px_rgba(16,185,129,0.5)] flex items-center gap-1.5 cursor-pointer transition-all active:scale-95"
+                  className="bg-emerald-500 hover:bg-emerald-400 text-black font-black text-xs uppercase tracking-wider px-5 py-2.5 rounded-lg border-2 border-white shadow-[0_0_15px_rgba(16,185,129,0.5)] flex items-center gap-1.5 cursor-pointer transition-all active:scale-95"
                 >
                   <RotateCcw className="w-3.5 h-3.5" />
                   <span>Next 10 Questions</span>
@@ -183,8 +184,8 @@ export default function JuniorResultPage({ params }: PageProps) {
         </div>
       </header>
 
-      {/* 2. MAIN EVALUATION CERTIFICATE */}
-      <main className="flex-1 max-w-4xl w-full mx-auto px-4 sm:px-6 py-8 sm:py-12 space-y-10">
+      {/* 2. MAIN EVALUATION CERTIFICATE (LAYER 4-6) */}
+      <main className="relative z-10 flex-1 max-w-4xl w-full mx-auto px-4 sm:px-6 py-8 sm:py-12 space-y-10">
         {isLoading ? (
           <div className="py-32 flex flex-col items-center justify-center space-y-4">
             <div className="w-10 h-10 border-3 border-amber-400 border-t-transparent rounded-full animate-spin" />
@@ -193,7 +194,7 @@ export default function JuniorResultPage({ params }: PageProps) {
             </p>
           </div>
         ) : errorMsg || !result ? (
-          <div className="max-w-md mx-auto py-24 text-center space-y-5 bg-[#241F1A] border-2 border-[#544535] rounded-xl p-8 shadow-2xl">
+          <div className="max-w-md mx-auto py-24 text-center space-y-5 bg-[#28211A] border-2 border-[#947A5F] rounded-2xl p-8 shadow-2xl">
             <XCircle className="w-12 h-12 mx-auto text-rose-400" />
             <h1 className="font-serif text-2xl text-white font-black">
               Evaluation Dossier Not Found
@@ -202,7 +203,7 @@ export default function JuniorResultPage({ params }: PageProps) {
             <Link href="/junior">
               <button
                 type="button"
-                className="bg-amber-400 hover:bg-amber-300 text-black font-black text-xs uppercase tracking-wider px-6 py-3 rounded-md border-2 border-white shadow-lg cursor-pointer transition-all"
+                className="bg-amber-400 hover:bg-amber-300 text-black font-black text-xs uppercase tracking-wider px-6 py-3 rounded-lg border-2 border-white shadow-lg cursor-pointer transition-all"
               >
                 Return to Academy Hub
               </button>
@@ -216,29 +217,29 @@ export default function JuniorResultPage({ params }: PageProps) {
             className="space-y-10"
           >
             {/* A. MASTER CERTIFICATE PLATE */}
-            <section className="bg-[#241F1A] text-[#FAF7F2] border-2 border-[#8A7356] rounded-xl p-6 sm:p-10 relative overflow-hidden shadow-2xl ring-1 ring-amber-500/30">
+            <section className="bg-[#28211A] text-[#FAF7F2] border-2 border-[#947A5F] rounded-2xl p-6 sm:p-10 relative overflow-hidden shadow-2xl ring-1 ring-amber-500/30">
               {/* Ornate Inner Border Line */}
               <div
-                className="absolute inset-3 border border-amber-400/40 pointer-events-none rounded-lg"
+                className="absolute inset-3 border-2 border-amber-400/30 pointer-events-none rounded-xl"
                 aria-hidden="true"
               />
 
               <div className="relative z-10 space-y-8">
                 {/* Certificate Top Seal */}
-                <div className="bg-[#2F2720] border-2 border-[#544535] p-4 rounded-lg flex flex-wrap items-center justify-between gap-3 text-xs uppercase font-mono tracking-[0.2em] text-[#C2E0B8] font-bold">
+                <div className="bg-[#342A20] border-2 border-[#7D644D] p-4 rounded-xl flex flex-wrap items-center justify-between gap-3 text-xs uppercase font-mono tracking-[0.2em] text-[#C2E0B8] font-bold">
                   <div className="flex items-center gap-2">
                     <GraduationCap className="w-5 h-5 text-amber-400" />
                     <span className="text-white">THE UNWRITTEN ACADEMY · EVALUATION CERTIFICATE</span>
                   </div>
                   <span className="text-[#DDD4C5]">
-                    Candidate: <strong className="text-white font-black text-sm bg-[#1A1613] px-3 py-1 rounded border border-[#544535] ml-1">{result.participantName}</strong>
+                    Candidate: <strong className="text-white font-black text-sm bg-[#1E1712] px-3 py-1 rounded border border-[#7D644D] ml-1">{result.participantName}</strong>
                   </span>
                 </div>
 
                 {/* Main Score Plate & Scholar Details */}
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
                   {/* Left Score Box */}
-                  <div className="md:col-span-5 p-6 sm:p-8 bg-[#2C241D] border-2 border-amber-500 rounded-xl text-center space-y-4 shadow-xl">
+                  <div className="md:col-span-5 p-6 sm:p-8 bg-[#32261C] border-2 border-amber-400 rounded-xl text-center space-y-4 shadow-xl">
                     <div className="relative w-20 h-20 mx-auto rounded-full overflow-hidden border-2 border-amber-400 shadow-md mb-2">
                       <Image
                         src="/art/characters/junior_student.png"
@@ -257,7 +258,7 @@ export default function JuniorResultPage({ params }: PageProps) {
                       <span className="text-3xl text-amber-300 font-bold"> / 10</span>
                     </div>
 
-                    <div className="pt-3 border-t-2 border-[#4E3F30] space-y-2.5">
+                    <div className="pt-3 border-t-2 border-[#544333] space-y-2.5">
                       <span className="bg-emerald-500 text-black font-black text-sm px-4 py-1.5 rounded-full inline-block shadow-md font-mono">
                         {result.academicPerformance.accuracyPct}% Precision Accuracy
                       </span>
@@ -280,10 +281,10 @@ export default function JuniorResultPage({ params }: PageProps) {
                   {/* Right Narrative Monograph */}
                   <div className="md:col-span-7 space-y-4">
                     <div className="flex flex-wrap items-center gap-2">
-                      <span className="text-xs uppercase font-mono tracking-wider px-3.5 py-1 rounded-md bg-[#2D4536] border-2 border-emerald-400 text-emerald-200 font-black">
+                      <span className="text-xs uppercase font-mono tracking-wider px-3.5 py-1 rounded-md bg-[#1B4D30] border-2 border-emerald-400 text-emerald-200 font-black">
                         {result.stream} Stream Folio
                       </span>
-                      <span className="text-xs text-white font-mono font-bold bg-[#2C241D] px-3 py-1 rounded border-2 border-[#544535]">
+                      <span className="text-xs text-white font-mono font-bold bg-[#342A20] px-3 py-1 rounded-md border-2 border-[#7D644D]">
                         Cycle {result.cycleNumber} · {result.difficultyPreference}
                       </span>
                     </div>
@@ -292,7 +293,7 @@ export default function JuniorResultPage({ params }: PageProps) {
                       {result.descriptiveProfile.title}
                     </h1>
 
-                    <p className="font-serif italic text-base sm:text-xl text-amber-200 font-semibold leading-snug">
+                    <p className="font-serif italic text-base sm:text-xl text-amber-200 font-bold leading-snug">
                       {result.descriptiveProfile.subtitle}
                     </p>
 
@@ -303,7 +304,7 @@ export default function JuniorResultPage({ params }: PageProps) {
                 </div>
 
                 {/* Certificate Footer Metadata */}
-                <div className="pt-4 border-t-2 border-[#4E3F30] flex flex-wrap items-center justify-between gap-4 text-xs font-mono text-[#DDD4C5] font-semibold">
+                <div className="pt-4 border-t-2 border-[#544333] flex flex-wrap items-center justify-between gap-4 text-xs font-mono text-[#DDD4C5] font-semibold">
                   <span>
                     Deterministic Scoring Engine v{result.scoringAlgorithmVersion} · MSBSHSE / NCERT 2026
                   </span>
@@ -316,7 +317,7 @@ export default function JuniorResultPage({ params }: PageProps) {
 
             {/* B. STREAM REASONING INDICATORS */}
             <section className="space-y-4">
-              <div className="border-b-2 border-[#4E3F30] pb-3 flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+              <div className="border-b-2 border-[#544333] pb-3 flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
                 <h2 className="font-serif text-xl sm:text-2xl text-white font-black flex items-center gap-2.5">
                   <Award className="w-6 h-6 text-amber-400" />
                   <span>Cognitive &amp; Academic Ability Dimensions</span>
@@ -330,7 +331,7 @@ export default function JuniorResultPage({ params }: PageProps) {
                 {result.abilityIndicators.map((ind) => (
                   <div
                     key={ind.key}
-                    className="p-5 sm:p-6 bg-[#241F1A] border-2 border-[#6E5A44] rounded-xl space-y-3.5 shadow-xl hover:border-amber-400 transition-all"
+                    className="p-5 sm:p-6 bg-[#2D241C] border-2 border-[#8C7156] rounded-xl space-y-4 shadow-xl hover:border-amber-400 transition-all"
                   >
                     <div className="flex items-baseline justify-between gap-2">
                       <h3 className="font-serif font-black text-base sm:text-lg text-white">
@@ -344,7 +345,7 @@ export default function JuniorResultPage({ params }: PageProps) {
                             ? "bg-amber-400 text-black border-white"
                             : ind.qualitativeBand === "Developing"
                             ? "bg-rose-500 text-white border-white"
-                            : "bg-stone-600 text-white border-white"
+                            : "bg-[#3E3226] text-amber-200 border-[#8C7156]"
                         }`}
                       >
                         {ind.qualitativeBand}
@@ -357,18 +358,26 @@ export default function JuniorResultPage({ params }: PageProps) {
 
                     {ind.scorePct !== null ? (
                       <div className="space-y-2 pt-1">
-                        <div className="w-full h-2.5 bg-[#141210] rounded-full overflow-hidden border border-[#544535]">
+                        <div className="w-full h-3.5 bg-[#1F1710] rounded-full p-0.5 border-2 border-[#6E553F] shadow-inner overflow-hidden">
                           <div
-                            className="h-full bg-gradient-to-r from-emerald-500 to-emerald-400 shadow-[0_0_10px_rgba(16,185,129,0.5)]"
-                            style={{ width: `${ind.scorePct}%` }}
+                            className="h-full bg-gradient-to-r from-emerald-500 to-emerald-400 rounded-full shadow-[0_0_10px_rgba(16,185,129,0.5)] transition-all duration-500"
+                            style={{ width: `${Math.max(ind.scorePct, 2)}%` }}
                           />
                         </div>
-                        <p className="text-xs font-mono text-white font-bold">
-                          {ind.correctMappedCount}/{ind.mappedQuestionsCount} items correct ({ind.scorePct}%)
-                        </p>
+                        <div className="flex items-center justify-between text-xs font-mono">
+                          <span className="text-white font-bold">
+                            {ind.correctMappedCount}/{ind.mappedQuestionsCount} items correct
+                          </span>
+                          <span className="text-emerald-300 font-black">
+                            {ind.scorePct}% Mastery
+                          </span>
+                        </div>
                       </div>
                     ) : (
-                      <p className="text-xs italic text-white font-medium">{ind.displayStatus}</p>
+                      <div className="p-3 bg-[#241D17] border border-dashed border-[#735D49] rounded-lg flex items-center gap-2 text-xs text-amber-200/90 font-mono">
+                        <Info className="w-4 h-4 text-amber-400 shrink-0" />
+                        <span>{ind.displayStatus || "Insufficient attempt data in current cycle"}</span>
+                      </div>
                     )}
                   </div>
                 ))}
@@ -377,7 +386,7 @@ export default function JuniorResultPage({ params }: PageProps) {
 
             {/* C. SYLLABUS CHAPTER BREAKDOWN */}
             <section className="space-y-4">
-              <div className="border-b-2 border-[#4E3F30] pb-3 flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+              <div className="border-b-2 border-[#544333] pb-3 flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
                 <h2 className="font-serif text-xl sm:text-2xl text-white font-black flex items-center gap-2.5">
                   <BookOpen className="w-6 h-6 text-amber-400" />
                   <span>Syllabus Chapter Mastery Breakdown</span>
@@ -391,7 +400,7 @@ export default function JuniorResultPage({ params }: PageProps) {
                 {result.academicPerformance.chapterBreakdown.map((ch) => (
                   <div
                     key={`${ch.chapterNumber}-${ch.chapter}`}
-                    className="p-5 bg-[#241F1A] border-2 border-[#6E5A44] rounded-xl flex items-center justify-between gap-4 shadow-xl hover:border-amber-400 transition-all"
+                    className="p-5 bg-[#2D241C] border-2 border-[#8C7156] rounded-xl flex items-center justify-between gap-4 shadow-xl hover:border-amber-400 transition-all"
                   >
                     <div>
                       <span className="text-xs font-mono uppercase text-emerald-300 block font-black tracking-wider">
@@ -405,12 +414,12 @@ export default function JuniorResultPage({ params }: PageProps) {
                       <span className="text-lg font-black text-white block">
                         {ch.correct} / {ch.attempted}
                       </span>
-                      <span className={`text-xs font-mono font-black mt-1 block px-2.5 py-0.5 rounded-full ${
+                      <span className={`text-xs font-mono font-black mt-1 block px-3 py-1 rounded-full ${
                         ch.accuracyPct >= 80
-                          ? "bg-emerald-600 text-white"
+                          ? "bg-emerald-500 text-black border border-white"
                           : ch.accuracyPct >= 50
-                          ? "bg-amber-500 text-black"
-                          : "bg-rose-600 text-white"
+                          ? "bg-amber-400 text-black border border-white"
+                          : "bg-rose-600 text-white border border-white"
                       }`}>
                         {ch.accuracyPct}% accuracy
                       </span>
@@ -422,7 +431,7 @@ export default function JuniorResultPage({ params }: PageProps) {
 
             {/* D. QUESTION DERIVATION REVIEW SECTION */}
             <section className="space-y-4">
-              <div className="border-b-2 border-[#4E3F30] pb-3 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div className="border-b-2 border-[#544333] pb-3 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                 <h2 className="font-serif text-xl sm:text-2xl text-white font-black">
                   Question &amp; Derivation Monograph
                 </h2>
@@ -432,10 +441,10 @@ export default function JuniorResultPage({ params }: PageProps) {
                   <button
                     type="button"
                     onClick={() => setReviewFilter("all")}
-                    className={`px-4 py-2 text-xs font-mono rounded-md border-2 transition-all cursor-pointer ${
+                    className={`px-4 py-2 text-xs font-mono rounded-lg border-2 transition-all cursor-pointer ${
                       reviewFilter === "all"
                         ? "bg-white text-black border-white font-black shadow-lg"
-                        : "bg-[#2A231C] text-white border-[#6E5A44] hover:border-white font-bold"
+                        : "bg-[#342A20] text-white border-[#7D644D] hover:border-white font-bold"
                     }`}
                   >
                     All (10)
@@ -443,10 +452,10 @@ export default function JuniorResultPage({ params }: PageProps) {
                   <button
                     type="button"
                     onClick={() => setReviewFilter("wrong")}
-                    className={`px-4 py-2 text-xs font-mono rounded-md border-2 transition-all cursor-pointer ${
+                    className={`px-4 py-2 text-xs font-mono rounded-lg border-2 transition-all cursor-pointer ${
                       reviewFilter === "wrong"
-                        ? "bg-rose-600 text-white border-white font-black shadow-lg"
-                        : "bg-[#2A231C] text-rose-300 border-[#6E5A44] hover:border-rose-400 font-bold"
+                        ? "bg-rose-500 text-white border-white font-black shadow-lg"
+                        : "bg-[#342A20] text-rose-300 border-[#7D644D] hover:border-rose-400 font-bold"
                     }`}
                   >
                     Incorrect ({result.academicPerformance.incorrectAnswers})
@@ -454,10 +463,10 @@ export default function JuniorResultPage({ params }: PageProps) {
                   <button
                     type="button"
                     onClick={() => setReviewFilter("correct")}
-                    className={`px-4 py-2 text-xs font-mono rounded-md border-2 transition-all cursor-pointer ${
+                    className={`px-4 py-2 text-xs font-mono rounded-lg border-2 transition-all cursor-pointer ${
                       reviewFilter === "correct"
-                        ? "bg-emerald-600 text-white border-white font-black shadow-lg"
-                        : "bg-[#2A231C] text-emerald-300 border-[#6E5A44] hover:border-emerald-400 font-bold"
+                        ? "bg-emerald-500 text-black border-white font-black shadow-lg"
+                        : "bg-[#342A20] text-emerald-300 border-[#7D644D] hover:border-emerald-400 font-bold"
                     }`}
                   >
                     Correct ({result.academicPerformance.correctAnswers})
@@ -469,20 +478,20 @@ export default function JuniorResultPage({ params }: PageProps) {
                 {filteredQuestions.map((item) => (
                   <div
                     key={item.questionId}
-                    className="p-6 sm:p-8 bg-[#241F1A] border-2 border-[#7D6852] rounded-xl space-y-6 shadow-2xl ring-1 ring-amber-500/20"
+                    className="p-6 sm:p-8 bg-[#28211A] border-2 border-[#947A5F] rounded-2xl space-y-6 shadow-2xl ring-1 ring-amber-500/20"
                   >
                     {/* Item Header */}
-                    <div className="flex flex-wrap items-center justify-between gap-3 text-xs bg-[#2E2822] border-2 border-[#544535] p-4 rounded-lg">
+                    <div className="flex flex-wrap items-center justify-between gap-3 text-xs bg-[#342A20] border-2 border-[#7D644D] p-4 rounded-xl">
                       <span className="font-mono text-sm sm:text-base text-white font-bold">
                         Question {String(item.slotNumber).padStart(2, "0")} · {item.chapter} ({item.difficulty})
                       </span>
                       {item.isCorrect ? (
-                        <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-emerald-500 border-2 border-white text-xs font-black text-black shadow-md">
+                        <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-emerald-500 border-2 border-white text-xs font-black text-black shadow-md">
                           <CheckCircle2 className="w-4 h-4 text-black" />
                           Correct Choice
                         </span>
                       ) : (
-                        <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-rose-600 border-2 border-white text-xs font-black text-white shadow-md">
+                        <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-rose-600 border-2 border-white text-xs font-black text-white shadow-md">
                           <XCircle className="w-4 h-4 text-white" />
                           {item.selectedOptionKey ? "Incorrect Choice" : "Unanswered"}
                         </span>
@@ -490,17 +499,17 @@ export default function JuniorResultPage({ params }: PageProps) {
                     </div>
 
                     {/* Question Text Box */}
-                    <div className="p-5 rounded-lg bg-[#181410] border-2 border-[#544535] text-white text-lg sm:text-xl font-medium leading-relaxed shadow-inner">
+                    <div className="p-5 sm:p-6 rounded-xl bg-[#1C1611] border-2 border-[#7A644E] text-white text-lg sm:text-xl font-medium leading-relaxed shadow-inner">
                       <MathRenderer content={item.questionText} />
                     </div>
 
                     {/* User Selection vs Correct Answer */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
                       <div
-                        className={`p-5 rounded-lg border-2 shadow-lg ${
+                        className={`p-5 rounded-xl border-2 shadow-lg ${
                           item.isCorrect
-                            ? "bg-[#143B25] border-emerald-400"
-                            : "bg-[#451818] border-rose-400"
+                            ? "bg-[#144227] border-emerald-400"
+                            : "bg-[#4A1B1B] border-rose-400"
                         }`}
                       >
                         <div className={`text-xs uppercase font-mono tracking-wider font-black flex items-center gap-1.5 ${
@@ -530,7 +539,7 @@ export default function JuniorResultPage({ params }: PageProps) {
                         </div>
                       </div>
 
-                      <div className="p-5 rounded-lg border-2 bg-[#143B25] border-emerald-400 shadow-lg">
+                      <div className="p-5 rounded-xl border-2 bg-[#144227] border-emerald-400 shadow-lg">
                         <div className="text-xs uppercase font-mono tracking-wider text-emerald-300 font-black flex items-center gap-1.5">
                           <Check className="w-4 h-4 text-emerald-400" />
                           <span>VERIFIED MASTER KEY</span>
@@ -545,18 +554,18 @@ export default function JuniorResultPage({ params }: PageProps) {
                     </div>
 
                     {/* Derivation / Pedagogical Explanation */}
-                    <div className="p-6 bg-[#181410] border-2 border-amber-500/80 rounded-lg space-y-3 shadow-inner">
-                      <div className="text-amber-300 font-mono text-sm uppercase tracking-wider flex items-center gap-2 font-black border-b border-[#3D3328] pb-2">
+                    <div className="p-6 sm:p-7 bg-[#221B15] border-2 border-amber-500 rounded-xl space-y-3.5 shadow-inner">
+                      <div className="text-amber-300 font-mono text-sm uppercase tracking-wider flex items-center gap-2 font-black border-b-2 border-[#4A3928] pb-2">
                         <Award className="w-4 h-4 text-amber-400" />
                         <span>Derivation &amp; Pedagogical Proof</span>
                       </div>
                       <div className="text-white text-base sm:text-lg leading-relaxed font-sans pt-1">
                         <MathRenderer content={item.explanation} />
                       </div>
-                      <p className="text-xs text-[#DDD4C5] font-mono pt-3 border-t border-[#332A20] flex items-center gap-2">
+                      <div className="text-xs text-[#DDD4C5] font-mono pt-3 border-t-2 border-[#4A3928] flex flex-wrap items-center gap-2">
                         <span className="font-bold text-white">Syllabus Reference:</span>
-                        <span className="text-amber-200 font-black bg-[#2B231B] px-3 py-1 rounded border border-[#544535]">{item.syllabusReference}</span>
-                      </p>
+                        <span className="text-amber-200 font-black bg-[#342A20] px-3.5 py-1.5 rounded-md border-2 border-[#7D644D]">{item.syllabusReference}</span>
+                      </div>
                     </div>
                   </div>
                 ))}
@@ -564,7 +573,7 @@ export default function JuniorResultPage({ params }: PageProps) {
             </section>
 
             {/* E. FOOTER ACTIONS & NOTICE */}
-            <div className="p-6 sm:p-8 bg-[#241F1A] border-2 border-[#8A7356] rounded-xl flex flex-wrap items-center justify-between gap-4 shadow-2xl">
+            <div className="p-6 sm:p-8 bg-[#28211A] border-2 border-[#947A5F] rounded-2xl flex flex-wrap items-center justify-between gap-4 shadow-2xl">
               <div>
                 <h4 className="font-serif font-black text-lg sm:text-xl text-white">
                   Ready for Cycle #{result.cycleNumber + 1}?
@@ -578,7 +587,7 @@ export default function JuniorResultPage({ params }: PageProps) {
                 <Link href="/junior">
                   <button
                     type="button"
-                    className="bg-[#2D2620] hover:bg-[#3D332A] text-white font-bold text-sm uppercase tracking-wider px-6 py-3.5 rounded-md border-2 border-[#8A755D] shadow-md flex items-center gap-2 cursor-pointer transition-all active:scale-95"
+                    className="bg-[#382D22] hover:bg-[#483B2D] text-white font-bold text-sm uppercase tracking-wider px-6 py-3.5 rounded-lg border-2 border-[#947A5F] hover:border-white shadow-md flex items-center gap-2 cursor-pointer transition-all active:scale-95"
                   >
                     Academy Entrance
                   </button>
@@ -588,7 +597,7 @@ export default function JuniorResultPage({ params }: PageProps) {
                 >
                   <button
                     type="button"
-                    className="bg-emerald-500 hover:bg-emerald-400 text-black font-black text-sm uppercase tracking-wider px-8 py-3.5 rounded-md border-2 border-white shadow-[0_0_25px_rgba(16,185,129,0.5)] flex items-center gap-2 cursor-pointer transition-all active:scale-95"
+                    className="bg-emerald-500 hover:bg-emerald-400 text-black font-black text-sm uppercase tracking-wider px-8 py-3.5 rounded-lg border-2 border-white shadow-[0_0_25px_rgba(16,185,129,0.5)] flex items-center gap-2 cursor-pointer transition-all active:scale-95"
                   >
                     <span>Begin Next 10 Questions</span>
                     <ChevronRight className="w-4 h-4" />

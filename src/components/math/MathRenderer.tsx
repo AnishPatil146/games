@@ -51,6 +51,7 @@ function normalizeMathToLatex(raw: string): { latex: string; trailingPunctuation
     .replace(/≠/g, " \\ne ")
     .replace(/≤/g, " \\le ")
     .replace(/≥/g, " \\ge ")
+    .replace(/°C/g, "^{\\circ}\\text{C}")
     .replace(/°/g, "^\\circ")
     .replace(/θ/g, "\\theta ")
     .replace(/π/g, "\\pi ")
@@ -60,11 +61,40 @@ function normalizeMathToLatex(raw: string): { latex: string; trailingPunctuation
     .replace(/λ/g, "\\lambda ")
     .replace(/α/g, "\\alpha ")
     .replace(/β/g, "\\beta ")
+    .replace(/γ/g, "\\gamma ")
+    .replace(/Δ/g, "\\Delta ")
+    .replace(/δ/g, "\\delta ")
+    .replace(/ε/g, "\\varepsilon ")
+    .replace(/η/g, "\\eta ")
+    .replace(/ρ/g, "\\rho ")
+    .replace(/ω/g, "\\omega ")
+    .replace(/ϕ/g, "\\phi ")
+    .replace(/φ/g, "\\varphi ")
+    .replace(/ψ/g, "\\psi ")
+    .replace(/τ/g, "\\tau ")
+    .replace(/ν/g, "\\nu ")
+    .replace(/κ/g, "\\kappa ")
+    .replace(/∫/g, "\\int ")
+    .replace(/∬/g, "\\iint ")
+    .replace(/∮/g, "\\oint ")
+    .replace(/∑/g, "\\sum ")
+    .replace(/∏/g, "\\prod ")
+    .replace(/∂/g, "\\partial ")
+    .replace(/∇/g, "\\nabla ")
+    .replace(/∞/g, "\\infty ")
+    .replace(/≈/g, "\\approx ")
+    .replace(/∝/g, "\\propto ")
+    .replace(/⇒/g, "\\implies ")
+    .replace(/→/g, "\\to ")
     .replace(/\\iff/g, "\\Longleftrightarrow")
     .replace(/\\quad/g, " \\;\\; ")
     .replace(/\\qquad/g, " \\;\\;\\;\\; ");
 
-  // Transform √3 or √(expr) to \sqrt{...}
+  // Transform cube root ∛
+  latex = latex.replace(/∛\(([^)]+)\)/g, (_m, g) => `\\sqrt[3]{${g}}`);
+  latex = latex.replace(/∛([0-9a-zA-Z]+)/g, (_m, g) => `\\sqrt[3]{${g}}`);
+
+  // Transform square root √3 or √(expr) to \sqrt{...}
   latex = latex.replace(/√\(([^)]+)\)/g, (_m, g) => `\\sqrt{${g}}`);
   latex = latex.replace(/√([0-9a-zA-Z]+)/g, (_m, g) => `\\sqrt{${g}}`);
 
@@ -73,6 +103,12 @@ function normalizeMathToLatex(raw: string): { latex: string; trailingPunctuation
 
   // Transform _i, _e, _h to _{...}
   latex = latex.replace(/_([0-9a-zA-Z]+)/g, (_m, g) => `_{${g}}`);
+
+  // Scientific unit spacing when numbers precede unit words in math expressions
+  latex = latex.replace(/(\d+)\s*min\b/g, "$1\\text{ min}");
+  latex = latex.replace(/(\d+)\s*s\b/g, "$1\\text{ s}");
+  latex = latex.replace(/(\d+)\s*mA\b/g, "$1\\text{ mA}");
+  latex = latex.replace(/(\d+)\s*S\/m\b/g, "$1\\text{ S/m}");
 
   return { latex, trailingPunctuation };
 }
@@ -97,7 +133,7 @@ function hasMathIndicators(str: string): boolean {
   // Explicit formula equality: e.g. "E = mc^2", "v = u + at"
   if (/\b[a-zA-Z][a-zA-Z0-9_]*\s*=\s*[^,;]+/.test(str)) return true;
   // Algebraic expressions with parentheses and operators: (A + B), (A^2 + B^2)
-  if (/\([a-zA-Z0-9\s-+*/^]+\)/.test(str) && /[-+*/^]/.test(str)) return true;
+  if (/\([a-zA-Z0-9\s*+/^-]+\)/.test(str) && /[-+*/^]/.test(str)) return true;
   return false;
 }
 
@@ -226,7 +262,7 @@ export function MathRenderer({
         return (
           <React.Fragment key={`math-${idx}`}>
             <span
-              className={`katex-math-render inline-block max-w-full overflow-x-auto overflow-y-hidden align-middle scrollbar-thin scrollbar-thumb-zinc-700 mx-0.5 text-inherit`}
+              className={`katex-math-render inline-block max-w-full overflow-x-auto align-middle scrollbar-thin scrollbar-thumb-zinc-700 mx-0.5 text-inherit py-0.5`}
               dangerouslySetInnerHTML={{ __html: html }}
             />
             {trailingPunctuation && (
