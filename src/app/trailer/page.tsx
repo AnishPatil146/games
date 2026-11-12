@@ -342,13 +342,8 @@ export default function CinematicLaunchTrailerPage() {
     cameraY = -scene5Progress * 28;
   }
 
-  // Warden Sprite Selector
-  const wardenSprite =
-    currentScene.expression === "amused"
-      ? "/art/characters/warden_amused.png"
-      : currentScene.expression === "speaking"
-      ? "/art/characters/warden_speaking.png"
-      : "/art/characters/warden_neutral.png";
+  // Full-body character sprite (complete head down to leather boots, zero cut-off)
+  const wardenFullBodySprite = "/art/characters/warden_full_body.png";
 
   return (
     <div className="fixed inset-0 w-full h-full overflow-hidden bg-[#070608] select-none flex flex-col justify-between font-sans">
@@ -563,10 +558,10 @@ export default function CinematicLaunchTrailerPage() {
               {/* Moonbeam ray casting down upon him */}
               <div className="absolute -top-24 w-12 sm:w-20 h-40 bg-gradient-to-b from-blue-200/25 via-slate-300/10 to-transparent blur-md pointer-events-none" />
 
-              <div className="relative w-40 h-64 sm:w-48 sm:h-72">
-                {/* Silhouette body */}
+              <div className="relative w-36 h-72 sm:w-44 sm:h-80">
+                {/* Full-body silhouette from head down to leather boots */}
                 <Image
-                  src="/art/characters/warden_neutral.png"
+                  src={wardenFullBodySprite}
                   alt="The Warden Silhouette"
                   fill
                   priority
@@ -627,9 +622,9 @@ export default function CinematicLaunchTrailerPage() {
             }}
             className="relative bottom-0 flex flex-col items-center select-none"
             style={{
-              height: isVerticalEffective ? "56vh" : "min(70vh, 580px)",
+              height: isVerticalEffective ? "62vh" : "min(78vh, 680px)",
               width: isVerticalEffective ? "88vw" : "min(52vw, 480px)",
-              maxHeight: isVerticalEffective ? "540px" : "600px",
+              maxHeight: isVerticalEffective ? "600px" : "720px",
             }}
           >
             {/* Dynamic Ground Shadow (Smoothly widens with scale) */}
@@ -654,9 +649,10 @@ export default function CinematicLaunchTrailerPage() {
               }}
               className="relative w-full h-full filter drop-shadow-[0_18px_40px_rgba(0,0,0,0.92)] brightness-105"
             >
+              {/* Full-Body Character: Complete coat, trousers, and boots planted on the floor */}
               <Image
-                src={wardenSprite}
-                alt="The Warden"
+                src={wardenFullBodySprite}
+                alt="The Warden Full Body"
                 fill
                 priority
                 unoptimized
@@ -707,16 +703,17 @@ export default function CinematicLaunchTrailerPage() {
               }}
               className={`relative z-20 flex flex-col items-center select-none ${
                 isVerticalEffective
-                  ? "order-2 h-[42vh] max-h-[380px] w-full"
-                  : "order-1 h-[68vh] max-h-[560px] w-[45%]"
+                  ? "order-2 h-[52vh] max-h-[460px] w-full"
+                  : "order-1 h-[78vh] max-h-[660px] w-[45%]"
               }`}
             >
               {/* Ground Shadow */}
               <div className="absolute -bottom-3 w-52 sm:w-72 md:w-80 h-8 bg-black/85 rounded-full blur-xl" />
 
               <div className="relative w-full h-full filter drop-shadow-[0_20px_45px_rgba(0,0,0,0.95)]">
+                {/* Full-Body Character Sprite with Boots and Long Trench Coat */}
                 <Image
-                  src="/art/characters/warden_amused.png"
+                  src={wardenFullBodySprite}
                   alt="The Warden Proud"
                   fill
                   priority
