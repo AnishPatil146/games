@@ -81,6 +81,8 @@ export default function ResultReportPage({ params }: PageProps) {
         report?: GameplayReport;
         choiceMapSteps?: ChoiceMapStep[];
         claimKey?: string;
+        isJuniorResult?: boolean;
+        redirectUrl?: string;
         seventhDoorStatus?: {
           unlocked: boolean;
           completed: boolean;
@@ -94,6 +96,10 @@ export default function ResultReportPage({ params }: PageProps) {
       }>)
       .then((data) => {
         if (!active) return;
+        if (data.isJuniorResult && data.redirectUrl) {
+          router.replace(data.redirectUrl);
+          return;
+        }
         if (data.report) {
           setReport(data.report);
           setChoiceMapSteps(data.choiceMapSteps || []);
@@ -242,7 +248,7 @@ export default function ResultReportPage({ params }: PageProps) {
     <div className="min-h-screen flex flex-col bg-[#FAF7F2] text-[#1C1917] paper-grain">
       <Header />
 
-      <main className="flex-1 max-w-4xl w-full mx-auto px-5 sm:px-8 py-12 sm:py-16">
+      <main className="flex-1 w-full max-w-full sm:max-w-4xl sm:mx-auto px-3 sm:px-8 py-8 sm:py-16 box-border">
         {isLoading ? (
           <div className="py-28 flex flex-col items-center justify-center space-y-4">
             <div className="w-6 h-6 border-2 border-[#1C1917] border-t-transparent rounded-full animate-spin" />

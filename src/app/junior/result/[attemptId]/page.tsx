@@ -53,7 +53,7 @@ export default function JuniorResultPage({ params }: PageProps) {
         if (!res.ok || !data.academicPerformance) {
           throw new Error(
             data.error ||
-              "This Academy evaluation could not be loaded or belongs to another session."
+            "This Academy evaluation could not be loaded or belongs to another session."
           );
         }
         if (active) {
@@ -104,10 +104,10 @@ export default function JuniorResultPage({ params }: PageProps) {
 
   const filteredQuestions = result
     ? result.questionReview.filter((item) => {
-        if (reviewFilter === "wrong") return !item.isCorrect;
-        if (reviewFilter === "correct") return item.isCorrect;
-        return true;
-      })
+      if (reviewFilter === "wrong") return !item.isCorrect;
+      if (reviewFilter === "correct") return item.isCorrect;
+      return true;
+    })
     : [];
 
   const rank = result
@@ -193,7 +193,7 @@ export default function JuniorResultPage({ params }: PageProps) {
       </header>
 
       {/* 2. MAIN EVALUATION CERTIFICATE (LAYER 4-6) */}
-      <main className="relative z-10 flex-1 w-full max-w-4xl mx-auto px-2.5 sm:px-6 py-4 sm:py-12 space-y-6 sm:space-y-10">
+      <main className="relative z-10 flex-1 w-full max-w-full sm:max-w-4xl sm:mx-auto px-2 sm:px-6 py-4 sm:py-12 space-y-6 sm:space-y-10 box-border">
         {isLoading ? (
           <div className="py-32 flex flex-col items-center justify-center space-y-4">
             <div className="w-10 h-10 border-3 border-amber-400 border-t-transparent rounded-full animate-spin" />
@@ -346,15 +346,14 @@ export default function JuniorResultPage({ params }: PageProps) {
                         {ind.label}
                       </h3>
                       <span
-                        className={`px-3 py-1 text-xs uppercase font-mono font-black rounded-md border-2 shadow-sm ${
-                          ind.qualitativeBand === "Strong"
+                        className={`px-3 py-1 text-xs uppercase font-mono font-black rounded-md border-2 shadow-sm ${ind.qualitativeBand === "Strong"
                             ? "bg-emerald-500 text-black border-white"
                             : ind.qualitativeBand === "Consistent"
-                            ? "bg-amber-400 text-black border-white"
-                            : ind.qualitativeBand === "Developing"
-                            ? "bg-rose-500 text-white border-white"
-                            : "bg-[#3E3226] text-amber-200 border-[#8C7156]"
-                        }`}
+                              ? "bg-amber-400 text-black border-white"
+                              : ind.qualitativeBand === "Developing"
+                                ? "bg-rose-500 text-white border-white"
+                                : "bg-[#3E3226] text-amber-200 border-[#8C7156]"
+                          }`}
                       >
                         {ind.qualitativeBand}
                       </span>
@@ -422,13 +421,12 @@ export default function JuniorResultPage({ params }: PageProps) {
                       <span className="text-lg font-black text-white block">
                         {ch.correct} / {ch.attempted}
                       </span>
-                      <span className={`text-xs font-mono font-black mt-1 block px-3 py-1 rounded-full ${
-                        ch.accuracyPct >= 80
+                      <span className={`text-xs font-mono font-black mt-1 block px-3 py-1 rounded-full ${ch.accuracyPct >= 80
                           ? "bg-emerald-500 text-black border border-white"
                           : ch.accuracyPct >= 50
-                          ? "bg-amber-400 text-black border border-white"
-                          : "bg-rose-600 text-white border border-white"
-                      }`}>
+                            ? "bg-amber-400 text-black border border-white"
+                            : "bg-rose-600 text-white border border-white"
+                        }`}>
                         {ch.accuracyPct}% accuracy
                       </span>
                     </div>
@@ -449,33 +447,30 @@ export default function JuniorResultPage({ params }: PageProps) {
                   <button
                     type="button"
                     onClick={() => setReviewFilter("all")}
-                    className={`px-4 py-2 text-xs font-mono rounded-lg border-2 transition-all cursor-pointer ${
-                      reviewFilter === "all"
+                    className={`px-4 py-2 text-xs font-mono rounded-lg border-2 transition-all cursor-pointer ${reviewFilter === "all"
                         ? "bg-white text-black border-white font-black shadow-lg"
                         : "bg-[#342A20] text-white border-[#7D644D] hover:border-white font-bold"
-                    }`}
+                      }`}
                   >
                     All (10)
                   </button>
                   <button
                     type="button"
                     onClick={() => setReviewFilter("wrong")}
-                    className={`px-4 py-2 text-xs font-mono rounded-lg border-2 transition-all cursor-pointer ${
-                      reviewFilter === "wrong"
+                    className={`px-4 py-2 text-xs font-mono rounded-lg border-2 transition-all cursor-pointer ${reviewFilter === "wrong"
                         ? "bg-rose-500 text-white border-white font-black shadow-lg"
                         : "bg-[#342A20] text-rose-300 border-[#7D644D] hover:border-rose-400 font-bold"
-                    }`}
+                      }`}
                   >
                     Incorrect ({result.academicPerformance.incorrectAnswers})
                   </button>
                   <button
                     type="button"
                     onClick={() => setReviewFilter("correct")}
-                    className={`px-4 py-2 text-xs font-mono rounded-lg border-2 transition-all cursor-pointer ${
-                      reviewFilter === "correct"
+                    className={`px-4 py-2 text-xs font-mono rounded-lg border-2 transition-all cursor-pointer ${reviewFilter === "correct"
                         ? "bg-emerald-500 text-black border-white font-black shadow-lg"
                         : "bg-[#342A20] text-emerald-300 border-[#7D644D] hover:border-emerald-400 font-bold"
-                    }`}
+                      }`}
                   >
                     Correct ({result.academicPerformance.correctAnswers})
                   </button>
@@ -514,17 +509,15 @@ export default function JuniorResultPage({ params }: PageProps) {
                     {/* User Selection vs Correct Answer */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
                       <div
-                        className={`p-5 rounded-xl border-2 shadow-lg ${
-                          item.isCorrect
+                        className={`p-5 rounded-xl border-2 shadow-lg ${item.isCorrect
                             ? "bg-[#0F4A2A] border-emerald-400"
                             : item.selectedOptionKey
-                            ? "bg-[#5C1A1A] border-rose-400"
-                            : "bg-[#3D251D] border-amber-600/70"
-                        }`}
+                              ? "bg-[#5C1A1A] border-rose-400"
+                              : "bg-[#3D251D] border-amber-600/70"
+                          }`}
                       >
-                        <div className={`text-xs uppercase font-mono tracking-wider font-black flex items-center gap-1.5 ${
-                          item.isCorrect ? "text-emerald-300" : item.selectedOptionKey ? "text-rose-300" : "text-amber-200"
-                        }`}>
+                        <div className={`text-xs uppercase font-mono tracking-wider font-black flex items-center gap-1.5 ${item.isCorrect ? "text-emerald-300" : item.selectedOptionKey ? "text-rose-300" : "text-amber-200"
+                          }`}>
                           {item.isCorrect ? (
                             <>
                               <CheckCircle2 className="w-4 h-4 text-emerald-400" />

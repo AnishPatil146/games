@@ -162,7 +162,7 @@ export default function PublicLeaderboardPage() {
               <span>Active Solvers</span>
             </div>
             <p className="text-2xl sm:text-3xl font-mono font-black text-white">
-              {summary?.activeSolversCount || 18}
+              {summary?.activeSolversCount ?? 0}
             </p>
             <span className="text-[10px] text-emerald-300/80 font-mono block">Solving Right Now</span>
           </div>
@@ -173,7 +173,7 @@ export default function PublicLeaderboardPage() {
               <span>Total Evaluated</span>
             </div>
             <p className="text-2xl sm:text-3xl font-mono font-black text-white">
-              {summary?.totalEvaluationsCount || 1280}
+              {summary?.totalEvaluationsCount ?? 0}
             </p>
             <span className="text-[10px] text-[#DDD4C5] font-mono block">Validated Monograph Runs</span>
           </div>
@@ -184,7 +184,7 @@ export default function PublicLeaderboardPage() {
               <span>Longest Streak</span>
             </div>
             <p className="text-2xl sm:text-3xl font-mono font-black text-rose-300">
-              {summary?.topStreak || 10}
+              {summary?.topStreak ?? 0}
             </p>
             <span className="text-[10px] text-rose-200/80 font-mono block">Zero-Error Consecutive</span>
           </div>
@@ -195,7 +195,9 @@ export default function PublicLeaderboardPage() {
               <span>Fastest Blitz</span>
             </div>
             <p className="text-2xl sm:text-3xl font-mono font-black text-blue-300">
-              {formatSeconds(summary?.fastestTimeSeconds || 48)}
+              {summary?.fastestTimeSeconds && summary.fastestTimeSeconds > 0
+                ? formatSeconds(summary.fastestTimeSeconds)
+                : "--"}
             </p>
             <span className="text-[10px] text-blue-200/80 font-mono block">10-Question Perfect Run</span>
           </div>
@@ -451,117 +453,151 @@ export default function PublicLeaderboardPage() {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-[#382D23]">
-                  {entries.map((entry) => {
-                    const isTop1 = entry.rank === 1;
-                    const isTop2 = entry.rank === 2;
-                    const isTop3 = entry.rank === 3;
-
-                    return (
-                      <tr
-                        key={entry.id}
-                        className={`transition-colors hover:bg-[#261E17] ${
-                          isTop1
-                            ? "bg-amber-500/10"
-                            : isTop2
-                            ? "bg-slate-300/5"
-                            : isTop3
-                            ? "bg-amber-700/5"
-                            : ""
-                        }`}
-                      >
-                        {/* Rank */}
-                        <td className="px-4 py-3.5 text-center font-mono font-black">
-                          {isTop1 ? (
-                            <span className="inline-flex items-center justify-center w-7 h-7 rounded-md bg-amber-400 text-black text-xs font-black shadow">
-                              1
-                            </span>
-                          ) : isTop2 ? (
-                            <span className="inline-flex items-center justify-center w-7 h-7 rounded-md bg-slate-300 text-black text-xs font-black shadow">
-                              2
-                            </span>
-                          ) : isTop3 ? (
-                            <span className="inline-flex items-center justify-center w-7 h-7 rounded-md bg-amber-700 text-amber-100 text-xs font-black shadow">
-                              3
-                            </span>
-                          ) : (
-                            <span className="text-[#9E8B78] text-sm">#{entry.rank}</span>
-                          )}
-                        </td>
-
-                        {/* Competitor / Callsign */}
-                        <td className="px-4 py-3.5">
-                          <div className="flex items-center gap-2">
-                            <span className="font-bold text-white text-sm flex items-center gap-1.5">
-                              {entry.callsign}
-                              {entry.verified && (
-                                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
-                              )}
-                            </span>
-                            <span className="hidden sm:inline-block text-[10px] font-mono px-2 py-0.5 rounded bg-[#2D231A] text-[#DDD4C5] border border-[#524233]">
-                              {entry.tier}
-                            </span>
+                  {entries.length === 0 ? (
+                    <tr>
+                      <td colSpan={8} className="px-6 py-12 text-center">
+                        <div className="max-w-md mx-auto space-y-3">
+                          <Trophy className="w-8 h-8 text-amber-400 mx-auto opacity-70" />
+                          <h3 className="font-serif text-lg font-bold text-white">
+                            The Leaderboard Awaits Its First Champion
+                          </h3>
+                          <p className="text-xs font-mono text-[#DDD4C5] leading-relaxed">
+                            No completed evaluations recorded in this category yet. Be the first to enter the arena and claim Rank #1.
+                          </p>
+                          <div className="pt-2 flex justify-center gap-3">
+                            <Link href="/junior">
+                              <button
+                                type="button"
+                                className="bg-emerald-500 hover:bg-emerald-400 text-black font-black text-xs uppercase px-4 py-2 rounded-md border-2 border-white cursor-pointer shadow-md transition-all active:scale-95"
+                              >
+                                Solve Junior Folio
+                              </button>
+                            </Link>
+                            <Link href="/solo">
+                              <button
+                                type="button"
+                                className="bg-[#382E25] hover:bg-[#4A3E32] text-white font-bold text-xs uppercase px-4 py-2 rounded-md border-2 border-[#8C735B] cursor-pointer shadow-md transition-all active:scale-95"
+                              >
+                                Senior Campaign
+                              </button>
+                            </Link>
                           </div>
-                        </td>
+                        </div>
+                      </td>
+                    </tr>
+                  ) : (
+                    entries.map((entry) => {
+                      const isTop1 = entry.rank === 1;
+                      const isTop2 = entry.rank === 2;
+                      const isTop3 = entry.rank === 3;
 
-                        {/* Discipline */}
-                        <td className="px-4 py-3.5">
-                          <div className="min-w-0">
-                            <span className="text-white font-medium block truncate max-w-[220px]">
-                              {entry.discipline}
-                            </span>
-                            {entry.stream && (
-                              <span className="text-[10px] font-mono text-amber-300/80 uppercase">
-                                {entry.stream}
+                      return (
+                        <tr
+                          key={entry.id}
+                          className={`transition-colors hover:bg-[#261E17] ${
+                            isTop1
+                              ? "bg-amber-500/10"
+                              : isTop2
+                              ? "bg-slate-300/5"
+                              : isTop3
+                              ? "bg-amber-700/5"
+                              : ""
+                          }`}
+                        >
+                          {/* Rank */}
+                          <td className="px-4 py-3.5 text-center font-mono font-black">
+                            {isTop1 ? (
+                              <span className="inline-flex items-center justify-center w-7 h-7 rounded-md bg-amber-400 text-black text-xs font-black shadow">
+                                1
                               </span>
+                            ) : isTop2 ? (
+                              <span className="inline-flex items-center justify-center w-7 h-7 rounded-md bg-slate-300 text-black text-xs font-black shadow">
+                                2
+                              </span>
+                            ) : isTop3 ? (
+                              <span className="inline-flex items-center justify-center w-7 h-7 rounded-md bg-amber-700 text-amber-100 text-xs font-black shadow">
+                                3
+                              </span>
+                            ) : (
+                              <span className="text-[#9E8B78] text-sm">#{entry.rank}</span>
                             )}
-                          </div>
-                        </td>
+                          </td>
 
-                        {/* Score */}
-                        <td className="px-4 py-3.5 text-center font-mono font-bold text-amber-300 text-sm">
-                          {entry.score}/10
-                        </td>
-
-                        {/* Accuracy */}
-                        <td className="px-4 py-3.5 text-center font-mono">
-                          <div className="flex items-center justify-center gap-2">
-                            <span className="font-black text-emerald-400">{entry.accuracyPct}%</span>
-                            <div className="w-12 h-1.5 rounded-full bg-[#2E251E] overflow-hidden hidden sm:block">
-                              <div
-                                className="h-full bg-emerald-400 rounded-full"
-                                style={{ width: `${entry.accuracyPct}%` }}
-                              />
+                          {/* Competitor / Callsign */}
+                          <td className="px-4 py-3.5">
+                            <div className="flex items-center gap-2">
+                              <span className="font-bold text-white text-sm flex items-center gap-1.5">
+                                {entry.callsign}
+                                {entry.verified && (
+                                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                                )}
+                              </span>
+                              <span className="hidden sm:inline-block text-[10px] font-mono px-2 py-0.5 rounded bg-[#2D231A] text-[#DDD4C5] border border-[#524233]">
+                                {entry.tier}
+                              </span>
                             </div>
-                          </div>
-                        </td>
+                          </td>
 
-                        {/* Speed */}
-                        <td className="px-4 py-3.5 text-center font-mono text-blue-300">
-                          {formatSeconds(entry.timeSeconds)}
-                        </td>
+                          {/* Discipline */}
+                          <td className="px-4 py-3.5">
+                            <div className="min-w-0">
+                              <span className="text-white font-medium block truncate max-w-[220px]">
+                                {entry.discipline}
+                              </span>
+                              {entry.stream && (
+                                <span className="text-[10px] font-mono text-amber-300/80 uppercase">
+                                  {entry.stream}
+                                </span>
+                              )}
+                            </div>
+                          </td>
 
-                        {/* Streak */}
-                        <td className="px-4 py-3.5 text-center font-mono font-bold text-rose-300">
-                          <span className="flex items-center justify-center gap-1">
-                            <Flame className="w-3.5 h-3.5 text-rose-400" />
-                            <span>{entry.streak}</span>
-                          </span>
-                        </td>
+                          {/* Score */}
+                          <td className="px-4 py-3.5 text-center font-mono font-bold text-amber-300 text-sm">
+                            {entry.score}/10
+                          </td>
 
-                        {/* Live Status */}
-                        <td className="px-4 py-3.5 text-right font-mono">
-                          {entry.isLiveNow ? (
-                            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-400/50 text-[10px] font-bold">
-                              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
-                              <span>Q{entry.liveCurrentQuestion || 8} Live</span>
+                          {/* Accuracy */}
+                          <td className="px-4 py-3.5 text-center font-mono">
+                            <div className="flex items-center justify-center gap-2">
+                              <span className="font-black text-emerald-400">{entry.accuracyPct}%</span>
+                              <div className="w-12 h-1.5 rounded-full bg-[#2E251E] overflow-hidden hidden sm:block">
+                                <div
+                                  className="h-full bg-emerald-400 rounded-full"
+                                  style={{ width: `${entry.accuracyPct}%` }}
+                                />
+                              </div>
+                            </div>
+                          </td>
+
+                          {/* Speed */}
+                          <td className="px-4 py-3.5 text-center font-mono text-blue-300">
+                            {formatSeconds(entry.timeSeconds)}
+                          </td>
+
+                          {/* Streak */}
+                          <td className="px-4 py-3.5 text-center font-mono font-bold text-rose-300">
+                            <span className="flex items-center justify-center gap-1">
+                              <Flame className="w-3.5 h-3.5 text-rose-400" />
+                              <span>{entry.streak}</span>
                             </span>
-                          ) : (
-                            <span className="text-[#8C7D6F] text-[10px]">Completed</span>
-                          )}
-                        </td>
-                      </tr>
-                    );
-                  })}
+                          </td>
+
+                          {/* Live Status */}
+                          <td className="px-4 py-3.5 text-right font-mono">
+                            {entry.isLiveNow ? (
+                              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-400/50 text-[10px] font-bold">
+                                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
+                                <span>Q{entry.liveCurrentQuestion || 8} Live</span>
+                              </span>
+                            ) : (
+                              <span className="text-[#8C7D6F] text-[10px]">Completed</span>
+                            )}
+                          </td>
+                        </tr>
+                      );
+                    })
+                  )}
                 </tbody>
               </table>
             </div>
@@ -580,28 +616,34 @@ export default function PublicLeaderboardPage() {
             </span>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5">
-            {summary?.liveFeed.slice(0, 6).map((item) => (
-              <div
-                key={item.id}
-                className="bg-[#201A14] border border-[#524233] p-3 rounded-lg flex items-start gap-2.5 shadow-sm"
-              >
-                <div className="w-2 h-2 rounded-full bg-emerald-400 mt-1.5 shrink-0 animate-ping" />
-                <div className="min-w-0 flex-1 text-xs">
-                  <div className="flex items-center justify-between gap-1">
-                    <strong className="text-white truncate font-bold">{item.callsign}</strong>
-                    <span className="text-[10px] font-mono text-[#A89887] shrink-0">
-                      {item.secondsAgo}s ago
+          {(!summary?.liveFeed || summary.liveFeed.length === 0) ? (
+            <div className="p-6 text-center text-xs font-mono text-[#A89887] bg-[#201A14] border border-[#524233] rounded-lg">
+              No recent activity dispatches recorded yet. Live telemetry monitoring actively for new completed folios every second.
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5">
+              {summary.liveFeed.slice(0, 6).map((item) => (
+                <div
+                  key={item.id}
+                  className="bg-[#201A14] border border-[#524233] p-3 rounded-lg flex items-start gap-2.5 shadow-sm"
+                >
+                  <div className="w-2 h-2 rounded-full bg-emerald-400 mt-1.5 shrink-0 animate-ping" />
+                  <div className="min-w-0 flex-1 text-xs">
+                    <div className="flex items-center justify-between gap-1">
+                      <strong className="text-white truncate font-bold">{item.callsign}</strong>
+                      <span className="text-[10px] font-mono text-[#A89887] shrink-0">
+                        {item.secondsAgo}s ago
+                      </span>
+                    </div>
+                    <p className="text-amber-200/90 text-[11px] font-mono truncate">{item.action}</p>
+                    <span className="text-[10px] text-[#8C7D6F] truncate block">
+                      {item.discipline}
                     </span>
                   </div>
-                  <p className="text-amber-200/90 text-[11px] font-mono truncate">{item.action}</p>
-                  <span className="text-[10px] text-[#8C7D6F] truncate block">
-                    {item.discipline}
-                  </span>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          )}
         </section>
 
         {/* Call to Action: Enter The Arena */}

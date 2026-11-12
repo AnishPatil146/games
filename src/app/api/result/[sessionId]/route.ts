@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import crypto from "crypto";
 import { getPublicSessionDossier, getOrCreateSession } from "@/lib/storage";
+import { getPublicJuniorCompletedResult } from "@/lib/services/platform-store";
 import { verifyAdminAccess } from "@/lib/admin-auth";
 import { evaluateReport } from "@/lib/scoring";
 
@@ -97,6 +98,17 @@ export async function GET(req: NextRequest, props: RouteProps) {
         ? clientSessionId || cookieToken || "current"
         : sessionId;
 
+    // Fast check: If identifier belongs to a Junior Mode attempt, redirect smoothly
+    const juniorResult =
+      getPublicJuniorCompletedResult(lookupKey) ||
+      (clientSessionId ? getPublicJuniorCompletedResult(clientSessionId) : null);
+    if (juniorResult) {
+      return NextResponse.json({
+        isJuniorResult: true,
+        redirectUrl: `/junior/result/${juniorResult.attemptId}`,
+      });
+    }
+
     const authorizedDossier = cookieToken
       ? await getPublicSessionDossier(cookieToken)
       : null;
@@ -129,11 +141,37 @@ export async function GET(req: NextRequest, props: RouteProps) {
       
       // Fallback C: Create or retrieve a valid session monograph on the fly so players never hit dead ends
       if (!targetDossier) {
-        const fallbackToken = cookieToken || "uw_" + crypto.randomBytes(16).toString("hex");
-        const freshSession = await getOrCreateSession(fallbackToken, {}, "UNSPECIFIED");
-        targetDossier = await getPublicSessionDossier(freshSession.session.id);
-        tokenToBind = fallbackToken;
-        isOwner = true;
+        try {
+          const fallbackToken = cookieToken || "uw_" + crypto.randomBytes(16).toString("hex");
+          const freshSession = await getOrCreateSession(fallbackToken, {}, "UNSPECIFIED");
+          const fetched = await getPublicSessionDossier(freshSession.session.id);
+          targetDossier = fetched || {
+            session: freshSession.session,
+            playerDisplayName: freshSession.playerDisplayName || "Anonymous Traveler",
+            events: [],
+            preferences: [],
+          };
+          tokenToBind = fallbackToken;
+          isOwner = true;
+        } catch {
+          const fallbackId = "sess_" + crypto.randomBytes(8).toString("hex");
+          targetDossier = {
+            session: {
+              id: fallbackId,
+              character_presentation: "UNSPECIFIED",
+              started_at: new Date().toISOString(),
+              completed_at: new Date().toISOString(),
+              current_chapter: 6,
+              status: "completed",
+              result_archetype: "The Observer",
+              created_at: new Date().toISOString(),
+            },
+            playerDisplayName: "Anonymous Traveler",
+            events: [],
+            preferences: [],
+          };
+          isOwner = true;
+        }
       }
 
       // 2. Check if caller provided valid claim token or key

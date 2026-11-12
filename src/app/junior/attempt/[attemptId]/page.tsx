@@ -289,13 +289,13 @@ export default function JuniorAttemptPage({ params }: PageProps) {
         <div className="absolute inset-0 bg-gradient-to-b from-[#100D0A]/90 via-[#14100C]/85 to-[#100D0A]/95" />
       </div>
       {/* 1. TOP SCHOLAR EXAMINATION BAR */}
-      <header className="sticky top-0 z-30 w-full bg-[#1C1713] border-b-2 border-[#544535] px-2.5 sm:px-6 py-2.5 sm:py-3 shadow-md">
-        <div className="w-full max-w-5xl mx-auto flex items-center justify-between gap-2 sm:gap-4">
+      <header className="sticky top-0 z-30 w-full bg-[#1C1713] border-b-2 border-[#544535] px-2 sm:px-6 py-2 sm:py-3 shadow-md">
+        <div className="w-full max-w-5xl mx-auto flex items-center justify-between gap-1.5 sm:gap-4">
           {/* Logo & Subject Info */}
-          <div className="flex items-center gap-2 sm:gap-3 min-w-0 shrink">
+          <div className="flex items-center gap-1.5 sm:gap-3 min-w-0 shrink">
             <Link
               href="/junior"
-              className="flex items-center gap-2 sm:gap-2.5 hover:opacity-90 transition-opacity shrink-0"
+              className="flex items-center gap-1.5 sm:gap-2.5 hover:opacity-90 transition-opacity shrink-0"
               title="Return to The Academy"
             >
               <div className="relative w-7 h-7 sm:w-8 sm:h-8 rounded-full overflow-hidden border-2 border-[#8FA184]/70 shadow-sm shrink-0">
@@ -317,12 +317,12 @@ export default function JuniorAttemptPage({ params }: PageProps) {
             </Link>
 
             {attempt && (
-              <div className="border-l-2 border-[#3D3328] pl-2 sm:pl-3 ml-0.5 sm:ml-1 min-w-0">
-                <div className="flex items-center gap-1.5 sm:gap-2">
-                  <span className="font-serif font-bold text-xs sm:text-base text-white truncate max-w-[100px] sm:max-w-none">
+              <div className="border-l-2 border-[#3D3328] pl-1.5 sm:pl-3 ml-0.5 sm:ml-1 min-w-0">
+                <div className="flex items-center gap-1 sm:gap-2">
+                  <span className="font-serif font-bold text-xs sm:text-base text-white truncate max-w-[90px] xs:max-w-[130px] sm:max-w-none">
                     {attempt.subjectName}
                   </span>
-                  <span className="text-[9px] sm:text-[10px] uppercase font-mono px-1.5 sm:px-2 py-0.5 rounded-xs bg-[#2D241C] border border-[#544535] text-white font-bold shrink-0">
+                  <span className="text-[9px] sm:text-[10px] uppercase font-mono px-1 sm:px-2 py-0.5 rounded-xs bg-[#2D241C] border border-[#544535] text-white font-bold shrink-0">
                     {attempt.stream}
                   </span>
                 </div>
@@ -331,8 +331,8 @@ export default function JuniorAttemptPage({ params }: PageProps) {
           </div>
 
           {/* Center Timer & Progress Counter */}
-          <div className="flex items-center gap-2 sm:gap-4 shrink-0">
-            <div className="flex items-center gap-1.5 sm:gap-2 bg-[#241E18] border-2 border-[#4E4133] rounded-sm px-2.5 sm:px-3.5 py-1 shadow-sm">
+          <div className="flex items-center gap-1.5 sm:gap-4 shrink-0">
+            <div className="flex items-center gap-1 sm:gap-2 bg-[#241E18] border-2 border-[#4E4133] rounded-sm px-2 sm:px-3.5 py-1 shadow-sm">
               <Clock className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#A8D49E]" />
               <span className="font-mono text-xs font-black text-white">
                 {formatTimer(elapsedSeconds)}
@@ -354,7 +354,7 @@ export default function JuniorAttemptPage({ params }: PageProps) {
               <button
                 type="button"
                 onClick={() => setIsFormulaDrawerOpen(true)}
-                className="flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-3 py-1.5 text-xs rounded-sm bg-[#2A231C] hover:bg-[#342B24] border-2 border-[#4E4133] text-white font-bold transition-colors cursor-pointer shadow-sm"
+                className="flex items-center gap-1 sm:gap-1.5 px-2 sm:px-3 py-1.5 text-xs rounded-sm bg-[#2A231C] hover:bg-[#342B24] border-2 border-[#4E4133] text-white font-bold transition-colors cursor-pointer shadow-sm"
                 title="Open Formula Drawer (Hotkey: F)"
               >
                 <BookOpen className="w-3.5 h-3.5 text-[#A8D49E]" />
@@ -368,7 +368,7 @@ export default function JuniorAttemptPage({ params }: PageProps) {
             <button
               type="button"
               onClick={() => setShowConfirmModal(true)}
-              className="bg-emerald-500 hover:bg-emerald-400 text-black font-black text-xs uppercase tracking-wider px-3 sm:px-4 py-1.5 sm:py-2 rounded-md border-2 border-white shadow-[0_0_15px_rgba(16,185,129,0.5)] transition-all cursor-pointer flex items-center gap-1.5 active:scale-95 shrink-0"
+              className="bg-emerald-500 hover:bg-emerald-400 text-black font-black text-xs uppercase tracking-wider px-2.5 sm:px-4 py-1.5 sm:py-2 rounded-md border-2 border-white shadow-[0_0_15px_rgba(16,185,129,0.5)] transition-all cursor-pointer flex items-center gap-1.5 active:scale-95 shrink-0"
             >
               <Send className="w-3.5 h-3.5" />
               <span>Submit</span>
@@ -378,7 +378,7 @@ export default function JuniorAttemptPage({ params }: PageProps) {
       </header>
 
       {/* 2. MAIN EXAMINATION DESK (LAYER 4-6) */}
-      <main className="relative z-10 flex-1 w-full max-w-4xl mx-auto px-2.5 sm:px-6 py-4 sm:py-8 space-y-4 sm:space-y-6">
+      <main className="relative z-10 flex-1 w-full max-w-full sm:max-w-4xl sm:mx-auto px-2 sm:px-6 py-3 sm:py-6 space-y-3 sm:space-y-5 box-border">
         {isLoading ? (
           <div className="py-32 flex flex-col items-center justify-center space-y-4">
             <div className="w-8 h-8 border-2 border-amber-400 border-t-transparent rounded-full animate-spin" />
@@ -403,9 +403,9 @@ export default function JuniorAttemptPage({ params }: PageProps) {
             </Link>
           </div>
         ) : attempt && currentQuestion ? (
-          <div className="w-full space-y-4 sm:space-y-6">
+          <div className="w-full space-y-3 sm:space-y-5">
             {/* 10-Question Navigation Palette */}
-            <div className="w-full max-w-full bg-[#201A14] border-2 border-[#8C735B] rounded-xl p-3 sm:p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-3 shadow-xl box-border">
+            <div className="w-full max-w-full bg-[#201A14] border-2 border-[#8C735B] rounded-xl p-2.5 sm:p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-3 shadow-xl box-border">
               <div className="flex items-center gap-2 min-w-0 w-full sm:w-auto">
                 <span className="text-xs font-mono uppercase tracking-wider text-white font-black mr-1 hidden sm:inline shrink-0">
                   Question Palette:
@@ -442,7 +442,7 @@ export default function JuniorAttemptPage({ params }: PageProps) {
                 </div>
               </div>
 
-              <div className="flex items-center gap-3 text-xs font-mono pt-1 sm:pt-0 shrink-0">
+              <div className="flex items-center justify-end sm:justify-start gap-3 text-xs font-mono pt-1 sm:pt-0 shrink-0">
                 <div className="flex items-center gap-1.5">
                   <span className="w-3.5 h-3.5 rounded bg-[#134E2F] border-2 border-emerald-400" />
                   <span className="text-xs text-emerald-300 font-bold">Answered</span>
@@ -455,7 +455,7 @@ export default function JuniorAttemptPage({ params }: PageProps) {
             </div>
 
             {/* Scholar Desk Advisory: Physical Notebook & Pen */}
-            <div className="w-full bg-[#1C1713] border-2 border-[#8C735B]/80 rounded-xl p-3 sm:p-3.5 flex items-center justify-between gap-3 text-xs shadow-md">
+            <div className="w-full bg-[#1C1713] border-2 border-[#8C735B]/80 rounded-xl p-2.5 sm:p-3.5 flex items-center justify-between gap-3 text-xs shadow-md">
               <div className="flex items-center gap-2.5 min-w-0">
                 <div className="w-7 h-7 rounded-lg bg-amber-500/20 border border-amber-400/60 flex items-center justify-center text-amber-300 shrink-0">
                   <PenTool className="w-4 h-4" />
@@ -480,26 +480,26 @@ export default function JuniorAttemptPage({ params }: PageProps) {
               initial={prefersReducedMotion ? false : { opacity: 0, y: 6 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.2 }}
-              className="w-full max-w-full bg-[#201A14] border-2 border-[#A88C6F] rounded-xl sm:rounded-2xl p-3.5 sm:p-8 space-y-4 sm:space-y-6 shadow-[0_16px_50px_rgba(0,0,0,0.85)] ring-1 ring-amber-500/30 box-border"
+              className="w-full max-w-full bg-[#201A14] border-2 border-[#A88C6F] rounded-xl sm:rounded-2xl p-2.5 sm:p-7 space-y-3 sm:space-y-6 shadow-[0_16px_50px_rgba(0,0,0,0.85)] ring-1 ring-amber-500/30 box-border"
             >
               {/* Question Header & Syllabus Metadata */}
-              <div className="w-full flex flex-wrap items-center justify-between gap-2.5 sm:gap-3 bg-[#2D231A] border-2 border-[#8C735B] p-3 sm:p-4 rounded-lg sm:rounded-xl shadow-sm">
+              <div className="w-full flex flex-wrap items-center justify-between gap-2 sm:gap-3 bg-[#2D231A] border-2 border-[#8C735B] p-2.5 sm:p-4 rounded-lg sm:rounded-xl shadow-sm">
                 <div className="space-y-1 min-w-0">
                   <div className="flex flex-wrap items-center gap-2">
-                    <span className="text-[11px] sm:text-xs uppercase font-mono tracking-wider px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-md sm:rounded-lg bg-[#134E2F] border-2 border-emerald-400 text-emerald-200 font-black shrink-0">
+                    <span className="text-[11px] sm:text-xs uppercase font-mono tracking-wider px-2 sm:px-3.5 py-1 sm:py-1.5 rounded-md sm:rounded-lg bg-[#134E2F] border-2 border-emerald-400 text-emerald-200 font-black shrink-0">
                       Question {currentIndex + 1} of {attempt.questions.length}
                     </span>
-                    <span className="text-sm sm:text-lg font-bold text-white">
+                    <span className="text-xs sm:text-lg font-bold text-white break-words">
                       Chapter {currentQuestion.chapterNumber}: {currentQuestion.chapter}
                     </span>
                   </div>
-                  <div className="text-xs text-[#DDD4C5] font-mono">
+                  <div className="text-[11px] sm:text-xs text-[#DDD4C5] font-mono">
                     Topic: <span className="text-amber-200 font-bold">{currentQuestion.topic}</span>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-2 shrink-0">
-                  <span className={`text-[11px] sm:text-xs uppercase tracking-wider font-mono px-3 sm:px-3.5 py-1 sm:py-1.5 rounded-md sm:rounded-lg font-black border-2 ${
+                  <span className={`text-[10px] sm:text-xs uppercase tracking-wider font-mono px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-md sm:rounded-lg font-black border-2 ${
                     currentQuestion.difficulty === "Hard"
                       ? "bg-amber-950 border-2 border-amber-400 text-amber-200"
                       : currentQuestion.difficulty === "Medium"
@@ -512,13 +512,13 @@ export default function JuniorAttemptPage({ params }: PageProps) {
               </div>
 
               {/* Question Text Box with KaTeX Equations */}
-              <div className="w-full p-4 sm:p-7 rounded-lg sm:rounded-xl bg-[#14100D] border-2 border-[#8C735B] text-white text-base sm:text-xl font-medium leading-relaxed shadow-inner select-text break-words overflow-x-auto box-border">
+              <div className="w-full p-3 sm:p-6 rounded-lg sm:rounded-xl bg-[#14100D] border-2 border-[#8C735B] text-white text-sm sm:text-xl font-medium leading-relaxed shadow-inner select-text break-words overflow-x-auto box-border">
                 <MathRenderer content={currentQuestion.questionText} />
               </div>
 
               {/* Diagram Rendering (if present) */}
               {currentQuestion.diagramType && (
-                <div className="w-full p-3 sm:p-5 bg-[#14100D] border-2 border-[#8C735B] rounded-lg sm:rounded-xl overflow-x-auto box-border">
+                <div className="w-full p-2.5 sm:p-5 bg-[#14100D] border-2 border-[#8C735B] rounded-lg sm:rounded-xl overflow-x-auto box-border">
                   <JuniorInteractiveDiagram type={currentQuestion.diagramType} />
                 </div>
               )}
@@ -527,7 +527,7 @@ export default function JuniorAttemptPage({ params }: PageProps) {
               <div
                 role="radiogroup"
                 aria-label={`Options for question ${currentIndex + 1}`}
-                className="grid grid-cols-1 gap-2.5 sm:gap-3.5 pt-1 sm:pt-2 w-full"
+                className="grid grid-cols-1 gap-2 sm:gap-3.5 pt-1 sm:pt-2 w-full"
               >
                 {currentQuestion.options.map((opt) => {
                   const isSelected = currentSelectedKey === opt.key;
@@ -545,7 +545,7 @@ export default function JuniorAttemptPage({ params }: PageProps) {
                       role="radio"
                       aria-checked={isSelected}
                       onClick={() => handleSelectOption(opt.key)}
-                      className={`w-full text-left p-3.5 sm:p-6 rounded-lg sm:rounded-xl border-2 transition-all flex items-start gap-3 sm:gap-4 cursor-pointer group shadow-xl active:scale-[0.99] box-border ${
+                      className={`w-full text-left p-2.5 sm:p-5 rounded-lg sm:rounded-xl border-2 transition-all flex items-start gap-2.5 sm:gap-4 cursor-pointer group shadow-xl active:scale-[0.99] box-border ${
                         isRevealedCorrect
                           ? "bg-[#104E2B] border-2 border-emerald-300 text-white shadow-[0_0_25px_rgba(34,197,94,0.6)]"
                           : isRevealedWrong
@@ -556,7 +556,7 @@ export default function JuniorAttemptPage({ params }: PageProps) {
                       }`}
                     >
                       <span
-                        className={`w-9 h-9 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl border-2 font-mono text-sm sm:text-lg font-black flex items-center justify-center shrink-0 mt-0.5 transition-all shadow-md ${
+                        className={`w-8 h-8 sm:w-11 sm:h-11 rounded-lg sm:rounded-xl border-2 font-mono text-xs sm:text-base font-black flex items-center justify-center shrink-0 mt-0.5 transition-all shadow-md ${
                           isSelected
                             ? "border-white bg-emerald-400 text-black shadow-[0_0_15px_rgba(52,211,153,0.8)]"
                             : "border-[#A6896C] bg-[#423325] text-white group-hover:border-amber-400 group-hover:bg-[#524030]"
@@ -564,7 +564,7 @@ export default function JuniorAttemptPage({ params }: PageProps) {
                       >
                         {opt.key}
                       </span>
-                      <span className="text-sm sm:text-lg leading-relaxed flex-1 text-white font-semibold pt-0.5 sm:pt-1 min-w-0 break-words">
+                      <span className="text-xs sm:text-lg leading-relaxed flex-1 text-white font-semibold pt-0.5 sm:pt-1 min-w-0 break-words">
                         <MathRenderer content={opt.text} />
                       </span>
                       <span className="hidden sm:inline-block text-xs font-mono text-amber-200 opacity-0 group-hover:opacity-100 transition-opacity font-bold pt-2 shrink-0">
@@ -577,7 +577,7 @@ export default function JuniorAttemptPage({ params }: PageProps) {
 
               {/* Instant Guided Feedback (if enabled) */}
               {currentFeedback && (
-                <div className="w-full p-3.5 sm:p-6 bg-[#14100D] border-2 border-amber-500 rounded-lg sm:rounded-xl space-y-2.5 sm:space-y-3 shadow-inner box-border">
+                <div className="w-full p-3 sm:p-6 bg-[#14100D] border-2 border-amber-500 rounded-lg sm:rounded-xl space-y-2 sm:space-y-3 shadow-inner box-border">
                   <div className="flex items-center gap-2 text-xs font-black uppercase font-mono tracking-wider">
                     {currentSelectedKey === currentFeedback.correctOptionKey ? (
                       <>
@@ -595,7 +595,7 @@ export default function JuniorAttemptPage({ params }: PageProps) {
                       </>
                     )}
                   </div>
-                  <div className="text-sm sm:text-base text-white leading-relaxed font-sans">
+                  <div className="text-xs sm:text-base text-white leading-relaxed font-sans">
                     <MathRenderer content={currentFeedback.explanation} />
                   </div>
                 </div>
@@ -603,12 +603,12 @@ export default function JuniorAttemptPage({ params }: PageProps) {
             </motion.section>
 
             {/* Navigation & Controls Dock */}
-            <div className="w-full flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 pt-3 sm:pt-4 pb-8">
+            <div className="w-full flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5 sm:gap-3 pt-2 sm:pt-4 pb-8">
               <button
                 type="button"
                 disabled={currentIndex === 0}
                 onClick={() => navigateSlot(currentIndex - 1)}
-                className={`w-full sm:w-auto justify-center font-mono font-bold text-xs sm:text-sm uppercase tracking-wider px-5 sm:px-6 py-3 sm:py-3.5 rounded-lg transition-all border-2 flex items-center gap-2 ${
+                className={`w-full sm:w-auto justify-center font-mono font-bold text-xs sm:text-sm uppercase tracking-wider px-4 sm:px-6 py-2.5 sm:py-3.5 rounded-lg transition-all border-2 flex items-center gap-2 ${
                   currentIndex === 0
                     ? "bg-[#221A14] border-2 border-[#453729] text-[#9E8B78] cursor-not-allowed"
                     : "bg-[#382E25] hover:bg-[#4A3E32] border-2 border-[#9E8063] text-white hover:border-white shadow-md cursor-pointer active:scale-95"
@@ -628,7 +628,7 @@ export default function JuniorAttemptPage({ params }: PageProps) {
                   <button
                     type="button"
                     onClick={() => navigateSlot(currentIndex + 1)}
-                    className="w-full sm:w-auto justify-center bg-emerald-500 hover:bg-emerald-400 text-black font-black text-xs sm:text-sm uppercase tracking-wider px-6 sm:px-8 py-3 sm:py-3.5 rounded-lg border-2 border-white shadow-[0_0_25px_rgba(16,185,129,0.7)] transition-all cursor-pointer flex items-center gap-2 active:scale-95"
+                    className="w-full sm:w-auto justify-center bg-emerald-500 hover:bg-emerald-400 text-black font-black text-xs sm:text-sm uppercase tracking-wider px-5 sm:px-8 py-2.5 sm:py-3.5 rounded-lg border-2 border-white shadow-[0_0_25px_rgba(16,185,129,0.7)] transition-all cursor-pointer flex items-center gap-2 active:scale-95"
                   >
                     <span>Next Question</span>
                     <ArrowRight className="w-4 h-4 shrink-0" />
@@ -637,7 +637,7 @@ export default function JuniorAttemptPage({ params }: PageProps) {
                   <button
                     type="button"
                     onClick={() => setShowConfirmModal(true)}
-                    className="w-full sm:w-auto justify-center bg-amber-400 hover:bg-amber-300 text-black font-black text-xs sm:text-sm uppercase tracking-wider px-6 sm:px-8 py-3 sm:py-3.5 rounded-lg border-2 border-white shadow-[0_0_25px_rgba(251,191,36,0.7)] transition-all cursor-pointer flex items-center gap-2 active:scale-95"
+                    className="w-full sm:w-auto justify-center bg-amber-400 hover:bg-amber-300 text-black font-black text-xs sm:text-sm uppercase tracking-wider px-5 sm:px-8 py-2.5 sm:py-3.5 rounded-lg border-2 border-white shadow-[0_0_25px_rgba(251,191,36,0.7)] transition-all cursor-pointer flex items-center gap-2 active:scale-95"
                   >
                     <Send className="w-4 h-4 shrink-0" />
                     <span>Review &amp; Submit Folio</span>
