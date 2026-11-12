@@ -199,3 +199,37 @@ export interface AdminPlayerListItem {
   latestChapter: number | null;
   latestArchetype: string | null;
 }
+
+export type ReviewCategory =
+  | "general"
+  | "solo"
+  | "junior"
+  | "story"
+  | "puzzles"
+  | "design";
+
+export type ReviewStatus = "approved" | "pending" | "flagged" | "archived";
+
+export interface PlayerReview {
+  id: string;
+  playerId: string | null;
+  playerName: string;
+  instagramId: string | null;
+  rating: number; // 1 to 5
+  title: string;
+  feedback: string;
+  category: ReviewCategory;
+  modePlayed?: "senior" | "junior" | "both" | "general";
+  featured: boolean;
+  status: ReviewStatus;
+  adminResponse?: string | null;
+  createdAt: string;
+  updatedAt?: string | null;
+}
+
+export interface ReviewStats {
+  totalReviews: number;
+  averageRating: number;
+  ratingBreakdown: Record<number, number>;
+  categoryBreakdown: Record<string, number>;
+}

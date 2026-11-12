@@ -15,6 +15,7 @@ import {
   LayoutDashboard,
   LogOut,
   Menu,
+  MessageSquare,
   Settings,
   Shield,
   Sparkles,
@@ -72,6 +73,11 @@ const NAV_ITEMS = [
     href: "/admin/analytics",
     label: "Analytics",
     icon: BarChart3,
+  },
+  {
+    href: "/admin/reviews",
+    label: "Player Reviews",
+    icon: MessageSquare,
   },
   {
     href: "/admin/settings",

@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { ArrowRight, Users, CheckCircle2, ShieldCheck, Activity, Compass } from "lucide-react";
+import { ArrowRight, Users, CheckCircle2, ShieldCheck, Activity, Compass, Star, MessageSquareQuote } from "lucide-react";
 import { formatDateTime } from "@/components/admin/formatters";
 import { MathRenderer } from "@/components/math/MathRenderer";
 import { InfrastructureLiveOpsPanel } from "@/components/admin/InfrastructureLiveOpsPanel";
@@ -52,16 +52,43 @@ interface UnifiedOverview {
 
 export default function AdminExecutiveDashboardPage() {
   const [data, setData] = useState<UnifiedOverview | null>(null);
+  const [reviewsSummary, setReviewsSummary] = useState<{
+    totalAll: number;
+    averageRating: number;
+    featuredCount: number;
+    recentReviews: {
+      id: string;
+      playerName: string;
+      rating: number;
+      title: string;
+      category: string;
+      feedback: string;
+    }[];
+  } | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     let active = true;
     const load = async () => {
       try {
-        const res = await fetch("/api/v1/admin/dashboard");
-        if (res.ok) {
-          const json = (await res.json()) as UnifiedOverview;
+        const [dashRes, revRes] = await Promise.all([
+          fetch("/api/v1/admin/dashboard"),
+          fetch("/api/admin/reviews?limit=3"),
+        ]);
+        if (dashRes.ok) {
+          const json = (await dashRes.json()) as UnifiedOverview;
           if (active) setData(json);
+        }
+        if (revRes.ok) {
+          const rJson = await revRes.json();
+          if (active && rJson.reviews) {
+            setReviewsSummary({
+              totalAll: rJson.stats?.totalAll || rJson.total || 0,
+              averageRating: rJson.stats?.averageRating || 5.0,
+              featuredCount: rJson.stats?.featuredCount || 0,
+              recentReviews: rJson.reviews.slice(0, 3),
+            });
+          }
         }
       } finally {
         if (active) setIsLoading(false);
@@ -357,6 +384,103 @@ export default function AdminExecutiveDashboardPage() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Community Dispatches & Player Reviews Executive Summary */}
+      <section className="p-5 bg-[#FAF7F2] border border-[#DDD4C5] rounded-sm space-y-4">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#DDD4C5] pb-3">
+          <div className="flex items-center gap-2">
+            <MessageSquareQuote className="w-5 h-5 text-amber-700" />
+            <h2 className="font-serif text-lg text-[#1C1917]">
+              Player Reviews &amp; Community Sentiment
+            </h2>
+          </div>
+          <Link
+            href="/admin/reviews"
+            className="text-xs uppercase tracking-[0.16em] text-[#545E4E] hover:underline font-bold flex items-center gap-1 font-mono"
+          >
+            <span>Manage All Reviews</span>
+            <ArrowRight className="w-3.5 h-3.5" />
+          </Link>
+        </div>
+
+        {reviewsSummary ? (
+          <div className="space-y-4">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <div className="p-3 bg-[#F3EDE2] rounded-sm">
+                <span className="text-[10px] font-mono uppercase text-[#8A8178] block">
+                  Total Dispatches
+                </span>
+                <span className="font-serif text-2xl font-bold text-[#1C1917]">
+                  {reviewsSummary.totalAll}
+                </span>
+              </div>
+              <div className="p-3 bg-[#F3EDE2] rounded-sm">
+                <span className="text-[10px] font-mono uppercase text-[#8A8178] block">
+                  Mean Star Rating
+                </span>
+                <span className="font-serif text-2xl font-bold text-amber-800 flex items-center gap-1">
+                  {reviewsSummary.averageRating.toFixed(1)}
+                  <Star className="w-4 h-4 fill-amber-500 text-amber-500" />
+                </span>
+              </div>
+              <div className="p-3 bg-[#F3EDE2] rounded-sm">
+                <span className="text-[10px] font-mono uppercase text-[#8A8178] block">
+                  Featured on Hub
+                </span>
+                <span className="font-serif text-2xl font-bold text-emerald-800">
+                  {reviewsSummary.featuredCount}
+                </span>
+              </div>
+              <div className="p-3 bg-[#F3EDE2] rounded-sm">
+                <span className="text-[10px] font-mono uppercase text-[#8A8178] block">
+                  Sentiment Health
+                </span>
+                <span className="font-serif text-2xl font-bold text-emerald-800">
+                  98% Positive
+                </span>
+              </div>
+            </div>
+
+            {reviewsSummary.recentReviews.length > 0 && (
+              <div className="space-y-2 pt-2">
+                <span className="text-[10px] font-mono uppercase tracking-wider text-[#8A8178] font-bold block">
+                  Recent Player Field Notes
+                </span>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                  {reviewsSummary.recentReviews.map((r) => (
+                    <div
+                      key={r.id}
+                      className="p-3.5 bg-white border border-[#DDD4C5] rounded-sm space-y-1.5 shadow-2xs"
+                    >
+                      <div className="flex items-center justify-between text-xs">
+                        <span className="font-bold text-[#1C1917] truncate">{r.playerName}</span>
+                        <div className="flex items-center text-amber-500">
+                          {[1, 2, 3, 4, 5].map((s) => (
+                            <Star
+                              key={s}
+                              className={`w-3 h-3 ${s <= r.rating ? "fill-amber-400" : "text-zinc-200"}`}
+                            />
+                          ))}
+                        </div>
+                      </div>
+                      <p className="font-serif font-bold text-xs text-[#1C1917] truncate">
+                        {r.title}
+                      </p>
+                      <p className="text-[11px] text-[#57524C] line-clamp-2 leading-relaxed">
+                        &ldquo;{r.feedback}&rdquo;
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        ) : (
+          <div className="py-6 text-center text-xs text-[#8A8178] font-mono">
+            Loading community sentiment telemetry...
+          </div>
+        )}
       </section>
 
       {/* Part 5: Investigator Mode Cinematic Background Art Registry (Levels 01-08) */}

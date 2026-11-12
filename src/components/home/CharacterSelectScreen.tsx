@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import { useGameSession } from "@/lib/useGameSession";
 import { CreatorIdentitySection } from "@/components/common/CreatorIdentitySection";
+import { PlayerReviewsSection } from "@/components/reviews/PlayerReviewsSection";
 import { CinematicCreatorIntro } from "./CinematicCreatorIntro";
 import { PlayerRegistrationModal, RegisteredPlayer } from "./PlayerRegistrationModal";
 
@@ -512,7 +513,10 @@ export function CharacterSelectScreen() {
           </div>
         </motion.div>
 
-        {/* 5. INDEPENDENT CREATOR IDENTITY & AI DESIGN RECOGNITION */}
+        {/* 5. PLAYER REVIEWS & COMMUNITY DISPATCHES */}
+        <PlayerReviewsSection />
+
+        {/* 6. INDEPENDENT CREATOR IDENTITY & AI DESIGN RECOGNITION */}
         <CreatorIdentitySection
           onWatchIntro={() => {
             setIsReplayingIntro(true);
@@ -521,7 +525,7 @@ export function CharacterSelectScreen() {
         />
       </main>
 
-      {/* 6. MINIMAL COLOPHON FOOTER */}
+      {/* 7. MINIMAL COLOPHON FOOTER */}
       <footer className="relative z-20 w-full max-w-7xl mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[10px] font-mono uppercase tracking-[0.2em] text-zinc-400 border-t border-white/10 mt-6">
         <div className="flex flex-wrap items-center gap-2">
           <span className="text-[#FAF7F2] font-semibold">THE UNWRITTEN</span>

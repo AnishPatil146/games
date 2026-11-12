@@ -11,10 +11,12 @@ import {
   MailOpen,
   RotateCcw,
   Share2,
+  Star,
 } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/Button";
+import { PlayerReviewModal } from "@/components/reviews/PlayerReviewModal";
 import {
   ChoiceMapStep,
   SeniorChoiceMap,
@@ -52,6 +54,8 @@ export default function ResultReportPage({ params }: PageProps) {
   const [claimKey, setClaimKey] = useState<string | null>(null);
   const [claimInput, setClaimInput] = useState("");
   const [isClaiming, setIsClaiming] = useState(false);
+  const [showReviewModal, setShowReviewModal] = useState(false);
+  const [hasReviewed, setHasReviewed] = useState(false);
 
   useEffect(() => {
     let active = true;
@@ -704,6 +708,35 @@ export default function ResultReportPage({ params }: PageProps) {
               </div>
             </section>
 
+            {/* Player Review & Field Notes Dispatch Callout */}
+            <section className="p-6 sm:p-8 bg-[#201A14] border-2 border-amber-500/60 rounded-xl text-center space-y-3.5 shadow-2xl ring-1 ring-amber-500/20">
+              <div className="flex items-center justify-center gap-1.5 text-amber-400">
+                {[1, 2, 3, 4, 5].map((s) => (
+                  <Star key={s} className="w-5 h-5 fill-amber-400 drop-shadow-[0_0_6px_rgba(251,191,36,0.6)]" />
+                ))}
+              </div>
+              <h3 className="font-serif text-xl sm:text-2xl font-bold text-white">
+                Share Your Deductive Impressions
+              </h3>
+              <p className="text-xs sm:text-sm text-[#DDD4C5] max-w-lg mx-auto leading-relaxed">
+                {hasReviewed
+                  ? "Your dispatch has been preserved in the Academy archives. Thank you for contributing to The Unwritten!"
+                  : "How was your journey through the 8 chambers? Leave a review and rating for the creator and community."}
+              </p>
+              {!hasReviewed && (
+                <div className="pt-2">
+                  <button
+                    type="button"
+                    onClick={() => setShowReviewModal(true)}
+                    className="px-6 py-2.5 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-black font-black text-xs font-mono uppercase tracking-wider border-2 border-white shadow-[0_0_20px_rgba(245,158,11,0.6)] cursor-pointer transition-all active:scale-95 inline-flex items-center gap-2"
+                  >
+                    <Star className="w-4 h-4 fill-black" />
+                    <span>Inscribe Player Review</span>
+                  </button>
+                </div>
+              )}
+            </section>
+
             {/* Closing Reflection & Explicit Non-Clinical Disclaimer */}
             <section className="p-7 sm:p-9 bg-[#F3EDE2] border border-[#DDD4C5] rounded-sm text-center space-y-4">
               <p className="font-serif italic text-xl sm:text-2xl text-[#1C1917] max-w-2xl mx-auto leading-relaxed">
@@ -719,6 +752,17 @@ export default function ResultReportPage({ params }: PageProps) {
             </section>
           </motion.article>
         )}
+
+        <PlayerReviewModal
+          isOpen={showReviewModal}
+          onClose={() => setShowReviewModal(false)}
+          onReviewSubmitted={() => {
+            setHasReviewed(true);
+            setShowReviewModal(false);
+          }}
+          defaultCategory="solo"
+          defaultMode="senior"
+        />
       </main>
 
       <Footer />

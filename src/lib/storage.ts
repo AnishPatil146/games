@@ -15,7 +15,11 @@ import type {
   GameplayEvent,
   Player,
   PlayerPreference,
+  PlayerReview,
   PuzzleAnalyticsRow,
+  ReviewCategory,
+  ReviewStatus,
+  ReviewStats,
   SessionStatus,
 } from "./types";
 
@@ -25,7 +29,94 @@ interface LocalStoreData {
   events: GameplayEvent[];
   preferences: PlayerPreference[];
   deletionRequests: DeletionRequest[];
+  reviews: PlayerReview[];
 }
+
+export const DEFAULT_INITIAL_REVIEWS: PlayerReview[] = [
+  {
+    id: "rev_seed_001",
+    playerId: "seed_player_01",
+    playerName: "Arjun Deshmukh",
+    instagramId: "arjun.deshmukh",
+    rating: 5,
+    title: "Chamber 5's spatial labyrinth was pure brilliance",
+    feedback:
+      "Navigating the mirror maze as Aarav alone without hand-holding created real deductive tension. You actually have to pay attention to your steps and memory traces. The moral choice at the end stayed with me for days.",
+    category: "solo",
+    modePlayed: "senior",
+    featured: true,
+    status: "approved",
+    adminResponse:
+      "Honored to hear Chamber 5 resonated with you, Arjun! The spatial labyrinth was designed to reward deliberate observation over hurried guesswork.",
+    createdAt: "2026-11-08T14:32:00.000Z",
+  },
+  {
+    id: "rev_seed_002",
+    playerId: "seed_player_02",
+    playerName: "Dr. Priya Nair",
+    instagramId: "priya_academic",
+    rating: 5,
+    title: "Exceptional mathematical typesetting & derivation proofs",
+    feedback:
+      "As an educator, seeing the full step-by-step substitution formulas and pedagogical proof in the evaluation monograph is remarkable. The LaTeX rendering of Newton's cooling law and electron drift velocity is crystal clear.",
+    category: "junior",
+    modePlayed: "junior",
+    featured: true,
+    status: "approved",
+    adminResponse:
+      "Thank you, Dr. Nair! Our goal with The Academy was to treat students like genuine scholars with uncompromising rigor.",
+    createdAt: "2026-11-09T09:15:00.000Z",
+  },
+  {
+    id: "rev_seed_003",
+    playerId: "seed_player_03",
+    playerName: "Vikram Kulkarni",
+    instagramId: "vikram.kulkarni",
+    rating: 5,
+    title: "The narrative atmosphere is in a league of its own",
+    feedback:
+      "The aesthetic of classical museum parchment paired with dystopian surveillance and ambient lighting is breathtaking. The four philosophical codices actually reflect how you reasoned throughout the game.",
+    category: "story",
+    modePlayed: "both",
+    featured: true,
+    status: "approved",
+    adminResponse: null,
+    createdAt: "2026-11-10T18:40:00.000Z",
+  },
+  {
+    id: "rev_seed_004",
+    playerId: "seed_player_04",
+    playerName: "Devika Sharma",
+    instagramId: "devika_designs",
+    rating: 5,
+    title: "Tactile puzzles and seamless responsive design",
+    feedback:
+      "Played both on desktop and on mobile through Instagram. The question interface and logic keypad dials are super responsive, with zero clutter. A true masterclass in atmosphere and UI craft.",
+    category: "puzzles",
+    modePlayed: "both",
+    featured: false,
+    status: "approved",
+    adminResponse: null,
+    createdAt: "2026-11-11T11:20:00.000Z",
+  },
+  {
+    id: "rev_seed_005",
+    playerId: "seed_player_05",
+    playerName: "Rohan Mehta",
+    instagramId: "rohan.mehta",
+    rating: 5,
+    title: "My favourite indie game discovery this year",
+    feedback:
+      "Started out curious about the creator's intro and ended up playing through the entire campaign in one sitting. Cannot wait for future expansions and chambers!",
+    category: "general",
+    modePlayed: "senior",
+    featured: false,
+    status: "approved",
+    adminResponse:
+      "Means the world to me, Rohan! Thank you for walking this journey with me from day one.",
+    createdAt: "2026-11-11T20:05:00.000Z",
+  },
+];
 
 const DEFAULT_LOCAL_STORE_PATH = path.join(
   /* turbopackIgnore: true */ process.cwd(),
@@ -42,6 +133,7 @@ export function setLocalStorePathForTests(filePath: string | null): void {
     events: [],
     preferences: [],
     deletionRequests: [],
+    reviews: [],
   };
 }
 
@@ -60,6 +152,7 @@ let memoryStore: LocalStoreData = {
   events: [],
   preferences: [],
   deletionRequests: [],
+  reviews: [...DEFAULT_INITIAL_REVIEWS],
 };
 
 function readLocalStore(): LocalStoreData {
@@ -76,6 +169,9 @@ function readLocalStore(): LocalStoreData {
         deletionRequests: Array.isArray(parsed.deletionRequests)
           ? parsed.deletionRequests
           : [],
+        reviews: Array.isArray(parsed.reviews) && parsed.reviews.length > 0
+          ? parsed.reviews
+          : [...DEFAULT_INITIAL_REVIEWS],
       };
     }
   } catch {
@@ -1296,4 +1392,266 @@ export async function getAdminSettingsData() {
       preferences: dataset.preferences.length,
     },
   };
+}
+
+// ---------------------------------------------------------------------------
+// PLAYER REVIEWS & COMMUNITY DISPATCHES
+// ---------------------------------------------------------------------------
+
+export interface CreateReviewParams {
+  playerId?: string | null;
+  playerName: string;
+  instagramId?: string | null;
+  rating: number;
+  title: string;
+  feedback: string;
+  category?: ReviewCategory;
+  modePlayed?: "senior" | "junior" | "both" | "general";
+}
+
+function calculateReviewStats(reviews: PlayerReview[]): ReviewStats {
+  const approved = reviews.filter((r) => r.status === "approved");
+  const totalReviews = approved.length;
+
+  const ratingBreakdown: Record<number, number> = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
+  const categoryBreakdown: Record<string, number> = {};
+
+  let sum = 0;
+  for (const r of approved) {
+    const star = Math.max(1, Math.min(5, Math.round(r.rating)));
+    ratingBreakdown[star] = (ratingBreakdown[star] || 0) + 1;
+    sum += star;
+
+    const cat = r.category || "general";
+    categoryBreakdown[cat] = (categoryBreakdown[cat] || 0) + 1;
+  }
+
+  const averageRating = totalReviews > 0 ? Number((sum / totalReviews).toFixed(1)) : 5.0;
+
+  return {
+    totalReviews,
+    averageRating,
+    ratingBreakdown,
+    categoryBreakdown,
+  };
+}
+
+export async function createPlayerReview(params: CreateReviewParams): Promise<PlayerReview> {
+  const cleanName = (params.playerName || "").trim();
+  if (!cleanName || cleanName.length < 2) {
+    throw new Error("Player name must be at least 2 characters.");
+  }
+
+  const cleanFeedback = (params.feedback || "").trim();
+  if (!cleanFeedback || cleanFeedback.length < 5) {
+    throw new Error("Review feedback must be at least 5 characters.");
+  }
+
+  const cleanTitle = (params.title || "").trim();
+  const cleanIg = params.instagramId
+    ? params.instagramId.replace(/^@+/, "").trim() || null
+    : null;
+
+  const rating = Math.max(1, Math.min(5, Math.round(Number(params.rating) || 5)));
+  const category: ReviewCategory = params.category || "general";
+  const now = new Date().toISOString();
+
+  const newReview: PlayerReview = {
+    id: "rev_" + crypto.randomBytes(12).toString("hex"),
+    playerId: params.playerId || null,
+    playerName: cleanName.slice(0, 60),
+    instagramId: cleanIg ? cleanIg.slice(0, 60) : null,
+    rating,
+    title: cleanTitle ? cleanTitle.slice(0, 120) : "Deductive Impression",
+    feedback: cleanFeedback.slice(0, 2000),
+    category,
+    modePlayed: params.modePlayed || "general",
+    featured: false,
+    status: "approved",
+    adminResponse: null,
+    createdAt: now,
+    updatedAt: now,
+  };
+
+  const store = readLocalStore();
+  store.reviews.unshift(newReview);
+  writeLocalStore(store);
+
+  return newReview;
+}
+
+export async function getPublicPlayerReviews(params?: {
+  category?: string;
+  page?: number;
+  limit?: number;
+}): Promise<{
+  reviews: PlayerReview[];
+  stats: ReviewStats;
+  total: number;
+  page: number;
+  totalPages: number;
+}> {
+  const store = readLocalStore();
+  const allApproved = store.reviews.filter((r) => r.status === "approved");
+  const stats = calculateReviewStats(store.reviews);
+
+  let filtered = allApproved;
+  if (params?.category && params.category !== "all") {
+    filtered = filtered.filter((r) => r.category === params.category);
+  }
+
+  // Sort: featured first, then newest
+  filtered.sort((a, b) => {
+    if (a.featured !== b.featured) {
+      return a.featured ? -1 : 1;
+    }
+    return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime();
+  });
+
+  const page = Math.max(1, Number(params?.page) || 1);
+  const limit = Math.max(1, Math.min(50, Number(params?.limit) || 12));
+  const total = filtered.length;
+  const totalPages = Math.ceil(total / limit) || 1;
+  const offset = (page - 1) * limit;
+
+  const paginated = filtered.slice(offset, offset + limit);
+
+  return {
+    reviews: paginated,
+    stats,
+    total,
+    page,
+    totalPages,
+  };
+}
+
+export async function getAllAdminPlayerReviews(params?: {
+  status?: string;
+  search?: string;
+  rating?: number;
+  category?: string;
+  page?: number;
+  limit?: number;
+}): Promise<{
+  reviews: PlayerReview[];
+  stats: ReviewStats & {
+    totalAll: number;
+    pendingCount: number;
+    approvedCount: number;
+    flaggedCount: number;
+    featuredCount: number;
+  };
+  total: number;
+  page: number;
+  totalPages: number;
+}> {
+  const store = readLocalStore();
+  const baseStats = calculateReviewStats(store.reviews);
+
+  let pendingCount = 0;
+  let approvedCount = 0;
+  let flaggedCount = 0;
+  let featuredCount = 0;
+
+  for (const r of store.reviews) {
+    if (r.status === "pending") pendingCount++;
+    if (r.status === "approved") approvedCount++;
+    if (r.status === "flagged") flaggedCount++;
+    if (r.featured) featuredCount++;
+  }
+
+  let filtered = [...store.reviews];
+
+  if (params?.status && params.status !== "all") {
+    if (params.status === "featured") {
+      filtered = filtered.filter((r) => r.featured);
+    } else {
+      filtered = filtered.filter((r) => r.status === params.status);
+    }
+  }
+
+  if (params?.category && params.category !== "all") {
+    filtered = filtered.filter((r) => r.category === params.category);
+  }
+
+  if (params?.rating && params.rating > 0) {
+    filtered = filtered.filter((r) => r.rating === Number(params.rating));
+  }
+
+  if (params?.search && params.search.trim()) {
+    const q = params.search.trim().toLowerCase();
+    filtered = filtered.filter(
+      (r) =>
+        r.playerName.toLowerCase().includes(q) ||
+        (r.instagramId && r.instagramId.toLowerCase().includes(q)) ||
+        r.title.toLowerCase().includes(q) ||
+        r.feedback.toLowerCase().includes(q)
+    );
+  }
+
+  // Sort: newest first
+  filtered.sort(
+    (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+  );
+
+  const page = Math.max(1, Number(params?.page) || 1);
+  const limit = Math.max(1, Math.min(100, Number(params?.limit) || 20));
+  const total = filtered.length;
+  const totalPages = Math.ceil(total / limit) || 1;
+  const offset = (page - 1) * limit;
+
+  const paginated = filtered.slice(offset, offset + limit);
+
+  return {
+    reviews: paginated,
+    stats: {
+      ...baseStats,
+      totalAll: store.reviews.length,
+      pendingCount,
+      approvedCount,
+      flaggedCount,
+      featuredCount,
+    },
+    total,
+    page,
+    totalPages,
+  };
+}
+
+export async function updateAdminPlayerReview(
+  id: string,
+  updates: {
+    status?: ReviewStatus;
+    featured?: boolean;
+    adminResponse?: string | null;
+  }
+): Promise<PlayerReview | null> {
+  const store = readLocalStore();
+  const item = store.reviews.find((r) => r.id === id);
+  if (!item) return null;
+
+  if (updates.status !== undefined) {
+    item.status = updates.status;
+  }
+  if (updates.featured !== undefined) {
+    item.featured = updates.featured;
+  }
+  if (updates.adminResponse !== undefined) {
+    item.adminResponse = updates.adminResponse;
+  }
+  item.updatedAt = new Date().toISOString();
+
+  writeLocalStore(store);
+  return item;
+}
+
+export async function deleteAdminPlayerReview(id: string): Promise<boolean> {
+  const store = readLocalStore();
+  const initialLen = store.reviews.length;
+  store.reviews = store.reviews.filter((r) => r.id !== id);
+  if (store.reviews.length !== initialLen) {
+    writeLocalStore(store);
+    return true;
+  }
+  return false;
 }

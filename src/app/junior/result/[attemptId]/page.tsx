@@ -14,12 +14,14 @@ import {
   Info,
   RotateCcw,
   Share2,
+  Star,
   XCircle,
 } from "lucide-react";
 import { Button } from "@/components/Button";
 import { MathRenderer } from "@/components/math/MathRenderer";
 import { JuniorAttemptResult } from "@/lib/platform-types";
 import { calculateStudentRank } from "@/lib/junior/academy-models";
+import { PlayerReviewModal } from "@/components/reviews/PlayerReviewModal";
 
 interface PageProps {
   params: Promise<{ attemptId: string }>;
@@ -34,6 +36,8 @@ export default function JuniorResultPage({ params }: PageProps) {
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
   const [reviewFilter, setReviewFilter] = useState<"all" | "wrong" | "correct">("all");
+  const [showReviewModal, setShowReviewModal] = useState(false);
+  const [hasReviewed, setHasReviewed] = useState(false);
 
   useEffect(() => {
     let active = true;
@@ -611,8 +615,48 @@ export default function JuniorResultPage({ params }: PageProps) {
                 </Link>
               </div>
             </div>
+
+            {/* Scholar Feedback & Evaluation Review Callout */}
+            <div className="w-full p-6 sm:p-8 bg-[#201A14] border-2 border-amber-500/60 rounded-xl sm:rounded-2xl text-center space-y-3.5 shadow-2xl ring-1 ring-amber-500/20">
+              <div className="flex items-center justify-center gap-1.5 text-amber-400">
+                {[1, 2, 3, 4, 5].map((s) => (
+                  <Star key={s} className="w-5 h-5 fill-amber-400 drop-shadow-[0_0_6px_rgba(251,191,36,0.6)]" />
+                ))}
+              </div>
+              <h4 className="font-serif font-black text-xl sm:text-2xl text-white">
+                Review Your Academic Session
+              </h4>
+              <p className="text-xs sm:text-sm text-[#DDD4C5] max-w-lg mx-auto leading-relaxed">
+                {hasReviewed
+                  ? "Your academic dispatch has been inscribed in the Academy archives. Thank you for your feedback!"
+                  : `How was your reasoning experience in ${result.subjectName}? Share feedback on question quality, derivations, and difficulty.`}
+              </p>
+              {!hasReviewed && (
+                <div className="pt-2">
+                  <button
+                    type="button"
+                    onClick={() => setShowReviewModal(true)}
+                    className="px-6 py-2.5 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-black font-black text-xs font-mono uppercase tracking-wider border-2 border-white shadow-[0_0_20px_rgba(245,158,11,0.6)] cursor-pointer transition-all active:scale-95 inline-flex items-center gap-2"
+                  >
+                    <Star className="w-4 h-4 fill-black" />
+                    <span>Inscribe Scholar Review</span>
+                  </button>
+                </div>
+              )}
+            </div>
           </motion.article>
         )}
+
+        <PlayerReviewModal
+          isOpen={showReviewModal}
+          onClose={() => setShowReviewModal(false)}
+          onReviewSubmitted={() => {
+            setHasReviewed(true);
+            setShowReviewModal(false);
+          }}
+          defaultCategory="junior"
+          defaultMode="junior"
+        />
       </main>
     </div>
   );
