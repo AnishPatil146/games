@@ -8,6 +8,7 @@ import {
   BookOpen,
   CheckCircle2,
   GraduationCap,
+  PenTool,
   Play,
   RotateCcw,
   Trophy,
@@ -392,6 +393,17 @@ function AcademyContent() {
                         </button>
                       ))}
                     </div>
+                  </div>
+
+                  {/* Practical Scholar Notebook & Pen Advisory */}
+                  <div className="pt-2 flex flex-wrap items-center gap-2 text-xs font-mono text-amber-200/90">
+                    <span className="px-2 py-0.5 rounded bg-amber-500/20 border border-amber-400/50 text-amber-300 font-bold text-[10px] uppercase tracking-wider flex items-center gap-1 shrink-0">
+                      <PenTool className="w-3 h-3 text-amber-300" />
+                      <span>Scholar Advisory</span>
+                    </span>
+                    <span className="text-[#DDD4C5] text-xs">
+                      Keep a notebook and pen ready to solve derivations and scratch numericals.
+                    </span>
                   </div>
                 </div>
 

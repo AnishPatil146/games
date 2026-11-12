@@ -62,11 +62,7 @@ export default function SoloCampaignPage() {
 
   if (gameEnded) {
     const handleInspectMonograph = () => {
-      let resolvedId = sessionId;
-      if (!resolvedId && typeof window !== "undefined") {
-        resolvedId = localStorage.getItem("the_unwritten_last_session_id") || "";
-      }
-      router.push(`/result/${resolvedId || "current"}`);
+      router.push("/result/current");
     };
 
     return (

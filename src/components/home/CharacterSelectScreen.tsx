@@ -60,7 +60,7 @@ const IDENTITIES: Record<CharacterIdentityId, CharacterIdentityConfig> = {
       "Independent Class 11 (FYJC) & Class 12 (HSC) Arenas",
       "EASY, MEDIUM & HARD (JEE / NEET / CUET / CLAT) Calibration",
       "1,400 Questions · Zero Repetition Across 100-Question Cycles",
-      "Built-in LaTeX Typesetting For Formulas & Matrices",
+      "Notebook & Pen Recommended For Scratch Derivations & Formulas",
     ],
     specs: [
       { label: "Target Audience", value: "Secondary & Higher Sec" },

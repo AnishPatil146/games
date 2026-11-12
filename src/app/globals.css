@@ -71,6 +71,9 @@ body {
 .math-rendered-block {
   display: inline-block;
   color: inherit;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 /* Tactile museum-paper grain overlay (pure CSS SVG data URI, zero external request) */

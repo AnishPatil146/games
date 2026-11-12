@@ -8,6 +8,8 @@ import {
   GraduationCap,
   Sparkles,
   Play,
+  PenTool,
+  Edit3,
 } from "lucide-react";
 import { AcademicStreamConfig, AcademicSubjectConfig, StreamSlug } from "@/lib/platform-types";
 
@@ -122,6 +124,17 @@ export function BoardPrepHub({
                 </button>
               ))}
             </div>
+          </div>
+
+          {/* Scholar Desk Advisory Ribbon: Notebook & Pen */}
+          <div className="pt-2 flex flex-wrap items-center gap-2 text-xs text-amber-200/90 font-mono">
+            <span className="px-2.5 py-0.5 rounded-sm bg-amber-500/20 border border-amber-400/60 text-amber-300 font-bold text-[10px] uppercase tracking-wider flex items-center gap-1.5 shadow-sm">
+              <PenTool className="w-3 h-3 text-amber-300" />
+              <span>Study Desk Rule</span>
+            </span>
+            <span className="text-[#DDD4C5] text-xs">
+              Take a physical notebook &amp; pen to work through numericals, formulas, and derivations.
+            </span>
           </div>
         </div>
 
@@ -254,6 +267,17 @@ export function BoardPrepHub({
                 </span>
                 <p>
                   Complete questions in cycles of 10. The system guarantees <strong>zero repeated questions</strong> across 10 consecutive attempts (100 distinct questions) before cycling, ensuring complete chapter coverage.
+                </p>
+              </div>
+
+              {/* Scholar Practice Advisory: Notebook & Pen Required */}
+              <div className="p-4 bg-amber-50/90 border-2 border-amber-400/80 rounded-sm text-xs text-[#2E2418] space-y-2 leading-relaxed shadow-sm">
+                <div className="flex items-center gap-2 text-amber-900 font-bold uppercase tracking-wider text-[11px] font-mono">
+                  <PenTool className="w-4 h-4 text-amber-700" />
+                  <span>Scholar Study Rule — Take Notebook &amp; Pen</span>
+                </div>
+                <p className="text-[#3E3120]">
+                  Before entering the practice arena, <strong>keep a notebook and pen ready</strong> to solve equations, write down intermediate steps, work through derivations, and practice scratch calculations. Solving by hand solidifies long-term board exam retention.
                 </p>
               </div>
             </div>

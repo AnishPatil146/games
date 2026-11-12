@@ -13,6 +13,7 @@ import {
   CheckCircle2,
   Clock,
   Keyboard,
+  PenTool,
   Send,
   XCircle,
 } from "lucide-react";
@@ -410,7 +411,7 @@ export default function JuniorAttemptPage({ params }: PageProps) {
                   Question Palette:
                 </span>
                 <div
-                  className="flex flex-wrap items-center gap-1.5 sm:gap-2 w-full sm:w-auto"
+                  className="grid grid-cols-5 sm:flex sm:flex-wrap items-center gap-1.5 sm:gap-2 w-full sm:w-auto"
                   role="navigation"
                   aria-label="Question slots"
                 >
@@ -426,7 +427,7 @@ export default function JuniorAttemptPage({ params }: PageProps) {
                           isAnswered ? " (answered)" : " (unanswered)"
                         }`}
                         aria-current={isCurrent ? "step" : undefined}
-                        className={`w-7 h-7 sm:w-9 sm:h-9 text-[11px] sm:text-xs font-mono rounded-md transition-all cursor-pointer font-black flex items-center justify-center shrink-0 ${
+                        className={`w-full sm:w-9 h-8 sm:h-9 text-xs font-mono rounded-md transition-all cursor-pointer font-black flex items-center justify-center shrink-0 ${
                           isCurrent
                             ? "bg-emerald-400 text-black border-2 border-white shadow-[0_0_15px_rgba(52,211,153,0.8)] scale-105"
                             : isAnswered
@@ -451,6 +452,26 @@ export default function JuniorAttemptPage({ params }: PageProps) {
                   <span className="text-xs text-[#DDD4C5] font-semibold">Pending</span>
                 </div>
               </div>
+            </div>
+
+            {/* Scholar Desk Advisory: Physical Notebook & Pen */}
+            <div className="w-full bg-[#1C1713] border-2 border-[#8C735B]/80 rounded-xl p-3 sm:p-3.5 flex items-center justify-between gap-3 text-xs shadow-md">
+              <div className="flex items-center gap-2.5 min-w-0">
+                <div className="w-7 h-7 rounded-lg bg-amber-500/20 border border-amber-400/60 flex items-center justify-center text-amber-300 shrink-0">
+                  <PenTool className="w-4 h-4" />
+                </div>
+                <div className="min-w-0">
+                  <span className="text-amber-300 font-mono font-bold uppercase tracking-wider text-[10px] sm:text-xs block">
+                    Scholar Protocol · Have Notebook &amp; Pen Ready
+                  </span>
+                  <span className="text-[#DDD4C5] text-[11px] sm:text-xs leading-snug block">
+                    Solve on paper first — work out derivations, unit conversions, and algebraic calculations with your pen before selecting an option.
+                  </span>
+                </div>
+              </div>
+              <span className="hidden sm:inline-flex text-[10px] font-mono uppercase tracking-wider bg-[#2F241A] text-amber-200 border border-[#8C735B] px-2.5 py-1 rounded font-bold shrink-0">
+                Paper &amp; Pen
+              </span>
             </div>
 
             {/* Scholar Question Card */}

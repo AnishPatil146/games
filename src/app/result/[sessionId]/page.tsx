@@ -110,9 +110,9 @@ export default function ResultReportPage({ params }: PageProps) {
           }
           setErrorMsg(null);
         } else {
-          // If sessionId was 'current' and returned not found, try fallback to localLastSession
-          if (localLastSession && resolvedParams.sessionId === "current") {
-            fetch(`/api/result/${localLastSession}`)
+          // If sessionId was not resolved directly, gracefully fallback to /api/result/current
+          if (resolvedParams.sessionId !== "current") {
+            fetch(`/api/result/current`, { headers })
               .then((r) => r.json())
               .then((fallbackData) => {
                 if (fallbackData?.report && active) {
@@ -255,19 +255,30 @@ export default function ResultReportPage({ params }: PageProps) {
               Personal Investigation Archive
             </p>
             <h1 className="font-serif text-3xl sm:text-4xl text-[#1C1917] font-black">
-              Session Dossier Not Found
+              Synthesizing Investigation Dossier
             </h1>
             <p className="text-sm text-[#57524C] leading-relaxed">
               {errorMsg ||
-                "No completed gameplay session was found for this identifier. If you just concluded a session or reloaded, you can return to the Institute or start a fresh deduction run."}
+                "Your deduction monograph is being compiled. If you just concluded a session or reloaded, you can refresh your archive below or explore another investigation."}
             </p>
 
             <div className="pt-2 flex flex-wrap justify-center gap-3">
-              <Link href="/">
-                <Button size="md" variant="primary">Return to Hub</Button>
-              </Link>
+              <Button
+                size="md"
+                variant="primary"
+                onClick={() => {
+                  setIsLoading(true);
+                  setErrorMsg(null);
+                  window.location.href = "/result/current";
+                }}
+              >
+                Refresh Dossier
+              </Button>
               <Link href="/solo">
                 <Button size="md" variant="secondary">Solo Investigation</Button>
+              </Link>
+              <Link href="/">
+                <Button size="md" variant="secondary">Return to Hub</Button>
               </Link>
             </div>
 

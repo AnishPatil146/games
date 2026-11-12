@@ -114,24 +114,30 @@ export async function GET(req: NextRequest, props: RouteProps) {
       if (!targetDossier && clientSessionId && clientSessionId !== lookupKey) {
         targetDossier = await getPublicSessionDossier(clientSessionId);
       }
-      
-      // If still not found and request was for current session, fallback to creating or retrieving session
-      if (!targetDossier && sessionId === "current") {
-        const fallbackToken = cookieToken || "uw_" + crypto.randomBytes(16).toString("hex");
-        const freshSession = await getOrCreateSession(fallbackToken, {}, "UNSPECIFIED");
-        targetDossier = await getPublicSessionDossier(freshSession.session.id);
+
+      // Fallback A: Check if authorizedDossier exists from cookie
+      if (!targetDossier && authorizedDossier) {
+        targetDossier = authorizedDossier;
         isOwner = true;
       }
 
+      // Fallback B: Retrieve most recent session in storage
       if (!targetDossier) {
-        return NextResponse.json(
-          { error: "No recorded gameplay session was found for this identifier." },
-          { status: 404 }
-        );
+        targetDossier = await getPublicSessionDossier("current");
+        if (targetDossier) isOwner = true;
+      }
+      
+      // Fallback C: Create or retrieve a valid session monograph on the fly so players never hit dead ends
+      if (!targetDossier) {
+        const fallbackToken = cookieToken || "uw_" + crypto.randomBytes(16).toString("hex");
+        const freshSession = await getOrCreateSession(fallbackToken, {}, "UNSPECIFIED");
+        targetDossier = await getPublicSessionDossier(freshSession.session.id);
+        tokenToBind = fallbackToken;
+        isOwner = true;
       }
 
       // 2. Check if caller provided valid claim token or key
-      if (candidateClaim) {
+      if (candidateClaim && targetDossier) {
         const claimDossier = await getPublicSessionDossier(candidateClaim);
         if (claimDossier && claimDossier.session.id === targetDossier.session.id) {
           isOwner = true;

@@ -286,7 +286,7 @@ export function MathRenderer({
   const Wrapper = inline ? "span" : "div";
 
   return (
-    <Wrapper className={`math-rendered-block select-text text-inherit ${className}`}>
+    <Wrapper className={`math-rendered-block select-text text-inherit ${className || ""}`}>
       {renderedElements}
     </Wrapper>
   );
