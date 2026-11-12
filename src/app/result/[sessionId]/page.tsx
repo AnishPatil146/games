@@ -12,6 +12,7 @@ import {
   RotateCcw,
   Share2,
   Star,
+  Trophy,
 } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -409,6 +410,16 @@ export default function ResultReportPage({ params }: PageProps) {
                     </>
                   )}
                 </Button>
+                <Link href="/leaderboard?mode=senior_solo">
+                  <Button
+                    type="button"
+                    variant="secondary"
+                    size="sm"
+                  >
+                    <Trophy className="w-3.5 h-3.5 mr-1.5 text-amber-500" />
+                    Leaderboard
+                  </Button>
+                </Link>
                 <Button
                   type="button"
                   variant="primary"

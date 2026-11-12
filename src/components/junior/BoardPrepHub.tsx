@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import {
   BookOpen,
   ChevronRight,
@@ -10,6 +11,7 @@ import {
   Play,
   PenTool,
   Edit3,
+  Trophy,
 } from "lucide-react";
 import { AcademicStreamConfig, AcademicSubjectConfig, StreamSlug } from "@/lib/platform-types";
 
@@ -126,15 +128,26 @@ export function BoardPrepHub({
             </div>
           </div>
 
-          {/* Scholar Desk Advisory Ribbon: Notebook & Pen */}
-          <div className="pt-2 flex flex-wrap items-center gap-2 text-xs text-amber-200/90 font-mono">
-            <span className="px-2.5 py-0.5 rounded-sm bg-amber-500/20 border border-amber-400/60 text-amber-300 font-bold text-[10px] uppercase tracking-wider flex items-center gap-1.5 shadow-sm">
-              <PenTool className="w-3 h-3 text-amber-300" />
-              <span>Study Desk Rule</span>
-            </span>
-            <span className="text-[#DDD4C5] text-xs">
-              Take a physical notebook &amp; pen to work through numericals, formulas, and derivations.
-            </span>
+          {/* Scholar Desk Advisory Ribbon: Notebook & Pen & Leaderboard Link */}
+          <div className="pt-2 flex flex-wrap items-center justify-between gap-3 text-xs text-amber-200/90 font-mono">
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="px-2.5 py-0.5 rounded-sm bg-amber-500/20 border border-amber-400/60 text-amber-300 font-bold text-[10px] uppercase tracking-wider flex items-center gap-1.5 shadow-sm">
+                <PenTool className="w-3 h-3 text-amber-300" />
+                <span>Study Desk Rule</span>
+              </span>
+              <span className="text-[#DDD4C5] text-xs">
+                Take a physical notebook &amp; pen to work through numericals, formulas, and derivations.
+              </span>
+            </div>
+
+            <Link
+              href="/leaderboard?mode=junior_academy"
+              className="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-[#2D2319] hover:bg-[#3D3023] border border-amber-400/60 text-amber-300 font-mono text-xs font-bold transition-all shadow-sm shrink-0"
+            >
+              <Trophy className="w-3.5 h-3.5 text-amber-400" />
+              <span>Live Leaderboard</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse ml-0.5" />
+            </Link>
           </div>
         </div>
 

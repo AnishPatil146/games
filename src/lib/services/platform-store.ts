@@ -1271,7 +1271,7 @@ interface ResolvedUnifiedParticipant {
   juniorAttemptIds: string[];
 }
 
-async function buildUnifiedParticipantMap(): Promise<{
+export async function buildUnifiedParticipantMap(): Promise<{
   participants: Map<string, ResolvedUnifiedParticipant>;
   seniorDataset: Awaited<ReturnType<typeof loadRawAdminDataset>>;
   platformStore: PlatformPersistenceData;

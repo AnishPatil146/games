@@ -1,3 +1,5 @@
+import type { StreamSlug } from "./platform-types";
+
 export type CharacterPresentation = "HIM" | "HER" | "UNSPECIFIED";
 
 export type SessionStatus = "in_progress" | "completed" | "abandoned";
@@ -232,4 +234,47 @@ export interface ReviewStats {
   averageRating: number;
   ratingBreakdown: Record<number, number>;
   categoryBreakdown: Record<string, number>;
+}
+
+export type LeaderboardTier = "Grandmaster" | "Master" | "Scholar" | "Investigator" | "Adept";
+
+export interface LeaderboardEntry {
+  id: string;
+  rank: number;
+  callsign: string;
+  avatarSeed?: string;
+  tier: LeaderboardTier;
+  mode: "junior_academy" | "senior_solo" | "overall";
+  discipline: string;
+  stream?: StreamSlug;
+  score: number;
+  accuracyPct: number;
+  timeSeconds: number;
+  streak: number;
+  verified: boolean;
+  completedAt: string;
+  isLiveNow?: boolean;
+  liveCurrentQuestion?: number;
+}
+
+export interface LeaderboardLiveFeedItem {
+  id: string;
+  callsign: string;
+  action: string;
+  discipline: string;
+  accuracyPct?: number;
+  secondsAgo: number;
+  timestamp: string;
+}
+
+export interface LeaderboardSummary {
+  updatedAt: string;
+  tickerTimestamp: number;
+  activeSolversCount: number;
+  totalEvaluationsCount: number;
+  topStreak: number;
+  fastestTimeSeconds: number;
+  topPerformerName: string;
+  entries: LeaderboardEntry[];
+  liveFeed: LeaderboardLiveFeedItem[];
 }

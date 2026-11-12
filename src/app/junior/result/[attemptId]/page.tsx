@@ -15,6 +15,7 @@ import {
   RotateCcw,
   Share2,
   Star,
+  Trophy,
   XCircle,
 } from "lucide-react";
 import { Button } from "@/components/Button";
@@ -599,6 +600,15 @@ export default function JuniorResultPage({ params }: PageProps) {
                     className="w-full sm:w-auto justify-center bg-[#382D22] hover:bg-[#483B2D] text-white font-bold text-sm uppercase tracking-wider px-6 py-3.5 rounded-lg border-2 border-[#947A5F] hover:border-white shadow-md flex items-center gap-2 cursor-pointer transition-all active:scale-95"
                   >
                     Academy Entrance
+                  </button>
+                </Link>
+                <Link href="/leaderboard?mode=junior_academy" className="w-full sm:w-auto">
+                  <button
+                    type="button"
+                    className="w-full sm:w-auto justify-center bg-[#292017] hover:bg-[#382C20] text-amber-300 font-bold text-sm uppercase tracking-wider px-6 py-3.5 rounded-lg border-2 border-amber-500/60 hover:border-amber-400 shadow-md flex items-center gap-2 cursor-pointer transition-all active:scale-95"
+                  >
+                    <Trophy className="w-4 h-4 text-amber-400 shrink-0" />
+                    <span>View Leaderboard</span>
                   </button>
                 </Link>
                 <Link
