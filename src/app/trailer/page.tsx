@@ -374,6 +374,16 @@ export default function OfficialStoryLaunchPage() {
 
           {/* Minimal Controls */}
           <div className="flex items-center gap-1">
+            {/* Direct MP4 Download */}
+            <a
+              href="/video/the_unwritten_official_launch_story.mp4"
+              download="the_unwritten_official_launch_story.mp4"
+              className="p-2 text-white/80 hover:text-white transition-colors cursor-pointer"
+              title="Download 1080x1920 MP4 Video"
+            >
+              <Download className="w-4 h-4 text-[#C8B28E]" />
+            </a>
+
             {/* Audio Mute */}
             <button
               onClick={() => setIsMuted(!isMuted)}
@@ -522,9 +532,17 @@ export default function OfficialStoryLaunchPage() {
                 >
                   Enter the Game
                 </Link>
+                <a
+                  href="/video/the_unwritten_official_launch_story.mp4"
+                  download="the_unwritten_official_launch_story.mp4"
+                  className="w-full py-2.5 rounded-full border border-[#C8B28E]/40 bg-black/40 hover:bg-black/60 text-[#C8B28E] font-mono text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2 cursor-pointer"
+                >
+                  <Download className="w-3.5 h-3.5" />
+                  <span>Download MP4 Story</span>
+                </a>
                 <button
                   onClick={handleRestart}
-                  className="w-full py-2.5 rounded-full bg-white/10 hover:bg-white/20 text-[#FAF7F2] font-mono text-xs uppercase tracking-wider transition-all cursor-pointer"
+                  className="w-full py-2 rounded-full bg-white/10 hover:bg-white/20 text-[#FAF7F2] font-mono text-xs uppercase tracking-wider transition-all cursor-pointer"
                 >
                   Replay Story
                 </button>
