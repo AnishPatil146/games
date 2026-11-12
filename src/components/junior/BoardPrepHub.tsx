@@ -78,8 +78,8 @@ export function BoardPrepHub({
                 type="button"
                 onClick={() => onClassChange(10)}
                 className={`px-3 sm:px-4 py-1.5 text-xs font-mono uppercase tracking-wider rounded-sm transition-all cursor-pointer ${selectedClass === 10
-                    ? "bg-[#2A241E] text-[#FAF7F2] font-bold shadow-sm"
-                    : "text-[#8A8178] hover:text-[#FAF7F2]"
+                  ? "bg-[#2A241E] text-[#FAF7F2] font-bold shadow-sm"
+                  : "text-[#8A8178] hover:text-[#FAF7F2]"
                   }`}
               >
                 Class 10 (SSC/CBSE)
@@ -88,8 +88,8 @@ export function BoardPrepHub({
                 type="button"
                 onClick={() => onClassChange(11)}
                 className={`px-3 sm:px-4 py-1.5 text-xs font-mono uppercase tracking-wider rounded-sm transition-all cursor-pointer ${selectedClass === 11
-                    ? "bg-[#2A241E] text-[#FAF7F2] font-bold shadow-sm"
-                    : "text-[#8A8178] hover:text-[#FAF7F2]"
+                  ? "bg-[#2A241E] text-[#FAF7F2] font-bold shadow-sm"
+                  : "text-[#8A8178] hover:text-[#FAF7F2]"
                   }`}
               >
                 Class 11 (FYJC)
@@ -98,8 +98,8 @@ export function BoardPrepHub({
                 type="button"
                 onClick={() => onClassChange(12)}
                 className={`px-3 sm:px-4 py-1.5 text-xs font-mono uppercase tracking-wider rounded-sm transition-all cursor-pointer ${selectedClass === 12
-                    ? "bg-[#2A241E] text-[#FAF7F2] font-bold shadow-sm"
-                    : "text-[#8A8178] hover:text-[#FAF7F2]"
+                  ? "bg-[#2A241E] text-[#FAF7F2] font-bold shadow-sm"
+                  : "text-[#8A8178] hover:text-[#FAF7F2]"
                   }`}
               >
                 Class 12 (HSC)
@@ -114,8 +114,8 @@ export function BoardPrepHub({
                   type="button"
                   onClick={() => onStreamChange(st.slug)}
                   className={`px-3 py-1.5 text-xs font-mono uppercase tracking-wider rounded-sm transition-colors cursor-pointer ${selectedStream === st.slug
-                      ? "bg-[#8FA184]/20 border border-[#8FA184] text-[#FAF7F2] font-bold"
-                      : "bg-[#12100E] border border-[#2E2822] text-[#A89F93] hover:text-[#FAF7F2]"
+                    ? "bg-[#8FA184]/20 border border-[#8FA184] text-[#FAF7F2] font-bold"
+                    : "bg-[#12100E] border border-[#2E2822] text-[#A89F93] hover:text-[#FAF7F2]"
                     }`}
                 >
                   {st.name}
@@ -147,8 +147,8 @@ export function BoardPrepHub({
                   key={subj.slug}
                   onClick={() => setActiveSubjectSlug(subj.slug)}
                   className={`p-4 rounded-sm border transition-all cursor-pointer ${isSelected
-                      ? "bg-[#1B1814] border-[#8FA184] text-[#FAF7F2] shadow-md"
-                      : "bg-[#FAF7F2] border-[#DDD4C5] text-[#1C1917] hover:bg-[#F3EDE2]"
+                    ? "bg-[#1B1814] border-[#8FA184] text-[#FAF7F2] shadow-md"
+                    : "bg-[#FAF7F2] border-[#DDD4C5] text-[#1C1917] hover:bg-[#F3EDE2]"
                     }`}
                 >
                   <div className="flex items-start justify-between gap-2">
