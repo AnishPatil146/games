@@ -79,7 +79,7 @@ export function PlayerReviewsSection() {
 
         {/* Aggregate Score & Action */}
         <div className="flex flex-wrap items-center gap-4">
-          {stats && (
+          {stats && stats.totalReviews > 0 ? (
             <div className="px-5 py-3 rounded-xl bg-[#221A14] border-2 border-[#544333] flex items-center gap-3.5 shadow-xl">
               <div className="text-center">
                 <span className="font-serif text-3xl font-black text-amber-300 leading-none">
@@ -103,6 +103,10 @@ export function PlayerReviewsSection() {
                   {stats.totalReviews} Verified Review{stats.totalReviews === 1 ? "" : "s"}
                 </span>
               </div>
+            </div>
+          ) : (
+            <div className="px-4 py-2.5 rounded-xl bg-[#221A14] border border-[#544333] text-xs font-mono text-amber-200">
+              Awaiting First Community Dispatches
             </div>
           )}
 

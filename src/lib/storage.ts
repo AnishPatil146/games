@@ -32,92 +32,6 @@ interface LocalStoreData {
   reviews: PlayerReview[];
 }
 
-export const DEFAULT_INITIAL_REVIEWS: PlayerReview[] = [
-  {
-    id: "rev_seed_001",
-    playerId: "seed_player_01",
-    playerName: "Arjun Deshmukh",
-    instagramId: "arjun.deshmukh",
-    rating: 5,
-    title: "Chamber 5's spatial labyrinth was pure brilliance",
-    feedback:
-      "Navigating the mirror maze as Aarav alone without hand-holding created real deductive tension. You actually have to pay attention to your steps and memory traces. The moral choice at the end stayed with me for days.",
-    category: "solo",
-    modePlayed: "senior",
-    featured: true,
-    status: "approved",
-    adminResponse:
-      "Honored to hear Chamber 5 resonated with you, Arjun! The spatial labyrinth was designed to reward deliberate observation over hurried guesswork.",
-    createdAt: "2026-11-08T14:32:00.000Z",
-  },
-  {
-    id: "rev_seed_002",
-    playerId: "seed_player_02",
-    playerName: "Dr. Priya Nair",
-    instagramId: "priya_academic",
-    rating: 5,
-    title: "Exceptional mathematical typesetting & derivation proofs",
-    feedback:
-      "As an educator, seeing the full step-by-step substitution formulas and pedagogical proof in the evaluation monograph is remarkable. The LaTeX rendering of Newton's cooling law and electron drift velocity is crystal clear.",
-    category: "junior",
-    modePlayed: "junior",
-    featured: true,
-    status: "approved",
-    adminResponse:
-      "Thank you, Dr. Nair! Our goal with The Academy was to treat students like genuine scholars with uncompromising rigor.",
-    createdAt: "2026-11-09T09:15:00.000Z",
-  },
-  {
-    id: "rev_seed_003",
-    playerId: "seed_player_03",
-    playerName: "Vikram Kulkarni",
-    instagramId: "vikram.kulkarni",
-    rating: 5,
-    title: "The narrative atmosphere is in a league of its own",
-    feedback:
-      "The aesthetic of classical museum parchment paired with dystopian surveillance and ambient lighting is breathtaking. The four philosophical codices actually reflect how you reasoned throughout the game.",
-    category: "story",
-    modePlayed: "both",
-    featured: true,
-    status: "approved",
-    adminResponse: null,
-    createdAt: "2026-11-10T18:40:00.000Z",
-  },
-  {
-    id: "rev_seed_004",
-    playerId: "seed_player_04",
-    playerName: "Devika Sharma",
-    instagramId: "devika_designs",
-    rating: 5,
-    title: "Tactile puzzles and seamless responsive design",
-    feedback:
-      "Played both on desktop and on mobile through Instagram. The question interface and logic keypad dials are super responsive, with zero clutter. A true masterclass in atmosphere and UI craft.",
-    category: "puzzles",
-    modePlayed: "both",
-    featured: false,
-    status: "approved",
-    adminResponse: null,
-    createdAt: "2026-11-11T11:20:00.000Z",
-  },
-  {
-    id: "rev_seed_005",
-    playerId: "seed_player_05",
-    playerName: "Rohan Mehta",
-    instagramId: "rohan.mehta",
-    rating: 5,
-    title: "My favourite indie game discovery this year",
-    feedback:
-      "Started out curious about the creator's intro and ended up playing through the entire campaign in one sitting. Cannot wait for future expansions and chambers!",
-    category: "general",
-    modePlayed: "senior",
-    featured: false,
-    status: "approved",
-    adminResponse:
-      "Means the world to me, Rohan! Thank you for walking this journey with me from day one.",
-    createdAt: "2026-11-11T20:05:00.000Z",
-  },
-];
-
 const DEFAULT_LOCAL_STORE_PATH = path.join(
   /* turbopackIgnore: true */ process.cwd(),
   ".data",
@@ -152,7 +66,7 @@ let memoryStore: LocalStoreData = {
   events: [],
   preferences: [],
   deletionRequests: [],
-  reviews: [...DEFAULT_INITIAL_REVIEWS],
+  reviews: [],
 };
 
 function readLocalStore(): LocalStoreData {
@@ -169,9 +83,9 @@ function readLocalStore(): LocalStoreData {
         deletionRequests: Array.isArray(parsed.deletionRequests)
           ? parsed.deletionRequests
           : [],
-        reviews: Array.isArray(parsed.reviews) && parsed.reviews.length > 0
-          ? parsed.reviews
-          : [...DEFAULT_INITIAL_REVIEWS],
+        reviews: Array.isArray(parsed.reviews)
+          ? parsed.reviews.filter((r) => !r.id?.startsWith("rev_seed_"))
+          : [],
       };
     }
   } catch {
@@ -1426,7 +1340,7 @@ function calculateReviewStats(reviews: PlayerReview[]): ReviewStats {
     categoryBreakdown[cat] = (categoryBreakdown[cat] || 0) + 1;
   }
 
-  const averageRating = totalReviews > 0 ? Number((sum / totalReviews).toFixed(1)) : 5.0;
+  const averageRating = totalReviews > 0 ? Number((sum / totalReviews).toFixed(1)) : 0;
 
   return {
     totalReviews,

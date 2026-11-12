@@ -420,8 +420,8 @@ export default function AdminExecutiveDashboardPage() {
                   Mean Star Rating
                 </span>
                 <span className="font-serif text-2xl font-bold text-amber-800 flex items-center gap-1">
-                  {reviewsSummary.averageRating.toFixed(1)}
-                  <Star className="w-4 h-4 fill-amber-500 text-amber-500" />
+                  {reviewsSummary.totalAll > 0 ? reviewsSummary.averageRating.toFixed(1) : "—"}
+                  {reviewsSummary.totalAll > 0 && <Star className="w-4 h-4 fill-amber-500 text-amber-500" />}
                 </span>
               </div>
               <div className="p-3 bg-[#F3EDE2] rounded-sm">
@@ -437,12 +437,12 @@ export default function AdminExecutiveDashboardPage() {
                   Sentiment Health
                 </span>
                 <span className="font-serif text-2xl font-bold text-emerald-800">
-                  98% Positive
+                  {reviewsSummary.totalAll > 0 ? "Active Feedback" : "Awaiting Reviews"}
                 </span>
               </div>
             </div>
 
-            {reviewsSummary.recentReviews.length > 0 && (
+            {reviewsSummary.recentReviews.length > 0 ? (
               <div className="space-y-2 pt-2">
                 <span className="text-[10px] font-mono uppercase tracking-wider text-[#8A8178] font-bold block">
                   Recent Player Field Notes
@@ -473,6 +473,10 @@ export default function AdminExecutiveDashboardPage() {
                     </div>
                   ))}
                 </div>
+              </div>
+            ) : (
+              <div className="py-4 text-center text-xs text-[#8A8178] font-mono bg-[#F3EDE2]/50 rounded-sm">
+                No player reviews submitted yet. When players submit reviews, they will appear here.
               </div>
             )}
           </div>
