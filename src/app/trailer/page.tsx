@@ -541,18 +541,18 @@ export default function CinematicLaunchTrailerPage() {
         {/* ===================================================== */}
         {isScene1 && (
           <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
-            {/* The Warden standing in distance under the archway */}
+            {/* The Warden standing in distance under the archway - motionless, imposing, monolithic */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.3, y: 15 }}
+              initial={{ opacity: 0, scale: 0.32, y: 8 }}
               animate={{
                 opacity: 1,
-                scale: [0.32, 0.33, 0.32],
-                y: [0, -2, 0],
+                scale: 0.33,
+                y: 0,
               }}
               transition={{
-                opacity: { duration: 1.5, ease: "easeOut" },
-                scale: { duration: 4.5, repeat: Infinity, ease: "easeInOut" },
-                y: { duration: 4.5, repeat: Infinity, ease: "easeInOut" },
+                opacity: { duration: 1.8, ease: "easeOut" },
+                scale: { duration: 5.0, ease: "linear" },
+                y: { duration: 1.8, ease: "easeOut" },
               }}
               className={`absolute flex flex-col items-center filter contrast-150 drop-shadow-[0_15px_30px_rgba(0,0,0,0.95)] ${
                 isVerticalEffective
@@ -573,21 +573,10 @@ export default function CinematicLaunchTrailerPage() {
                   className="object-contain object-bottom select-none brightness-[0.25]"
                 />
 
-                {/* Distinct Silver Moonlight Catching His Mask */}
-                <motion.div
-                  animate={{
-                    opacity: [0.3, 0.95, 0.45, 0.9, 0.3],
-                    scale: [0.95, 1.05, 1],
-                  }}
-                  transition={{
-                    duration: 3.2,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                  }}
-                  className="absolute top-[8%] left-[28%] w-[44%] h-[18%] bg-gradient-to-r from-transparent via-[#E2E8F0] to-transparent rounded-full blur-[2px] mix-blend-screen pointer-events-none"
-                />
+                {/* Subtle Silver Moonlight Glint on Mask */}
+                <div className="absolute top-[8%] left-[28%] w-[44%] h-[18%] bg-gradient-to-r from-transparent via-[#E2E8F0]/70 to-transparent rounded-full blur-[2px] mix-blend-screen pointer-events-none" />
 
-                {/* Subtle silver moonlight edge highlight on coat shoulder */}
+                {/* Silver moonlight edge highlight on coat shoulder */}
                 <div className="absolute top-[18%] left-[20%] w-[60%] h-[35%] border-t border-l border-white/40 rounded-tl-full blur-[1px] pointer-events-none mix-blend-screen" />
               </div>
 
@@ -597,9 +586,9 @@ export default function CinematicLaunchTrailerPage() {
 
             {/* Scene 1 Grand Centered Typography */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: currentTime > 1.2 ? 1 : 0, y: 0 }}
-              transition={{ duration: 0.9, ease: "easeOut" }}
+              transition={{ duration: 1.0, ease: "easeOut" }}
               className={`absolute inset-x-0 flex flex-col items-center justify-center text-center px-4 ${
                 isVerticalEffective ? "top-[16%]" : "top-[18%] sm:top-[20%]"
               }`}
@@ -620,26 +609,21 @@ export default function CinematicLaunchTrailerPage() {
         {(isScene2 || isScene3 || isScene5) && (
           <motion.div
             key="warden-stage-character"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0 }}
             animate={{
               opacity: 1,
-              // Scene 3 Natural Step Bobbing (Footsteps at 11.5s, 12.3s, 13.1s)
-              y: isScene3
-                ? [0, -10, 0, -11, 0, -12, 0]
-                : isScene2 && scene2Progress < 0.25
-                ? [6, 0] // Smooth head raise on Scene 2 entry
-                : 0,
-              x: isScene3 ? [0, -3, 0, 3, 0, -1, 0] : 0, // Natural lateral stride weight-shift
-              // Camera & character push-in progression
+              // Smooth, rock-solid scale push-in without hopping or bouncing
               scale: isScene5
-                ? 1.18 + scene5Progress * 0.12 // Medium close-up push-in on mask
+                ? 1.15 + scene5Progress * 0.10 // Steady, intense cinematic push-in on mask
                 : isScene3
-                ? 1.0 + scene3Progress * 0.16 // Natural stride forward toward player
-                : 1.02,
+                ? 1.0 + scene3Progress * 0.12  // Deliberate, smooth advance into the light
+                : 1.0,                         // Steady medium shot in Scene 2
+              y: 0,
+              x: 0,
             }}
             transition={{
-              duration: isScene3 ? 5.5 : isScene5 ? 6.5 : 0.7,
-              ease: isScene3 ? "easeInOut" : "easeOut",
+              duration: isScene3 ? 6.0 : isScene5 ? 7.0 : 0.8,
+              ease: "linear",
             }}
             className="relative bottom-0 flex flex-col items-center select-none"
             style={{
@@ -648,36 +632,24 @@ export default function CinematicLaunchTrailerPage() {
               maxHeight: isVerticalEffective ? "540px" : "600px",
             }}
           >
-            {/* Dynamic Ground Shadow (Expands forward in Scene 3) */}
+            {/* Dynamic Ground Shadow (Smoothly widens with scale) */}
             <motion.div
               animate={{
-                scaleX: isScene3 ? [1, 1.15, 1.28, 1.38] : isScene5 ? 1.3 : 1.0,
-                scaleY: isScene3 ? [1, 1.1, 1.2] : 1.0,
-                opacity: isScene3 ? [0.65, 0.75, 0.85] : 0.7,
+                scaleX: isScene3 ? 1.0 + scene3Progress * 0.18 : isScene5 ? 1.25 : 1.0,
+                opacity: 0.75,
               }}
-              transition={{ duration: 5, ease: "easeOut" }}
+              transition={{ duration: 0.5, ease: "linear" }}
               className="absolute -bottom-3 sm:-bottom-4 w-60 sm:w-80 md:w-96 h-8 sm:h-10 bg-black/80 rounded-full blur-xl"
             />
 
-            {/* Character Idle Breathing, Head Lift, and Gesture Motion */}
+            {/* Controlled Micro-Breathing (imperceptible, realistic, zero rubber squishing) */}
             <motion.div
               animate={{
-                // Subtle breathing cycle (chest expansion/contraction)
-                y: isScene2 ? [0, -5, 0] : isScene5 ? [0, -4, 0] : [0, -4, 0],
-                scaleY: [1, 1.014, 1],
-                // Scene 2 Head Raise & Turn establishing direct eye contact
-                rotate:
-                  isScene2 && scene2Progress < 0.3
-                    ? [-1.8, 0]
-                    : isScene5
-                    ? [0, 0.8, -0.6, 0] // Inviting gesture tilt
-                    : isScene2
-                    ? [0, 0.6, 0]
-                    : [0, -0.4, 0],
+                y: [0, -2, 0],
               }}
               transition={{
                 repeat: Infinity,
-                duration: isScene5 ? 4.8 : 3.8,
+                duration: 5.5,
                 ease: "easeInOut",
               }}
               className="relative w-full h-full filter drop-shadow-[0_18px_40px_rgba(0,0,0,0.92)] brightness-105"
@@ -691,18 +663,18 @@ export default function CinematicLaunchTrailerPage() {
                 className="object-contain object-bottom select-none"
               />
 
-              {/* Scene 2: Eye Contact Gleam across Mask */}
-              {isScene2 && scene2Progress >= 0.08 && scene2Progress <= 0.45 && (
+              {/* Scene 2: Controlled Eye Contact Gleam across Mask */}
+              {isScene2 && scene2Progress >= 0.08 && scene2Progress <= 0.40 && (
                 <motion.div
-                  initial={{ opacity: 0, scaleX: 0 }}
-                  animate={{ opacity: [0, 1, 0.8, 0], scaleX: [0, 1.1, 1, 0] }}
-                  transition={{ duration: 1.4, ease: "easeOut" }}
-                  className="absolute top-[18%] left-[34%] w-[32%] h-[6%] bg-gradient-to-r from-transparent via-red-500/90 to-transparent blur-[1.5px] mix-blend-screen pointer-events-none"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: [0, 0.9, 0] }}
+                  transition={{ duration: 1.5, ease: "easeInOut" }}
+                  className="absolute top-[18%] left-[34%] w-[32%] h-[6%] bg-gradient-to-r from-transparent via-red-500/80 to-transparent blur-[1.5px] mix-blend-screen pointer-events-none"
                 />
               )}
 
               {/* Dramatic Rim Light Highlight (Crimson & Silver) */}
-              <div className="absolute inset-0 bg-gradient-to-r from-white/15 via-transparent to-red-600/20 mix-blend-overlay pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-r from-white/12 via-transparent to-red-600/18 mix-blend-overlay pointer-events-none" />
 
               {/* Scene 3: Gate Light Reflections on Back and Shoulders */}
               {isScene3 && (
@@ -721,18 +693,17 @@ export default function CinematicLaunchTrailerPage() {
         {/* ===================================================== */}
         {isScene4 && (
           <div className="relative w-full h-full flex flex-col md:flex-row items-center justify-center md:justify-around px-4 sm:px-8 select-none pointer-events-none">
-            {/* The Warden standing proudly before the unsealed portal, gesturing */}
+            {/* The Warden standing proudly and solidly before the unsealed portal */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.95, y: 15 }}
+              initial={{ opacity: 0, scale: 0.98 }}
               animate={{
                 opacity: 1,
-                scale: 1.05,
-                y: [0, -4, 0],
+                scale: 1.0,
+                y: 0,
               }}
               transition={{
-                opacity: { duration: 0.6 },
-                scale: { duration: 0.6 },
-                y: { repeat: Infinity, duration: 4.0, ease: "easeInOut" },
+                opacity: { duration: 0.7, ease: "easeOut" },
+                scale: { duration: 0.7, ease: "easeOut" },
               }}
               className={`relative z-20 flex flex-col items-center select-none ${
                 isVerticalEffective
@@ -760,7 +731,7 @@ export default function CinematicLaunchTrailerPage() {
 
             {/* Glowing Unsealed Portal Emblem & Grand Reveal Typography */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.85 }}
+              initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.7, ease: "easeOut" }}
               className={`relative z-10 flex flex-col items-center justify-center text-center p-2 sm:p-4 ${
@@ -772,16 +743,8 @@ export default function CinematicLaunchTrailerPage() {
               {/* Pulsing Portal Energy Halo behind Emblem */}
               <div className="absolute w-44 h-44 sm:w-64 sm:h-64 rounded-full bg-red-600/25 blur-3xl animate-pulse pointer-events-none" />
 
-              {/* Official Rotating Silence Emblem */}
-              <motion.div
-                animate={{
-                  rotate: [0, 360],
-                }}
-                transition={{
-                  duration: 60,
-                  repeat: Infinity,
-                  ease: "linear",
-                }}
+              {/* Official Silence Emblem - Majestic, rock-solid, radiant */}
+              <div
                 className={`relative mb-3 sm:mb-5 filter drop-shadow-[0_0_45px_rgba(220,38,38,0.85)] ${
                   isVerticalEffective
                     ? "w-24 h-24 sm:w-32 sm:h-32"
@@ -795,7 +758,7 @@ export default function CinematicLaunchTrailerPage() {
                   priority
                   className="object-contain"
                 />
-              </motion.div>
+              </div>
 
               {/* Grand Title Typography */}
               <motion.h2
