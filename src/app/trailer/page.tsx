@@ -1,50 +1,115 @@
 "use client";
 
-import React, { useEffect, useRef, useState, useCallback } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
+import Image from "next/image";
 import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
 import {
-  ArrowLeft,
+  Volume2,
+  VolumeX,
   Play,
   Pause,
   RotateCcw,
-  Volume2,
-  VolumeX,
   Download,
+  Smartphone,
+  Maximize2,
   Sparkles,
-  Check,
-  Video,
+  ChevronRight,
+  ArrowLeft,
 } from "lucide-react";
 
-export default function LaunchTrailerPage() {
-  const canvasRef = useRef<HTMLCanvasElement | null>(null);
+type SceneIndex = 0 | 1 | 2 | 3 | 4;
+
+interface SceneConfig {
+  id: SceneIndex;
+  title: string;
+  startTime: number;
+  endTime: number;
+  bgImage: string;
+  speaker: string;
+  dialogue: string;
+  expression: "neutral" | "speaking" | "amused";
+}
+
+const SCENES: SceneConfig[] = [
+  {
+    id: 0,
+    title: "Scene 1 — The Arrival",
+    startTime: 0,
+    endTime: 5.0,
+    bgImage: "/art/environments/warden_gate_wide.jpg",
+    speaker: "NARRATOR",
+    dialogue: "THE WAIT IS OVER.",
+    expression: "neutral",
+  },
+  {
+    id: 1,
+    title: "Scene 2 — The Warden Speaks",
+    startTime: 5.0,
+    endTime: 11.0,
+    bgImage: "/art/environments/warden_gate_wide.jpg",
+    speaker: "THE WARDEN",
+    dialogue: "Hello, everyone. My name is The Warden.",
+    expression: "speaking",
+  },
+  {
+    id: 2,
+    title: "Scene 3 — The Announcement",
+    startTime: 11.0,
+    endTime: 17.0,
+    bgImage: "/art/environments/warden_gate_opening.jpg",
+    speaker: "THE WARDEN",
+    dialogue: "Finally... the wait is over.",
+    expression: "speaking",
+  },
+  {
+    id: 3,
+    title: "Scene 4 — The Game Reveal",
+    startTime: 17.0,
+    endTime: 23.0,
+    bgImage: "/art/environments/warden_gate_opening.jpg",
+    speaker: "THE WARDEN",
+    dialogue: "THE UNWRITTEN is officially LIVE!",
+    expression: "amused",
+  },
+  {
+    id: 4,
+    title: "Scene 5 — The Invitation",
+    startTime: 23.0,
+    endTime: 30.0,
+    bgImage: "/art/environments/warden_gate_opening.jpg",
+    speaker: "THE WARDEN",
+    dialogue:
+      "Go check it out, experience the game, and don't forget to leave your honest review. I want to know what you think. I'll see you inside.",
+    expression: "speaking",
+  },
+];
+
+const TOTAL_DURATION = 30.0;
+
+export default function CinematicLaunchTrailerPage() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [isMuted, setIsMuted] = useState(false);
-  const [showSubtitles, setShowSubtitles] = useState(true);
+  const [isVerticalMode, setIsVerticalMode] = useState(false); // Toggle 9:16 Reel vs Full Cinematic
+  const [hasStarted, setHasStarted] = useState(false);
+  const [displayedText, setDisplayedText] = useState("");
   const [isRecording, setIsRecording] = useState(false);
   const [recordProgress, setRecordProgress] = useState(0);
-  const [hasRecorded, setHasRecorded] = useState(false);
-
-  const animFrameRef = useRef<number | null>(null);
-  const lastTimestampRef = useRef<number | null>(null);
-  const wardenImgRef = useRef<HTMLImageElement | null>(null);
-  const emblemImgRef = useRef<HTMLImageElement | null>(null);
 
   // Audio Context and Synth References
   const audioCtxRef = useRef<AudioContext | null>(null);
   const masterGainRef = useRef<GainNode | null>(null);
   const spokenFlagsRef = useRef<Record<string, boolean>>({});
 
-  // Load Image Assets from public directory
-  useEffect(() => {
-    const wImg = new Image();
-    wImg.src = "/art/characters/warden_official_launch.jpg";
-    wardenImgRef.current = wImg;
+  // Canvas ref for video export capture
+  const exportCanvasRef = useRef<HTMLCanvasElement | null>(null);
 
-    const eImg = new Image();
-    eImg.src = "/brand/emblem-silence.png";
-    emblemImgRef.current = eImg;
-  }, []);
+  // Determine current active scene
+  const currentScene: SceneConfig =
+    SCENES.find(
+      (s) => currentTime >= s.startTime && currentTime < s.endTime
+    ) || SCENES[SCENES.length - 1];
 
   // Web Audio Initializer
   const initAudio = useCallback(() => {
@@ -66,23 +131,20 @@ export default function LaunchTrailerPage() {
     }
   }, [isMuted]);
 
-  // Sound FX Triggers
+  // Procedural Sound FX
   const playHeartbeat = useCallback(
-    (timeOffset = 0) => {
+    (offset = 0) => {
       if (!audioCtxRef.current || !masterGainRef.current || isMuted) return;
       const ctx = audioCtxRef.current;
-      const t = ctx.currentTime + timeOffset;
-
+      const t = ctx.currentTime + offset;
       const osc = ctx.createOscillator();
       const gain = ctx.createGain();
       osc.type = "sine";
       osc.frequency.setValueAtTime(80, t);
       osc.frequency.exponentialRampToValueAtTime(32, t + 0.18);
-
       gain.gain.setValueAtTime(0.001, t);
-      gain.gain.linearRampToValueAtTime(0.7, t + 0.03);
+      gain.gain.linearRampToValueAtTime(0.65, t + 0.03);
       gain.gain.exponentialRampToValueAtTime(0.001, t + 0.22);
-
       osc.connect(gain);
       gain.connect(masterGainRef.current);
       osc.start(t);
@@ -95,100 +157,210 @@ export default function LaunchTrailerPage() {
     if (!audioCtxRef.current || !masterGainRef.current || isMuted) return;
     const ctx = audioCtxRef.current;
     const t = ctx.currentTime;
-    const duration = 3.5;
-
-    const bufferSize = ctx.sampleRate * duration;
+    const dur = 4.0;
+    const bufferSize = ctx.sampleRate * dur;
     const buffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
     const data = buffer.getChannelData(0);
     for (let i = 0; i < bufferSize; i++) {
-      data[i] = (Math.random() * 2 - 1) * 0.35;
+      data[i] = (Math.random() * 2 - 1) * 0.4;
     }
     const noise = ctx.createBufferSource();
     noise.buffer = buffer;
-
     const filter = ctx.createBiquadFilter();
     filter.type = "lowpass";
-    filter.frequency.setValueAtTime(65, t);
-    filter.frequency.linearRampToValueAtTime(140, t + 1.8);
-    filter.frequency.linearRampToValueAtTime(50, t + duration);
+    filter.frequency.setValueAtTime(140, t);
+    filter.frequency.exponentialRampToValueAtTime(45, t + dur);
 
     const gain = ctx.createGain();
-    gain.gain.setValueAtTime(0.001, t);
-    gain.gain.linearRampToValueAtTime(0.5, t + 0.6);
-    gain.gain.linearRampToValueAtTime(0.001, t + duration);
+    gain.gain.setValueAtTime(0.01, t);
+    gain.gain.linearRampToValueAtTime(0.6, t + 0.5);
+    gain.gain.exponentialRampToValueAtTime(0.001, t + dur);
 
     noise.connect(filter);
     filter.connect(gain);
     gain.connect(masterGainRef.current);
     noise.start(t);
-    noise.stop(t + duration);
+    noise.stop(t + dur);
   }, [isMuted]);
 
   const playImpactBoom = useCallback(() => {
     if (!audioCtxRef.current || !masterGainRef.current || isMuted) return;
     const ctx = audioCtxRef.current;
     const t = ctx.currentTime;
-
     const osc = ctx.createOscillator();
     const gain = ctx.createGain();
-    osc.type = "sine";
+    osc.type = "triangle";
     osc.frequency.setValueAtTime(110, t);
     osc.frequency.exponentialRampToValueAtTime(26, t + 1.2);
-
-    gain.gain.setValueAtTime(0.9, t);
-    gain.gain.exponentialRampToValueAtTime(0.001, t + 2.2);
-
+    gain.gain.setValueAtTime(0.85, t);
+    gain.gain.exponentialRampToValueAtTime(0.001, t + 2.0);
     osc.connect(gain);
     gain.connect(masterGainRef.current);
     osc.start(t);
-    osc.stop(t + 2.3);
-
-    const shimmer = ctx.createOscillator();
-    const shimmerGain = ctx.createGain();
-    shimmer.type = "triangle";
-    shimmer.frequency.setValueAtTime(440, t);
-    shimmer.frequency.exponentialRampToValueAtTime(120, t + 0.8);
-    shimmerGain.gain.setValueAtTime(0.2, t);
-    shimmerGain.gain.exponentialRampToValueAtTime(0.001, t + 0.9);
-    shimmer.connect(shimmerGain);
-    shimmerGain.connect(masterGainRef.current);
-    shimmer.start(t);
-    shimmer.stop(t + 1.0);
+    osc.stop(t + 2.1);
   }, [isMuted]);
 
+  const playRiser = useCallback(() => {
+    if (!audioCtxRef.current || !masterGainRef.current || isMuted) return;
+    const ctx = audioCtxRef.current;
+    const t = ctx.currentTime;
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.type = "sawtooth";
+    osc.frequency.setValueAtTime(70, t);
+    osc.frequency.exponentialRampToValueAtTime(420, t + 2.5);
+    gain.gain.setValueAtTime(0.01, t);
+    gain.gain.linearRampToValueAtTime(0.28, t + 2.2);
+    gain.gain.exponentialRampToValueAtTime(0.001, t + 2.6);
+    osc.connect(gain);
+    gain.connect(masterGainRef.current);
+    osc.start(t);
+    osc.stop(t + 2.6);
+  }, [isMuted]);
+
+  const playFootstep = useCallback(() => {
+    if (!audioCtxRef.current || !masterGainRef.current || isMuted) return;
+    const ctx = audioCtxRef.current;
+    const t = ctx.currentTime;
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.type = "sine";
+    osc.frequency.setValueAtTime(120, t);
+    osc.frequency.exponentialRampToValueAtTime(45, t + 0.12);
+    gain.gain.setValueAtTime(0.25, t);
+    gain.gain.exponentialRampToValueAtTime(0.001, t + 0.14);
+    osc.connect(gain);
+    gain.connect(masterGainRef.current);
+    osc.start(t);
+    osc.stop(t + 0.15);
+  }, [isMuted]);
+
+  // Web Speech Baritone Voice Synthesis
   const speakDialogue = useCallback(
     (text: string) => {
-      if (
-        typeof window === "undefined" ||
-        !("speechSynthesis" in window) ||
-        isMuted
-      )
-        return;
-      try {
-        window.speechSynthesis.cancel();
-        const u = new SpeechSynthesisUtterance(text);
-        u.rate = 0.88;
-        u.pitch = 0.65;
-        const voices = window.speechSynthesis.getVoices();
-        const deepVoice =
-          voices.find(
-            (v) =>
-              v.lang.startsWith("en") &&
-              (v.name.toLowerCase().includes("male") ||
-                v.name.toLowerCase().includes("david") ||
-                v.name.toLowerCase().includes("daniel") ||
-                v.name.toLowerCase().includes("george"))
-          ) || voices.find((v) => v.lang.startsWith("en"));
-        if (deepVoice) u.voice = deepVoice;
-        window.speechSynthesis.speak(u);
-      } catch {
-        // Ignore speech synthesis failures in restricted browsers
-      }
+      if (isMuted || !("speechSynthesis" in window)) return;
+      window.speechSynthesis.cancel();
+      const u = new SpeechSynthesisUtterance(text);
+      u.rate = 0.88;
+      u.pitch = 0.72; // Deep, calm, mysterious host tone
+      const voices = window.speechSynthesis.getVoices();
+      const deepVoice = voices.find(
+        (v) =>
+          v.lang.startsWith("en") &&
+          (v.name.includes("Male") ||
+            v.name.includes("David") ||
+            v.name.includes("George") ||
+            v.name.includes("Daniel") ||
+            v.name.includes("Guy"))
+      );
+      if (deepVoice) u.voice = deepVoice;
+      window.speechSynthesis.speak(u);
     },
     [isMuted]
   );
 
-  // Audio mute sync
+  // Typewriter effect synced to active dialogue
+  useEffect(() => {
+    if (currentScene.id === 0) {
+      // Scene 1: Handled by centered cinematic typography
+      setDisplayedText("");
+      return;
+    }
+    const fullText = currentScene.dialogue;
+    let idx = 0;
+    setDisplayedText("");
+    const interval = setInterval(() => {
+      idx++;
+      if (idx <= fullText.length) {
+        setDisplayedText(fullText.slice(0, idx));
+      } else {
+        clearInterval(interval);
+      }
+    }, 28);
+    return () => clearInterval(interval);
+  }, [currentScene.id, currentScene.dialogue]);
+
+  // Audio Cue Synchronizer
+  const checkAudioCues = useCallback(
+    (t: number, prevT: number) => {
+      // Scene 1 Heartbeats
+      [0.8, 1.8, 2.8, 3.8].forEach((beat) => {
+        if (prevT < beat && t >= beat) {
+          playHeartbeat(0);
+        }
+      });
+
+      // Scene 2 Warden Greeting (5.5s)
+      if (prevT < 5.4 && t >= 5.4 && !spokenFlagsRef.current["scene2"]) {
+        spokenFlagsRef.current["scene2"] = true;
+        speakDialogue("Hello, everyone. My name is The Warden.");
+      }
+
+      // Scene 3 Footsteps & Gate Unsealing (11.2s - 13.5s)
+      if (prevT < 11.2 && t >= 11.2) {
+        playDoorRumble();
+      }
+      [11.5, 12.3, 13.1].forEach((stepT) => {
+        if (prevT < stepT && t >= stepT) {
+          playFootstep();
+        }
+      });
+      if (prevT < 12.0 && t >= 12.0 && !spokenFlagsRef.current["scene3"]) {
+        spokenFlagsRef.current["scene3"] = true;
+        speakDialogue("Finally... the wait is over.");
+      }
+
+      // Scene 4 Impact Sub-Boom & Game Reveal (17.0s)
+      if (prevT < 17.0 && t >= 17.0) {
+        playImpactBoom();
+      }
+      if (prevT < 17.4 && t >= 17.4 && !spokenFlagsRef.current["scene4"]) {
+        spokenFlagsRef.current["scene4"] = true;
+        speakDialogue("THE UNWRITTEN is officially LIVE!");
+      }
+
+      // Scene 5 Riser & Invitation (23.2s)
+      if (prevT < 23.2 && t >= 23.2) {
+        playRiser();
+      }
+      if (prevT < 23.5 && t >= 23.5 && !spokenFlagsRef.current["scene5"]) {
+        spokenFlagsRef.current["scene5"] = true;
+        speakDialogue(
+          "Go check it out, experience the game, and don't forget to leave your honest review. I want to know what you think. I'll see you inside."
+        );
+      }
+    },
+    [playHeartbeat, playDoorRumble, playFootstep, playImpactBoom, playRiser, speakDialogue]
+  );
+
+  // Main Playback Loop
+  useEffect(() => {
+    let animId: number;
+    let lastTime = performance.now();
+
+    const loop = (now: number) => {
+      const dt = (now - lastTime) / 1000;
+      lastTime = now;
+
+      if (isPlaying) {
+        setCurrentTime((prev) => {
+          const next = prev + dt;
+          if (next >= TOTAL_DURATION) {
+            setIsPlaying(false);
+            return TOTAL_DURATION;
+          }
+          checkAudioCues(next, prev);
+          return next;
+        });
+      }
+      animId = requestAnimationFrame(loop);
+    };
+
+    animId = requestAnimationFrame(loop);
+    return () => cancelAnimationFrame(animId);
+  }, [isPlaying, checkAudioCues]);
+
+  // Sync mute state
   useEffect(() => {
     if (masterGainRef.current && audioCtxRef.current) {
       masterGainRef.current.gain.setValueAtTime(
@@ -196,962 +368,512 @@ export default function LaunchTrailerPage() {
         audioCtxRef.current.currentTime
       );
     }
-    if (isMuted && typeof window !== "undefined" && "speechSynthesis" in window) {
+    if (isMuted && "speechSynthesis" in window) {
       window.speechSynthesis.cancel();
     }
   }, [isMuted]);
 
-  // Subtitle Renderer Helper
-  const drawSubtitleBox = (
-    ctx: CanvasRenderingContext2D,
-    x: number,
-    y: number,
-    speaker: string,
-    dialogue: string
-  ) => {
-    ctx.save();
-    ctx.textAlign = "center";
-
-    const boxW = 940;
-    const boxH = 160;
-    const boxX = x - boxW / 2;
-    const boxY = y - boxH / 2;
-
-    ctx.fillStyle = "rgba(14, 11, 9, 0.88)";
-    ctx.strokeStyle = "rgba(143, 161, 132, 0.6)";
-    ctx.lineWidth = 3;
-    ctx.beginPath();
-    ctx.roundRect(boxX, boxY, boxW, boxH, 20);
-    ctx.fill();
-    ctx.stroke();
-
-    ctx.fillStyle = "#34D399";
-    ctx.font = "900 20px monospace";
-    ctx.letterSpacing = "0.28em";
-    ctx.fillText(speaker, x, boxY + 36);
-
-    ctx.fillStyle = "#FAF7F2";
-    ctx.font = "600 26px -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif";
-    ctx.letterSpacing = "-0.01em";
-
-    const words = dialogue.split(" ");
-    let line1 = "";
-    let line2 = "";
-    for (const w of words) {
-      if ((line1 + " " + w).length <= 48 && !line2) {
-        line1 += (line1 ? " " : "") + w;
-      } else {
-        line2 += (line2 ? " " : "") + w;
-      }
-    }
-
-    if (line2) {
-      ctx.fillText(line1, x, boxY + 80);
-      ctx.fillText(line2, x, boxY + 120);
-    } else {
-      ctx.fillText(line1, x, boxY + 98);
-    }
-
-    ctx.restore();
+  // Start Playback
+  const handleStart = () => {
+    initAudio();
+    setHasStarted(true);
+    setIsPlaying(true);
   };
-
-  // Canvas Render Loop for 1080x1920 Frame
-  const renderFrame = useCallback(
-    (t: number) => {
-      const canvas = canvasRef.current;
-      if (!canvas) return;
-      const ctx = canvas.getContext("2d");
-      if (!ctx) return;
-
-      const w = 1080;
-      const h = 1920;
-      const cx = w / 2;
-      const cy = h / 2;
-
-      // Clear background
-      ctx.fillStyle = "#0A0807";
-      ctx.fillRect(0, 0, w, h);
-
-      // Audio Cue Dispatcher based on second thresholds
-      if (t >= 0.5 && t < 0.6 && !spokenFlagsRef.current["hb1"]) {
-        spokenFlagsRef.current["hb1"] = true;
-        playHeartbeat();
-      }
-      if (t >= 1.5 && t < 1.6 && !spokenFlagsRef.current["hb2"]) {
-        spokenFlagsRef.current["hb2"] = true;
-        playHeartbeat();
-      }
-      if (t >= 2.5 && t < 2.6 && !spokenFlagsRef.current["hb3"]) {
-        spokenFlagsRef.current["hb3"] = true;
-        playHeartbeat();
-      }
-      if (t >= 3.5 && t < 3.6 && !spokenFlagsRef.current["hb4"]) {
-        spokenFlagsRef.current["hb4"] = true;
-        playHeartbeat();
-      }
-      if (t >= 6.0 && t < 6.2 && !spokenFlagsRef.current["s2_speech"]) {
-        spokenFlagsRef.current["s2_speech"] = true;
-        speakDialogue("Hello, everyone. My name is The Warden.");
-      }
-      if (t >= 11.2 && t < 11.4 && !spokenFlagsRef.current["door_rumble"]) {
-        spokenFlagsRef.current["door_rumble"] = true;
-        playDoorRumble();
-      }
-      if (t >= 12.0 && t < 12.2 && !spokenFlagsRef.current["s3_speech"]) {
-        spokenFlagsRef.current["s3_speech"] = true;
-        speakDialogue("Finally... the wait is over.");
-      }
-      if (t >= 17.0 && t < 17.2 && !spokenFlagsRef.current["impact"]) {
-        spokenFlagsRef.current["impact"] = true;
-        playImpactBoom();
-      }
-      if (t >= 17.8 && t < 18.0 && !spokenFlagsRef.current["s4_speech"]) {
-        spokenFlagsRef.current["s4_speech"] = true;
-        speakDialogue("THE UNWRITTEN is officially LIVE!");
-      }
-      if (t >= 23.5 && t < 23.7 && !spokenFlagsRef.current["s5_speech"]) {
-        spokenFlagsRef.current["s5_speech"] = true;
-        speakDialogue(
-          "Go check it out, experience the game, and don't forget to leave your honest review. I want to know what you think. I'll see you inside."
-        );
-      }
-
-      // ==========================================
-      // SCENE 1: THE WAIT IS OVER (0.0s – 5.0s)
-      // ==========================================
-      if (t < 5.0) {
-        const sceneProgress = t / 5.0;
-        const fadeIn = Math.min(1, Math.max(0, (t - 0.4) / 1.6));
-
-        ctx.save();
-        ctx.globalAlpha = fadeIn;
-
-        // Dark gothic corridor perspective
-        const grad = ctx.createRadialGradient(cx, 850, 40, cx, 850, 900);
-        grad.addColorStop(0, "rgba(35, 30, 26, 0.95)");
-        grad.addColorStop(0.5, "rgba(18, 14, 12, 0.85)");
-        grad.addColorStop(1, "#0A0807");
-        ctx.fillStyle = grad;
-        ctx.fillRect(0, 0, w, h);
-
-        // Floor cobblestone lines
-        ctx.strokeStyle = "rgba(84, 70, 56, 0.25)";
-        ctx.lineWidth = 2;
-        for (let i = -6; i <= 6; i++) {
-          ctx.beginPath();
-          ctx.moveTo(cx + i * 20, 850);
-          ctx.lineTo(cx + i * 190, h);
-          ctx.stroke();
-        }
-
-        // Overhead silver cone of light revealing Warden
-        const lightGrad = ctx.createRadialGradient(cx, 400, 10, cx, 780, 520);
-        lightGrad.addColorStop(0, "rgba(220, 230, 242, 0.35)");
-        lightGrad.addColorStop(0.6, "rgba(140, 160, 180, 0.12)");
-        lightGrad.addColorStop(1, "transparent");
-        ctx.fillStyle = lightGrad;
-        ctx.beginPath();
-        ctx.moveTo(cx - 120, 0);
-        ctx.lineTo(cx + 120, 0);
-        ctx.lineTo(cx + 420, 1200);
-        ctx.lineTo(cx - 420, 1200);
-        ctx.closePath();
-        ctx.fill();
-
-        // Distant Warden Silhouette moving forward
-        if (wardenImgRef.current && wardenImgRef.current.complete) {
-          const scale = 0.65 + sceneProgress * 0.16;
-          const imgW = 720 * scale;
-          const imgH = 1040 * scale;
-          const imgX = cx - imgW / 2;
-          const imgY = 820 - imgH / 2 + Math.sin(t * 1.5) * 4;
-
-          ctx.save();
-          ctx.filter = `brightness(${0.1 + sceneProgress * 0.35}) contrast(1.2)`;
-          ctx.drawImage(wardenImgRef.current, imgX, imgY, imgW, imgH);
-          ctx.restore();
-        }
-
-        // Floating fog motes
-        ctx.fillStyle = "rgba(200, 210, 225, 0.12)";
-        for (let i = 0; i < 40; i++) {
-          const px = (Math.sin(i * 99 + t * 0.4) * 0.5 + 0.5) * w;
-          const py = (Math.cos(i * 33 + t * 0.3) * 0.5 + 0.5) * h;
-          const pr = 4 + (i % 6);
-          ctx.beginPath();
-          ctx.arc(px, py, pr, 0, Math.PI * 2);
-          ctx.fill();
-        }
-
-        // Typography: THE WAIT IS OVER.
-        if (t >= 1.2 && t <= 4.8) {
-          const textAlpha = Math.sin(((t - 1.2) / 3.6) * Math.PI);
-          ctx.save();
-          ctx.globalAlpha = textAlpha;
-          ctx.fillStyle = "#FAF7F2";
-          ctx.font = "900 48px Newsreader, Georgia, serif";
-          ctx.textAlign = "center";
-          ctx.letterSpacing = "0.32em";
-          ctx.shadowColor = "rgba(255, 255, 255, 0.4)";
-          ctx.shadowBlur = 18;
-          ctx.fillText("THE WAIT IS OVER.", cx, 1520);
-          ctx.restore();
-        }
-
-        ctx.restore();
-      }
-
-      // ==========================================
-      // SCENE 2: THE INTRODUCTION (5.0s – 11.0s)
-      // ==========================================
-      else if (t >= 5.0 && t < 11.0) {
-        const sceneProgress = (t - 5.0) / 6.0;
-        const breathe = Math.sin(t * 1.8) * 6;
-
-        ctx.save();
-
-        const bg = ctx.createLinearGradient(0, 0, 0, h);
-        bg.addColorStop(0, "#0D0B0A");
-        bg.addColorStop(0.5, "#1A1512");
-        bg.addColorStop(1, "#080605");
-        ctx.fillStyle = bg;
-        ctx.fillRect(0, 0, w, h);
-
-        // Gothic iron gate backdrop
-        ctx.strokeStyle = "rgba(110, 95, 78, 0.3)";
-        ctx.lineWidth = 3;
-        for (let x = 120; x < w; x += 90) {
-          ctx.beginPath();
-          ctx.moveTo(x, 150);
-          ctx.lineTo(x, 1350);
-          ctx.stroke();
-        }
-
-        // Medium Close-Up of The Warden
-        if (wardenImgRef.current && wardenImgRef.current.complete) {
-          const scale = 1.32 + sceneProgress * 0.08;
-          const imgW = 720 * scale;
-          const imgH = 1040 * scale;
-          const imgX = cx - imgW / 2;
-          const liftOffset = Math.max(0, 1 - (t - 5.0) / 1.4) * 25;
-          const imgY = 480 - imgH / 2 + breathe + liftOffset;
-
-          ctx.save();
-          ctx.drawImage(wardenImgRef.current, imgX, imgY, imgW, imgH);
-          ctx.restore();
-        }
-
-        // Cinematic Vignette
-        const vig = ctx.createRadialGradient(cx, cy, 350, cx, cy, 950);
-        vig.addColorStop(0, "transparent");
-        vig.addColorStop(0.7, "rgba(10, 8, 7, 0.45)");
-        vig.addColorStop(1, "rgba(10, 8, 7, 0.95)");
-        ctx.fillStyle = vig;
-        ctx.fillRect(0, 0, w, h);
-
-        if (showSubtitles && t >= 5.8 && t <= 10.6) {
-          drawSubtitleBox(
-            ctx,
-            cx,
-            1620,
-            "THE WARDEN",
-            '"Hello, everyone. My name is The Warden."'
-          );
-        }
-
-        ctx.restore();
-      }
-
-      // ==========================================
-      // SCENE 3: THE ANNOUNCEMENT (11.0s – 17.0s)
-      // ==========================================
-      else if (t >= 11.0 && t < 17.0) {
-        const sceneProgress = (t - 11.0) / 6.0;
-        const doorOpenProgress = Math.min(1, Math.max(0, (t - 11.3) / 3.8));
-
-        ctx.save();
-
-        ctx.fillStyle = "#080605";
-        ctx.fillRect(0, 0, w, h);
-
-        // Light eruption from behind doors (Crimson & Silver)
-        if (doorOpenProgress > 0) {
-          const beamWidth = doorOpenProgress * 420;
-          const beamGrad = ctx.createLinearGradient(cx, 200, cx, 1400);
-          beamGrad.addColorStop(0, "rgba(235, 40, 40, 0.75)");
-          beamGrad.addColorStop(0.35, "rgba(220, 235, 255, 0.65)");
-          beamGrad.addColorStop(0.7, "rgba(180, 20, 20, 0.45)");
-          beamGrad.addColorStop(1, "transparent");
-
-          ctx.fillStyle = beamGrad;
-          ctx.beginPath();
-          ctx.moveTo(cx - beamWidth * 0.2, 280);
-          ctx.lineTo(cx + beamWidth * 0.2, 280);
-          ctx.lineTo(cx + beamWidth, 1400);
-          ctx.lineTo(cx - beamWidth, 1400);
-          ctx.closePath();
-          ctx.fill();
-        }
-
-        // Giant Stone / Iron Doors Splitting
-        const doorW = 420;
-        const doorH = 1100;
-        const doorY = 320;
-
-        ctx.fillStyle = "#191512";
-        ctx.strokeStyle = "#3E3228";
-        ctx.lineWidth = 4;
-        const leftDoorX = cx - doorW - doorOpenProgress * 260;
-        ctx.fillRect(leftDoorX, doorY, doorW, doorH);
-        ctx.strokeRect(leftDoorX, doorY, doorW, doorH);
-
-        const rightDoorX = cx + doorOpenProgress * 260;
-        ctx.fillRect(rightDoorX, doorY, doorW, doorH);
-        ctx.strokeRect(rightDoorX, doorY, doorW, doorH);
-
-        // Warden Stepping Forward
-        if (wardenImgRef.current && wardenImgRef.current.complete) {
-          const scale = 1.15 + sceneProgress * 0.12;
-          const imgW = 720 * scale;
-          const imgH = 1040 * scale;
-          const imgX = cx - imgW / 2;
-          const imgY = 660 - imgH / 2;
-
-          ctx.save();
-          ctx.drawImage(wardenImgRef.current, imgX, imgY, imgW, imgH);
-          ctx.restore();
-        }
-
-        if (showSubtitles && t >= 11.8 && t <= 16.5) {
-          drawSubtitleBox(
-            ctx,
-            cx,
-            1620,
-            "THE WARDEN",
-            '"Finally... the wait is over."'
-          );
-        }
-
-        ctx.restore();
-      }
-
-      // ==========================================
-      // SCENE 4: OFFICIAL LAUNCH REVEAL (17.0s – 23.0s)
-      // ==========================================
-      else if (t >= 17.0 && t < 23.0) {
-        const sceneProgress = (t - 17.0) / 6.0;
-        const flashAlpha = Math.max(0, 1 - (t - 17.0) / 0.45);
-
-        ctx.save();
-
-        const darkGrad = ctx.createRadialGradient(
-          cx,
-          cy - 80,
-          50,
-          cx,
-          cy - 80,
-          850
-        );
-        darkGrad.addColorStop(0, "#241410");
-        darkGrad.addColorStop(0.5, "#140D0A");
-        darkGrad.addColorStop(1, "#080605");
-        ctx.fillStyle = darkGrad;
-        ctx.fillRect(0, 0, w, h);
-
-        // Floating Ember Particles
-        ctx.fillStyle = "rgba(245, 158, 11, 0.75)";
-        for (let i = 0; i < 60; i++) {
-          const px = (Math.sin(i * 17 + t * 0.8) * 0.5 + 0.5) * w;
-          const py = (i * 37 + (23 - t) * 110) % h;
-          const size = (i % 4) + 2;
-          ctx.beginPath();
-          ctx.arc(px, py, size, 0, Math.PI * 2);
-          ctx.fill();
-        }
-
-        // The Official Circular Emblem
-        if (emblemImgRef.current && emblemImgRef.current.complete) {
-          const emblemScale = 0.85 + Math.sin(sceneProgress * Math.PI) * 0.08;
-          const embW = 460 * emblemScale;
-          const embH = 460 * emblemScale;
-          const embX = cx - embW / 2;
-          const embY = 560 - embH / 2;
-
-          ctx.save();
-          ctx.shadowColor = "rgba(16, 185, 129, 0.6)";
-          ctx.shadowBlur = 35;
-          ctx.drawImage(emblemImgRef.current, embX, embY, embW, embH);
-          ctx.restore();
-        }
-
-        // Light Sweep Beam across Logo
-        const sweepX = (sceneProgress * 2.2 - 0.6) * w;
-        const sweepGrad = ctx.createLinearGradient(
-          sweepX - 80,
-          0,
-          sweepX + 80,
-          0
-        );
-        sweepGrad.addColorStop(0, "transparent");
-        sweepGrad.addColorStop(0.5, "rgba(255, 255, 255, 0.55)");
-        sweepGrad.addColorStop(1, "transparent");
-        ctx.fillStyle = sweepGrad;
-        ctx.fillRect(0, 320, w, 480);
-
-        ctx.save();
-        ctx.textAlign = "center";
-
-        ctx.fillStyle = "#FAF7F2";
-        ctx.font = "900 68px Newsreader, Georgia, serif";
-        ctx.letterSpacing = "0.24em";
-        ctx.shadowColor = "rgba(255, 255, 255, 0.65)";
-        ctx.shadowBlur = 24;
-        ctx.fillText("THE UNWRITTEN", cx, 960);
-
-        ctx.font = "900 36px monospace";
-        ctx.letterSpacing = "0.32em";
-        ctx.fillStyle = "#34D399";
-        ctx.shadowColor = "rgba(52, 211, 153, 0.8)";
-        ctx.shadowBlur = 18;
-        ctx.fillText("★ OFFICIALLY LIVE ★", cx, 1050);
-
-        ctx.font = "700 24px monospace";
-        ctx.fillStyle = "#DDD4C5";
-        ctx.letterSpacing = "0.22em";
-        ctx.fillText("PSYCHOLOGICAL MULTIPLAYER MYSTERY", cx, 1120);
-
-        ctx.restore();
-
-        if (showSubtitles && t >= 17.6 && t <= 22.4) {
-          drawSubtitleBox(
-            ctx,
-            cx,
-            1620,
-            "THE WARDEN",
-            '"THE UNWRITTEN is officially LIVE!"'
-          );
-        }
-
-        if (flashAlpha > 0) {
-          ctx.fillStyle = `rgba(255, 255, 255, ${flashAlpha})`;
-          ctx.fillRect(0, 0, w, h);
-        }
-
-        ctx.restore();
-      }
-
-      // ==========================================
-      // SCENE 5: THE INVITATION (23.0s – 30.0s)
-      // ==========================================
-      else if (t >= 23.0 && t <= 30.0) {
-        const sceneProgress = (t - 23.0) / 7.0;
-        const fadeToBlack = Math.max(0, (t - 28.2) / 1.6);
-
-        ctx.save();
-
-        ctx.fillStyle = "#0B0907";
-        ctx.fillRect(0, 0, w, h);
-
-        if (wardenImgRef.current && wardenImgRef.current.complete) {
-          const scale = 1.35 + sceneProgress * 0.38;
-          const imgW = 720 * scale;
-          const imgH = 1040 * scale;
-          const imgX = cx - imgW / 2;
-          const imgY = 440 - imgH / 2;
-
-          ctx.save();
-          ctx.drawImage(wardenImgRef.current, imgX, imgY, imgW, imgH);
-          ctx.restore();
-        }
-
-        if (showSubtitles && t >= 23.4 && t < 28.2) {
-          drawSubtitleBox(
-            ctx,
-            cx,
-            1620,
-            "THE WARDEN",
-            '"Go check it out, experience the game, and don\'t forget to leave your honest review. I want to know what you think. I\'ll see you inside."'
-          );
-        }
-
-        if (fadeToBlack > 0) {
-          ctx.fillStyle = `rgba(8, 6, 5, ${Math.min(1, fadeToBlack)})`;
-          ctx.fillRect(0, 0, w, h);
-
-          if (t >= 28.5) {
-            const slateAlpha = Math.min(1, (t - 28.5) / 0.8);
-            ctx.save();
-            ctx.globalAlpha = slateAlpha;
-            ctx.textAlign = "center";
-
-            if (emblemImgRef.current && emblemImgRef.current.complete) {
-              const embSize = 220;
-              ctx.drawImage(
-                emblemImgRef.current,
-                cx - embSize / 2,
-                620,
-                embSize,
-                embSize
-              );
-            }
-
-            ctx.fillStyle = "#FAF7F2";
-            ctx.font = "900 64px Newsreader, Georgia, serif";
-            ctx.letterSpacing = "0.28em";
-            ctx.fillText("THE UNWRITTEN", cx, 980);
-
-            ctx.fillStyle = "#10B981";
-            ctx.font = "900 36px monospace";
-            ctx.letterSpacing = "0.36em";
-            ctx.fillText("PLAY NOW", cx, 1060);
-
-            ctx.fillStyle = "#DDD4C5";
-            ctx.font = "italic 400 30px Newsreader, Georgia, serif";
-            ctx.letterSpacing = "0.22em";
-            ctx.fillText("WHERE SILENCE SPEAKS.", cx, 1140);
-
-            ctx.font = "700 20px monospace";
-            ctx.fillStyle = "#A89F93";
-            ctx.letterSpacing = "0.18em";
-            ctx.fillText("thegameunwritten.vercel.app", cx, 1220);
-
-            ctx.restore();
-          }
-        }
-
-        ctx.restore();
-      }
-    },
-    [
-      isMuted,
-      showSubtitles,
-      playHeartbeat,
-      playDoorRumble,
-      playImpactBoom,
-      speakDialogue,
-    ]
-  );
-
-  // Animation Loop Handler
-  useEffect(() => {
-    if (!isPlaying) {
-      if (animFrameRef.current) cancelAnimationFrame(animFrameRef.current);
-      lastTimestampRef.current = null;
-      renderFrame(currentTime);
-      return;
-    }
-
-    const loop = (timestamp: number) => {
-      if (lastTimestampRef.current === null) {
-        lastTimestampRef.current = timestamp;
-      }
-      const delta = (timestamp - lastTimestampRef.current) / 1000;
-      lastTimestampRef.current = timestamp;
-
-      setCurrentTime((prev) => {
-        const next = prev + delta;
-        if (next >= 30.0) {
-          setIsPlaying(false);
-          return 30.0;
-        }
-        return next;
-      });
-
-      animFrameRef.current = requestAnimationFrame(loop);
-    };
-
-    animFrameRef.current = requestAnimationFrame(loop);
-    return () => {
-      if (animFrameRef.current) cancelAnimationFrame(animFrameRef.current);
-    };
-  }, [isPlaying, renderFrame, currentTime]);
-
-  useEffect(() => {
-    renderFrame(currentTime);
-  }, [currentTime, renderFrame]);
 
   const handleTogglePlay = () => {
-    initAudio();
-    if (currentTime >= 30.0) {
-      spokenFlagsRef.current = {};
-      setCurrentTime(0);
+    if (!hasStarted) {
+      handleStart();
+      return;
     }
-    setIsPlaying((prev) => !prev);
+    initAudio();
+    setIsPlaying(!isPlaying);
   };
 
-  const handleReset = () => {
-    if (typeof window !== "undefined" && "speechSynthesis" in window) {
-      window.speechSynthesis.cancel();
-    }
+  const handleRestart = () => {
+    initAudio();
     spokenFlagsRef.current = {};
-    setIsPlaying(false);
     setCurrentTime(0);
+    setIsPlaying(true);
   };
 
-  const handleJumpToScene = (targetSecond: number) => {
-    initAudio();
-    spokenFlagsRef.current = {};
-    setCurrentTime(targetSecond);
-    if (!isPlaying) {
-      setIsPlaying(true);
-    }
-  };
-
-  // Video Export / MediaRecorder implementation
-  const handleRecordVideo = async () => {
-    initAudio();
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-
-    setIsRecording(true);
-    setRecordProgress(0);
-    setHasRecorded(false);
-    handleReset();
-
-    try {
-      const stream = canvas.captureStream(30);
-
-      if (audioCtxRef.current && masterGainRef.current) {
-        const dest = audioCtxRef.current.createMediaStreamDestination();
-        masterGainRef.current.connect(dest);
-        const aTrack = dest.stream.getAudioTracks()[0];
-        if (aTrack) stream.addTrack(aTrack);
+  // Keyboard shortcut (Space to pause/play)
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.code === "Space") {
+        e.preventDefault();
+        handleTogglePlay();
       }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  });
 
-      const mimeType = MediaRecorder.isTypeSupported(
-        "video/webm;codecs=vp9,opus"
-      )
-        ? "video/webm;codecs=vp9,opus"
-        : MediaRecorder.isTypeSupported("video/webm")
-        ? "video/webm"
-        : "video/mp4";
+  // Dynamic Scene Calculations
+  const isScene1 = currentTime < 5.0;
+  const isScene2 = currentTime >= 5.0 && currentTime < 11.0;
+  const isScene3 = currentTime >= 11.0 && currentTime < 17.0;
+  const isScene4 = currentTime >= 17.0 && currentTime < 23.0;
+  const isScene5 = currentTime >= 23.0;
 
-      const recorder = new MediaRecorder(stream, { mimeType });
-      const chunks: Blob[] = [];
+  // Scene 1 & Scene 3 Animation parameters
+  const scene1Progress = currentTime / 5.0;
+  const scene3Progress = (currentTime - 11.0) / 6.0;
+  const scene5Progress = (currentTime - 23.0) / 7.0;
 
-      recorder.ondataavailable = (e) => {
-        if (e.data.size > 0) chunks.push(e.data);
-      };
+  // Camera Dolly Calculation (Subtle slow tracking forward)
+  let cameraScale = 1.0;
+  let cameraY = 0;
+  if (isScene1) {
+    cameraScale = 1.0 + scene1Progress * 0.08;
+    cameraY = -scene1Progress * 15;
+  } else if (isScene2) {
+    cameraScale = 1.04;
+    cameraY = -10;
+  } else if (isScene3) {
+    cameraScale = 1.06 + scene3Progress * 0.12;
+    cameraY = -10 - scene3Progress * 20;
+  } else if (isScene4) {
+    cameraScale = 1.0;
+    cameraY = 0;
+  } else if (isScene5) {
+    cameraScale = 1.05 + scene5Progress * 0.15;
+    cameraY = -scene5Progress * 30;
+  }
 
-      recorder.onstop = () => {
-        const blob = new Blob(chunks, { type: mimeType });
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement("a");
-        a.href = url;
-        a.download = "THE_UNWRITTEN_OFFICIAL_LAUNCH_30S.webm";
-        a.click();
-        setIsRecording(false);
-        setHasRecorded(true);
-      };
-
-      recorder.start();
-      setIsPlaying(true);
-
-      const interval = setInterval(() => {
-        setCurrentTime((t) => {
-          setRecordProgress(Math.min(100, Math.round((t / 30) * 100)));
-          if (t >= 30) {
-            clearInterval(interval);
-            recorder.stop();
-            setIsPlaying(false);
-          }
-          return t;
-        });
-      }, 100);
-    } catch {
-      setIsRecording(false);
-      alert(
-        "Recording format not supported in this browser. You can still watch and enjoy the trailer directly!"
-      );
-    }
-  };
-
-  const formatSec = (sec: number) => {
-    const s = Math.floor(sec);
-    const ms = Math.floor((sec % 1) * 10);
-    return `00:${String(s).padStart(2, "0")}.${ms}`;
-  };
+  // Warden Character Animation States
+  const wardenSprite =
+    currentScene.expression === "amused"
+      ? "/art/characters/warden_amused.png"
+      : currentScene.expression === "speaking"
+      ? "/art/characters/warden_speaking.png"
+      : "/art/characters/warden_neutral.png";
 
   return (
-    <div className="min-h-screen bg-[#0D0A08] text-[#FAF7F2] flex flex-col items-center justify-between p-3 sm:p-6 selection:bg-amber-400 selection:text-black font-sans">
-      {/* Top Bar Header */}
-      <header className="w-full max-w-5xl flex items-center justify-between py-2 border-b border-[#3E3228] mb-4">
-        <Link
-          href="/"
-          className="flex items-center gap-2 text-xs uppercase font-mono tracking-wider text-[#A89F93] hover:text-white transition-colors"
+    <div className="fixed inset-0 w-full h-full overflow-hidden bg-[#070608] select-none flex items-center justify-center font-sans">
+      {/* Outer Viewport Container (Switchable between Full-Screen In-Game and 9:16 Vertical Reel) */}
+      <div
+        className={`relative transition-all duration-500 overflow-hidden shadow-2xl flex flex-col justify-between ${
+          isVerticalMode
+            ? "w-full max-w-[440px] h-[92vh] max-h-[880px] rounded-2xl border border-white/15"
+            : "w-full h-full"
+        }`}
+      >
+        {/* ======================================================== */}
+        {/* 1. CINEMATIC BACKGROUND LAYER WITH CAMERA DOLLY ZOOM     */}
+        {/* ======================================================== */}
+        <motion.div
+          animate={{
+            scale: cameraScale,
+            y: cameraY,
+          }}
+          transition={{ duration: 0.5, ease: "linear" }}
+          className="absolute inset-0 w-full h-full pointer-events-none z-0"
         >
-          <ArrowLeft className="w-4 h-4" />
-          <span>Return to The Unwritten</span>
-        </Link>
-        <div className="flex items-center gap-2">
-          <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-          <span className="text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold">
-            Official 30s Launch Trailer
-          </span>
-        </div>
-      </header>
-
-      {/* Main Video Viewport & Controls Grid */}
-      <main className="flex-1 w-full max-w-5xl flex flex-col lg:flex-row items-center justify-center gap-6 sm:gap-10 py-2">
-        {/* Left Column: 9:16 Vertical Video Monitor Frame */}
-        <div className="relative flex flex-col items-center shrink-0">
-          <div className="relative rounded-2xl overflow-hidden shadow-[0_0_60px_rgba(0,0,0,0.95)] border-4 border-[#544333] ring-2 ring-amber-500/20 bg-black aspect-[9/16] w-[290px] sm:w-[340px] md:w-[380px]">
-            <canvas
-              ref={canvasRef}
-              width={1080}
-              height={1920}
-              className="w-full h-full object-contain cursor-pointer select-none"
-              onClick={handleTogglePlay}
-            />
-
-            {/* Play Overlay if Paused */}
-            {!isPlaying && (
-              <div
-                onClick={handleTogglePlay}
-                className="absolute inset-0 bg-black/40 backdrop-blur-xs flex items-center justify-center cursor-pointer transition-opacity"
-              >
-                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-amber-400/90 text-black flex items-center justify-center shadow-[0_0_30px_rgba(251,191,36,0.6)] transform hover:scale-105 active:scale-95 transition-transform">
-                  <Play className="w-8 h-8 sm:w-10 sm:h-10 ml-1 fill-black" />
-                </div>
-              </div>
-            )}
-
-            {/* Recording Watermark / Indicator */}
-            {isRecording && (
-              <div className="absolute top-3 left-3 bg-rose-600/90 border border-white text-white px-2.5 py-1 rounded-md text-[10px] font-mono font-bold flex items-center gap-1.5 shadow animate-pulse">
-                <span className="w-2 h-2 rounded-full bg-white" />
-                <span>RECORDING ({recordProgress}%)</span>
-              </div>
-            )}
-
-            {/* Top Right Aspect Badge */}
-            <div className="absolute top-3 right-3 bg-black/60 border border-white/20 text-[#DDD4C5] px-2 py-0.5 rounded text-[10px] font-mono">
-              9:16 VERTICAL
-            </div>
-          </div>
-        </div>
-
-        {/* Right Column: Master Studio Director Controls */}
-        <div className="flex-1 w-full max-w-lg space-y-5 bg-[#171310] border-2 border-[#4E3F30] rounded-2xl p-5 sm:p-7 shadow-2xl">
-          <div>
-            <div className="flex items-center justify-between">
-              <span className="text-xs font-mono uppercase tracking-[0.2em] text-amber-400 font-bold">
-                Official Video Control Deck
-              </span>
-              <span className="font-mono text-sm text-emerald-300 font-black">
-                {formatSec(currentTime)} / 00:30.0
-              </span>
-            </div>
-            <h1 className="font-serif text-2xl sm:text-3xl font-black text-white mt-1">
-              THE UNWRITTEN Launch
-            </h1>
-            <p className="text-xs text-[#DDD4C5] mt-1 leading-relaxed">
-              Cinematic announcement starring The Warden. Built for Instagram Reels,
-              YouTube Shorts, and TikTok.
-            </p>
-          </div>
-
-          {/* Timeline Scrubber */}
-          <div className="space-y-1.5">
-            <div className="flex justify-between text-[11px] font-mono text-[#A89F93]">
-              <span>00:00</span>
-              <span className="text-amber-300 font-bold">
-                Scene{" "}
-                {currentTime < 5
-                  ? 1
-                  : currentTime < 11
-                  ? 2
-                  : currentTime < 17
-                  ? 3
-                  : currentTime < 23
-                  ? 4
-                  : 5}
-              </span>
-              <span>00:30</span>
-            </div>
-            <input
-              type="range"
-              min={0}
-              max={30}
-              step={0.1}
-              value={currentTime}
-              onChange={(e) => {
-                spokenFlagsRef.current = {};
-                setCurrentTime(parseFloat(e.target.value));
-              }}
-              className="w-full accent-amber-400 h-2 bg-[#28211A] rounded-lg cursor-pointer"
-            />
-          </div>
-
-          {/* Scene Jump Buttons */}
-          <div className="space-y-2">
-            <span className="text-[10px] font-mono uppercase tracking-wider text-[#A89F93] block font-bold">
-              Storyboard Scenes:
-            </span>
-            <div className="grid grid-cols-5 gap-1.5 text-[11px] font-mono">
-              <button
-                type="button"
-                onClick={() => handleJumpToScene(0)}
-                className={`py-1.5 px-1 rounded border text-center transition-colors ${
-                  currentTime < 5
-                    ? "bg-amber-400 text-black font-black border-white shadow"
-                    : "bg-[#241D17] text-[#DDD4C5] border-[#544333] hover:border-amber-400"
-                }`}
-              >
-                1. Wait
-              </button>
-              <button
-                type="button"
-                onClick={() => handleJumpToScene(5)}
-                className={`py-1.5 px-1 rounded border text-center transition-colors ${
-                  currentTime >= 5 && currentTime < 11
-                    ? "bg-amber-400 text-black font-black border-white shadow"
-                    : "bg-[#241D17] text-[#DDD4C5] border-[#544333] hover:border-amber-400"
-                }`}
-              >
-                2. Intro
-              </button>
-              <button
-                type="button"
-                onClick={() => handleJumpToScene(11)}
-                className={`py-1.5 px-1 rounded border text-center transition-colors ${
-                  currentTime >= 11 && currentTime < 17
-                    ? "bg-amber-400 text-black font-black border-white shadow"
-                    : "bg-[#241D17] text-[#DDD4C5] border-[#544333] hover:border-amber-400"
-                }`}
-              >
-                3. Gate
-              </button>
-              <button
-                type="button"
-                onClick={() => handleJumpToScene(17)}
-                className={`py-1.5 px-1 rounded border text-center transition-colors ${
-                  currentTime >= 17 && currentTime < 23
-                    ? "bg-amber-400 text-black font-black border-white shadow"
-                    : "bg-[#241D17] text-[#DDD4C5] border-[#544333] hover:border-amber-400"
-                }`}
-              >
-                4. Live!
-              </button>
-              <button
-                type="button"
-                onClick={() => handleJumpToScene(23)}
-                className={`py-1.5 px-1 rounded border text-center transition-colors ${
-                  currentTime >= 23
-                    ? "bg-amber-400 text-black font-black border-white shadow"
-                    : "bg-[#241D17] text-[#DDD4C5] border-[#544333] hover:border-amber-400"
-                }`}
-              >
-                5. Outro
-              </button>
-            </div>
-          </div>
-
-          {/* Primary Controls */}
-          <div className="flex flex-wrap items-center gap-3 pt-1">
-            <button
-              type="button"
-              onClick={handleTogglePlay}
-              className="flex-1 bg-amber-400 hover:bg-amber-300 text-black font-black text-xs uppercase tracking-wider py-3 px-5 rounded-lg border-2 border-white shadow-[0_0_20px_rgba(251,191,36,0.5)] flex items-center justify-center gap-2 cursor-pointer transition-all active:scale-95"
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={currentScene.bgImage}
+              initial={{ opacity: 0.6 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0.5 }}
+              transition={{ duration: 0.9, ease: "easeInOut" }}
+              className="relative w-full h-full"
             >
-              {isPlaying ? (
-                <Pause className="w-4 h-4" />
-              ) : (
-                <Play className="w-4 h-4 fill-black" />
-              )}
-              <span>
-                {isPlaying
-                  ? "Pause Video"
-                  : currentTime >= 30
-                  ? "Replay Video"
-                  : "Play Video"}
+              <Image
+                src={currentScene.bgImage}
+                alt="The Warden's Gate"
+                fill
+                priority
+                sizes="100vw"
+                className="object-cover object-center select-none"
+              />
+            </motion.div>
+          </AnimatePresence>
+
+          {/* Atmospheric Graphic Novel Tone & Vignette Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-black/60 pointer-events-none" />
+
+          {/* Crimson & Silver Portal Light Shafts (Scenes 3 & 4) */}
+          {(isScene3 || isScene4) && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: isScene3 ? Math.min(1, scene3Progress * 1.5) : 1 }}
+              transition={{ duration: 1 }}
+              className="absolute inset-0 bg-radial-gradient from-red-600/25 via-red-950/10 to-transparent pointer-events-none mix-blend-screen"
+            />
+          )}
+
+          {/* Low Volumetric Ground Mist / Fog */}
+          <div className="absolute bottom-0 inset-x-0 h-48 bg-gradient-to-t from-black/80 via-white/5 to-transparent pointer-events-none opacity-80" />
+        </motion.div>
+
+        {/* ======================================================== */}
+        {/* 2. TOP IN-GAME HUD BAR (Minimal, authentic to the game)  */}
+        {/* ======================================================== */}
+        <header className="relative z-40 w-full flex items-center justify-between p-4 md:p-6 bg-gradient-to-b from-black/80 to-transparent pointer-events-auto">
+          {/* Brand & Chapter Stamp */}
+          <div className="flex items-center gap-3">
+            <Link
+              href="/"
+              className="relative w-9 h-9 rounded-full border border-[#C8B28E]/40 overflow-hidden shadow-md flex-shrink-0 bg-black/50"
+              title="Return to Hub"
+            >
+              <Image
+                src="/brand/logo-header.png"
+                alt="THE UNWRITTEN"
+                fill
+                priority
+                className="object-contain p-0.5"
+              />
+            </Link>
+            <div className="flex flex-col">
+              <span className="text-[10px] md:text-xs font-mono font-bold tracking-[0.25em] text-[#C8B28E] uppercase">
+                THE UNWRITTEN • OFFICIAL LAUNCH
               </span>
+              <h1 className="text-xs md:text-sm font-serif font-bold tracking-wide text-[#FAF7F2]">
+                {currentScene.title}
+              </h1>
+            </div>
+          </div>
+
+          {/* Floating Minimal Controls */}
+          <div className="flex items-center gap-2">
+            {/* View Mode Toggle (9:16 Reel vs Full Cinematic) */}
+            <button
+              onClick={() => setIsVerticalMode(!isVerticalMode)}
+              className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-black/60 hover:bg-black/80 text-[#FAF7F2] font-mono text-xs uppercase tracking-wider backdrop-blur-md border border-white/15 transition-all shadow-md"
+              title={isVerticalMode ? "Switch to Fullscreen Cinematic" : "Switch to 9:16 Vertical Reel Mode"}
+            >
+              {isVerticalMode ? (
+                <>
+                  <Maximize2 className="w-3.5 h-3.5 text-[#C8B28E]" />
+                  <span>Cinematic</span>
+                </>
+              ) : (
+                <>
+                  <Smartphone className="w-3.5 h-3.5 text-[#C8B28E]" />
+                  <span>9:16 Reel</span>
+                </>
+              )}
             </button>
 
+            {/* Audio Mute/Unmute */}
             <button
-              type="button"
-              onClick={handleReset}
-              className="bg-[#2A231C] hover:bg-[#382E25] text-white border-2 border-[#544333] p-3 rounded-lg cursor-pointer transition-colors"
-              title="Reset to beginning"
+              onClick={() => setIsMuted(!isMuted)}
+              className="p-2 rounded-full bg-black/60 hover:bg-black/80 text-[#FAF7F2] backdrop-blur-md border border-white/15 transition-all shadow-md"
+              title={isMuted ? "Unmute Audio" : "Mute Audio"}
+            >
+              {isMuted ? (
+                <VolumeX className="w-4 h-4 text-red-400" />
+              ) : (
+                <Volume2 className="w-4 h-4 text-[#52B788]" />
+              )}
+            </button>
+
+            {/* Restart / Replay */}
+            <button
+              onClick={handleRestart}
+              className="p-2 rounded-full bg-black/60 hover:bg-black/80 text-[#FAF7F2] backdrop-blur-md border border-white/15 transition-all shadow-md"
+              title="Restart Cinematic"
             >
               <RotateCcw className="w-4 h-4" />
             </button>
+          </div>
+        </header>
 
-            <button
-              type="button"
-              onClick={() => setIsMuted(!isMuted)}
-              className={`p-3 rounded-lg border-2 transition-colors cursor-pointer ${
-                isMuted
-                  ? "bg-rose-950/60 border-rose-500 text-rose-300"
-                  : "bg-[#2A231C] border-[#544333] text-emerald-300"
-              }`}
-              title={isMuted ? "Unmute Audio & Voice" : "Mute Audio"}
+        {/* ======================================================== */}
+        {/* 3. STAGE CHARACTER LAYER (Real In-Game 2.5D Warden)      */}
+        {/* ======================================================== */}
+        <div className="relative z-20 flex-1 w-full flex items-end justify-center pointer-events-none overflow-hidden">
+          {/* SCENE 1: Distance Silhouette */}
+          {isScene1 && (
+            <motion.div
+              initial={{ opacity: 0, scale: 0.28, y: 30 }}
+              animate={{ opacity: 1, scale: 0.32, y: 0 }}
+              transition={{ duration: 4, ease: "easeOut" }}
+              className="absolute bottom-28 md:bottom-32 flex flex-col items-center filter brightness-50 contrast-125"
             >
-              {isMuted ? (
-                <VolumeX className="w-4 h-4" />
-              ) : (
-                <Volume2 className="w-4 h-4" />
-              )}
-            </button>
+              <div className="relative w-48 h-72">
+                <Image
+                  src="/art/characters/warden_neutral.png"
+                  alt="The Warden Silhouette"
+                  fill
+                  priority
+                  className="object-contain object-bottom drop-shadow-[0_10px_20px_rgba(0,0,0,0.9)]"
+                />
+              </div>
+            </motion.div>
+          )}
+
+          {/* SCENES 2, 3, 5: Fully Integrated Animated In-Game Character */}
+          {(isScene2 || isScene3 || isScene5) && (
+            <motion.div
+              key="warden-stage-character"
+              initial={{ opacity: 0, y: 25 }}
+              animate={{
+                opacity: 1,
+                y: isScene3 ? [0, -8, 0, -8, 0] : 0, // Walking step-bobbing in Scene 3!
+                scale: isScene5 ? 1.18 : isScene3 ? 1.08 : 1.0, // Walking forward towards camera
+              }}
+              transition={{
+                duration: isScene3 ? 4.5 : 0.6,
+                ease: "easeOut",
+              }}
+              className="relative bottom-0 flex flex-col items-center select-none"
+              style={{
+                height: isVerticalMode ? "58vh" : "min(72vh, 620px)",
+                width: isVerticalMode ? "85vw" : "min(50vw, 480px)",
+              }}
+            >
+              {/* Dynamic Ground Shadow */}
+              <div className="absolute -bottom-4 w-56 sm:w-72 md:w-96 h-10 bg-black/60 rounded-full blur-xl" />
+
+              {/* Natural Character Idle Breathing Cycle & Head Motion */}
+              <motion.div
+                animate={{
+                  y: [0, -6, 0],
+                  rotate: isScene2 ? [0, 0.8, 0] : [0, -0.5, 0],
+                }}
+                transition={{
+                  repeat: Infinity,
+                  duration: 4.2,
+                  ease: "easeInOut",
+                }}
+                className="relative w-full h-full filter drop-shadow-[0_16px_36px_rgba(0,0,0,0.85)] brightness-105"
+              >
+                <Image
+                  src={wardenSprite}
+                  alt="The Warden"
+                  fill
+                  priority
+                  unoptimized
+                  className="object-contain object-bottom select-none"
+                />
+
+                {/* Subtle Rim Light Highlight on Mask and Trenchcoat */}
+                <div className="absolute inset-0 bg-gradient-to-r from-white/10 via-transparent to-red-600/15 mix-blend-overlay pointer-events-none" />
+              </motion.div>
+            </motion.div>
+          )}
+
+          {/* SCENE 4: Game Title & Emblem Grand Reveal */}
+          {isScene4 && (
+            <motion.div
+              initial={{ opacity: 0, scale: 0.85 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.7, ease: "easeOut" }}
+              className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center pointer-events-none"
+            >
+              {/* Camera shake flash */}
+              <div className="absolute inset-0 bg-red-600/10 animate-pulse pointer-events-none" />
+
+              {/* Central Official Emblem */}
+              <motion.div
+                animate={{
+                  rotate: [0, 360],
+                }}
+                transition={{
+                  duration: 80,
+                  repeat: Infinity,
+                  ease: "linear",
+                }}
+                className="relative w-36 h-36 md:w-52 md:h-52 mb-6 filter drop-shadow-[0_0_50px_rgba(220,38,38,0.7)]"
+              >
+                <Image
+                  src="/brand/emblem-silence.png"
+                  alt="THE UNWRITTEN Emblem"
+                  fill
+                  priority
+                  className="object-contain"
+                />
+              </motion.div>
+
+              {/* Grand Typography */}
+              <motion.h2
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.2, duration: 0.6 }}
+                className="font-serif text-4xl sm:text-6xl md:text-7xl font-black tracking-[0.16em] text-white drop-shadow-[0_0_35px_rgba(220,38,38,0.9)]"
+              >
+                THE UNWRITTEN
+              </motion.h2>
+
+              <motion.div
+                initial={{ y: 15, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.4, duration: 0.6 }}
+                className="mt-3 text-lg sm:text-2xl font-serif font-extrabold tracking-[0.35em] text-red-500 uppercase drop-shadow-[0_0_20px_rgba(239,68,68,0.8)]"
+              >
+                OFFICIALLY LIVE
+              </motion.div>
+
+              <div className="mt-4 w-32 h-0.5 bg-gradient-to-r from-transparent via-[#C8B28E] to-transparent opacity-75" />
+            </motion.div>
+          )}
+
+          {/* SCENE 1: Centered Atmospheric Title Card */}
+          {isScene1 && (
+            <motion.div
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: currentTime > 1.8 ? 1 : 0, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="absolute top-1/3 inset-x-0 flex flex-col items-center justify-center text-center p-6 pointer-events-none"
+            >
+              <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-[0.25em] text-[#FAF7F2] drop-shadow-[0_0_30px_rgba(220,38,38,0.7)]">
+                THE WAIT IS OVER.
+              </h2>
+            </motion.div>
+          )}
+
+          {/* SCENE 5 (Ending): Final Fade to Black and Outro Slate */}
+          {isScene5 && currentTime >= 27.5 && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1.2 }}
+              className="absolute inset-0 bg-black z-50 flex flex-col items-center justify-center p-6 text-center"
+            >
+              <div className="relative w-24 h-24 mb-4 filter drop-shadow-[0_0_25px_rgba(220,38,38,0.6)]">
+                <Image
+                  src="/brand/emblem-silence.png"
+                  alt="THE UNWRITTEN"
+                  fill
+                  priority
+                  className="object-contain"
+                />
+              </div>
+
+              <h2 className="font-serif text-3xl sm:text-5xl font-black tracking-[0.2em] text-[#FAF7F2] mb-2">
+                THE UNWRITTEN
+              </h2>
+              <p className="font-serif text-base sm:text-xl font-bold tracking-[0.3em] text-red-500 uppercase mb-4">
+                PLAY NOW.
+              </p>
+              <p className="font-serif text-xs sm:text-sm tracking-[0.4em] text-[#A89F93] uppercase">
+                WHERE SILENCE SPEAKS
+              </p>
+
+              <div className="mt-8 flex items-center gap-4 pointer-events-auto">
+                <Link
+                  href="/play"
+                  className="px-6 py-2.5 rounded-full bg-red-700 hover:bg-red-600 text-white font-serif font-bold text-sm tracking-widest uppercase transition-all shadow-[0_0_25px_rgba(220,38,38,0.6)]"
+                >
+                  Enter the Game
+                </Link>
+                <button
+                  onClick={handleRestart}
+                  className="px-5 py-2.5 rounded-full bg-white/10 hover:bg-white/20 text-[#FAF7F2] font-mono text-xs uppercase tracking-wider transition-all"
+                >
+                  Replay Cinematic
+                </button>
+              </div>
+            </motion.div>
+          )}
+        </div>
+
+        {/* ======================================================== */}
+        {/* 4. IN-GAME DIALOGUE SYSTEM (Exact THE UNWRITTEN UI)      */}
+        {/* ======================================================== */}
+        <footer className="relative z-30 w-full p-4 md:p-6 pb-6 bg-gradient-to-t from-black/95 via-black/80 to-transparent pointer-events-auto flex flex-col items-center">
+          <div className="w-full max-w-3xl">
+            {/* Show dialogue box for Scenes 2, 3, 4, 5 */}
+            {!isScene1 && !(isScene5 && currentTime >= 27.5) && (
+              <motion.div
+                initial={{ opacity: 0, y: 15 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0 }}
+                className="relative rounded-2xl md:rounded-3xl p-5 md:p-6 shadow-[0_16px_50px_rgba(0,0,0,0.85)] border-2 bg-[#181614]/95 text-[#FAF7F2] border-[#574E45] backdrop-blur-md"
+              >
+                {/* Speaker Header with In-Game Red Status Pulse */}
+                <div className="flex items-center justify-between mb-2">
+                  <div className="flex items-center gap-2">
+                    <div className="w-2.5 h-2.5 rounded-full bg-red-600 animate-pulse" />
+                    <span className="font-serif font-bold text-xs uppercase tracking-[0.2em] text-[#C8B28E]">
+                      {currentScene.speaker}
+                    </span>
+                    <span className="text-[10px] font-mono text-[#8A8178] hidden sm:inline">
+                      • ARCHITECT OF THE EXPERIMENT
+                    </span>
+                  </div>
+                  <span className="text-[10px] font-mono text-[#A89F93]">
+                    {currentTime.toFixed(1)}s / 30.0s
+                  </span>
+                </div>
+
+                {/* Typewriter Prose */}
+                <p className="font-serif text-base sm:text-lg md:text-xl leading-relaxed text-[#FAF7F2] min-h-[54px]">
+                  &ldquo;{displayedText}&rdquo;
+                </p>
+
+                {/* Advance / Next hint */}
+                <div className="mt-2 flex items-center justify-between text-[11px] font-mono text-[#8A8178]">
+                  <span>THE WARDEN&apos;S GATE · OFFICIAL PROLOGUE</span>
+                  <span className="flex items-center gap-1 text-[#C8B28E]">
+                    <span>Scene {currentScene.id + 1} of 5</span>
+                    <ChevronRight className="w-3.5 h-3.5 animate-bounce" />
+                  </span>
+                </div>
+              </motion.div>
+            )}
           </div>
 
-          {/* Subtitles & Recording Suite */}
-          <div className="pt-3 border-t border-[#382E25] space-y-3">
-            <div className="flex items-center justify-between">
-              <label className="flex items-center gap-2 text-xs font-mono text-[#DDD4C5] cursor-pointer">
-                <input
-                  type="checkbox"
-                  checked={showSubtitles}
-                  onChange={(e) => setShowSubtitles(e.target.checked)}
-                  className="accent-amber-400 rounded cursor-pointer"
-                />
-                <span>Burn-in Subtitles &amp; Captions</span>
-              </label>
+          {/* Floating Scrub / Progress Bar Line */}
+          <div className="w-full max-w-3xl mt-4 flex items-center gap-3">
+            <button
+              onClick={handleTogglePlay}
+              className="p-1.5 rounded-full bg-white/10 hover:bg-white/20 text-[#FAF7F2] transition-all"
+              title={isPlaying ? "Pause (Space)" : "Play (Space)"}
+            >
+              {isPlaying ? (
+                <Pause className="w-3.5 h-3.5" />
+              ) : (
+                <Play className="w-3.5 h-3.5 fill-current" />
+              )}
+            </button>
+            <div className="flex-1 h-1 bg-white/15 rounded-full overflow-hidden">
+              <div
+                className="h-full bg-red-600 transition-all duration-100"
+                style={{ width: `${(currentTime / TOTAL_DURATION) * 100}%` }}
+              />
+            </div>
+            <span className="font-mono text-[10px] text-[#A89F93]">
+              {Math.floor(currentTime)}s / 30s
+            </span>
+          </div>
+        </footer>
 
-              <span className="text-[10px] font-mono text-[#A89F93]">
-                24 FPS · 1080×1920
-              </span>
+        {/* Initial Start Overlay (Prevents browser autoplay block) */}
+        {!hasStarted && (
+          <div className="absolute inset-0 z-50 bg-black/85 backdrop-blur-md flex flex-col items-center justify-center p-6 text-center">
+            <div className="relative w-28 h-28 mb-6 filter drop-shadow-[0_0_35px_rgba(220,38,38,0.7)]">
+              <Image
+                src="/brand/emblem-silence.png"
+                alt="THE UNWRITTEN Emblem"
+                fill
+                priority
+                className="object-contain"
+              />
             </div>
 
-            {/* Direct Video Download Button */}
-            <button
-              type="button"
-              disabled={isRecording}
-              onClick={handleRecordVideo}
-              className={`w-full py-3 px-4 rounded-lg font-black text-xs uppercase tracking-wider border-2 flex items-center justify-center gap-2 cursor-pointer transition-all ${
-                isRecording
-                  ? "bg-rose-600 text-white border-white animate-pulse"
-                  : hasRecorded
-                  ? "bg-emerald-600 text-white border-white hover:bg-emerald-500"
-                  : "bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white border-white shadow-lg"
-              }`}
-            >
-              {isRecording ? (
-                <>
-                  <Sparkles className="w-4 h-4 animate-spin" />
-                  <span>Recording Video ({recordProgress}%)... Please Wait</span>
-                </>
-              ) : hasRecorded ? (
-                <>
-                  <Check className="w-4 h-4" />
-                  <span>Download Again (.webm 9:16)</span>
-                </>
-              ) : (
-                <>
-                  <Download className="w-4 h-4" />
-                  <span>Record &amp; Download Video (.webm)</span>
-                </>
-              )}
-            </button>
-          </div>
-        </div>
-      </main>
+            <h2 className="font-serif text-3xl sm:text-5xl font-extrabold tracking-[0.2em] text-[#FAF7F2] mb-3">
+              THE UNWRITTEN
+            </h2>
+            <p className="font-serif text-sm sm:text-base text-[#C8B28E] tracking-widest uppercase mb-8 max-w-md">
+              Official 30-Second Launch Cinematic Starring The Warden
+            </p>
 
-      {/* Footer Branding */}
-      <footer className="w-full max-w-5xl py-2 border-t border-[#3E3228] flex items-center justify-between text-[11px] font-mono text-[#A89F93]">
-        <span>THE UNWRITTEN · OFFICIAL LAUNCH CAMPAIGN</span>
-        <span>WHERE SILENCE SPEAKS</span>
-      </footer>
+            <button
+              onClick={handleStart}
+              className="group flex items-center gap-3 px-8 py-3.5 rounded-full bg-red-700 hover:bg-red-600 text-white font-serif font-bold text-base tracking-widest uppercase transition-all shadow-[0_0_35px_rgba(220,38,38,0.6)] transform hover:scale-105 cursor-pointer"
+            >
+              <Play className="w-5 h-5 fill-current group-hover:animate-pulse" />
+              <span>Watch Launch Cinematic</span>
+            </button>
+            <p className="mt-4 text-xs font-mono text-[#8A8178]">
+              Includes procedural spatial sound effects and The Warden&apos;s speech.
+            </p>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
