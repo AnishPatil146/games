@@ -1,0 +1,62 @@
+{
+  "character": "The Warden",
+  "title": "THE UNWRITTEN Official Launch Character Asset Registry",
+  "version": "1.0.0",
+  "total_poses": 6,
+  "poses": [
+    {
+      "id": "warden_01_neutral_standing",
+      "filename": "warden_01_neutral_standing.png",
+      "role": "Opening Reveal & Distant Silhouette",
+      "scene": "Scene 1 \u2014 The Arrival (0\u20135s)",
+      "description": "Full-body neutral standing pose, hands resting naturally at sides, leather boots grounded on reflective stone.",
+      "aspect_ratio": "992x1585",
+      "lighting": "Cool silver ambient with faint overhead moonbeam"
+    },
+    {
+      "id": "warden_02_walking_forward",
+      "filename": "warden_02_walking_forward.png",
+      "role": "Approaching Stride & Announcement",
+      "scene": "Scene 3 \u2014 The Announcement (11\u201317s)",
+      "description": "Full-body dynamic walking stride forward, trench coat flaring, boot advancing firmly toward camera.",
+      "aspect_ratio": "992x1586",
+      "lighting": "Unsealing gate back-light with atmospheric mist"
+    },
+    {
+      "id": "warden_03_welcoming_gesture",
+      "filename": "warden_03_welcoming_gesture.png",
+      "role": "Personal Introduction & Final Invitation",
+      "scene": "Scene 2 \u2014 Introduction (5\u201311s) & Scene 5 (23\u201327s)",
+      "description": "Full-body welcoming gesture, left gloved hand raised invitingly, head poised directly toward viewer.",
+      "aspect_ratio": "992x1585",
+      "lighting": "Frontal silver key-light with subtle eye contact gleam"
+    },
+    {
+      "id": "warden_04_three_quarter_hand_in_pocket",
+      "filename": "warden_04_three_quarter_hand_in_pocket.png",
+      "role": "Three-Quarter Transition & Monologue",
+      "scene": "Scene 5 \u2014 The Invitation Prelude (23\u201325s) / Transition",
+      "description": "Full-body three-quarter stance, left hand tucked in coat pocket, confident mysterious composure.",
+      "aspect_ratio": "992x1585",
+      "lighting": "Dramatic rim contour on coat lapels and silver hair"
+    },
+    {
+      "id": "warden_05_guarded_standing",
+      "filename": "warden_05_guarded_standing.png",
+      "role": "Official Launch Game Reveal",
+      "scene": "Scene 4 \u2014 Official Launch Reveal (17\u201323s)",
+      "description": "Full-body guarded standing posture, intense crimson rim glow behind left shoulder framing the official game title.",
+      "aspect_ratio": "992x1586",
+      "lighting": "Intense crimson portal edge light and silver mask contrast"
+    },
+    {
+      "id": "warden_06_kneeling_pose",
+      "filename": "warden_06_kneeling_pose.png",
+      "role": "Dramatic Low Perspective & Climax",
+      "scene": "Scene 5 \u2014 Climax Transition (27\u201330s) / Outro",
+      "description": "Full-body kneeling pose, gloved hand touching the stone floor, heavy coat draped across cobblestones, intense upward gaze.",
+      "aspect_ratio": "1111x1416",
+      "lighting": "Low-angle cinematic floor shadows and deep atmospheric mist"
+    }
+  ]
+}

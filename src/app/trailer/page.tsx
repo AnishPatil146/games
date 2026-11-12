@@ -27,7 +27,7 @@ interface SceneConfig {
   bgImage: string;
   speaker: string;
   dialogue: string;
-  expression: "neutral" | "speaking" | "amused";
+  pose: string;
 }
 
 const SCENES: SceneConfig[] = [
@@ -39,7 +39,7 @@ const SCENES: SceneConfig[] = [
     bgImage: "/art/environments/warden_gate_wide.jpg",
     speaker: "NARRATOR",
     dialogue: "THE WAIT IS OVER.",
-    expression: "neutral",
+    pose: "/art/characters/launch/warden_01_neutral_standing.png",
   },
   {
     id: 1,
@@ -49,7 +49,7 @@ const SCENES: SceneConfig[] = [
     bgImage: "/art/environments/warden_gate_wide.jpg",
     speaker: "THE WARDEN",
     dialogue: "Hello, everyone. My name is The Warden.",
-    expression: "speaking",
+    pose: "/art/characters/launch/warden_03_welcoming_gesture.png",
   },
   {
     id: 2,
@@ -59,7 +59,7 @@ const SCENES: SceneConfig[] = [
     bgImage: "/art/environments/warden_gate_opening.jpg",
     speaker: "THE WARDEN",
     dialogue: "Finally... the wait is over.",
-    expression: "speaking",
+    pose: "/art/characters/launch/warden_02_walking_forward.png",
   },
   {
     id: 3,
@@ -69,7 +69,7 @@ const SCENES: SceneConfig[] = [
     bgImage: "/art/environments/warden_gate_opening.jpg",
     speaker: "THE WARDEN",
     dialogue: "THE UNWRITTEN is officially LIVE!",
-    expression: "amused",
+    pose: "/art/characters/launch/warden_05_guarded_standing.png",
   },
   {
     id: 4,
@@ -80,7 +80,7 @@ const SCENES: SceneConfig[] = [
     speaker: "THE WARDEN",
     dialogue:
       "Go check it out, experience the game, and don't forget to leave your honest review. I want to know what you think. I'll see you inside.",
-    expression: "speaking",
+    pose: "/art/characters/launch/warden_04_three_quarter_hand_in_pocket.png",
   },
 ];
 
@@ -342,8 +342,33 @@ export default function CinematicLaunchTrailerPage() {
     cameraY = -scene5Progress * 28;
   }
 
-  // Full-body character sprite (complete head down to leather boots, zero cut-off)
-  const wardenFullBodySprite = "/art/characters/warden_full_body.png";
+  // Active pose mapped to narrative scene & sub-timing across all 6 official poses
+  let currentPose = "/art/characters/launch/warden_01_neutral_standing.png";
+  if (isScene1) {
+    currentPose = "/art/characters/launch/warden_01_neutral_standing.png";
+  } else if (isScene2) {
+    currentPose = "/art/characters/launch/warden_03_welcoming_gesture.png";
+  } else if (isScene3) {
+    currentPose = "/art/characters/launch/warden_02_walking_forward.png";
+  } else if (isScene4) {
+    currentPose = "/art/characters/launch/warden_05_guarded_standing.png";
+  } else if (isScene5) {
+    if (currentTime < 26.5) {
+      currentPose = "/art/characters/launch/warden_04_three_quarter_hand_in_pocket.png";
+    } else if (currentTime < 28.5) {
+      currentPose = "/art/characters/launch/warden_03_welcoming_gesture.png";
+    } else {
+      currentPose = "/art/characters/launch/warden_06_kneeling_pose.png";
+    }
+  }
+
+  // Soft edge dissolving mask: seamlessly fades the studio vignette into the game environment
+  const characterMaskStyle: React.CSSProperties = {
+    maskImage:
+      "linear-gradient(to right, transparent 0%, black 14%, black 86%, transparent 100%), linear-gradient(to bottom, transparent 0%, black 6%, black 98%, transparent 100%)",
+    WebkitMaskImage:
+      "linear-gradient(to right, transparent 0%, black 14%, black 86%, transparent 100%), linear-gradient(to bottom, transparent 0%, black 6%, black 98%, transparent 100%)",
+  };
 
   return (
     <div className="fixed inset-0 w-full h-full overflow-hidden bg-[#070608] select-none flex flex-col justify-between font-sans">
@@ -391,7 +416,7 @@ export default function CinematicLaunchTrailerPage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: [0.35, 0.55, 0.4] }}
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute inset-0 bg-radial-gradient from-blue-100/15 via-slate-400/5 to-transparent pointer-events-none mix-blend-screen"
+            className="absolute inset-0 pointer-events-none mix-blend-screen"
             style={{
               background:
                 "radial-gradient(ellipse at 50% 36%, rgba(200, 220, 255, 0.22) 0%, rgba(140, 160, 200, 0.08) 45%, transparent 75%)",
@@ -442,14 +467,14 @@ export default function CinematicLaunchTrailerPage() {
       </motion.div>
 
       {/* ======================================================== */}
-      {/* 2. TOP IN-GAME HUD BAR (Authentic, Minimal, Unclipped)   */}
+      {/* 2. TOP CINEMATIC OVERLAY (Discreet, Borderless, Box-Free) */}
       {/* ======================================================== */}
-      <header className="relative z-40 w-full flex items-center justify-between p-4 sm:p-5 md:px-8 bg-gradient-to-b from-black/90 via-black/60 to-transparent pointer-events-auto">
-        {/* Brand & Chapter Stamp */}
+      <header className="relative z-40 w-full flex items-center justify-between p-4 sm:p-5 md:px-8 bg-gradient-to-b from-black/80 via-black/40 to-transparent pointer-events-auto">
+        {/* Discreet Brand Title */}
         <div className="flex items-center gap-3">
           <Link
             href="/"
-            className="relative w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-[#C8B28E]/60 overflow-hidden shadow-lg flex-shrink-0 bg-black/60 hover:border-[#C8B28E] transition-colors"
+            className="relative w-8 h-8 sm:w-9 sm:h-9 rounded-full overflow-hidden flex-shrink-0 opacity-80 hover:opacity-100 transition-opacity"
             title="Return to Hub"
           >
             <Image
@@ -457,23 +482,21 @@ export default function CinematicLaunchTrailerPage() {
               alt="THE UNWRITTEN"
               fill
               priority
-              className="object-contain p-0.5"
+              className="object-contain"
             />
           </Link>
-          <div className="flex flex-col">
-            <span className="text-[10px] sm:text-xs font-mono font-bold tracking-[0.25em] text-[#C8B28E] uppercase flex items-center gap-1.5">
-              <span>THE UNWRITTEN</span>
-              <span className="text-[#8A8178]">•</span>
-              <span className="text-red-500 font-semibold">LAUNCH TRAILER</span>
+          <div className="flex flex-col select-none">
+            <span className="text-[10px] sm:text-xs font-serif font-bold tracking-[0.28em] text-[#C8B28E] uppercase drop-shadow">
+              THE UNWRITTEN
             </span>
-            <h1 className="text-xs sm:text-sm font-serif font-bold tracking-wide text-[#FAF7F2] drop-shadow-sm">
-              {currentScene.title}
-            </h1>
+            <span className="text-[9px] font-mono tracking-widest text-[#8A8178] uppercase">
+              OFFICIAL LAUNCH CINEMATIC
+            </span>
           </div>
         </div>
 
-        {/* Floating Minimal Controls */}
-        <div className="flex items-center gap-2 sm:gap-2.5">
+        {/* Minimal Unobtrusive Icon Controls (Zero Border Boxes) */}
+        <div className="flex items-center gap-2 sm:gap-3 text-[#FAF7F2]">
           {/* View Mode Framing Switcher */}
           <button
             onClick={() => {
@@ -485,63 +508,60 @@ export default function CinematicLaunchTrailerPage() {
                 setViewFraming("auto");
               }
             }}
-            className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-black/70 hover:bg-black/90 text-[#FAF7F2] font-mono text-xs uppercase tracking-wider backdrop-blur-md border border-[#C8B28E]/40 hover:border-[#C8B28E] transition-all shadow-md cursor-pointer"
-            title="Toggle between Auto-fit, 16:9 Cinematic, and 9:16 Reel Framing"
+            className="p-2 text-[#C8B28E] hover:text-white transition-colors cursor-pointer"
+            title="Toggle Framing (Auto / 16:9 / 9:16)"
           >
             {isVerticalEffective ? (
-              <>
-                <Smartphone className="w-3.5 h-3.5 text-[#C8B28E]" />
-                <span>9:16 Reel</span>
-              </>
+              <Smartphone className="w-4 h-4" />
             ) : (
-              <>
-                <Maximize2 className="w-3.5 h-3.5 text-[#C8B28E]" />
-                <span>16:9 Wide</span>
-              </>
+              <Maximize2 className="w-4 h-4" />
             )}
           </button>
 
           {/* Audio Mute/Unmute */}
           <button
             onClick={() => setIsMuted(!isMuted)}
-            className="p-2 sm:px-2.5 rounded-full bg-black/70 hover:bg-black/90 text-[#FAF7F2] backdrop-blur-md border border-[#C8B28E]/40 hover:border-[#C8B28E] transition-all shadow-md cursor-pointer"
+            className="p-2 transition-colors cursor-pointer"
             title={isMuted ? "Unmute Audio" : "Mute Audio"}
             aria-label={isMuted ? "Unmute Audio" : "Mute Audio"}
           >
             {isMuted ? (
               <VolumeX className="w-4 h-4 text-red-400" />
             ) : (
-              <Volume2 className="w-4 h-4 text-[#52B788]" />
+              <Volume2 className="w-4 h-4 text-[#C8B28E] hover:text-white" />
             )}
           </button>
 
           {/* Restart / Replay */}
           <button
             onClick={handleRestart}
-            className="p-2 sm:px-2.5 rounded-full bg-black/70 hover:bg-black/90 text-[#FAF7F2] backdrop-blur-md border border-[#C8B28E]/40 hover:border-[#C8B28E] transition-all shadow-md cursor-pointer"
+            className="p-2 text-[#C8B28E] hover:text-white transition-colors cursor-pointer"
             title="Restart Cinematic"
             aria-label="Restart Cinematic"
           >
-            <RotateCcw className="w-4 h-4 text-[#C8B28E]" />
+            <RotateCcw className="w-4 h-4" />
           </button>
         </div>
       </header>
 
       {/* ======================================================== */}
-      {/* 3. STAGE CHARACTER & REVEAL LAYER (Centered & Unclipped) */}
+      {/* 3. STAGE CHARACTER & REVEAL LAYER (Centered & Grounded)  */}
       {/* ======================================================== */}
-      <div className="relative z-20 flex-1 w-full flex items-end justify-center pointer-events-none overflow-hidden pb-2 sm:pb-3">
+      <div
+        onClick={handleTogglePlay}
+        className="relative z-20 flex-1 w-full flex items-end justify-center pointer-events-auto cursor-pointer overflow-hidden pb-0 select-none"
+      >
         {/* ===================================================== */}
         {/* SCENE 1: Distance Silhouette Under Archway            */}
         {/* ===================================================== */}
         {isScene1 && (
           <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
-            {/* The Warden standing in distance under the archway - motionless, imposing, monolithic */}
+            {/* The Warden standing in distance under the archway */}
             <motion.div
               initial={{ opacity: 0, scale: 0.32, y: 8 }}
               animate={{
                 opacity: 1,
-                scale: 0.33,
+                scale: 0.34,
                 y: 0,
               }}
               transition={{
@@ -549,7 +569,7 @@ export default function CinematicLaunchTrailerPage() {
                 scale: { duration: 5.0, ease: "linear" },
                 y: { duration: 1.8, ease: "easeOut" },
               }}
-              className={`absolute flex flex-col items-center filter contrast-150 drop-shadow-[0_15px_30px_rgba(0,0,0,0.95)] ${
+              className={`absolute flex flex-col items-center filter contrast-125 drop-shadow-[0_15px_30px_rgba(0,0,0,0.95)] ${
                 isVerticalEffective
                   ? "top-[32%] sm:top-[34%]"
                   : "top-[30%] sm:top-[32%] md:top-[34%]"
@@ -558,28 +578,28 @@ export default function CinematicLaunchTrailerPage() {
               {/* Moonbeam ray casting down upon him */}
               <div className="absolute -top-24 w-12 sm:w-20 h-40 bg-gradient-to-b from-blue-200/25 via-slate-300/10 to-transparent blur-md pointer-events-none" />
 
-              <div className="relative w-36 h-72 sm:w-44 sm:h-80">
-                {/* Full-body silhouette from head down to leather boots */}
+              <div
+                className="relative w-36 h-72 sm:w-44 sm:h-80"
+                style={characterMaskStyle}
+              >
+                {/* Full-body Pose 1: warden_01_neutral_standing */}
                 <Image
-                  src={wardenFullBodySprite}
+                  src="/art/characters/launch/warden_01_neutral_standing.png"
                   alt="The Warden Silhouette"
                   fill
                   priority
-                  className="object-contain object-bottom select-none brightness-[0.25]"
+                  className="object-contain object-bottom select-none brightness-[0.35]"
                 />
 
                 {/* Subtle Silver Moonlight Glint on Mask */}
                 <div className="absolute top-[8%] left-[28%] w-[44%] h-[18%] bg-gradient-to-r from-transparent via-[#E2E8F0]/70 to-transparent rounded-full blur-[2px] mix-blend-screen pointer-events-none" />
-
-                {/* Silver moonlight edge highlight on coat shoulder */}
-                <div className="absolute top-[18%] left-[20%] w-[60%] h-[35%] border-t border-l border-white/40 rounded-tl-full blur-[1px] pointer-events-none mix-blend-screen" />
               </div>
 
               {/* Distant Ground Mist around feet */}
               <div className="absolute -bottom-2 w-48 h-6 bg-slate-300/15 rounded-full blur-md" />
             </motion.div>
 
-            {/* Scene 1 Grand Centered Typography */}
+            {/* Scene 1 Grand Centered Typography (Zero Box) */}
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: currentTime > 1.2 ? 1 : 0, y: 0 }}
@@ -599,45 +619,43 @@ export default function CinematicLaunchTrailerPage() {
         )}
 
         {/* ===================================================== */}
-        {/* SCENES 2, 3, 5: Fully Integrated Animated Character   */}
+        {/* SCENES 2, 3, 5: Fully Integrated Character Poses      */}
         {/* ===================================================== */}
         {(isScene2 || isScene3 || isScene5) && (
           <motion.div
-            key="warden-stage-character"
-            initial={{ opacity: 0 }}
+            key={currentPose}
+            initial={{ opacity: 0.85 }}
             animate={{
               opacity: 1,
-              // Smooth, rock-solid scale push-in without hopping or bouncing
               scale: isScene5
-                ? 1.15 + scene5Progress * 0.10 // Steady, intense cinematic push-in on mask
+                ? 1.12 + scene5Progress * 0.08
                 : isScene3
-                ? 1.0 + scene3Progress * 0.12  // Deliberate, smooth advance into the light
-                : 1.0,                         // Steady medium shot in Scene 2
+                ? 1.0 + scene3Progress * 0.10
+                : 1.0,
               y: 0,
-              x: 0,
             }}
             transition={{
-              duration: isScene3 ? 6.0 : isScene5 ? 7.0 : 0.8,
+              duration: isScene3 ? 6.0 : isScene5 ? 7.0 : 0.6,
               ease: "linear",
             }}
             className="relative bottom-0 flex flex-col items-center select-none"
             style={{
-              height: isVerticalEffective ? "62vh" : "min(78vh, 680px)",
-              width: isVerticalEffective ? "88vw" : "min(52vw, 480px)",
-              maxHeight: isVerticalEffective ? "600px" : "720px",
+              height: isVerticalEffective ? "78vh" : "min(84vh, 740px)",
+              width: isVerticalEffective ? "92vw" : "min(56vw, 540px)",
+              maxHeight: isVerticalEffective ? "720px" : "800px",
             }}
           >
-            {/* Dynamic Ground Shadow (Smoothly widens with scale) */}
+            {/* Dynamic Ground Shadow */}
             <motion.div
               animate={{
-                scaleX: isScene3 ? 1.0 + scene3Progress * 0.18 : isScene5 ? 1.25 : 1.0,
-                opacity: 0.75,
+                scaleX: isScene3 ? 1.0 + scene3Progress * 0.18 : isScene5 ? 1.2 : 1.0,
+                opacity: 0.8,
               }}
               transition={{ duration: 0.5, ease: "linear" }}
-              className="absolute -bottom-3 sm:-bottom-4 w-60 sm:w-80 md:w-96 h-8 sm:h-10 bg-black/80 rounded-full blur-xl"
+              className="absolute -bottom-2 w-64 sm:w-80 md:w-96 h-8 sm:h-10 bg-black/90 rounded-full blur-xl"
             />
 
-            {/* Controlled Micro-Breathing (imperceptible, realistic, zero rubber squishing) */}
+            {/* Controlled Micro-Breathing */}
             <motion.div
               animate={{
                 y: [0, -2, 0],
@@ -647,19 +665,20 @@ export default function CinematicLaunchTrailerPage() {
                 duration: 5.5,
                 ease: "easeInOut",
               }}
-              className="relative w-full h-full filter drop-shadow-[0_18px_40px_rgba(0,0,0,0.92)] brightness-105"
+              className="relative w-full h-full filter drop-shadow-[0_18px_40px_rgba(0,0,0,0.95)]"
+              style={characterMaskStyle}
             >
-              {/* Full-Body Character: Complete coat, trousers, and boots planted on the floor */}
+              {/* Full-Body Character Sprite from Pose Pack */}
               <Image
-                src={wardenFullBodySprite}
-                alt="The Warden Full Body"
+                src={currentPose}
+                alt="The Warden"
                 fill
                 priority
                 unoptimized
                 className="object-contain object-bottom select-none"
               />
 
-              {/* Scene 2: Controlled Eye Contact Gleam across Mask */}
+              {/* Scene 2: Eye Contact Gleam across Mask */}
               {isScene2 && scene2Progress >= 0.08 && scene2Progress <= 0.40 && (
                 <motion.div
                   initial={{ opacity: 0 }}
@@ -669,10 +688,10 @@ export default function CinematicLaunchTrailerPage() {
                 />
               )}
 
-              {/* Dramatic Rim Light Highlight (Crimson & Silver) */}
-              <div className="absolute inset-0 bg-gradient-to-r from-white/12 via-transparent to-red-600/18 mix-blend-overlay pointer-events-none" />
+              {/* Dramatic Rim Light Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-r from-white/10 via-transparent to-red-600/15 mix-blend-overlay pointer-events-none" />
 
-              {/* Scene 3: Gate Light Reflections on Back and Shoulders */}
+              {/* Scene 3: Unsealing Gate Reflection */}
               {isScene3 && (
                 <motion.div
                   initial={{ opacity: 0 }}
@@ -685,11 +704,11 @@ export default function CinematicLaunchTrailerPage() {
         )}
 
         {/* ===================================================== */}
-        {/* SCENE 4: GAME REVEAL WITH THE WARDEN FULLY VISIBLE!   */}
+        {/* SCENE 4: GAME REVEAL WITH THE WARDEN GUARDED STANCE   */}
         {/* ===================================================== */}
         {isScene4 && (
           <div className="relative w-full h-full flex flex-col md:flex-row items-center justify-center md:justify-around px-4 sm:px-8 select-none pointer-events-none">
-            {/* The Warden standing proudly and solidly before the unsealed portal */}
+            {/* The Warden in Guarded Standing Pose */}
             <motion.div
               initial={{ opacity: 0, scale: 0.98 }}
               animate={{
@@ -703,18 +722,21 @@ export default function CinematicLaunchTrailerPage() {
               }}
               className={`relative z-20 flex flex-col items-center select-none ${
                 isVerticalEffective
-                  ? "order-2 h-[52vh] max-h-[460px] w-full"
-                  : "order-1 h-[78vh] max-h-[660px] w-[45%]"
+                  ? "order-2 h-[58vh] max-h-[520px] w-full"
+                  : "order-1 h-[82vh] max-h-[700px] w-[45%]"
               }`}
             >
               {/* Ground Shadow */}
-              <div className="absolute -bottom-3 w-52 sm:w-72 md:w-80 h-8 bg-black/85 rounded-full blur-xl" />
+              <div className="absolute -bottom-2 w-56 sm:w-72 md:w-80 h-8 bg-black/90 rounded-full blur-xl" />
 
-              <div className="relative w-full h-full filter drop-shadow-[0_20px_45px_rgba(0,0,0,0.95)]">
-                {/* Full-Body Character Sprite with Boots and Long Trench Coat */}
+              <div
+                className="relative w-full h-full filter drop-shadow-[0_20px_45px_rgba(0,0,0,0.95)]"
+                style={characterMaskStyle}
+              >
+                {/* Pose 5: warden_05_guarded_standing */}
                 <Image
-                  src={wardenFullBodySprite}
-                  alt="The Warden Proud"
+                  src="/art/characters/launch/warden_05_guarded_standing.png"
+                  alt="The Warden Guarded"
                   fill
                   priority
                   unoptimized
@@ -740,7 +762,7 @@ export default function CinematicLaunchTrailerPage() {
               {/* Pulsing Portal Energy Halo behind Emblem */}
               <div className="absolute w-44 h-44 sm:w-64 sm:h-64 rounded-full bg-red-600/25 blur-3xl animate-pulse pointer-events-none" />
 
-              {/* Official Silence Emblem - Majestic, rock-solid, radiant */}
+              {/* Official Silence Emblem */}
               <div
                 className={`relative mb-3 sm:mb-5 filter drop-shadow-[0_0_45px_rgba(220,38,38,0.85)] ${
                   isVerticalEffective
@@ -838,83 +860,41 @@ export default function CinematicLaunchTrailerPage() {
       </div>
 
       {/* ======================================================== */}
-      {/* 4. IN-GAME HIGH-CONTRAST DIALOGUE BOX (Sharp Gold Border)*/}
+      {/* 4. IN-GAME FLOATING CINEMATIC SUBTITLES (Zero Boxes)      */}
       {/* ======================================================== */}
-      <footer className="relative z-30 w-full p-3 sm:p-4 md:px-8 pb-4 sm:pb-6 bg-gradient-to-t from-black via-black/85 to-transparent pointer-events-auto flex flex-col items-center">
-        <div className="w-full max-w-3xl">
-          {/* Dialogue Box for Scenes 2, 3, 4, 5 */}
-          {!isScene1 && !(isScene5 && currentTime >= 27.2) && (
-            <motion.div
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0 }}
-              className="relative rounded-xl md:rounded-2xl p-4 sm:p-5 md:p-6 shadow-[0_16px_50px_rgba(0,0,0,0.95),0_0_20px_rgba(200,178,142,0.16)] border-2 border-[#C8B28E]/85 bg-[#0a0807]/95 backdrop-blur-xl text-[#FAF7F2]"
-            >
-              {/* Sharp Corner Gold Filigree Brackets */}
-              <div className="absolute top-1.5 left-1.5 w-3 h-3 border-t-2 border-l-2 border-[#C8B28E]" />
-              <div className="absolute top-1.5 right-1.5 w-3 h-3 border-t-2 border-r-2 border-[#C8B28E]" />
-              <div className="absolute bottom-1.5 left-1.5 w-3 h-3 border-b-2 border-l-2 border-[#C8B28E]" />
-              <div className="absolute bottom-1.5 right-1.5 w-3 h-3 border-b-2 border-r-2 border-[#C8B28E]" />
-
-              {/* Speaker Header with High-Contrast Gold & Pulsing Status Jewel */}
-              <div className="flex items-center justify-between mb-2 pb-1.5 border-b border-[#C8B28E]/25">
-                <div className="flex items-center gap-2.5">
-                  <div className="w-2.5 h-2.5 rounded-full bg-red-600 animate-pulse shadow-[0_0_10px_rgba(220,38,38,0.9)]" />
-                  <span className="font-serif font-bold text-xs sm:text-sm uppercase tracking-[0.24em] text-[#C8B28E]">
-                    {currentScene.speaker}
-                  </span>
-                  <span className="text-[10px] sm:text-xs font-mono text-[#A89F93] hidden xs:inline">
-                    • ARCHITECT OF THE EXPERIMENT
-                  </span>
-                </div>
-                <span className="text-[11px] font-mono text-[#C8B28E]/80 font-bold">
-                  {currentTime.toFixed(1)}s / 30.0s
-                </span>
-              </div>
-
-              {/* Typewriter Prose (High-Contrast, Crisp Typography) */}
-              <p className="font-serif text-base sm:text-lg md:text-xl font-medium leading-relaxed sm:leading-loose text-[#FAF7F2] min-h-[48px] sm:min-h-[56px] drop-shadow-md">
-                &ldquo;{displayedText}&rdquo;
-              </p>
-
-              {/* Advance / Next hint */}
-              <div className="mt-2 pt-1 flex items-center justify-between text-[10px] sm:text-[11px] font-mono text-[#8A8178]">
-                <span>THE WARDEN&apos;S GATE · OFFICIAL PROLOGUE</span>
-                <span className="flex items-center gap-1 text-[#C8B28E] font-semibold">
-                  <span>Scene {currentScene.id + 1} of 5</span>
-                  <ChevronRight className="w-3.5 h-3.5 animate-bounce" />
-                </span>
-              </div>
-            </motion.div>
-          )}
-        </div>
-
-        {/* Floating Scrub / Progress Bar */}
-        <div className="w-full max-w-3xl mt-3 sm:mt-4 flex items-center gap-3">
-          <button
-            onClick={handleTogglePlay}
-            className="p-2 rounded-full bg-black/60 hover:bg-black/90 text-[#FAF7F2] border border-[#C8B28E]/40 hover:border-[#C8B28E] transition-all cursor-pointer shadow-md"
-            title={isPlaying ? "Pause (Space)" : "Play (Space)"}
-            aria-label={isPlaying ? "Pause" : "Play"}
+      <div className="absolute bottom-8 sm:bottom-12 inset-x-0 z-30 flex flex-col items-center justify-end px-4 sm:px-8 pointer-events-none">
+        {!isScene1 && !(isScene5 && currentTime >= 27.2) && (
+          <motion.div
+            key={`subtitle-${currentScene.id}`}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.35 }}
+            className="w-full max-w-4xl text-center select-none"
           >
-            {isPlaying ? (
-              <Pause className="w-3.5 h-3.5 text-[#C8B28E]" />
-            ) : (
-              <Play className="w-3.5 h-3.5 fill-current text-[#C8B28E]" />
-            )}
-          </button>
-          <div className="flex-1 h-1.5 bg-white/15 rounded-full overflow-hidden border border-white/5">
-            <div
-              className="h-full bg-gradient-to-r from-red-700 via-red-500 to-[#C8B28E] transition-all duration-100 shadow-[0_0_10px_rgba(239,68,68,0.7)]"
-              style={{ width: `${(currentTime / TOTAL_DURATION) * 100}%` }}
-            />
-          </div>
-          <span className="font-mono text-[11px] font-bold text-[#C8B28E]">
-            {Math.floor(currentTime).toString().padStart(2, "0")}:
-            {Math.floor((currentTime % 1) * 10)} / 30:0s
-          </span>
-        </div>
-      </footer>
+            {/* Cinematic Speaker Name */}
+            <div className="flex items-center justify-center gap-2 mb-1.5">
+              <span className="w-1.5 h-1.5 rounded-full bg-red-600 animate-pulse shadow-[0_0_8px_rgba(220,38,38,0.9)]" />
+              <span className="font-serif font-bold text-xs sm:text-sm uppercase tracking-[0.32em] text-[#C8B28E] drop-shadow-[0_2px_8px_rgba(0,0,0,0.98)]">
+                {currentScene.speaker}
+              </span>
+            </div>
+
+            {/* Subtitle Dialogue */}
+            <p className="font-serif text-lg sm:text-2xl md:text-3xl font-medium tracking-wide text-[#FAF7F2] drop-shadow-[0_2px_14px_rgba(0,0,0,0.98),0_1px_4px_rgba(0,0,0,0.95)] leading-relaxed sm:leading-relaxed max-w-3xl mx-auto">
+              &ldquo;{displayedText}&rdquo;
+            </p>
+          </motion.div>
+        )}
+      </div>
+
+      {/* Hairline 2px Progress Bar (Pinned to screen bottom, zero boxes) */}
+      <div className="fixed bottom-0 inset-x-0 h-[2px] bg-white/10 z-50 pointer-events-none">
+        <div
+          className="h-full bg-gradient-to-r from-red-700 via-red-500 to-[#C8B28E] transition-all duration-100 shadow-[0_0_8px_rgba(239,68,68,0.8)]"
+          style={{ width: `${(currentTime / TOTAL_DURATION) * 100}%` }}
+        />
+      </div>
 
       {/* ======================================================== */}
       {/* 5. INITIAL START OVERLAY (Prevents Autoplay Block)        */}
