@@ -13,6 +13,7 @@ import {
   VolumeX,
   Compass,
   CheckCircle2,
+  ChevronRight,
 } from "lucide-react";
 import { useGameSession } from "@/lib/useGameSession";
 import { CreatorIdentitySection } from "@/components/common/CreatorIdentitySection";
@@ -279,6 +280,13 @@ export function CharacterSelectScreen() {
 
           <nav className="hidden md:flex items-center gap-5 text-[11px] font-mono uppercase tracking-[0.2em] text-[#DDD4C5]">
             <Link
+              href="/warden"
+              className="hover:text-red-400 transition-colors flex items-center gap-1.5 text-red-300 font-bold"
+            >
+              <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
+              <span>The Warden</span>
+            </Link>
+            <Link
               href="/solo"
               className="hover:text-amber-300 transition-colors flex items-center gap-1.5"
             >
@@ -512,6 +520,44 @@ export function CharacterSelectScreen() {
             </div>
           </div>
         </motion.div>
+
+        {/* 4.5. THE WARDEN CINEMATIC ARCHIVE CALLOUT */}
+        <section className="w-full max-w-5xl mx-auto my-12 px-4">
+          <Link
+            href="/warden"
+            className="group block relative rounded-3xl overflow-hidden border border-red-900/50 bg-gradient-to-r from-red-950/70 via-[#100D13] to-[#0A090C] p-6 sm:p-8 transition-all hover:border-red-600/80 hover:shadow-[0_0_35px_rgba(220,38,38,0.35)]"
+          >
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
+              <div className="flex items-center gap-5">
+                <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden border border-red-500/40 bg-black/80 flex-shrink-0">
+                  <Image
+                    src="/art/characters/launch/warden_01_neutral_standing.png"
+                    alt="The Warden"
+                    fill
+                    sizes="80px"
+                    className="object-contain object-bottom filter drop-shadow"
+                  />
+                </div>
+                <div>
+                  <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-red-900/60 text-[10px] font-mono uppercase tracking-[0.2em] text-red-300 mb-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-red-400 animate-pulse" />
+                    <span>Cinematic Experience · Sealed Gates Open</span>
+                  </div>
+                  <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#FAF7F2] group-hover:text-red-300 transition-colors">
+                    The Warden of the Dungeon
+                  </h3>
+                  <p className="font-serif text-xs sm:text-sm text-zinc-400 max-w-xl mt-1">
+                    Listen to the official vocal intro and outro narrations, explore all six canon stances in the Pose Codex, and watch the launch announcement story.
+                  </p>
+                </div>
+              </div>
+              <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-red-700 group-hover:bg-red-600 text-white font-serif text-xs font-bold uppercase tracking-wider transition-all shadow-[0_0_20px_rgba(220,38,38,0.6)] flex-shrink-0">
+                <span>Enter Archive</span>
+                <ChevronRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+              </div>
+            </div>
+          </Link>
+        </section>
 
         {/* 5. PLAYER REVIEWS & COMMUNITY DISPATCHES */}
         <PlayerReviewsSection />

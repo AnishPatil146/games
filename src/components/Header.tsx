@@ -220,6 +220,18 @@ export function Header({
             </button>
 
             <Link
+              href="/warden"
+              className={`inline-flex items-center gap-1.5 text-[11px] uppercase tracking-[0.18em] px-2.5 py-1.5 rounded-sm transition-colors font-semibold ${
+                isDark
+                  ? "text-red-400 hover:text-red-300 hover:bg-red-500/10"
+                  : "text-red-700 hover:text-red-800 hover:bg-red-50"
+              }`}
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse" />
+              <span>The Warden</span>
+            </Link>
+
+            <Link
               href="/leaderboard"
               className={`inline-flex items-center gap-1.5 text-[11px] uppercase tracking-[0.18em] px-2.5 py-1.5 rounded-sm transition-colors font-bold ${
                 isDark
