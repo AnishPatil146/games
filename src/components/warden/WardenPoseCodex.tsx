@@ -46,31 +46,28 @@ export function WardenPoseCodex({
         <div className="mt-8 inline-flex items-center p-1 rounded-full bg-black/60 border border-white/10 backdrop-blur-md">
           <button
             onClick={() => setFilter("all")}
-            className={`px-4 py-1.5 rounded-full text-xs font-mono uppercase tracking-wider transition-all cursor-pointer ${
-              filter === "all"
+            className={`px-4 py-1.5 rounded-full text-xs font-mono uppercase tracking-wider transition-all cursor-pointer ${filter === "all"
                 ? "bg-[#FAF7F2] text-black font-bold shadow"
                 : "text-zinc-400 hover:text-white"
-            }`}
+              }`}
           >
             All 12 Stances
           </button>
           <button
             onClick={() => setFilter("intro")}
-            className={`px-4 py-1.5 rounded-full text-xs font-mono uppercase tracking-wider transition-all cursor-pointer ${
-              filter === "intro"
+            className={`px-4 py-1.5 rounded-full text-xs font-mono uppercase tracking-wider transition-all cursor-pointer ${filter === "intro"
                 ? "bg-red-700 text-white font-bold shadow-[0_0_15px_rgba(220,38,38,0.8)]"
                 : "text-zinc-400 hover:text-white"
-            }`}
+              }`}
           >
             Intro Sequence
           </button>
           <button
             onClick={() => setFilter("outro")}
-            className={`px-4 py-1.5 rounded-full text-xs font-mono uppercase tracking-wider transition-all cursor-pointer ${
-              filter === "outro"
+            className={`px-4 py-1.5 rounded-full text-xs font-mono uppercase tracking-wider transition-all cursor-pointer ${filter === "outro"
                 ? "bg-red-700 text-white font-bold shadow-[0_0_15px_rgba(220,38,38,0.8)]"
                 : "text-zinc-400 hover:text-white"
-            }`}
+              }`}
           >
             Outro Sequence
           </button>
@@ -88,11 +85,10 @@ export function WardenPoseCodex({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: idx * 0.08 }}
-              className={`group relative rounded-2xl overflow-hidden bg-gradient-to-b from-[#141217]/90 to-[#0A090C] border transition-all duration-300 flex flex-col justify-between ${
-                isSelected
+              className={`group relative rounded-2xl overflow-hidden bg-gradient-to-b from-[#141217]/90 to-[#0A090C] border transition-all duration-300 flex flex-col justify-between ${isSelected
                   ? "border-red-500 shadow-[0_0_30px_rgba(220,38,38,0.35)] ring-1 ring-red-500/50"
                   : "border-white/10 hover:border-[#C8B28E]/50 hover:shadow-[0_15px_30px_rgba(0,0,0,0.8)]"
-              }`}
+                }`}
             >
               {/* Image Frame Container */}
               <div className="relative w-full aspect-[4/5] bg-radial from-white/[0.04] to-black/80 overflow-hidden flex items-end justify-center p-4">
@@ -120,11 +116,10 @@ export function WardenPoseCodex({
                 {/* Mode Tag */}
                 <div className="absolute top-3 right-3 z-20">
                   <span
-                    className={`px-2.5 py-1 rounded-full text-[10px] font-mono uppercase tracking-wider backdrop-blur-sm ${
-                      pose.mode === "intro"
+                    className={`px-2.5 py-1 rounded-full text-[10px] font-mono uppercase tracking-wider backdrop-blur-sm ${pose.mode === "intro"
                         ? "bg-red-950/80 border border-red-700/50 text-red-300"
                         : "bg-amber-950/80 border border-amber-700/50 text-amber-300"
-                    }`}
+                      }`}
                   >
                     {pose.mode} cue · @{pose.audioTime}s
                   </span>
@@ -162,11 +157,10 @@ export function WardenPoseCodex({
                 {/* Action button */}
                 <button
                   onClick={() => onSelectPose?.(pose)}
-                  className={`w-full py-2.5 px-4 rounded-xl font-serif text-xs uppercase tracking-[0.16em] flex items-center justify-center gap-2 transition-all cursor-pointer ${
-                    isSelected
+                  className={`w-full py-2.5 px-4 rounded-xl font-serif text-xs uppercase tracking-[0.16em] flex items-center justify-center gap-2 transition-all cursor-pointer ${isSelected
                       ? "bg-red-700 text-white shadow-[0_0_20px_rgba(220,38,38,0.7)] font-bold"
                       : "bg-white/5 hover:bg-white/10 text-zinc-300 hover:text-white border border-white/10"
-                  }`}
+                    }`}
                 >
                   <Play className="w-3.5 h-3.5 fill-current" />
                   <span>

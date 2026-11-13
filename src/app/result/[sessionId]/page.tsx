@@ -67,11 +67,6 @@ export default function ResultReportPage({ params }: PageProps) {
       const forceOutro = params.get("outro") === "1" || params.get("replay") === "1";
       if (forceOutro) {
         setShowOutro(true);
-        return;
-      }
-      const seen = sessionStorage.getItem("unwritten_outro_seen");
-      if (seen !== "true") {
-        setShowOutro(true);
       }
     } catch {
       // ignore
