@@ -22,21 +22,16 @@ export default function SoloCampaignPage() {
   const [showWardenIntro, setShowWardenIntro] = useState<boolean>(false);
   const [showWardenOutro, setShowWardenOutro] = useState<boolean>(false);
 
-  // Check if Warden Intro should play upon entering World of Investigator
+  // Check if Warden Intro should play via explicit URL query (?replay=1 or ?intro=1)
   useEffect(() => {
     try {
       const params = new URLSearchParams(window.location.search);
       const force = params.get("intro") === "1" || params.get("replay") === "1";
       if (force) {
         setShowWardenIntro(true);
-        return;
-      }
-      const seen = sessionStorage.getItem("unwritten_investigator_intro_seen");
-      if (seen !== "true") {
-        setShowWardenIntro(true);
       }
     } catch {
-      setShowWardenIntro(false);
+      // ignore
     }
   }, []);
 
@@ -53,6 +48,13 @@ export default function SoloCampaignPage() {
     }
 
     const nextId = currentScene.onCompleteNextSceneId;
+
+    // Transition from Investigator Entry Screen (solo_prologue) into Warden Cinematic Intro
+    if (currentSceneId === "solo_prologue") {
+      setShowWardenIntro(true);
+      return;
+    }
+
     if (nextId === "finish") {
       setGameEnded(true);
       const endingId = results?.solo_l8 as string;
@@ -96,13 +98,14 @@ export default function SoloCampaignPage() {
 
   return (
     <div className="relative min-h-screen w-full bg-[#12100E] text-[#FAF7F2] select-none">
-      {/* 1. WARDEN CINEMATIC INTRO (Plays exclusively at Investigator entry) */}
+      {/* 1. WARDEN CINEMATIC INTRO (Plays exclusively after starting Investigator from entry screen) */}
       <AnimatePresence>
         {showWardenIntro && (
           <WardenCinematicIntro
             key="warden-investigator-intro"
             onComplete={() => {
               setShowWardenIntro(false);
+              setCurrentSceneId("solo_l1");
               try {
                 sessionStorage.setItem("unwritten_investigator_intro_seen", "true");
               } catch {

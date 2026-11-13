@@ -281,7 +281,7 @@ export function WardenCinematicIntro({
 
       {/* ============================================================ */}
       {/* OFFICIAL THE UNWRITTEN REVEAL & EMBLEM OVERLAY (17.5s–25s)  */}
-      {/* (Centered below the Warden's face to preserve mask clarity)  */}
+      {/* (Positioned safely below face across lower-middle zone)      */}
       {/* ============================================================ */}
       <AnimatePresence>
         {currentTime >= 17.5 && currentTime < 25.0 && (
@@ -290,7 +290,7 @@ export function WardenCinematicIntro({
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.96 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="absolute top-1/2 -translate-y-1/2 inset-x-0 z-30 flex flex-col items-center justify-center text-center p-4 pointer-events-none select-none"
+            className="absolute bottom-32 sm:bottom-36 inset-x-0 z-30 flex flex-col items-center justify-center text-center p-4 pointer-events-none select-none"
           >
             {/* Ambient Energy Flare */}
             <div className="absolute w-48 h-48 rounded-full bg-red-600/30 blur-3xl pointer-events-none" />
@@ -322,7 +322,7 @@ export function WardenCinematicIntro({
       {/* ============================================================ */}
       {/* FLOATING SUBTITLES (Centered in lower third, crystal clear)  */}
       {/* ============================================================ */}
-      <div className="absolute bottom-16 sm:bottom-20 inset-x-0 z-30 flex flex-col items-center justify-center text-center px-6 pointer-events-none">
+      <div className="absolute bottom-12 sm:bottom-16 inset-x-0 z-30 flex flex-col items-center justify-center text-center px-6 pointer-events-none">
         <AnimatePresence mode="wait">
           <motion.div
             key={`intro-sub-${activeCue.id}`}

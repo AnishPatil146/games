@@ -213,7 +213,7 @@ export function WardenCinematicOutro({
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.96 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="absolute top-1/2 -translate-y-1/2 inset-x-0 z-30 flex flex-col items-center justify-center text-center p-4 pointer-events-none select-none"
+            className="absolute bottom-28 sm:bottom-36 inset-x-0 z-30 flex flex-col items-center justify-center text-center p-4 pointer-events-none select-none"
           >
             <span className="text-[11px] font-mono font-bold tracking-[0.35em] text-[#C8B28E] uppercase mb-1 drop-shadow-md">
               ONE IN CENTURIES
@@ -235,7 +235,7 @@ export function WardenCinematicOutro({
       {/* FLOATING SUBTITLES (Centered in lower third)                 */}
       {/* ============================================================ */}
       {!hasReachedEnd && (
-        <div className="absolute bottom-16 sm:bottom-20 inset-x-0 z-30 flex flex-col items-center justify-center text-center px-6 pointer-events-none">
+        <div className="absolute bottom-12 sm:bottom-16 inset-x-0 z-30 flex flex-col items-center justify-center text-center px-6 pointer-events-none">
           <AnimatePresence mode="wait">
             <motion.div
               key={`outro-sub-${activeCue.id}`}
