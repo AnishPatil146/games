@@ -231,3 +231,4 @@ export const WARDEN_POSES_GALLERY: PoseDetail[] = [
     mode: "outro",
   },
 ];
+
