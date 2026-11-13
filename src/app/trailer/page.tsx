@@ -338,13 +338,13 @@ export default function OfficialStoryLaunchPage() {
           {/* Cinematic Vignette Overlay */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-black/50 pointer-events-none" />
 
-          {/* Scene 1: Grand Centered Story Typography */}
+          {/* Scene 1: Grand Centered Story Typography (Centered in screen, below face) */}
           {currentTime >= 4.5 && currentTime < 12.0 && (
             <motion.div
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.0, ease: "easeOut" }}
-              className="absolute inset-x-0 top-[20%] text-center px-4 pointer-events-none z-20"
+              className="absolute inset-x-0 top-1/2 -translate-y-1/2 text-center px-4 pointer-events-none z-20"
             >
               <span className="text-[10px] font-mono font-bold tracking-[0.35em] text-[#C8B28E] uppercase mb-2 block drop-shadow-md">
                 THE DOORS OF SILENCE
@@ -355,19 +355,19 @@ export default function OfficialStoryLaunchPage() {
             </motion.div>
           )}
 
-          {/* Scene 2: Officially LIVE Game Reveal Layer (12.8–17.5s) */}
+          {/* Scene 2: Officially LIVE Game Reveal Layer (12.8–17.5s, Centered in screen, below face) */}
           {currentTime >= 12.8 && currentTime < 17.5 && (
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
-              className="absolute inset-x-0 top-[18%] flex flex-col items-center justify-center text-center p-4 z-20 pointer-events-none"
+              className="absolute inset-x-0 top-1/2 -translate-y-1/2 flex flex-col items-center justify-center text-center p-4 z-20 pointer-events-none"
             >
               {/* Pulsing Energy Halo */}
               <div className="absolute w-44 h-44 rounded-full bg-red-600/30 blur-3xl animate-pulse pointer-events-none" />
 
               {/* Official Silence Emblem */}
-              <div className="relative w-24 h-24 sm:w-28 sm:h-28 mb-3 filter drop-shadow-[0_0_40px_rgba(220,38,38,0.9)]">
+              <div className="relative w-20 h-20 sm:w-24 sm:h-24 mb-3 filter drop-shadow-[0_0_40px_rgba(220,38,38,0.9)]">
                 <Image
                   src="/brand/emblem-silence.png"
                   alt="THE UNWRITTEN Emblem"
