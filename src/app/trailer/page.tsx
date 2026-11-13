@@ -15,7 +15,7 @@ import {
 } from "lucide-react";
 import { createTrailerAudioEngine, TrailerAudioEngine } from "./trailerAudioEngine";
 
-type SceneIndex = 0 | 1 | 2 | 3 | 4;
+type SceneIndex = 0 | 1 | 2 | 3 | 4 | 5;
 
 interface SceneConfig {
   id: SceneIndex;
@@ -30,216 +30,103 @@ interface SceneConfig {
 const SCENES: SceneConfig[] = [
   {
     id: 0,
-    title: "The Wait Is Over",
+    title: "Introduction",
     startTime: 0,
-    endTime: 5.0,
-    image: "/art/characters/launch/story_frames/scene1_neutral.jpg",
-    speaker: "NARRATOR",
-    dialogue: "THE WAIT IS OVER.",
+    endTime: 3.8,
+    image: "/art/characters/launch/story_frames/scene2_welcome.jpg",
+    speaker: "THE WARDEN",
+    dialogue: "Hello everyone, I am The Warden.",
   },
   {
     id: 1,
-    title: "The Introduction",
-    startTime: 5.0,
-    endTime: 11.0,
-    image: "/art/characters/launch/story_frames/scene2_welcome.jpg",
+    title: "The Doors of Silence",
+    startTime: 3.8,
+    endTime: 12.8,
+    image: "/art/characters/launch/story_frames/scene1_neutral.jpg",
     speaker: "THE WARDEN",
-    dialogue: "Hello, everyone. My name is The Warden.",
+    dialogue: "For a long time, the doors have remained closed. The wait... the silence... the mystery...",
   },
   {
     id: 2,
-    title: "The Announcement",
-    startTime: 11.0,
-    endTime: 17.0,
-    image: "/art/characters/launch/story_frames/scene3_walking.jpg",
+    title: "Officially Live",
+    startTime: 12.8,
+    endTime: 17.5,
+    image: "/art/characters/launch/story_frames/scene4_guarded.jpg",
     speaker: "THE WARDEN",
-    dialogue: "Finally... the wait is over.",
+    dialogue: "Finally, the moment has arrived. THE UNWRITTEN is officially LIVE!",
   },
   {
     id: 3,
-    title: "Officially Live",
-    startTime: 17.0,
-    endTime: 23.0,
-    image: "/art/characters/launch/story_frames/scene4_guarded.jpg",
+    title: "The Doors Open",
+    startTime: 17.5,
+    endTime: 23.5,
+    image: "/art/characters/launch/story_frames/scene3_walking.jpg",
     speaker: "THE WARDEN",
-    dialogue: "THE UNWRITTEN is officially LIVE!",
+    dialogue: "The doors are open. The experience is yours to discover.",
   },
   {
     id: 4,
-    title: "The Invitation",
-    startTime: 23.0,
-    endTime: 30.0,
+    title: "Explore the Unknown",
+    startTime: 23.5,
+    endTime: 28.5,
     image: "/art/characters/launch/story_frames/scene5_pocket.jpg",
     speaker: "THE WARDEN",
-    dialogue:
-      "Go check it out, experience the game, and don't forget to leave your honest review. I want to know what you think. I'll see you inside.",
+    dialogue: "Explore the unknown. Experience the game for yourself...",
+  },
+  {
+    id: 5,
+    title: "Honest Review & Invitation",
+    startTime: 28.5,
+    endTime: 38.92,
+    image: "/art/characters/launch/story_frames/scene5_kneel.jpg",
+    speaker: "THE WARDEN",
+    dialogue: "Share your honest thoughts, leave a review, tell us what you loved, and what we can make better. I'll be waiting. Until we meet... welcome to THE UNWRITTEN.",
   },
 ];
 
-const TOTAL_DURATION = 30.0;
+const TOTAL_DURATION = 38.92;
 
 export default function OfficialStoryLaunchPage() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [isMuted, setIsMuted] = useState(false);
   const [hasStarted, setHasStarted] = useState(false);
-  const [displayedText, setDisplayedText] = useState("");
-  const [isExporting, setIsExporting] = useState(false);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  // Audio Engine References
-  const audioEngineRef = useRef<TrailerAudioEngine | null>(null);
-  const spokenFlagsRef = useRef<Record<string, boolean>>({});
-
-  const getAudioEngine = useCallback(() => {
-    if (!audioEngineRef.current) {
-      audioEngineRef.current = createTrailerAudioEngine();
-    }
-    return audioEngineRef.current;
-  }, []);
-
-  // Cleanup audio engine on unmount
+  // Sync mute state
   useEffect(() => {
-    return () => {
-      audioEngineRef.current?.cleanup();
-    };
-  }, []);
-
-  // Active scene calculation
-  const currentScene: SceneConfig =
-    SCENES.find(
-      (s) => currentTime >= s.startTime && currentTime < s.endTime
-    ) || SCENES[SCENES.length - 1];
-
-  // Typewriter effect synced to active dialogue
-  useEffect(() => {
-    if (currentScene.id === 0) {
-      setDisplayedText("");
-      return;
+    if (audioRef.current) {
+      audioRef.current.muted = isMuted;
     }
-    const fullText = currentScene.dialogue;
-    let idx = 0;
-    setDisplayedText("");
-    const interval = setInterval(() => {
-      idx++;
-      if (idx <= fullText.length) {
-        setDisplayedText(fullText.slice(0, idx));
-      } else {
-        clearInterval(interval);
-      }
-    }, 28);
-    return () => clearInterval(interval);
-  }, [currentScene.id, currentScene.dialogue]);
+  }, [isMuted]);
 
-  // Audio Cue Synchronizer
-  const checkAudioCues = useCallback(
-    (t: number, prevT: number) => {
-      const engine = getAudioEngine();
-
-      // Scene 1: Heartbeats (sub-bass decay with visceral double-pulse)
-      [0.8, 1.8, 2.8, 3.8].forEach((beat) => {
-        if (prevT < beat && t >= beat) {
-          engine.playHeartbeat();
-        }
-      });
-
-      // Scene 2: Warden Speaks (5.4s) — deep authoritative baritone + supernatural resonance
-      if (prevT < 5.4 && t >= 5.4 && !spokenFlagsRef.current["scene2"]) {
-        spokenFlagsRef.current["scene2"] = true;
-        engine.speakWardenDialogue("Hello, everyone. My name is The Warden.");
-      }
-
-      // Scene 3: Colossal Iron-and-Stone Gate Grinding Rumble (11.0s)
-      if (prevT < 11.0 && t >= 11.0) {
-        engine.playColossalGateRumble();
-      }
-
-      // Scene 3: Wet footsteps synced with character walking strides
-      const strides: Array<{ time: number; foot: "left" | "right" }> = [
-        { time: 11.5, foot: "left" },
-        { time: 12.3, foot: "right" },
-        { time: 13.1, foot: "left" },
-        { time: 13.9, foot: "right" },
-      ];
-      strides.forEach(({ time, foot }) => {
-        if (prevT < time && t >= time) {
-          engine.playWetFootstep(foot);
-        }
-      });
-
-      if (prevT < 12.0 && t >= 12.0 && !spokenFlagsRef.current["scene3"]) {
-        spokenFlagsRef.current["scene3"] = true;
-        engine.speakWardenDialogue("Finally... the wait is over.");
-      }
-
-      // Scene 4: High-impact cinematic sub-boom + metallic clang (17.0s)
-      if (prevT < 17.0 && t >= 17.0) {
-        engine.playCinematicSubBoom();
-      }
-      if (prevT < 17.4 && t >= 17.4 && !spokenFlagsRef.current["scene4"]) {
-        spokenFlagsRef.current["scene4"] = true;
-        engine.speakWardenDialogue("THE UNWRITTEN is officially LIVE!");
-      }
-
-      // Scene 5: Ethereal harmonic shimmer riser (23.0s) & Final Invitation
-      if (prevT < 23.0 && t >= 23.0) {
-        engine.playHarmonicShimmerRiser();
-      }
-      if (prevT < 23.5 && t >= 23.5 && !spokenFlagsRef.current["scene5"]) {
-        spokenFlagsRef.current["scene5"] = true;
-        engine.speakWardenDialogue(
-          "Go check it out, experience the game, and don't forget to leave your honest review. I want to know what you think. I'll see you inside."
-        );
-      }
-
-      // Smooth drone tail fade at trailer outro
-      if (prevT < 28.5 && t >= 28.5) {
-        engine.stopAtmosphericDrone(1.5);
-      }
-    },
-    [getAudioEngine]
-  );
-
-  // Main Playback Loop
+  // Main Playback Loop synced directly to audio element
   useEffect(() => {
     let animId: number;
-    let lastTime = performance.now();
 
-    const loop = (now: number) => {
-      const dt = (now - lastTime) / 1000;
-      lastTime = now;
-
-      if (isPlaying) {
-        setCurrentTime((prev) => {
-          const next = prev + dt;
-          if (next >= TOTAL_DURATION) {
-            setIsPlaying(false);
-            getAudioEngine().stopAtmosphericDrone(1.0);
-            return TOTAL_DURATION;
-          }
-          checkAudioCues(next, prev);
-          return next;
-        });
+    const loop = () => {
+      if (isPlaying && audioRef.current) {
+        const t = audioRef.current.currentTime;
+        setCurrentTime(t);
+        if (t >= TOTAL_DURATION || audioRef.current.ended) {
+          setIsPlaying(false);
+        }
       }
       animId = requestAnimationFrame(loop);
     };
 
     animId = requestAnimationFrame(loop);
     return () => cancelAnimationFrame(animId);
-  }, [isPlaying, checkAudioCues, getAudioEngine]);
-
-  // Sync mute state
-  useEffect(() => {
-    getAudioEngine().setMuted(isMuted);
-  }, [isMuted, getAudioEngine]);
+  }, [isPlaying]);
 
   // Start Playback
   const handleStart = () => {
-    const engine = getAudioEngine();
-    engine.init();
-    engine.setMuted(isMuted);
-    engine.startAtmosphericDrone();
     setHasStarted(true);
     setIsPlaying(true);
+    if (audioRef.current) {
+      audioRef.current.currentTime = 0;
+      audioRef.current.play().catch(() => {});
+    }
   };
 
   const handleTogglePlay = () => {
@@ -247,26 +134,22 @@ export default function OfficialStoryLaunchPage() {
       handleStart();
       return;
     }
-    const engine = getAudioEngine();
-    engine.init();
     if (!isPlaying) {
-      engine.startAtmosphericDrone();
       setIsPlaying(true);
+      audioRef.current?.play().catch(() => {});
     } else {
-      engine.stopAtmosphericDrone(0.4);
-      engine.stopAllVoice();
       setIsPlaying(false);
+      audioRef.current?.pause();
     }
   };
 
   const handleRestart = () => {
-    const engine = getAudioEngine();
-    engine.init();
-    engine.stopAllVoice();
-    spokenFlagsRef.current = {};
     setCurrentTime(0);
     setIsPlaying(true);
-    engine.startAtmosphericDrone();
+    if (audioRef.current) {
+      audioRef.current.currentTime = 0;
+      audioRef.current.play().catch(() => {});
+    }
   };
 
   // Keyboard shortcut (Space to pause/play)
@@ -283,29 +166,41 @@ export default function OfficialStoryLaunchPage() {
 
   // Active Pose Image Selection (Seamless 1080x1920 Story Frames)
   const getActiveStoryFrame = (): string => {
-    if (currentTime < 5.0) {
-      return "/art/characters/launch/story_frames/scene1_neutral.jpg";
-    }
-    if (currentTime < 11.0) {
+    if (currentTime < 3.8) {
       return "/art/characters/launch/story_frames/scene2_welcome.jpg";
     }
-    if (currentTime < 17.0) {
-      return "/art/characters/launch/story_frames/scene3_walking.jpg";
+    if (currentTime < 12.8) {
+      return "/art/characters/launch/story_frames/scene1_neutral.jpg";
     }
-    if (currentTime < 23.0) {
+    if (currentTime < 17.5) {
       return "/art/characters/launch/story_frames/scene4_guarded.jpg";
     }
-    // Scene 5 progression
-    if (currentTime < 26.5) {
+    if (currentTime < 23.5) {
+      return "/art/characters/launch/story_frames/scene3_walking.jpg";
+    }
+    if (currentTime < 28.5) {
       return "/art/characters/launch/story_frames/scene5_pocket.jpg";
     }
-    if (currentTime < 28.2) {
+    if (currentTime < 34.0) {
       return "/art/characters/launch/story_frames/scene2_welcome.jpg";
     }
     return "/art/characters/launch/story_frames/scene5_kneel.jpg";
   };
 
+  const getActiveSubtitle = (): string => {
+    if (currentTime < 3.8) return "Hello everyone, I am The Warden.";
+    if (currentTime < 8.0) return "For a long time, the doors have remained closed.";
+    if (currentTime < 12.8) return "The wait... the silence... the mystery...";
+    if (currentTime < 17.5) return "Finally, the moment has arrived. THE UNWRITTEN is officially LIVE!";
+    if (currentTime < 23.5) return "The doors are open. The experience is yours to discover.";
+    if (currentTime < 28.5) return "Explore the unknown. Experience the game for yourself...";
+    if (currentTime < 34.0) return "Share your honest thoughts, leave a review, tell us what you loved, and what we can make better.";
+    if (currentTime < 38.92) return "I'll be waiting. Until we meet... welcome to THE UNWRITTEN.";
+    return "";
+  };
+
   const activeFrame = getActiveStoryFrame();
+  const activeSubtitle = getActiveSubtitle();
 
   return (
     <main className="fixed inset-0 w-full h-full bg-[#050406] flex items-center justify-center overflow-hidden select-none">
@@ -443,16 +338,16 @@ export default function OfficialStoryLaunchPage() {
           {/* Cinematic Vignette Overlay */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-black/50 pointer-events-none" />
 
-          {/* Scene 1: Grand Centered Story Typography (0–5s) */}
-          {currentTime < 5.0 && (
+          {/* Scene 1: Grand Centered Story Typography */}
+          {currentTime >= 4.5 && currentTime < 12.0 && (
             <motion.div
               initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: currentTime > 1.2 ? 1 : 0, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.0, ease: "easeOut" }}
               className="absolute inset-x-0 top-[20%] text-center px-4 pointer-events-none z-20"
             >
               <span className="text-[10px] font-mono font-bold tracking-[0.35em] text-[#C8B28E] uppercase mb-2 block drop-shadow-md">
-                FOLIO ARCHIVES · PROLOGUE
+                THE DOORS OF SILENCE
               </span>
               <h2 className="font-serif text-3xl sm:text-4xl font-black tracking-[0.22em] text-[#FAF7F2] drop-shadow-[0_0_35px_rgba(220,38,38,0.85)]">
                 THE WAIT IS OVER.
@@ -460,8 +355,8 @@ export default function OfficialStoryLaunchPage() {
             </motion.div>
           )}
 
-          {/* Scene 4: Game Reveal Layer (17–23s) */}
-          {currentTime >= 17.0 && currentTime < 23.0 && (
+          {/* Scene 2: Officially LIVE Game Reveal Layer (12.8–17.5s) */}
+          {currentTime >= 12.8 && currentTime < 17.5 && (
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -497,8 +392,8 @@ export default function OfficialStoryLaunchPage() {
             </motion.div>
           )}
 
-          {/* Scene 5 Outro Screen (27.8–30s) */}
-          {currentTime >= 27.8 && (
+          {/* Scene 6 Outro Screen (35.5–38.92s) */}
+          {currentTime >= 35.5 && (
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -555,9 +450,9 @@ export default function OfficialStoryLaunchPage() {
         {/* FLOATING CINEMATIC SUBTITLES (Zero Boxes, Full Clarity)*/}
         {/* ====================================================== */}
         <div className="absolute bottom-10 inset-x-0 z-30 flex flex-col items-center justify-end px-5 pointer-events-none text-center">
-          {currentTime >= 5.0 && currentTime < 27.8 && (
+          {activeSubtitle && currentTime < 35.5 && (
             <motion.div
-              key={`subtitle-${currentScene.id}`}
+              key={`sub-${activeSubtitle.slice(0, 15)}`}
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0 }}
@@ -568,17 +463,25 @@ export default function OfficialStoryLaunchPage() {
               <div className="flex items-center justify-center gap-1.5 mb-1">
                 <span className="w-1.5 h-1.5 rounded-full bg-red-600 animate-pulse shadow-[0_0_8px_rgba(220,38,38,0.9)]" />
                 <span className="font-serif font-bold text-xs uppercase tracking-[0.3em] text-[#C8B28E] drop-shadow-[0_2px_8px_rgba(0,0,0,0.98)]">
-                  {currentScene.speaker}
+                  THE WARDEN
                 </span>
               </div>
 
               {/* Subtitle Dialogue */}
               <p className="font-serif text-lg sm:text-xl font-medium tracking-wide text-[#FAF7F2] drop-shadow-[0_2px_14px_rgba(0,0,0,0.98),0_1px_4px_rgba(0,0,0,0.95)] leading-relaxed">
-                &ldquo;{displayedText}&rdquo;
+                &ldquo;{activeSubtitle}&rdquo;
               </p>
             </motion.div>
           )}
         </div>
+
+        {/* Audio Element linked directly to user soundtrack */}
+        <audio
+          ref={audioRef}
+          src="/video/soundtrack.mp3"
+          preload="auto"
+          onEnded={() => setIsPlaying(false)}
+        />
 
         {/* ====================================================== */}
         {/* INITIAL PLAY OVERLAY (Unlocks Audio on User Tap)       */}
@@ -602,7 +505,7 @@ export default function OfficialStoryLaunchPage() {
               THE UNWRITTEN
             </h1>
             <p className="font-serif text-xs sm:text-sm text-[#D6CEC0] tracking-widest uppercase mb-8 max-w-xs leading-relaxed">
-              30-Second Cinematic Story Announcement
+              Official Launch Announcement Video
             </p>
 
             <button
@@ -613,7 +516,7 @@ export default function OfficialStoryLaunchPage() {
               <span>Watch Launch Story</span>
             </button>
             <p className="mt-4 text-[10px] font-mono text-[#8A8178]">
-              Includes spatial acoustics &amp; The Warden voice narration.
+              Includes official Warden narration &amp; soundtrack.
             </p>
           </div>
         )}
