@@ -572,21 +572,26 @@ export async function recordEventByToken(
 export async function recordPreferenceByToken(
   sessionToken: string,
   category: string,
-  selectedValue: string
+  selectedValue: string,
+  replaceCategory: boolean = false
 ): Promise<void> {
   const isSupabaseConfigured = shouldUseSupabase();
 
   if (isSupabaseConfigured) {
-    const supabase = await createPrivilegedClient();
-    const { error } = await supabase.rpc("rpc_record_preference", {
-      p_session_token: sessionToken,
-      p_category: category,
-      p_selected_value: selectedValue,
-    });
+    try {
+      const supabase = await createPrivilegedClient();
+      const { error } = await supabase.rpc("rpc_record_preference", {
+        p_session_token: sessionToken,
+        p_category: category,
+        p_selected_value: selectedValue,
+      });
 
-    if (!error) return;
-    if (!isSchemaMissingError(error)) {
-      throw new Error(`Preference persistence error: ${error.message}`);
+      if (!error) return;
+      if (!isSchemaMissingError(error)) {
+        throw new Error(`Preference persistence error: ${error.message}`);
+      }
+    } catch {
+      // Graceful fallback to local store
     }
   }
 
@@ -601,7 +606,7 @@ export async function recordPreferenceByToken(
       !(
         p.session_id === session.id &&
         p.preference_category === category &&
-        (category !== "canvas_object" || p.selected_value === selectedValue)
+        (!replaceCategory && category === "canvas_object" ? p.selected_value === selectedValue : true)
       )
   );
 
@@ -612,6 +617,52 @@ export async function recordPreferenceByToken(
     selected_value: selectedValue,
     created_at: new Date().toISOString(),
   });
+  writeLocalStore(store);
+}
+
+export async function recordPreferencesBatchByToken(
+  sessionToken: string,
+  category: string,
+  selectedValues: string[]
+): Promise<void> {
+  const isSupabaseConfigured = shouldUseSupabase();
+
+  if (isSupabaseConfigured) {
+    try {
+      const supabase = await createPrivilegedClient();
+      for (const val of selectedValues) {
+        await supabase.rpc("rpc_record_preference", {
+          p_session_token: sessionToken,
+          p_category: category,
+          p_selected_value: val,
+        });
+      }
+    } catch {
+      // Graceful fallback to local store
+    }
+  }
+
+  const store = readLocalStore();
+  const session = store.sessions.find((s) => s.session_token === sessionToken);
+  if (!session) {
+    throw new Error("Session not initialized.");
+  }
+
+  // Atomically wipe any previous selections for this category in this session
+  store.preferences = store.preferences.filter(
+    (p) => !(p.session_id === session.id && p.preference_category === category)
+  );
+
+  const now = new Date().toISOString();
+  for (const val of selectedValues) {
+    store.preferences.push({
+      id: crypto.randomUUID(),
+      session_id: session.id,
+      preference_category: category,
+      selected_value: val,
+      created_at: now,
+    });
+  }
   writeLocalStore(store);
 }
 
@@ -686,7 +737,7 @@ export async function getPublicSessionDossier(
     return null;
   }
 
-  if (computedArchetypeToSave && !matched.result_archetype) {
+  if (computedArchetypeToSave) {
     matched.result_archetype = computedArchetypeToSave;
     if (matched.current_chapter >= 6) {
       matched.status = "completed";

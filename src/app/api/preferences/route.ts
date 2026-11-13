@@ -1,13 +1,17 @@
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
-import { recordPreferenceByToken } from "@/lib/storage";
+import { recordPreferenceByToken, recordPreferencesBatchByToken } from "@/lib/storage";
 import { checkRateLimit } from "@/lib/rate-limit";
 
 const TOKEN_COOKIE = "the_unwritten_token";
 
 const PreferenceSchema = z.object({
   category: z.string().trim().min(1).max(80),
-  selectedValue: z.string().trim().min(1).max(200),
+  selectedValue: z.string().trim().min(1).max(200).optional(),
+  selectedValues: z.array(z.string().trim().min(1).max(200)).optional(),
+  replace: z.boolean().optional(),
+}).refine((data) => data.selectedValue !== undefined || (data.selectedValues !== undefined && data.selectedValues.length > 0), {
+  message: "Either selectedValue or selectedValues is required.",
 });
 
 export async function POST(req: NextRequest) {
@@ -37,11 +41,20 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    await recordPreferenceByToken(
-      sessionToken,
-      parsed.data.category,
-      parsed.data.selectedValue
-    );
+    if (parsed.data.selectedValues && parsed.data.selectedValues.length > 0) {
+      await recordPreferencesBatchByToken(
+        sessionToken,
+        parsed.data.category,
+        parsed.data.selectedValues
+      );
+    } else if (parsed.data.selectedValue) {
+      await recordPreferenceByToken(
+        sessionToken,
+        parsed.data.category,
+        parsed.data.selectedValue,
+        Boolean(parsed.data.replace)
+      );
+    }
 
     return NextResponse.json({ success: true });
   } catch (err: unknown) {

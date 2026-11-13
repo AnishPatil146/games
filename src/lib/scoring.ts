@@ -140,6 +140,16 @@ export function evaluateReport(
   const interestingDecisions: { chapter: number; chapterTitle: string; summary: string }[] = [];
   const chaptersWithSignals = new Set<number>();
 
+  // Helper to retrieve the latest preference value for a category (prevents stale first-value locks)
+  const getLatestPref = (category: string): string | null => {
+    for (let i = preferences.length - 1; i >= 0; i--) {
+      if (preferences[i].preference_category === category && preferences[i].selected_value) {
+        return preferences[i].selected_value;
+      }
+    }
+    return null;
+  };
+
   // Count completed chapters accurately from events
   const completedChapterNums = new Set<number>();
   for (const ev of events) {
@@ -154,27 +164,32 @@ export function evaluateReport(
   const ch1Choices = events.filter(
     (e) => e.chapter === 1 && e.event_type === "choice_selected"
   );
+  let finalAction = "";
   if (ch1Choices.length > 0) {
     chaptersWithSignals.add(1);
     const investigatedFirst = ch1Choices.some(
       (c) => c.event_data?.choiceId === "investigate_first"
     );
-    const finalCh1 = ch1Choices[ch1Choices.length - 1];
-    const finalAction = String(finalCh1.event_data?.choiceId || "");
+
+    // Pick the last decisive action (preferring return_wallet/call_out/catch_train over investigate_first)
+    const decisiveActionEv = ch1Choices.slice().reverse().find((c) =>
+      ["return_wallet", "call_out", "catch_train"].includes(String(c.event_data?.choiceId || ""))
+    );
+    const finalCh1 = decisiveActionEv || ch1Choices[ch1Choices.length - 1];
+    finalAction = String(finalCh1.event_data?.choiceId || "");
     const durationMs = Number(finalCh1.event_data?.durationMs || 0);
 
     if (investigatedFirst) {
       scores["The Observer"] += 3;
+      scores["The Curious Mind"] += 2;
       scores["The Strategist"] += 1;
-      scores["The Curious Mind"] += 1;
       supportingEvidence.push(
         "Chapter 01: Inspected the fallen leather wallet on the platform before committing to a final decision."
       );
     }
 
     if (finalAction === "return_wallet") {
-      scores["The Empath"] += 4;
-      scores["The Observer"] += 1;
+      scores["The Empath"] += 6;
       interestingDecisions.push({
         chapter: 1,
         chapterTitle: CHAPTER_TITLES[1],
@@ -184,8 +199,8 @@ export function evaluateReport(
         "Chapter 01: Chose to return the wallet directly despite losing the last departure."
       );
     } else if (finalAction === "call_out") {
-      scores["The Empath"] += 3;
-      scores["The Strategist"] += 2;
+      scores["The Strategist"] += 4;
+      scores["The Empath"] += 2;
       interestingDecisions.push({
         chapter: 1,
         chapterTitle: CHAPTER_TITLES[1],
@@ -195,7 +210,7 @@ export function evaluateReport(
         "Chapter 01: Balanced social regard with practical timing by calling out to the stranger."
       );
     } else if (finalAction === "catch_train") {
-      scores["The Independent Thinker"] += 4;
+      scores["The Independent Thinker"] += 5;
       scores["The Strategist"] += 2;
       interestingDecisions.push({
         chapter: 1,
@@ -208,10 +223,10 @@ export function evaluateReport(
     }
 
     if (durationMs > 14000) {
-      scores["The Observer"] += 1;
+      scores["The Observer"] += 2;
       scores["The Strategist"] += 1;
     } else if (durationMs > 0 && durationMs < 5500) {
-      scores["The Independent Thinker"] += 1;
+      scores["The Independent Thinker"] += 2;
     }
   }
 
@@ -237,8 +252,9 @@ export function evaluateReport(
   }
 
   if (uniqueCh2Clues.length >= 3) {
-    scores["The Observer"] += 3;
-    scores["The Explorer"] += 2;
+    scores["The Explorer"] += 3;
+    scores["The Observer"] += 2;
+    scores["The Curious Mind"] += 2;
     supportingEvidence.push(
       `Chapter 02: Examined ${uniqueCh2Clues.length} archive clues in sequence before opening the oak door.`
     );
@@ -249,18 +265,19 @@ export function evaluateReport(
   const ch2Solved = ch2Attempts.some((a) => a.event_data?.isCorrect === true);
   if (ch2Solved) {
     if (ch2Hints.length === 0 && ch2Attempts.length === 1) {
-      scores["The Strategist"] += 4;
-      scores["The Observer"] += 1;
+      scores["The Strategist"] += 5;
+      scores["The Independent Thinker"] += 2;
       interestingDecisions.push({
         chapter: 2,
         chapterTitle: CHAPTER_TITLES[2],
         summary: "Deduced the archive tumbler code on the first attempt without hints.",
       });
     } else if (ch2Hints.length === 0) {
-      scores["The Strategist"] += 2;
-      scores["The Independent Thinker"] += 1;
+      scores["The Strategist"] += 3;
+      scores["The Curious Mind"] += 2;
     } else {
-      scores["The Curious Mind"] += 1;
+      scores["The Curious Mind"] += 3;
+      scores["The Explorer"] += 1;
     }
   }
 
@@ -270,6 +287,7 @@ export function evaluateReport(
   const ch3Choices = events.filter(
     (e) => e.chapter === 3 && e.event_type === "choice_selected"
   );
+  let ch3Action = "";
   if (ch3Choices.length > 0) {
     chaptersWithSignals.add(3);
     const inspectedSender = ch3Choices.some(
@@ -278,79 +296,120 @@ export function evaluateReport(
     const searchedEvidence = ch3Choices.some(
       (c) => c.event_data?.choiceId === "look_for_evidence"
     );
-    const finalCh3 = ch3Choices[ch3Choices.length - 1];
-    const ch3Action = String(finalCh3.event_data?.choiceId || "");
+
+    // Pick the last decisive action
+    const decisiveCh3Ev = ch3Choices.slice().reverse().find((c) =>
+      ["reply_immediately", "confront_sender", "ignore_message"].includes(String(c.event_data?.choiceId || ""))
+    );
+    const finalCh3 = decisiveCh3Ev || ch3Choices[ch3Choices.length - 1];
+    ch3Action = String(finalCh3.event_data?.choiceId || "");
 
     if (inspectedSender) {
-      scores["The Curious Mind"] += 3;
-      scores["The Strategist"] += 1;
+      scores["The Curious Mind"] += 4;
+      scores["The Strategist"] += 2;
       supportingEvidence.push(
         "Chapter 03: Traced transmission routing metadata before deciding how to respond."
       );
     }
     if (searchedEvidence) {
       scores["The Observer"] += 3;
-      scores["The Explorer"] += 1;
+      scores["The Explorer"] += 2;
       supportingEvidence.push(
         "Chapter 03: Swept the physical study perimeter for corroborating evidence."
       );
     }
 
     if (ch3Action === "ignore_message") {
-      scores["The Independent Thinker"] += 4;
+      scores["The Independent Thinker"] += 6;
+      scores["The Observer"] += 1;
       interestingDecisions.push({
         chapter: 3,
         chapterTitle: CHAPTER_TITLES[3],
         summary: "Refused to grant leverage to the anonymous sender by withholding a reply.",
       });
-    } else if (ch3Action === "reply_immediately" || ch3Action === "confront_sender") {
+    } else if (ch3Action === "reply_immediately") {
+      scores["The Empath"] += 5;
       scores["The Curious Mind"] += 2;
-      scores["The Empath"] += 2;
-      scores["The Independent Thinker"] += 1;
       interestingDecisions.push({
         chapter: 3,
         chapterTitle: CHAPTER_TITLES[3],
-        summary: "Engaged the unknown sender directly to test their claim.",
+        summary: "Engaged the unknown sender with a direct, measured response.",
+      });
+    } else if (ch3Action === "confront_sender") {
+      scores["The Curious Mind"] += 5;
+      scores["The Independent Thinker"] += 3;
+      interestingDecisions.push({
+        chapter: 3,
+        chapterTitle: CHAPTER_TITLES[3],
+        summary: "Demanded the sender's identity and challenged their claims directly.",
       });
     }
   }
 
   // ---------------------------------------------------------------------------
-  // CHAPTER 4 — THE EMPTY CANVAS
+  // CHAPTER 4 — THE EMPTY CANVAS (Multi-object selection & aesthetic palette)
   // ---------------------------------------------------------------------------
-  const canvasObjects = preferences
-    .filter((p) => p.preference_category === "canvas_object")
+  // Isolate latest 3 canvas objects to prevent cross-run / replay leakage
+  const allCanvasObjects = preferences
+    .filter((p) => p.preference_category === "canvas_object" && p.selected_value)
     .map((p) => p.selected_value);
-  const canvasPalette =
-    preferences.find((p) => p.preference_category === "canvas_mood")?.selected_value ||
-    preferences.find((p) => p.preference_category === "canvas_palette")?.selected_value ||
-    null;
-  const canvasArrangement =
-    preferences.find((p) => p.preference_category === "canvas_arrangement")?.selected_value ||
-    null;
+  const canvasObjects = allCanvasObjects.slice(-3);
+
+  const canvasPalette = getLatestPref("canvas_mood") || getLatestPref("canvas_palette");
+  const canvasArrangement = getLatestPref("canvas_arrangement");
 
   if (canvasObjects.length > 0 || canvasPalette) {
     chaptersWithSignals.add(4);
-    scores["The Creative Soul"] += 3;
+    scores["The Creative Soul"] += 4;
 
     for (const obj of canvasObjects) {
       if (obj.includes("Astrolabe")) {
-        scores["The Explorer"] += 1;
-        scores["The Strategist"] += 1;
+        scores["The Explorer"] += 3;
+        scores["The Strategist"] += 2;
       } else if (obj.includes("Rose")) {
-        scores["The Creative Soul"] += 1;
-        scores["The Empath"] += 1;
+        scores["The Creative Soul"] += 3;
+        scores["The Empath"] += 3;
       } else if (obj.includes("Key")) {
-        scores["The Curious Mind"] += 1;
-        scores["The Independent Thinker"] += 1;
+        scores["The Curious Mind"] += 3;
+        scores["The Independent Thinker"] += 3;
       } else if (obj.includes("Prism")) {
-        scores["The Observer"] += 1;
-        scores["The Creative Soul"] += 1;
+        scores["The Observer"] += 3;
+        scores["The Creative Soul"] += 2;
       } else if (obj.includes("Letter")) {
-        scores["The Empath"] += 2;
+        scores["The Empath"] += 4;
+        scores["The Creative Soul"] += 2;
       } else if (obj.includes("Hourglass")) {
-        scores["The Strategist"] += 1;
+        scores["The Strategist"] += 3;
+        scores["The Observer"] += 2;
+      }
+    }
+
+    if (canvasPalette) {
+      if (canvasPalette.includes("Ivory")) {
+        scores["The Empath"] += 2;
+        scores["The Creative Soul"] += 1;
+      } else if (canvasPalette.includes("Nocturne")) {
+        scores["The Independent Thinker"] += 2;
         scores["The Observer"] += 1;
+      } else if (canvasPalette.includes("Ochre")) {
+        scores["The Explorer"] += 2;
+        scores["The Strategist"] += 1;
+      } else if (canvasPalette.includes("Celadon")) {
+        scores["The Creative Soul"] += 2;
+        scores["The Curious Mind"] += 1;
+      }
+    }
+
+    if (canvasArrangement) {
+      if (canvasArrangement.includes("Golden Ratio")) {
+        scores["The Creative Soul"] += 2;
+        scores["The Observer"] += 1;
+      } else if (canvasArrangement.includes("Centered Totem")) {
+        scores["The Independent Thinker"] += 2;
+        scores["The Strategist"] += 1;
+      } else if (canvasArrangement.includes("Horizon Triptych")) {
+        scores["The Explorer"] += 2;
+        scores["The Strategist"] += 1;
       }
     }
 
@@ -360,7 +419,7 @@ export function evaluateReport(
       summary: `Composed "${canvasPalette || "Editorial Study"}" with ${canvasObjects.join(", ")}.`,
     });
     supportingEvidence.push(
-      `Chapter 04: Constructed a ${canvasArrangement ? canvasArrangement.toLowerCase() + " " : ""}studio composition around ${canvasObjects.slice(0, 3).join(", ")}.`
+      `Chapter 04: Constructed a ${canvasArrangement ? canvasArrangement.toLowerCase() + " " : ""}studio composition around ${canvasObjects.join(", ")}.`
     );
   }
 
@@ -378,10 +437,12 @@ export function evaluateReport(
     chaptersWithSignals.add(5);
     const ch5Correct = ch5Attempts.find((a) => a.event_data?.isCorrect === true);
     if (ch5Correct) {
-      scores["The Strategist"] += 3;
       if (ch5Hints.length === 0) {
-        scores["The Observer"] += 1;
-        scores["The Independent Thinker"] += 1;
+        scores["The Strategist"] += 5;
+        scores["The Independent Thinker"] += 2;
+      } else {
+        scores["The Curious Mind"] += 3;
+        scores["The Strategist"] += 2;
       }
       supportingEvidence.push(
         "Chapter 05: Resolved the relational vault equation accurately during the countdown."
@@ -392,63 +453,64 @@ export function evaluateReport(
         summary: "Maintained composure under countdown pressure to verify the relay value.",
       });
     } else {
-      scores["The Explorer"] += 1;
-      scores["The Independent Thinker"] += 1;
+      scores["The Observer"] += 4;
+      scores["The Explorer"] += 2;
+      supportingEvidence.push(
+        "Chapter 05: Watched the countdown expire without committing an unverified relay value."
+      );
     }
   }
 
   // ---------------------------------------------------------------------------
-  // CHAPTER 6 — THE UNKNOWN WORLD (Explicit Preferences + Subtle Thematic Tie)
+  // CHAPTER 6 — THE UNKNOWN WORLD (Latest Explicit Preferences)
   // ---------------------------------------------------------------------------
-  const worldEnvironment =
-    preferences.find((p) => p.preference_category === "world_environment")?.selected_value ||
-    null;
-  const worldObject =
-    preferences.find((p) => p.preference_category === "world_object")?.selected_value ||
-    null;
-  const worldActivity =
-    preferences.find((p) => p.preference_category === "world_activity")?.selected_value ||
-    null;
+  const worldEnvironment = getLatestPref("world_environment");
+  const worldObject = getLatestPref("world_object");
+  const worldActivity = getLatestPref("world_activity");
 
   if (worldEnvironment || worldObject || worldActivity) {
     chaptersWithSignals.add(6);
 
     if (worldEnvironment?.includes("Observatory")) {
-      scores["The Observer"] += 2;
+      scores["The Observer"] += 5;
       scores["The Curious Mind"] += 2;
     } else if (worldEnvironment?.includes("Archives")) {
-      scores["The Curious Mind"] += 3;
-      scores["The Strategist"] += 1;
+      scores["The Curious Mind"] += 5;
+      scores["The Strategist"] += 2;
     } else if (worldEnvironment?.includes("Coastal")) {
-      scores["The Explorer"] += 3;
-      scores["The Independent Thinker"] += 1;
+      scores["The Explorer"] += 5;
+      scores["The Independent Thinker"] += 2;
     } else if (worldEnvironment?.includes("Greenhouse")) {
-      scores["The Creative Soul"] += 3;
-      scores["The Empath"] += 1;
+      scores["The Creative Soul"] += 5;
+      scores["The Empath"] += 2;
     }
 
     if (worldObject?.includes("Letter")) {
-      scores["The Empath"] += 2;
-    } else if (worldObject?.includes("Prism")) {
+      scores["The Empath"] += 4;
       scores["The Creative Soul"] += 2;
-      scores["The Observer"] += 1;
+    } else if (worldObject?.includes("Prism")) {
+      scores["The Observer"] += 4;
+      scores["The Creative Soul"] += 2;
     } else if (worldObject?.includes("Astrolabe")) {
-      scores["The Explorer"] += 2;
-      scores["The Strategist"] += 1;
+      scores["The Explorer"] += 4;
+      scores["The Strategist"] += 2;
     } else if (worldObject?.includes("Key")) {
-      scores["The Curious Mind"] += 2;
-      scores["The Independent Thinker"] += 1;
+      scores["The Curious Mind"] += 4;
+      scores["The Independent Thinker"] += 2;
     }
 
     if (worldActivity?.includes("Document")) {
-      scores["The Observer"] += 3;
+      scores["The Observer"] += 6;
+      scores["The Curious Mind"] += 2;
     } else if (worldActivity?.includes("Chart")) {
-      scores["The Strategist"] += 3;
+      scores["The Strategist"] += 6;
+      scores["The Explorer"] += 2;
     } else if (worldActivity?.includes("Venture")) {
-      scores["The Explorer"] += 3;
+      scores["The Explorer"] += 6;
+      scores["The Independent Thinker"] += 2;
     } else if (worldActivity?.includes("Sit") || worldActivity?.includes("absorb")) {
-      scores["The Creative Soul"] += 2;
-      scores["The Empath"] += 2;
+      scores["The Creative Soul"] += 5;
+      scores["The Empath"] += 4;
     }
 
     if (worldEnvironment) {
@@ -509,9 +571,9 @@ export function evaluateReport(
       : null;
 
   // ---------------------------------------------------------------------------
-  // DETERMINISTIC ARCHETYPE RANKING & CONFIDENCE
+  // DETERMINISTIC ARCHETYPE RANKING & FAIR TIE-BREAKING
   // ---------------------------------------------------------------------------
-  const orderedArchetypes: Archetype[] = [
+  const allArchetypes: Archetype[] = [
     "The Observer",
     "The Strategist",
     "The Creative Soul",
@@ -521,7 +583,39 @@ export function evaluateReport(
     "The Independent Thinker",
   ];
 
-  const sorted = [...orderedArchetypes].sort((a, b) => scores[b] - scores[a]);
+  // Dynamic tie-breaker derived directly from the player's decisive choices:
+  const getTieBreakerPriority = (a: Archetype): number => {
+    let p = 0;
+    // Chapter 6 environment + activity weight
+    if (worldEnvironment?.includes("Observatory") && a === "The Observer") p += 4;
+    if (worldEnvironment?.includes("Archives") && (a === "The Curious Mind" || a === "The Strategist")) p += 4;
+    if (worldEnvironment?.includes("Coastal") && (a === "The Explorer" || a === "The Independent Thinker")) p += 4;
+    if (worldEnvironment?.includes("Greenhouse") && (a === "The Creative Soul" || a === "The Empath")) p += 4;
+
+    if (worldActivity?.includes("Document") && a === "The Observer") p += 5;
+    if (worldActivity?.includes("Chart") && a === "The Strategist") p += 5;
+    if (worldActivity?.includes("Venture") && a === "The Explorer") p += 5;
+    if ((worldActivity?.includes("Sit") || worldActivity?.includes("absorb")) && (a === "The Creative Soul" || a === "The Empath")) p += 5;
+
+    // Chapter 1 decisive action
+    if (finalAction === "return_wallet" && a === "The Empath") p += 4;
+    if (finalAction === "catch_train" && a === "The Independent Thinker") p += 4;
+    if (finalAction === "call_out" && a === "The Strategist") p += 4;
+
+    // Chapter 3 decisive action
+    if (ch3Action === "ignore_message" && a === "The Independent Thinker") p += 4;
+    if (ch3Action === "reply_immediately" && a === "The Empath") p += 4;
+    if (ch3Action === "confront_sender" && a === "The Curious Mind") p += 4;
+
+    return p;
+  };
+
+  const sorted = [...allArchetypes].sort((a, b) => {
+    const diff = scores[b] - scores[a];
+    if (diff !== 0) return diff;
+    return getTieBreakerPriority(b) - getTieBreakerPriority(a);
+  });
+
   const primaryArchetype = sorted[0];
   const runnerUpArchetype = sorted[1];
   const scoreGap = scores[primaryArchetype] - scores[runnerUpArchetype];
@@ -531,11 +625,11 @@ export function evaluateReport(
   let confidenceRationale =
     "Moderate alignment across recorded decisions, with secondary affinities also present.";
 
-  if (signalChapterCount < 3 || scores[primaryArchetype] < 5) {
+  if (signalChapterCount < 2 || scores[primaryArchetype] < 4) {
     confidence = "Low";
     confidenceRationale =
       "Based on limited chapter signals recorded so far; treat this portrait as tentative.";
-  } else if (signalChapterCount >= 5 && scoreGap >= 3 && scores[primaryArchetype] >= 9) {
+  } else if (signalChapterCount >= 4 && scoreGap >= 3 && scores[primaryArchetype] >= 8) {
     confidence = "Strong";
     confidenceRationale = `Consistent convergence across ${signalChapterCount} chapters separating ${primaryArchetype} from ${runnerUpArchetype}.`;
   } else if (scoreGap <= 1) {

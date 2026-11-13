@@ -75,6 +75,9 @@ export default function ResultReportPage({ params }: PageProps) {
 
   useEffect(() => {
     let active = true;
+    setIsLoading(true);
+    setReport(null);
+    setErrorMsg(null);
     const localLastSession =
       typeof window !== "undefined"
         ? localStorage.getItem("the_unwritten_last_session_id") ||
@@ -252,6 +255,10 @@ export default function ResultReportPage({ params }: PageProps) {
   const handleReplay = async () => {
     setIsResetting(true);
     try {
+      if (typeof window !== "undefined") {
+        localStorage.removeItem("the_unwritten_last_session_id");
+        localStorage.removeItem("the_unwritten_session_id");
+      }
       await startFreshSession("UNSPECIFIED");
       router.push("/play");
     } catch {

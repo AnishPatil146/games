@@ -12,7 +12,7 @@ interface Chapter4Props {
     eventType: EventType,
     data?: Record<string, unknown>
   ) => Promise<unknown>;
-  onSavePreference: (category: string, value: string) => Promise<unknown>;
+  onSavePreference: (category: string, value?: string, values?: string[]) => Promise<unknown>;
   onComplete: () => void;
 }
 
@@ -109,9 +109,8 @@ export function Chapter4EmptyCanvas({
       (id) => STUDIO_OBJECTS.find((o) => o.id === id)?.label || id
     );
 
-    for (const label of chosenLabels) {
-      await onSavePreference("canvas_object", label);
-    }
+    // Save chosen forms as an atomic batch, cleanly replacing any prior selection
+    await onSavePreference("canvas_object", undefined, chosenLabels);
     await onSavePreference("canvas_mood", selectedPaletteId);
     await onSavePreference("canvas_arrangement", arrangement);
 

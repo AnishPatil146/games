@@ -15,7 +15,7 @@ interface Chapter6Props {
     eventType: EventType,
     data?: Record<string, unknown>
   ) => Promise<unknown>;
-  onSavePreference: (category: string, value: string) => Promise<unknown>;
+  onSavePreference: (category: string, value?: string, values?: string[]) => Promise<unknown>;
   onComplete: () => void;
 }
 

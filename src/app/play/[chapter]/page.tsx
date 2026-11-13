@@ -50,8 +50,8 @@ export default function ChapterPage({ params }: PageProps) {
     return trackEvent(chapterNum, eventType, data);
   };
 
-  const handleSavePreference = async (category: string, value: string) => {
-    return savePreference(category, value);
+  const handleSavePreference = async (category: string, value?: string, values?: string[]) => {
+    return savePreference(category, value, values);
   };
 
   const handleChapterComplete = async () => {

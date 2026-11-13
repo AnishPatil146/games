@@ -214,11 +214,8 @@ export async function GET(req: NextRequest, props: RouteProps) {
       targetDossier.session.character_presentation
     );
 
-    if (
-      !targetDossier.session.result_archetype &&
-      targetDossier.session.current_chapter >= 6
-    ) {
-      await getPublicSessionDossier(sessionId, report.archetype);
+    if (targetDossier.session.current_chapter >= 6) {
+      await getPublicSessionDossier(targetDossier.session.id, report.archetype);
     }
 
     const uniqueClues = new Set(
@@ -265,8 +262,27 @@ export async function GET(req: NextRequest, props: RouteProps) {
 
       let selectedLabel: string | null = null;
       if (ch === 1 || ch === 3) {
-        const cEv = chEvents.find((e) => e.event_type === "choice_selected");
-        const key = String(cEv?.event_data?.choiceId || "");
+        const choiceEvents = chEvents
+          .filter((e) => e.event_type === "choice_selected")
+          .map((e) => String(e.event_data?.choiceId || ""))
+          .filter(Boolean);
+
+        let key = choiceEvents[choiceEvents.length - 1] || "";
+        if (ch === 1) {
+          const decisive = choiceEvents
+            .slice()
+            .reverse()
+            .find((c) => ["return_wallet", "call_out", "catch_train"].includes(c));
+          if (decisive) key = decisive;
+        } else if (ch === 3) {
+          const decisive = choiceEvents
+            .slice()
+            .reverse()
+            .find((c) =>
+              ["reply_immediately", "confront_sender", "ignore_message"].includes(c)
+            );
+          if (decisive) key = decisive;
+        }
         selectedLabel = meta.labels[key] || (key ? key : null);
       } else if (ch === 2 || ch === 5) {
         const solved = chEvents.some(
@@ -285,13 +301,17 @@ export async function GET(req: NextRequest, props: RouteProps) {
             ch === 2 ? "Tested Archive Lock" : "Observed Final Countdown";
         }
       } else if (ch === 4) {
+        const objs = report.explicitPreferences.canvasObjects;
+        const mainObj = objs && objs.length > 0 ? objs[objs.length - 1] : null;
         selectedLabel =
           report.explicitPreferences.canvasArrangement ||
           report.explicitPreferences.canvasPalette ||
+          mainObj ||
           (completed ? "Composed Canvas" : null);
       } else if (ch === 6) {
         selectedLabel =
           report.explicitPreferences.worldEnvironment ||
+          report.explicitPreferences.worldActivity ||
           (completed ? "Crossed Final Horizon" : null);
       }
 

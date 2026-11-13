@@ -164,7 +164,7 @@ export function useGameSession(options?: { recordLandingOnInit?: boolean }) {
       resetIfCompleted: boolean = false
     ) => {
       const utm = captureUtmParams();
-      const shouldReset = resetIfCompleted && session?.status === "completed";
+      const shouldReset = resetIfCompleted || session?.status === "completed";
       const res = await fetch("/api/session/start", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -269,7 +269,11 @@ export function useGameSession(options?: { recordLandingOnInit?: boolean }) {
   );
 
   const savePreference = useCallback(
-    async (category: string, selectedValue: string) => {
+    async (
+      category: string,
+      selectedValue?: string,
+      selectedValues?: string[]
+    ) => {
       try {
         await fetch("/api/preferences", {
           method: "POST",
@@ -277,6 +281,8 @@ export function useGameSession(options?: { recordLandingOnInit?: boolean }) {
           body: JSON.stringify({
             category,
             selectedValue,
+            selectedValues,
+            replace: true,
           }),
         });
       } catch {
