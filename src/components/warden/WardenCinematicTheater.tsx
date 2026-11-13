@@ -27,6 +27,7 @@ import {
   WARDEN_OUTRO_CUES,
   WARDEN_POSES_GALLERY,
 } from "@/lib/cinematicTimelineEngine";
+import { WardenCompositor } from "./WardenCompositor";
 
 interface WardenCinematicTheaterProps {
   initialMode?: CinematicMode;
@@ -298,83 +299,21 @@ export function WardenCinematicTheater({
       />
 
       {/* ========================================================== */}
-      {/* 1. LAYERED ENVIRONMENT BACKGROUND                          */}
+      {/* 1. CINEMATIC 5-LAYER COMPOSITOR (Clean RGBA Warden Poses)  */}
       {/* ========================================================== */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
-        <motion.div
-          key={`env-${activeCue.environment}`}
-          initial={{ opacity: 0.75, scale: 1.0 }}
-          animate={{
-            opacity: 1,
-            scale: isPlaying ? [1.0, 1.04] : 1.0,
-          }}
-          transition={{
-            opacity: { duration: 0.8 },
-            scale: { duration: 12.0, ease: "linear", repeat: Infinity, repeatType: "reverse" },
-          }}
-          className="absolute inset-0 w-full h-full"
-        >
-          <Image
-            src={
-              activeCue.environment === "gate_opening"
-                ? "/art/environments/warden_gate_opening.jpg"
-                : "/art/environments/warden_gate_wide.jpg"
-            }
-            alt="The Warden's Gate"
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover object-center filter brightness-90 contrast-110"
-          />
-        </motion.div>
-
-        {/* Ambient Dark Atmospheric Fog & Vignette */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#070608] via-black/40 to-black/80 pointer-events-none" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_30%,rgba(0,0,0,0.85)_100%)] pointer-events-none" />
-
-        {/* Subtle Dynamic Rim Glow */}
-        <div
-          className="absolute inset-0 pointer-events-none transition-all duration-1000"
-          style={{
-            boxShadow: `inset 0 0 120px ${activeCue.lightingColor}`,
-          }}
-        />
-      </div>
+      <WardenCompositor
+        cue={activeCue}
+        isPlaying={isPlaying}
+        className="absolute inset-0 z-0"
+      />
 
       {/* ========================================================== */}
-      {/* 2. THE WARDEN CHARACTER STAGE (100% Grounded, Zero Cutouts) */}
+      {/* 2. THEATER INTERACTION & SUBTITLES STAGE                   */}
       {/* ========================================================== */}
       <div
         onClick={togglePlay}
         className="relative z-10 w-full h-full flex flex-col items-center justify-end cursor-pointer pb-6 sm:pb-8"
       >
-        {/* Character Pose Texture */}
-        <div className="relative w-full max-w-sm sm:max-w-md h-[82%] sm:h-[88%] flex items-end justify-center pointer-events-none">
-          <AnimatePresence mode="popLayout">
-            <motion.div
-              key={activeCue.poseId}
-              initial={{ opacity: 0.7, y: 8, scale: 0.98 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              exit={{ opacity: 0.5, y: -4 }}
-              transition={{ duration: 0.45, ease: "easeInOut" }}
-              className="relative w-full h-full"
-            >
-              <Image
-                src={activeCue.poseImage}
-                alt={activeCue.speaker}
-                fill
-                priority
-                unoptimized
-                sizes="(max-width: 768px) 100vw, 640px"
-                className="object-contain object-bottom filter drop-shadow-[0_20px_40px_rgba(0,0,0,0.95)]"
-              />
-            </motion.div>
-          </AnimatePresence>
-
-          {/* Floor Shadow Ring Grounding Boots */}
-          <div className="absolute bottom-0 inset-x-8 h-8 rounded-full bg-black/80 blur-xl pointer-events-none" />
-        </div>
-
         {/* ======================================================== */}
         {/* 3. DYNAMIC CENTERED VISUAL OVERLAYS                     */}
         {/* ======================================================== */}

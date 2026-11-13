@@ -14,11 +14,13 @@ import {
   Compass,
   CheckCircle2,
   ChevronRight,
+  Key,
+  Play,
 } from "lucide-react";
 import { useGameSession } from "@/lib/useGameSession";
 import { CreatorIdentitySection } from "@/components/common/CreatorIdentitySection";
 import { PlayerReviewsSection } from "@/components/reviews/PlayerReviewsSection";
-import { CinematicCreatorIntro } from "./CinematicCreatorIntro";
+import { WardenCinematicIntro } from "@/components/warden/WardenCinematicIntro";
 import { PlayerRegistrationModal, RegisteredPlayer } from "./PlayerRegistrationModal";
 
 export type CharacterIdentityId = "junior" | "senior";
@@ -198,11 +200,11 @@ export function CharacterSelectScreen() {
 
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-[#0A0D12] text-[#FAF7F2] select-none flex flex-col justify-between">
-      {/* 0. CINEMATIC CREATOR INTRO OVERLAY */}
+      {/* 0. CINEMATIC WARDEN INTRO OVERLAY */}
       <AnimatePresence>
         {showIntro && (
-          <CinematicCreatorIntro
-            key="cinematic-intro"
+          <WardenCinematicIntro
+            key="warden-cinematic-intro"
             isReplay={isReplayingIntro}
             onComplete={() => {
               setShowIntro(false);
@@ -279,13 +281,18 @@ export function CharacterSelectScreen() {
           )}
 
           <nav className="hidden md:flex items-center gap-5 text-[11px] font-mono uppercase tracking-[0.2em] text-[#DDD4C5]">
-            <Link
-              href="/warden"
-              className="hover:text-red-400 transition-colors flex items-center gap-1.5 text-red-300 font-bold"
+            <button
+              type="button"
+              onClick={() => {
+                setIsReplayingIntro(true);
+                setShowIntro(true);
+              }}
+              className="hover:text-red-300 transition-colors flex items-center gap-1.5 text-zinc-300 font-semibold cursor-pointer"
+              title="Replay The Warden Cinematic Intro"
             >
               <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
-              <span>The Warden</span>
-            </Link>
+              <span>Intro Cinematic</span>
+            </button>
             <Link
               href="/solo"
               className="hover:text-amber-300 transition-colors flex items-center gap-1.5"

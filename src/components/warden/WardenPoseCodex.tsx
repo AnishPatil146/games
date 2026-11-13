@@ -33,13 +33,13 @@ export function WardenPoseCodex({
       <div className="text-center max-w-3xl mx-auto mb-12">
         <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-950/60 border border-red-800/40 text-red-400 text-xs font-mono uppercase tracking-[0.25em] mb-4">
           <Sparkles className="w-3.5 h-3.5" />
-          <span>Original Character Manifest · 6 Canon Stances</span>
+          <span>Original Character Manifest · 12 Reference-Matched Transparent Poses</span>
         </div>
         <h2 className="font-serif text-3xl sm:text-5xl font-black tracking-tight text-[#FAF7F2] mb-4">
           The Warden&apos;s Pose Codex
         </h2>
         <p className="font-serif text-sm sm:text-base text-zinc-400 leading-relaxed max-w-2xl mx-auto">
-          Every stance captured from the ancient threshold of the Dungeon. Each pose represents a pivotal moment in the Warden&apos;s awakening, synchronized directly to the official vocal recordings.
+          Every stance captured from the ancient threshold of the Dungeon. Each pose features full RGBA transparency, balanced contact shadowing, and synchronization to the official vocal recordings.
         </p>
 
         {/* Filter Pills */}
@@ -52,7 +52,7 @@ export function WardenPoseCodex({
                 : "text-zinc-400 hover:text-white"
             }`}
           >
-            All 6 Stances
+            All 12 Stances
           </button>
           <button
             onClick={() => setFilter("intro")}
@@ -62,7 +62,7 @@ export function WardenPoseCodex({
                 : "text-zinc-400 hover:text-white"
             }`}
           >
-            Intro Sequence (3)
+            Intro Sequence
           </button>
           <button
             onClick={() => setFilter("outro")}
@@ -72,7 +72,7 @@ export function WardenPoseCodex({
                 : "text-zinc-400 hover:text-white"
             }`}
           >
-            Outro Sequence (3)
+            Outro Sequence
           </button>
         </div>
       </div>

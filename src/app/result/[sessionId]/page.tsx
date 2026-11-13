@@ -3,7 +3,7 @@
 import { use, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { motion, useReducedMotion } from "framer-motion";
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import {
   ArrowRight,
   Check,
@@ -13,11 +13,13 @@ import {
   Share2,
   Star,
   Trophy,
+  Play,
 } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/Button";
 import { PlayerReviewModal } from "@/components/reviews/PlayerReviewModal";
+import { WardenCinematicOutro } from "@/components/warden/WardenCinematicOutro";
 import {
   ChoiceMapStep,
   SeniorChoiceMap,
@@ -57,6 +59,24 @@ export default function ResultReportPage({ params }: PageProps) {
   const [isClaiming, setIsClaiming] = useState(false);
   const [showReviewModal, setShowReviewModal] = useState(false);
   const [hasReviewed, setHasReviewed] = useState(false);
+  const [showOutro, setShowOutro] = useState(false);
+
+  useEffect(() => {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const forceOutro = params.get("outro") === "1" || params.get("replay") === "1";
+      if (forceOutro) {
+        setShowOutro(true);
+        return;
+      }
+      const seen = sessionStorage.getItem("unwritten_outro_seen");
+      if (seen !== "true") {
+        setShowOutro(true);
+      }
+    } catch {
+      // ignore
+    }
+  }, []);
 
   useEffect(() => {
     let active = true;
@@ -398,6 +418,17 @@ export default function ResultReportPage({ params }: PageProps) {
                 invitation link.
               </p>
               <div className="flex items-center gap-2.5">
+                <Button
+                  type="button"
+                  variant="secondary"
+                  size="sm"
+                  onClick={() => setShowOutro(true)}
+                  className="text-red-900 border-red-200 hover:bg-red-50"
+                  title="Replay The Warden Cinematic Outro"
+                >
+                  <Play className="w-3.5 h-3.5 mr-1.5 text-red-600 fill-current" />
+                  Warden Outro
+                </Button>
                 <Button
                   type="button"
                   variant="secondary"
@@ -780,6 +811,16 @@ export default function ResultReportPage({ params }: PageProps) {
             </section>
           </motion.article>
         )}
+
+        {/* WARDEN CINEMATIC OUTRO OVERLAY */}
+        <AnimatePresence>
+          {showOutro && (
+            <WardenCinematicOutro
+              onComplete={() => setShowOutro(false)}
+              onRequestReview={() => setShowReviewModal(true)}
+            />
+          )}
+        </AnimatePresence>
 
         <PlayerReviewModal
           isOpen={showReviewModal}

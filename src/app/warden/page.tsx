@@ -31,7 +31,7 @@ import {
 } from "lucide-react";
 
 export default function WardenCinematicPage() {
-  const [activePoseId, setActivePoseId] = useState<string>("warden_01_neutral_standing");
+  const [activePoseId, setActivePoseId] = useState<string>("warden_01_standing");
   const [theaterTrigger, setTheaterTrigger] = useState<{
     mode: CinematicMode;
     time: number;
@@ -116,7 +116,7 @@ export default function WardenCinematicPage() {
             <span className="text-zinc-600">·</span>
             <span className="flex items-center gap-1.5">
               <Shield className="w-3.5 h-3.5 text-amber-400" />
-              6 Canon Stances
+              12 Transparent Canon Poses
             </span>
           </motion.div>
         </section>
