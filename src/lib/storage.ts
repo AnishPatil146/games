@@ -942,9 +942,9 @@ export async function getAdminMetrics(): Promise<AdminMetrics> {
   const avgCompletionDurationSeconds =
     validCompletionDurationsSec.length > 0
       ? Math.round(
-          validCompletionDurationsSec.reduce((acc, v) => acc + v, 0) /
-            validCompletionDurationsSec.length
-        )
+        validCompletionDurationsSec.reduce((acc, v) => acc + v, 0) /
+        validCompletionDurationsSec.length
+      )
       : null;
 
   // Per-chapter engagement, completion, drop-off & average duration
@@ -999,15 +999,15 @@ export async function getAdminMetrics(): Promise<AdminMetrics> {
     const dropOffPct =
       sessionsStarted > 0
         ? Math.max(
-            0,
-            Math.round(((sessionsStarted - sessionsCompleted) / sessionsStarted) * 100)
-          )
+          0,
+          Math.round(((sessionsStarted - sessionsCompleted) / sessionsStarted) * 100)
+        )
         : null;
     const avgDurationSeconds =
       durationsSec.length > 0
         ? Math.round(
-            durationsSec.reduce((sum, d) => sum + d, 0) / durationsSec.length
-          )
+          durationsSec.reduce((sum, d) => sum + d, 0) / durationsSec.length
+        )
         : null;
 
     return {
@@ -1119,10 +1119,10 @@ export async function getAdminMetrics(): Promise<AdminMetrics> {
       avgSolveSeconds:
         solveTimesSec.length > 0
           ? Math.round(
-              (solveTimesSec.reduce((sum, v) => sum + v, 0) /
-                solveTimesSec.length) *
-                10
-            ) / 10
+            (solveTimesSec.reduce((sum, v) => sum + v, 0) /
+              solveTimesSec.length) *
+            10
+          ) / 10
           : null,
     };
   });
